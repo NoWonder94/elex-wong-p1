@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "640891885977",
+    "project_id": "bossjob2021-6b1d7",
+    "storage_bucket": "bossjob2021-6b1d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640891885977:android:e44cdc7e6af0d4e4eadb08",
+        "android_client_info": {
+          "package_name": "com.poseidon.bossjobapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640891885977-3419f7s4233mtifkb093h0uokkvtijte.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.poseidon.bossjobapp",
+            "certificate_hash": "41805cf308748ddfb35f21a148b80f52cf14a335"
+          }
+        },
+        {
+          "client_id": "640891885977-b2nvadqq2qstvvqud8om7qh3678i8mss.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.poseidon.bossjobapp",
+            "certificate_hash": "c08c37b1d664623941247e8968e8b26a6a37b2d6"
+          }
+        },
+        {
+          "client_id": "640891885977-n7eloj1984cmuh48i32pdn7kft88s9r9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.poseidon.bossjobapp",
+            "certificate_hash": "9f96887cc2d645f3c219ec7e8ea5257527c2a32f"
+          }
+        },
+        {
+          "client_id": "640891885977-l37goihp7sgp67l04v46cf8g00k2fdmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxCi22iXcjqETchGsC_g1h7UvaMEEAK-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640891885977-l37goihp7sgp67l04v46cf8g00k2fdmn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "640891885977-6578ehad4tmuelhh61713estk431v00d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.poseidon.bossjobapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

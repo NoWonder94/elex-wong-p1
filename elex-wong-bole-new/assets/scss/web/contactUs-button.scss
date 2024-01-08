@@ -1,0 +1,46 @@
+@import '../Base.scss';
+
+@media only screen and (min-width: 700px) {
+  .contactUs-button {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    border-radius: 30px;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+    z-index: 901;
+
+    .contactUs-button-mobile {
+      display: none;
+    }
+
+    .contactUs-button-web {
+      padding: 10px 10px;
+      padding-bottom: 5px;
+      padding-right: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .contactUs-button-icon {
+        padding: 0px 10px;
+
+        a {
+          text-decoration: none;
+
+          img {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  .b24-widget-button-position-bottom-right {
+    bottom: 110px !important;
+    right: 30px !important;
+  }
+}

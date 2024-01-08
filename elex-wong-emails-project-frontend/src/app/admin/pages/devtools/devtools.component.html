@@ -1,0 +1,49 @@
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section>
+
+<main id="main">
+  <section id="registersection" class="about">
+    <div class="aos-init aos-animate" data-aos="fade-up">
+      <div class="breadcrumb" (click)="goBackToAdminHome()">&lt; Back</div>
+
+      <!-- Create ERC20 token -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Create a ERC20 token</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <div class="data-info-box">
+            <p class="heading">Symbol</p>
+            <input #input type="text" name="input" class="form-control" placeholder="eg: TOK"
+              [(ngModel)]="erc20TokenSymbol" />
+          </div>
+
+          <div class="data-info-box">
+            <p class="heading">Name</p>
+            <input #input type="text" name="input" class="form-control" placeholder="eg: My Token"
+              [(ngModel)]="erc20TokenName" />
+          </div>
+
+          <div class="data-info-box">
+            <p class="heading">Total number of tokens</p>
+            <input #input type="number" name="input" class="form-control" placeholder="eg: 1000000"
+              [(ngModel)]="erc20TokenAmount" />
+          </div>
+
+          <btn-loader *ngIf="network" [disabled]="!canCreateERC20Token()" [title]="getERC20ButtonTitle()"
+            [busy]="creatingERC20Token" (clicked)="createERC20Token()">
+          </btn-loader>
+          <p *ngIf="!network">No connected or unsupported network</p>
+
+          <div class="data-info-box" *ngIf="createdERC20TokenReceipt">
+            <p class="heading">Token successfully created at address:</p>
+            <p>{{ createdERC20TokenReceipt.contractAddress }}</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</main>

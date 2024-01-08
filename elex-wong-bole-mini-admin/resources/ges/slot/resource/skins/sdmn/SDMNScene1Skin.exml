@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SDMNScene1Skin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="resizeGroup" left="0" right="0" top="0" bottom="0">
+		<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image top="0" right="0" left="0" bottom="0" source="sdmn_bg3_jpg"/>
+		<e:Image left="0" right="0" top="0" bottom="0" source="sdmn_bg4_png"/>
+			<e:Image source="sdmn_bg2_png" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group height="110" bottom="0" left="0" right="0">
+			<e:Image x="0" y="0" anchorOffsetX="0" width="1280" scaleX="1" scaleY="1" source="dntg_scene1_image1_png"/>
+			<e:Group width="230" height="109" y="1" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0">
+			<e:Image y="26.2" scaleX="1" scaleY="1" horizontalCenter="0.5" source="dntg_scene1_score_db_png"/>
+			<e:Label text="赢得分数" y="86.6" scaleX="1" scaleY="1" textColor="0xB5AFAF" size="20" fontFamily="SimHei" horizontalCenter="0"/>
+			<e:Label id="winGold0" text="111" y="37.2" scaleX="1" scaleY="1" textColor="0xE6AA4A" fontFamily="SimHei" size="24" textAlign="center" horizontalCenter="0"/>
+			</e:Group>
+		</e:Group>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" height="521" width="920" x="180" y="91">
+			<e:Group id="group1" x="-45.53" y="-3.35">
+			<e:Image id="icon1"  y="0" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon2"  y="180" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon3"  y="360" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			</e:Group>
+			<e:Group id="group2" x="156.33" y="-3">
+			<e:Image id="icon4"  y="0" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon5"  y="180" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon6"  y="360" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			</e:Group>
+			<e:Group id="group3" x="360" y="-2.66" scaleX="1" scaleY="1">
+			<e:Image id="icon7"  y="0" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon8"  y="180" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon9"  y="360" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			</e:Group>
+			<e:Group id="group4" x="558.67" y="-2.66">
+			<e:Image id="icon10"  y="0" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon11"  y="180" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon12"  y="360" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			</e:Group>
+			<e:Group id="group5" x="758.65" y="-2.66">
+			<e:Image id="icon13"  y="0" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon14"  y="180" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon15"  y="360" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			</e:Group>
+			<e:Image source="sdmn_bg1_png" horizontalCenter="0" verticalCenter="-28.5"/>
+		</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

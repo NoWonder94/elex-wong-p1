@@ -1,0 +1,107 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .header {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 4vw;
+    background: $secondarybgColor;
+    color: $scfontColor;
+    z-index: 99;
+
+    .headers {
+      display: flex;
+      // justify-content: space-between;
+
+      .header-brand-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header-branding-icon {
+          width: 8vw;
+          // height: 8vw;
+        }
+
+        .header-nav-options {
+          width: 35vw;
+
+          .el-input__inner {
+            background: transparent;
+            color: $scfontColor;
+            font-weight: bold;
+            border: none;
+          }
+
+          .el-select-dropdown {
+            left: 0 !important;
+            right: 0 !important;
+            width: 100vw;
+
+            .popper__arrow {
+              display: none !important;
+            }
+
+            .el-select-dropdown__item.selected {
+              color: $secondaryColor !important;
+              font-weight: bold;
+            }
+
+            .el-select-dropdown__item {
+              color: $primaryColor !important;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .header-wallet {
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2vw;
+        font-size: 3.5vw;
+        font-weight: bold;
+
+        .header-wallet-icon {
+          width: 8vw;
+          height: 8vw;
+        }
+      }
+
+      .header-user{
+        min-width: 15vw;
+        max-width: 30vw;
+        margin-left: 2vw;
+        padding: 0 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2px;
+        justify-content: space-between;
+        background-color: $scfontColor;
+        color: $fontColor;
+        font-size: 3.5vw;
+        font-weight: bold;
+        border-radius:50px;
+
+
+        .header-user-icon{
+          width: 5vw;
+          border: 2px solid $primaryColor;
+          border-radius: 20px;
+        }
+      }
+
+      .header-close {
+        .header-close-icon {
+          width: 6vw;
+        }
+      }
+    }
+  }
+}

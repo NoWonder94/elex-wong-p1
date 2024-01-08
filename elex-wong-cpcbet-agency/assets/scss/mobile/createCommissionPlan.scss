@@ -1,0 +1,58 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .createCommission-plan
+  {
+    position: relative;
+    padding-bottom: 25vw;
+
+    .createCommission-plan-return
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1.5vw 2vw;
+      font-weight: bold;
+      font-size: 3vw;
+      border: 1px solid white;
+      border-radius: 3vw;
+      text-transform: capitalize;
+      z-index: 10;
+    }
+
+    .createCommission-plan-title
+    {
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 3.5vw;
+      padding-bottom: 5vw;
+      padding-top: 5vw;
+      z-index: 1;
+    }
+
+    .createCommission-plan-content
+    {
+      .el-tabs__nav-wrap::after
+      {
+        background-color: $whiteOpacity20;
+      }
+
+      .el-tabs__nav
+      {
+        .el-tabs__active-bar{
+          height: 0.8vw;
+          border-radius: 1.5vw;
+          background-color: $secondaryColor;
+        }
+
+        .el-tabs__item{
+          color: $fontColorOpc50;
+        }
+
+        .el-tabs__item.is-active{
+          color: $fontColor;
+        }
+      }
+    }
+  }
+}

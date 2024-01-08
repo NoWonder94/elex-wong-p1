@@ -1,0 +1,85 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1201px){
+  .deposit-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(12,21,29,.78);
+    z-index: 1001;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: zoomFadeIn 0.3s ease-in-out;
+
+    .modal-portal {
+      position: relative;
+      flex-basis: 400px;
+      max-width: 400px;
+      min-width: 300px;
+      // max-width: 500px;
+      min-height: 247px;
+      outline: none;
+      border-radius: 4px;
+      background-color: $background;
+      z-index: 1002;
+
+      .modal-close {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        padding: 0;
+        font-weight: 900;
+        font-size: 20px;
+        color: $lightGrey;
+        cursor: pointer;
+        z-index: 1;
+      }
+
+      .modal-body {
+        height: 100%;
+        padding: 20px;
+        overflow-y: hidden;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+
+        .transaction-state {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 -11px;
+
+          h2 {
+            font-size: 11px;
+            padding: 0 5px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-size: normal;
+            letter-spacing: normal;
+            color: $lightGrey;
+            text-transform: capitalize;
+          }
+
+          span {
+            width: 0;
+            height: 0;
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-left: 4px solid $red;
+          }
+        }
+
+        .active-transaction-state {
+          color: $white !important;
+        }
+      }
+    }
+  }
+}
+
+

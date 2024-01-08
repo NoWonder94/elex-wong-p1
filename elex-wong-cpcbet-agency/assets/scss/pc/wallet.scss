@@ -1,0 +1,155 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .wallet {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 10px;
+
+    .wallet-row {
+      padding-bottom: 20px;
+    }
+
+    .wallet-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .wallet-section {
+      margin-top: 10px;
+      padding: 25px 20px;
+      border:1px solid $blackOpacity20;
+      color: $primaryColorOpc50;
+      border-radius: 6px;
+      display: grid;
+      grid-template-columns: repeat(4, 150px);
+      row-gap: 8px;
+
+      .wallet-item {
+        .wallet-item-title {
+          font-size: 14px;
+          padding-bottom: 5px;
+        }
+
+        .wallet-item-amount {
+          font-size: 16px;
+          font-weight: bold;
+          color: $primaryColor;
+        }
+
+        .green {
+          color: $secondaryColor;
+        }
+      }
+    }
+    .transfer_request.wallet-withdrawal-button {
+      width: 370px;
+      position: relative;
+      padding: 15px;
+      margin-top: 10px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      .wallet-withdrawal-icon-left {
+        width: 12px;
+        margin-right: 10px;
+      }
+
+      .wallet-withdrawal-icon-right {
+        position: absolute;
+        width: 16px;
+        opacity: 0.5;
+        right: 15px;
+      }
+    }
+    .transfer-section {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(2, 180px);
+      column-gap: 10px;
+
+      .transfer-item {
+        padding: 15px 10px;
+        border: 1px solid $blackOpacity20;
+        color: $primaryColorOpc50;
+        border-radius: 6px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .transfer-div {
+          display: flex;
+          align-items: flex-end;
+          column-gap: 10px;
+
+          .transfer-img {
+            img {
+              width: 30px;
+            }
+          }
+
+          .transfer-text {
+            .transfer-item-title {
+              font-size: 12px;
+            }
+
+            .transfer-item-desc {
+              font-size: 18px;
+              font-weight: bold;
+              color: $primaryColor;
+            }
+          }
+        }
+
+        .transfer-icon {
+          img {
+            width: 18px;
+            filter: brightness(0) saturate(100%) invert(18%) sepia(14%) saturate(3386%) hue-rotate(135deg) brightness(92%) contrast(104%);
+          }
+        }
+      }
+    }
+  }
+
+  .wallet-more {
+    padding-bottom: 20px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+
+    .wallet-title {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .wallet-withdrawal-button {
+      position: relative;
+      padding: 15px;
+      margin-top: 10px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      .wallet-withdrawal-icon-left {
+        width: 12px;
+        margin-right: 10px;
+      }
+
+      .wallet-withdrawal-icon-right {
+        position: absolute;
+        width: 16px;
+        opacity: 0.5;
+        right: 15px;
+      }
+    }
+  }
+
+
+}

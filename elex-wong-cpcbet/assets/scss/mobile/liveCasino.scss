@@ -1,0 +1,199 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .liveCasino {
+    position: relative;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 5vw 0vw;
+    display: flex;
+    flex-direction: column;
+
+    .liveCasino-list-filter {
+      padding-bottom: 2vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .liveCasino-list-filter-input {
+        width: 90vw;
+        margin-bottom: 2vh;
+
+        .el-input__inner {
+          text-align: center;
+          color: $fontColor;
+          font-weight: bold;
+          background-color: $darker;
+          border: none;
+          cursor: pointer;
+
+          &::placeholder {
+            color: $lightFontColor;
+          }
+        }
+
+        .el-input__prefix {
+          i {
+            font-size: 20px;
+          }
+
+        }
+      }
+
+      .liveCasino-list-filter-selection {
+
+        .liveCasino-list-filter-option {
+          width: 90vw;
+          background: transparent;
+          color: $fontColor;
+          margin-bottom: 2vh;
+
+          .el-input {
+            .el-input__inner {
+              background: transparent;
+              color: $fontColor;
+              border-color: $lightFontColor;
+
+              &:focus {
+                border-color: $fontColor;
+              }
+            }
+
+            &:focus {
+              border-color: $fontColor;
+            }
+          }
+
+          .el-select__tags {
+            &:focus {
+              border-color: $fontColor
+            }
+
+            .el-tag--info {
+              background-color: $primaryGreen;
+              color: $fontColor;
+              border: none;
+
+              i {
+                color: $dark;
+              }
+            }
+          }
+
+          .liveCasino-list-filter-option-innerOption-right {
+            float: right;
+            color: $fontColor;
+            font-size: 1vw;
+            background: $primaryGreen;
+          }
+        }
+      }
+    }
+
+    .liveCasino-list {
+      align-self: center;
+      display: grid;
+      grid-template-columns: repeat(2, 43vw);
+      grid-column-gap: 3vw;
+      grid-row-gap: 3vw;
+
+      .liveCasino-list-card {
+        position: relative;
+        height: 35vw;
+        background: $blueGreen;
+        border-radius: $borderRadius5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .liveCasino-list-card-image {
+          width: 100%;
+          height: 100%
+        }
+
+        .liveCasino-list-card-image-exist {
+          width: 70%;
+          height: 70%;
+          border-radius: $borderRadius5;
+          background-image: url("~@/assets/img/logo.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        .liveCasino-list-card-container-middle {
+          display: none;
+          transition: .5s ease;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-color: $blackOpacity75;
+          text-align: center;
+
+          .liveCasino-list-card-wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+
+            .text {
+              color: $fontColor;
+              padding: 2.5vw 10vw;
+              text-align: center;
+              border-radius: $borderRadius3;
+              cursor: pointer;
+
+              &:nth-child(2) {
+                margin-top: 2vw;
+                border: 0.3vw solid $fontColor;
+              }
+            }
+          }
+
+          .login-text {
+            padding: 2.5vw 10vw;
+            color: $fontColor;
+            font-size: 4vw;
+            line-height: 1.5;
+            text-align: center;
+            border-radius: $borderRadius3;
+          }
+        }
+      }
+
+      .liveCasino-list-card.is_active {
+        .liveCasino-list-card-image {
+          opacity: 0.3;
+        }
+
+        .liveCasino-list-card-container-middle {
+          display: block;
+        }
+      }
+    }
+
+    .liveCasino-scroll-loading {
+      position: relative;
+      margin: 0 auto;
+      padding-top: 5vw;
+      text-align: center;
+    }
+
+    .liveCasino-list-noData {
+      position: relative;
+      height: 50vh;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .liveCasino-list-noData-label {
+        margin-top: 5vh;
+      }
+    }
+  }
+}

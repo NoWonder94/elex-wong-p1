@@ -1,0 +1,72 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 1200px) {
+  .responsible-gambling {
+    position: relative;
+    color: $white;
+
+    .mobile-header {
+      position: relative;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 26px 0;
+      border-bottom: 1px solid $separator;
+      height: 70px;
+
+      i {
+        position: absolute;
+        left: 20px;
+        font-size: 18px;
+      }
+    }
+
+    .content-right {
+      padding: 6vw 5vw;
+      background-color: $background;
+
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 24px;
+      }
+
+      h2 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 24px;
+      }
+
+      h3 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 24px;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 24px;
+        color: $lightGrey;
+      }
+
+      ul {
+        color: $lighterGrey;
+      }
+
+      ul>li {
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+
+    }
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .content-right {
+    padding: 24px 30px;
+  }
+
+
+}

@@ -1,0 +1,210 @@
+@import "../base.scss";
+$column: 45% 45%;
+
+@media only screen and (min-width: $pcMinWidth) {
+  .withdraw-detail{
+    position: relative;
+    padding: 30px;
+    min-height: 650px;
+    background-color: $secondaryBgColor;
+    border-radius: 10px;
+
+    .title-section{
+      display: grid;
+      grid-template-columns: $column;
+      justify-content: space-between;
+
+      .title{
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+
+        i{
+          margin-right: 10px;
+          cursor: pointer;
+        }
+      }
+
+      .type{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $blueGreen;
+        padding: 8px 15px;
+        border-radius: 4px;
+
+        .type-title{
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        .el-input__inner{
+          color: $fontColor;
+          background-color: transparent;
+          border: none;
+          width: 200px;
+        }
+      }
+    }
+
+    .card-list{
+      position: relative;
+      padding: 20px 20px 0;
+
+      .swiper-slide{
+        width: 320px !important;
+      }
+
+      .card-box{
+        position: relative;
+        cursor: pointer;
+
+        .card-background{
+          width: 320px;
+        }
+
+        .card-content{
+          position: absolute;
+          top: 0;
+          padding: 16px;
+          width: 288px;
+          height: 204px;
+          display: flex;
+          flex-direction: column;
+          color: rgba(255, 255, 255, 0.75);
+
+          .card-content-detail{
+            margin-top: 50px;
+            text-align: center;
+            line-height: 2;
+            color: $fontColor;
+
+            .card-content-detail-cardnum{
+              font-size: 20px;
+            }
+          }
+
+          .delete-button {
+            position: absolute;
+            right: 10px;
+            bottom: 15px;
+            width: 25px;
+            height: 25px;
+          }
+
+          .selected{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+      }
+
+      .swiper-button-prev, .swiper-button-next{
+        color: $fontColor;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 44%;
+        z-index: 11;
+      }
+
+      .swiper-button-prev:after, .swiper-button-next:after{
+          font-size: 20px;
+      }
+
+      .swiper-button-prev{
+          left: -880px;
+      }
+
+      .swiper-button-next{
+          left: 880px;
+      }
+
+      .gradient-right{
+        position: absolute;
+        right: 18px;
+        width: 100px;
+        height: 240px;
+        top: 18px;
+        background: linear-gradient(270deg, #000000 0%, #000000A7 52%, #00000000 100%);
+        z-index: 10;
+        transition: all 0.4s;
+      }
+
+      .gradient-left{
+        display: none;
+        position: absolute;
+        left: 18px;
+        width: 100px;
+        height: 240px;
+        top: 18px;
+        background: linear-gradient(270deg, #00000000  0%, #000000A7 52%, #000000 100%);
+        z-index: 10;
+        transition: all 0.4s;
+      }
+    }
+
+    .detail-section{
+      .detail-input{
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: $column;
+        justify-content: space-between;
+        row-gap: 50px;
+
+        .detail-box{
+          .detail-section-title{
+            font-size: 16px;
+            font-weight: bold;
+          }
+
+          .el-select{
+            width: 100%;
+          }
+
+          .el-input__inner{
+            color: $fontColor;
+            font-size: 15px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $lightFontColor;
+            border-radius: 0;
+            width: 100%;
+            padding: 0;
+            height: 50px;
+
+            &::placeholder{
+              color: $lightFontColor;
+            }
+          }
+        }
+      }
+
+      .detail-submit{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: $column;
+        justify-content: space-between;
+
+        .reminder{
+          font-size: 15px;
+
+          .reminder-subtitle{
+            padding-top: 10px;
+          }
+        }
+
+        .submit{
+          .button{
+            padding: 15px;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

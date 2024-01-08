@@ -1,0 +1,225 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .index {
+    margin: auto;
+    padding: 10px;
+    width: 1200px;
+    font-size: 16px;
+
+    .index-player-amount-display {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .index-player-icon {
+        width: 16px;
+      }
+
+      .index-player-amount {
+        padding-left: 10px;
+        color: $fontColor;
+      }
+    }
+
+    .index-player-wrap {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .index-player-state-cards {
+      width: 400px;
+      display: flex;
+      column-gap: 5px;
+
+      .index-player-state-card {
+        padding: 20px 15px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border: 1px solid $blackOpacity40;
+        border-radius: 6px;
+
+        .state-card-label {
+          padding-bottom: 10px;
+          color: $primaryColor;
+          font-size: 12px;
+          opacity: .5;
+        }
+
+        .state-card-value {
+          color: $primaryColor;
+          font-weight: bold;
+          font-size: 21px;
+        }
+
+        .state-card-amount {
+          color: $secondaryColor;
+          font-weight: bold;
+          font-size: 21px;
+        }
+
+        .state-card-amount.negative{
+          color: $warning;
+        }
+      }
+    }
+
+    .index-player-filter {
+      width: 450px;
+      height: 30px;
+      display: flex;
+      column-gap: 10px;
+
+      .index-player-filter-button {
+        padding: 0 22px;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .index-player-add-button {
+        position: relative;
+        padding: 5px 10px;
+        border-radius: 4px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        .icon-left {
+          width: 16px;
+          margin-right: 2vw;
+        }
+
+        span {
+          font-size: 14px;
+        }
+
+        .icon-right {
+          width: 12px;
+          position: absolute;
+          opacity: 0.5;
+          right: 5px;
+        }
+      }
+    }
+
+    .index-player-statistic-list {
+      position: relative;
+      padding-top: 20px;
+      width: 100%;
+
+      .el-tabs__nav-wrap::after {
+        border: 1px solid $blackOpacity20
+      }
+
+      .el-tabs__nav {
+
+        .el-tabs__active-bar {
+          height: 5px;
+          border-radius: 20px;
+          background-color: $secondaryColor;
+        }
+
+        .el-tabs__item {
+          color: $fontColorOpc50;
+        }
+
+        .el-tabs__item.is-active {
+          color: $fontColor;
+        }
+      }
+
+      .index-player-statistic-total {
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+
+        .total-label {
+          font-size: 14px;
+          flex: 1;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        .total-value {
+          font-size: 14px;
+          color: $fontColor90;
+          border-radius: 4px;
+          flex: 1;
+          padding: 8px 10px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        .total-value.totalwins{
+          color: $warning;
+          font-weight: bold;
+        }
+        .total-value.totalbets{
+          color: $black;
+          font-weight: bold;
+        }
+
+        .total-value.totalggr{
+          color: $green;
+          font-weight: bold;
+
+          .negative{
+            color: $warning;
+          }
+        }
+      }
+
+      .index-player-statistic-topPlayers-cards {
+        margin: auto;
+        width: 500px;
+
+        .topPlayers-card {
+          padding: 25px 15px;
+          margin-bottom: 10px;
+          border: 1px solid $blackOpacity20;
+          border-radius: 10px;
+          display: flex;
+
+          .topPlayers-card-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            justify-content: center;
+            align-items: flex-start;
+
+            .card-label {
+              color: $primaryColorOpc50;
+              font-size: 15px;
+              font-weight: bold;
+            }
+
+            .card-value {
+              color: $primaryColor;
+              font-size: 20px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .index-chart{
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid $fontColor;
+    }
+  }
+}

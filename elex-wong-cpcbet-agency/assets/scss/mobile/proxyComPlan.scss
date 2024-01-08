@@ -1,0 +1,23 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth)
+{
+  .proxyComPlan
+  {
+    position: relative;
+    padding-bottom: 25vw;
+
+    .proxyComPlan-plan-list
+    {
+      margin-top: 5vw;
+      padding: 0px 0px;
+
+      .proxyComPlan-list-card
+      {
+        display: flex;
+        flex-direction: column;
+        gap: 8vw;
+      }
+    }
+  }
+}

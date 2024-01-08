@@ -1,0 +1,323 @@
+.dividend
+{
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    padding-bottom: 70px;
+    letter-spacing: 0.48px;
+}
+.dividend .dividend-container
+{
+    padding: 20px 15px 0px 15px; 
+}
+
+/* content header */
+.dividend-container .dividend-page-header 
+{
+    position: relative;
+    border-radius: 15px 15px 0px 0px;
+    padding: 8px 15px;
+    background-color: #424FAD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dividend-page-header-title 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dividend-page-header-title img 
+{
+    width: 23px;
+    height: 23px;
+}
+.dividend-page-header-title span 
+{
+    margin-left: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+}
+.dividend-page-header .close-button 
+{
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+}
+/* content header end*/
+
+/* upper content */
+.upper-content
+{
+    position: relative;
+    padding: 20px 25px;
+    background: #FFFFFF;
+}
+.upper-content-title
+{
+    position: relative;
+    font-size: 12px;
+    text-align: left;
+    letter-spacing: 0.48px;
+    color: #666666;
+}
+.bar-container
+{
+    position: relative;
+	width: 100%;
+	height: 3px;
+	margin: 8px 0px;
+	background-color: #BBBBBB;
+}
+.upper-content-form
+{
+    margin-top: 25px;
+}
+.form-ref
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.form-ref:last-child
+{
+    margin-bottom: 0px;
+}
+.form-ref .form-ref-title
+{
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 3px;
+    letter-spacing: 0.48px;
+    color: #999999;
+}
+.form-ref .form-ref-input
+{
+    height: 30px;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666666;
+    background: #EEEEEE;
+}
+/* upper content end */
+
+/* lower content */
+.dividend-container .lower-content
+{
+    position: relative;
+    background: #383838;
+    padding: 20px 25px;
+    border-radius: 0px 0px 15px 15px;
+    color: #FFFFFF;
+}
+.dividend-form
+{
+    
+}
+.dividend-form .form-content
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.dividend-form .form-content .form-content-title
+{
+    color: #FFFFFF;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+.dividend-form .form-content .form-content-input
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.form-content .form-content-input input
+{
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666666;
+    background: #EEEEEE;
+}
+.form-content .form-content-input .freeze-button
+{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 0px 25px;
+    font-size: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF6488;
+}
+.form-content .form-content-input .release-button
+{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 0px 22px;
+    font-size: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #39DDD7;
+}
+.form-content .form-content-submit
+{
+    height: 30px;
+    margin-top: 5px;
+    padding: 0px 10px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    text-align: center;
+    background: #FFB326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/* lower content end */
+
+/* dividend history */
+.dividend-history
+{
+    position: relative;
+    margin-top: 15px;
+    padding: 20px 25px;
+    border-radius: 15px;
+    background: #383838;
+    color: #FFFFFF;
+}
+.dividend-history .dividend-history-date
+{
+    position: relative;
+    font-size: 12px;
+}
+.dividend-history .dividend-history-info
+{
+    position: relative;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.dividend-history-info .history-info
+{
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.history-info .history-info-title
+{
+    font-size: 10px;
+}
+.history-info .history-info-amount
+{  
+    padding-top: 10px;
+    font-size: 13px;
+}
+.dividend-history-divider
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.dividend-history-form
+{
+    padding-bottom: 10px;
+}
+.dividend-history-form .dividend-history-form-label
+{
+    font-size: 12px;
+    color: #ffffff;
+}
+.dividend-history-form .dividend-history-form-input
+{
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.dividend-history-form-input input
+{
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666666;
+    background: #EEEEEE;
+}
+.dividend-history-form-input .claim-button
+{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 0px 28px;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #39DDD7;
+    cursor: pointer;
+}
+/* dividend history end */
+
+
+.coinbar{
+    margin: 5% 0;
+    border-radius: 15px;
+}
+
+/*devidend rule start*/
+.dividend-rules
+{
+    margin: 30px 15px 0px;
+    padding: 15px;
+    color: #FFFFFF;
+}
+
+.dividend-rules-title
+{
+    font-size: 13px;
+
+}
+
+.dividend-rules-list
+{
+    margin-top: 10px;
+    list-style-type: '-';
+    padding-left: 5px;
+    list-style-position: outside;
+    list-style-type: lower-alpha;
+}
+
+.dividend-rules-list li
+{
+    padding-left: 5px;
+    font-size: 10px;
+    text-align: left;
+    line-height: 2;
+}
+
+/*devidend rule end*/

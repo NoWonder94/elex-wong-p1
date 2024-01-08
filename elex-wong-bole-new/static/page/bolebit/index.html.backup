@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BOLEBIT</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta name="facebook-domain-verification" content="cusq1hp0k0l11h0us56zab3v4ptrw0" />
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/mobile.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/web.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script>
+    (function (w, d, u) {
+      var s = d.createElement('script'); s.async = true; s.src = u + '?' + (Date.now() / 60000 | 0);
+      var h = d.getElementsByTagName('script')[0]; h.parentNode.insertBefore(s, h);
+    })(window, document, 'https://cdn.bitrix24.com/b20910445/crm/site_button/loader_1_opzo7y.js');
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '279666914354953');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=279666914354953&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<header>
+  <div class="header-row">
+    <div class="header-item">
+      <img src="assets/images/logo.png">
+    </div>
+    <div class="header-item select">
+      <img src="assets/images/language.png">
+      <select id="langBtn" name="lang" value="chinese">
+        <option value="english">English</option>
+        <option value="chinese">中文</option>
+      </select>
+    </div>
+  </div>
+</header>
+
+<body>
+  <div class="web">
+    <div class="background">
+      <div class="content">
+        <div class="banner">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img class="d-block w-100" src="./assets/images/carousel/banner003-01.png" alt="First slide">
+              </div>
+              <div class="item">
+                <img class="d-block w-100" src="./assets//images/carousel/banner003-02.png" alt="Second slide">
+              </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="game-nav">
+          <div class="game-nav-item active" onclick="handleGameNav(1, 'all')">
+            <img class="icon1" src="assets/images/icon/icon1_s.png">
+            <span data-translate="all">ALL</span>
+          </div>
+          <div class="game-nav-item" onclick="handleGameNav(2, 'slot')">
+            <img class="icon2" src="assets/images/icon/icon2_d.png">
+            <span data-translate="slot">SLOTS</span>
+          </div>
+          <div class="game-nav-item" onclick="handleGameNav(3, 'fishing')">
+            <img class="icon3" src="assets/images/icon/icon3_d.png">
+            <span data-translate="fishing">FISHING</span>
+          </div>
+          <div class="game-nav-item" onclick="handleGameNav(4, 'poker')">
+            <img class="icon4" src="assets/images/icon/icon4_d.png">
+            <span data-translate="poker">POKER</span>
+          </div>
+          <!-- <div class="game-nav-item" onclick="handleGameNav(5, 'contact')">
+                            <img class="icon5" src="assets/images/icon/icon5_d.png">
+                            <span data-translate="contact">CONTACT</span>
+                        </div> -->
+        </div>
+        <div class="games">
+          <div class="games-item" data-translate="allGame">
+            All Game
+          </div>
+          <div class="games-item total">
+            ( <span class="gameTotal"></span> )
+          </div>
+        </div>
+        <hr>
+        <div class="game-list">
+          <!-- <div class="game-item">
+                            <div class="game-item-img">
+                                <img src="assets/images/game/candy-crush-banner01.png">
+                            </div>
+                            <div class="game-item-hot">
+                                <img src="assets/images/hot_lable.png">
+                            </div>
+                            <div class="game-item-text">
+                                <div>
+                                    <div class="game-item-title">
+                                        Bole Guangdong Mahjong
+                                    </div>
+                                    <div class="game-item-desc">
+                                        Bole Guangdong Mahjong uses the classic gameplay in Guangdong, the rules are simple, to win of each game is fast, and you can’t stop it w
+                                    </div>
+                                </div>
+                                <div class="game-item-button">
+                                    TRY NOW
+                                </div>
+                            </div>
+                        </div> -->
+        </div>
+        <div class="coming-soon" data-translate="comingSoon">
+          Coming Soon
+        </div>
+      </div>
+    </div>
+    <div class="popup"></div>
+  </div>
+  <div class="mobile">
+    <div class="background">
+      <div class="content">
+        <div class="banner">
+          <div id="myCarouselMobile" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarouselMobile" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarouselMobile" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img class="d-block w-100" src="./assets/images/carousel/banner003-01.png" alt="First slide">
+              </div>
+              <div class="item">
+                <img class="d-block w-100" src="./assets//images/carousel/banner003-02.png" alt="Second slide">
+              </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarouselMobile" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarouselMobile" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="games">
+          <div class="games-item" data-translate="allGame">
+            All Game
+          </div>
+          <div class="games-item total">
+            ( <span class="gameTotal"></span> )
+          </div>
+        </div>
+        <div class="game-list"></div>
+        <div id="load" class="load-more" data-translate="loadMore">Load More</div>
+        <div class="coming-soon" data-translate="comingSoon">
+          Coming Soon
+        </div>
+      </div>
+    </div>
+    <div class="game-nav">
+      <div class="game-nav-item active" onclick="handleGameNav(1, 'all')">
+        <img class="icon1" src="assets/images/icon/icon1_s.png">
+        <span data-translate="all">ALL</span>
+      </div>
+      <div class="game-nav-item" onclick="handleGameNav(2, 'slot')">
+        <img class="icon2" src="assets/images/icon/icon2_d.png">
+        <span data-translate="slot">SLOTS</span>
+      </div>
+      <div class="game-nav-item" onclick="handleGameNav(3, 'fishing')">
+        <img class="icon3" src="assets/images/icon/icon3_d.png">
+        <span data-translate="fishing">FISHING</span>
+      </div>
+      <div class="game-nav-item" onclick="handleGameNav(4, 'poker')">
+        <img class="icon4" src="assets/images/icon/icon4_d.png">
+        <span data-translate="poker">POKER</span>
+      </div>
+    </div>
+  </div>
+  <div class="contact">
+    <div class="contactUs-button">
+      <div class="contactUs-button-web">
+        <div class="contactUs-button-icon">
+          <a href="mailto:Info@bolegaming.com" target="_blank"><img src="./assets/images/icon/mail.png" /></a>
+        </div>
+        <div class="contactUs-button-icon">
+          <a href="skype:live:bolegaming?chat" target="_blank"><img src="./assets/images/icon/skype.png" />
+          </a>
+        </div>
+        <div class="contactUs-button-icon">
+          <a href="https://t.me/bolegaming" target="_blank"><img src="./assets/images/icon/telegram.png" />
+          </a>
+        </div>
+      </div>
+      <div class="contactUs-button-mobile">
+        <!-- single -->
+        <div class="contactUs-button-mobile-tab" onclick="handleContactNav()">
+          <img src="./assets/images/icon/cs.png" />
+        </div>
+        <!-- inside list -->
+        <div class="contact-slide">
+          <div class="contactUs-button-mobile-nav">
+            <div class="contactUs-button-icon">
+              <a href="mailto:Info@bolegaming.com" target="_blank"><img src="./assets/images/icon/mail.png" /></a>
+            </div>
+            <div class="contactUs-button-icon">
+              <a href="skype:live:bolegaming?chat" target="_blank"><img src="./assets/images/icon/skype.png" />
+              </a>
+            </div>
+            <div class="contactUs-button-icon">
+              <a href="https://t.me/bolegaming" target="_blank"><img src="./assets/images/icon/telegram.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="popup">
+    <div class="popwrap">
+      <div class="popheader">
+        <div data-translate="game_info">GAME INFO</div>
+        <button type="button" class="close" aria-label="Close" onclick="closepop()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="popcontent1">
+        <div class="popitem">
+          <div class="poptitle" data-translate="game_name">Game name:</div>
+          <div data-translate="slocandy_name">Candy Crush</div>
+        </div>
+        <hr />
+        <div class="popitem">
+          <div class="poptitle" data-translate="game_type">Game type:</div>
+          <div data-translate="slot_machine">Slot Machine</div>
+        </div>
+        <hr />
+        <div class="popitem">
+          <div class="poptitle" data-translate="reels">Reels:</div>
+          <div data-translate="lines">/</div>
+        </div>
+        <hr />
+        <div class="popitem">
+          <div class="poptitle" data-translate="rtp">RTP</div>
+          <div data-translate="lines">96.50%</div>
+        </div>
+        <hr />
+        <div class="popitem">
+          <div class="poptitle" data-translate="max_win">Max Win:</div>
+          <div data-translate="lines">100x bet</div>
+        </div>
+        <hr />
+        <div class="popitem">
+          <div class="poptitle" data-translate="game_features">Game features:</div>
+          <div data-translate="lines">Buy Free Spin</div>
+        </div>
+        <hr />
+      </div>
+      <div class="popcontent2">
+        <div class="popitem2">
+          <div class="poptitle" data-translate="support_platform">Supported platform:</div>
+          <img src="assets/images/platform/computer.png" class="small_icon" alt="">
+          <img src="assets/images/platform/laptop.png" class="small_icon" alt="">
+          <img src="assets/images/platform/mobile.png" class="small_icon" alt="">
+          <img src="assets/images/platform/tablet.png" class="small_icon" alt="">
+        </div>
+        <hr class="mobile">
+        <div class="popitem2">
+          <div class="poptitle" data-translate="os">Supported OS:</div>
+          <img src="assets/images/os/windows.png" class="small_icon" alt="">
+          <img src="assets/images/os/html5.png" class="small_icon" alt="">
+          <img src="assets/images/os/apple.png" class="small_icon" alt="">
+          <img src="assets/images/os/android.png" class="small_icon" alt="">
+          <img src="assets/images/os/ios.png" class="small_icon" alt="">
+        </div>
+        <hr class="mobile">
+        <div class="popitem2">
+          <div class="poptitle" data-translate="language">Langauges:</div>
+          <img src="assets/images/flag/england.png" class="lang_icon" alt="">
+          <img src="assets/images/flag/china.png" class="lang_icon" alt="">
+          <img src="assets/images/flag/vietnam.png" class="lang_icon" alt="">
+          <img src="assets/images/flag/korea.png" class="lang_icon" alt="">
+        </div>
+      </div>
+      <div class="popcontent3">
+        <img src="assets/images/game/candy-crush-banner01.png" alt="">
+        <div data-translate="tryNow" class="pop-button" onClick="openlink()">TRY DEMO</div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+
+  // 语言库
+  var dictionary = {
+    "chinese": {
+      "lang": "zh-CN",
+      "all": "全部",
+      "slot": "老虎机",
+      "fishing": "捕鱼",
+      "poker": "棋牌",
+      "contact": "联系我们",
+      "allGame": "全部游戏",
+      "tryNow": "立即试玩",
+      "loadMore": "加载更多",
+      "comingSoon": "Coming Soon",
+      "slobskg_name": "宝石矿工",
+      "slobskg_desc": "跟着矮人前往地下挖掘宝石，伴随着铁铲与炸药声响，看你能够抱走多少的宝石。还有机会开启免费游戏，大赚一笔。",
+      "slostarburst_name": "彩虹水晶",
+      "slostarburst_desc": "夜空中闪烁的，是星星还是水晶宝石？红橙黄绿蓝靛紫七色彩虹水晶，带着闪耀光芒飞入赢家口袋！",
+      "slohockey_name": "冰球联盟",
+      "slohockey_desc": "挥洒汗水投入激情热血的冰球对决吧！天寒地冻也挡不住的热情，邀请您一起直捣黄龙带走大笔奖金。",
+      "slofruitrush_name": "水果冲击",
+      "slofruitrush_desc": "在宛若天堂的度假小岛，来解锁未开启的水果盘吧！大笔奖励等着赢家来启动。",
+      "slopirate_name": "海盗宝藏",
+      "slopirate_desc": "广阔的海洋当中，还有未知的宝藏等着被发掘。我们海盗说走就走说拿就拿，今天就来把宝藏带走吧！",
+      "slocandy_name": "糖果消除",
+      "slocandy_desc": "粉嫩的樱花树下，飘落瓣瓣粉红糖果。甜蜜的水果硬糖为您蹦出满满金币，选择2.5倍率更可轻松带走大笔奖金。",
+      "slosuper777_name": "超级777",
+      "slosuper777_desc": "霓虹灯下闪烁的街机游戏，看似简单的红色摇杆，却有着能让人欲罢不能想要一刷再刷的神奇魔力，今晚要赢多少呢？",
+      "slomermaid_name": "人鱼秘密",
+      "slomermaid_desc": "蔚蓝海水下，火辣而美丽的人鱼公主究竟藏着什么秘密呢？深海中是否真的藏有宝藏，就等您来一探究竟。",
+      "fishjackpot_name": "捕鱼大满贯",
+      "fishjackpot_desc": "捕鱼大满贯中，加入更加凶狠的特殊鱼种和带有满满金币的大鱼，等你来猎回家。",
+      "slokingofspeed_name": "速度之王",
+      "slokingofspeed_desc": "伴随轰隆隆的引擎声，巨大的卡车全速前进，一起来体验速度之王的快感。",
+      "slopharaohcoins_name": "法老的宝藏",
+      "slopharaohcoins_desc": "在古老的法老陵墓既神秘又危险，似乎藏有大量宝藏，前往一探究竟，开启免费旋转，取得大量宝藏吧。",
+      "slosamuraipreach_name": "武士传",
+      "slosamuraipreach_desc": "樱花树下伴着随风瓢散的花瓣，似乎充满危机的气味，准备好来场武士对决。",
+      "game_info": "游戏资料",
+      "game_name": "游戏名称:",
+      "game_type": "游戏种类:",
+      "lines": "中奖线",
+      "reels": "卷轴:",
+      "rtp": "玩家回报率",
+      "max_win": "最高可赢:",
+      "game_features": "游戏功能:",
+      "supported_platform": "支持平台:",
+      "supported_os": "支持系统:",
+      "slot_machine": "老虎机",
+      "fishing": "捕鱼",
+      "free_spin_onoff": "免费游戏开/关",
+      "buy_free_spin": "购买免费游戏",
+      "6_reels": "6-卷轴",
+      "5_reels": "5-卷轴",
+      "3_reels": "3-卷轴",
+      "language": "语言",
+      "details": '更多详情',
+    },
+    "english": {
+      "lang": "en-US",
+      "all": "ALL",
+      "slot": "SLOTS",
+      "fishing": "FISHING",
+      "poker": "POKER",
+      "contact": "CONTACT US",
+      "allGame": "All Game",
+      "tryNow": "TRY DEMO",
+      "loadMore": "Load More",
+      "comingSoon": "Coming Soon",
+      "slobskg_name": "GEM MINER",
+      "slobskg_desc": "Follow the dwarves to dig for gems underground, with the sound of shovels and explosives, see how many gems you can take away. There is also a chance to start free games and get more.",
+      "slostarburst_name": "RAINBOW CRYSTAL",
+      "slostarburst_desc": "What's that shing in the dark night? Is it star or the crystal gem? Red, orange, yellow, green, blue, indigo, and purple; all the shining stone fly to the winner's pocket！",
+      "slohockey_name": "Hockey",
+      "slohockey_desc": "Get into the hot hokey game with sweat and passion! Such enthusiam can never be stopped. Together we could get into the target and win big money.",
+      "slofruitrush_name": "Fruit Rush",
+      "slofruitrush_desc": "Unlock unopened fruit bowls on a holiday island like paradise! Big prizes await winners to kick off.",
+      "slopirate_name": "THE PIRATES",
+      "slopirate_desc": "In the vast ocean, there are still unknown treasures waiting to be discovered. We pirates will take it as we say go, come and take the treasure away today!",
+      "slocandy_name": "Candy Crush",
+      "slocandy_desc": "Under the pink cherry tree, petal pink candies are falling. The sweet fruit candy will pop up a lot of gold coins for you, and you can easily take away big bonuses by choosing 2.5 times.",
+      "slosuper777_name": "Super777",
+      "slosuper777_desc": "The arcade game flashing under the neon lights, the seemingly simple red joystick has a magical power that makes people want to play again and again. How much do you want to win tonight?",
+      "slomermaid_name": "MERMAID SECRETS",
+      "slomermaid_desc": "What secret does the hot and beautiful mermaid princess hide? Is there really treasure ubder the deep blue sea? All the mystery is waitng for you.",
+      "fishjackpot_name": "Jackpot Fishing",
+      "fishjackpot_desc": "In Jackpot Fishing, add more vicious special fish species and big fish full of treasures, waiting for you to hunt.",
+      "slokingofspeed_name": "King of speed",
+      "slokingofspeed_desc": "With the rumbling of the engine, the huge truck moved at full speed. Come and experience the thrill of the king of speed.",
+      "slopharaohcoins_name": "Pharaoh coins",
+      "slopharaohcoins_desc": "Mysterious and dangerous, the ancient tombs of the pharaohs seem to hold a vast treasure. Go check it out, unlock free spins and get tons of treasure.",
+      "slosamuraipreach_name": "Samurai preach",
+      "slosamuraipreach_desc": "The petals scattered with the wind under the cherry tree seem to be full of the smell of crisis. Get ready for a samurai duel!",
+      "game_info": "Game Info",
+      "game_name": "Game name:",
+      "game_type": "Game type:",
+      "lines": "Lines",
+      "reels": "Reels:",
+      "rtp": "RTP",
+      "max_win": "Max Win:",
+      "game_features": "Game features:",
+      "supported_platform": "Supported platform:",
+      "supported_os": "Supported OS:",
+      "slot_machine": "Slot Machine",
+      "fishing": "Fishing",
+      "free_spin_onoff": "Free Spin ON/OFF",
+      "buy_free_spin": "Buy Free Spin",
+      "6_reels": "6-Reel",
+      "5_reels": "5-Reel",
+      "3_reels": "3-Reel",
+      "language": "Language",
+      "details": "Details",
+
+    },
+  };
+
+  // 判断语言
+  var lang = localStorage.getItem('lang');
+  if (!lang) {
+    lang = 'chinese';
+    localStorage.setItem('lang', lang);
+  }
+  $("#langBtn").val(lang);
+
+  document.getElementById("langBtn").onchange = function () {
+    lang = $('#langBtn').val();
+    localStorage.setItem('lang', lang);
+    window.location.reload();
+  }
+
+  // 切换语言功能
+  var setLang = function (dictionary) {
+    $("[data-translate]").text(function () {
+      var key = $(this).data("translate");
+      $(this).text(dictionary[$(this).data("translate")]);
+      if (dictionary.hasOwnProperty(key)) {
+        return dictionary[key];
+      }
+    });
+  };
+
+  switch (lang) {
+    case 'chinese':
+      setLang(dictionary.chinese);
+      break;
+    case 'english':
+      setLang(dictionary.english);
+      break;
+    default:
+      setLang(dictionary.chinese);
+      break;
+  }
+
+  window.onscroll = function () {
+    if (document.documentElement.scrollTop > 0) {
+      $('header').css('background-color', '#270021');
+    } else {
+      $('header').css('background-color', 'rgba(39, 0, 33, 0.7)');
+    }
+  };
+
+  var currentItems;
+  var gameList = [
+    {
+      id: 'slocandy',
+      name: dictionary[lang]["slocandy_name"],
+      desc: dictionary[lang]["slocandy_desc"],
+      type: "slot",
+      img: "assets/images/game/candy-crush-banner01.png",
+      demo: 'https://res.slo888.com/slo-pub/index.html?env=demo&plat=gw&lang=' + dictionary[lang]['lang'] + '&gid=slocandy',
+      hot: true,
+      reels: dictionary[lang]['6_reels'],
+      lines: '/',
+      rtp: '96.50%',
+      free_game: false,
+      bonus_game: false,
+      html5: true,
+      gamble_mode: dictionary[lang]["buy_free_spin"],
+      progressive_jackpot: false,
+    },
+    {
+      id: 'slofruitrush',
+      name: dictionary[lang]["slofruitrush_name"],
+      desc: dictionary[lang]["slofruitrush_desc"],
+      type: "slot",
+      img: "assets/images/game/fruit-rush-banner.png",
+      demo: 'https://res.slo888.com/slo-pub/index.html?env=demo&plat=gw&lang=' + dictionary[lang]['lang'] + '&gid=slofruitrush',
+      hot: false,
+      reels: dictionary[lang]['5_reels'],
+      lines: '45-3125',
+      rtp: '96.50%',
+      free_game: true,
+      bonus_game: false,
+      html5: true,
+      gamble_mode: null,
+      progressive_jackpot: false,
+    },
+    {
+      id: 'fishjackpot',
+      name: dictionary[lang]["fishjackpot_name"],
+      desc: dictionary[lang]["fishjackpot_desc"],
+      type: "fishing",
+      img: "assets/images/game/jackpot-fishing-banner01.png",
+      demo: 'https://res.slo888.com/slo-pub/index.html?env=demo&plat=gw&lang=' + dictionary[lang]['lang'] + '&gid=fishjackpot',
+      hot: false,
+      reels: null,
+      lines: null,
+      rtp: null,
+      free_game: null,
+      bonus_game: null,
+      html5: true,
+      gamble_mode: null,
+      progressive_jackpot: null,
+    },
+    {
+      id: 'slopirate',
+      name: dictionary[lang]["slopirate_name"],
+      desc: dictionary[lang]["slopirate_desc"],
+      type: "slot",
+      img: "assets/images/game/the-pirates-banner.png",
+      demo: 'https://res.slo888.com/slo-pub/index.html?env=demo&plat=gw&lang=' + dictionary[lang]['lang'] + '&gid=slopirate',
+      hot: true,
+      reels: dictionary[lang]['5_reels'],
+      lines: '15',
+      rtp: '96.60%',
+      free_game: true,
+      bonus_game: false,
+      html5: true,
+      gamble_mode: dictionary[lang]["free_spin_onoff"],
+      progressive_jackpot: false,
+
+    },
+    {
+      id: 'slokingofspeed',
+      name: dictionary[lang]["slokingofspeed_name"],
+      desc: dictionary[lang]["slokingofspeed_desc"],
+      type: "slot",
+      img: "assets/images/game/king-speed-banner.png",
+      demo: 'https://res.slo888.com/slo-pub/index.html?env=demo&plat=gw&lang=' + dictionary[lang]['lang'] + '&gid=slokingofspeed',
+      hot: false,
+      reels: dictionary[lang]['5_reels'],
+      lines: '9',
+      rtp: '95.80%',
+      free_game: true,
+      bonus_game: false,
+      html5: true,
+      gamble_mode: null,
+      progressive_jackpot: false,
+    },
+    {
+      id: 'slobskg',
+      name: dictionary[lang]["slobskg_name"],
+      desc: dictionary[lang]["slobskg_desc"],
+      type: "slot",
+      img: "assets/images/game/gem-miner001-banner.png",
+      demo: 'https://res.slo888.com/slo-pub/index.html?env=demo&plat=gw&lang=' + dictionary[lang]['lang'] + '&gid=slobskg',
+      hot: false,
+      reels: dictionary[lang]['5_reels'],
+      lines: '243',
+      rtp: '96.45%',
+      free_game: true,
+      bonus_game: false,
+      html5: true,
+      gamble_mode: null,
+      progressive_jackpot: true,
+    },
+    {
+      id: 'slostarburst',
+      name: dictionary[lang]["slostarburst_name"],
+      desc: dictionary[lang]["slostarburst_desc"],
+      type: "slot",
+      img: "assets/images/game/rainbow-crystal-banner.png",
+      demo: 'https://res.slo888.com/slo-pub/index.html?env=demo&plat=gw&lang=' + dictionary[lang]['lang'] + '&gid=slostarburst',
+      hot: false,
+      reels: dictionary[lang]['5_reels'],
+      lines: '10',
+      rtp: '96.45%',
+      free_game: false,
+      bonus_game: false,
+      html5: true,
+      gamble_mode: null,
+      progressive_jackpot: false,
+    },
+    {
+      id: 'slohockey',
+      name: dictionary[lang]["slohockey_name"],
+      desc: dictionary[lang]["slohockey_desc"],
+      type: "slot",
+      img: "assets/images/game/hockey-banner.png",
+      demo: 'https://res.slo888.com/slo-pub/index.html?env=demo&plat=gw&lang=' + dictionary[lang]['lang'] + '&gid=slohockey',
+      hot: false,
+      reels: dictionary[lang]['5_reels'],
+      lines: '243',
+      rtp: '96.50%',
+      free_game: true,
+      bonus_game: false,
+      html5: true,
+      gamble_mode: null,
+      progressive_jackpot: false,
+    },
+    {
+      id: 'slosuper777',
+      name: dictionary[lang]["slosuper777_name"],
+      desc: dictionary[lang]["slosuper777_desc"],
+      type: "slot",
+      img: "assets/images/game/super-777-banner.png",
+      demo: 'https://res.slo888.com/slo-pub/index.html?env=demo&plat=gw&lang=' + dictionary[lang]['lang'] + '&gid=slosuper777',
+      hot: false,
+      reels: dictionary[lang]['3_reels'],
+      lines: '1',
+      rtp: "96.60%",
+      free_game: false,
+      bonus_game: false,
+      html5: true,
+      gamble_mode: null,
+      progressive_jackpot: false,
+    },
+    {
+      id: 'slomermaid',
+      name: dictionary[lang]["slomermaid_name"],
+      desc: dictionary[lang]["slomermaid_desc"],
+      type: "slot",
+      img: "assets/images/game/mermaid-secret-banner.png",
+      demo: 'https://res.slo888.com/slo-pub/index.html?env=demo&plat=gw&lang=' + dictionary[lang]['lang'] + '&gid=slomermaid',
+      hot: false,
+      reels: dictionary[lang]['5_reels'],
+      lines: '25',
+      rtp: '95.80%',
+      free_game: true,
+      bonus_game: false,
+      html5: true,
+      gamble_mode: null,
+      progressive_jackpot: false,
+    },
+    {
+      id: 'slopharaohcoins',
+      name: dictionary[lang]["slopharaohcoins_name"],
+      desc: dictionary[lang]["slopharaohcoins_desc"],
+      type: "slot",
+      img: "assets/images/game/pharaoh-coins-banner.png",
+      demo: 'https://res.slo888.com/slo-pub/index.html?env=demo&plat=gw&lang=' + dictionary[lang]['lang'] + '&gid=slopharaohcoins',
+      hot: false,
+      reels: dictionary[lang]['6_reels'],
+      lines: '1024',
+      rtp: '96.50%',
+      free_game: true,
+      bonus_game: false,
+      html5: true,
+      gamble_mode: null,
+      progressive_jackpot: false,
+    },
+    {
+      id: 'slosamuraipreach',
+      name: dictionary[lang]["slosamuraipreach_name"],
+      desc: dictionary[lang]["slosamuraipreach_desc"],
+      type: "slot",
+      img: "assets/images/game/samurai-preach-banner.png",
+      demo: 'https://res.slo888.com/slo-pub/index.html?env=demo&plat=gw&lang=' + dictionary[lang]['lang'] + '&gid=slosamuraipreach',
+      hot: false,
+      reels: dictionary[lang]['5_reels'],
+      lines: '25',
+      rtp: '96.60%',
+      free_game: true,
+      bonus_game: false,
+      html5: true,
+      gamble_mode: null,
+      progressive_jackpot: false,
+    },
+  ];
+
+  function getList(list) {
+    list.forEach(function (item, index) {
+      var gameItem = '';
+      gameItem = '<div class="game-item"><div class="game-item-img"><img src="' + item.img + '"></div>';
+      if (item.hot)
+        gameItem += '<div class="game-item-hot"><img src="assets/images/hot_lable.png"></div>';
+      gameItem += '<div class="game-item-text"><div class="game-item-title" data-translate="' + item.id + '_name" >' + item.name + '</div><div class="game-item-desc" data-translate="' + item.id + '_desc">' + item.desc + '</div><div data-translate="details" class="game-item-button2" onClick="openpop(`' + item.id + '`)">' + dictionary[lang]['details'] + '</div><div data-translate="tryNow" class="game-item-button" onClick="openlink(`' + item.demo + '`)">' + dictionary[lang]['tryNow'] + '</div></div></div>';
+      $('.game-list').append(gameItem);
+    });
+
+    $('.gameTotal').html(list.length);
+
+    // mobile load more button
+    currentItems = 3;
+    if (list.length > 3) {
+      $('#load').css('display', 'block');
+    } else {
+      $('#load').css('display', 'none');
+    }
+
+    // coming soon
+    if (list.length < 1) {
+      $('.coming-soon').css('display', 'block');
+    } else {
+      $('.coming-soon').css('display', 'none');
+    }
+  }
+
+  getList(gameList);
+
+  function handleGameNav(iconId, name) {
+    if (window.innerWidth >= 768) {
+      window.scrollTo({ left: 0, top: 312, behavior: 'smooth' })
+    } else {
+      window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
+    }
+
+    // change active class
+    $(".game-nav-item").removeClass("active");
+    $(".game-nav-item:nth-child(" + iconId + ")").addClass("active");
+
+    // change gamenav icon
+    for (var i = 1; i < 6; i++) {
+      if (i == iconId) {
+        $(".icon" + iconId).attr("src", "assets/images/icon/icon" + iconId + "_s.png");
+      } else {
+        $(".icon" + i).attr("src", "assets/images/icon/icon" + i + "_d.png");
+      }
+    }
+
+    // remove game item
+    $('.game-item').remove();
+
+    // filter the gamelist and append
+    switch (iconId) {
+      case 1:
+        getList(gameList);
+        break;
+      case 2:
+      case 3:
+      case 4:
+        var newGameList = gameList.filter(function (item) {
+          return item.type == name;
+        });
+        getList(newGameList);
+        break;
+      default:
+        getList(gameList);
+        break;
+    }
+  }
+
+  // mobile load more button
+  const loadmoreBtn = document.querySelector('#load');
+  loadmoreBtn.addEventListener('click', (e) => {
+    loadmore();
+  });
+
+  function loadmore() {
+    const elementList = Array.from(document.querySelectorAll('.mobile .game-item'));
+    for (let i = currentItems; i < currentItems + 3; i++) {
+      if (elementList[i]) {
+        elementList[i].style.display = 'block';
+      }
+    }
+    currentItems += 3;
+    if (currentItems >= elementList.length) {
+      loadmoreBtn.style.display = 'none';
+    }
+  }
+
+  //carousel
+  $('.carousel').carousel({
+    interval: 8000,
+  });
+
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      const elementList = Array.from(document.querySelectorAll('.mobile .game-item'));
+      var notEndOfItem = currentItems < elementList.length;
+      var reachBottom = $(window).scrollTop() + $(window).innerHeight() >= ($(document).height() - 1);
+      if (notEndOfItem && reachBottom) {
+        loadmore();
+      }
+    });
+  });
+
+
+  var isShowContactNav = false;
+  function handleContactNav() {
+    isShowContactNav = !isShowContactNav;
+    if (isShowContactNav) {
+      $('.contact-slide').show();
+      $('.contact-slide').addClass('slide-in');
+      var listener1 = $('.contact-slide').one('animationend', function () {
+        $('.contact-slide').removeClass('slide-in');
+      })
+    } else {
+      $('.contact-slide').addClass('slide-out');
+      var listener1 = $('.contact-slide').one('animationend', function () {
+        $('.contact-slide').removeClass('slide-out');
+        $('.contact-slide').hide();
+      })
+    }
+  };
+  function openlink(link) {
+    window.open(link);
+  }
+
+  function openpop(id) {
+    var tempgame = gameList.find(x => x.id === id);
+    var temp = '<div class="popheader"><div data-translate="game_info">' + dictionary[lang]['game_info'] + '</div><button type="button" class="close" aria-label="Close" onclick="closepop()"><span aria-hidden="true">&times;</span></button></div>' +
+      '<div class="popcontent1"><div class="popitem"><div class="poptitle" data-translate="game_name">' + dictionary[lang]['game_name'] + '</div><div data-translate="' + tempgame.id + '_name">' + tempgame.name + '</div></div><hr/>' +
+      '<div class="popitem"><div class="poptitle" data-translate="game_type">' + dictionary[lang]['game_type'] + '</div><div data-translate="';
+    if (tempgame.type == 'slot') {
+      temp += 'slot_machine">Slot Machine';
+    }
+    else if (tempgame.type == "fishing") {
+      temp += 'fishing">Fishing';
+    }
+    else {
+      temp += 'poker">Poker';
+    }
+
+    temp += '</div></div><hr/>';
+    if (tempgame.reels != null)
+      temp += '<div class="popitem"><div class="poptitle" data-translate="reels">' + dictionary[lang]['reels'] + '</div><div>' + tempgame.reels + '</div></div><hr/>';
+    if (tempgame.lines != null)
+      temp += '<div class="popitem"><div class="poptitle" data-translate="lines">' + dictionary[lang]['lines'] + '</div><div>' + tempgame.lines + '</div></div><hr/>';
+    if (tempgame.rtp != null)
+      temp += '<div class="popitem"><div class="poptitle" data-translate="rtp">' + dictionary[lang]['rtp'] + '</div><div>' + tempgame.rtp + '</div></div><hr/>';
+    temp += '<div class="popitem"><div class="poptitle" data-translate="max_win">' + dictionary[lang]['max_win'] + '</div><div data-translate="lines">100x bet</div></div><hr/>';
+    if (tempgame.gamble_mode != null)
+      temp += '<div class="popitem"> <div class="poptitle" data-translate="game_features">' + dictionary[lang]['game_features'] + '</div> <div>' + tempgame.gamble_mode + '</div></div><hr/>';
+
+    temp += '</div><div class="popcontent2"><div class="popitem2"><div class="poptitle" data-translate="support_platform">' + dictionary[lang]['supported_platform'] + '</div>' +
+      '<img src="assets/images/platform/computer.png" class="small_icon" alt=""><img src="assets/images/platform/laptop.png" class="small_icon" alt=""><img src="assets/images/platform/mobile.png" class="small_icon" alt=""><img src="assets/images/platform/tablet.png" class="small_icon" alt="">' +
+      '</div><hr class="mobile">' +
+      '<div class="popitem2"><div class="poptitle" data-translate="os">' + dictionary[lang]['supported_os'] + '</div><img src="assets/images/os/windows.png" class="small_icon" alt=""><img src="assets/images/os/html5.png" class="small_icon" alt=""><img src="assets/images/os/apple.png" class="small_icon" alt=""><img src="assets/images/os/android.png" class="small_icon" alt=""><img src="assets/images/os/ios.png" class="small_icon" alt="">' +
+      '</div><hr class="mobile">' +
+      '<div class="popitem2"><div class="poptitle" data-translate="language">' + dictionary[lang]['language'] + '</div><img src="assets/images/flag/england.png" class="lang_icon" alt=""><img src="assets/images/flag/china.png" class="lang_icon" alt=""><img src="assets/images/flag/vietnam.png" class="lang_icon" alt=""><img src="assets/images/flag/korea.png" class="lang_icon" alt="">' +
+      '</div></div>' +
+      '<div class="popcontent3"><img src="' + tempgame.img + '" alt=""><div data-translate="tryNow" class="pop-button" onClick="openlink(`' + tempgame.demo + '`)">' + dictionary[lang]['tryNow'] + '</div></div>';
+
+    $('.popwrap').html(temp);
+    $('.popup').show();
+    $('div.mobile').css('position', 'fixed');
+  }
+
+  function closepop() {
+    $('.popup').hide();
+    $('div.mobile').css('position', '');
+  }
+</script>
+
+</html>

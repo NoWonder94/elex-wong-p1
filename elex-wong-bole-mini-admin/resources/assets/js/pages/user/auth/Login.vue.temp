@@ -1,0 +1,135 @@
+<template>
+    <el-container>
+        <el-header>
+            <div class="container header-container">
+                <img class="logo" src="/img/logo/logo.png"/>
+                <div class="name">
+                    {{ $t('siteName') }}
+                    <small>{{ $t('description') }}</small>
+                </div>
+                <div class="lang">
+                    <el-dropdown placement="bottom" @command="handleCommand">
+                        <span class="el-dropdown-link">
+                            {{ language }}
+                            <i class="el-icon-arrow-down el-icon--right"></i>
+                        </span>
+                        <el-dropdown-menu slot="dropdown">
+                            <el-dropdown-item command="zh-CN">中文</el-dropdown-item>
+                            <el-dropdown-item command="en">English</el-dropdown-item>
+                        </el-dropdown-menu>
+                    </el-dropdown>
+                </div>
+            </div>
+        </el-header>
+        <el-main>
+            <div class="demo-layout flex-center">
+                <div class="grid-content flex-center flex-column">
+                    <h1 class="content-title mb-5">{{ $t('user.auth.login.signin') }}</h1>
+                    <form class="content-form" @submit.prevent="validate">
+                        <div class="form-group mb-4 pb-1">
+                            <input type="email" required="required" class="form-control form-control-lg custom-height" v-model="user.email" :placeholder="$t('user.auth.login.email')">
+                            <div class="form-text text-danger" v-if="msgError.code == 43101">{{ $t('error.'+msgError.code) }}</div>
+                            <div class="form-text text-danger" v-if="msgError.code == 43401">{{ $t('error.'+msgError.code) }}</div>
+                            <div class="form-text text-danger" v-if="msgError.code == 42000 && msgError.errors.email" v-for="info in msgError.errors.email">{{info}}</div>
+                        </div>
+                        <div class="form-group mb-4 pb-1">
+                            <input type="password" required="required" class="form-control form-control-lg custom-height" v-model="user.password" :placeholder="$t('user.auth.login.pwd')">
+                            <div class="form-text text-danger" v-if="msgError.code == 43002">{{ $t('error.'+msgError.code) }}</div>
+                            <div class="form-text text-danger" v-if="msgError.code == 42000 && msgError.errors.password" v-for="info in msgError.errors.password">{{info}}</div>
+                        </div>
+                        <div class="form-group">
+                            <vue-recaptcha ref="recaptcha" size="invisible" :sitekey="sitekey" @verify="onVerify" @expired="onExpired"></vue-recaptcha>
+                            <!--<a class="form-text text-muted" href="javascript:;">忘记密码？</a>-->
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block btn-lg custom-height" :disabled="submiting">{{ $t('user.auth.login.submit') }}</button>
+                            <div class="form-text text-danger" v-if="msgError.code == 42000 && msgError.errors.token" v-for="info in msgError.errors.token">{{info}}</div>
+                            <div class="form-text text-danger" v-if="msgError.code == 43411">{{ $t('error.'+msgError.code) }}</div>
+                            <div class="form-text text-danger" v-if="msgError.code == 403">{{ $t('error.'+msgError.code) }}</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </el-main>
+    </el-container>
+
+</template>
+
+<script>
+    import VueRecaptcha from 'vue-recaptcha'
+
+    export default {
+        components: {
+            VueRecaptcha
+        },
+        data() {
+            return {
+                sitekey: '6LfkdIkUAAAAABiAX5Irb-ehd8nFJZ9rJO3EXdut',
+                submiting: false,
+                msgError: {
+                    code: 200,
+                    errors: {},
+                },
+                user: {
+                    email: '',
+                    password: '',
+                    token: ''
+                },
+                language: this.$i18n.locale === 'zh-CN' ? '中文' : 'English'
+            }
+        },
+        methods: {
+            reset: function () {
+                this.$refs.recaptcha.reset();
+            },
+            validate: function () {
+                //this.$refs.recaptcha.execute();
+                this.onSubmit();
+            },
+            onExpired: function () {
+                if (confirm(this.$t('messages.page-expired'))) {
+                    window.location.reload();
+                }
+            },
+            onVerify: function (response) {
+                this.user.token = response;
+                this.onSubmit();
+            },
+            onSubmit() {
+                // 禁用提交
+                this.submiting = true;
+                // 开始请求
+                axios.post('/user/auth/sign-in', this.user).then((response) => {
+                    // 开启提交
+                    this.submiting = false;
+                    // code 判断
+                    if (response.data.resp_msg.code == 200) {
+                        // 刷新页面自动跳转
+                        window.location.reload();
+                    } else {
+                        this.msgError = response.data.resp_msg;
+                        // 刷新谷歌验证码
+                        this.reset();
+                    }
+                }).catch((thrown) => {
+                    console.log(thrown)
+                    // 开启提交
+                    this.submiting = false;
+                    // 错误提示
+                    this.$message.error(this.$t('messages.login-failed'));
+                });
+            },
+            // 设置语言
+            handleCommand(command) {
+                if (command == 'en') {
+                    this.language = 'English';
+                    this.$i18n.locale = 'en';
+                } else if (command == 'zh-CN') {
+                    this.language = '中文';
+                    this.$i18n.locale = 'zh-CN';
+                }
+                this.$cookie.set('lang', this.$i18n.locale, { expires: '1Y' });
+            }
+        }
+    }
+</script>

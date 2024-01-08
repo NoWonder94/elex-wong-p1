@@ -1,0 +1,59 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .footer {
+    display: none;
+
+    .footer-icons {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $secondaryBgColorOpacity90;
+      z-index: 1500;
+
+      .footer-nav-list {
+        display: flex;
+        padding: 2vw 5vw;
+
+        justify-content: space-between;
+
+        .footer-navs {
+          position: relative;
+          width: 15vw;
+          color: $lightFontColor;
+          font-size: 3vw;
+          text-align: center;
+
+          img {
+            width: 7vw;
+            opacity: 0.5;
+          }
+
+          a {
+            text-decoration: none;
+            color: $lightFontColor;
+          }
+
+          a:hover {
+            .border-line {
+              background-color: $lighterGreen;
+            }
+          }
+
+          .nuxt-link-exact-active {
+
+            img {
+              opacity: 1;
+              filter: invert(84%) sepia(19%) saturate(816%) hue-rotate(85deg) brightness(450%) contrast(101%);
+            }
+
+            .nav-title {
+              color: $lighterGreen;
+            }
+          }
+        }
+      }
+    }
+  }
+}

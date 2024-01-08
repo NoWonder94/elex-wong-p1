@@ -1,0 +1,15 @@
+<div class="root flex-col-center">
+  <div class="section-title">
+    <h2>Connect your Web3 Wallet</h2>
+  </div>
+
+  <!-- Wallets icons -->
+  <div class="row content justify-content-center text-center">
+    <img src="../assets/img/wallet.png">
+    <!-- <img src="../assets/img/wallet.png" height="40" />  -->
+    
+  </div>
+
+  <btn-loader title="Connect Wallet" class="margin-top-50" (clicked)="connectWallet()" [busy]="connectingWallet">
+  </btn-loader>
+</div>

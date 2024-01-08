@@ -1,0 +1,135 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .memberList {
+
+    .memberList-wrapping-mobile {
+      position: relative;
+      padding: 4vw;
+      min-height: 90vh;
+      border-radius: $borderRadius10;
+      background-color: $secondaryBgColor;
+
+      .memberList-back {
+        font-weight: bold;
+        font-size: 18px;
+
+        .el-icon-back {
+          padding-right: 2vw;
+          font-weight: bold;
+          font-size: 18px;
+          cursor: pointer;
+        }
+      }
+
+      .memberList-label-bar {
+        margin-top: 5vw;
+
+        .memberList-filter-input {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+
+          .filter-input-label {
+            margin-right: 4vw;
+          }
+
+          .filter-input {
+            width: 150px;
+            padding: 2vw 0;
+            margin-right: 4vw;
+            text-align: center;
+            color: $fontColor;
+
+            .el-input__inner {
+              background-color: transparent;
+              border: none;
+              color: $fontColor;
+              cursor: pointer;
+
+              &:focus {
+                border: 1px solid $primaryGreen;
+                outline: $primaryGreen;
+                border-radius: $borderRadius5;
+              }
+
+              &:hover {
+                color: $lightGreen  !important;
+
+                &::placeholder {
+                  color: $lightGreen  !important;
+                }
+              }
+            }
+          }
+
+          .filter-input-submit {
+            padding: 2vw 4vw;
+            border-radius: $borderRadius3;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .memberList-details-table {
+        margin-top: 4vw;
+
+        .el-table {
+          background: transparent;
+          color: $fontColor;
+
+          thead {
+            color: $fontColor;
+          }
+
+          tr,
+          tr:hover>td,
+          th.el-table__cell {
+            background: transparent;
+          }
+
+          td {
+            border-bottom: none;
+          }
+
+          &::before {
+            height: 0px;
+          }
+        }
+
+        .memberList-table-nodata {
+          margin-top: 2vw;
+          color: $fontColor;
+          font-weight: bold;
+          text-align: center;
+        }
+
+      }
+
+      .memberList-details-pagination {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10vw;
+        text-align: center;
+
+        .el-pager {
+          .active {
+            background-color: $primaryGreen  !important;
+          }
+
+          .number.active:hover {
+            color: $fontColor  !important;
+          }
+
+          .number:hover {
+            color: $primaryGreen  !important;
+          }
+        }
+      }
+    }
+  }
+}

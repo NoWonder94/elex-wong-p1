@@ -1,0 +1,40 @@
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section>
+
+<main id="main">
+  <section id="registersection" class="about">
+    <div class="aos-init aos-animate" data-aos="fade-up">
+      <div class="breadcrumb" (click)="goBack()">&lt; Back to project</div>
+
+      <!-- New campaign mandatory fields -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">New campaign</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <!-- Reward type (ERC20 tokens, nfts...) -->
+          <simple-box-edit heading="Reward type" [mode]="'select'" [selectKey]="'Reward type'" [value]="rewardType"
+            (edited)="onRewardTypeEdited($event)" [options]="rewardTypes">
+          </simple-box-edit>
+
+          <!-- Distribution (all users, random...) -->
+          <simple-box-edit heading="Reward distribution method" [mode]="'select'"
+            [selectKey]="'Reward distribution method'" [value]="distribution" (edited)="onDistributionEdited($event)"
+            [options]="distributionModes">
+          </simple-box-edit>
+
+          <!-- Medium (link, emailing) -->
+          <simple-box-edit heading="Sharing mode / medium" [mode]="'select'" [selectKey]="'Sharing mode / medium'"
+            [value]="medium" (edited)="onMediumEdited($event)" [options]="mediums">
+          </simple-box-edit>
+
+          <!-- Creation button -->
+          <btn-loader title="Create campaign" (clicked)="createCampaign()" [busy]="creatingCampaign">
+          </btn-loader>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>

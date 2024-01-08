@@ -1,0 +1,162 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1201px) {
+  .signout {
+    .signout-modal-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(12, 21, 29, 0.78);
+      z-index: 1000;
+      padding: 15px;
+      overflow-y: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .signout-modal {
+        /* todo:animation */
+        position: relative;
+        width: fit-content;
+        min-width: 300px;
+        min-height: 247px;
+        // height: 658px;
+        text-align: left;
+        border-radius: 4px;
+        outline: none;
+        background-color: $background;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        .modal-image-container {
+          position: relative;
+          width: 341px;
+          display: flex;
+          flex: auto;
+
+          .modal-image {
+            width: 100%;
+            height: 100%;
+          }
+
+          .modal-text {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            right: 35px;
+            display: flex;
+            text-align: left;
+            font-size: 24px;
+            font-weight: 800;
+            color: $white;
+          }
+        }
+
+        .signout-modal-container {
+          position: relative;
+          width: 485px;
+          height: 327px;
+          padding: 0px 32px;
+          // padding: 24px 32px;
+          overflow: hidden;
+          overflow-y: auto;
+
+          .header {
+            position: relative;
+            padding-bottom: 0;
+
+            i {
+              position: absolute;
+              right: -20px;
+              top: 0px;
+              padding: 15px;
+              cursor: pointer;
+              font-size: 14px;
+              color: $lightGrey;
+              font-weight: 900;
+              overflow: hidden;
+              z-index: 1;
+            }
+          }
+
+          .body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+
+            .title {
+              margin-top: 20px;
+              margin-bottom: 20px;
+              font-size: 32px;
+              font-weight: 800;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.6;
+              letter-spacing: -.56px;
+              text-align: left;
+
+              color: $white;
+            }
+
+            .desc {
+              margin-bottom: 24px;
+              font-size: 14px;
+              font-weight: 400;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.6;
+              letter-spacing: -.56px;
+              color: $lightGrey;
+            }
+
+
+            .signoutBtn {
+              width: 100%;
+              padding: 15px;
+              margin: 20px 0px;
+              margin-bottom: 10px;
+              color: $white;
+              font-size: 14px;
+              font-weight: 600;
+              letter-spacing: -.56px;
+              border-radius: 4px;
+              cursor: pointer;
+              background-color: $red;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              &:hover {
+                transition: background-color .5s ease;
+                background-color: $darkRed;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 1vw;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: $darkBackground;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: $separator;
+      opacity: 0.8;
+      border-radius: 30px;
+    }
+  }
+}

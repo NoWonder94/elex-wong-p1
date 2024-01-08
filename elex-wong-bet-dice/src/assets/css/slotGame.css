@@ -1,0 +1,420 @@
+.slotGame
+{
+    padding-bottom: 80px;
+}
+/* Tab */
+.bets-container{
+    margin: 5%;
+    border-radius: 15px;
+    background-color: white;
+}
+.nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #EEEEEE;
+}
+.nav .tabs
+{
+    flex: 1;
+}
+.nav .tabs a
+{
+    height: 100%;
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-pills li.active a
+{
+    color: #666666;
+    border-radius: 0px;
+    background-color: #fff;
+}
+.nav-pills li:first-child a:hover
+{
+    border-radius: 15px 0px 0px 0px;
+}
+.nav-pills li:last-child a:hover
+{
+    border-radius: 0px 15px 0px 0px;
+}
+.nav-pills li.active:first-child a
+{
+    border-radius: 15px 0px 0px 0px;
+}
+.nav-pills li.active:last-child a
+{
+    border-radius: 0px 15px 0px 0px;
+}
+.nav-logo
+{
+    width: 20px;
+    height: 20px;
+}
+.tab-content
+{
+    color : #666666;
+    background-color: #FFFFFF;
+    padding : 10px 15px;
+    border-radius: 15px;
+}
+/* Tab End*/
+
+/* range scroll bar */
+.bets-range-scroll-bar
+{
+    margin: 5%;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #393850;
+    border-radius: 30px;
+}
+
+.range-box {
+    position: relative;
+    width: 100%; 
+    margin: 0px 10px;
+}
+
+.roll-result{
+    position: absolute;
+    width: 56px;
+    height: 63px;
+    left: 0;
+    top: -63px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -28px;
+    opacity: 0;
+}
+
+.roll-result img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.roll-result span {
+    z-index: 2;
+    font-weight: 600;
+    text-shadow: rgb(255 255 255) 0px 1px 0px;
+    padding-top: 10px;
+}
+
+/* track */
+/* The slider itself */
+.slider
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%; 
+    height: 5px; 
+    border-radius: 30px;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+    margin: 0px;
+    z-index: 2;
+    position: relative;
+}
+
+.slider-over {
+    background-color: #00FBC2;
+    background-image: linear-gradient(#EE04FE, #EE04FE);
+}
+
+.slider-under {
+    background-color: #EE04FE;
+    background-image: linear-gradient(#00FBC2, #00FBC2);
+}
+
+/* 
+The slider handle 
+(use -webkit- (Chrome, Opera, Safari, Edge) 
+and -moz- (Firefox) to override default look) 
+*/
+
+/* ================================================= */
+.slider::-webkit-slider-runnable-track
+{   
+    
+}
+.slider::-moz-range-progress
+{   
+    height: 100%;
+}
+
+.slider-over::-moz-range-progress {
+    background-color: #EE04FE;
+}
+
+.slider-under::-moz-range-progress {
+    background-color: #00FBC2;
+}
+/* ================================================= */
+.slider::-webkit-slider-thumb
+{
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    background: url(../img/btn1.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb
+{
+    width: 25px; 
+    height: 25px; 
+    background: url(../img/btn1.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: cover;
+    background-size: 50px;
+    background-origin: content-box;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+/* track */
+.range-num
+{
+    color: #ffffff;
+    font-size: 12px;
+    padding: 0;
+}
+output
+{
+    padding: 0;
+}
+/* range scroll bar end */
+
+/* Live Stats */
+.livestats-icon
+{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 12px;
+}
+.bets-box
+{
+    margin: 5%;
+}
+.bets-box-header
+{
+    background-color: #424FAD;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.bets-box-header-icon
+{
+    align-self: center;
+}
+.bets-box-content
+{
+    background-color: #393850;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 5%;
+    color: white;
+    overflow-x: scroll;
+}
+.content-contanier
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.content-text
+{
+    font-size: 11px;
+}
+.content-value
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 9px;
+}
+.content-value img
+{
+    margin-left: 3px;
+}
+.content-win
+{
+    margin-left: 5px;
+    color: #00FBC2;
+    font-size: 9px;
+}
+.content-loss
+{
+    color: #EE04FE;
+    font-size: 9px;
+    margin-left: 5px;
+}
+.live-stats-progress
+{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.live-stats-progress-status
+{
+    font-size: 12px;
+}
+.progress
+{
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 0px;
+    margin: 0px 10px;
+    border-radius: 30px;
+}
+.progress-bar
+{
+    /* width: 100%; */
+    border-radius: 30px;
+}
+
+/* Live Stats */
+.bets-button
+{
+    width: 90%;
+    height: 35px;
+    margin: 5%;
+    margin-top: 18px;
+    margin-bottom: 35px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    background: #FFB326;
+}
+
+/* risky farm rules */
+.index-rules
+{
+    margin: 0px 15px 0px;
+    padding: 15px;
+    color: #FFFFFF;
+}
+.index-rules-title
+{
+    font-size: 13px;
+
+}
+.index-rules-list
+{
+    margin-top: 10px;
+    list-style-type: decimal;
+    padding-left: 12px;
+    list-style-position: outside;
+}
+.index-rules-list li
+{
+    padding-left: 5px;
+    font-size: 10px;
+    text-align: left;
+    line-height: 2;
+}
+/* risky farm rules */
+
+.tr-win a, .tr-lose a {
+    color: #fff;
+}
+
+.tr-win {
+    color: #00FBC2;
+}
+
+.tr-lose {
+    color: #EE04FE;
+}
+.ethercontent{
+    margin: 0 auto;
+    min-width: 324px;
+    font-size: 12px;
+}
+@media (min-width:472px){
+    .ethercontent{
+        margin: 0 auto;
+        min-width: 324px;
+        font-size: 12px;
+    }
+}
+@media (min-width:769px){
+    .ethercontent{
+        margin: 0 auto;
+        min-width: 324px;
+        font-size: 12px;
+    }
+}
+.mask{
+    width:35px;
+    padding:3px;
+}
+.ethergroup{
+    margin:10px;
+}
+.green{
+    color:#6192F1;
+}
+.padding_top{
+    padding:20% 0;
+}
+.center{
+    margin-left: 20px;
+}
+.machine{
+    padding-top:8%;
+    padding-bottom:2%;
+    text-align: center;
+}
+
+.coinbar{
+    margin: 5%;
+    border-radius: 15px;
+}
+
+.provably-fair {
+    padding: 0 0 15px 0;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.provably-fair-code {
+    font-size: 12px; 
+    border: none; 
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0;
+}
+
+.provably-fair-code a {
+    color: #6192F1;
+    text-decoration: underline;
+}

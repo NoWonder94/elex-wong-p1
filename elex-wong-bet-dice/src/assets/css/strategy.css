@@ -1,0 +1,240 @@
+.strategy
+{
+    position: relative;
+    letter-spacing: 0.48px;
+}
+.strategy-bet-form{}
+/* Bets Amount */
+.strategy-bet-amount
+{
+    position: relative;
+    padding-bottom: 10px;
+}
+.strategy-bet-amount-label
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #BBBBBB;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.strategy-bet-amount-input
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+.bet-amount-input
+{   
+    position: relative;
+    flex: 6;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.bet-amount-input input
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #666666;
+}
+.bet-amount-input .bet-amount-icon
+{  
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 0;
+    margin-right: 15px;
+}
+.bet-amount-option
+{
+    flex: 4;
+    height: 100%;
+    background: #EEEEEE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.bet-amount-option button
+{
+    border: none;
+    font-size: 12px;
+    color: #666666;
+}
+/* Bets Amount end */
+
+/* Number of Bets row */
+.strategy-bet-type
+{
+    position: relative;
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.strategy-bet-type .strategy-bet-type-left
+{
+    flex: 1;
+    padding-right: 2.5px;
+}
+.left-label
+{
+    color: #AAAAAA;
+    font-size: 12px;
+}
+.left-input
+{   
+    position: relative;
+    display: flex;
+    height: 35px;
+    flex-direction: row;
+    align-items: center;
+}
+.left-input input
+{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+.strategy-bet-type .strategy-bet-type-right
+{
+    flex: 1;
+    padding-left: 2.5px;
+}
+.right-label
+{
+    color: #AAAAAA;
+    font-size: 12px;
+}
+.right-input
+{   
+    position: relative;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.right-input input
+{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+/* icons */
+.infinite-icon {
+    position: absolute;
+    width: 13px;
+    height: 16px;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+.rollover-icon {
+    position: absolute;
+    width: 17px;
+    right: 0;
+    margin-right: 10px;
+}
+.cross-icon
+{
+    position: absolute;
+    width: 8px;
+    right: 0;
+    margin-right: 13px;
+    margin-bottom: 5px;
+}
+.percent-icon
+{
+    position: absolute;
+    width: 13px;
+    right: 0;
+    margin-right: 13px;
+
+}
+/* Number of Bets row end*/
+
+/* strategy bet option*/
+.strategy-bet-option
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+.strategy-bet-option-label
+{
+    font-size: 12px;
+    color: #AAAAAA;
+}
+.strategy-bet-option-select
+{
+    border: 2px solid #EEEEEE;
+    height: 35px;
+    border-radius: 5px;
+    color: #666666;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.strategy-bet-blue-button
+{   
+    height: 35px;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    background: #6192F1;
+}
+/* strategy bet option end */
+
+/* conditions */
+.strategy-bet-conditions
+{
+    display: flex;
+    flex-direction: column;
+}
+.strategy-bet-conditions-label {
+    font-size: 12px;
+    color: #AAAAAA;
+}
+.conditions-buttons {
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conditions-buttons button {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background: #ffffff;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+/* conditions end */
+
+/* final button */
+.autobet-button
+{   
+    width: 100%;
+    height: 35px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    background: #584CB9;
+
+}
+/* final button end */

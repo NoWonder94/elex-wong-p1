@@ -1,0 +1,131 @@
+@import '../Base.scss';
+
+@media only screen and (min-width: 700px)
+{
+    .contact {
+        padding: 20px;
+        padding-top: 0px;
+        min-width: 1200px;
+        color: #111419;
+        .title{
+            text-align: center;
+            font-size: 30px;
+            padding-top: 80px;
+        }
+        .sub-title{
+            color:#ffffff ;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 18px;
+            padding-bottom: 80px;
+        }
+        .container{
+            background: #ffffff 0% 0% no-repeat padding-box;
+            border-radius: 20px;
+            padding: 80px 150px;
+            .row {
+                margin-top:0px !important;
+            }
+            .form{
+                margin:0 auto;
+            }
+            .form-header{
+                font-size: 32px;
+                letter-spacing: 0.96px;
+                color: #1e1f21;
+                font-weight: bold;            
+            }
+            .input-field{
+                padding: 5px 0px;  
+                .input-field-text{
+                    padding-top: 10px;
+                    font-weight: 500;
+                    font-size: 16px;           
+                    letter-spacing: 0.48px;
+                }
+                input{  
+                    height: 60px;
+                    border-radius: 20px;
+                    width: 100%;
+                }
+                .el-textarea__inner{
+                    width: 100%;
+                    height: 204px;
+                    font-size: 16px;
+                    letter-spacing: 0.48px;
+                    padding: 20px 30px;
+                    border-radius: 20px;    
+                    resize: none;   
+                }  
+                
+                .el-input__inner  .el-textarea__inner{
+                   align-items: flex-start;
+                }  
+            }   
+            .radio-button{
+                padding: 10px 0px;
+                .el-checkbox__inner {
+                    border-radius: 33px;
+                    border: 1px solid #707070;
+                    width: 22px;
+                    height: 22px;
+                }
+                .input-field-text{
+                    font-size: 16px;        
+                    letter-spacing: 0.48px;
+                    color: #919191;
+                    padding: 0px 4px;
+                }  
+                .el-checkbox__label {
+                    padding-left: 10px;
+                    line-height: 19px;
+                    font-size: 14px;
+                }
+            }    
+            .el-button.is-round {
+                width: 140px;
+                height: 48px;
+                border: 2px solid #919191;
+                border-radius: 35px;
+                font-size: 16px;
+                
+            }
+            .el-select{
+                width:100%;
+                .el-input__inner::placeholder{
+                    text-align: left;
+                    font-size: 16px;
+                    letter-spacing: 0.48px;
+                    color: #919191;
+                }
+            }
+        }
+    }
+    .bottom{
+        position: relative;
+        display: flex;
+    }
+    .button{
+        margin-left: auto;
+    }
+    .el-select-dropdown__item{
+        font-size: 16px;
+        height: 50px;
+        padding: 5px 20px;
+    }
+    .el-textarea__inner {
+        border: 1px solid #919191;
+        border-radius: 35px;
+        font-size: 33px;
+    }
+    .el-input__inner {
+        border: 1px solid #919191;
+        border-radius: 35px;
+        font-size: 16px; 
+        padding: 5px 20px;
+    }
+    .el-checkbox{
+        position: relative;
+        white-space: normal !important;
+    }
+}

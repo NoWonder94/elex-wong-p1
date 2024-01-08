@@ -1,0 +1,161 @@
+@import "../base.scss";
+
+@media only screen and (min-width: $pcMinWidth) {
+  .withdraw{
+    position: relative;
+    padding: 30px;
+    min-height: 650px;
+    background-color: $secondaryBgColor;
+    border-radius: 10px;
+
+    .title-section{
+      display: flex;
+      justify-content: space-between;
+
+      .title{
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .edit{
+        font-size: 15px;
+        background-color: $blueGreen;
+        border-radius: 18px;
+        padding: 6px 20px;
+        cursor: pointer;
+      }
+    }
+
+    .card-list{
+      position: relative;
+      padding: 20px 20px 0;
+
+      .swiper-slide{
+        width: 320px !important;
+      }
+
+      .card-box{
+        position: relative;
+        cursor: pointer;
+
+        .card-background{
+          width: 320px;
+        }
+
+        .card-content{
+          position: absolute;
+          top: 0;
+          padding: 16px;
+          width: 288px;
+          height: 204px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          color: rgba(255, 255, 255, 0.75);
+
+          .card-content-detail{
+            text-align: center;
+            line-height: 2;
+            color: $fontColor;
+          }
+
+          .selected{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .empty-tick-space {
+            height: 35px;
+          }
+        }
+      }
+
+      .swiper-button-prev, .swiper-button-next{
+        color: $fontColor;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 44%;
+        z-index: 11;
+      }
+
+      .swiper-button-prev:after, .swiper-button-next:after{
+          font-size: 20px;
+      }
+
+      .swiper-button-prev{
+          left: -880px;
+      }
+
+      .swiper-button-next{
+          left: 880px;
+      }
+
+      .gradient-right{
+        position: absolute;
+        right: 18px;
+        width: 100px;
+        height: 240px;
+        top: 18px;
+        background: linear-gradient(270deg, #000000 0%, #000000A7 52%, #00000000 100%);
+        z-index: 10;
+        transition: all 0.4s;
+      }
+
+      .gradient-left{
+        display: none;
+        position: absolute;
+        left: 18px;
+        width: 100px;
+        height: 240px;
+        top: 18px;
+        background: linear-gradient(270deg, #00000000  0%, #000000A7 52%, #000000 100%);
+        z-index: 10;
+        transition: all 0.4s;
+      }
+    }
+
+    .withdraw-details{
+      padding-top: 30px;
+      display: grid;
+      grid-template-columns: 45% 45%;
+      justify-content: space-between;
+
+      .withdraw-section{
+        .withdraw-section-title{
+          font-size: 16px;
+          font-weight: bold;
+          padding-bottom: 10px;
+        }
+
+        .el-input__inner{
+          color: $fontColor;
+          font-size: 15px;
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid $lightFontColor;
+          border-radius: 0;
+          width: 100%;
+          padding: 0;
+          height: 50px;
+
+          &::placeholder{
+            color: $lightFontColor;
+          }
+        }
+
+        .submit{
+          padding-top: 130px;
+
+          .button{
+            padding: 15px;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

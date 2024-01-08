@@ -1,0 +1,345 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1999;
+
+    .header-login-register {
+      background-color: $secondaryBgColor;
+      margin: 0 auto;
+      padding: 5vw 4vw;
+      display: flex;
+      justify-content: space-between;
+
+      .header-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+
+        .header-menu-bar {
+          padding-left: 2vw;
+          padding-right: 5vw;
+
+          .header-menu-bar-icon {
+            margin: 0.8vw 0vw;
+            background-color: #FFFFFF;
+            width: 5.3vw;
+            height: 0.7vw;
+          }
+        }
+
+        .header-branding {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          cursor: pointer;
+
+          .header-logo-img {
+            padding-top: 1vw;
+            width: 40vw;
+            max-height: 8vw;
+          }
+
+          .header-branding-content {
+            padding-left: 2vw;
+            letter-spacing: 0.1vw;
+
+            .header-branding-title {
+              font-weight: bold;
+              font-size: 4vw;
+            }
+
+            .header-branding-slogan {
+              padding-top: 1vw;
+              color: $lightFontColor;
+              font-size: 3vw;
+            }
+          }
+        }
+      }
+
+      .header-login-dashboard-mobile {
+        display: flex;
+        align-items: center;
+
+        .header-before-login {
+          .login-button {
+            padding: 2vw 7vw;
+            font-size: 4vw;
+            font-weight: bold;
+            cursor: pointer;
+            align-items: center;
+          }
+        }
+
+        .header-after-login {
+          .dashboard-button {
+            padding: 2vw 6vw;
+            font-size: 3vw;
+            font-weight: bold;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .header-actions-mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: auto;
+      z-index: 9999;
+
+      .header-actions-mobile-container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding: 5vw;
+        width: 80vw;
+        min-height: 100vh;
+        background-color: $secondaryBgColorOpacity90;
+
+        .header-actions-mobile-header {
+          display: flex;
+          flex-direction: row;
+          padding: 3vw 0;
+          align-items: center;
+          cursor: pointer;
+
+          .header-logo-img {
+            width: 33vw;
+          }
+
+          .header-branding-content {
+            padding-left: 2vw;
+            letter-spacing: 0.1vw;
+
+            .header-branding-title {
+              font-weight: bold;
+              font-size: 4vw;
+            }
+
+            .header-branding-slogan {
+              padding-top: 1vw;
+              color: $lightFontColor;
+              font-size: 3vw;
+            }
+          }
+
+          .el-icon-close {
+            margin-left: auto;
+            font-size: 6vw;
+            font-weight: bold;
+          }
+
+        }
+
+        hr {
+          width: 100%;
+          background-color: none;
+          border: none;
+          border-top: 1px solid $whiteOpacity30;
+        }
+
+        .header-actions-mobile-content {
+          padding: 5vw 0;
+
+          .header-before-login {
+            display: flex;
+            flex-direction: column;
+            height: 50vw;
+            font-size: 3vw;
+            justify-content: space-between;
+
+            .login-input-with-select {
+              width: 100%;
+              margin-right: 2vw;
+              color: $dark;
+              border-radius: $borderRadius3;
+              background-color: $fontColor;
+
+              .login-option {
+                width: 22vw;
+              }
+            }
+
+            .login-input {
+              width: 100%;
+              font-size: 3vw;
+              color: $dark;
+              border-radius: $borderRadius3;
+              background-color: $fontColor;
+            }
+
+            .login-button {
+              padding: 3vw 7vw;
+              font-weight: bold;
+              cursor: pointer;
+              text-align: center;
+              align-items: center;
+            }
+
+            .register-button {
+              display: block;
+              width: 100%;
+              padding: 3vw 7vw;
+              font-weight: bold;
+              text-decoration: none;
+              text-align: center;
+              align-items: center;
+            }
+
+            .forget-pwd-button {
+              padding: 3vw 7vw;
+              color: $whiteOpacity30;
+              font-weight: bold;
+              text-decoration: none;
+              text-align: center;
+            }
+          }
+
+          .header-after-login {
+            .header-actions-mobile-nav {
+
+              .header-actions-mobile-nav-item {
+                margin: 3vw 0;
+                padding: 3vw;
+                display: flex;
+                align-items: center;
+
+                .header-navs {
+                  display: flex;
+                  align-items: center;
+                }
+
+                img {
+                  margin-right: 4vw;
+                  width: 6vw;
+                }
+
+                img.dashboard {
+                  filter: invert(100%) sepia(0%) saturate(7489%) hue-rotate(145deg) brightness(98%) contrast(104%);
+                }
+              }
+
+              .nuxt-link-exact-active {
+                .side-menu-nav-item {
+                  opacity: 1;
+                }
+              }
+            }
+
+            .logout-button {
+              padding: 3vw 7vw;
+              font-weight: bold;
+              border-radius: $borderRadius3;
+              cursor: pointer;
+              text-align: center;
+              align-items: center;
+            }
+          }
+        }
+
+
+        .header-actions-mobile-footer {
+          margin-top: auto;
+          font-size: 3vw;
+
+          .header-actions-mobile-footer-container {
+            // height: 60vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .select {
+              display: flex;
+              border-bottom: 1px solid $whiteOpacity30;
+              justify-content: space-between;
+              align-items: center;
+
+              .select-title {
+                padding: 6vw 0;
+                color: $lightFontColor80
+              }
+
+              .el-select {
+                .el-input__inner {
+                  background-color: transparent;
+                  border: none;
+                  color: $fontColor;
+                  text-align: right;
+                  height: 10vw;
+                }
+              }
+            }
+
+            .select-redirect {
+              border-bottom: 1px solid $whiteOpacity30;
+
+              .select-redirect-label {
+                padding: 6vw 0vw;
+                color: $lightFontColor80;
+              }
+            }
+
+            .app-download-button {
+              display: flex;
+              flex-direction: row;
+              padding: 1.5vw 3vw;
+              margin-top: 6vw;
+              width: 100%;
+              border-radius: 1vw;
+              text-align: center;
+              justify-content: center;
+              align-self: center;
+
+              img {
+                width: 7vw;
+                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(9deg) brightness(103%) contrast(102%);
+              }
+
+              .app-download-text {
+                padding: 1.5vw 0;
+                padding-left: 2vw;
+                font-size: 3.5vw;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .header-drawer-enter-active,
+    .header-drawer-leave-active {
+      transition: all 0.3s ease-out;
+    }
+
+    .header-drawer-enter,
+    .header-drawer-leave-to {
+      transform: translateX(-100%);
+    }
+
+    /*=============== SCROLL BAR ===============*/
+    ::-webkit-scrollbar {
+      /* set size to see the scroll bar */
+      width: 0vw;
+      background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: $primaryGreen;
+      border-radius: $borderRadius30;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: $primaryGreen;
+    }
+  }
+}

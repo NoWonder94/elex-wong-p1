@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SDMNScene3Skin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="resizeGroup" left="0" right="0" top="0" bottom="0">
+		<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image top="0" right="0" left="0" bottom="0" source="sdmn_freebg4_jpg"/>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" width="920" x="180" height="521" y="85">
+			<e:Group id="group1" x="-30.66" y="0">
+			<e:Image id="icon1"  y="0" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon2"  y="180" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon3"  y="360" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			</e:Group>
+			<e:Group id="group2" x="173.35" y="0">
+			<e:Image id="icon4"  y="0" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon5"  y="180" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon6"  y="360" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			</e:Group>
+			<e:Group id="group3" x="373.33" y="0" scaleX="1" scaleY="1">
+			<e:Image id="icon7"  y="0" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon8"  y="180" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon9"  y="360" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			</e:Group>
+			<e:Group id="group4" x="577.32" y="0">
+			<e:Image id="icon10"  y="0" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon11"  y="180" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon12"  y="360" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			</e:Group>
+			<e:Group id="group5" x="779.96" y="0">
+			<e:Image id="icon13"  y="0" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon14"  y="180" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			<e:Image id="icon15"  y="360" horizontalCenter="0" source="sdmn_icon_10_png"/>
+			</e:Group>
+		</e:Group>
+			<e:Image source="sdmn_freescroller_bg_png" y="34" horizontalCenter="-76"/>
+			<e:Image source="sdmn_freescroller_bg2_png" x="136" y="52"/>
+			<e:Image source="sdmn_bg1_png" y="18.39" horizontalCenter="16"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

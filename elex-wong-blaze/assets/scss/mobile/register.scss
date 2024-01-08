@@ -1,0 +1,865 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 700px) {
+  .reg {
+    .reg-modal-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      z-index: 999;
+
+      .reg-modal {
+        text-align: center;
+        background-color: $background;
+        height: 100vh;
+        width: 100vw;
+        color: $white;
+        overflow-y: auto;
+
+        .header {
+          margin-top: 3vw;
+
+          .logo {
+            margin-top: 0vw;
+            width: 25%;
+          }
+
+          i {
+            position: absolute;
+            padding: 5vw;
+            top: -2vw;
+            right: -2vw;
+            font-size: 20px;
+            font-size: 5vw;
+            font-weight: bold;
+          }
+
+          .btn {
+            display: flex;
+            justify-content: center;
+            padding-top: 4vw;
+            color: $darkgrey;
+            font-size: 3vw;
+
+            .register {
+              margin-left: 5vw;
+              color: $white;
+            }
+          }
+
+          .el-divider {
+            background-color: $separator;
+          }
+        }
+
+        .body {
+          padding: 5vw;
+          padding-top: 3vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .title {
+            font-size: 4.8vw;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            text-align: center;
+            color: $white;
+            margin-bottom: 6vw;
+
+          }
+
+          .text-input {
+            position: relative;
+            background-color: $darkBackground;
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 4vw;
+
+            input {
+              color: $white;
+              font-size: 3.6vw;
+              padding: 5vw 3.8vw 3vw;
+              width: 100%;
+              border-radius: 4px;
+              background-color: $darkBackground;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            label {
+              position: absolute;
+              pointer-events: none;
+              font-size: 2.8vw;
+              font-weight: bold;
+              color: $lightGrey;
+              left: 3.8vw;
+              top: 4vw;
+              transition: 0.2s ease all;
+            }
+
+            .pass i {
+              position: absolute;
+              font-size: 2.8vw;
+              font-weight: bold;
+              color: $lightGrey;
+              right: 4vw;
+              top: 5vw;
+              transition: 0.2s ease all;
+              cursor: pointer;
+            }
+
+            input:focus~label,
+            input:not(:placeholder-shown)~label,
+            .select-active {
+              top: 1.8vw;
+              font-size: 2vw;
+            }
+
+            /* phone input */
+            .vue-tel-input{
+              position: relative;
+              border: none;
+
+              &:focus-within{
+                box-shadow: none;
+              }
+
+              input:disabled{
+                color: $white;
+              }
+
+              .vti__dropdown{
+                background-color: $darkBackground;
+              }
+
+              .vti__dropdown.disabled, .vti__dropdown.open{
+                background-color: $darkBackground;
+              }
+
+              .vti__dropdown:hover{
+                background-color: $darkBackground;
+              }
+
+              .vti__dropdown-list{
+                color: $white;
+                background-color: $darkBackground;
+                border: none;
+
+                .vti__dropdown-item{
+                  display: flex;
+                  align-items: center;
+                  padding: 8px 12px;
+                  font-size: 12px;
+                }
+
+                .highlighted{
+                  background-color: $background;
+                }
+              }
+
+              .vti__input {
+                padding: 15px 12px;
+                margin-left: 35px;
+              }
+            }
+
+            .country-code{
+              position: absolute;
+              width: 40px;
+              font-size: 14px;
+              top: 16px;
+              left: 60px;
+              color: $lightGrey;
+              font-size: 12px;
+            }
+          }
+
+          select {
+            color: $white;
+            font-size: 3.6vw;
+            padding: 5vw 3.8vw 3vw;
+            width: 100%;
+            background-color: $darkBackground;
+            border-radius: 4px;
+
+            option {
+              font-size: 3vw;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .dob-row {
+            display: grid;
+            grid-template-columns: repeat(3, 22vw);
+            align-items: center;
+            padding-bottom: 2.2vw;
+
+            .el-select {
+              .el-input__inner {
+                color: $white;
+                font-size: 3.6vw;
+                padding: 7vw 5vw 2vw;
+                width: 100%;
+                background-color: $darkBackground;
+                border-radius: 4px;
+                border: none;
+              }
+
+              .el-select__caret {
+                color: $white;
+                font-size: 3vw;
+                margin-top: 2.5vw;
+              }
+
+              .el-select-dropdown {
+                background-color: $darkBackground;
+                border: none;
+
+                .el-select-dropdown__item {
+                  font-size: 3vw;
+                  color: $darkBackground;
+                  height: 6vw;
+                  line-height: 5vw;
+                  background-color: $white;
+
+                }
+
+                .el-select-dropdown__item.selected {
+                  background-color: steelblue;
+                  font-weight: unset;
+                }
+
+                .el-select-dropdown__item.hover,
+                .el-select-dropdown__item:hover {
+                  background-color: steelblue;
+                }
+              }
+
+              .el-popper[x-placement^=bottom] {
+                margin-top: 0;
+
+                .popper__arrow {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          .wallet-row {
+            display: flex;
+            align-items: center;
+
+            .el-select {
+              width: 100%;
+              padding: 5px;
+
+              .el-input__inner {
+                width: 100%;
+                color: $white;
+                font-size: 11px !important;
+                font-weight: 600;
+                background-color: $darkBackground;
+                border-radius: 4px;
+                border: none;
+                padding: 0px 8px;
+              }
+
+              .el-select-dropdown {
+                background-color: $darkBackground;
+                border: none;
+
+                .el-select-dropdown__item {
+                  text-align: left;
+                  font-size: 12px;
+                  color: $white;
+                  // height: 20px;
+                  // padding: 10px 0px;
+                }
+                .el-select-dropdown__item.selected{
+                  color: $red !important;
+                }
+
+                .el-select-dropdown__item.hover,
+                .el-select-dropdown__item:hover {
+                  color: $red !important;
+                  background-color: steelblue;
+                }
+              }
+
+              .el-popper[x-placement^=bottom] {
+                margin-top: 0;
+
+                .popper__arrow {
+                  display: none;
+                  background-color: $darkBackground;
+                  color: $darkBackground;
+                }
+              }
+            }
+
+            .tooltip-label{
+              font-size: 18px;
+              margin-right: 4vw;
+            }
+          }
+
+          .error-input {
+            width: 100%;
+            color: $red;
+            font-size: 13px;
+            text-align: left;
+            padding-left: 15px;
+            margin-top: -15px;
+            margin-bottom: 10px;
+          }
+
+          .signBtn {
+            width: 100%;
+            background-color: $red;
+            color: $white;
+            font-size: 3.4vw;
+            border-radius: 1vw;
+            font-weight: 600;
+            letter-spacing: -.56px;
+            padding: 3.5vw 0vw;
+            margin-top: 6vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .arrow {
+              transform: rotate(90deg);
+              margin-left: 4vw;
+              width: 3%;
+
+            }
+          }
+
+          .inactive {
+            background-color: $red;
+            opacity: 0.5;
+          }
+
+          /* password hints block */
+          .pass-input{
+            position: relative;
+            width: 100%;
+
+            .pass-hints {
+              position: absolute;
+              top: -26vw;
+              width: 100%;
+              min-width: 150px;
+              // height: 5vw;
+              padding: 7px 14px;
+              line-height: 1.45;
+              text-align: left;
+              font-size: 3.6vw;
+              font-weight: 400;
+              letter-spacing: normal;
+              color: $darkgrey;
+              border-radius: 4px;
+              border: 2px solid $separator;
+              box-shadow: 0 2px 2px rgba(0,0,0,.5);
+              background: $transparentDarkBackground;
+              z-index: 1;
+
+              &::before {
+                content:'';
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 0;
+                height: 0;
+                border-top: 5px solid $separator;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+              }
+
+              .good {
+                color: $limeGreen;
+              }
+            }
+          }
+        }
+
+        .footer {
+          position: relative;
+          padding: 0 5vw;
+          padding-bottom: 5vw;
+
+          .text {
+            text-align: left;
+            font-size: 2.7vw;
+            white-space: normal;
+          }
+
+          .el-divider {
+            background-color: $separator;
+            margin: 7vw 0;
+
+            .el-divider__text {
+              background-color: $background;
+            }
+
+            p {
+              color: $darkgrey;
+              font-size: 2.5vw;
+            }
+          }
+
+          .el-link {
+            vertical-align: bottom;
+            font-size: 2.7vw;
+          }
+
+          .row {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+
+            .otherLogin {
+              background-color: $background;
+              border: 1px solid $separator;
+              margin-right: 5vw;
+              padding: 2.5vw 7vw;
+              margin-left: 0;
+
+              img {
+                width: 5vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .reg {
+    .reg-modal-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(12, 21, 29, 0.78);
+      animation: zoomFadeIn 0.3s ease-in-out;
+
+      .reg-modal {
+        text-align: center;
+        background-color: $background;
+        width: 80vw;
+        height: 80vh;
+        padding-bottom: 2vw;
+        color: $white;
+        overflow-y: auto;
+
+        .header {
+          position: relative;
+          margin-top: 3vw;
+
+          .logo {
+            margin-top: 0vw;
+            width: 15%;
+          }
+
+          i {
+            position: absolute;
+            // padding: 5vw;
+            top: -1vw;
+            right: 2vw;
+            font-size: 25px;
+            font-weight: bold;
+            z-index: 998;
+          }
+
+          .btn {
+            display: flex;
+            justify-content: center;
+            padding-top: 12px;
+            color: $darkgrey;
+            font-size: 18px;
+
+            .register {
+              margin-left: 5vw;
+              color: $white;
+            }
+          }
+
+          .el-divider {
+            background-color: $separator;
+          }
+        }
+
+        .body {
+          padding: 3vw 5vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .title {
+            font-size: 20px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            text-align: center;
+            color: $white;
+            margin-bottom: 24px;
+
+          }
+
+          .text-input {
+            position: relative;
+            background-color: $darkBackground;
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 24px;
+
+            input {
+              color: $white;
+              font-size: 20px;
+              padding: 30px 20px 20px;
+              width: 100%;
+              border-radius: 4px;
+              background-color: $darkBackground;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            label {
+              position: absolute;
+              pointer-events: none;
+              font-size: 16px;
+              font-weight: bold;
+              color: $lightGrey;
+              left: 20px;
+              top: 20px;
+              transition: 0.2s ease all;
+            }
+
+            .pass i {
+              position: absolute;
+              font-size: 16px;
+              font-weight: bold;
+              color: $lightGrey;
+              right: 16px;
+              top: 30px;
+              transition: 0.2s ease all;
+              cursor: pointer;
+            }
+
+            input:focus~label,
+            input:not(:placeholder-shown)~label,
+            .select-active {
+              top: 10px;
+              font-size: 16px;
+            }
+
+          }
+
+          select {
+            color: $white;
+            font-size: 20px;
+            padding: 30px 20px 20px;
+            width: 100%;
+            background-color: $darkBackground;
+            border-radius: 4px;
+
+            option {
+              font-size: 3vw;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .dob-row {
+            display: grid;
+            grid-template-columns: repeat(3, 120px);
+            align-items: center;
+            padding-bottom: 10px;
+
+            .el-select {
+              .el-input__inner {
+                color: $white;
+                font-size: 18px;
+                padding: 50px 20px 20px;
+                width: 100%;
+                background-color: $darkBackground;
+                border-radius: 4px;
+                border: none;
+              }
+
+              .el-select__caret {
+                color: $white;
+                font-size: 15px;
+                display: flex;
+
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+
+                .el-select-dropdown {
+                  background-color: $darkBackground;
+                  border: none;
+
+                  .el-select-dropdown__item {
+                    font-size: 16px;
+                    color: $darkBackground;
+                    height: 6vw;
+                    line-height: 5vw;
+                    background-color: $white;
+
+                  }
+
+                  .el-select-dropdown__item.selected {
+                    background-color: steelblue;
+                    font-weight: unset;
+                  }
+
+                  .el-select-dropdown__item.hover,
+                  .el-select-dropdown__item:hover {
+                    background-color: steelblue;
+                  }
+                }
+
+                .el-popper[x-placement^=bottom] {
+                  margin-top: 0;
+
+                  .popper__arrow {
+                    display: none;
+                  }
+                }
+              }
+            }
+
+          }
+
+          .wallet-row {
+            display: flex;
+            align-items: center;
+
+            .el-select {
+              width: 100%;
+              padding: 10px 5px;
+              line-height: 1.4;
+              font-weight: 600;
+
+              .el-input__inner {
+                width: 100%;
+                color: $white;
+                font-size: 17px;
+                background-color: $darkBackground;
+                border-radius: 4px;
+                border: none;
+              }
+
+              .el-select-dropdown {
+                background-color: $darkBackground;
+                border: none;
+
+                .el-select-dropdown__item {
+                  text-align: left;
+                  font-size: 17px;
+                  color: $white;
+                  // height: 20px;
+                  // padding: 10px 0px;
+                }
+                .el-select-dropdown__item.selected{
+                  color: $red !important;
+                }
+
+                .el-select-dropdown__item.hover,
+                .el-select-dropdown__item:hover {
+                  color: $red !important;
+                  background-color: steelblue;
+                }
+              }
+
+              .el-popper[x-placement^=bottom] {
+                margin-top: 0;
+
+                .popper__arrow {
+                  display: none;
+                  background-color: $darkBackground;
+                  color: $darkBackground;
+                }
+              }
+            }
+
+            .tooltip-label{
+              font-size: 18px;
+              margin-right: 16px;
+            }
+          }
+
+          .error-input {
+            width: 100%;
+            color: $red;
+            font-size: 13px;
+            text-align: left;
+            padding-left: 15px;
+            margin-top: -15px;
+            margin-bottom: 10px;
+          }
+
+          .signBtn {
+            width: 100%;
+            background-color: $red;
+            color: $white;
+            font-size: 18px;
+            border-radius: 1vw;
+            font-weight: 600;
+            letter-spacing: -.56px;
+            padding: 15px 0;
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .arrow {
+              transform: rotate(90deg);
+              margin-left: 10px;
+              width: 2%;
+            }
+          }
+
+          .inactive {
+            background-color: $red;
+            opacity: 0.5;
+          }
+
+          /* password hints block */
+          .pass-input{
+            position: relative;
+            width: 100%;
+
+            .pass-hints {
+              position: absolute;
+              top: -130px;
+              width: 100%;
+              min-width: 150px;
+              height: 120px;
+              padding: 7px 14px;
+              line-height: 1.45;
+              text-align: left;
+              font-size: 18px;
+              font-weight: 400;
+              letter-spacing: normal;
+              color: $darkgrey;
+              border-radius: 4px;
+              border: 2px solid $separator;
+              box-shadow: 0 2px 2px rgba(0,0,0,.5);
+              background: $transparentDarkBackground;
+              z-index: 1;
+
+              &::before {
+                content:'';
+                position: absolute;
+                top: 120px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 0;
+                height: 0;
+                border-top: 5px solid $separator;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+              }
+
+              .good {
+                color: $limeGreen;
+              }
+            }
+          }
+        }
+
+        .footer {
+          position: relative;
+          padding: 0 5vw;
+
+          .text {
+            text-align: left;
+            font-size: 16px;
+            white-space: normal;
+          }
+
+          .el-divider {
+            background-color: $separator;
+            margin: 20px 0;
+
+            .el-divider__text {
+              background-color: $background;
+            }
+
+            p {
+              color: $darkgrey;
+              font-size: 16px;
+            }
+          }
+
+          .el-link {
+            vertical-align: bottom;
+            font-size: 16px;
+          }
+
+          .row {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+
+            .otherLogin {
+              background-color: $background;
+              border: 1px solid $separator;
+              margin-right: 20px;
+              padding: 20px 30px;
+              margin-left: 0;
+
+              img {
+                width: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// add animation of zoom fade in
+@keyframes zoomFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

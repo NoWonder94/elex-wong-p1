@@ -1,0 +1,94 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .header {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    height: 94px;
+    z-index: 901;
+    background-color: $secondaryBgColor;
+    font-size: 16px;
+    color: $whiteFontColor;
+
+    .header-content {
+      margin: 0 auto;
+      padding: 28px 0px;
+      width: 1200px;
+      text-align: center;
+
+      .header-content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+
+        .header-content-nav-wrap {
+          display: flex;
+        }
+
+        .header-content-logo {
+          padding-right: 25px;
+
+          img {
+            width: 120px;
+          }
+        }
+
+        .header-content-nav-container {
+          position: relative;
+          top: 8px;
+          
+          .header-content-nav {
+            margin: 2px 10px;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+
+            a {
+              vertical-align: middle;
+            }
+          }
+        }
+
+        .header-content-others {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          list-style: none;
+
+          .header-content-platforms-container {
+            display: flex;
+
+            .header-content-platforms {
+              padding: 0 8px;
+            }
+
+            .fa-brands {
+              font-size: 22px;
+              cursor: pointer;
+            }
+          }
+
+          .header-content-subcribe {
+            div {
+              padding: 0px 24px;
+              cursor: pointer;
+            }
+          }
+
+          .header-content-playnow {
+            margin: 0 8px;
+            padding: 8px 12px;
+            background-color: $bgColor;
+            border-radius: 5px;
+            color: $secondaryBgColor;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+
+      }
+    }
+  }
+}

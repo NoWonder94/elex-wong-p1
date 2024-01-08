@@ -1,0 +1,41 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "^7.2.2",
+    "axios": "^0.27.2",
+    "chart.js": "^3.8.0",
+    "core-js": "^3.19.3",
+    "element-ui": "2.15.8",
+    "hchs-vue-charts": "^1.2.8",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "notiflix": "^3.2.5",
+    "nuxt": "^2.15.8",
+    "swiper": "^8.0.3",
+    "vue": "^2.6.14",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-chartjs": "^4.1.2",
+    "vue-clipboard2": "^0.3.3",
+    "vue-element-loading": "^2.0.2",
+    "vue-lodash": "^2.1.2",
+    "vue-server-renderer": "^2.6.14",
+    "vue-session": "^1.0.0",
+    "vue-template-compiler": "^2.6.14",
+    "vuetify": "^2.6.1",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.3",
+    "@vue/composition-api": "^1.7.1",
+    "sass": "^1.53.0",
+    "sass-loader": "10.1.1"
+  }
+}

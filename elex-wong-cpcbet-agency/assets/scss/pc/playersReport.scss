@@ -1,0 +1,139 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+
+    .playersReport {
+        width: 1200px;
+        margin: auto;
+        padding: 20px 10px;
+
+        .playersReport-filter-container {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            .playersReport-filter-label {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .playersReport-form {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+
+                .el-form-item {
+                    margin-bottom: 0;
+
+
+                    .playersReport-filter-input,
+                    .playersReport-filter-date,
+                    .playersReport-filter-select {
+                        width: 155px;
+
+                        .el-input__inner {
+                            color: $fontColor;
+                            background: transparent;
+                            border: 1px solid $blackOpacity20;
+
+                            &::placeholder {
+                                color: $blackOpacity20;
+                            }
+                        }
+                    }
+
+                    .playersReport-filter-date {
+                        width: 150px;
+                    }
+
+                    .playersReport-filter-select {
+                        width: 130px;
+                    }
+
+                    .playersReport-filter-button {
+                        border: none;
+
+                        &:hover {
+                            color: $fontColor;
+                            background-color: $secondaryColor;
+                            border: none;
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+
+        .playersReport-request-table {
+            padding-top: 15px;
+            margin: 0 auto;
+
+            tr{
+              th:nth-last-child(2),td:nth-last-child(2){
+                border-left: 1px solid white;
+              }
+            }
+
+            .playersReport-bet,.playersReport-commission{
+              color: $black;
+              font-weight: bold;
+            }
+
+            .playersReport-win{
+              color: $warning;
+              font-weight: bold;
+            }
+
+            .playersReport-bonus{
+              color:$secondaryColor;
+              font-weight: bold;
+            }
+
+            .playersReport-ggr,.playersReport-ngr{
+              color: $green;
+              font-weight: bold;
+
+              &.negative{
+                color: $warning;
+              }
+            }
+        }
+
+        .playersReport-statistic {
+            padding-top: 20px;
+            display: flex;
+            // justify-content: space-between;
+            column-gap: 20px;
+
+            .playersReport-statistic-item {
+                display: flex;
+                align-self: center;
+                column-gap: 5px;
+            }
+        }
+
+        .playersReport-request-table-pagination {
+            position: relative;
+            margin: 0 auto;
+            margin-top: 15px;
+            text-align: center;
+
+            .el-pager {
+                .active {
+                    background-color: $secondaryColor !important;
+                }
+
+                .number.active:hover {
+                    color: $fontColor !important;
+                }
+
+                .number:hover {
+                    color: $secondaryColor !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,153 @@
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section>
+
+<main id="main">
+  <section id="registersection" class="about">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+      <div class="loading" *ngIf="fetchingInformation">
+        <ng-lottie [options]="lottieOptions" width="200px" height="200px"></ng-lottie>
+        Fetching information
+      </div>
+
+      <div *ngIf="!fetchingInformation">
+        <div class="blank-text-box" *ngIf="inexistingCode">
+          Ahem, this code is not bound to anything...
+        </div>
+
+        <div class="blank-text-box" *ngIf="inexistingCampaign">
+          Wait... This campaign doesn't actually exist...
+        </div>
+
+        <div *ngIf="campaignInfo" class="campaignInfoContainer">
+
+          <div *ngIf="hasLogo()">
+            <div class="flex-col-center">
+              <img [src]="getLogoPath()" class="logo" />
+            </div>
+          </div>
+
+          <div class="campaign-info flex-col-center row content col-lg-8"
+            [ngClass]="hasLogo() ? 'offset-lg-1' : 'offset-lg-2'">
+
+
+            <div *ngIf="agreedToJoin && !activeAccount">
+              <connect-wallet *ngIf="!walletAddress"></connect-wallet>
+              <reg-account-signup *ngIf="walletAddress && !accountExists" (registered)="onRegistered()">
+              </reg-account-signup>
+              <wallet-sign-in *ngIf="walletAddress && accountExists" (connected)="onConnected()"></wallet-sign-in>
+            </div>
+
+            <div *ngIf="!agreedToJoin || activeAccount">
+              <div class="section-title">
+                <h2 *ngIf="!alreadyJoinedBefore">Join airdrop campaign</h2>
+                <h2 *ngIf="alreadyJoinedBefore">Airdrop campaign</h2>
+              </div>
+              <div class="name">{{ campaignInfo.name }}</div>
+
+              <!-- Banner -->
+              <div class="flex-col-center">
+                <img *ngIf="hasBanner()" [src]="getBannerPath()" class="banner" />
+              </div>
+
+              <div class="data-info-box" *ngIf="campaignInfo.presentation">
+                <p class="heading">Presentation</p>
+                <p class="text" [innerHtml]="getPresentationValue()"></p>
+              </div>
+
+              <div class="data-info-box" *ngIf="campaignInfo.token">
+                <p class="heading">Token</p>
+                <p class="text">{{ campaignInfo.token.symbol }}</p>
+              </div>
+
+              <div class="data-info-box" *ngIf="campaignInfo.token">
+                <p class="heading">Network</p>
+                <p class="text">{{ getNetworkName(campaignInfo.token.chain_id) }}</p>
+              </div>
+
+              <div class="data-info-box" *ngIf="campaignActions.length > 0">
+                <p class="heading">Campaign Actions</p>
+                <div *ngFor="let campaignAction of campaignActions">
+                  <p class="text">{{ getCampaignActionSummary(campaignAction) }}</p>
+                </div>
+                <data-is-loading *ngIf="fetchingCampaignActions"></data-is-loading>
+              </div>
+
+              <!-- Action: join -->
+              <div *ngIf="!alreadyJoinedBefore && !justJoined" class="join-block">
+                <p>Would you like to join this campaign?</p>
+                <btn-loader *ngIf="activeAccount" title="Join!" (clicked)="joinCampaign()"></btn-loader>
+                <btn-loader *ngIf="!activeAccount" title="Connect and join!" (clicked)="connectThenJoinCampaign()">
+                </btn-loader>
+              </div>
+
+              <!-- Joined successfully -->
+              <div *ngIf="justJoined" class="blank-text-box">
+                Done!
+              </div>
+
+              <div class="data-info-box" *ngIf="alreadyJoinedBefore || justJoined">
+                <p class="heading">Invite others to get more tokens! Here is your personal sharing link:</p>
+                <p class="text" class="ref-link" (click)="copyLinkToClipboard()">{{ getPersonalSharingLink() }} <i
+                    class="bi bi-clipboard"></i></p>
+              </div>
+
+              <div *ngIf="campaignInfo.promo_link" class="blank-text-box">
+                <btn-loader title="Visit project page" (clicked)="openPromoLink()"></btn-loader>
+              </div>
+
+              <div class="countdown" *ngIf="isEventStarted && !isEventEnded">
+                <p class="countdown title">Campaign ends in </p>
+                <span> {{daysToDday}} </span> Day(s)
+                <span> {{hoursToDday}} </span>Hrs
+                <span> {{minutesToDday}} </span>Min
+                <span> {{secondsToDday}} </span>Sec <br>
+              </div>
+
+              <!-- <div class="countdown" *ngIf="!isEventStarted && !isEventEnded">
+                <p class="countdown title">Campaign coming soon </p>
+              </div>
+
+              <div class="countdown" *ngIf="!isEventStarted && isEventEnded">
+                <p class="countdown title">Campaign ended</p>
+              </div> -->
+            </div>
+
+            <div class="rules" *ngIf="campaignInfo.rules">{{ campaignInfo.rules }}</div>
+
+            <!-- Rewards -->
+            <div class="section-title" *ngIf="alreadyJoinedBefore">
+              <h2>My rewards</h2>
+            </div>
+
+            <div *ngIf="campaignInfo && campaignHasERC20RewardForAll() && rewardsStatus" class="rewards-table">
+              <div class="row">
+                <div class="col col-md-3">Claimable tokens</div>
+                <div class="col col-md-3">{{ rewardsStatus.erc20.claimableTokens }}</div>
+                <div class="col col-md-6" *ngIf="canClaimERC20Tokens()">
+                  <btn-loader title="Claim" (clicked)="claimERC20Tokens()" [busy]="claimingERC20Tokens"></btn-loader>
+                </div>
+                <div class="col col-md-6 info" *ngIf="!canClaimERC20Tokens()">
+                  Share you referral link with more people to continue to accumulate more tokens to claim later!
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-md-3">Claimed tokens</div>
+                <div class="col col-md-3">{{ rewardsStatus.erc20.claimedTokens }}</div>
+                <div class="col col-md-6 info">Tokens already sent or that will be sent during the next airdrop</div>
+              </div>
+              <div class="row">
+                <div class="col col-md-3">Airdropped tokens</div>
+                <div class="col col-md-3">{{ rewardsStatus.erc20.airdroppedTokens }}</div>
+                <div class="col col-md-6 info">Tokens actually sent to your wallet</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>

@@ -1,0 +1,58 @@
+@import "../../shared.scss";
+
+.project {
+  padding: 10px;
+  transition: all 0.2s ease;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: #F6F6F6;
+  border-bottom: solid 2px transparent;
+
+  &:hover {
+    //background:#E0E0E0;
+    border-color: #47b2e4;
+  }
+}
+
+.ref-link {
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: #47b2e4;
+  }
+}
+
+.data-info-box-action {
+  position: relative;
+
+  .data-info-box-action-button {
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+  }
+
+  .data-info-box-inner-action-button {
+    bottom: 0px;
+    position: absolute;
+    right: 20px;
+  }
+}
+
+.joined-campaign {
+  cursor: pointer;
+  margin-bottom: 5px;
+
+  &:hover {
+    background: #f6f6f6;
+  }
+}
+
+.emailsent {
+  position: absolute;
+  bottom: 5px;
+  right: 20px;
+  padding-left: 20px;
+  color: red;
+  font-size: 12px;
+}

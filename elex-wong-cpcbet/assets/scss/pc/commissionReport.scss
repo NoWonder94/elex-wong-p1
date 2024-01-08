@@ -1,0 +1,256 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .commission-report {
+
+    .commission-report-overview-container,
+    .commission-report-details {
+      position: relative;
+      padding: 30px;
+      background-color: $secondaryBgColor;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+
+    .commission-report-overview-container {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      .commission-report-back {
+        padding-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+
+        span {
+          cursor: pointer;
+        }
+      }
+
+      .commission-report-overview-exist {
+        align-self: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        padding: 20px 0px;
+
+        .commission-report-overview-card {
+          width: 100%;
+          max-height: 120px;
+          color: $fontColor;
+          text-align: center;
+          border-radius: 5px;
+          padding: 20px 10px;
+          background-color: $blueGreen;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .card-total-number {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 2px;
+          }
+
+          .card-title {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .commission-report-details {
+      padding-bottom: 20px;
+
+      .commission-report-filter {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+
+        .commission-report-filter-date {
+          display: flex;
+          width: 420px;
+
+          .filter-date-title {
+            margin-right: auto;
+            padding: 10px 0;
+          }
+
+          .el-date-editor.el-input {
+
+            .el-input__prefix {
+              display: none;
+            }
+          }
+        }
+
+        .commission-report-filter-user {
+          display: flex;
+          // width: 400px;
+
+          .filter-user-title {
+            padding: 10px 0;
+          }
+
+          .filter-user-input {
+            width: 200px;
+
+            .el-input {
+              width: 100%;
+            }
+          }
+
+          .filter-button {
+            padding: 10px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      hr {
+        margin: 10px 0;
+        border: none;
+        border-bottom: 1px solid $lightFontColor;
+        opacity: 0.5;
+      }
+
+      .commission-report-datetime-button-group {
+        display: flex;
+        padding: 10px 25px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+
+        .commission-report-datetime-button {
+          padding: 8px 25px;
+          background-color: #90FFAE;
+          color: $blueGreen;
+          font-size: 14px;
+          font-weight: bold;
+          border-radius: 30px;
+          cursor: pointer;
+        }
+      }
+
+      .commission-report-details-table {
+
+        .el-table {
+          background-color: inherit;
+          color: $fontColor;
+          border-bottom: none;
+
+          .el-table__body-wrapper {
+            min-height: 400px;
+          }
+
+          thead {
+            color: $fontColor;
+          }
+
+          tr,
+          tr:hover>td,
+          th.el-table__cell {
+            background-color: inherit;
+          }
+
+          td {
+            border-bottom: none;
+          }
+
+          &::before {
+            height: 0px;
+          }
+        }
+      }
+
+      .el-input {
+        width: 140px;
+
+        .el-input__inner {
+          background-color: inherit;
+          border: none;
+          color: $fontColor;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:focus {
+            border: 1px solid $primaryGreen;
+          }
+
+          &:hover {
+            color: $lightGreen  !important;
+          }
+
+          &::placeholder {
+            color: $lightFontColor  !important;
+          }
+        }
+      }
+
+      .commission-report-details-paginate {
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 20px;
+
+        .el-pager {
+          .active {
+            background-color: $primaryGreen  !important;
+          }
+
+          .number.active:hover {
+            color: $fontColor  !important;
+          }
+
+          .number:hover {
+            color: $primaryGreen  !important;
+          }
+        }
+      }
+
+    }
+
+    .commission-report-nodata {
+      color: $fontColor;
+      font-weight: bold;
+      text-align: center;
+
+      img {
+        padding-bottom: 10px;
+      }
+
+      div {
+        line-height: 16px;
+      }
+    }
+
+    .commission-title {
+      padding-bottom: 10px;
+    }
+
+    .commission-table-nodata {
+      padding: 40px;
+    }
+
+    /*=============== SCROLL BAR ===============*/
+    ::-webkit-scrollbar {
+      height: 6px;
+      background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: $primaryGreen;
+      border-radius: $borderRadius30;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: $primaryGreen;
+    }
+
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+  }
+}

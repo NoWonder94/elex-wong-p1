@@ -1,0 +1,52 @@
+
+
+Creating a new project account
+
+1.
+
+insert into account (username, forwarding)
+values ("0x9370f0C1dcE3f5bA9AB216e545cb740A837765b6@eth.emails.com", "alanywc22@skiff.com");
+
+insert into dao (uid, twitter_id, url, category) values 
+((select uid from account where username="0x9370f0C1dcE3f5bA9AB216e545cb740A837765b6@eth.emails.com"),
+"@beagle_dao","http://www.emails.com","socialfi");
+
+
+2. create campaign
+
+(first time）
+insert into campaign 
+(daoid, promolink, ip, refercode, token_name, init_amount, ct1_amount, ct2_amount, ct3_amount)
+values(1,"http://wwww.emails.com","1.1.1.1", 1, "EMLS", 1000, 500, 200, 100);
+
+
+
+(later）
+
+
+insert into account (username, forwarding)
+values ("0x9370f0C1dcE3f5bA9AB216e545cb740A837765b6@eth.emails.com", "alanywc22@skiff.com");
+
+uid = select uid from account where .....
+maxid = select max(id) as maxid from airdrop
+refercode = (maxId*10+3).toString(16).toUpperCase()
+
+select init_amount, ct1_amount, ct2_amount, ct3_amount from campaign where refercode = '${airdrop.refercode}
+total = (select init_amount from campaign where refercode = '${airdrop.refercode})
+
+level1 =  airdrop.refercode
+level2 = select level1 from airdrop t2 where t2.refercode='${airdrop.refercode}'
+level3 = select level2 from airdrop t2 where t2.refercode='${airdrop.refercode}'
+
+
+insert into campaign 
+(daoid, promolink, ip, refercode, token_name, total, init_amount, ct1_amount, ct2_amount, ct3_amount)
+values(1,"http://wwww.emails.com","1.1.1.1", refercode, token_name, init_amount, init_amount, ct1_amount, ct2_amount, ct3_amount);
+
+
+3. figure out commmission
+
+update airdrop set count1=count1 +1, total = total + ct1_amount  where refercode = '${airdrop.refercode}'
+update airdrop set count2=count2 +1, total = total + ct2_amount  where refercode = (select level1 from airdrop t2 where t2.refercode='${airdrop.refercode}') 
+update airdrop set count3=count3 +1, total = total + ct3_amount  where refercode = (select level2 from airdrop t2 where t2.refercode='${airdrop.refercode}')
+

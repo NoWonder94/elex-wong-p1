@@ -1,0 +1,158 @@
+.gameTips {
+  @media only screen and (min-width: 751px) and (max-width: 5120px) {
+    ::v-deep .el-dialog {
+      margin-top: 5vh !important;
+      width: 464px;
+      height: 720px;
+      border-radius: 30px;
+      background-color: $colorys1;
+
+      .el-icon-close {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+
+      .el-dialog__header {
+        display: none;
+      }
+
+      .el-dialog__body {
+        height: 720px;
+        width: 100%;
+        background-color: $colorys2;
+        box-sizing: border-box;
+        overflow: auto;
+        border-radius: 30px;
+        padding: 0;
+        // padding: 50px 60px 50px 50px;
+        position: relative;
+
+        .header {
+          width: 100%;
+          box-sizing: border-box;
+          border-radius: 22px 22px 0 0;
+          background-color: $colorys1;
+          line-height: 60px;
+          text-align: left;
+          padding: 0px 20px 20px 20px;
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .left {
+            display: flex;
+            align-items: center;
+          }
+
+          .closeIcon {
+            color: $colorys3;
+            font-size: 22px;
+            font-weight: 700;
+            cursor: pointer;
+          }
+
+          .backIcon {
+            color: $colorys3;
+            font-size: 22px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-right: 5px;
+          }
+        }
+
+        .contentInfo {
+          position: absolute;
+          width: 100%;
+          height: calc(100% - 80px);
+          border-radius: 22px 22px 0 0;
+          top: 60px;
+          background-color: $colorys2;
+          left: 0;
+          box-sizing: border-box;
+
+          .help-list {
+            margin-top: 20px;
+
+            >div {
+              background-color: #17181b;
+              border-radius: 22px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              height: 56px;
+              padding: 0 22px;
+              margin-bottom: 8px;
+              cursor: pointer;
+              color: rgba(153, 164, 176, 0.6);
+
+              &:hover {
+                color: white;
+              }
+            }
+          }
+
+          .ui-scrollview {
+            box-sizing: border-box;
+            color: rgba(153, 164, 176, 0.8);
+            height: 100%;
+            overflow-y: auto;
+            touch-action: pan-y;
+            overscroll-behavior: contain;
+            text-align: left;
+            padding: 20px;
+            line-height: 20px;
+            border-radius: 22px;
+            background-color: #1e2024;
+            padding: 10px;
+          }
+
+          h2 {
+            font-weight: 400;
+            font-size: 18px;
+          }
+
+          p {
+            margin: 15px 0px;
+          }
+
+          .houseEdge {
+            margin: 15px 0px;
+          }
+
+          .gbgzxuf {
+            color: rgba(153, 164, 176, 0.8);
+            user-select: text;
+            padding-bottom: 24px !important;
+            line-height: normal;
+            text-align: left;
+
+            .item {
+              margin-bottom: 44px;
+              padding: 10px;
+
+              h2:first-of-type {
+                margin-top: 8px;
+              }
+            }
+          }
+
+          .gbgzxuf .item h2 {
+            font-size: 14px;
+            margin: 0 0 8px;
+            font-weight: 600;
+            color: #99a4b0;
+          }
+
+          .content {
+            p {
+              margin: 12px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

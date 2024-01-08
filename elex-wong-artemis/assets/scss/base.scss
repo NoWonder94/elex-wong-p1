@@ -1,0 +1,101 @@
+@import 'assets/css/font-awesome-6.0.0/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+/*========================= COLOR =========================*/
+$primaryColor: #5A6DFF;
+$secondaryColor: #00C886;
+$lightPrimaryColor: rgba(90, 109, 255, 0.15);
+$bgColor: #EDEDED;
+$scbgColor: #FFFFFF;
+$fontColor: #1F1F1F;
+$scfontColor: #FFFFFF;
+$lightfontColor: rgba(31, 31, 31, 0.5);
+/* #1F1F1F 50% opacity */
+$lighterfontColor: rgba(31, 31, 31, 0.2);
+/* #1F1F1F 20% opacity */
+$greyfontColor: #8a8a8a;
+$warning: #FF5252;
+$maxWidth: 768px;
+$homeBg: #EAEDF7;
+$darkBlue: #04006E;
+
+/*========================= FILL box ===================*/
+.fill-box {
+  color: $scfontColor;
+  background-color: $primaryColor;
+}
+
+/*========================= DISABLE FILL box ===================*/
+.disable-fill-box {
+  color: $fontColor;
+  background-color: $greyfontColor;
+}
+
+/*========================= BORDER box =================*/
+.border-box {
+  border: 1px solid $lighterfontColor;
+  background-color: transparent;
+}
+
+/*========================= box shadow =================*/
+.card-shadow {
+  border-radius: 10px;
+  background-color: $scbgColor;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.card-shadow-without-radius {
+  background-color: $scbgColor;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+/*========================= vertical divider ===========*/
+.vertical-break {
+  width: 1px;
+  height: auto;
+  border-left: 1px solid $lighterfontColor;
+}
+
+/*========================= top dashed line ============*/
+.line-break {
+  border-top: dashed 1px;
+}
+
+html {
+  background-color: #1F1F1F;
+}
+
+body {
+  min-width: 340px;
+  word-break: break-all;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    margin: 0 auto;
+    width: $maxWidth;
+    word-break: break-all;
+  }
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+a {
+  text-decoration: none !important;
+  color: $fontColor;
+}
+
+.price-unit {
+  font-size: 10px;
+}
+
+.number-text {
+  font-family: 'Quicksand', sans-serif;
+}

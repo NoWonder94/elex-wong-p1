@@ -1,0 +1,533 @@
+@import 'base.scss';
+
+.vault {
+  background-color: $bgColor;
+
+  .vault-content-header {
+    padding: 10px;
+
+    .vault-content-header-title {
+      font-size: 12px;
+      color: $lightfontColor;
+    }
+
+    .apy-info {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0px 5px;
+      cursor: pointer;
+
+      .apy-info-icon {
+        vertical-align: middle;
+        font-size: 16px;
+        color: $primaryColor;
+      }
+    }
+
+    .vault-content-header-value {
+      font-weight: bold;
+      color: $fontColor;
+    }
+
+    .vault-flexEnd {
+      text-align: right;
+    }
+  }
+
+  .vault-buy-bot {
+    position: relative;
+    border-radius: 10px;
+    background-color: $scbgColor;
+
+    .vault-buy-bot-bg {
+      position: relative;
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+      z-index: 1;
+    }
+
+    .vault-buy-bot-content {
+      position: absolute;
+      top: 0;
+      z-index: 10;
+
+      .vault-buy-bot-banner-intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3vw;
+
+        .banner-intro-img {
+          width: 40%;
+
+          img {
+            rotate: -45deg;
+            width: 100%;
+          }
+        }
+
+        .banner-intro-lottie {
+          width: 35vw;
+          height: 150px;
+          animation: fadeIn 1s forwards;
+
+          .banner-intro-rocket-animation {
+            width: 100%;
+          }
+        }
+
+        .banner-intro-content {
+          position: relative;
+          width: 45vw;
+          height: 150px;
+          color: $scfontColor;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          animation: fadeIn 1s forwards;
+
+          .vault-boosting-text {
+            position: absolute;
+            margin: auto 0;
+            top: 40px;
+          }
+
+          .boosting-animation {
+            padding-right: 10px;
+          }
+
+          .loader {
+            // width: 500px;
+            // margin: 0 auto;
+            border-radius: 10px;
+            border: 4px solid transparent;
+            position: relative;
+            padding: 1px;
+          }
+
+          .loader:before {
+            content: '';
+            background-color: white;
+            // border: 1px solid #fff;
+            border-radius: 10px;
+            position: absolute;
+            top: 0px;
+            right: -4px;
+            bottom: 0px;
+            left: -4px;
+          }
+
+          .loader .loaderBar {
+            position: absolute;
+            border-radius: 10px;
+            top: 0;
+            right: 100%;
+            bottom: 0;
+            left: 0;
+            background: $primaryColor;
+            width: 0;
+            animation: borealisBar .8s linear infinite;
+          }
+        }
+      }
+    }
+
+    .vault-buy-bot-button {
+      text-align: center;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .vault-buy-bot-status {
+      display: flex;
+
+      .vault-buy-bot-status-container {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+
+        .bot-status-label {
+          font-size: 12px;
+          color: $lightfontColor;
+        }
+
+        .bot-status-value {
+          font-size: 18px;
+
+          .tiny-word {
+            font-size: 13px;
+          }
+        }
+
+        .lottie-bg {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+          scale: 2;
+        }
+      }
+
+    }
+  }
+
+  .vault-deposit-withdraw {
+    padding: 15px 10px 35px;
+
+    .vault-deposit-withdraw-labelTitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+
+      .vault-img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .vault-usdt-header {
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+
+    .deposit-withdrawal-header {
+      font-size: 13px;
+
+      .nav-link.active {
+        border: none;
+        border-bottom: 3px solid $primaryColor;
+        border-color: $primaryColor;
+        font-weight: bold;
+        color: $fontColor;
+      }
+
+      .nav-link {
+        border: none;
+        font-weight: bold;
+        color: $lightfontColor;
+      }
+
+      .vault-card-container-submit {
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 13px;
+        cursor: pointer;
+      }
+    }
+
+    .vault-card-container-formInput {
+      padding-bottom: 10px;
+
+      .vault-card-container-input-label {
+        padding-bottom: 5px;
+        color: $lightfontColor;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .vault-card-container-input {
+        width: 100%;
+        padding: 5px 4px;
+        border-radius: 5px;
+        font-size: 15px;
+        background-color: $lightPrimaryColor;
+
+        &::placeholder {
+          text-align: center;
+          font-weight: bold;
+          font-size: 13px;
+          color: $lightfontColor;
+        }
+      }
+
+      .vault-card-container-amount-available {
+        color: $primaryColor;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+
+    .vault-card-container-connect {
+      width: 100%;
+      padding: 8px 0px;
+      color: $lightfontColor;
+      font-size: 13px;
+      font-weight: bold;
+      text-align: center;
+      background-color: $lighterfontColor;
+      border-radius: 4px;
+    }
+
+  }
+
+  .expected-return-container {
+    font-size: 13px;
+    color: $lightfontColor;
+
+    .total-container-header-navigate {
+      width: 100%;
+      display: flex;
+      gap: 0px 10px;
+
+      .total-container-header {
+        position: relative;
+        padding: 10px;
+        flex: 1 1 auto;
+        color: $lightfontColor;
+        text-align: center;
+        font-size: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .total-container-header-title {
+          color: $lightfontColor;
+          font-weight: bold;
+
+          img {
+            width: 10px;
+            color: $fontColor;
+
+          }
+        }
+
+        .total-container-header-value {
+          color: $fontColor;
+          font-size: 15px !important;
+        }
+      }
+    }
+
+    .expected-return-list {
+      color: $lightfontColor;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+
+      .expected-return-list-value {
+        color: $fontColor;
+        font-size: 14px !important;
+      }
+
+      &:first-child {
+        color: $primaryColor;
+      }
+    }
+
+  }
+
+  .vault-apy-info {
+    position: relative;
+
+    .vault-apy-info-heading {
+      text-align: center;
+      font-size: 17px;
+      font-weight: bold;
+      color: $primaryColor;
+
+    }
+
+    .vault-apy-info-content {
+
+      .vault-apy-info-content-label {
+        font-size: 16px;
+      }
+
+      .vault-apy-info-content-value {
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+
+    .vault-apy-info-terms {
+      font-size: 13px;
+      color: $fontColor;
+    }
+  }
+
+  /* buy bot modal */
+  .vault-buy-bot-info {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+
+    .vault-buy-bot-info-title {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .vault-buy-bot-img {
+      position: relative;
+      width: 200px;
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .vault-buy-bot-price-info {
+      margin-top: -20px;
+
+      .vault-buy-bot-price-info-label {
+        font-size: 12px;
+        color: $lightfontColor;
+      }
+
+      .vault-buy-bot-price-info-value {
+        font-size: 18px;
+      }
+    }
+
+    .vault-buy-bot-info-intro {
+
+      .buy-bot-info-intro-icon {
+        flex: 0 0 45px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .grey {
+        font-size: 12px;
+        color: $lightfontColor;
+      }
+    }
+
+    .buy-bot-button {
+      cursor: pointer;
+    }
+  }
+
+  /* buy bot modal */
+
+  .text-green {
+    color: $secondaryColor;
+  }
+
+  .text-blue {
+    color: $darkBlue;
+  }
+
+  .calculator-container {
+    cursor: pointer;
+
+    .calculator-icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .calculator-title {
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+
+  .blue-background {
+    background-color: $darkBlue;
+    color: $scfontColor;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .pancake-img {
+    width: 100%;
+  }
+
+  .coinmarket-img {
+    width: 114px;
+  }
+
+  .reason-content-text {
+    color: $lightfontColor;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .vault-buy-bot-bg {
+    height: 200px;
+
+  }
+
+  .vault-buy-bot-content {
+    height: 200px;
+
+    .vault-buy-bot-banner-intro {
+      padding-top: 0 !important;
+      height: 100%;
+
+      .banner-intro-lottie {
+        width: 250px !important;
+
+        .banner-intro-rocket-animation {
+          scale: 1.3;
+        }
+      }
+
+      .banner-intro-img {
+        width: 50% !important;
+        padding: 0px 10px;
+      }
+
+      @media only screen and (min-width: 700px) {
+        .banner-intro-img {
+          width: 200px !important;
+          padding: 0px 10px;
+        }
+      }
+
+      .banner-intro-content {
+        width: 300px !important;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes borealisBar {
+  0% {
+    left: 0%;
+    right: 100%;
+    width: 0%;
+  }
+
+  20% {
+    left: 0%;
+    right: 75%;
+    width: 25%;
+  }
+
+  90% {
+    right: 0%;
+    left: 75%;
+    width: 25%;
+  }
+
+  100% {
+    left: 100%;
+    right: 0%;
+    width: 0%;
+  }
+}

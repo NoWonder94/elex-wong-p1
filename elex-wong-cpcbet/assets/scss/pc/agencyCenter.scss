@@ -1,0 +1,104 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .agency-center {
+    padding: 30px;
+    min-height: 650px;
+    background-color: $secondaryBgColor;
+    border-radius: 10px;
+
+    .agency-center-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: $fontColor;
+    }
+
+    .description-section {
+      min-height: 380px;
+      align-self: center;
+      display: grid;
+      grid-template-columns: repeat(3, 32%);
+      grid-column-gap: 2%;
+      grid-row-gap: 5px;
+      padding: 20px 0px;
+
+      .description-card {
+        max-height: 120px;
+        background-color: $blueGreen;
+        color: $fontColor;
+        text-align: center;
+        border-radius: 5px;
+        width: 100%;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .card-total-number {
+          font-weight: bold;
+          font-size: 24px;
+          margin-bottom: 2px;
+        }
+
+        .card-title {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .icon-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-bottom: 10px;
+
+      .icon-img {
+        width: 100px;
+        text-align: center;
+
+        img {
+          width: 40px;
+          cursor: pointer;
+        }
+      }
+      .icon-text {
+        font-size: 14px;
+        color: $fontColor;
+      }
+    }
+
+    .line {
+      margin-block-start: 10px;
+      margin-block-end: 10px;
+      border: 0;
+      border-bottom: 1px solid $whiteOpacity30;
+    }
+
+    .level-section {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .level-section-vip-icon {
+        width: 55px;
+        height: 55px;
+      }
+
+      .level-container {
+        justify-content: center;
+        font-size: 14px;
+        align-self: center;
+        padding: 10px;
+
+        .level-title {
+          padding-top: 10px;
+          font-size: 20px;
+          font-weight: bold;
+          color: $fontColor;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@import "../base.scss";
+
+@media only screen and (min-width: 1201px) {
+  .crash {
+    position: relative;
+    color: $white;
+
+    .crash-content {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 60px 30px;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      column-gap: 30px;
+
+      .content-left {
+        font-size: 12px;
+        color: $lightGrey;
+        background-color: $background;
+        border-radius: 4px;
+        padding: 20px 25px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+
+        .left-item {
+          cursor: pointer;
+        }
+
+        .selected {
+          color: $white;
+          font-weight: bold;
+        }
+      }
+
+      .content-right {
+        background-color: $background;
+        border-radius: 4px;
+        padding: 24px 32px;
+        min-height: 300px;
+        grid-column: 2;
+        grid-row: 1 / 3;
+
+        .title {
+          font-size: 20px;
+          font-weight: 600;
+          padding-bottom: 24px;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.6;
+          letter-spacing: -0.56px;
+        }
+
+        .desc {
+          color: $lightGrey;
+          padding-bottom: 24px;
+          font-size: 14px;
+        }
+
+        .desc-title {
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 24px;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.6;
+          letter-spacing: -0.56px;
+        }
+
+        .btn {
+          background-color: $backgroundThree;
+          color: $darkgrey;
+          font-size: 12px;
+          border-radius: 3px;
+          font-weight: 600;
+          padding: 10px;
+          border: 1px solid $separator;
+          text-align: left;
+          cursor: pointer;
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

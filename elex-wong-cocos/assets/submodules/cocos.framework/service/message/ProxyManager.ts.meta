@@ -1,0 +1,14 @@
+{
+  "ver": "4.0.22",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "52849487-694f-40f1-9708-8998d61a8097",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "importAsPlugin": false,
+    "moduleId": "project:///assets/framework/core/proxy/ProxyManager.js",
+    "importerSettings": 7,
+    "simulateGlobals": []
+  }
+}

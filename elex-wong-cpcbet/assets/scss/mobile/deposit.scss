@@ -1,0 +1,295 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .deposit {
+    position: relative;
+
+    .deposit-section {
+      background-color: $secondaryBgColor;
+      padding: 4vw 5vw 8vw;
+      min-height: 84vh;
+
+      .currency {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $blueGreen;
+        padding: 1vw 3vw;
+        border-radius: 4px;
+
+        .currency-title {
+          font-size: 3.5vw;
+          font-weight: bold;
+        }
+
+        .el-select {
+          width: 35vw;
+
+          .el-input__inner {
+            color: $fontColor;
+            background-color: transparent;
+            border: none;
+            font-size: 3.5vw;
+          }
+        }
+      }
+
+      .payment {
+        padding-top: 6vw;
+
+        .payment-title {
+          font-size: 4vw;
+          font-weight: bold;
+        }
+
+        .payment-subtitle {
+          font-size: 3vw;
+          padding-top: 1vw;
+        }
+
+        .el-select {
+          width: 100%;
+
+          .el-input__inner {
+            font-size: 3.5vw;
+            color: $fontColor;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $lightFontColor;
+            border-radius: 0;
+            padding: 0 15px 0 0;
+
+            &::placeholder {
+              color: $lightFontColor;
+            }
+          }
+        }
+
+        .self-payment {
+          margin-top: 5vw;
+
+          .self-payment-label {
+            padding-bottom: 2vw;
+
+            .self-payment-item {
+              font-weight: bold;
+              color: $lightGreen;
+              letter-spacing: 1.5px;
+            }
+          }
+
+          .self-payment-copy {
+            width: 40vw;
+            padding: 3vw 0vw;
+            margin-top: 3vw;
+            text-align: center;
+            // background: $secondaryGreen;
+            cursor: pointer;
+          }
+        }
+
+
+      }
+
+      .amount {
+        padding-top: 6vw;
+
+        .amount-title {
+          font-size: 4vw;
+          font-weight: bold;
+        }
+
+        .amount-input {
+          .el-input__inner {
+            color: $fontColor;
+            font-size: 3.5vw;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $lightFontColor;
+            border-radius: 0;
+            width: 100%;
+            padding: 0;
+
+            &::placeholder {
+              color: $lightFontColor;
+            }
+          }
+        }
+
+        .amount-selection {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2.5vw 2vw;
+          padding-top: 3vw;
+
+          .selection-box {
+            background-color: $fontColor;
+            color: $secondaryBgColor;
+            font-size: 3.5vw;
+            font-weight: bold;
+            padding: 3vw;
+            border-radius: 5px;
+
+            .amount-selected {
+              img {
+                filter: invert(57%) sepia(24%) saturate(780%) hue-rotate(102deg) brightness(90%) contrast(91%);
+              }
+            }
+
+            img {
+              width: 4vw;
+              margin-right: 2vw;
+              vertical-align: middle;
+            }
+          }
+        }
+
+        .receipt-upload-section {
+          margin-top: 5vw;
+          margin-bottom: 10vw;
+
+          .receipt-upload-content {
+            margin-top: 5vw;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .receipt-button {
+              width: 40vw;
+              padding: 3vw 0vw;
+              text-align: center;
+              cursor: pointer;
+            }
+
+            .receipt-upload-preview {
+              width: 45vw;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              margin-left: 3vw;
+            }
+          }
+
+        }
+      }
+
+      .submit {
+        padding-top: 5vw;
+
+        .button {
+          font-size: 4vw;
+          text-align: center;
+          padding: 3vw;
+          border-radius: 4px;
+        }
+      }
+    }
+
+
+    .deposit-order-pop {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: $blackOpacity75;
+      z-index: 999;
+
+      .deposit-order-pop-container {
+        padding: 8vw 6vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $fontColor;
+        border-radius: $borderRadius5;
+        color: $bgColor;
+        font-size: 2.5vw;
+
+        .deposit-title {
+          font-size: 3vw;
+          font-weight: bold;
+        }
+
+        .el-icon-close {
+          position: absolute;
+          right: 6vw;
+          top: 8vw;
+          font-size: 18px;
+          cursor: pointer;
+        }
+
+        .deposit-payment {
+          position: relative;
+          margin-top: 30px;
+          border-radius: $borderRadius3;
+
+          .deposit-payment-label {
+            padding: 10px;
+            margin: 10px 0;
+            // width: 640px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $blueGreen;
+            border: 1px solid $grey;
+            border-radius: $borderRadius3;
+            overflow: hidden;
+            column-gap: 1vw;
+
+            .deposit-payment-item {
+              margin-right: 15vw;
+              width: 50vw;
+              display: flex;
+              align-items: center;
+              // overflow-x: scroll;
+              // text-align: center;
+            }
+
+            .currency-item {
+              text-transform: uppercase;
+            }
+          }
+
+          .address-copy {
+            width: 15vw;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: $lightgrey;
+            border-left: 1px solid $grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+
+
+        }
+
+        .deposit-payment-confirm {
+          padding: 10px;
+          text-align: center;
+          border-radius: 3px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .payment-select {
+    left: 5vw !important;
+    width: 90vw !important;
+
+    .el-select-dropdown__item {
+      white-space: normal;
+      overflow: unset;
+      height: auto;
+      line-height: normal;
+      padding: 4vw 5vw;
+      font-size: 4vw;
+    }
+  }
+}

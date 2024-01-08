@@ -1,0 +1,34 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .footer {
+    padding: 25px;
+    padding-top: 50px;
+    min-width: 1200px;
+    height: 250px;
+    background-color: $secondaryBgColor;
+    color: $whiteFontColorTransparent;
+    font-size: 13px;
+
+    .footer-content {
+      display: flex;
+      margin: 0 auto;
+      width: 1200px;
+      justify-content: space-between;
+
+      .footer-content-item {
+        b {
+          color: $whiteFontColor;
+        }
+
+        .footer-content-link {
+          cursor: pointer;
+
+          &:hover {
+            color: $whiteFontColor;
+          }
+        }
+      }
+    }
+  }
+}

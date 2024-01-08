@@ -1,0 +1,74 @@
+[data-aos='zoom-in-responsive'] {
+  transition-property: transform, opacity;
+  @media screen and (max-width: 769px) {
+    transform: scale(0.5);
+    opacity: 0;
+    &.aos-animate {
+      transition-delay: 0.5s;
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @media screen and (min-width: 769px) {
+    transform: scale(0.5);
+    opacity: 0;
+    &.aos-animate {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.main {
+  height: auto;
+  padding-bottom: 0px;
+
+  .backgroundBanner {
+    position: relative;
+  }
+}
+
+.download_Container_CN {
+  @media screen and (max-width: 769px) {
+    .el-button {
+      width:100%;
+      text-align:left;
+      border-top:none;
+      border-radius:0;
+      background: #f7f7f7 !important;
+      border-color: #d0d0d0;
+      border-top: transparent;
+      border-left: transparent;
+      border-right: transparent;
+      padding: 1vw 0;
+
+      span {
+        position: relative;
+        top: 3.5vw;
+        font-size: 4vw;
+        font-weight: 400;
+      }
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .el-button {
+      width:100%;
+      text-align:left;
+      border-top:none;
+      border-radius:0;
+      background: #f7f7f7;
+      border-color: #d0d0d0;
+      border-left: transparent;
+      border-right: transparent;
+      padding: 1.2vw 3vw;
+      span {
+        font-size: 0.9vw;
+        font-weight: lighter;
+      }
+
+      .el-icon-arrow-right:before {
+        font-weight: 900;
+      }
+    }
+  }
+}

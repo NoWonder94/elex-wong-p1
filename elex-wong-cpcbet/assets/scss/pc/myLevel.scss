@@ -1,0 +1,132 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .level {
+    position: relative;
+    // padding: 30px;
+    // width: 900px;
+    min-height: 650px;
+    background-color: $secondaryBgColor;
+    font-size: 16px;
+    border-radius: 10px;
+
+    .level-title
+    {
+      padding: 30px 0px 0px 30px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .level-banner
+    {
+      position: relative;
+      width: 100%;
+
+      .el-carousel
+      {
+        .el-carousel__container
+        {
+          min-height: 600px;
+          .el-carousel__arrow
+          {
+            border-radius: 0px;
+            background-color: transparent;
+
+            i
+            {
+              font-size: 20px;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .el-carousel__item
+        {
+          // width: 840px;
+
+          img
+          {
+            width: 100%;
+          }
+        }
+      }
+
+      .el-carousel__indicators .el-carousel__indicators--horizontal
+      {
+        li
+        {
+          border-radius: 50% !important;
+
+          .el-carousel__button
+          {
+            border-radius: 50% !important;
+          }
+        }
+      }
+
+      .is-active
+      {
+        .el-carousel__button{
+          border-radius: 50% !important;
+          background-color: $primaryGreen;
+        }
+      }
+
+      .level-image-container {
+        position: relative;
+        width: 840px;
+        margin: 20px auto;
+        height: 160px;
+        border-radius: $borderRadius20;
+        text-align: center;
+
+        .level-image-center {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          img {
+            width: 53px;
+            height: 53px;
+          }
+
+          .level-image-content {
+            padding-top: 20px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .level-content-container {
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+
+        .level-content {
+          width: 380px;
+          padding: 0px 15px;
+
+          .level-content-item-container {
+            padding-top: 10px;
+
+            .level-content-item {
+              display: flex;
+              justify-content: space-between;
+              padding: 10px 0;
+            }
+          }
+        }
+
+        .line {
+          margin: 0 34.5px;
+          width: 1px;
+          background-color: $lightFontColor;
+          opacity: 0.5;
+        }
+      }
+    }
+
+  }
+}

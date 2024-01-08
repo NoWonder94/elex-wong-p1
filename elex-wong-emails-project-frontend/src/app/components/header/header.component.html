@@ -1,0 +1,31 @@
+<header id="header" class="fixed-top ">
+
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <h1> <a href="index.html" style="text-decoration: none"
+        style="color:rgb(73, 162, 251); text-decoration: none">emails.com</a></h1>
+
+
+
+    <nav id="navbar" class="navbar">
+
+      <ul>
+        <li>
+          <btn-loader title="Connect" (clicked)="connect()" *ngIf="!signedIn"></btn-loader>
+        </li>
+        <li>
+          <btn-loader title="My Account" (clicked)="myAccount()" *ngIf="signedIn"></btn-loader>
+        </li>
+        <li>
+          <btn-loader title="Admin dashboard" (clicked)="openAdminDashboard()" *ngIf="signedIn &&account.is_admin">
+          </btn-loader>
+        </li>
+        <li>
+          <btn-loader title="Sign Out" (clicked)="signOut()" *ngIf="signedIn"></btn-loader>
+        </li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+
+    </nav><!-- .navbar -->
+  </div>
+</header><!-- End Header -->

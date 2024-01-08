@@ -1,0 +1,183 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth){
+	.withdraw{
+    position: relative;
+    margin-top: -20vw;
+    padding-bottom: 5vw;
+
+    .title-section{
+      position: fixed;
+      padding: 5.5vw 4vw;
+      background: $secondarybgColor;
+      color: $scfontColor;
+      width: 100vw;
+      margin-left: -4vw;
+      font-size: 3.5vw;
+      font-weight: bold;
+      z-index: 10;
+
+      .title-section-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .back-title
+        {
+          display: flex;
+          align-items: center;
+
+          img{
+            width: 5vw;
+            margin-right: 2vw;
+          }
+        }
+
+        .edit{
+          font-size: 3.5vw;
+          padding: 2vw 5vw;
+          background-color: $secondaryColor;
+          border-radius: 2vw;
+        }
+      }
+    }
+
+    .withdraw-content{
+      padding-top: 22vw;
+
+      .withdraw-content-title
+      {
+        font-weight: bold;
+        font-size: 3.5vw;
+        padding-bottom: 3vw;
+      }
+
+      .card-list{
+        .swiper-slide{
+          width: 70vw !important;
+        }
+
+        .card-box{
+          position: relative;
+
+          img{
+            width: 100%;
+          }
+
+          .card-content{
+            position: absolute;
+            top: 0;
+            padding: 3vw;
+            width: 64vw;
+            height: 45vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 4vw;
+            color: rgba(255, 255, 255, 0.75);
+
+            .card-content-detail{
+              text-align: center;
+              line-height: 2;
+              color: $fontColor;
+            }
+
+            .selected{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .tick{
+                img{
+                  width: 6vw;
+                }
+              }
+            }
+
+            .empty-tick-space {
+              height: 7vw;
+            }
+          }
+        }
+
+        .swiper-button-prev, .swiper-button-next{
+          color: $fontColor;
+          top: 86vw;
+        }
+
+        .swiper-button-prev:after, .swiper-button-next:after{
+          font-size: 4vw;
+        }
+
+        .gradient-right{
+          position: absolute;
+          right: 0;
+          width: 10vw;
+          height: 52vw;
+          top: 29vw;
+          background: linear-gradient(270deg, #17171C, #17171C00);
+          z-index: 10;
+          transition: all 0.4s;
+        }
+
+        .gradient-left{
+          display: none;
+          position: absolute;
+          left: 0;
+          width: 10vw;
+          height: 52vw;
+          top: 29vw;
+          background: linear-gradient(270deg, #17171C00, #17171C);
+          z-index: 10;
+          transition: all 0.4s;
+        }
+      }
+
+      .withdraw-details{
+        margin-top: 12vw;
+        border: 1px solid $blackOpacity20;
+        padding: 5vw;
+        border-radius: 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .withdraw-section{
+          padding-bottom: 6vw;
+
+          &:last-child{
+            padding-bottom: 0vw;
+          }
+
+          .withdraw-section-title{
+            font-size: 3.5vw;
+            font-weight: bold;
+            color: $primaryColorOpc50;
+          }
+
+          .el-input__inner{
+            font-size: 3vw;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $primaryColorOpc50;
+            border-radius: 0;
+            width: 100%;
+            padding: 0;
+            height: 12vw;
+
+            &::placeholder{
+              color: $primaryColorOpc50;
+            }
+          }
+
+          .withdraw-section-button{
+            font-size: 3.5vw;
+            text-align: center;
+            padding: 3vw;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}

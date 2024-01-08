@@ -1,0 +1,271 @@
+.strategy-condition
+{
+    position: fixed;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    padding: 15px;
+	background-color:rgba(0, 0, 0, 0.7);
+	z-index: 100000;
+}
+
+/* form position */
+.strategy-condition .strategy-condition-form
+{
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+    padding: 25px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    letter-spacing: 0.48px;
+    overflow-y: auto;
+}
+/* form position */
+
+/* form content start */
+/* form header */
+.strategy-condition-form-header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-header-title
+{
+    font-size: 13px;
+    font-weight: bold;
+    color: #666666;
+}
+.form-header-button
+{
+    width: 12px;
+    font-size: 13px;
+    color: #BBBBBB;
+    cursor: pointer;
+}
+.bar-container
+{
+    position: relative;
+	width: 100%;
+	height: 3px;
+	margin: 10px 0px;
+	background-color: #BBBBBB;
+}
+/* form header */
+.strategy-condition-form-condition
+{
+    margin-top: 15px;
+}
+.strategy-condition-form-condition-label
+{   
+    font-size: 13px;
+    font-weight: bold;
+    color: #666666;
+    padding-bottom: 5px;
+}
+/* radio form */
+.strategy-condition-radio
+{
+    display: flex;
+    flex-direction: row;
+}
+.radio-button
+{
+    display: flex;
+    align-items: center;
+    margin-right: 38px;
+}
+
+.radio-button-label
+{
+    color: #999999;
+    font-size: 10px;
+    letter-spacing: 0.36px;
+    margin: 0px;
+}
+
+.radio__input
+{
+    display: flex;
+}
+.radio__input input
+{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.radio__control
+{
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 1px solid #707070;
+}
+.radio__input input:checked + .radio__control
+{
+    background: radial-gradient(#707070 50%, rgba(255, 0, 0, 0) 50%);
+}
+/* radio form */
+/* input form */
+.strategy-condition-OnDo
+{
+    margin-top: 10px;
+}
+.strategy-condition-OnDo-label
+{
+    font-size: 13px;
+    letter-spacing: 0.42px;
+    color: #999999;
+}
+.strategy-condition-On-input
+{
+    width: 100%;
+    padding: 6px 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: #666666;
+}
+.strategy-condition-On-input .left-input
+{
+    flex: 1;
+    padding-right: 3px;
+}
+.strategy-condition-On-input .right-input
+{
+    flex: 1;
+    padding-left: 3px;
+}
+.left-input-select
+{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+input
+{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+.strategy-condition-On-select
+{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+.strategy-condition-Do-input
+{
+    width: 100%;
+    padding: 6px 0px;
+    display: flex;
+    justify-content: center;
+    color: #666666;
+    font-size: 12px;
+}
+.strategy-condition-Do-select
+{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+.input-with-icon
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #666666;
+}
+.input-with-icon input
+{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+.input-with-icon .percent-icon
+{
+    position: absolute;
+    width: 13px;
+    right: 0;
+    margin-right: 13px;
+}
+/* input form */
+/* delete edit icon */
+.strategy-condition-crud
+{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.strategy-condition-crud i
+{
+    font-size: 23px;
+    cursor: pointer;
+}
+.fa-check{
+    color: #39DDD7;
+}
+.strategy-condition-crud i:first-child
+{
+    margin-right: 15px;
+}
+
+/* condition 2 */
+.strategy-condition-input
+{
+    padding: 6px 0px;
+    font-size: 12px;
+    color: #666666;
+}
+.strategy-condition-input input
+{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+/* condition 2 */
+/* strategy-condition ending */
+.strategy-condition-button
+{
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    font-size: 11px;
+    color: #FFFFFF;
+    letter-spacing: 0.42px;
+    border: none;
+    border-radius: 5px;
+    background: #6192F1;
+}
+.strategy-condition-hints
+{
+    margin-top: 10px;
+    color: #999999;
+    font-size: 10px;
+    text-align: center;
+}
+/* strategy-condition ending */
+/* form content start */

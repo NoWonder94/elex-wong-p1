@@ -1,0 +1,161 @@
+@import '../base.scss';
+
+.coinWithdraw-component {
+  position: relative;
+  height: 90vh;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: $white;
+
+  .top {
+    flex: 1 1;
+
+    .coinWithdraw-title {
+      text-align: center;
+      line-height: 3;
+    }
+
+    .coinWithdraw-networkList {
+      position: relative;
+      padding: 10px 0px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+
+      .coinWithdraw-networkList-card {
+        padding: 10px;
+        border: 1px solid $separator;
+        border-radius: 4px;
+        background-color: rgba(46,49,66,.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+      }
+
+      .selected-chain {
+        background: #414E5D;
+      }
+    }
+
+    .coinWithdraw-form {
+      position: relative;
+      margin-top: 20px;
+
+      .coinWithdraw-form-item {
+        margin-top: 20px;
+
+        .form-item-label {
+          padding-bottom: 5px;
+          font-size: 13px;
+          display: flex;
+          justify-content: space-between;
+
+          img {
+            width: 16px;
+          }
+        }
+
+        .form-item-input {
+          position: relative;
+          width: 100%;
+          border: 1px solid $separator;
+          border-radius: 8px;
+          background-color: rgba(46,49,66,.5);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .item-input {
+            flex-basis: 70%;
+            max-width: 70%;
+
+            .el-input {
+
+              .el-input__inner {
+                color: $white;
+                background: transparent;
+                border: transparent;
+                text-align: left;
+              }
+            }
+          }
+
+          .item-button {
+            flex-basis: 30%;
+            max-width: 30%;
+            padding: 15px;
+            border-left: 1px solid $separator;
+            text-align: center;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .coinWithdraw-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .return-button {
+      width: 50%;
+      height: 48px;
+      max-width: unset;
+      padding: 0;
+      border: 1px solid $separator;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2;
+      letter-spacing: normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .confirm-button {
+      height: 48px;
+      width: 50%;
+      max-width: unset;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2;
+      letter-spacing: normal;
+      padding: 0;
+      background: $red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .submit-inactive {
+      background-color: #1C242D;
+      border: 1px solid $separator;
+      cursor: not-allowed;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .coinWithdraw-button-container {
+    margin-bottom: 23vw;
+  }
+}

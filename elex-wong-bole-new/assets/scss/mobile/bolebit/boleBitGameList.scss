@@ -1,0 +1,216 @@
+@import '../../Base.scss';
+
+$greyGradient : linear-gradient(173deg, #4E4E4E, #1F1F1F);
+$FontPrimaryColor: #ffffff;
+$BulletActive: #EC5557;
+$ButtonColor: #B7083E;
+
+@media only screen and (max-width: 700px) {
+  .boleBitGameList {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow-y: auto;
+
+    .banner-list {
+      width: 100%;
+      height: 55vw;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 55vw;
+        object-fit: cover;
+      }
+
+      .swiper {
+        height: 55vw;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        top: 50%;
+        color: $FontPrimaryColor;
+      }
+
+      .swiper-button-prev:after,
+      .swiper-button-next:after {
+        font-size: 0;
+      }
+
+      .swiper-button-prev {
+        left: 3vw !important;
+      }
+
+      .swiper-button-next {
+        right: 3vw !important;
+      }
+
+      .my-pagination .swiper-pagination-bullet {
+        background: $FontPrimaryColor;
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: $BulletActive !important;
+      }
+
+      .swiper-pagination-fraction,
+      .swiper-pagination-custom,
+      .swiper-horizontal>.swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal {
+        position: absolute;
+        width: 90%;
+        margin: 0 auto;
+        bottom: 2vw;
+      }
+    }
+
+    .boleBitGameList-game-actions {
+      padding: 0 9vw;
+      padding-top: 5vw;
+      vertical-align: middle;
+      position: relative;
+
+      .boleBitGameList-wrap {
+        position: relative;
+      }
+
+      .filter-icon {
+        position: absolute;
+        width: 3vw;
+        top: 50%;
+        left: 2vw;
+        transform: translateY(-50%);
+      }
+
+      .icon-down {
+        position: absolute;
+        width: 2.5vw;
+        top: 50%;
+        right: 2vw;
+        transform: translateY(-50%);
+      }
+
+      .boleBitGameList-select {
+        width: 100%;
+        padding: 1.5vw 7vw;
+        display: inline-block;
+        vertical-align: middle;
+        background-image: $greyGradient;
+        border-radius: 1vw;
+        color: rgba(255, 255, 255, 0.50);
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .boleBitGameList-select option {
+        padding: 5vw 0;
+        color: black;
+      }
+
+    }
+
+    .game-list {
+      color: $FontPrimaryColor;
+      padding: 7vw 8vw;
+      padding-bottom: 28vw;
+
+      .game-list-title {
+        padding-bottom: 10px;
+        font-size: 4vw;
+      }
+
+      .game-list-group {
+        display: grid;
+        padding: 10px 0;
+        grid-template-columns: repeat(auto-fill, 41vw);
+        grid-column-gap: 1vw;
+        grid-row-gap: 5vw;
+        justify-content: space-between;
+
+        .game-item {
+
+          .game-item-img {
+            width: 41vw;
+            height: 48vw;
+            border-radius: 15px;
+            overflow: hidden;
+
+
+            iframe {
+              width: 100%;
+              height: 100%;
+              border-radius: 6vw;
+            }
+
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+            // .game-item-front-cover {
+            //   svg {
+            //     border-radius: 6vw;
+            //   }
+            // }
+          }
+
+          .game-name {
+            padding-top: 3vw;
+            padding-bottom: 1vw;
+            font-size: 3.5vw;
+          }
+
+          .game-type {
+            padding-bottom: 4vw;
+            font-size: 3vw;
+            color: #919191;
+          }
+
+          .game-button-group {
+            position: relative;
+            text-align: center;
+
+            .game-button {
+              width: 100%;
+              padding: 2vw 0;
+              margin-bottom: 3vw;
+              border-radius: 1vw;
+              cursor: pointer;
+            }
+
+            .try-now {
+              background-color: $ButtonColor;
+            }
+
+            .details {
+              border: 1px solid $ButtonColor;
+            }
+
+          }
+        }
+      }
+    }
+
+    .japanese {
+      font-size: 2.4vw !important;
+    }
+  }
+
+  .boleBitGameList::-webkit-scrollbar {
+    display: none;
+  }
+
+  .swiperNav {
+    width: 6vw !important;
+    height: 6vw !important;
+  }
+
+  .popper__arrow {
+    left: 30% !important;
+  }
+}

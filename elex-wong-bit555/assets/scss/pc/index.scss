@@ -1,0 +1,81 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .index {
+    position: relative;
+    min-width: 1200px;
+    min-height: 700px;
+
+    .logo-container {
+      height: 450px;
+      background-color: $secondaryBgColor;
+      color: $whiteFontColor;
+      text-align: center;
+
+      .logo-content {
+        padding-top: 120px;
+        font-size: 25px;
+
+        img {
+          width: 550px;
+        }
+
+        div {
+          padding-top: 15px;
+        }
+      }
+
+    }
+
+    .index-container {
+      margin: 0 auto;
+      padding: 25px 20px;
+      width: 1200px;
+
+      .index-content {
+        display: grid;
+        column-gap: 25px;
+        row-gap: 30px;
+
+        .grid-1 {
+          grid-column: span 6;
+
+          img {
+            width: 750px;
+            height: 420px;
+            object-fit: cover;
+          }
+        }
+
+        .grid-2 {
+          grid-column: span 3;
+
+          img {
+            width: 565px;
+            height: 320px;
+            object-fit: cover;
+          }
+        }
+
+        .grid-3 {
+          grid-column: span 2;
+
+          img {
+            width: 365px;
+            height: 220px;
+            object-fit: cover;
+          }
+        }
+
+      }
+
+      .el-pagination {
+        padding-top: 60px;
+        padding-bottom: 20px;
+        text-align: center;
+
+      }
+    }
+
+  }
+}

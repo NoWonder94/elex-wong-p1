@@ -1,0 +1,16 @@
+@import 'base.scss';
+
+.header-title {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+
+    img {
+        width: 25px;
+    }
+
+    span {
+        margin-left: 8px;
+        font-weight: bold;
+    }
+}

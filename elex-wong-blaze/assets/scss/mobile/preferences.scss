@@ -1,0 +1,47 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 1200px){
+  .preferences{
+    position: relative;
+    color: $white;
+    min-height: 85vh;
+
+    .content{
+      font-size: 12px;
+      background-color: $background;
+
+      .title{
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 25px;
+      }
+
+      .preferences-list{
+        .preferences-item{
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          color: $whiteGrey;
+          font-size: 12px;
+          padding: 24px 0;
+          border-top: 1px solid $separator;
+
+          .switch{
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .content{
+    padding: 6vw 5vw;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .content{
+    padding: 24px 30px;
+  }
+}

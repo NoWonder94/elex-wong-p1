@@ -1,0 +1,492 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 700px) {
+  .login {
+    .login-modal-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      z-index: 999;
+
+      .login-modal {
+        width: 100vw;
+        height: 100vh;
+        color: $white;
+        text-align: center;
+        background-color: $background;
+        overflow-y: auto;
+
+        .header {
+          margin-top: 3vw;
+
+          .logo {
+            margin-top: 0vw;
+            width: 25%;
+          }
+
+          i {
+            position: absolute;
+            padding: 5vw;
+            top: -2vw;
+            right: -2vw;
+            font-size: 20px;
+            font-size: 5vw;
+            font-weight: bold;
+          }
+
+          .btn {
+            display: flex;
+            justify-content: center;
+            padding-top: 4vw;
+            color: $darkgrey;
+            font-size: 3vw;
+
+            .login {
+              margin-right: 5vw;
+              color: $white;
+            }
+          }
+
+          .el-divider {
+            background-color: $separator;
+          }
+        }
+
+        .body {
+          padding: 5vw;
+          padding-top: 3vw;
+
+          .title {
+            font-size: 4.8vw;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            text-align: center;
+            color: $white;
+            margin-bottom: 6vw;
+          }
+
+          .text-input {
+            position: relative;
+            background-color: $darkBackground;
+            border-radius: 4px;
+            margin-bottom: 4vw;
+
+            input {
+              color: $white;
+              font-size: 3.6vw;
+              padding: 5vw 3.8vw 3vw;
+              width: 100%;
+              border-radius: 4px;
+              background-color: $darkBackground;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            label {
+              position: absolute;
+              pointer-events: none;
+              font-size: 2.8vw;
+              font-weight: bold;
+              color: $lightGrey;
+              left: 3.8vw;
+              top: 4vw;
+              transition: 0.2s ease all;
+            }
+
+            i {
+              position: absolute;
+              font-size: 2.8vw;
+              font-weight: bold;
+              color: $lightGrey;
+              right: 4vw;
+              top: 5vw;
+              transition: 0.2s ease all;
+              cursor: pointer;
+            }
+
+            input:focus~label,
+            input:not(:placeholder-shown)~label {
+              top: 1.8vw;
+              font-size: 2vw;
+            }
+
+            /* phone input */
+            .vue-tel-input{
+              position: relative;
+              border: none;
+
+              &:focus-within{
+                box-shadow: none;
+              }
+
+              input:disabled{
+                color: $white;
+              }
+
+              .vti__dropdown{
+                background-color: $darkBackground;
+              }
+
+              .vti__dropdown.disabled, .vti__dropdown.open{
+                background-color: $darkBackground;
+              }
+
+              .vti__dropdown:hover{
+                background-color: $darkBackground;
+              }
+
+              .vti__dropdown-list{
+                color: $white;
+                background-color: $darkBackground;
+                border: none;
+
+                .vti__dropdown-item{
+                  display: flex;
+                  align-items: center;
+                  padding: 8px 12px;
+                  font-size: 12px;
+                }
+
+                .highlighted{
+                  background-color: $background;
+                }
+              }
+
+              .vti__input {
+                padding: 15px 12px;
+                margin-left: 35px;
+              }
+            }
+
+            .country-code{
+              position: absolute;
+              width: 40px;
+              font-size: 14px;
+              top: 16px;
+              left: 60px;
+              color: $lightGrey;
+              font-size: 12px;
+            }
+          }
+
+          .forgotpass {
+            color: $darkgrey;
+            text-align: left;
+            margin: -2vw 0 2vw 0;
+
+            .el-link {
+              vertical-align: bottom;
+              font-size: 3.2vw;
+            }
+          }
+
+          .signBtn {
+            width: 100%;
+            background-color: $red;
+            color: $white;
+            font-size: 3.4vw;
+            border-radius: 1vw;
+            font-weight: 600;
+            letter-spacing: -.56px;
+            padding: 3.5vw 0vw;
+            margin-top: 6vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .arrow {
+              transform: rotate(90deg);
+              margin-left: 4vw;
+              width: 3%;
+            }
+          }
+        }
+
+        .footer {
+          position: relative;
+          margin: 0 auto;
+          padding: 0 5vw;
+
+          .text {
+            position: relative;
+            width: 100%;
+            text-align: left;
+            font-size: 2.7vw;
+            white-space: normal;
+          }
+
+          .el-divider {
+            background-color: $separator;
+            margin: 7vw 0;
+
+            .el-divider__text {
+              background-color: $background;
+            }
+
+            p {
+              color: $darkgrey;
+              font-size: 2.5vw;
+            }
+          }
+
+          .el-link {
+            vertical-align: bottom;
+            font-size: 2.7vw;
+          }
+
+          .row {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+
+            .otherLogin {
+              background-color: $background;
+              border: 1px solid $separator;
+              margin-right: 5vw;
+              padding: 2.5vw 7vw;
+              margin-left: 0;
+
+              img {
+                width: 5vw;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .login {
+    .login-modal-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(12, 21, 29, 0.78);
+      animation: zoomFadeIn 0.3s ease-in-out;
+
+      .login-modal {
+        position: relative;
+        width: 80vw;
+        height: 80vh;
+        color: $white;
+        text-align: center;
+        background-color: $background;
+        overflow-y: auto;
+
+        .header {
+          position: relative;
+          margin-top: 3vw;
+
+          .logo {
+            margin-top: 0vw;
+            width: 15%;
+          }
+
+          i {
+            position: absolute;
+            padding: 0px 10px;
+            top: -10px;
+            right: 0vw;
+            font-size: 25px;
+            font-weight: bold;
+            z-index: 998;
+          }
+
+          .btn {
+            display: flex;
+            justify-content: center;
+            padding-top: 12px;
+            color: $darkgrey;
+            font-size: 18px;
+
+            .login {
+              margin-right: 5vw;
+              color: $white;
+            }
+          }
+
+          .el-divider {
+            background-color: $separator;
+          }
+        }
+
+        .body {
+          position: relative;
+          padding: 3vw 5vw;
+
+          .title {
+            font-size: 20px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            text-align: center;
+            color: $white;
+            margin-bottom: 24px;
+          }
+
+          .text-input {
+            position: relative;
+            background-color: $darkBackground;
+            border-radius: 4px;
+            margin-bottom: 24px;
+
+            input {
+              color: $white;
+              font-size: 20px;
+              padding: 30px 20px 20px;
+              width: 100%;
+              border-radius: 4px;
+              background-color: $darkBackground;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            label {
+              position: absolute;
+              pointer-events: none;
+              font-size: 16px;
+              font-weight: bold;
+              color: $lightGrey;
+              left: 20px;
+              top: 20px;
+              transition: 0.2s ease all;
+            }
+
+            i {
+              position: absolute;
+              font-size: 16px;
+              font-weight: bold;
+              color: $lightGrey;
+              right: 16px;
+              top: 20px;
+              transition: 0.2s ease all;
+              cursor: pointer;
+            }
+
+            input:focus~label,
+            input:not(:placeholder-shown)~label {
+              top: 10px;
+              font-size: 18px;
+            }
+
+          }
+
+          .forgotpass {
+            color: $darkgrey;
+            text-align: left;
+            margin: 0 0 10px 0;
+
+            .el-link {
+              vertical-align: bottom;
+              font-size: 18px;
+            }
+          }
+
+          .signBtn {
+            width: 100%;
+            background-color: $red;
+            color: $white;
+            font-size: 18px;
+            border-radius: 1vw;
+            font-weight: 600;
+            letter-spacing: -.56px;
+            padding: 15px 0;
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .arrow {
+              transform: rotate(90deg);
+              margin-left: 10px;
+              width: 2%;
+            }
+          }
+        }
+
+        .footer {
+          position: relative;
+          padding: 0 5vw;
+
+          .text {
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            word-wrap: break-word;
+
+          }
+
+          .el-divider {
+            background-color: $separator;
+            margin: 20px 0;
+
+            .el-divider__text {
+              background-color: $background;
+            }
+
+            p {
+              color: $darkgrey;
+              font-size: 16px;
+            }
+          }
+
+          .el-link {
+            vertical-align: bottom;
+            font-size: 16px;
+          }
+
+          .row {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+
+            .otherLogin {
+              background-color: $background;
+              border: 1px solid $separator;
+              margin-right: 20px;
+              padding: 20px 30px;
+              margin-left: 0;
+
+              img {
+                width: 50px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+// add animation of zoom fade in
+@keyframes zoomFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

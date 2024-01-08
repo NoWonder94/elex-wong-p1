@@ -1,0 +1,12 @@
+@import 'base.scss';
+
+
+.ai_betting_robot {
+  background-color: $bgColor;
+  padding: 0px 10px;
+  min-height: 90vh;
+
+  .ai_betting_robot_content {
+    padding: 0px 16px;
+  }
+}

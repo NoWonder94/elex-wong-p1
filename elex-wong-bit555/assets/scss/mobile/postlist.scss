@@ -1,0 +1,44 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+
+  .postlist {
+    margin: 0 auto;
+
+    .postlist-container {
+      min-height: 100vw;
+      padding: 8vw 4vw;
+
+      .postlist-title {
+        padding: 1.5vw 0;
+        font-size: 5vw;
+        font-weight: 900;
+      }
+
+      .postlist-amount {
+        font-size: 3vw;
+      }
+
+      .postlist-content {
+        padding: 5vw 0;
+
+        .postlist-item {
+          padding: 3vw 0;
+        }
+      }
+
+      .load-more {
+        text-align: center;
+      }
+
+      .el-icon-arrow-down {
+        display: block;
+      }
+
+      .el-icon-arrow-down::before {
+        font-size: 5.5vw;
+        font-weight: 900;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<div class="root flex-col-center">
+  <div class="section-title">
+    <h2>Web3 Sign-in</h2>
+  </div>
+
+  <!-- Wallets icons -->
+  <div class="row content justify-content-center text-center">
+    <img src="../assets/img/wallet.png" >
+  <!--<img src="../assets/img/wallet.png" height="40" /> -->
+
+  </div>
+
+  <div class="row content justify-content-center">
+    <div>
+      <div class="altxs">
+        <div class="data-info-box">
+          <p class="heading">Wallet address</p>
+          <p class="text">{{ walletAddress }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <btn-loader title="Authenticate with wallet" class="margin-top-50" (clicked)="signIn()" [busy]="signingIn">
+  </btn-loader>
+</div>

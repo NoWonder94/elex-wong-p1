@@ -1,0 +1,98 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .binding {
+
+    .binding-wrapping-mobile {
+      position: relative;
+      padding: 4vw;
+      min-height: 85vh;
+      background-color: $secondaryBgColor;
+
+      .el-form {
+        padding: 0 3vw;
+
+        .el-form-item {
+
+          &:last-child {
+            position: absolute;
+            bottom: 6vw;
+            right: 7vw;
+            left: 7vw;
+            margin-bottom: 0;
+
+            .el-form-item__content {
+
+              .el-button {
+                width: 100%;
+                padding: 3vw;
+                background-image: linear-gradient(to right, $lightGreen, $secondaryGreen);
+                background-color: transparent;
+                border-color: transparent;
+                border-radius: 1vw;
+                text-align: center;
+                cursor: pointer;
+              }
+            }
+          }
+
+          label {
+            display: block;
+            float: unset;
+            padding: 0;
+            padding-bottom: 2vw;
+            color: $fontColor;
+            font-size: 4vw;
+            font-weight: bold;
+            text-align: left;
+          }
+
+          .el-form-item__content {
+            margin-left: 0 !important;
+
+            .el-input__inner {
+              padding: 0;
+              background-color: inherit;
+              color: $fontColor;
+              border: none;
+              border-bottom: 0.3vw solid $lighterGreen;
+              border-radius: 0;
+
+              &::placeholder {
+                color: $lightFontColor  !important;
+              }
+
+              &:focus {
+                padding-left: 2vw;
+                border: 0.3vw solid $primaryGreen;
+                border-radius: $borderRadius5;
+              }
+
+              &:hover {
+                color: $lightGreen  !important;
+                border-bottom: 0.3vw solid $lightGreen;
+
+                &::placeholder {
+                  color: $lightGreen  !important;
+                }
+              }
+            }
+
+          }
+        }
+
+      }
+
+      .binding-tips {
+        .binding-tips-title {
+          padding-bottom: 2vw;
+        }
+
+        .binding-tips-content {
+          font-size: 4vw;
+          line-height: 6vw;
+        }
+      }
+    }
+  }
+}

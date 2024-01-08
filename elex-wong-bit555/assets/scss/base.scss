@@ -1,0 +1,62 @@
+@import 'assets/css/font-awesome-6.0.0/css/all.css';
+
+//background color
+$bgColor: #FFFFFF;
+$secondaryBgColor: #000000;
+
+//font color
+$fontColor: #15171a;
+$secondaryFontColor: #979797;
+$whiteFontColor: #FFFFFF;
+$whiteFontColorTransparent: #ffffffbc;
+$blackFontColorTransparent: #0000009e;
+$greyFontColor: #dcdcdc;
+$greyFontColorTransparent: #dcdcdc1d;
+$redFontColor: #f02525;
+
+//size
+$pcMinWidth: 700px;
+$mobileMaxWidth: 700px;
+
+//text style
+$postDetailsFont: Georgia, Times, serif;
+$titleFont: 'Roboto', sans-serif;
+
+
+body {
+  position: relative;
+  background-color: $bgColor;
+  color: $fontColor;
+  font-family: "Segoe UI", sans-serif;
+}
+
+@media only screen and (min-width: $pcMinWidth) {
+  .web {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  body {
+    overflow-x: auto;
+  }
+
+}
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

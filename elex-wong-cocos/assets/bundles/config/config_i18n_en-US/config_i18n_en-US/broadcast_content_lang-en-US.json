@@ -1,0 +1,8 @@
+{
+	"BROADCAST_WINS":"Player <color=#00ff00>%s</color> Got it in the game <color=#ff0000>%s</color> winning streak，Who will put an end to this arrogant player.",
+	"BROADCAST_GOLD_FIRST":"The world's richest man <color=#00ff00>%s</color> Online! Let's be friends.",
+	"BROADCAST_BIG_WIN":"Player <color=#00ff00>%s</color> win in the game <color=#ffd700>%s</color> chip.",
+	"TURNTABLE_AWARD":"player <color=#00ff00>%s</color> Very lucky，Earn <color=#ffd700>%s</color> grand prizes in your daily loading tray",
+	"THREE_OF_A_KIND":"player <color=#00ff00>%s</color> May possess，Get three A's in the game and kill all around",
+	"BLACK_JACK":"player <color=#00ff00>%s</color> May possess，Get Blackjack in the game and kill all around"
+}

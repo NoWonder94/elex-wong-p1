@@ -1,0 +1,82 @@
+$fontBlackColor:#282828;
+$fontTitleBlackColor:#1E1F21;
+$fontDescColor:#919191;
+
+@media only screen and (max-width: 700px)
+{
+  .card{
+    color:$fontBlackColor;
+    opacity: 1;
+
+    .image{
+      width: 100%;
+      object-fit: cover;
+      overflow: hidden;
+
+      .img{
+        width: 100%;
+      }
+    }
+
+
+    .card-content {
+      position: relative;
+      padding: 2vw;
+      height: 55vw;
+
+      .card-content-title {
+        font-size: 5vw;
+        color: $fontTitleBlackColor;
+        font-weight: 600;
+      }
+
+      .card-content-desc {
+        margin-top: 1vw;
+        font-size: 3vw;
+        columns: $fontDescColor;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        line-clamp: 3; 
+        -webkit-box-orient: vertical;
+        min-height: 10vw;
+      }
+      
+      .card-content-info {
+        position: relative;
+        margin-top: 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .card-content-info-cate {
+          position: relative;
+          
+          img {
+            width: 25vw;
+          }
+        }
+
+        .card-more-info {
+          font-size: 3vw;
+        }
+       
+      }
+
+      .card-button{
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: url('../assets/img/Bole-play-button.png') no-repeat center;
+        width: 64vw;
+        height: 17vw;
+        text-align: center;
+        margin: 0 auto;
+        background-size: 100%;
+        margin-top: 3vw;
+      }
+    }
+  }
+
+}

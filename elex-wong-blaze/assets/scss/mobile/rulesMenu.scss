@@ -1,0 +1,42 @@
+@import "../base.scss";
+
+@media only screen and (max-width: 1200px) {
+  .rules {
+    position: relative;
+    color: $white;
+    .mobile-header {
+      position: relative;
+      text-align: center;
+      padding: 26px 0;
+      border-bottom: 1px solid $separator;
+      height: 70px;
+
+      .title{
+        font-size: 12px;
+        font-weight: bold;
+      }
+      i {
+        position: absolute;
+        left: 20px;
+        font-size: 18px;
+      }
+    }
+
+    .rules-row {
+      position: relative;
+      text-align: left;
+      font-weight: bold;
+      padding: 24px 12px;
+      border-bottom: 1px solid $separator;
+
+      .text {
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+
+    }
+
+
+  }
+}

@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `Campaign` ADD COLUMN `rules` VARCHAR(191) NOT NULL DEFAULT '';

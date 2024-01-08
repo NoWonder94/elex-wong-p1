@@ -1,0 +1,5 @@
+.idea/
+config/
+vendor/
+sync.sh
+public/index.php

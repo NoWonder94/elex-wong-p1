@@ -1,0 +1,768 @@
+[
+  {
+    "id":"18",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sichuan/lobby.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sichuan/gameSlide_b.jpg",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sichuan/gameSlide_c.jpg",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sichuan/gameSlide_d.jpg",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sichuan/gameSlide_e.jpg"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Bole Sichuan Mahjong - Bloody Fight"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2018-8-8"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Mahjong"
+      },
+      "最大可赢":{
+        "name":"Multiplier",
+        "describe":"1024"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1920 X 1080</p><p style='margin-bottom:0'>1280 X 720</p><p style='margin-bottom:0'>1136 x 640</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"19",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sichuan/lobby.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sichuan/gameSlide_b.jpg",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sichuan/gameSlide_c.jpg",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sichuan/gameSlide_d.jpg",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sichuan/gameSlide_e.jpg"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Bole Sichuan Mahjong - River of blood"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2018-8-8"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Mahjong"
+      },
+      "最大可赢":{
+        "name":"Multiplier",
+        "describe":"1024"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1920 X 1080</p><p style='margin-bottom:0'>1280 X 720</p><p style='margin-bottom:0'>1136 x 640</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"20",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/dazhong/screenshot/01.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/dazhong/screenshot/02.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/dazhong/screenshot/03.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Bole Popular Mahjong"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-06-04"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Mahjong"
+      },
+      "最大可赢":{
+        "name":"Multiplier",
+        "describe":"984"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1920 X 1080</p><p style='margin-bottom:0'>1280 X 720</p><p style='margin-bottom:0'>1136 X 640</p>"
+      },
+      "支持平台":{
+        "name":"Platform",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"21",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/gdmj/screenshot/p1.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/gdmj/screenshot/p2.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/gdmj/screenshot/p3.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Bole Guangdong Mahjong"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-8-13"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Mahjong"
+      },
+      "最大可赢":{
+        "name":"Multiplier",
+        "describe":"3888"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1920 X 1080</p><p style='margin-bottom:0'>1280 X 720</p><p style='margin-bottom:0'>1136 x 640</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"22",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/hnmj/screenshot/ss1.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/hnmj/screenshot/ss2.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/hnmj/screenshot/ss3.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Bole Hunan Mahjong"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-9-03"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Mahjong"
+      },
+      "最大可赢":{
+        "name":"Multiplier",
+        "describe":"30"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1920 X 1080</p><p style='margin-bottom:0'>1280 X 720</p><p style='margin-bottom:0'>1136 x 640</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"23",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/zhajinhua/screenshot1.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/zhajinhua/screenshot2.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/zhajinhua/screenshot3.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Bole Golden Flower "
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-4-21"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Card Games"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1280 X 720</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"24",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/blnn/screenshot/pic1.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/blnn/screenshot/pic2.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/blnn/screenshot/pic3.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Bole Niu-Niu"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2018-11-21"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Card Games"
+      },
+      "最大可赢":{
+        "name":"Multiplier",
+        "describe":"540"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>720 X 1280</p>"
+      },
+      "支持平台":{
+        "name":"Platform",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"25",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sangong/screenshot/pic1.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sangong/screenshot/pic2.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sangong/screenshot/pic3.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Bole Sangong"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-01-02"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Card Games"
+      },
+      "最大可赢":{
+        "name":"Multiplier",
+        "describe":"700"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>720 X 1280</p>"
+      },
+      "支持平台":{
+        "name":"Platform",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"28",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/redblack/screenshot/pic1.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/redblack/screenshot/pic2.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/redblack/screenshot/pic3.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/redblack/screenshot/pic4.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Red and Black war"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-01-30"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Board Games"
+      },
+      "最大可赢":{
+        "name":"Multiplier",
+        "describe":"15"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1920 X 1080</p><p style='margin-bottom:0'>1280 X 720</p><p style='margin-bottom:0'>1136 X 640</p>"
+      },
+      "支持平台":{
+        "name":"Platform",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"30",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/21dian/screenshot/shot1.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/21dian/screenshot/shot2.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/21dian/screenshot/shot3.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Bole Black Jack"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-07-10"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Poker Games"
+      },
+      "最大可赢":{
+        "name":"Multiplier",
+        "describe":"700"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>720 X 1280</p>"
+      },
+      "支持平台":{
+        "name":"Platform",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"31",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/baijiale/screenshot/01.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/baijiale/screenshot/02.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/baijiale/screenshot/03.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Bole Baccarat"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-06-04"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Board Games"
+      },
+      "最大可赢":{
+        "name":"Multiplier",
+        "describe":"12"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1920 X 1080</p><p style='margin-bottom:0'>1280 X 720</p><p style='margin-bottom:0'>1136 X 640</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"34",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/danaotiangong/screenshot/01.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/danaotiangong/screenshot/02.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/danaotiangong/screenshot/03.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"The Monkey King"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-5-14"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Slot Games"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1280 X 720</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"35",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/shendiaoxialv/screenshot/01.PNG",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/shendiaoxialv/screenshot/02.PNG",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/shendiaoxialv/screenshot/03.PNG"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"The Condor Heroes"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-5-14"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Slot Games"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1280 X 720</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"36",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/chibi/screenshot/01.jpg",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/chibi/screenshot/02.jpg",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/chibi/screenshot/03.jpg"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"The Three Kingdoms"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-06-04"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Slot Games"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1280 X 720</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"37",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sdmn/screenshot/shot01.PNG",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sdmn/screenshot/shot02.PNG",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sdmn/screenshot/shot03.PNG"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"The Four Beauties"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-06-18"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Slot Games"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1280 X 720</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"38",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/bskg/screenshot/shot1.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/bskg/screenshot/shot2.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/bskg/screenshot/shot3.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Jewels Miners"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-07-10"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Slot Games"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1280 X 720</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"39",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/rdsg/screenshot/1.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/rdsg/screenshot/2.PNG",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/rdsg/screenshot/3.PNG"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Fresh Fruit"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-08-06"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Slot Games"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1280 X 720</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"43",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/anye/screenshot/ss01.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/anye/screenshot/ss02.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/anye/screenshot/ss03.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Night Hunter"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-08-20"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Slot Games"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1280 X 720</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"44",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/gdzw/screenshot/ss1.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/gdzw/screenshot/ss2.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/gdzw/screenshot/ss3.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"The King of Fighter"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-9-10"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Slot Games"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1280 X 720</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"46",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/hzmj/screenshot/ss1.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/hzmj/screenshot/ss2.png",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/hzmj/screenshot/ss3.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"Bole Hangzhou Mahjong"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-9-19"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Mahjong"
+      },
+      "最大可赢":{
+        "name":"Multiplier",
+        "describe":"768"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1920 X 1080</p><p style='margin-bottom:0'>1280 X 720</p><p style='margin-bottom:0'>1136 x 640</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  },
+  {
+    "id":"47",
+    "gameScreenshots":[
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/bscs/screenshot/ss1.PNG",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/bscs/screenshot/ss2.PNG",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/bscs/screenshot/ss3.PNG",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/bscs/screenshot/ss4.PNG",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/bscs/screenshot/ss5.PNG",
+      "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/bscs/screenshot/ss6.png"
+    ],
+    "gameDetails":{
+      "游戏名称":{
+        "name":"Game Name",
+        "describe":"White Snake"
+      },
+      "上线时间":{
+        "name":"Launch Date",
+        "describe":"2019-9-26"
+      },
+      "游戏类型":{
+        "name":"Game Type",
+        "describe":"Slot Games"
+      },
+      "游戏语言":{
+        "name":"Language",
+        "describe":"Chinese"
+      },
+      "显示分辨率":{
+        "name":"Resolution",
+        "describe":"<p style='margin-bottom:0'>1280 X 720</p>"
+      },
+      "支持平台":{
+        "name":"Platforms",
+        "describe":"<i class='bole-icon-ios'></i><i class='bole-icon-android'></i><i class='bole-icon-html5'></i><i class='bole-icon-macOS'></i><i class='bole-icon-windows'></i>"
+      }
+    }
+  }
+]

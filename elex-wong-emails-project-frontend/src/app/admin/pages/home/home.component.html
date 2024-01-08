@@ -1,0 +1,89 @@
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section><!-- End Hero -->
+<main id="main">
+  <section id="registersection" class="about">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+      <!-- Status -->
+      <div class="offset-lg-0 col-lg-12">
+        <div class="section-header">Status</div>
+      </div>
+      <div class="row content justify-content-center stats">
+      </div>
+
+      <!-- Statistics -->
+      <div class="offset-lg-0 col-lg-12">
+        <div class="section-header">Statistics</div>
+      </div>
+      <div class="row content justify-content-center stats" *ngIf="stats">
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-title">Created accounts (total)</div>
+          <div class="stat-value">{{ stats.accounts.total }}</div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-title">Verified accounts (total)</div>
+          <div class="stat-value">{{ stats.accounts.totalVerified }}</div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-title">Created accounts (24h)</div>
+          <div class="stat-value">{{ stats.accounts.last24h }}</div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-title">Verified accounts (24h)</div>
+          <div class="stat-value">{{ stats.accounts.totalVerifiedLast24h }}</div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-title">Created projects (total)</div>
+          <div class="stat-value">{{ stats.projects.total }}</div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-title">Created projects (24h)</div>
+          <div class="stat-value">{{ stats.projects.last24h }}</div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-title">Created campaigns (total)</div>
+          <div class="stat-value">{{ stats.campaigns.created.total }}</div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-title">Created campaigns (24h)</div>
+          <div class="stat-value">{{ stats.campaigns.created.last24h }}</div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-title">Joined campaigns (total)</div>
+          <div class="stat-value">{{ stats.campaigns.joined.total }}</div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="stat-title">Joined campaigns (24h)</div>
+          <div class="stat-value">{{ stats.campaigns.joined.last24h }}</div>
+        </div>
+        <!-- <div class="col-lg-4 col-md-6">
+          <div class="stat-title">Last 5 airdrop tx sent</div>
+          <div class="stat-value">N / A</div>
+        </div> -->
+        <!-- <div class="col-lg-4 col-md-6">
+          Number of airdrops (total of addresses) pendings to be sent, unsent (to see if we are late)
+        </div> -->
+        <div class="col-lg-4 col-md-6">
+        </div>
+        <div class="col-lg-4 col-md-6">
+        </div>
+      </div>
+
+      <!-- Nav -->
+      <div class="offset-lg-0 col-lg-12">
+        <div class="section-header">Navigation</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-12">
+          <div class="nav-list-item" (click)="showERC20Airdrops()">Airdrops</div>
+          <div class="nav-list-item" (click)="showWallet()">Wallet</div>
+          <div class="nav-list-item" (click)="showDevTools()">Dev tools</div>
+          <!-- <div class="nav-list-item">Campaigns</div> -->
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End About Us Section -->
+
+</main><!-- End #main -->

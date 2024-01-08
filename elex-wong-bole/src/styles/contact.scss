@@ -1,0 +1,223 @@
+.Banner_Top {
+  position: relative;
+}
+
+.content {
+  background-color: rgb(242, 242, 242);
+  .innerContent {
+    background-color: white;
+  }
+}
+
+[data-aos='zoom-in-responsive'] {
+  transition-property: transform, opacity;
+  @media screen and (max-width: 767px) {
+    transform: scale(0.5);
+    opacity: 0;
+    &.aos-animate {
+      transition-delay: 0.5s;
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @media screen and (min-width: 767px) {
+    transform: scale(0.5);
+    opacity: 0;
+    &.aos-animate {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.contactUs_CN {
+  @media screen and (min-width: 767px) {
+    .Banner_Top {
+      height: 50vw;
+
+      #scene {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+          position: absolute !important;
+          top: auto !important;
+          left: auto !important;
+          bottom: -2vw !important;
+          right: 9.2vw;
+          width: 19.6vw;
+          height: 24.1vw;
+          animation: motion 5s infinite ease;
+
+          @keyframes motion {
+            0% {
+              bottom: 0px;
+            }
+            50% {
+              bottom: 50px;
+            }
+            100% {
+              bottom: 0px;
+            }
+          }
+        }
+      }
+
+      div {
+        .wrap {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          white-space: nowrap;
+          transform: translateX(-50%) translateY(-50%);
+          color: white;
+          text-align: center;
+          span {
+            display: block;
+          }
+          span:first-child {
+            font-size: 4.2vw;
+            padding-bottom: 0.8vw;
+            font-weight: 700;
+          }
+
+          span:last-child {
+            font-size: 1.2vw;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contactUs_EN {
+  @media screen and (min-width: 767px) {
+    .Banner_Top {
+      height: 50vw;
+
+      #scene {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+          position: absolute !important;
+          top: auto !important;
+          left: auto !important;
+          bottom: -2vw !important;
+          right: 5vw !important;
+          height: 55%;
+          animation: motion 5s infinite ease;
+
+          @keyframes motion {
+            0% {
+              bottom: 0px;
+            }
+            50% {
+              bottom: 50px;
+            }
+            100% {
+              bottom: 0px;
+            }
+          }
+        }
+      }
+
+      div {
+        .wrap {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          color: white;
+          font-weight: bold;
+          text-align: center;
+          span {
+            display: block;
+          }
+          span:first-child {
+            font-size: 3vw;
+          }
+
+          span:last-child {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            font-size: 1.2vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contactUs_KR {
+  @media screen and (min-width: 767px) {
+    .Banner_Top {
+      height: 50vw;
+
+      #scene {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+          position: absolute !important;
+          top: auto !important;
+          left: auto !important;
+          bottom: -2vw !important;
+          right: 5vw !important;
+          height: 55%;
+          animation: motion 5s infinite ease;
+
+          @keyframes motion {
+            0% {
+              bottom: 0px;
+            }
+            50% {
+              bottom: 50px;
+            }
+            100% {
+              bottom: 0px;
+            }
+          }
+        }
+      }
+
+      div {
+        .wrap {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          color: white;
+          font-weight: bold;
+          text-align: center;
+          span {
+            display: block;
+          }
+          span:first-child {
+            font-size: 3vw;
+          }
+
+          span:last-child {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            font-size: 1.2vw;
+          }
+        }
+      }
+    }
+  }
+}

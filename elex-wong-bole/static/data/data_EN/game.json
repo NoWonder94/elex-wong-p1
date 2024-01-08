@@ -1,0 +1,375 @@
+{
+	"majiong":[
+    {
+			"id":"1",
+      "name":"Bole Sichuan Mahjong - Bloody Fight",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/xzdd/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/xzdd/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/1.svg"
+      ],
+      "type":"Mahjong",
+      "info":"Bloody Fight is a regional way of playing Mahjong popular among Sichuan. The first winner’s appearance doesn’t mean the end of game, the rest three players could keep playing until all of them have the complete tiles or entire tiles are taken.",
+      "status":"More",
+      "available":"熊猫四川麻将"
+		},
+    {
+      "id":"2",
+      "name":"Bole Sichuan Mahjong - River of blood",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/xlch/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/xlch/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/1.svg"
+      ],
+      "type":"Mahjong",
+      "info":"River of Blood is alike Bloody Fight, the only difference is the winners could keep playing after winning the game. This rule makes the game even more exciting.",
+      "status":"More",
+      "available":"Mahjong"
+    },
+    {
+      "id":"7",
+      "name":"Bole Popular Mahjong",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/dazhong/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/dazhong/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/1.svg"
+      ],
+      "type":"Mahjong",
+      "info":"Bole Popular Mahjong is the most extensive and widely used mahjong gameplay in the world.",
+      "status":"More",
+      "available":"Mahjong"
+    },
+    {
+      "id":"22",
+      "name":"Bole Hunan Mahjong",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/hnmj/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/hnmj/Icon.png",
+      "mobileOSIcon":[
+          "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/1.svg"
+      ],
+      "type":"Mahjong",
+      "info":"Bole Hunan Mahjong brings together the classic mahjong gameplay in Hunan. It has unique rules for eating, easy to use, and playable, which is popular with many players.",
+      "status":"Coming Soon",
+      "available":"false",
+      "check":"查看详情",
+      "test":"游戏试玩",
+      "new":"true",
+      "imgcoming":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/comingsoon/comingsoon02.png"
+    },
+    {
+      "id":"23",
+      "name":"Bole Guangdong Mahjong",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/gdmj/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/gdmj/Icon.png",
+      "mobileOSIcon":[
+          "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/1.svg"
+      ],
+      "type":"Mahjong",
+      "info":"Bole Guangdong Mahjong uses the classic gameplay in Guangdong, the rules are simple, to win of each game is fast, and you can't stop it when you play.",
+      "status":"Coming Soon",
+      "available":"false",
+      "check":"查看详情",
+      "test":"游戏试玩",
+      "new":"true",
+      "imgcoming":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/comingsoon/comingsoon02.png"
+    }
+  ],
+	"card_games":[
+		{
+			"id":"4",
+      "name":"Bole Niu-Niu",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/blnn/banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/blnn/icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/2.svg"
+      ],
+      "type":"Poker Games",
+      "info":"It’s a simple play with tempo and tension. Popular among in China, played by 4 players. Players could according their card on hand to decide win or lose with dealer. ",
+      "status":"More",
+      "available":"博乐牛牛"
+    },
+    {
+			"id":"8",
+      "name":"Bole Sangong",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sangong/banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sangong/icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/2.svg"
+      ],
+      "type":"Poker Games",
+      "info":"It’s a simple play with tempo and tension. Played by 5 players. Players could according their card on hand to decide win or lose with dealer.",
+      "status":"More",
+      "available":"博乐三公"
+    },
+    {
+      "id":"3",
+      "name":"Bole Golden Flower",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/zhajinhua/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/zhajinhua/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/2.svg"
+      ],
+      "type":"Poker Games",
+      "info":"Bole Golden Flower is a popular multi-player poker game in China. Players have a unique rule with three cards in their hands. The game needs to test the player's courage and wisdom.",
+      "status":"More",
+      "available":"博乐炸金花"
+    },
+    {
+      "id":"10",
+      "name":"Bole Texas Hold'em",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/dezhou/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/dezhou/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/2.svg"
+      ],
+      "type":"Poker Games",
+      "info":"Bole Texas Hold'em is a popular poker game in the world. Although the rules are simple, it takes a lot of time to master.it also test the player's courage and strategy.",
+      "status":"Coming Soon",
+      "available":"false",
+      "new":"true",
+      "imgcoming":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/comingsoon/comingsoon02.png"
+    },
+    {
+      "id":"15",
+      "name":"Badugi",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/badugi/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/badugi/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/2.svg"
+      ],
+      "type":"Poker Games",
+      "info":"Badugi is a very popular poker game in Korea. Similar to the 'low card' game, it is won by the player holding the best low card group.(Only for BoleGaming International Edition)",
+      "status":"Coming Soon",
+      "available":"false",
+      "new":"true",
+      "imgcoming":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/comingsoon/comingsoon02.png"
+    }
+	],
+  "board_games":[
+    {
+      "id":"9",
+      "name":"Red and Black war",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/redblack/banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/redblack/icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/3.svg"
+      ],
+      "type":"Table Games",
+      "info":"Popular among in Asia. Play with multiple players in the same room. Bet on red, black, or extra lucky strike. With the trend estimate, many players enjoy the excitement.",
+      "status":"More",
+      "available":"红黑大战"
+    },
+    {
+      "id":"11",
+      "name":"Seven Card Stud",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/7card/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/7card/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/3.svg"
+      ],
+      "type":"Table Games",
+      "info":"Seven Card Stud is one of World Series of Poker (WSOP) projects and is one of the most popular poker games today, testing the players' skills and strategies. (Only for BoleGaming International Edition)",
+      "status":"Coming Soon",
+      "available":"false",
+      "new":"true",
+      "imgcoming":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/comingsoon/comingsoon02.png"
+    },
+    {
+      "id":"12",
+      "name":"Bole Blackjack",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/21dian/Banner.png",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/21dian/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/3.svg"
+      ],
+      "type":"Table Games",
+      "info":"Blackjack is a popular poker game in the casino. If you have the courage, dare to fight, and dare to have a card, you will have the chance to reach 21 points and win a lot of prizes.",
+      "status":"More",
+      "available":"Blackjack"
+    },
+    {
+      "id":"13",
+      "name":"Bole Baccarat",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/baijiale/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/baijiale/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/3.svg"
+      ],
+      "type":"Table Games",
+      "info":"As a popular poker game, Bole Baccarat has always been very popular among players. In addition to direct participation, it can also try its luck according to the road list of each round.",
+      "status":"More",
+      "available":"true"
+    },
+    {
+      "id":"14",
+      "name":"VR Dragon Tiger",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/longhu/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/longhu/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/3.svg"
+      ],
+      "type":"Table Games",
+      "info":"BoleGaming VR Dragon Tiger uses innovative technology to develop and bring you different gaming experiences!",
+      "status":"Coming Soon",
+      "available":"false",
+      "new":"true",
+      "imgcoming":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/comingsoon/comingsoon02.png"
+    },
+    {
+      "id":"16",
+      "name":"Bole Sic Bo",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/toubao/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/toubao/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/3.svg"
+      ],
+      "type":"Table Games",
+      "info":"The gameplay of Bole Sic Bo is that after the player places a bet on the dealer, the dealer announces the points of the three dice and sends the prizes to the players.",
+      "status":"Coming Soon",
+      "available":"false",
+      "check":"查看详情",
+      "test":"游戏试玩",
+      "new":"true",
+      "imgcoming":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/comingsoon/comingsoon02.png"
+    }
+  ],
+  "slot_games":[
+    {
+      "id":"5",
+      "name":"The Monkey King",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/danaotiangong/banner.png",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/danaotiangong/icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/4.svg"
+      ],
+      "type":"Slot Games",
+      "info":"Sun Wukong took the weapon The Golden Cudgel, and screamed at the peach banquet, against the soldier from heaven will be used to make the Jade Emperor hurt his brain.",
+      "status":"More",
+      "available":"大闹天宫"
+    },
+    {
+      "id":"6",
+      "name":"The Condor Heroes",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/shendiaoxialv/banner.png",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/shendiaoxialv/icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/4.svg"
+      ],
+      "type":"Slot Games",
+      "info":"The story of the love between Yang Guo and Xiaolongnu written by Jin Yong, BoleGaming™ takes you back to the story.",
+      "status":"More",
+      "available":"神雕侠侣"
+    },
+    {
+      "id":"20",
+      "name":"The Three Kingdoms",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/chibi/cover.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/chibi/icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/4.svg"
+      ],
+      "type":"Slot Games",
+      "info":"The exquisite picture of the The Three Kingdoms slot game adds shocking sound effects. In the game, it is like an epic battle scene when you are in the Three Kingdoms.",
+      "status":"More",
+      "available":"赤壁之战"
+    },
+    {
+      "id":"21",
+      "name":"The Four Beauties",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sdmn/cover.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/sdmn/icon.png",
+      "mobileOSIcon":[
+          "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/4.svg"
+      ],
+      "type":"Slot Games",
+      "info":"China's famous four beauties are coming to the BoleGaming slot game, Xi Shi, Wang Zhaojun, Diaochan and Yang Guifei to accompany you!",
+      "status":"More",
+      "available":"四大美女",
+      "check":"查看详情",
+      "test":"游戏试玩"
+    },
+    {
+      "id":"24",
+      "name":"Jewels Miner",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/bskg/Banner.png",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/bskg/Icon.png",
+      "mobileOSIcon":[
+          "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/4.svg"
+      ],
+      "type":"Slot Games",
+      "info":"Follow the dwarf to the ground to excavate the Jewels, along with the shovel and explosives, see how many you can mine, how many Jewels you can take.",
+      "status":"More",
+      "available":"宝石矿工",
+      "check":"查看详情",
+      "test":"游戏试玩"
+    },
+    {
+      "id":"25",
+      "name":"Fresh Fruit",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/rdsg/banner.png",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/rdsg/icon.png",
+      "mobileOSIcon":[
+          "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/4.svg"
+      ],
+      "type":"Slot Games",
+      "info":"Fresh Fruit fruit is a traditional slot game that has always been very popular with players.",
+      "status":"More",
+      "available":"热带水果",
+      "check":"查看详情",
+      "test":"游戏试玩"
+    }
+  ],
+	"arcade":[
+    {
+      "id":"17",
+      "name":"Treasure Hunt",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/xunbao/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/xunbao/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/5.svg"
+      ],
+      "type":"Arcade",
+      "info":"There are many treasures in the Treasure Hunt, waiting for you to hunt for treasure, both fun and win big prizes.",
+      "status":"敬请期待",
+      "available":"false",
+      "check":"查看详情",
+      "test":"游戏试玩",
+      "new":"true",
+      "imgcoming":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/comingsoon/comingsoon02.png"
+    },
+    {
+      "id":"18",
+      "name":"Shake Shake",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/yaoyiyao/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/yaoyiyao/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/5.svg"
+      ],
+      "type":"Arcade",
+      "info":"Shake Shake is a new type of dice game that tests the player's wisdom and courage.",
+      "status":"敬请期待",
+      "available":"false",
+      "check":"查看详情",
+      "test":"游戏试玩",
+      "new":"true",
+      "imgcoming":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/comingsoon/comingsoon02.png"
+    },
+    {
+      "id":"19",
+      "name":"The Bell",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/lingdang/Banner.jpg",
+      "imgIcon":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/lingdang/Icon.png",
+      "mobileOSIcon":[
+        "https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/commonImage/5.svg"
+      ],
+      "type":"Arcade",
+      "info":"The Bell is an online entertainment game that combines music and tests the rhythm of the player.",
+      "status":"敬请期待",
+      "available":"false",
+      "check":"查看详情",
+      "test":"游戏试玩",
+      "new":"true",
+      "imgcoming":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/game/comingsoon/comingsoon02.png"
+    }
+  ]
+}

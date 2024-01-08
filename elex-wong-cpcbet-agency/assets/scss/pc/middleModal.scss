@@ -1,0 +1,41 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $modalOverlayColorOpc50;
+    // background-color: transparent;
+    z-index: 999;
+
+    .modal {
+      position: relative;
+      width: 500px;
+      padding: 30px 25px;
+      border-radius: 10px;
+      background-color: $bgColor;
+      // background: transparent;
+      z-index: 999;
+    }
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+      z-index: 9999;
+
+      .close-img {
+        width: 25px;
+        filter: invert(0%) sepia(0%) saturate(30%) hue-rotate(163deg) brightness(8%) contrast(107%);
+      }
+    }
+  }
+}

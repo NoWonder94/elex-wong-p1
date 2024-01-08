@@ -1,0 +1,197 @@
+.risky-farmer
+{
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    padding-bottom: 70px;
+    letter-spacing: 0.48px;
+}
+.risky-farmer .risky-farmer-container
+{
+    padding: 25px 15px 0px 15px; 
+}
+
+/* content header */
+.risky-farmer-container .risky-farmer-page-header 
+{
+    position: relative;
+    border-radius: 15px 15px 0px 0px;
+    padding: 8px 15px;
+    background-color: #424FAD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.risky-farmer-page-header-title 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.risky-farmer-page-header-title img 
+{
+    width: 18px;
+    height: 18px;
+}
+.risky-farmer-page-header-title span 
+{
+    margin-left: 8px;
+    color: #ffffff;
+    font-size: 13px;
+}
+.risky-farmer-page-header .close-button 
+{
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+}
+/* content header end*/
+
+/* upper content */
+.upper-content
+{
+    position: relative;
+    padding: 20px 25px;
+    background: #FFFFFF;
+}
+.risky-farmer-list
+{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #666666;
+    
+}
+.risky-farmer-list-label
+{
+    font-weight: bold;
+}
+.risky-farmer-list-value
+{
+    font-size: 10px;
+}
+.bar-container
+{
+    position: relative;
+	width: 100%;
+	height: 3px;
+	margin: 5px 0px 15px 0px;
+	background-color: #BBBBBB;
+}
+/* upper content end*/
+
+/* lower content*/
+.lower-content
+{
+    position: relative;
+    background: #383838;
+    padding: 20px 25px;
+    border-radius: 0px 0px 15px 15px;
+    color: #FFFFFF;
+}
+.risky-farmer-form
+{
+    width: 100%;
+    display: flex;
+    /* flex-direction: row; */
+}
+.form-input
+{
+    flex: 1;
+}
+.form-input:first-child
+{
+    padding-right: 3px;
+}
+.form-input:last-child
+{
+    padding-left: 3px;
+}
+.form-input .form-input-label
+{
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.form-input .form-input-input
+{
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px;
+    margin: 5px 0px 13px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666666;
+}
+.form-input .form-input-button
+{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 13px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+    background-color: #39DDD7;
+}
+.risky-farmer-form-button
+{   
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    text-align: center;
+    background: #584CB9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/* lower content end*/
+
+/* risky farm rules */
+.risky-farmer-rules
+{
+    margin: 30px 15px 0px;
+    padding: 15px;
+    color: #FFFFFF;
+}
+.risky-farmer-rules-title
+{
+    font-size: 13px;
+
+}
+.risky-farmer-rules-list
+{
+    margin-top: 10px;
+    list-style-type: '-';
+    padding-left: 5px;
+    list-style-position: outside;
+}
+.risky-farmer-rules-list li
+{
+    padding-left: 5px;
+    font-size: 10px;
+    text-align: left;
+    line-height: 2;
+}
+.blue-text
+{
+    color: #39DDD7;
+}
+/* risky farm rules */
+
+.coinbar{
+    margin: 4% 0 5% 0;
+    border-radius: 15px;
+}
+
+.modal{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+}

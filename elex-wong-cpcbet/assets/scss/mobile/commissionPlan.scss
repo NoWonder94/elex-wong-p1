@@ -1,0 +1,52 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .commission-plan {
+    .commission-plan-table-part {
+      padding: 4vw;
+      min-height: 90vh;
+      background-color: $secondaryBgColor;
+      overflow-y: auto;
+
+      .commission-plan-table {
+        padding: 15px 0px;
+
+        .commission-plan-table-title {
+          padding-bottom: 10px;
+        }
+
+        .commission-plan-table-content {
+          .el-table {
+            background: transparent;
+            color: $fontColor;
+
+            thead {
+              color: $fontColor;
+            }
+
+            tr,
+            tr:hover>td,
+            th.el-table__cell {
+              background: transparent;
+            }
+
+            td {
+              border-bottom: none;
+            }
+
+            &::before {
+              height: 0px;
+            }
+          }
+
+          .commission-plan-table-nodata {
+            margin-top: 50px;
+            color: $fontColor;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

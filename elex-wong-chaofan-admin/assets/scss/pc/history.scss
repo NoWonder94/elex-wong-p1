@@ -1,0 +1,32 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth)
+{
+  .history {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .history-table {
+      width: 100%;
+    }
+
+    .history-table-pagination {
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .modal-title {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+
+    .modal-json {
+      height: 60vh;
+      overflow-y: auto;
+    }
+  }
+}

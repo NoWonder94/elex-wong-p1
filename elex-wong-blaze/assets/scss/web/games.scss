@@ -1,0 +1,183 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1201px){
+  .games{
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    color: $white;
+    min-height: 90vh;
+
+    .games-info{
+      padding: 40px 30px;
+
+      .games-detail{
+        padding: 20px 30px;
+        background-color: $backgroundFive;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .games-detail-left{
+          display: flex;
+          column-gap: 40px;
+
+          .games-detail-img{
+            .games-img{
+              width: 160px;
+              border-radius: 4px;
+            }
+
+            .games-noimg{
+              width: 100px;
+            }
+          }
+
+          .games-detail-text{
+            line-height: 1.7;
+
+            .games-detail-title{
+              font-size: 18px;
+              font-weight: bold;
+            }
+
+            .games-detail-provider{
+              font-size: 12px;
+              font-weight: bold;
+              color: $lightGreyThree;
+            }
+
+            .games-detail-select-balance{
+              padding-top: 10px;
+              font-size: 16px;
+            }
+
+            .games-detail-balance{
+              font-size: 12px;
+              font-weight: bold;
+              color: $lightGreyThree;
+            }
+
+            .games-detail-coin{
+              padding-top: 10px;
+
+              .header-bonus-wallet {
+                height: 40px;
+                width: 200px;
+                padding: 0px 15px;
+                font-size: 14px;
+                background-color: $backgroundTwo;
+                border: 1px solid $separator;
+                border-radius: 4px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .wallet-left{
+                  display: flex;
+                  align-items: center;
+                  column-gap: 10px;
+
+                  .header-currency {
+                    font-size: 16px;
+                    color: $white;
+                  }
+
+                  .currency-icon {
+                    width: 20px;
+                    height: 20px;
+                    color: $black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                      width: 100%;
+                    }
+                  }
+                }
+
+                i{
+                  color: $lightGrey;
+                }
+              }
+            }
+          }
+        }
+
+        .games-detail-right{
+          padding: 30px;
+          // background-color: $background;
+          border-radius: 4px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 15px;
+
+          div{
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+            padding: 10px 30px;
+            border-radius: 4px;
+            cursor: pointer;
+
+            img{
+              width: 15px;
+            }
+          }
+
+          .real-game{
+            background-color: $red;
+          }
+
+          .fun-play{
+            background-color: $darkBackground;
+          }
+        }
+      }
+
+      .games-recommended{
+        padding-top: 30px;
+      }
+
+      .games-providers{
+        padding-top: 10px;
+      }
+    }
+
+    .nodata-icon {
+      height: calc(100vh - 65px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 230px;
+        filter: grayscale(100%);
+        opacity: 0.5;
+      }
+
+      h3 {
+        line-height: 2;
+        font-size: 25px;
+        opacity: 0.5;
+      }
+
+      a {
+        text-decoration: none;
+        border: 1px solid $separator;
+        font-size: 15px;
+        width: 230px;
+        margin-top: 15px;
+        line-height: 2.5;
+        text-align: center;
+        color: $white;
+      }
+    }
+  }
+}

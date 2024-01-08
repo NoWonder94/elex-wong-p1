@@ -1,0 +1,330 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 700px) {
+  .forgotpwd {
+    .forgotpwd-modal-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      z-index: 999;
+
+      .forgotpwd-modal {
+        text-align: center;
+        background-color: $background;
+        height: 100vh;
+        width: 100vw;
+        color: $white;
+
+        .header {
+          margin-top: 3vw;
+
+          .logo {
+            margin-top: 0vw;
+            width: 25%;
+          }
+
+          i {
+            position: absolute;
+            padding: 5vw;
+            top: -2vw;
+            right: -2vw;
+            font-size: 20px;
+            font-size: 5vw;
+            font-weight: bold;
+          }
+
+          .btn {
+            display: flex;
+            justify-content: center;
+            padding-top: 4vw;
+            color: $darkgrey;
+            font-size: 3vw;
+
+            .register {
+              margin-left: 5vw;
+            }
+          }
+
+          .el-divider {
+            background-color: $separator;
+          }
+        }
+
+        .body {
+          padding: 5vw;
+          padding-top: 3vw;
+
+          .title {
+            font-size: 4.8vw;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            text-align: center;
+            color: $white;
+            margin-bottom: 6vw;
+          }
+
+          .text-input {
+            position: relative;
+            background-color: $darkBackground;
+            border-radius: 4px;
+            margin-bottom: 4vw;
+
+            input {
+              color: $white;
+              font-size: 3.6vw;
+              padding: 5vw 3.8vw 3vw;
+              width: 100%;
+              border-radius: 4px;
+              background-color: $darkBackground;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            label {
+              position: absolute;
+              pointer-events: none;
+              font-size: 2.8vw;
+              font-weight: bold;
+              color: $lightGrey;
+              left: 3.8vw;
+              top: 4vw;
+              transition: 0.2s ease all;
+            }
+
+            i {
+              position: absolute;
+              font-size: 2.8vw;
+              font-weight: bold;
+              color: $lightGrey;
+              right: 4vw;
+              top: 5vw;
+              transition: 0.2s ease all;
+              cursor: pointer;
+            }
+
+            input:focus~label,
+            input:not(:placeholder-shown)~label {
+              top: 1.8vw;
+              font-size: 2vw;
+            }
+
+          }
+
+          .submitBtn {
+            width: 100%;
+            background-color: $red;
+            color: $white;
+            font-size: 3.4vw;
+            border-radius: 1vw;
+            font-weight: 600;
+            letter-spacing: -.56px;
+            padding: 3.5vw 0vw;
+            margin-top: 6vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+        }
+
+        .footer {
+          padding: 0 5vw;
+        }
+
+        .row {
+          display: flex;
+          flex-direction: row;
+          margin: 0;
+
+          .otherLogin {
+            background-color: $background;
+            border: 1px solid $separator;
+            margin-right: 5vw;
+            padding: 2.5vw 7vw;
+            margin-left: 0;
+
+            img {
+              width: 5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 701px) and (max-width: 1200px) {
+  .forgotpwd {
+    .forgotpwd-modal-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(12, 21, 29, 0.78);
+
+      .forgotpwd-modal {
+        width: 80vw;
+        height: 80vh;
+        color: $white;
+        text-align: center;
+        background-color: $background;
+        overflow-y: auto;
+
+        .header {
+          margin-top: 3vw;
+
+          .logo {
+            margin-top: 0vw;
+            width: 15%;
+
+          }
+
+          i {
+            position: absolute;
+            padding: 5vw;
+            top: 5vw;
+            right: 2vw;
+            font-size: 25px;
+            font-weight: bold;
+            z-index: 998;
+          }
+
+          .btn {
+            display: flex;
+            justify-content: center;
+            padding-top: 12px;
+            color: $darkgrey;
+            font-size: 18px;
+
+            .register {
+              margin-left: 5vw;
+            }
+
+          }
+
+          .el-divider {
+            background-color: $separator;
+
+          }
+
+        }
+
+        .body {
+          padding: 3vw 5vw;
+
+          .title {
+            font-size: 20px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            text-align: center;
+            color: $white;
+            margin-bottom: 24px;
+          }
+
+          .text-input {
+            position: relative;
+            background-color: $darkBackground;
+            border-radius: 4px;
+            margin-bottom: 24px;
+
+            input {
+              color: $white;
+              font-size: 20px;
+              padding: 30px 20px 20px;
+              width: 100%;
+              border-radius: 4px;
+              background-color: $darkBackground;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            label {
+              position: absolute;
+              pointer-events: none;
+              font-size: 16px;
+              font-weight: bold;
+              color: $lightGrey;
+              left: 20px;
+              top: 20px;
+              transition: 0.2s ease all;
+            }
+
+            i {
+              position: absolute;
+              font-size: 16px;
+              font-weight: bold;
+              color: $lightGrey;
+              right: 16px;
+              top: 20px;
+              transition: 0.2s ease all;
+              cursor: pointer;
+            }
+
+            input:focus~label,
+            input:not(:placeholder-shown)~label {
+              top: 10px;
+              font-size: 18px;
+            }
+
+          }
+
+          .submitBtn {
+            width: 100%;
+            background-color: $red;
+            color: $white;
+            font-size: 18px;
+            border-radius: 1vw;
+            font-weight: 600;
+            letter-spacing: -.56px;
+            padding: 15px 0;
+            margin-top: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+          }
+
+        }
+
+        .footer {
+          padding: 0 5vw;
+        }
+
+
+        .row {
+          display: flex;
+          flex-direction: row;
+          margin: 0;
+
+          .otherLogin {
+            background-color: $background;
+            border: 1px solid $separator;
+            margin-right: 20px;
+            padding: 20px 30px;
+            margin-left: 0;
+
+            img {
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

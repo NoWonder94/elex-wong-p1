@@ -1,0 +1,34 @@
+@import 'base.scss';
+
+.footer {
+  max-width: $maxWidth;
+  margin: auto;
+  background-color: $scbgColor;
+  box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.16);
+
+  a:hover {
+    color: inherit;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    filter: invert(0%) sepia(2%) saturate(3622%) hue-rotate(322deg) brightness(86%) contrast(76%);
+  }
+
+  .active {
+    color: $primaryColor;
+
+    img {
+      opacity: 1;
+      filter: invert(45%) sepia(100%) saturate(3606%) hue-rotate(221deg) brightness(101%) contrast(102%);
+    }
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+}

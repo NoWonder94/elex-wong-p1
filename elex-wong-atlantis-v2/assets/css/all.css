@@ -1,0 +1,25 @@
+a {
+	text-decoration: none;
+	color: inherit;
+	font-size: inherit;
+}
+
+@media only screen and (min-width: 700px) {
+	.pc {
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.pc {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+}

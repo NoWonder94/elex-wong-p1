@@ -1,0 +1,32 @@
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section>
+
+<main id="main">
+  <section id="registersection" class="about">
+    <div class="aos-init aos-animate" data-aos="fade-up">
+      <div class="breadcrumb" (click)="goBackToAdminHome()">&lt; Back</div>
+
+      <!-- Campaign info -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Signing wallet</div>
+        <div class="warning">CAUTION!!</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <!-- Wallet address -->
+          <simple-box-edit heading="Airdrop wallet address" [value]="walletInfo.address"
+            (edited)="onAddressEdited($event)">
+
+          </simple-box-edit>
+          <!-- Wallet private key -->
+          <simple-box-edit heading="Airdrop wallet private key" [value]="walletInfo.privateKey"
+            (edited)="onPrivateKeyEdited($event)">
+          </simple-box-edit>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</main>

@@ -1,0 +1,140 @@
+#Login_Id {
+        position:relative;
+        background-color:black;
+    }
+
+    .Container_login {
+        padding-top:11.2vw;
+        padding-left:17.1vw;
+        padding-bottom:11.9vw;
+        background-color:black;
+        width:100%;
+        height:100%;
+
+        p {
+            margin:0;
+            color:#656565;
+        }
+
+        .el-form-item__error {
+            left:3.1vw;
+            font-size:0.8vw;
+        }
+
+        #title {
+            padding:1.1vw 0vw 0vw 3.1vw;
+            color:black;
+            font-size:1.9vw;
+            font-weight:bold;
+        }
+
+        #username {
+            padding:2.7vw 0vw 0vw 3.1vw;
+            font-size:0.8vw;
+        }
+
+        #password {
+            padding:0.6vw 0vw 0vw 3.1vw;
+            font-size:0.8vw;
+        }
+
+        .el-checkbox {
+            padding-left:3.1vw;
+
+            .el-checkbox__inner {
+                width:0.8vw;
+                height:0.8vw;
+                border-radius:0;
+            }
+        }
+
+        .el-checkbox_label {
+            font-size:0.8vw;
+        }
+
+        #login {
+            padding:0;
+            margin:2.4vw 0vw 0vw 3.6vw;
+            width:5.9vw;
+            height:2vw;
+            border-color:red;
+            border-radius:5px;
+            color:red;
+            font-size:0.8vw;
+        }
+
+        #forgot {
+            margin-left:2.3vw;
+            padding:0;
+            // padding-left:3.1vw;
+            width:5.9vw;
+            height:2vw;
+            color:#656565;
+            font-size:0.8vw;
+        }
+
+        #receive {
+            margin:1.8vw 0vw 0vw 6.4vw;
+            padding:0;
+            width:5.9vw;
+            height:2vw;
+            border-color:#656565;
+            border-radius:5px;
+            color:#656565;
+            font-size:0.8vw;
+        }
+
+        .el-col-24 {
+            width:29%;
+        }
+
+        .el-card__body {
+            padding:0;
+        }
+
+        .el-form-item__content {
+            line-height:2.1vw;
+        }
+
+        .el-checkbox_label {
+            padding-left:0.7vw;
+            font-size:0.8vw;
+        }
+
+        .formBox {
+            width:24vw;
+            height:27.8vw;
+            border-radius:0;
+        }
+
+        .el-form-item {
+            margin:0;
+        }
+
+        .el-checkbox__label {
+            font-size:0.8vw;
+        }
+
+        .el-input {
+            margin-left:3.1vw;
+            font-size:0.8vw;
+
+            .el-input__inner {
+                width:17.7vw;
+                height:2.2vw;
+                border-radius:0;
+                color:#000;
+            }
+        }
+
+        img {
+            width:41.7vw;
+            height:27.8vw;
+        }
+
+        .login-video
+        {
+            width:41.7vw;
+            height:27.8vw;
+        }
+    }

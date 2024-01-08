@@ -1,0 +1,210 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1201px)
+{
+  .index{
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 16px;
+
+    .banner{
+      img{
+        width: 100%;
+        height: 280px;
+        border-radius: 4px;
+      }
+
+      .banner-text{
+        color: $white;
+        padding-top: 40px;
+        padding-left: 60px;
+
+        .banner-text-title{
+          font-size: 34px;
+          font-weight: bold;
+          padding-bottom: 10px;
+        }
+
+        .banner-text-desc{
+          font-size: 18px;
+          padding-bottom: 30px;
+        }
+
+        .banner-text-button{
+          width: fit-content;
+          padding: 15px;
+          border-radius: 4px;
+          background-color: $red;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .before-login-banner{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 10px;
+    }
+
+    .after-login-banner{
+      .swiper-slide{
+        img{
+          object-fit: cover;
+        }
+
+        .banner-text{
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+        }
+      }
+
+      .swiper-pagination{
+        margin-top: 8px;
+        left: 0;
+        right: 0;
+
+        .swiper-pagination-bullet{
+          width: 10px;
+          height: 10px;
+          background: $white;
+          opacity: 0.5;
+          margin: 0 8px;
+        }
+
+        .swiper-pagination-bullet-active{
+          opacity: 1;
+        }
+      }
+    }
+
+    .search{
+      position: relative;
+      margin-top: 40px;
+
+      .el-input__inner{
+        border: 1px solid $separator;
+        background-color: $darkerGrey;
+        color: $white;
+        font-size: 14px;
+      }
+    }
+
+    .category{
+      padding-top: 25px;
+      display: flex;
+      justify-content: flex-start;
+      column-gap: 10px;
+
+      .category-item{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        color: $white;
+        background-color: $background;
+        padding: 8px 16px;
+        border-radius: 100px;
+        box-shadow: 0 3px 10px rgb(6 10 14 / 15%);
+        cursor: pointer;
+      }
+
+      .selected{
+        background-color: $red;
+      }
+    }
+
+    .game-content{
+      padding-top: 30px;
+      color: $white;
+      min-height: 20vh;
+
+      .game-title-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+
+        .game-title{
+          font-size: 22px;
+          font-weight: bold;
+        }
+
+        .game-view-all{
+          cursor: pointer;
+
+          i{
+            color: $lighterGrey;
+          }
+        }
+      }
+
+      .view-all{
+        width: 190px;
+        margin: 30px auto;
+        text-align: center;
+        background-color: $background;
+        border: 1px solid $separator;
+        color: $blueGrey;
+        border-radius: 3px;
+        font-size: 12px;
+        padding: 16px 30px;
+        cursor: pointer;
+
+        &:hover{
+          background-color: $darkBackground;
+          color: $white;
+        }
+      }
+
+      .lobby{
+        .game-row{
+          position: relative;
+          padding-bottom: 30px;
+
+          .games-list{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-between;
+            column-gap: 24px;
+
+            img{
+              width: 100%;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .slot, .live-casino, .game-show{
+        .games-list{
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          justify-content: space-between;
+          gap: 40px 24px;
+          padding-bottom: 30px;
+
+          .games-item{
+            position: relative;
+          }
+        }
+      }
+
+      .blaze{
+        .games-list{
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          justify-content: space-between;
+          gap: 40px 24px;
+
+          .games-item{
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}

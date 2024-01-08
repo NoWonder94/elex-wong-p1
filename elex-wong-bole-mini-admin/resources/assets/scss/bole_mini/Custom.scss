@@ -1,0 +1,97 @@
+html, body
+{
+    //width:100%;
+    height:100%;
+    min-width:1200px;
+    font-family:'Microsoft Yahei';
+    font-weight:400;
+}
+
+*
+{
+    margin:0;
+    padding:0;
+}
+
+a
+{
+    background:0 0;
+    border:0;
+    text-decoration:none;
+    cursor:pointer;
+    outline:0;
+    transition:color 0.2s ease;
+}
+
+img
+{
+    max-width:100%;
+    border:0;
+}
+
+ol, ul
+{
+    list-style:none;
+}
+
+table
+{
+    border-spacing:0;
+    border-collapse:collapse;
+}
+
+hr
+{
+    margin:1em 0;
+    padding:0;
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #535353;
+    clear:both;
+}
+
+.el-tabs
+{
+    padding-left:40px;
+    padding-right:40px;    
+}
+
+.el-tabs__item.is-active
+{
+    color:orange !important;
+    font-weight:bold;
+}
+
+.el-tabs__item:hover
+{
+    color:orange !important;
+}
+
+.el-tabs__nav-wrap::after
+{
+    background-color:black !important;
+    height:1px !important;
+}
+
+.el-tabs__active-bar
+{
+    background-color:black !important;
+    height:1px !important;
+}
+
+.el-form-item__error
+{
+    padding-top:0 !important;
+    position:relative !important;
+    //top:14px !important;
+    //left:auto !important;
+    //right:10px !important;
+}
+
+.is-loading
+{
+    padding:0 !important;
+    width:70px;
+    height:30px !important;
+}

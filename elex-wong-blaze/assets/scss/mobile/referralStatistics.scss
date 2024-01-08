@@ -1,0 +1,202 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 800px) {
+  .referral-statistics {
+    position: relative;
+    color: $white;
+    display: grid;
+    row-gap: 20px;
+
+    .yellow{
+      color: $yellow;
+    }
+
+    .referral-statistics-box{
+      padding: 15px;
+      background-color: $backgroundTwo;
+      border-radius: 4px;
+      text-align: center;
+
+      .referral-statistics-title{
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+
+      .referral-statistics-item{
+        .referral-statistics-item-left{
+          text-align: center;
+
+          .legend-item{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            padding-bottom: 5px;
+
+            .legend-item-color{
+              width: 15px;
+              height: 15px;
+            }
+
+            .legend-item-title{
+              font-size: 10px;
+            }
+          }
+
+          img{
+            width: 165px;
+          }
+
+          .amount{
+            color: $yellow;
+            font-size: 26px;
+            font-weight: bold;
+            padding-top: 10px;
+          }
+
+          .desc{
+            font-size: 17px;
+            padding-top: 5px;
+          }
+        }
+
+        .referral-statistics-item-right{
+          padding-top: 10px;
+
+          .right-upper{
+            display: grid;
+            row-gap: 10px;
+            text-align: center;
+
+            .right-upper-item{
+              padding: 5px;
+              background-color: $darkBackground;
+              border-radius: 4px;
+
+              .right-upper-item-amount{
+                color: $yellow;
+                font-size: 20px;
+                font-weight: bold;
+              }
+
+              .right-upper-item-desc{
+                font-size: 13px;
+                padding-top: 5px;
+              }
+            }
+          }
+
+          .right-below{
+            display: grid;
+            row-gap: 10px;
+            font-size: 13px;
+            padding-top: 20px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 801px) and (max-width: 1200px) {
+  .referral-statistics {
+    position: relative;
+    color: $white;
+    display: grid;
+    row-gap: 20px;
+
+    .yellow{
+      color: $yellow;
+    }
+
+    .referral-statistics-box{
+      padding: 15px;
+      background-color: $backgroundTwo;
+      border-radius: 4px;
+      text-align: center;
+
+      .referral-statistics-title{
+        font-size: 24px;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+
+      .referral-statistics-item{
+        display: grid;
+        grid-template-columns: 260px auto;
+        column-gap: 10px;
+        align-items: center;
+
+        .referral-statistics-item-left{
+          text-align: center;
+
+          .legend-item{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            padding-bottom: 5px;
+
+            .legend-item-color{
+              width: 15px;
+              height: 15px;
+            }
+
+            .legend-item-title{
+              font-size: 10px;
+            }
+          }
+
+          img{
+            width: 165px;
+          }
+
+          .amount{
+            color: $yellow;
+            font-size: 26px;
+            font-weight: bold;
+            padding-top: 10px;
+          }
+
+          .desc{
+            font-size: 17px;
+            padding-top: 5px;
+          }
+        }
+
+        .referral-statistics-item-right{
+          .right-upper{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 20px 10px;
+            background-color: $darkBackground;
+            border-radius: 4px;
+            text-align: center;
+
+            .right-upper-item{
+              .right-upper-item-amount{
+                color: $yellow;
+                font-size: 20px;
+                font-weight: bold;
+              }
+
+              .right-upper-item-desc{
+                font-size: 13px;
+                padding-top: 10px;
+              }
+            }
+          }
+
+          .right-below{
+            display: grid;
+            row-gap: 10px;
+            font-size: 13px;
+            padding-top: 20px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

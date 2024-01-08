@@ -1,0 +1,48 @@
+.stars {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    box-shadow: 200px 300px #cfcfcf,312px 152px #cfcfcf,160px 170px #cfcfcf,135px 300px #cfcfcf,300px 300px #cfcfcf,180px 190px #cfcfcf,60px 60px #cfcfcf,312px 250px #cfcfcf,135px 120px #cfcfcf,243px 360px #cfcfcf;
+    animation: fly 3s linear infinite;
+    transform-style: preserve-3d;
+  }
+  .stars:before, .stars:after {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    box-shadow: inherit;
+  }
+  .stars:before {
+    transform: translateZ(-300px);
+    animation: fade1 3s linear infinite;
+  }
+  .stars:after {
+    transform: translateZ(-600px);
+    animation: fade2 3s linear infinite;
+  }
+  
+  @keyframes fly {
+    from {
+      transform: translateZ(0px);
+    }
+    to {
+      transform: translateZ(300px);
+    }
+  }
+  @keyframes fade1 {
+    from {
+      opacity: .5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade2 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: .5;
+    }
+  }

@@ -1,0 +1,68 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .referral {
+
+    .referral-wrapping-mobile {
+      padding: 3vw 0;
+      min-height: 80vh;
+      background-color: $secondaryBgColor;
+    }
+
+    .referral-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex-direction: column;
+      // background-color: $blueGreen;
+      background-color: $fontColor;
+      margin: 8vw auto;
+      width: 60vw;
+      padding: 4vw;
+      border-radius: 1.5vw;
+
+      .referral-title {
+        margin-top: 6vw;
+        color: #040131;
+        font-size: 3.5vw;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .referral-qrcode {
+        padding: 8vw;
+        text-align: center;
+
+        .qrcode-img {
+          width: 30vw;
+          height: 30vw;
+          background-color: $blueGreen
+        }
+      }
+
+      hr {
+        width: 100%;
+        background-color: none;
+        border: none;
+        border-top: 0.4vw dashed $lightGreen;
+      }
+
+      .referral-text {
+        color: rgba(0, 0, 0, .3);
+        font-size: 3vw;
+        text-align: center;
+        padding: 5vw 0;
+      }
+
+      .referral-button {
+        width: 100%;
+        padding: 3vw;
+        text-align: center;
+        border-radius: 1vw;
+        font-size: 2.5vw;
+        cursor: pointer;
+      }
+    }
+  }
+}

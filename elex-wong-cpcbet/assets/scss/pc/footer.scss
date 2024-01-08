@@ -1,0 +1,44 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth)
+{
+	.footer
+	{
+    background: #000000;
+
+    .footer-content
+    {
+      width: 1175px;
+      margin: 0 auto;
+      padding: 30px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .footer-copyright
+      {
+        color: $lightFontColor;
+        font-size: 14px;
+      }
+
+      .footer-navs-list
+      {
+        display: flex;
+
+        .footer-nav
+        {
+          margin-left: 20px;
+          font-size: 14px;
+          cursor: pointer;
+
+          a
+          {
+            text-decoration: none;
+            color: $fontColor;
+          }
+        }
+      }
+    }
+
+	}
+}

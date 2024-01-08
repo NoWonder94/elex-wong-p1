@@ -1,0 +1,14 @@
+{
+  "ver": "4.0.22",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "d53d8b11-3957-4b5e-8a6d-1faf7d52cff3",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "importAsPlugin": false,
+    "moduleId": "project:///assets/scripts/components/localization/LocalizationBase.js",
+    "importerSettings": 4,
+    "simulateGlobals": []
+  }
+}

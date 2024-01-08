@@ -1,0 +1,145 @@
+.gameTips {
+  width: 100%;
+  height: 100%;
+  @media only screen and (min-width: 0px) and (max-width: 750px) {
+    ::v-deep el-dialog {
+      margin-top: 0vh !important;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      background-color: $colorys1;
+      .el-icon-close {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      .el-dialog__header {
+        display: none;
+      }
+      .el-dialog__body {
+        width: 100%;
+        height: 100%;
+        background-color: $colorys2;
+        box-sizing: border-box;
+        overflow: auto;
+        border-radius: 30px;
+        padding: 0;
+        // padding: 50px 60px 50px 50px;
+        position: relative;
+        .header {
+          width: 100%;
+          box-sizing: border-box;
+          background-color: $colorys1;
+          line-height: 80px;
+          height: 80px;
+          text-align: left;
+          padding: 0px 25px;
+          color: white;
+          font-size: 26px;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .left{
+            display: flex;
+            align-items: center;
+          }
+          .closeIcon {
+            color: $colorys3;
+            font-size: 30px;
+            font-weight: 700;
+            cursor: pointer;
+          }
+          .backIcon{
+            color: $colorys3;
+            font-size: 30px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-right: 5px;
+          }
+        }
+        .contentInfo {
+          width: 100%;
+          height: 100%;
+          border-radius: 22px 22px 0 0;
+          top: 60px;
+          background-color: $colorys2;
+          left: 0;
+          box-sizing: border-box;
+          font-size: 30px;
+          .help-list{
+              margin-top:20px;
+              padding:0px 30px;
+            >div {
+              background-color: #17181b;
+              border-radius: 45px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              height: 100px;
+              padding: 0 30px;
+              margin-bottom: 20px;
+              cursor: pointer;
+              color: rgba(153,164,176,.6);
+              &:hover {
+                color: white;
+              }
+            }
+          }
+          .ui-scrollview{
+            box-sizing: border-box;
+            color: rgba(153,164,176,.8);
+            height: 100%;
+            overflow-y: auto;
+            touch-action: pan-y;
+            overscroll-behavior: contain;
+            text-align: left;
+            padding: 20px;
+            line-height: 35px;
+            border-radius: 22px;
+            background-color: #1E2024;
+            padding:10px 40px;
+            font-size: 30px;
+          }
+          .icon1{
+            font-size: 36px;
+          }
+
+h2 {
+    font-weight: 400;
+    font-size: 30px;
+}
+p{
+  margin:15px 0px;
+  font-size: 26px;
+}
+.houseEdge{
+  margin: 15px 0px;
+}
+        .gsmekdv{
+          border-radius:22px;
+          background-color: #1e2024;
+          padding: 15px;
+          font-size: 30px;
+        }
+        .c6tnr2{
+          padding: 20px;
+          border-radius: 35px;
+          color:#f5f6f7;
+          background-color: rgba(45,48,53,.5);
+          border: 1px solid #2d3035;
+          font-family: monospace;
+        }
+        .c6tnr2 pre {
+            margin: 0;
+            padding: 0;
+            overflow-x: auto;
+            font-family: monospace;
+        }
+        .gbgzxuf .item .cl-primary {
+          color: var(--primary-color);
+      }
+        }
+      }
+    }
+  }
+}

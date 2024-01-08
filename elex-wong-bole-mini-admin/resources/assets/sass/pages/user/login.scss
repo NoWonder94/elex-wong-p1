@@ -1,0 +1,110 @@
+// Variables
+@import "../../variables.scss";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* layout style */
+.el-header {
+  height: $layout-header-height !important;
+  background-color: $layout-background-color;
+}
+
+.el-main {
+  height: calc(100vh - #{$layout-header-height});
+  padding: 0 !important;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+}
+
+.header-container .logo {
+    height: 36px;
+    border-radius: 4px;
+}
+
+.header-container .name {
+    margin-left: 10px;
+    font-size: 1.25rem;
+}
+
+.header-container .name small {
+    font-size: 0.75rem;
+}
+
+.header-container .lang {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.header-container .lang .el-dropdown-link {
+    color: #fff;
+}
+
+.demo-layout {
+    min-height: calc(100vh - 300px);
+}
+
+.demo-layout .grid-content {
+    width: 420px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.demo-layout .bg-purple {
+    background: #e9eef3;
+}
+
+.content-title {
+    color: #7c8b9c;
+}
+
+.content-form {
+    width: 100%;
+}
+
+.content-form .custom-height {
+    font-size: 1.225rem;
+    padding: 0.7rem 1rem;
+}
+
+.content-form .btn-primary {
+    background-color: #8bafd7;
+    border-color: #8bafd7;
+}
+
+.content-form .btn-primary:hover {
+    background-color: #7ea2cb;
+    border-color: #7ea2cb;
+}
+
+.content-form .btn-primary:focus, 
+.content-form .btn-primary.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(139, 171, 206, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(139, 171, 206, 0.5);
+}
+
+.content-form .btn-primary:not(:disabled):not(.disabled):active:focus, 
+.content-form .btn-primary:not(:disabled):not(.disabled).active:focus, 
+.content-form .show > .btn-primary.dropdown-toggle:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(139, 171, 206, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(139, 171, 206, 0.5);
+}
+
+.content-form .btn-primary:not(:disabled):not(.disabled):active, 
+.content-form .btn-primary:not(:disabled):not(.disabled).active, 
+.content-form .show > .btn-primary.dropdown-toggle {
+    background-color: #c0cbd8;
+    border-color: #c0cbd8;
+}

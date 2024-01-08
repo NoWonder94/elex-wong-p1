@@ -1,0 +1,226 @@
+@media only screen and (min-width:700px) {
+	.web{
+		display: block;
+	}
+
+	.mobile{
+		display: none;
+	}
+
+	header{
+    background: url("../images/bolebit-bg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+		position: fixed;
+		width: 100%;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		z-index: 100;
+	}
+
+	.header-row{
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 100px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+  .header-info{
+    display: flex;
+		justify-content: space-between;
+    flex-direction: row;
+  }
+  .header-info select{
+    width: 100px;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    border-color: transparent;
+    border-width: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 12px;
+    background-color: transparent;
+    color: white;
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat 100% center; */
+  }
+
+  .selection{
+    color: black;
+    background-color: white;
+    font-size: 12px;
+  }
+
+  .header-button{
+    width: 100px;
+    height: 40px;
+    background-color: #2D38B1;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header-button p{
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    margin: auto;
+  }
+
+	.background{
+    background: url("../images/bolebit-bg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+	}
+
+  html{
+    height:100%;
+  }
+  .body{
+   width:100%;
+   height: 100%;
+   margin: 0px;
+
+  }
+
+  .content{
+    position:relative;
+    min-height: 100%;
+    padding: 0px 100px;
+    padding-top: 100px;
+  }
+
+  .content-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height:50%;
+  }
+
+  .content-title{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 20px;
+   }
+
+  .content-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height:30%;
+    cursor: pointer;
+
+     /* animation-name:contentButton; */
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+    animation-duration:1s;
+  }
+
+  .content-contact-info-container{
+    width:60%;
+    margin: 20px auto;
+  }
+
+  .content-contact-info{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-contact-info span {
+   margin-right: 15px;
+  }
+
+  .content-contact-info img{
+    width: 80%;
+    height:80%;
+    cursor: pointer;
+  }
+
+   .content-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .content-box-detail {
+    padding: 40px 15px;
+    background-image: url(../images/content-pattern.png);
+    width: 32%;
+    background-size: 100% 100%;
+  }
+
+  .content-box-detail-image{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .content-box-detail-title{
+   font-size: 15px;
+   color: #00B4FF;
+    padding-bottom: 10px;
+    text-align: center;
+
+  }
+
+  .content-box-detail-description{
+    font-size: 12px;
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+
+   }
+
+
+   .content-tips{
+
+    height: 100px;
+   }
+
+   .content-tips p{
+    font-size: 12px;
+    color: #00B4FF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+   }
+
+
+   @keyframes contentButton {
+    0% {
+      transform: scale(1.1,1.1);
+    }
+    25% {
+      transform: scale(1,1);
+    }
+    100% {
+      transform: scale(1.1,1.1);
+    }
+  }
+
+}

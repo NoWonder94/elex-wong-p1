@@ -1,0 +1,172 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 1200px) {
+  .referral-forms {
+    position: relative;
+    color: $white;
+    min-height: 70vh;
+
+    .referral-forms-header{
+      display: grid;
+      grid-template-columns: 1fr 70px;
+      align-items: flex-end;
+      column-gap: 30px;
+
+      .referral-forms-header-left{
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 15px;
+      }
+
+      .choose-type{
+        .el-select{
+          width: 100%;
+        }
+      }
+
+      .choose-date{
+        .el-date-editor--daterange.el-input__inner{
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .el-date-editor .el-range-input{
+          font-size: 12px;
+          color: $white;
+        }
+
+        .el-date-editor .el-range-separator{
+          color: $white;
+          font-size: 12px;
+          width: fit-content;
+        }
+      }
+
+      // type, date, pagesize
+      .el-input__inner{
+        font-size: 12px;
+        color: $white;
+        border: 1px solid $separator;
+        background: $darkerGrey;
+        border-radius: 4px;
+        padding: 0 16px;
+      }
+
+      // select
+      .el-select .el-input.is-focus .el-input__inner{
+        border-color: $separator;
+      }
+    }
+
+    .referral-forms-content{
+      padding-top: 20px;
+
+      .list-content{
+        table{
+          width: 100%;
+          margin: 0 auto;
+          border-collapse: collapse;
+          text-align: center;
+
+          th{
+            background-color:  $backgroundThree;
+            color: $lightGrey;
+            font-size: 12px;
+            height: 32px;
+            padding: 4px 0 4px 16px;
+          }
+
+          td{
+            font-size: 12px;
+            padding: 24px 0 24px 16px;
+            border-bottom: 1px solid rgba(50,59,69,.6);
+          }
+
+          th:first-child, td:first-child{
+            width: 30%;
+          }
+
+          th:nth-child(2), td:nth-child(2){
+            width: 40%;
+          }
+
+          th:nth-child(3), td:nth-child(3){
+            width: 30%;
+          }
+        }
+
+        .pagination{
+          text-align: center;
+          padding: 60px 0 30px;
+        }
+
+        .no-content{
+          text-align: center;
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+
+  .el-select-dropdown__item.selected{
+    color: $red;
+  }
+
+  .el-date-table td.today span{
+    color: $red;
+  }
+
+  .el-date-table td.available:hover{
+    color: $red;
+  }
+
+  .el-date-table td.end-date span, .el-date-table td.start-date span{
+    background-color: $red;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .el-date-range-picker{
+    left: 4vw;
+    width: 90vw;
+
+    .el-picker-panel__body{
+      min-width: 100%;
+      display: flex;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+  }
+
+  .el-date-range-picker__content{
+    width: 250px;
+    flex-shrink: 0;
+
+    .el-date-range-picker__header div{
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (min-width: 561px) and (max-width: 670px) {
+  .el-date-range-picker{
+    left: 4vw;
+    width: 530px;
+
+    .el-picker-panel__body{
+      min-width: 100%;
+      display: flex;
+      white-space: nowrap;
+      overflow-x: auto;
+    }
+  }
+
+  .el-date-range-picker__content{
+    flex-shrink: 0;
+
+    .el-date-range-picker__header div{
+      font-size: 14px;
+    }
+  }
+}

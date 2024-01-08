@@ -1,0 +1,338 @@
+.Banner_Top {
+    height: 70vw;
+
+    #scene {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: visible;
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      .background_animate {
+        background-image: url('../assets/mobile_banner_Top/mobile_top_bg.png');
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: bottom;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        white-space: nowrap;
+        transform: translateX(-50%) translateY(-52%);
+        color: white;
+        font-weight: 600;
+        font-size: 6vw;
+      }
+    }
+  }
+
+  .content {
+    text-align: center;
+    .overview_background {
+      .overview_content {
+        text-align: center;
+        display: grid;
+        grid-template-rows: auto auto auto;
+
+        .introduce {
+          display: block;
+          text-align: left;
+          grid-row: 3;
+          background-image: url('../assets/background/background_bg_mask.png');
+          background-position: center;
+          background-size: cover;
+          color: white;
+          padding: 7.5vw 10.7vw;
+          font-size: 4vw;
+          line-height: 8vw;
+          letter-spacing: 0.1vw;
+          position: relative;
+
+          span {
+            position: relative;
+            opacity: 0;
+          }
+          span.animate_fade_up {
+            display: block;
+            animation: fade-in 0.5s forwards;
+          }
+        }
+
+        .image_container {
+          div {
+            padding: 5vw 0;
+            opacity: 0;
+            center {
+              display: grid;
+              grid-template-rows: 15vw auto;
+              span {
+                display: block;
+                font-size: 3.5vw;
+                font-weight: bold;
+                color: #656565;
+              }
+              img {
+                width: 28%;
+                filter: brightness(0.5);
+              }
+            }
+          }
+
+          div:nth-child(2),
+          div:nth-child(4) {
+            center {
+              img {
+                transform: scale(1.2);
+                transform-origin: top;
+              }
+            }
+          }
+
+          div:first-child {
+            animation: fade-in 0.5s forwards;
+          }
+          div:nth-child(2) {
+            animation: fade-in 0.5s forwards 0.2s;
+          }
+          div:nth-child(3) {
+            animation: fade-in 0.5s forwards 0.4s;
+          }
+          div:nth-child(4) {
+            animation: fade-in 0.5s forwards 0.6s;
+          }
+        }
+
+        @keyframes fade-in {
+          0% {
+            opacity: 0;
+            transform: translateY(100px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+    .label {
+      font-weight: 500;
+      font-size: 5.3vw;
+      padding: 15.5vw 0 12vw 0;
+      display: block;
+      color: #656565;
+      span {
+        display: block;
+      }
+    }
+    .slogan {
+      display: none;
+    }
+
+    .slogan_mobile {
+      position: relative;
+      .swiper-container {
+        .swiper-wrapper {
+          .swiper-slide {
+            color: #d0d0d0;
+          }
+          .swiper-slide-active {
+            color: #000000;
+            transform: scale(1.5);
+            font-weight: bold;
+          }
+        }
+      }
+
+      .slogan_mobile_background {
+        position: absolute;
+        background-image: url('../assets/background/background_bg_02.png');
+        background-size: cover;
+        color: white;
+        height: 91vw;
+        text-align: left;
+        font-size: 4vw;
+
+        #slogan_background_content {
+          transition: opacity 0.1s, transform 0.1s;
+        }
+      }
+    }
+
+    .slogan2 {
+      padding: 15vw 10vw;
+      .slogan2_container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 14vw;
+        div {
+          img {
+            width: 40%;
+          }
+          span {
+            display: block;
+            color: #656565;
+            font-size: 4vw;
+          }
+
+          span.iOdometer {
+            color: #b81319;
+            font-weight: 700;
+            padding: 2vw 0;
+            font-size: 10vw;
+          }
+
+          .plus {
+            position: absolute;
+            top: 5%;
+            right: 13%;
+            color: #b81319;
+            font-weight: 700;
+            font-size: 9vw;
+          }
+        }
+
+        div:first-child {
+          img {
+            transform: scale(1.7);
+            transform-origin: center;
+          }
+        }
+        div:last-child {
+          img {
+            transform: scale(1.2);
+            transform-origin: center;
+          }
+        }
+      }
+    }
+
+    .contact_background {
+      .contact_logo {
+        font-weight: bold;
+        display: block;
+        padding-bottom: 3vw;
+        font-size: 5.5vw;
+      }
+
+      .contact_list {
+        background-image: url('../assets/background/mobile/M-background_bg_03.png');
+        background-size: cover;
+        background-position: -32vw center;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        color: white;
+        font-size: 3.9vw;
+        font-weight: normal;
+        padding: 9vw 0 2.8vw 0;
+
+        div:first-child {
+          grid-row: 2;
+          span {
+            display: table;
+            padding: 4.3vw 20.5vw;
+            margin: 8vw 0;
+            font-weight: 700;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 0;
+          }
+        }
+
+        div:nth-child(2) {
+          grid-row: 1;
+
+          span {
+            display: block;
+            width: 30vw;
+            padding: 2vw 0;
+            position: relative;
+            left: 4.4vw;
+            text-align: left;
+            opacity: 0;
+          }
+
+          span:before {
+            content: '';
+            width: 8vw;
+            height: 8vw;
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 1.4vw;
+            left: -14.5vw;
+          }
+
+          span:first-child:before {
+            background-image: url('../assets/background/mail.png');
+          }
+
+          span:nth-child(2):before {
+            background-size: 200% 200%;
+            background-image: url('../assets/background/qq.svg');
+          }
+
+          span:nth-child(3):before {
+            background-size: 80% 80%;
+            background-image: url('../assets/background/skype.png');
+          }
+          span:nth-child(4):before {
+            background-image: url('../assets/background/telegram.png');
+          }
+        }
+      }
+
+      .zoom_effect_active {
+        .contact_list {
+          div {
+            span {
+              animation: fade-in-up 0.5s forwards 0.8s;
+            }
+          }
+          div:nth-child(2) {
+            span:first-child {
+              animation: fade-in-up 0.5s forwards 0s;
+            }
+            span:nth-child(2) {
+              animation: fade-in-up 0.5s forwards 0.2s;
+            }
+            span:nth-child(3) {
+              animation: fade-in-up 0.5s forwards 0.4s;
+            }
+            span:nth-child(4) {
+              animation: fade-in-up 0.5s forwards 0.6s;
+            }
+          }
+
+          @keyframes fade-in-up {
+            0% {
+              opacity: 0;
+              transform: translateY(100px);
+            }
+
+            100% {
+              opacity: 1;
+              transform: translateY(0px);
+            }
+          }
+        }
+      }
+    }
+  }

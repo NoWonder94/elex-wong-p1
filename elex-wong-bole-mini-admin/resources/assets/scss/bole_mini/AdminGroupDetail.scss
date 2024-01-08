@@ -1,0 +1,131 @@
+.admin-group-detail
+{
+	.modal-backdrop
+	{
+	    position:fixed;
+	    display:flex;
+	    background-color:rgba(0,0,0,0.3);
+	    top:0;
+	    left:0;
+	    right:0;
+	    bottom:0;
+	    justify-content:center;
+	    align-items:center;
+	    cursor:pointer;
+	    z-index:2;
+
+	    .modal
+		{
+		    background-color:#FFF;
+		    width:1000px;
+		    box-shadow:2px 2px 20px 1px;
+		    cursor:context-menu;
+
+		    .modal-header
+			{
+			    background-color:#67C23A;
+
+				.modal-header-title
+				{
+				    padding-top:8px;
+				    padding-bottom:8px;
+				    width:100%;
+				    color:#FFF;
+				    font-weight:bold;
+				    text-align:center;
+				}
+			}
+
+			.modal-body
+			{
+			    .modal-body-content
+				{
+					width:1000px;
+
+					//new
+					max-height:600px;
+					overflow-y:scroll;
+					
+				    .part
+				    {
+				    	padding-top:20px;
+				    	padding-bottom:20px;
+				    	border-bottom:1px solid black;
+
+				    	.part-title
+				    	{
+				    		padding-left:34px;
+				    		font-size:20px;
+				    		font-weight:bold;
+				    	}
+
+				    	.part-form
+				    	{
+				    		margin-top:8px;
+
+				    		//new
+				    		.el-tree
+				    		{
+				    			padding-top:5px;
+				    			padding-left:30px;
+				    			padding-right:30px;
+				    			padding-bottom:5px;
+				    		}
+				    	}
+				    }
+
+				    form
+				    {
+				    	.el-form-item
+						{
+						    margin-right:0;
+						    margin-bottom:0;
+						}
+
+						.el-form-item__label
+						{
+						    color:black !important;
+						}
+
+						input
+						{
+							width:230px !important;
+						    height:25px !important;
+						}
+
+						button
+						{
+						    height:30px;
+						    line-height:0;
+						}
+
+						.upload-layout
+						{
+							a
+							{
+								padding:4px;
+							    padding-left:10px;
+							    padding-right:10px;
+							    background-color:orange;
+							    border-radius:5px;
+							    color:#FFF;
+							}
+
+							img
+							{
+								margin-top:6px;
+								width:100px;
+							    height:100px;
+							}
+						}
+				    }
+				}
+			}
+
+			.modal-footer
+			{
+			    
+			}
+		}
+	}
+}

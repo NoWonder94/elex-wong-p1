@@ -1,0 +1,101 @@
+@import '../../Base.scss';
+
+
+@media only screen and (min-width: 700px) {
+  .boleBitSideMenu {
+    width: 280px;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    padding: 0 25px;
+    padding-top: 25px;
+
+    .item {
+      padding-bottom: 20px;
+
+      .title {
+        display: flex;
+        padding-bottom: 10px;
+
+        img {
+          display: inline-block;
+          margin-right: 10px;
+          width: 20px;
+          height: 20px;
+          vertical-align: middle;
+        }
+
+        div {
+          font-size: 20px;
+        }
+      }
+
+      .item-body {
+        position: relative;
+
+        .item-button {
+          display: flex;
+          padding: 5px 0;
+          cursor: pointer;
+
+          img {
+            width: 45px;
+            height: 45px;
+          }
+
+          div {
+            padding: 12px;
+            padding-left: 20px;
+            font-size: 15px;
+          }
+        }
+
+        .float-icon {
+          position: absolute;
+          width: 8px;
+          height: 50px;
+          top: 0;
+          right: -25px;
+          background-color: #dc1973;
+          box-shadow: -2px 0 7px 2px #dc1974b8, -1px 0 7px 4px #dc197422;
+          border-radius: 10px;
+          transition: all .3s;
+        }
+
+      }
+    }
+
+    .sidefooter {
+      width: 280px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      padding: 25px;
+      padding-bottom: 10px;
+    }
+
+    .item2 {
+      padding-bottom: 15px;
+
+      .title {
+        padding-bottom: 10px;
+        font-size: 14px;
+      }
+
+      .item-group {
+        display: flex;
+        justify-content: space-between;
+
+        .group1 {
+          width: 25px;
+        }
+
+        .group2 {
+          width: 30px;
+        }
+      }
+    }
+
+  }
+}

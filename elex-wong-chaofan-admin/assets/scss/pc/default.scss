@@ -1,0 +1,139 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth)
+{
+	.default {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    .home-container {
+      position: relative;
+      width: 100vw;
+      min-height: 100vh;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .home-container-content {
+        width: 1200px;
+        max-height: 90vh;
+        margin: 0 auto;
+        border-radius: 15px;
+        border: 1px solid $primaryAltColor;
+
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(11.4px);
+        -webkit-backdrop-filter: blur(11.4px);
+        border: 1px solid rgba(255, 255, 255, 1);
+      }
+
+      .left-container {
+        max-height: 90vh;
+        background-color: transparent;
+        border-radius: 15px 0px 0px 0px;
+
+        box-shadow: 20px 0px 11px -15px rgba(209,209,230,1);
+        -webkit-box-shadow: 20px 0px 11px -15px rgba(209,209,230,1);
+        -moz-box-shadow: 20px 0px 11px -15px rgba(209,209,230,1);
+
+        .el-submenu__title {
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            color: $scFontColor;
+            background-color: $secondaryColor;
+
+            i {
+              color: $scFontColor;
+            }
+          }
+
+          .front-icon {
+            font-size: 25px;
+          }
+
+          .title-label {
+            margin-top: 3px;
+          }
+        }
+
+        .el-menu {
+          .el-menu-item {
+             .front-icon {
+              font-size: 30px;
+            }
+
+            &:hover {
+              color: $scFontColor;
+              background-color: $secondaryColor;
+
+              .front-icon {
+                color: $scFontColor;
+              }
+            }
+          }
+
+          .el-menu-item.is-active {
+            color: $secondaryColor;
+
+            &:hover {
+              color: $scFontColor;
+              background-color: $secondaryColor;
+            }
+          }
+
+          .user-info {
+            padding: 20px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px 0px 0px 0px;
+
+            .user-icon-block {
+              padding: 10px;
+              background: $secondaryColor;
+              border-radius: 50%;
+
+              .user-icon {
+                color: $scFontColor;
+                font-size: 30px;
+              }
+            }
+
+            .user {
+              padding: 0px 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+              text-align: left;
+
+              .user-name {
+                font-size: 18px;
+              }
+
+              .user-balance {
+                font-size: 15px;
+                font-weight: bold;
+                // color: $secondaryColor;
+              }
+            }
+
+          }
+        }
+      }
+
+      .right-container {
+        padding: 50px;
+        height: 90vh;
+        overflow-y: auto;
+      }
+    }
+	}
+}

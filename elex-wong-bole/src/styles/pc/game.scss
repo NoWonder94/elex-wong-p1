@@ -1,0 +1,297 @@
+  .Banner_Top {
+    height: 30vw;
+    background-position: center;
+
+    #scene {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      img {
+        position: absolute !important;
+        top: auto !important;
+        left: auto !important;
+        bottom: 0 !important;
+        right: 3.3vw;
+        width: 23.4vw;
+        height: 23.4vw;
+        animation: motion 5s infinite ease;
+
+        @keyframes motion {
+          0% {
+            bottom: 0px;
+          }
+          50% {
+            bottom: 50px;
+          }
+          100% {
+            bottom: 0px;
+          }
+        }
+      }
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+
+      .background_animate {
+        background-image: url('../assets/game/game_top_bg.png');
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: move 10s linear 1s infinite;
+      }
+      span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        white-space: nowrap;
+        color: white;
+        font-weight: 500;
+        font-size: 4.2vw;
+      }
+    }
+
+    @keyframes move {
+      0% {
+        transform: translateX(0) scale(1);
+      }
+      50% {
+        transform: translateX(10vw) scale(1.3);
+      }
+      100% {
+        transform: translateX(0) scale(1);
+      }
+    }
+  }
+
+  .content {
+    width: 75vw;
+    margin: 0 auto;
+    text-align: center;
+
+    .menu_web {
+      display: block;
+    }
+
+    .menu_wap {
+      display: none;
+    }
+
+    .el-menu--horizontal {
+      margin: 4vw 0 2.5vw 0;
+      padding: 1.6vw 1.5vw 1.6vw 1.6vw;
+      box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+    }
+    .el-menu--horizontal > .el-menu-item:not(:last-child) {
+      border-right: 0.2px solid #e0e0e0;
+    }
+    .el-menu--horizontal > .el-menu-item:nth-last-child(2) {
+      border-right: none;
+    }
+
+    .el-menu--horizontal > .el-menu-item:last-child {
+      float: right;
+    }
+
+    .el-menu--horizontal > .el-menu-item {
+      height: 1.5vw;
+      line-height: 1.5vw;
+      font-size: 1vw;
+      font-weight: 400;
+      padding: 0 1.7vw;
+    }
+    .el-menu-item.is-disabled {
+      cursor: default;
+      opacity: 1;
+    }
+    .el-menu--horizontal > .el-menu-item.is-active {
+      color: #ff0317;
+      font-weight: 500;
+      border-bottom: transparent;
+    }
+
+    .gameListContainer {
+      display: grid;
+      grid-template-columns: 31.6% 31.6% 31.6%;
+      grid-row-gap: 20px;
+      justify-content: space-between;
+      text-align: left;
+      padding-bottom: 4.9vw;
+      margin: 0 auto;
+      .nodata {
+        grid-column: 2;
+      }
+
+      .gameItem {
+        background-color: white;
+        -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        .hoverEffect:hover {
+          overflow: hidden;
+          // cursor: pointer;
+          img {
+            // transition: all 0.5s;
+            // transform: scale(1.2);
+            // transform-origin: center;
+          }
+        }
+
+        .gameImage{
+          border-radius: 18px;
+        }
+
+        .imageBorder{
+          border: 16px solid transparent;
+          border-image: url('../assets/game/Bole-new-pattern.png') 23 round;
+        }
+          .comingsoon {
+            .coming {
+              display:none;
+            }
+          }
+
+          .comingsoon:hover {
+            overflow: hidden;
+            cursor: pointer;
+
+            img {
+              transition: all 0.5s;
+              transform-origin: center;
+            }
+
+            .coming {
+              display:block;
+              position:absolute;
+              top:0vw;
+            }
+          }
+
+        div {
+          width: 100%;
+          border-radius: 8px;
+          .row {
+            margin: 0;
+            font-size: 0.9vw;
+            font-weight: 500;
+            padding-bottom: 12vw;
+            .status {
+              padding: 0.6vw 5vw;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: 0 auto;
+              margin-top: 2vw;
+              color: #ff0317;
+              font-size: 1.2vw;
+              font-weight: bold;
+              width: 16vw;
+              text-align: center;
+              border: 1px solid #ff0317;
+              bottom: 7vw;
+              cursor: pointer;
+            }
+
+            .unavailable {
+              opacity: 0.5;
+            }
+
+            .col-md-4 {
+              padding: 1vw;
+              img {
+                width: 95%;
+              }
+            }
+            .title {
+              position: relative;
+              padding: 1vw;
+              color: #9C4831;
+              text-align: center;
+              font-size: 1.6vw;
+              font-weight: bold;
+
+              .imgDiv {
+                position: relative;
+
+                img {
+                  width: 7vw;
+                }
+
+                // img:last-child {
+                //   width: 1vw;
+                //   height: 1.1vw;
+                //   position: relative;
+                //   top: 0.02vw;
+                // }
+
+                .gametype {
+                  position:relative;
+                  top:-1.2vw;
+                  right:-1.5vw;
+                  font-size:0.7vw;
+                  color:#656565;
+                }
+              }
+            }
+
+            .gameContent {
+              color: #656565;
+              font-size: 0.8vw;
+              font-weight: 400;
+              text-align: center;
+              padding: 0 2.8vw;
+            }
+
+            .text-truncate{
+              display: -webkit-box !important;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              white-space: normal;
+            }
+
+            span:hover {
+              // cursor: pointer;
+            }
+
+            .play-button{
+              position: absolute;
+              left: 0;
+              right: 0;
+              background: url('../assets/game/Bole-play-button.png') no-repeat center;
+              width: 16.5vw;
+              height: 5vw;
+              text-align: center;
+              margin: 0 auto;
+              background-size: 100%;
+              bottom: 1vw;
+              cursor: pointer;
+
+              &:hover{
+                background: url('../assets/game/Bole-play-button(hover).png') no-repeat center;
+                width: 17vw;
+                height: 5vw;
+                background-size: 100%;
+                transition: 0.4s;
+              }
+            }
+          }
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }

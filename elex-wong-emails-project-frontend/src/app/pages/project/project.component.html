@@ -1,0 +1,169 @@
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section>
+
+<main id="main">
+  <section id="registersection" class="about">
+    <div class="aos-init aos-animate" data-aos="fade-up">
+      <!-- Project info -->
+      <div class="breadcrumb" (click)="goBack()">&lt; Back to dashboard</div>
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Project information</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <div class="altxs" *ngIf="project">
+            <simple-box-edit heading="Name" [value]="project.name" (edited)="onNameEdited($event)">
+            </simple-box-edit>
+            <simple-box-edit heading="Twitter ID" [value]="project.twitter_id" (edited)="onTwitterEdited($event)">
+            </simple-box-edit>
+            <simple-box-edit heading="dApp URL" [value]="project.url" (edited)="onURLEdited($event)">
+            </simple-box-edit>
+            <simple-box-edit heading="Category" [mode]="'select'" [selectKey]="'Project Category'"
+              [value]="project.category" (edited)="onCategoryEdited($event)" [options]="categories">
+            </simple-box-edit>
+
+            <div class="data-info-box">
+              <p class="heading">Logo <i class="bi bi-pencil-square" (click)="toggleEditLogo()"></i>
+              </p>
+              <img *ngIf="hasLogo() && !editingLogo" [src]="getLogoPath()" class="logo" />
+              <ngx-awesome-uploader *ngIf="editingLogo" [adapter]="uploadAdapter"
+                (uploadSuccess)="onLogoUploaded($event)" [showPreviewContainer]="false" uploadType="single">
+              </ngx-awesome-uploader>
+            </div>
+          </div>
+
+          <data-is-loading *ngIf="fetchingProjects"></data-is-loading>
+        </div>
+      </div>
+
+      <!-- Campaigns -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Campaigns</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <div class="data-info-box" *ngIf="!fetchingCampaigns && campaigns">
+            <div *ngFor="let campaign of campaigns" class="campaign">
+              <div (click)="editCampaign(campaign)">
+                <i class="bi bi-coin"></i> {{ campaign.name }}
+              </div>
+              <div class="data-info-box-action-button">
+                <btn-loader title="Archive" (clicked)="archiveCampign(campaign)"></btn-loader>
+              </div>
+            </div>
+
+            <btn-loader title="New campaign" (clicked)="createCampaign()">
+            </btn-loader>
+          </div>
+
+          <data-is-loading *ngIf="fetchingCampaigns"></data-is-loading>
+        </div>
+      </div>
+
+      <!-- Tokens -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Tokens</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <div class="data-info-box" *ngIf="!fetchingTokens">
+            <div *ngFor="let token of tokens" class="token" (click)="editToken(token)" class="token">
+              <i class="bi bi-coin"></i> {{ token.title }} <span *ngIf="token.symbol">({{ token.symbol }})</span>
+            </div>
+
+            <btn-loader title="Create token" (clicked)="createToken()">
+            </btn-loader>
+          </div>
+
+          <data-is-loading *ngIf="fetchingTokens"></data-is-loading>
+        </div>
+      </div>
+
+      <!-- Email templates -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Email templates</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <div class="data-info-box" *ngIf="!fetchingEmailTemplates">
+            <div *ngFor="let template of emailTemplates" (click)="editEmailTemplate(template)" class="email-template">
+              <i class="bi bi-envelope-paper"></i> {{ template.name }}
+            </div>
+
+            <btn-loader title="New template" (clicked)="createEmailTemplate()">
+            </btn-loader>
+          </div>
+
+          <data-is-loading *ngIf="fetchingEmailTemplates"></data-is-loading>
+        </div>
+      </div>
+
+      <!-- Emailing -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Email communications</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <div class="data-info-box" *ngIf="!fetchingProjectEmailing">
+            <div *ngFor="let emailing of projectEmailing" (click)="editProjectEmailing(emailing)"
+              class="email-template">
+              <i class="bi bi-envelope-paper"></i> {{ emailing.title }}
+            </div>
+
+            <btn-loader title="New emailing" (clicked)="createProjectEmailing()">
+            </btn-loader>
+          </div>
+
+          <data-is-loading *ngIf="fetchingProjectEmailing"></data-is-loading>
+        </div>
+      </div>
+
+      <!-- Advanced -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Advanced</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <div class="data-info-box" *ngIf="!fetchingProjects && project">
+            <p class="heading" *ngIf="project.api_key">Project API key</p>
+            <p class="text" *ngIf="project.api_key">{{ project.api_key }} <i class="bi bi-clipboard"
+                (click)="copyProjectAPIKey()"></i></p>
+
+            <btn-loader title="Create API key" (clicked)="createProjectAPIKey()" *ngIf="!project.api_key">
+            </btn-loader>
+            <btn-loader title="Renew Api Key" (clicked)="openPop(content)" *ngIf="project.api_key">
+            </btn-loader>
+          </div>
+
+          <data-is-loading *ngIf="fetchingProjects"></data-is-loading>
+        </div>
+      </div>
+    </div>
+
+    <ng-template #content let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">
+          Confirmation
+        </h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.close()">
+
+          <span aria-hidden="true">
+            ×
+          </span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Confirm you want to renew this project Api key?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="renewProjectAPIKey()">
+          Confirm
+        </button>
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close()">
+          Cancel
+        </button>
+      </div>
+    </ng-template>
+  </section>
+</main>

@@ -1,0 +1,105 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth)
+{
+  .dateFilterModal
+  {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .dateFilterModal-empty-space
+    {
+      width: 100vw;
+      background: transparent;
+      flex: 1;
+    }
+
+    .dateFilterModal-container
+    {
+      position: relative;
+      width: 100vw;
+      margin: 0 auto;
+      padding: 5vw 0vw;
+      border: 1px solid $blackOpacity20;
+
+      .dateFilterModal-label
+      {
+        padding: 0vw 4vw;
+        color: $primaryColor;
+        font-size: 5vw;
+        font-weight: bold;
+      }
+
+      .dateFilterModal-datePick
+      {
+        margin-top: 2vw;
+        padding: 0vw 4vw;
+        display: flex;
+        flex-direction: row;
+        column-gap: 2vw;
+
+        .dateFilterModal-select
+        {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          row-gap: 1.5vw;
+
+          .dateFilterModal-select-label
+          {
+            font-size: 3vw;
+            color: $primaryColorOpc50;
+          }
+
+          .el-date-editor
+          {
+            position: relative;
+            width: 100%;
+
+            .el-input__inner
+            {
+              color: $primaryColor !important;
+              font-family: 'B612 Mono', monospace;
+            }
+          }
+        }
+      }
+
+      .dateFilterModal-divider
+      {
+        margin: 3vw 0vw;
+        border-bottom: 1px solid $primaryColorOpc20;
+      }
+
+      .dateFilterModal-submit-buttons
+      {
+        padding: 0vw 4vw;
+        display: flex;
+        column-gap: 2vw;
+
+        .dateFilterModal-button
+        {
+          flex: 1;
+          padding: 2vw 0vw;
+          text-align: center;
+          font-weight: bold;
+
+          &:nth-child(1)
+          {
+            border: 1px solid $primaryColorOpc20;
+            color: $primaryColorOpc50;
+          }
+        }
+      }
+    }
+  }
+}

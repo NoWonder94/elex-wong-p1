@@ -1,0 +1,31 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1201px){
+  .chat-ignores{
+    position: relative;
+    color: $white;
+    min-height: 90vh;
+
+    .content{
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: $background;
+      border-radius: 4px;
+      margin-top: 40px;
+      min-height: 300px;
+
+      .title{
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 24px;
+      }
+
+      .desc{
+        text-align: center;
+        padding-top: 20px;
+      }
+    }
+  }
+}

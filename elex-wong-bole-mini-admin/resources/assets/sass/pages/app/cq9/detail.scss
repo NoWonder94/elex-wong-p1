@@ -1,0 +1,186 @@
+// Variables
+@import "../../../variables.scss";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background-color: #FFFFFF;
+  font-size: $font-size-third;
+  word-wrap: break-word;
+}
+
+.record-container {
+  padding: 20px 0;
+}
+
+.page-title {
+  color: $font-color-first
+}
+
+.page-content .content-title {
+  margin: 55px 0 12px;
+  font-size: $font-size-first;
+  color: $font-color-first;
+}
+
+.page-content .user-info {
+  padding: 15px 0;
+  background-color: #e5e9f2;
+  text-align: center;
+}
+
+.page-content .user-info .el-col + .el-col {
+  border-left: 1px solid #8b8b8b;
+}
+
+.page-content .iframe-container {
+  border: 0 none;
+  width: 100%;
+  height: auto;
+}
+
+.bills-container,
+.results-container,
+.playback-container {
+  border: 1px solid $boder-color-second;
+}
+
+.bills-container,
+.results-container {
+  padding: 15px;
+}
+
+.playback-container .detail-content {
+  padding: 15px 5px 30px;
+}
+
+@media (min-width: 576px) {
+  .playback-container .detail-content {
+    padding-left: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .playback-container .detail-content {
+    padding-left: 20px;
+    padding-left: 20px;
+  }
+}
+
+.playback-container .el-form-item {
+  margin-bottom: 0;
+}
+
+.playback-container label {
+  color: $font-color-third;
+}
+
+.playback-container .icon-coins {
+  color: #FFA500;
+}
+
+.playback-container .action-list-item {
+  padding: 7px 0;
+}
+
+/* base style */
+fieldset, ol, p, ul {
+  margin: 0;
+  padding: 0
+}
+
+dd, dl, li, ul {
+  list-style-type: none;
+}
+
+li {
+  list-style: none
+}
+
+/* cover style */
+button:focus {
+  outline: none;
+}
+
+label {
+  margin-bottom: auto;
+}
+
+/* custom style */
+em {
+  color: #e50000;
+  font-style: normal;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.list-space {
+  display: block;
+  height: 10px;
+  background-color: $body-bg;
+}
+
+.text-aux {
+  color: $font-color-third;
+}
+
+.text-primary-custom {
+  color: $color-primary;
+}
+
+.text-success-custom {
+  color: $color-success;
+}
+
+.text-warning-custom {
+  color: $color-warning;
+}
+
+.text-danger-custom {
+  color: $color-danger;
+}
+
+.text-Info-custom {
+  color: $color-info;
+}
+
+.font-color-first {
+  color: $font-color-first;
+}
+
+.font-color-second {
+  color: $font-color-second;
+}
+
+.font-color-third {
+  color: $font-color-third;
+}
+
+.font-color-fourth {
+  color: $font-color-fourth;
+}
+
+.font-size-first {
+  font-size: $font-size-first;
+}
+
+.font-size-second {
+  font-size: $font-size-second;
+}
+
+.font-size-third {
+  font-size: $font-size-third;
+}
+
+.font-size-fourth {
+  font-size: $font-size-fourth;
+}

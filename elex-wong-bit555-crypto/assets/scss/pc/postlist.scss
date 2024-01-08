@@ -1,0 +1,43 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+
+  .postlist {
+    margin: 0 auto;
+    width: 1200px;
+    min-width: 1200px;
+    min-height: 700px;
+
+    .postlist-container {
+      padding: 40px 8px;
+
+      .postlist-title {
+        padding: 8px 0;
+        font-size: 44px;
+        font-weight: bold;
+      }
+
+      .postlist-amount {
+        font-size: 16px;
+      }
+
+      .postlist-content {
+        display: grid;
+        position: relative;
+        column-gap: 20px;
+        row-gap: 25px;
+        grid-template-columns: repeat(3, 386px);
+        padding: 35px 0;
+
+        .post-img-container img {
+          height: 230px;
+        }
+      }
+
+      .el-pagination {
+        text-align: center;
+
+      }
+    }
+  }
+}

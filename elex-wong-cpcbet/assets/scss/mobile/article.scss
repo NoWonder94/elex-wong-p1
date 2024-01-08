@@ -1,0 +1,49 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .article
+  {
+    position: relative;
+    margin: 0 auto;
+
+    .article-title
+    {
+      padding: 5vw 0vw;
+      text-align: center;
+      padding-bottom: 5vw;
+
+      h2
+      {
+        color: $secondaryGreen;
+      }
+    }
+
+    .article-image
+    {
+      position: relative;
+
+      img{
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .article-content
+    {
+      padding: 5vw 0vw;
+      line-height: 1.5;
+
+      h4
+      {
+        color: $secondaryGreen;
+        padding: 3.5vw 0vw;
+      }
+
+      p
+      {
+        font-size: 3vw;
+        padding-bottom: 3vw;
+      }
+    }
+  }
+}

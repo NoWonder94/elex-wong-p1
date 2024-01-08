@@ -1,0 +1,75 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .referral {
+    position: relative;
+    padding: 30px;
+    min-height: 650px;
+    background-color: $secondaryBgColor;
+    border-radius: 10px;
+
+    .referral-back {
+      font-size: 18px;
+      font-weight: bold;
+
+      span {
+        cursor: pointer;
+      }
+    }
+
+    .referral-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex-direction: column;
+      background-color: $fontColor;
+      margin: 50px auto;
+      width: 300px;
+      padding: 20px;
+      border-radius: 8px;
+
+      .referral-title {
+        margin-top: 30px;
+        color: #040131;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .referral-qrcode {
+        padding: 40px;
+        text-align: center;
+
+        .qrcode-img {
+          width: 150px;
+          height: 150px;
+          background-color: $blueGreen
+        }
+      }
+
+      hr {
+        width: 100%;
+        background-color: none;
+        border: none;
+        border-top: 2px dashed $lightGreen;
+      }
+
+      .referral-text {
+        color: rgba(0, 0, 0, .3);
+        font-size: 14px;
+        text-align: center;
+        padding: 25px 0;
+      }
+
+      .referral-button {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        border-radius: 4px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+}

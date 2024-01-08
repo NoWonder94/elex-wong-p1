@@ -1,0 +1,172 @@
+@media only screen and (max-width:700px) {
+	.web{
+		display: none;
+	}
+
+	.mobile{
+		display: block;
+  }
+
+	header{
+    background: url(../images/mobile/bolebit-bg-mobile.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+		position: fixed;
+    width: 100%;
+    height: 16vw;
+		display: flex;
+		align-items: center;
+		z-index: 100;
+    padding-top: 2vh;
+	}
+
+	.header-row{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	}
+
+  .header-info{
+    display: flex;
+		justify-content: space-between;
+    flex-direction: row;
+  }
+
+
+
+  .header-info select{
+    color: transparent;
+    height: 7vh;
+    width: 14vw;
+    border-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent url(../images/mobile/icon-language-mobile.png) no-repeat 100% center;
+  }
+  .selection{
+    color: black;
+    background-color: white;
+    font-size: 3vw;
+  }
+
+
+	.background{
+    background: url(../images/mobile/bolebit-bg-mobile.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+	}
+
+  .body{
+   width:100%;
+   margin: 0vw;
+   position:relative;
+  }
+
+  .content{
+    width: 90vw;
+    margin: 0 auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 13vh;
+  }
+
+  .content-logo{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content-title{
+    font-size: 6vw;
+    color: white;
+    text-align: center;
+    margin: 2vw;
+   }
+
+  .content-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 70%;
+  }
+
+  .content-contact-info-container{
+    width:50vw;
+    margin: 2vw auto;
+  }
+
+  .content-contact-info-container p{
+    font-size:5vw;
+    color:white;
+    text-align: center;
+  }
+
+  .content-contact-info{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-contact-info span {
+   margin-right: 3vw;
+  }
+
+  .content-contact-info img{
+    width: 80%;
+    height:80%;
+  }
+
+
+  .content-box-detail {
+    margin-bottom: 5vw;
+    padding: 5vw 5vw;
+    background-image: url(../images/mobile/content-pattern-mobile.png);
+    width: 80vw;
+    height: 100%;
+    background-size: 100% 100%;
+  }
+
+  .content-box-detail-image{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3vw;
+    padding-top: 3vw;
+  }
+
+  .content-box-detail-title{
+    font-size: 4vw;
+    color: #00B4FF;
+    padding-bottom: 5vw;
+    text-align: center;
+
+  }
+
+  .content-box-detail-description{
+    font-size: 3vw;
+    color: white;
+    padding-bottom: 5vw;
+    text-align: center;
+
+   }
+
+   .content-tips{
+    padding-top: 2vw;
+    font-size: 3vw;
+    color: #00B4FF;
+    padding-bottom: 12vw;
+    text-align: center;
+   }
+
+
+}

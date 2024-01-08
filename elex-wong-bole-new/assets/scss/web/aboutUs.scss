@@ -1,0 +1,332 @@
+@import '../Base.scss';
+
+$contentTitle: #1E1F21;
+$contentSubtitle: #282828;
+$contentBgColor: #FFFFFF;
+
+@media only screen and (min-width: 700px)
+{
+  .aboutUs
+  {
+    position: relative;
+    width:100%;
+    min-width:1200px;
+    margin: 0 auto;
+    padding: 0px 50px;
+    padding-bottom: 150px;
+
+    .aboutUs-title
+    {
+      position: relative;
+      width: 100%;
+      padding: 80px 0px;
+      font-size: 30px;
+      color: $FontPrimaryColor;
+      text-align: center;
+
+      .aboutUs-title-subtitle
+      {
+        padding-top: 18px;
+        font-size: 20px;
+      }
+    }
+
+    .aboutUs-content
+    {
+      position: relative;
+      width: 100%;
+
+      .aboutUs-content-card
+      {
+        width: 100%;
+        margin-bottom: 50px;
+        padding: 80px 120px;
+        background-color: $contentBgColor;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+
+        .aboutUs-card-image
+        {
+          img
+          {
+            width: 400px;
+          }
+        }
+
+        .aboutUs-card-descript
+        {
+          padding-top: 8px;
+          padding-left: 40px;
+          font-weight: bold;
+
+          .aboutUs-card-descript-title
+          {
+            font-size: 25px;
+            color: $contentTitle;
+          }
+
+          .aboutUs-card-descript-description
+          {
+            padding-top: 20px;
+            font-size: 15px;
+            letter-spacing: 1.8px;
+            line-height: 1.5;
+            color: $contentSubtitle;
+          }
+        }
+      }
+    }
+
+    .aboutUs-map
+    {
+      position: relative;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: $contentBgColor;
+      border-radius: 20px;
+      text-align: center;
+      zoom:0.9;
+
+      .aboutUs-map-title
+      {
+        padding-top: 50px;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 1.3px;
+        color: $contentTitle;
+      }
+
+      .aboutUs-map-subtitle
+      {
+        padding-top: 20px;
+        font-size: 15px;
+        letter-spacing: 1.8px;
+        line-height: 1.5;
+        color: $contentSubtitle;
+      }
+
+      .aboutUs-map-subtitle-mobile
+      {
+        display: none;
+      }
+
+      .aboutUs-map-mapbg-container
+      {
+        position: relative;
+        margin-top: 40px;
+        width: 1200px;
+        margin: 0 auto;
+
+        /* mobile map bg */
+        .aboutUs-map-mapbg-mobile
+        {
+          display: none;
+        }
+
+        /* dektop map bg */
+        .aboutUs-map-mapbg
+        {
+          position: relative;
+          width: 1200px;
+        }
+
+        /* mobile plot */
+        .mobile-map-item
+        {
+          display: none;
+        }
+
+        /* dektop plot dot */
+        .web-map-item
+        {
+          position: absolute;
+          margin: 0 auto;
+          width: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+
+          /* mobile plot dot */
+          .map-plot-mobile
+          {
+            display: none;
+          }
+
+          /* web plot dot */
+          .map-plot
+          {
+            width: 35px;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+
+            &:hover
+            {
+              transform: scale(1.3);
+            }
+          }
+
+          .location-plot
+          {
+            width: 100%;
+            height: 100%;
+          }
+
+          /* location info global css */
+          .location-information
+          {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            font-weight: bold;
+            text-align: left;
+            opacity: 0;
+
+            .location-title
+            {
+              width: 145px;
+              font-size: 18px;
+              color: #565656;
+              padding-bottom: 5px;
+              letter-spacing: 1.5px;
+            }
+
+            .location-subtitle
+            {
+              font-size: 13px;
+              font-style: italic;
+              font-weight: bold;
+              color: #ed1f27;
+            }
+          }
+          /* location info global css end */
+
+          #location-dot-1
+          {
+            position: absolute;
+            width: 35px;
+            top: 300px;
+            right: 500px;
+
+            &:hover + #location-1
+            {
+              width: 330px;
+
+              .location-information
+              {
+                top: 35px;
+                left: 163px;
+                opacity: 1;
+                transition-delay: .28s;
+              }
+            }
+          }
+
+          #location-1
+          {
+            position: absolute;
+            width: 0px;
+            height: 180px;
+            top: 220px;
+            left: 320px;
+            transition: .3s ease;
+            overflow: hidden;
+          }
+
+          #location-dot-2
+          {
+            position: absolute;
+            top: 308px;
+            right: 195px;
+
+            &:hover + #location-2
+            {
+              height: 180px;
+
+              .location-information
+              {
+                top: 35px;
+                left: 163px;
+                opacity: 1;
+                transition-delay: .28s;
+              }
+            }
+          }
+
+          #location-2
+          {
+            position: absolute;
+            width: 330px;
+            height: 0;
+            top: 120px;
+            right: 60px;
+            transition: .3s ease;
+            overflow: hidden;
+          }
+
+          #location-dot-3
+          {
+            position: absolute;
+            top: 365px;
+            right: 215px;
+
+            &:hover + #location-3
+            {
+              width: 330px;
+
+              .location-information
+              {
+                top: 35px;
+                left: 163px;
+                opacity: 1;
+                transition-delay: .28s;
+              }
+            }
+          }
+
+          #location-3
+          {
+            position: absolute;
+            width: 0px;
+            height: 180px;
+            top: 300px;
+            left: 615px;
+            transition: .3s ease;
+            overflow: hidden;
+            z-index: 10;
+          }
+
+          #location-dot-4
+          {
+            position: absolute;
+            top: 400px;
+            right: 265px;
+
+            &:hover + #location-4
+            {
+              width: 330px;
+
+              .location-information
+              {
+                top: 35px;
+                left: 163px;
+                opacity: 1;
+                transition-delay: .28s;
+              }
+            }
+          }
+
+          #location-4
+          {
+            position: absolute;
+            width: 0px;
+            height: 180px;
+            top: 330px;
+            left: 560px;
+            transition: .3s ease-out;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+
+  .transfer-request {
+
+    .transfer-request-header {
+      position: sticky;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10px;
+      background-color: $secondarybgColor;
+      color: $scfontColor;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 1px solid $blackOpacity20;
+
+      .header-item {
+        width: 1200px;
+        margin: auto;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+
+    .transfer-request-body{
+      width: 1200px;
+      padding: 20px 10px;
+      margin: auto;
+
+      .transfer-log-filter-container {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        padding-top: 20px;
+
+        .transfer-log-filter-label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .transfer-log-form {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            .el-form-item {
+                margin-bottom: 0;
+
+
+                .transfer-log-filter-input,
+                .transfer-log-filter-date,
+                .transfer-log-filter-select {
+                    width: 150px;
+
+                    .el-input__inner {
+                        color: $fontColor;
+                        background: transparent;
+                        border: 1px solid $blackOpacity20;
+
+                        &::placeholder {
+                            color: $blackOpacity20;
+                        }
+                    }
+                }
+
+                .transfer-log-filter-date {
+                    width: 150px;
+                }
+
+                .transfer-log-filter-select {
+                    width: 130px;
+                }
+
+                .transfer-log-filter-button {
+                    border: none;
+
+                    &:hover {
+                        color: $fontColor;
+                        background-color: $secondaryColor;
+                        border: none;
+                    }
+                }
+            }
+
+        }
+      }
+
+      .transfer-log-request-table {
+          padding-top: 5px;
+          margin: 0 auto;
+      }
+
+      .transfer-log-statistic {
+          padding-top: 20px;
+          display: flex;
+          // justify-content: space-between;
+          column-gap: 20px;
+
+          .transfer-log-statistic-item {
+              display: flex;
+              align-self: center;
+              column-gap: 5px;
+          }
+      }
+
+      .transfer-log-request-table-pagination {
+          position: relative;
+          margin: 0 auto;
+          margin-top: 15px;
+          text-align: center;
+
+          .el-pager {
+              .active {
+                  background-color: $secondaryColor !important;
+              }
+
+              .number.active:hover {
+                  color: $fontColor !important;
+              }
+
+              .number:hover {
+                  color: $secondaryColor !important;
+              }
+          }
+      }
+    }
+  }
+}

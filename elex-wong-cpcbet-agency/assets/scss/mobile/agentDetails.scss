@@ -1,0 +1,350 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .agentDetails {
+    position: relative;
+    margin-top: 3vw;
+
+    .agentDetails-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .back-title {
+        display: flex;
+        align-items: center;
+
+        .back-title-icon {
+          width: 4.5vw;
+          filter: invert(21%) sepia(12%) saturate(267%) hue-rotate(155deg) brightness(91%) contrast(87%);
+        }
+
+        .back-title-label {
+          padding-left: 3vw;
+          font-size: 3.5vw;
+        }
+      }
+
+      .agentDetails-change-pwd {
+        padding: 2vw 3vw;
+        border-radius: 1vw;
+        font-size: 3vw;
+
+        .el-icon-lock {
+          color: $secondaryColor;
+        }
+      }
+    }
+
+    .agentDetails-content {
+      margin-top: 5vw;
+
+      .agentDetails-divider {
+        margin: 3vw 0vw;
+        margin-bottom: 0;
+        border-bottom: 1px solid $fontColorOpc50;
+      }
+
+      .agentDetails-details-container {
+        padding: 3vw 0vw;
+
+        .agentDetails-details-container-header-label {
+          padding-bottom: 3vw;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .agentDetails-details-container-label {
+            font-size: 4vw;
+            color: $fontColor;
+          }
+
+          .agentDetails-details-edit {
+            padding: 1.5vw 7vw;
+            font-size: 3vw;
+          }
+        }
+
+
+        .agentDetails-details-container-card {
+          border: 1px solid $blackOpacity20;
+          border-radius: 2vw;
+          padding: 5vw 3vw;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 3vw;
+          grid-row-gap: 5.5vw;
+
+          .column-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1vw;
+
+            .details-container-card-label {
+              color: $primaryColorOpc50;
+              font-weight: bold;
+              font-size: 2.5vw;
+            }
+
+            .details-container-card-value {
+              color: $primaryColor;
+              font-weight: bold;
+              font-size: 3.5vw;
+
+              .agent-status-active {
+                color: $secondaryColor;
+              }
+
+              .agent-status-inactive {
+                color: $warning;
+              }
+            }
+          }
+        }
+
+        .agentDetails-account-container-card {
+          margin: 5vw 0vw;
+          border: 1px solid $blackOpacity20;
+          border-radius: 2vw;
+          padding: 5vw 3vw;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 3vw;
+          grid-row-gap: 5.5vw;
+
+          .column-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1vw;
+
+            .details-container-card-label {
+              color: $primaryColorOpc50;
+              font-weight: bold;
+              font-size: 2.5vw;
+            }
+
+            .details-container-card-value {
+              color: $primaryColor;
+              font-weight: bold;
+              font-size: 3.5vw;
+            }
+          }
+        }
+      }
+
+      .agentDetails-players-container {
+        padding: 3vw 0vw;
+
+        .players-list-results {
+          font-size: 3.3vw;
+          color: $fontColorOpc50;
+          padding-bottom: 3.5vw;
+        }
+
+        .agentDetails-players-table-pagination {
+          position: relative;
+          margin: 0 auto;
+          margin-top: 3vw;
+          text-align: center;
+
+          .el-pager {
+            .active {
+              background-color: $secondaryColor  !important;
+            }
+
+            .number.active:hover {
+              color: $fontColor  !important;
+            }
+
+            .number:hover {
+              color: $secondaryColor  !important;
+            }
+          }
+        }
+      }
+
+      .agentDetails-wallet-container {
+        padding: 3vw 0vw;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vw;
+
+        .agentDetails-wallet-container-card {
+          border: 1px solid $blackOpacity20;
+          border-radius: 2vw;
+          padding: 5vw 3vw;
+
+          .column-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1vw;
+
+            &:first-child {
+              margin-bottom: 5vw;
+            }
+
+            .details-container-card-label {
+              color: $primaryColorOpc50;
+              font-weight: bold;
+              font-size: 3vw;
+            }
+
+            .details-container-card-value {
+              color: $primaryColor;
+              font-weight: bold;
+              font-size: 4vw;
+            }
+          }
+        }
+
+        .agentDetails-wallet-gridcontainer-card {
+          border: 1px solid $blackOpacity20;
+          border-radius: 2vw;
+          padding: 5vw 3vw;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 3vw;
+          grid-row-gap: 5.5vw;
+
+          .column-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1vw;
+
+            .details-container-card-label {
+              color: $primaryColorOpc50;
+              font-weight: bold;
+              font-size: 3vw;
+            }
+
+            .details-container-card-value {
+              color: $primaryColor;
+              font-weight: bold;
+              font-size: 4vw;
+            }
+          }
+        }
+      }
+    }
+
+    /* modal form */
+    .agentDetails-form {
+      position: relative;
+      width: 100%;
+      max-height: 75vh;
+      overflow: auto;
+
+      .agentDetails-form-label {
+        color: $primaryColor;
+        font-weight: bold;
+        padding-bottom: 5vw;
+      }
+
+      .agentDetails-form-submition {
+        position: relative;
+        padding: 0vw 2.5vw;
+
+        .el-form-item {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .el-form-item__label {
+            color: $primaryColorOpc50;
+            font-size: 3vw;
+            line-height: 5vw;
+          }
+
+          .el-form-item__content {
+            position: relative;
+            flex: 1;
+            width: 100%;
+
+
+            .el-input {
+              .el-input__inner {
+                padding: 0;
+                border: none;
+                border-radius: 0vw;
+                border-bottom: 1px solid $primaryColorOpc20;
+              }
+            }
+
+            .agentDetails-form-gender {
+              position: relative;
+              width: 100%;
+
+              .el-select-dropdown__item.selected {
+                color: $secondaryColor  !important;
+                font-weight: bold;
+              }
+            }
+
+            .el-input-group__prepend{
+              width: 20vw;
+              background: transparent;
+              border: none;
+
+              .agentDetails-form-mobileRegion {
+                width: 20vw;
+
+                .agentDetails-form-mobileRegion-optionsList {
+                  width: 60vw;
+                }
+
+                .el-select-dropdown__item.selected {
+                  color: $secondaryColor  !important;
+                  font-weight: bold;
+                }
+              }
+            }
+
+          }
+
+          .agentDetails-form-submit-button {
+             &:focus {
+              color: $fontColor;
+              background-color: $secondaryColor;
+              border-color: transparent;
+            }
+
+            &:hover {
+              color: $fontColor;
+              background-color: $secondaryColor;
+              border-color: transparent;
+            }
+          }
+        }
+      }
+
+      .agentDetails-form-change-pwd-button {
+        width: 100%;
+      }
+    }
+
+    /* tab bar css */
+    .el-tabs__nav-wrap::after {
+      background-color: $whiteOpacity20;
+    }
+
+    .el-tabs__nav {
+
+      .el-tabs__active-bar {
+        height: 0.8vw;
+        border-radius: 1.5vw;
+        background-color: $secondaryColor;
+        z-index: 1 !important;
+      }
+
+      .el-tabs__item {
+        color: $fontColorOpc50;
+        font-size: 4vw;
+      }
+
+      .el-tabs__item.is-active {
+        color: $fontColor;
+      }
+    }
+  }
+}

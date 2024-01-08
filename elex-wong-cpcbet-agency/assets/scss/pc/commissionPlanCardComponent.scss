@@ -1,0 +1,161 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth)
+{
+  .card
+  {
+    width: 98%;
+    padding: 15px 0px;
+    padding-top: 10px;
+    color: $bgColor;
+    border-radius: 15px;
+    background: $fontColor;
+
+    .card-heading
+    {
+      padding: 0px 15px;
+      padding-bottom: 5px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $primaryColorOpc50;
+
+      .card-label
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .card-label-name
+        {
+          font-size: 13px;
+        }
+
+        .card-label-type
+        {
+          font-size: 10px;
+          padding: 5px;
+          color: $fontColor;
+          border-radius: 30px;
+          background: $secondaryColor;
+        }
+      }
+
+      .card-option
+      {
+        cursor: pointer;
+
+        .card-option-operation
+        {
+          padding: 5px;
+          border-radius: 10px;
+          font-size: 13px;
+          text-align: center;
+        }
+
+        .card-option-operation-selected
+        {
+          padding: 5px;
+          border-radius: 10px;
+          font-size: 13px;
+          text-align: center;
+          background: $adminRole;
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .card-content
+    {
+      .card-content-type
+      {
+        padding-bottom: 20px;
+
+        .card-content-item-title
+        {
+          padding: 8px 15px;
+          font-size: 13px;
+          font-weight: bold;
+          background: $primaryColorOpc20;
+          border-bottom: 1px solid $primaryColorOpc50;
+        }
+
+        .content-tab-item
+        {
+          padding: 0px 0px;
+
+          /* vuetify css */
+          .v-tabs-bar {
+            height: 35px;
+            border-bottom: 1px solid $primaryColorOpc50;
+          }
+
+          .v-tabs-slider
+          {
+            background-color: $secondaryColor;
+          }
+
+          .v-tab
+          {
+            font-size: 10px;
+            font-weight: bold;
+          }
+
+          .v-tab--active
+          {
+            color: $secondaryColor;
+            background-color: transparent;
+          }
+
+          .theme--dark.v-tabs-items {
+            border: 1px solid $blackOpacity20;
+          }
+          /* vuetify css */
+        }
+
+        .card-content-item-content
+        {
+          max-height: 120px;
+          overflow-y: auto;
+          text-align: center;
+
+          .item-labels
+          {
+            padding: 8px 15px;
+            font-size: 13px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 15px;
+            grid-row-gap: 0px;
+          }
+
+          .item-content
+          {
+            padding: 5px 15px;
+            font-size: 13px;
+            border-top: 1px solid $primaryColorOpc50;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 15px;
+            grid-row-gap: 0px;
+          }
+
+          .item-content-noData
+          {
+            padding-top: 30px;
+            text-align: center;
+
+            img
+            {
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 1200px){
+  .provider-swiper{
+    position: relative;
+    padding-bottom: 6vw;
+
+    .game-title-row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+
+      .game-title-left{
+        display: flex;
+        align-items: center;
+
+        .game-title{
+          font-size: 22px;
+          font-weight: bold;
+        }
+      }
+
+      .game-view-all{
+        font-size: 12px;
+        font-weight: bold;
+        color: $lightGrey;
+        cursor: pointer;
+
+        i{
+          color: $lightGrey;
+        }
+
+        &:hover{
+          color: $white;
+        }
+      }
+    }
+
+    .game-list{
+      display: flex;
+      white-space: nowrap;
+      column-gap: 10px;
+      overflow-x: auto;
+
+      .game-item{
+        background-color: $background;
+        min-width: 130px;
+        display: grid;
+        grid-template-rows: 1.3fr 1fr;
+        row-gap: 5px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        height: 100px;
+        cursor: pointer;
+
+        .image{
+          align-self: flex-end;
+
+          img{
+            width: 80px;
+            height: auto;
+          }
+        }
+
+        .title{
+          font-size: 16px;
+          font-weight: bold;
+          text-align: center;
+          align-self: flex-end;
+        }
+
+        .total{
+          color: $lightGrey;
+          font-size: 14px;
+          text-align: center;
+          align-self: flex-start;
+        }
+
+        &:hover{
+          background-color: $backgroundFour;
+          transform: scale(1.04);
+        }
+      }
+
+      &:after{
+        display: block;
+        position: absolute;
+        right: -5px;
+        bottom: 0;
+        width: 50px;
+        background: linear-gradient(90deg, transparent, rgba(15, 25, 35, 0.8) 71%, $darkBackground);
+        content: "";
+        height: 140px;
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

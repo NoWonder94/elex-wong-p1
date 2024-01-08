@@ -1,0 +1,33 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .subscribe-btn-container {
+    position: fixed;
+    bottom: 5vw;
+    right: 5vw;
+    z-index: 888;
+
+    .subscribe-btn {
+      display: flex;
+      padding: 3.5vw;
+      background-color: $secondaryBgColor;
+      border: 1vw solid $greyFontColorTransparent;
+      border-radius: 999px;
+      box-shadow: rgb(0 0 0 / 24%) 0px 8px 16px -2px;
+      color: $whiteFontColor;
+      font-size: 3.5vw;
+      vertical-align: middle;
+
+      .fa-solid {
+        font-size: 5vw;
+        // background-color: $gColor;
+        // color: $fontColor;
+        // border: 1px solid $whiteFontColor;
+      }
+
+      div {
+        padding-left: 2vw;
+      }
+    }
+  }
+}

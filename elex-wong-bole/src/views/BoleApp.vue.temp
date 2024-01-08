@@ -1,0 +1,256 @@
+<template>
+  <div class="page-container" style="position:relative; z-index:13;">
+    <div id="AppWeb">
+      <div class="firstBG">
+        <div class="firstBG-row">
+          <a @click="handleRoute('/index')">
+            <div class="logo">
+              <img src="../assets/boleapp/ITEM_11.png">
+            </div>
+          </a>
+          <div class="contactRow">
+            <a href="skype:live:bolegaming?chat">
+              <div class="contact">
+                <img src="../assets/boleapp/BT_05.png">
+                <p>BoleGaming</p>
+              </div>
+            </a>
+            <a href="https://t.me/bolegaming" target="_blank">
+              <div class="contact">
+                <img src="../assets/boleapp/BT_06.png">
+                <p>BoleGaming</p>
+              </div>
+            </a>
+            <a href="mailto:Info@bolegaming.com" target="_top">
+              <div class="contact" style="margin-right: 5vw;">
+                <img src="../assets/boleapp/BT_08.png">
+                <p style="width:15vw;">info@bolegaming.com</p>
+              </div>
+            </a>
+            <!-- <a
+              href="https://wpa.qq.com/msgrd?v=3&uin=2354679497&site=qq&menu=yes"
+              target="_blank"
+            >
+            <div class="contact">
+              <img src="../assets/boleapp/BT_07.png">
+              <p>2354679497</p>
+            </div>
+            </a> -->
+          </div>
+          <div class="gamephoto">
+            <div class="swing1">
+              <img class="img1" src="../assets/boleapp/ITEM_01.png">
+              <img class="img2" src="../assets/boleapp/ITEM_02.png">
+            </div>
+
+            <!-- 轮播图 -->
+            <div class="banner-place">
+              <div class="banner-image-position">
+                <el-carousel
+                  arrow="never"
+                  :interval="3000"
+                  trigger="click"
+                  height="17.30vw">
+                  <el-carousel-item v-for="(image, index) in bannerArray" :key="index">
+                    <img :src="image.url" width="100%"/>
+                  </el-carousel-item>
+                </el-carousel>
+              </div>
+            </div>
+            <!-- //轮播图 -->
+
+            <div class="arrow">
+              <img class="swing2" src="../assets/boleapp/ITEM_04.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondBG">
+        <div class="secondBG-row">
+          <div class="banner">
+            <div class="s1" style="position:relative; top:0vw;">
+              <img src="../assets/boleapp/ITEM_05.png">
+              <div class="h1" style="position:relative; top:-20vw;">
+              </div>
+            </div>
+            <div class="s2" style="position:relative; top:0vw;">
+              <img src="../assets/boleapp/ITEM_07.png">
+              <div class="h2" style="position:relative; top:-20vw;">
+              </div>
+            </div>
+            <div class="s3" style="position:relative; top:0vw;">
+              <img src="../assets/boleapp/ITEM_09.png">
+              <div class="h3" style="position:relative; top:-20vw;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="thirdBG">
+        <div class="thirdBG-row">
+          <div class="more-info-position">
+            <a href="#contact-info">
+              <img src="../assets/boleapp/BT_09.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="fouthBG">
+        <div class="fouthBG-row">
+          <div class="button" id="contact-info">
+            <div class="buttonList">
+              <a href="skype:live:bolegaming?chat">
+                <div class="button1">
+                </div>
+              </a>
+              <a href="https://t.me/bolegaming" target="_blank">
+                <div class="button2">
+                </div>
+              </a>
+              <!-- <a
+                href="https://wpa.qq.com/msgrd?v=3&uin=2354679497&site=qq&menu=yes"
+                target="_blank"
+              >
+                <div class="button3">
+                </div>
+              </a> -->
+              <a href="mailto:Info@bolegaming.com" target="_top">
+                <div class="button4">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="AppWap">
+      <div class="bgWap">
+        <a @click="handleRoute('/index')">
+          <div class="logo">
+            <img src="../assets/boleapp/mobile/MB_LOGO.png">
+          </div>
+        </a>
+        <div class="contactRow">
+          <a href="skype:live:bolegaming?chat">
+            <div class="contact">
+              <img src="../assets/boleapp/mobile/BG_item_01.png">
+              <p>BoleGaming</p>
+            </div>
+          </a>
+          <a href="https://t.me/bolegaming" target="_blank">
+            <div class="contact">
+              <img src="../assets/boleapp/mobile/BG_item_02.png">
+              <p>BoleGaming</p>
+            </div>
+          </a>
+          <!-- <a
+                href="https://wpa.qq.com/msgrd?v=3&uin=2354679497&site=qq&menu=yes"
+                target="_blank"
+              >
+            <div class="contact">
+              <img src="../assets/boleapp/mobile/BG_item_03.png">
+              <p>2354679497</p>
+            </div>
+          </a> -->
+          <a href="mailto:Info@bolegaming.com" target="_top">
+            <div class="contact">
+              <img src="../assets/boleapp/mobile/BG_item_04.png">
+              <p style="width:15vw;">info@bolegaming.com</p>
+            </div>
+          </a>
+        </div>
+        <div class="gamephoto">
+          <div class="swing1">
+            <img class="img1" src="../assets/boleapp/mobile/BG_item_06.png">
+            <img class="img2" src="../assets/boleapp/mobile/BG_item_05.png">
+          </div>
+          <div class="arrow">
+            <img class="swing2" src="../assets/boleapp/mobile/BG_item_08.png">
+          </div>
+        </div>
+        <div class="banner">
+          <div class="s1" style="position:relative; top:0vw;">
+            <img src="../assets/boleapp/mobile/BG_item_09.png">
+            <div class="h1" style="position:relative; top:-50vw;">
+            </div>
+          </div>
+          <div class="s2" style="position:relative; top:0vw;">
+            <img src="../assets/boleapp/mobile/BG_item_11.png">
+            <div class="h2" style="position:relative; top:-50vw;">
+            </div>
+          </div>
+          <div class="s3" style="position:relative; top:0vw;">
+            <img src="../assets/boleapp/mobile/BG_item_13.png">
+            <div class="h3" style="position:relative; top:-50vw;">
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <div class="buttonList">
+            <a href="skype:live:bolegaming?chat">
+              <div class="button1">
+              </div>
+            </a>
+            <a href="https://t.me/bolegaming" target="_blank">
+              <div class="button2">
+              </div>
+            </a>
+            <!-- <a
+              href="https://wpa.qq.com/msgrd?v=3&uin=2354679497&site=qq&menu=yes"
+              target="_blank"
+            >
+              <div class="button3">
+              </div>
+            </a> -->
+            <a href="mailto:Info@bolegaming.com" target="_top">
+              <div class="button4">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      bannerArray: [
+        { url: require('../assets/boleapp/banner_02.png') },
+        { url: require('../assets/boleapp/banner_03.png') },
+        { url: require('../assets/boleapp/banner_04.png') },
+        { url: require('../assets/boleapp/banner_05.png') },
+        { url: require('../assets/boleapp/banner_06.png') },
+        { url: require('../assets/boleapp/banner_07.png') },
+        { url: require('../assets/boleapp/banner_08.png') },
+      ]
+    }
+  },
+
+  methods: {
+    handleRoute(path) {
+      if (path == this.$route.path) {
+        if (this.Active) {
+          this.handleMenuDisplay();
+        }
+      } else {
+        this.$router.push({ path: path });
+      }
+    },
+  }
+};
+</script>
+
+<style lang="scss" type="text/css" scoped>
+  @import "../styles/BoleApp.scss";
+</style>
+
+<style lang="scss" type="text/css">
+  .el-carousel__button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+  }
+</style>

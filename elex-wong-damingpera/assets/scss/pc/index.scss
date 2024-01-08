@@ -1,0 +1,392 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth)
+{
+	.index
+	{
+    position: relative;
+    margin: 0 auto;
+    background-color: $bgColor;
+
+    .first-index {
+      position: relative;
+      min-height:100vh;
+      overflow-y: hidden;
+      -webkit-overflow-Y: hidden;
+      -moz-overflow-Y: hidden;
+      -o-overflow-Y: hidden;
+
+      .first-index-logo {
+        position: relative;
+        width: 25vw;
+        padding-top: 90px;
+        margin: 0 auto;
+        text-align: center;
+        // top: 50%;
+        z-index: 10;
+
+        img {
+          width: 100%
+        }
+      }
+
+      .first-index-cursor {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 3%;
+        z-index: 10;
+        text-align: center;
+
+        .first-index-cursor-label {
+          color: $fontColor;
+          font-weight: bold;
+          padding-bottom: 20px;
+        }
+
+        .mouseAnimation{
+          cursor:pointer;
+          height:1.625rem;
+          display: block;
+          margin: 0 auto;
+          z-index: 2;
+        }
+        .arrowAnimation{
+          cursor:pointer;
+          transform: translatey(0px);
+          animation: float 1s ease-in-out infinite;
+          display: block;
+          margin: 0 auto;
+          margin-top: 28px;
+          height:1.125rem;
+        }
+      }
+
+      /* background effect */
+      .light {
+        position: absolute;
+        width: 0px;
+        background-color: white;
+        box-shadow: #e9f1f1 0px 0px 20px 2px;
+        opacity: 0;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+      }
+      /* effect animation */
+      .x1 {
+        -webkit-animation: floatUp 4s infinite linear;
+        -moz-animation: floatUp 4s infinite linear;
+        -o-animation: floatUp 4s infinite linear;
+        animation: floatUp 4s infinite linear;
+        -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -o-transform: scale(1.0);
+        transform: scale(1.0);
+      }
+
+      .x2 {
+        -webkit-animation: floatUp 7s infinite linear;
+        -moz-animation: floatUp 7s infinite linear;
+        -o-animation: floatUp 7s infinite linear;
+        animation: floatUp 7s infinite linear;
+        -webkit-transform: scale(1.6);
+        -moz-transform: scale(1.6);
+        -o-transform: scale(1.6);
+        transform: scale(1.6);
+        left: 15%;
+      }
+
+      .x3 {
+        -webkit-animation: floatUp 2.5s infinite linear;
+        -moz-animation: floatUp 2.5s infinite linear;
+        -o-animation: floatUp 2.5s infinite linear;
+        animation: floatUp 2.5s infinite linear;
+        -webkit-transform: scale(.5);
+        -moz-transform: scale(.5);
+        -o-transform: scale(.5);
+        transform: scale(.5);
+        left: -15%;
+      }
+
+      .x4 {
+        -webkit-animation: floatUp 4.5s infinite linear;
+        -moz-animation: floatUp 4.5s infinite linear;
+        -o-animation: floatUp 4.5s infinite linear;
+        animation: floatUp 4.5s infinite linear;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+        left: -34%;
+      }
+
+      .x5 {
+        -webkit-animation: floatUp 8s infinite linear;
+        -moz-animation: floatUp 8s infinite linear;
+        -o-animation: floatUp 8s infinite linear;
+        animation: floatUp 8s infinite linear;
+        -webkit-transform: scale(2.2);
+        -moz-transform: scale(2.2);
+        -o-transform: scale(2.2);
+        transform: scale(2.2);
+        left: -57%;
+      }
+
+      .x6 {
+        -webkit-animation: floatUp 3s infinite linear;
+        -moz-animation: floatUp 3s infinite linear;
+        -o-animation: floatUp 3s infinite linear;
+        animation: floatUp 3s infinite linear;
+        -webkit-transform: scale(.8);
+        -moz-transform: scale(.8);
+        -o-transform: scale(.8);
+        transform: scale(.8);
+        left: -81%;
+      }
+
+      .x7 {
+        -webkit-animation: floatUp 5.3s infinite linear;
+        -moz-animation: floatUp 5.3s infinite linear;
+        -o-animation: floatUp 5.3s infinite linear;
+        animation: floatUp 5.3s infinite linear;
+        -webkit-transform: scale(3.2);
+        -moz-transform: scale(3.2);
+        -o-transform: scale(3.2);
+        transform: scale(3.2);
+        left: 37%;
+      }
+
+      .x8 {
+        -webkit-animation: floatUp 4.7s infinite linear;
+        -moz-animation: floatUp 4.7s infinite linear;
+        -o-animation: floatUp 4.7s infinite linear;
+        animation: floatUp 4.7s infinite linear;
+        -webkit-transform: scale(1.7);
+        -moz-transform: scale(1.7);
+        -o-transform: scale(1.7);
+        transform: scale(1.7);
+        left: 62%;
+      }
+
+      .x9 {
+        -webkit-animation: floatUp 4.1s infinite linear;
+        -moz-animation: floatUp 4.1s infinite linear;
+        -o-animation: floatUp 4.1s infinite linear;
+        animation: floatUp 4.1s infinite linear;
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+        left: 85%;
+      }
+      /* background effect */
+    }
+
+    .about-us {
+      position: relative;
+      min-height: 70vh;
+      display:grid;
+      grid-template-columns: 60% 40%;
+      justify-content: stretch;
+      background: $bgColor;
+
+      .about-us-content-block {
+        padding: 0% 15%;
+        padding-right: 20%;
+        align-self: center;
+
+        .about-us-brandLogo {
+          width: 160px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .about-us-label {
+          font-size: 32px;
+          font-weight: 900;
+          color: $secondaryFontColor;
+        }
+
+        .about-us-content {
+          padding-top: 10px;
+          color: $fontaltColor;
+          line-height: 2.5;
+        }
+
+        .about-us-button {
+          width: 150px;
+          margin-top: 30px;
+          padding: 10px 0px;
+          border-radius: 30px;
+          text-align: center;
+          color: $fontColor;
+          cursor: pointer;
+          background: #8B64E7;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #E98BFF, #8B64E7);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #E98BFF, #8B64E7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+      }
+
+      .about-us-image-block {
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .services {
+      position: relative;
+      min-height: 80vh;
+      padding: 5% 15%;
+      color: $fontColor;
+      background: $secondarybgColor;
+
+      .service-info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+
+        .service-info-intro {
+          padding-right: 150px;
+
+          .service-info-intro-label {
+            margin-top: -30px;
+            font-weight: 900;
+            font-size: 32px;
+          }
+          .service-info-intro-content {
+            font-size: 14px;
+            line-height: 2.5;
+          }
+          .service-info-intro-button {
+            width: 150px;
+            padding: 10px 0px;
+            margin-top: 30px;
+            border-radius: 30px;
+            border: 1px solid $fontColor;
+            text-align: center;
+            cursor: pointer;
+          }
+        }
+
+        .info-content-card {
+          position: relative;
+          padding: 20px;
+          background: $primaryAltColor;
+          border-radius: 10px;
+          text-align: left;
+
+          .info-content-card-icon {
+            width: 28px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .info-content-card-label {
+            font-weight: bold;
+            font-size: 17px;
+            padding: 10px 0px;
+          }
+
+          .info-content-card-content {
+            font-size: 13px;
+            line-height: 2;
+          }
+        }
+      }
+    }
+
+    .contact {
+      min-height: 65vh;
+      display:grid;
+      grid-template-columns: 40% 60%;
+      background: $bgColor;
+
+      .contact-content-block {
+        padding: 0% 10%;
+        padding-right: 15%;
+        align-self: center;
+
+        .contact-label {
+          font-size: 32px;
+          font-weight: 900;
+          color: $secondaryFontColor;
+        }
+
+        .contact-content {
+          padding-top: 10px;
+          color: $fontaltColor;
+          line-height: 2.5;
+        }
+      }
+      .contact-image-block {
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+	}
+}
+
+@keyframes float {
+  0% {
+    // box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    // box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-15px);
+  }
+  100% {
+    // box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
+
+/* background effect animation */
+@-webkit-keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+}
+@-moz-keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+}
+@-o-keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+}
+@keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+}
+/* background effect animation */

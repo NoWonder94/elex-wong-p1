@@ -1,0 +1,19 @@
+@import 'base.scss';
+
+.information-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    .information-card-title {
+        font-weight: bold;
+        color: $primaryColor;
+        font-size: 14px;
+    }
+
+    .information-card-desc {
+        font-size: 14px;
+        color: $lightfontColor;
+    }
+}

@@ -1,0 +1,158 @@
+.left-panel {
+    #navMenu {
+      width:23.4vw;
+    }
+
+    .el-menu-item {
+      padding:0 1vw;
+      height:2.9vw;
+      color:#303133;
+      font-size:0.7vw;
+      text-align:center;
+      line-height:2.9vw;
+    }
+
+    .el-menu-item.is-active {
+      color:#FF0317 !important;
+    }
+
+    .el-menu-item:hover
+    {
+      background-color:transparent;
+    }
+
+    .menuList {
+      margin:7.1vw 0vw 0vw 14.2vw;
+      width:7.2vw;
+      height:100%;
+      overflow:auto;
+    }
+
+    .home {
+      padding:0;
+      background-image:url(../assets/centre/icon.svg);
+      background-position:2.6vw 0vw;
+      background-size:cover;
+      background-repeat:no-repeat;
+      height:3.8vw;
+    }
+
+    .home:hover {
+      background-color:transparent;
+      background-position:-2.55vw 0;
+      color:#FF0317;
+    }
+
+    .home.is-active {
+      background-color:transparent;
+      background-position:-2.55vw 0;
+      color:#FF0317;
+    }
+
+    .media {
+      margin-top:2vw;
+      background-image:url(../assets/centre/icon.svg);
+      background-position:2.6vw -5.5vw;
+      background-size:cover;
+      background-repeat:no-repeat;
+      height:3.8vw;
+    }
+
+    .media:hover {
+      background-color:transparent;
+      background-position:-2.55vw -5.5vw;
+      color:#FF0317;
+    }
+
+    .media.is-active {
+      background-color:transparent;
+      background-position:-2.55vw -5.5vw;
+      color:#FF0317;
+    }
+
+    .game {
+      margin-top:2vw;
+      background-image:url(../assets/centre/icon.svg);
+      background-position:2.6vw -11vw;
+      background-size:cover;
+      background-repeat:no-repeat;
+      height:3.8vw;
+    }
+
+    .game:hover {
+      background-color:transparent;
+      background-position:-2.55vw -11vw;
+      color:#FF0317;
+    }
+
+    .game.is-active {
+      background-color:transparent;
+      background-position:-2.55vw -11vw;
+      color:#FF0317;
+    }
+
+    .support {
+      margin-top:2vw;
+      background-image:url(../assets/centre/icon.svg);
+      background-position:2.6vw -16.5vw;
+      background-size:cover;
+      background-repeat:no-repeat;
+      height:3.8vw;
+    }
+
+    .support:hover {
+      background-color:transparent;
+      background-position:-2.55vw -16.5vw;
+      color:#FF0317;
+    }
+
+    .support.is-active {
+      background-color:transparent;
+      background-position:-2.55vw -16.5vw;
+      color:#FF0317;
+    }
+
+    #title1 {
+      font-size:1vw;
+      line-height:6vw;
+    }
+
+    .button {
+      margin-top:2.4vw;
+    }
+
+    #account {
+      padding:0;
+      width:7.2vw;
+      height:2vw;
+      border-radius:5px;
+      font-size:1vw;
+    }
+
+    #account.active
+    {
+      background-color:#FF0317;
+      color:#FFF;
+      border-color:#FF0317;
+    }
+
+    #account:hover {
+      background-color:#FF0317;
+      color:#FFF;
+      border-color:#FF0317;
+    }
+
+    #logout {
+      margin:1vw 0 0 0;
+      padding:0;
+      width:7.2vw;
+      height:2vw;
+      border-radius:5px;
+      font-size:1vw;
+    }
+
+    #logout:hover {
+      color:#FFF;
+      background-color:#FF0317;
+    }
+  }

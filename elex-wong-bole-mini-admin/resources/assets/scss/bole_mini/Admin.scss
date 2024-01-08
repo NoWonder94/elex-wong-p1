@@ -1,0 +1,181 @@
+.admin
+{
+	@import '/Base/SearchBar.scss';
+
+	.content
+	{
+		padding:20px;
+		overflow-y:scroll;
+
+		//temp
+		height:614px;
+
+		.table-template
+		{
+			padding-bottom:30px;
+
+			table
+			{
+				th, td
+				{
+					padding:5px;
+					border:1px solid black;
+				}
+
+				th
+				{
+					background-color:#263238;
+					color:#FFF;
+				}
+
+				td
+				{
+					background-color:#FFF;
+				}
+
+				th:first-child, td:first-child
+				{
+					text-align:center;
+				}
+
+				th:nth-child(2), td:nth-child(2)
+				{
+					text-align:center;
+				}
+
+				th:nth-child(3), td:nth-child(3)
+				{
+					width:140px;
+					text-align:center;
+				}
+
+				th:nth-child(4), td:nth-child(4)
+				{
+					width:140px;
+					text-align:center;
+				}
+
+				th:nth-child(5), td:nth-child(5)
+				{
+					width:140px;
+					text-align:center;
+				}
+
+				th:nth-child(6), td:nth-child(6)
+				{
+					width:60px;
+					text-align:center;
+				}
+
+				th:nth-child(7), td:nth-child(7)
+				{
+					width:60px;
+					text-align:center;
+				}
+
+				th:last-child, td:last-child
+				{
+					width:130px;
+					text-align:center;
+				}
+
+				img
+				{
+					width:130px;
+					height:60px;
+					vertical-align:middle;
+					cursor:pointer;
+				}
+
+				.status
+				{
+					position:relative;
+					top:-2px;
+					font-weight:bold;
+
+					.status-active
+					{
+						color:green;
+					}
+
+					.status-inactive
+					{
+						color:red;
+					}
+				}
+
+				button
+				{
+					padding-top:5px;
+					padding-bottom:5px;
+					width:60px;
+					color:black;
+					cursor:pointer;
+					border:1px solid black;
+				}
+
+				.detail
+				{
+					background-color:rgb(0,176,80);
+				}
+
+				.edit
+				{
+					background-color:#66B1FF;
+				}
+
+				.delete
+				{
+					background-color:#ED4545;
+				}
+			}
+
+			.table
+			{
+				width:100%;
+			}
+		}
+
+		.pagination-template
+		{
+			position:relative;	
+
+			.pagination
+			{
+				position:fixed;
+				bottom:10px;
+				right:25px;
+
+				.page-item
+				{
+					margin-left:2px;
+					margin-right:2px;
+					display:inline-block;
+					background-color:#263238;
+					width:30px;
+					height:30px;
+					font-size:16px;
+					text-align:center;
+					border:1px solid black;
+
+					.page-link
+					{
+						position:relative;
+						top:6px;
+						color:#FFF;
+					}
+				}
+
+				.active
+				{
+					background-color:#62A8EA;
+				}
+
+				.disabled
+				{
+					cursor:no-drop;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,110 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth){
+    .admin-page{
+        .left-panel{
+            position: fixed;
+            background-color: $leftPanelBgColor;
+            color: #FFF;
+            width: 220px;
+            height: 100%;
+            z-index: 10;
+
+            .left-panel-content{
+                padding: 20px;
+
+                .logo{
+                    width: 100%;
+                    padding-bottom: 20px;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .el-collapse{
+                    border-top: none;
+                    border-bottom: none;
+                    padding-bottom: 10px;
+
+                    .el-collapse-item__header{
+                        background-color: transparent;
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                        color: rgba(255, 255, 255, 0.8);
+                        font-size: 14px;
+                    }
+
+                    .el-collapse-item__wrap{
+                        background-color: transparent;
+                        border-bottom: none;
+
+                        .el-collapse-item__content{
+                            color: #FFF;
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+
+                .nav-item{
+                    padding: 7px 10px;
+
+                    a{
+                        color: #FFF;
+                        text-decoration: none;
+                        font-size: 14px;
+
+                        i{
+                            padding-right: 10px;
+                            width: 25px;
+                            color: #8F91AA;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-panel{
+            position: relative;
+
+            .right-panel-header{
+                position: fixed;
+                width: 100%;
+                height: 70px;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 0px 0px 6px grey;
+                background-color: $bgColor;
+                z-index: 9;
+
+                .right-panel-header-left{
+                    padding-left: 220px;
+
+                    i{
+                        padding-right: 10px;
+                    }
+                }
+
+                .right-panel-header-right{
+                    i{
+                        font-size: 28px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .right-panel-body{
+                height: 100%;
+                padding-left: 220px;
+                padding-top: 70px;
+            }
+        }
+    }
+
+    .el-dropdown-menu{
+		top: 50px !important;
+	    left: auto !important;
+	    right: 20px !important;
+	}
+}

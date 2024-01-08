@@ -1,0 +1,24 @@
+<div class="data-info-box">
+  <p class="heading" *ngIf="!editing">{{ heading }} <i class="bi bi-pencil-square" *ngIf="!disable"
+      (click)="toggleEdit()"></i></p>
+  <p class="text" *ngIf="!editing">
+    <sa-spinner-round-outlined *ngIf="saving" [size]="18" [thickness]="100" [speed]="100" color="#CCC">
+    </sa-spinner-round-outlined>
+  </p>
+  <p class="text" *ngIf="!editing" [innerHTML]="getDisplayValue()"></p>
+
+  <!-- Single line -->
+  <input #input *ngIf="editing && lines === 1 && mode=='default'" type="text" name="forwarding" class="form-control"
+    [(ngModel)]="editedValue" (blur)="onBlur()" style="margin-bottom: 7px" />
+
+  <!-- Multi lines -->
+  <textarea #input *ngIf="editing && lines > 1 && mode=='default'" type="text" name="forwarding" class="form-control"
+    [rows]="lines" [(ngModel)]="editedValue" (blur)="onBlur()" style="margin-bottom: 7px"></textarea>
+
+  <!-- Selector -->
+  <select #input *ngIf="editing && mode=='select' && options!=[]" class="form-select"
+    aria-label="Default select example" [(ngModel)]="editedValue" (blur)="onBlur()">
+    <option value="0" selected disabled>Select {{selectKey}}</option>
+    <option *ngFor="let option of options" [ngValue]="option.id" [disabled]="option.disabled">{{option.name}}</option>
+  </select>
+</div>

@@ -1,0 +1,191 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .updownline {
+
+    .upline,
+    .myname-card,
+    .downline {
+      position: relative;
+      padding: 30px;
+      width: 900px;
+      background-color: $secondaryBgColor;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+
+    .upline,
+    .myname-card {
+      margin-bottom: 10px;
+    }
+
+    .upline {
+      .upline-back {
+        font-size: 18px;
+        font-size: bold;
+
+        span {
+          cursor: pointer;
+        }
+      }
+
+      .upline-title {
+        padding: 20px 0;
+      }
+
+      .upline-content {
+        position: relative;
+        height: 100px;
+
+        .upline-content-exist {
+          .upline-content-exist-item {
+            font-size: 16px;
+            padding-bottom: 10px;
+          }
+        }
+
+        .upline-content-none {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    .myname-card {
+      position: relative;
+
+      .myname-card-content {
+        display: flex;
+        padding: 15px 0;
+
+        .myname-card-image-container {
+          padding-right: 15px;
+
+          img {
+            width: 90px;
+            height: 90px;
+          }
+
+          .userAvatarExist {
+            width: 90px;
+            height: 90px;
+            border-radius: 15px;
+          }
+        }
+
+        .myname-card-content-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-auto-flow: column dense;
+          row-gap: 5px;
+
+          .myname-card-grid-item {
+            width: 200px;
+            font-size: 14px;
+          }
+
+          .padding-top {
+            padding-top: 3px;
+          }
+        }
+      }
+
+      .myname-card-edit-button {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        padding: 5px 15px;
+        background-color: $lighterGreen;
+        color: $secondaryGreen;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 27px;
+        cursor: pointer;
+      }
+
+      .myname-card-copy-button {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        color: $lightGreen;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+
+    .downline {
+      display: flex;
+      gap: 100px;
+
+      .downline-content {
+        width: 400px;
+
+        .downline-title {
+          padding-bottom: 15px;
+        }
+
+        .downline-item-container {
+          padding: 10px 20px;
+          background-color: $blueGreen;
+          border-radius: 4px;
+
+          hr {
+            border: none;
+            border-bottom: 1px solid $lightFontColor;
+            opacity: 0.5;
+          }
+
+          .downline-item {
+            display: flex;
+            align-items: center;
+
+            .downline-item-title {
+              padding: 15px 0;
+              margin-right: auto;
+            }
+
+            .el-input__inner {
+              width: 150px;
+              height: 50px;
+              background-color: transparent;
+              border: none;
+              color: $fontColor;
+              text-align: right;
+              cursor: pointer;
+
+              &:focus {
+                border: 1px solid $primaryGreen;
+              }
+
+              &:hover {
+                border: 1px solid $primaryGreen;
+              }
+            }
+
+          }
+        }
+
+        .downline-button-group {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 20px 0;
+
+          .downline-button {
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+        }
+      }
+
+    }
+  }
+
+}

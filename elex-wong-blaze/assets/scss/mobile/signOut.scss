@@ -1,0 +1,268 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 650px) {
+  .signout {
+    .signout-modal-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      background-color: rgba(12, 21, 29, 0.78);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      animation: zoomFadeIn 0.3s ease-in-out;
+
+      .signout-modal {
+        text-align: center;
+        background-color: $background;
+
+        max-height: 95vh;
+
+        max-width: 90vw;
+        color: $white;
+
+        display: flex;
+        flex-direction: column;
+
+        .modal-image-container {
+          position: relative;
+          display: flex;
+          flex: auto;
+
+          justify-content: center;
+          align-items: center;
+
+          .modal-image {
+            width: 90%;
+          }
+
+          .modal-text {
+            position: absolute;
+            bottom: 10vw;
+            left: 10vw;
+            right: 10vw;
+            display: flex;
+            text-align: left;
+            font-size: 4vw;
+            font-weight: 800;
+            color: $white;
+
+          }
+        }
+
+        .signout-modal-container {
+          flex: 1;
+
+          .header {
+            position: relative;
+
+            i {
+              padding: 3vw;
+              font-size: 4vw;
+              color: $lightGrey;
+              font-weight: 900;
+              position: absolute;
+              right: 0vw;
+              top: 0vw;
+            }
+          }
+
+          .body {
+            padding: 5vw;
+            text-align: left;
+
+            .title {
+              font-size: 4vw;
+              font-weight: 600;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.6;
+              color: $white;
+              margin-top: 4vw;
+              margin-bottom: 5vw;
+            }
+
+            .desc {
+              font-size: 2.5vw;
+              font-weight: 400;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.6;
+              margin-bottom: 5vw;
+              color: $lightGrey;
+            }
+
+            .signoutBtn {
+              background-color: $red;
+              color: $white;
+              font-size: 2vw;
+              border-radius: 1vw;
+              font-weight: 600;
+              padding: 3vw;
+              margin-top: 2vw;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 651px)and (max-width: 1200px) {
+  .signout {
+    .signout-modal-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      background-color: rgba(12, 21, 29, 0.78);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      animation: zoomFadeIn 0.3s ease-in-out;
+
+      .signout-modal {
+        /* todo:animation */
+        position: relative;
+        width: fit-content;
+        min-width: 300px;
+        min-height: 247px;
+        // height: 658px;
+        text-align: left;
+        border-radius: 4px;
+        outline: none;
+        background-color: $background;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        .modal-image-container {
+          position: relative;
+          width: 341px;
+          display: flex;
+          flex: auto;
+
+          .modal-image {
+            height: 100%;
+            width: 100%;
+          }
+
+          .modal-text {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            right: 35px;
+            display: flex;
+            text-align: left;
+            font-size: 24px;
+            font-weight: 800;
+            color: $white;
+
+          }
+        }
+
+        .signout-modal-container {
+          position: relative;
+          width: 485px;
+          height: 327px;
+          padding: 0px 32px;
+          // padding: 24px 32px;
+          overflow: hidden;
+          overflow-y: auto;
+
+
+          .header {
+            position: relative;
+            padding-bottom: 0;
+
+            i {
+              position: absolute;
+              right: -20px;
+              top: 0px;
+              padding: 15px;
+              cursor: pointer;
+              font-size: 14px;
+              color: $lightGrey;
+              font-weight: 900;
+              overflow: hidden;
+              z-index: 1;
+            }
+          }
+
+          .body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+
+            .title {
+              margin-top: 20px;
+              margin-bottom: 20px;
+              font-size: 32px;
+              font-weight: 800;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.6;
+              letter-spacing: -.56px;
+              text-align: left;
+              color: $white;
+            }
+
+            .desc {
+              margin-bottom: 24px;
+              font-size: 14px;
+              font-weight: 400;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.6;
+              letter-spacing: -.56px;
+              color: $lightGrey;
+            }
+
+            .signoutBtn {
+              width: 100%;
+              padding: 15px;
+              margin: 20px 0px;
+              margin-bottom: 10px;
+              color: $white;
+              font-size: 14px;
+              font-weight: 600;
+              letter-spacing: -.56px;
+              border-radius: 4px;
+              cursor: pointer;
+              background-color: $red;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// add animation of zoom fade in
+@keyframes zoomFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

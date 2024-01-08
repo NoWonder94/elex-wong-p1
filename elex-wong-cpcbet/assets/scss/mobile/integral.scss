@@ -1,0 +1,228 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .integral {
+
+    .integral-balance{
+      background-color: $secondaryBgColor;
+      padding: 4vw;
+      padding-bottom: 1vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .integral-button{
+        padding: 8px 15px;
+      }
+    }
+    .integral-list-details {
+      padding: 4vw;
+      min-height: 85vh;
+      background-color: $secondaryBgColor;
+
+      .integral-subtitle{
+        font-weight: bold;
+      }
+
+      .integral-filter {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+
+        .integral-filter-date {
+          display: flex;
+          align-items: center;
+
+          .filter-date-title {
+            margin-right: auto;
+          }
+
+          .el-date-editor.el-input {
+
+            .el-input__prefix {
+              display: none;
+            }
+
+            .el-input__inner {
+              padding: 0;
+              text-align: center;
+            }
+          }
+        }
+
+        .integral-filter-platform {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+      }
+
+      hr {
+        margin: 3vw 0;
+        border: none;
+        border-bottom: 0.5vw solid $lightFontColor;
+        opacity: 0.5;
+      }
+
+      .integral-datetime-button-group {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        align-self: center;
+
+        .integral-datetime-button {
+          margin-right: 2vw;
+          margin-bottom: 2vw;
+          padding: 2vw 3vw;
+          background-color: #90FFAE;
+          color: $blueGreen;
+          font-size: 3vw;
+          font-weight: bold;
+          border-radius: 30px;
+          display: flex;
+          align-self: center;
+          cursor: pointer;
+        }
+      }
+
+      .integral-details-table {
+
+        .el-table {
+          background-color: inherit;
+          color: $fontColor;
+          border-bottom: none;
+
+          .el-table__body-wrapper {
+            min-height: 80vw;
+          }
+
+          thead {
+            color: $fontColor;
+          }
+
+          tr,
+          tr:hover>td,
+          th.el-table__cell {
+            background-color: inherit;
+          }
+
+          td {
+            border-bottom: none;
+          }
+
+          &::before {
+            height: 0px;
+          }
+        }
+      }
+
+      .integral-details-paginate {
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 4vw;
+
+        .el-pager {
+          .active {
+            background-color: $primaryGreen  !important;
+          }
+
+          .number.active:hover {
+            color: $fontColor  !important;
+          }
+
+          .number:hover {
+            color: $primaryGreen  !important;
+          }
+        }
+      }
+
+      .el-input {
+        width: 35vw;
+
+        .el-input__inner {
+          background-color: inherit;
+          border: none;
+          color: $fontColor;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:focus {
+            border: 0.5vw solid $primaryGreen;
+          }
+
+          &::placeholder {
+            color: $lightFontColor  !important;
+          }
+        }
+      }
+
+      .integral-nodata {
+        padding: 5vw;
+        color: $fontColor;
+        font-weight: bold;
+        text-align: center;
+
+        img {
+          padding-bottom: 2vw;
+        }
+
+        div {
+          line-height: 3vw;
+        }
+      }
+    }
+    .integral-exchange-popup{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $secondaryBgColorOpacity90;
+      z-index: 999;
+
+      .integral-exchange-popup-wrap{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+        padding: 6vw 5vw;
+        background-color: $fontColor;
+        color: $bgColor;
+        border-radius: $borderRadius5;
+        z-index: 999;
+
+        .integral-popup-title{
+          font-size: 3.5vw;
+          font-weight: bold;
+          padding-bottom: 5vw;
+        }
+
+        .el-form{
+          .el-form-item{
+            .el-form-item__content {
+
+              .el-input__inner {
+                margin-top: 1vw;
+                padding: 0;
+                background-color: inherit;
+                border-radius: 0;
+                text-align: center;
+              }
+
+              .el-button{
+                width: 48%;
+                &:nth-child(1){
+                  color: $fontColor;
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

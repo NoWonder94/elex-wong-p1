@@ -1,0 +1,56 @@
+@import '../base.scss';
+
+@media only screen and (max-width:1200px){
+  .mobile-nav-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 0.05vw solid #272b41;
+    height: 63px;
+    background-color: #1d2730;
+    color: $lighterGrey;
+    z-index: 10;
+
+    .mobile-nav-innner-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      .mobile-nav-item{
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        .mobile-icon{
+          text-align: center;
+          font-size: 18px;
+        }
+
+        .mobile-title{
+          text-align: center;
+          font-size: 11px;
+          font-weight: 600;
+          color: #8C9099;
+        }
+
+        .mobile-icon-unranked {
+          font-size: 25px;
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (min-width:1201px){
+  .mobile-nav-container {
+    display: none;
+  }
+}

@@ -1,0 +1,159 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth){
+	.withdraw-detail{
+    position: relative;
+    background-color: $secondaryBgColor;
+    min-height: 92vh;
+    padding-bottom: 8vw;
+
+    .title-section{
+      .back-title{
+        background-color: $bgColor;
+      }
+
+      .type{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $blueGreen;
+        margin: 4vw 5vw 0;
+        padding: 1vw 3vw;
+        border-radius: 4px;
+
+        .type-title{
+          font-size: 3.5vw;
+          font-weight: bold;
+        }
+
+        .el-select{
+          width: 50vw;
+
+          .el-input__inner {
+            color: $fontColor;
+            background-color: transparent;
+            border: none;
+            font-size: 3.5vw;
+          }
+        }
+      }
+    }
+
+    .card-list{
+      width: 90vw;
+      margin: 0 auto;
+      padding-top: 5vw;
+
+      .swiper-slide{
+        width: 70vw !important;
+      }
+
+      .card-box{
+        position: relative;
+
+        img{
+          width: 100%;
+        }
+
+        .card-content{
+          position: absolute;
+          top: 0;
+          padding: 3vw;
+          width: 64vw;
+          height: 45vw;
+          display: flex;
+          flex-direction: column;
+          font-size: 4vw;
+          color: rgba(255, 255, 255, 0.75);
+
+          .card-content-detail{
+            margin-top: 8vw;
+            text-align: center;
+            line-height: 2;
+            color: $fontColor;
+
+            .card-content-detail-cardnum{
+              font-size: 3vw;
+            }
+          }
+
+          .delete-button{
+            position: absolute;
+            right: 3vw;
+            bottom: 3vw;
+            width: 6vw;
+            height: 6vw;
+          }
+        }
+      }
+
+      .swiper-button-prev, .swiper-button-next{
+        color: $fontColor;
+        top: 98vw;
+      }
+
+      .swiper-button-prev:after, .swiper-button-next:after{
+        font-size: 4vw;
+      }
+    }
+
+    .detail-section{
+      width: 90vw;
+      margin: 0 auto;
+      padding-top: 8vw;
+
+      .detail-input{
+        .detail-box{
+          padding-bottom: 6vw;
+
+          .detail-section-title{
+            font-size: 4vw;
+            font-weight: bold;
+          }
+
+          .el-select{
+            width: 100%;
+          }
+
+          .el-input__inner{
+            color: $fontColor;
+            font-size: 3.5vw;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $lightFontColor;
+            border-radius: 0;
+            width: 100%;
+            padding: 0;
+            height: 12vw;
+
+            &::placeholder{
+              color: $lightFontColor;
+            }
+          }
+        }
+      }
+
+      .detail-submit{
+        padding-top: 6vw;
+
+        .reminder{
+          .reminder-subtitle{
+            padding-top: 2vw;
+            font-size: 3.5vw;
+          }
+        }
+
+        .submit{
+          padding-top: 6vw;
+
+          .button{
+            font-size: 4vw;
+            text-align: center;
+            padding: 3vw;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+	}
+}

@@ -1,0 +1,267 @@
+{
+	"gameRelated":[
+    {
+      "id":"2",
+      "name":"Bole Sichuan Mahjong official launch",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/bolesichuan/1.png",
+      "info":"The first H5 board game 'Panda Sichuan Mahjong' official launch, including river of blood and bloody fight and other mainstream playing method, more exciting and more enjoyable!",
+      "popular":true,
+      "date":"17/9/2018",
+      "month":"9/2019",
+      "dateFormat":"9/17/2018",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/17.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/bolesichuan/1.png"
+    },
+    {
+        "id":"10",
+        "name":"Bole Niu-Niu officially launched",
+        "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/boleniuniu/small.jpg",
+        "info":"In this highly anticipated, the popular board game of BoleGaming™, “Bole Niu-Niu” was officially launched! ",
+        "popular":false,
+        "date":"5/1/2019",
+        "month":"1/2019",
+        "dateFormat":"1/5/2019",
+        "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/5.png",
+        "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/boleniuniu/small.jpg"
+    },
+    {
+        "id":"11",
+        "name":"Bole Sangong was officially launched",
+        "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/sangong/small.jpg",
+        "info":"The board game of BoleGaming™ Bole Sangong was officially released and launch online! ",
+        "popular":false,
+        "date":"10/1/2019",
+        "month":"1/2019",
+        "dateFormat":"1/10/2019",
+        "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/10.png",
+        "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/sangong/small.jpg"
+    },
+    {
+        "id":"16",
+        "name":"Bole Golden Flower Grand Launched",
+        "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/zhajinhua/607.jpg",
+        "popular":true,
+        "info":"Bole Golden Flower is a multiplayer poker game that is easy to use and tests the player's courage. Come and experience the charm of Bole fried golden flowers together!",
+        "date":"21/4/2019",
+        "month":"4/2019",
+        "dateFormat":"4/21/2019",
+        "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/21.png",
+        "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/zhajinhua/607.jpg"
+    }
+  ],
+
+	"gameNewsRelated":[
+		{
+            "id":"6",
+            "name":"BoleGaming™ published signs on Manila International Airport",
+            "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/airport/small.jpg",
+            "info":"BoleGaming™ relying on strong strength and good reputation, establish a good brand image in the industry. ",
+            "popular":false,
+            "date":"29/10/2018",
+            "month":"10/2018",
+            "dateFormat":"10/29/2018",
+            "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/29.png",
+            "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/airport/small.jpg"
+		},
+		{
+            "id":"3",
+            "name":"BoleGaming™ reached a cooperation agreement with Ezugi",
+            "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/tianjiu/news1.png",
+            "info":"Ezugi provides online and offline terminal and also online gaming solutions.",
+            "popular":false,
+            "date":"24/9/2018",
+            "month":"9/2018",
+            "dateFormat":"9/24/2018",
+            "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/24.png",
+            "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/tianjiu/news1.png"
+    },
+		{
+            "id":"5",
+            "name":"BoleGaming™ join hands with APLUS and create a win-win situation",
+            "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/APLUS/1a.png",
+            "info":"BoleGaming™ announced a partnership with APLUS. APLUS is a company that integrating web design, system development and technical support services.",
+            "popular":false,
+            "date":"15/10/2018",
+            "month":"10/2018",
+            "dateFormat":"10/15/2018",
+            "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/15.png",
+            "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/APLUS/1a.png"
+    },
+    {
+            "id":"8",
+            "name":"BoleGaming™ is in New York City Time Square now, Bolegaming™ announced they latest mahjong game on Nasdaq tower",
+            "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/bolegaming/cotent_01.jpg",
+            "info":"New York City Time Square, located in Manhattan, is a place that gather all the peoples from different countries.",
+            "popular":true,
+            "date":"21/11/2018",
+            "month":"11/2018",
+            "dateFormat":"11/21/2018",
+            "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/21.png",
+            "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/bolegaming/cotent_01.jpg"
+    },
+    {
+            "id":"9",
+            "name":"BoleGaming™ have been authenticated by the iTech Labs international authoritative institutes",
+            "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/Itechlabs/Image1.jpg",
+            "popular":true,
+            "info":"Random number generation (RNG) of BoleGaming™ has been certified by iTech Labs it's an international authority to ensure the randomness of licensing within the game, and comply with industry specifications and technical specifications.",
+            "date":"2/1/2019",
+            "month":"1/2019",
+            "dateFormat":"1/2/2019",
+            "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/2.png",
+            "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/Itechlabs/Image1.jpg"
+    },
+    {
+          "id":"14",
+          "name":"BoleGaming ™ carts appeared at Manila Airport",
+          "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/blcarts/cover.jpg",
+          "popular":true,
+          "info":"Hundreds of airport carts from BoleGaming appeared at Manila International Airport, which caused many tourists to watch and discussion.  ",
+          "date":"15/3/2019",
+          "month":"3/2019",
+          "dateFormat":"3/15/2019",
+          "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/15.png",
+          "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/blcarts/cover.jpg"
+    },
+    {
+          "id":"15",
+          "name":"BoleGaming™ announces partnership with Rubic Play™",
+          "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/rubic/rubicplay_607.png",
+          "popular":true,
+          "info":"BoleGaming™ is pleased to announce a formal cooperation agreement with Rubic Play™, hoping to provide better service to customers and achieve win-win results.",
+          "date":"28/3/2019",
+          "month":"3/2019",
+          "dateFormat":"3/28/2019",
+          "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/28.png",
+          "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/rubic/rubicplay_607.png"
+    },
+    {
+            "id":"17",
+            "name":"BoleGaming™ cooperates with ITGO™ to create a win-win situation in the future",
+            "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/itgo/607.png",
+            "popular":true,
+            "info":"BoleGaming™ announced a partnership with ITGO™ to provide better product and service to customers.",
+            "date":"18/4/2019",
+            "month":"4/2019",
+            "dateFormat":"4/18/2019",
+            "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/18.png",
+            "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/itgo/607.png"
+    }
+	],
+
+	"activitiesRelated":[
+		{
+            "id":"7",
+            "name":"The end of the Stars’ Concert, a very wonderful night with BoleGaming™",
+            "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/concert/small.jpg",
+            "info":"The concert [The Youth We Spent Together: Nice to Meet You] was main sponsored by BoleGaming™ has ended perfectly. ",
+            "popular":false,
+            "date":"1/11/2018",
+            "month":"11/2018",
+            "dateFormat":"11/1/2018",
+            "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/1.png",
+            "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/concert/small.jpg"
+    },
+    {
+            "id":"1",
+            "name":"Sponsorship of Fish Leong’s Manila music concert",
+            "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/liangjinru/big_small_same.jpg",
+            "info":"Well known Chinese artist Fish Leong will host a personal concert in Manila, the capital of Philippines, in October 2018, we will also show our games on the venue.",
+            "popular":false,
+            "date":"10/9/2018",
+            "month":"9/2018",
+            "dateFormat":"9/10/2018",
+            "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/10.png",
+            "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/liangjinru/big_small_same.jpg"
+    },
+    {
+            "id":"4",
+            "name":"BoleGaming™ invited to the ICE exhibition based in London",
+            "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/ICE/Image1.png",
+            "info":"Ice Totally Gaming is the biggest annual event in the industry, and there will be more than 30,000 people from over 150 countries to attend the event.",
+            "popular":true,
+            "date":"8/10/2018",
+            "month":"10/2018",
+            "dateFormat":"10/8/2018",
+            "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/8.png",
+            "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/ICE/Image1.png"
+    },
+    {
+            "id":"12",
+            "name":"The ICE London exhibition has ended successfully, let’s witness the strength of BoleGaming",
+            "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/Bole/main.jpg",
+            "info":"ICE Totally Gaming is the world's largest entertainment video game trade show, it has successfully ended in London in 2019. ",
+            "popular":false,
+            "date":"10/2/2019",
+            "month":"2/2019",
+            "dateFormat":"2/10/2019",
+            "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/10.png",
+            "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/Bole/main.jpg"
+    },
+    {
+            "id":"13",
+            "name":"BoleGaming meets you at Macau G2E ASIA",
+            "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/ge2/ge2.png",
+            "info":"BoleGaming will participate in the G2E ASIA exhibition at the Venetian Macao Hotel from May 21st to 23rd, 2019.",
+            "popular":false,
+            "date":"25/2/2019",
+            "month":"2/2019",
+            "dateFormat":"2/25/2019",
+            "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/25.png",
+            "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/ge2/ge2.png"
+    },
+    {
+      "id":"18",
+      "name":"BoleGaming is Well Received in G2E Asia 2019",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/g2e/g2e_cover.jpg",
+      "popular":true,
+      "info":"BoleGaming brought mahjong and poker games to everyone at G2E Asia 2019, which was well received by industry and visitors.",
+      "date":"28/5/2019",
+      "month":"5/2019",
+      "dateFormat":"5/28/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/28.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/g2e/g2e_cover.jpg"
+    },
+    {
+      "id":"19",
+      "name":"Asia's Sexiest Magician Fay Will Perform for BoleGaming at PAGE",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/fayprince/cover.png",
+      "popular":true,
+      "info":"BoleGaming invited magician Fay who is known as the 'Asia's sexiest magician girl' to perform magic show at the booth on 7/12-13.",
+      "date":"14/6/2019",
+      "month":"6/2019",
+      "dateFormat":"6/14/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/14.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/fayprince/cover.png"
+    },
+    {
+      "id":"20",
+      "name":"The Wonderful Review of BoleGaming in PAGE 2019 ",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/page2019/cover.jpg",
+      "popular":true,
+      "info":"In PAGE 2019, BoleGaming revealed the latest two local Mahjong games, such as 'Hunan Mahjong' and 'Guangdong Mahjong', hoping to give players more choices and be closer to their local gameplay.",
+      "date":"23/7/2019",
+      "month":"7/2019",
+      "dateFormat":"7/23/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/23.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/page2019/cover.jpg"
+    }
+  ],
+
+	"popular":[
+        {
+            "id":"4",
+            "name":"BoleGaming™ invited to the ICE exhibition based in London"
+        },
+
+        {
+            "id":"2",
+            "name":"Bole Sichuan Mahjong official launch"
+        },
+
+        {
+            "id":"8",
+            "name":"BoleGaming™ is in New York City Time Square now, Bolegaming™ announced they latest mahjong game on Nasdaq tower:"
+        }
+  ]
+}

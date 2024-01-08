@@ -1,0 +1,334 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth)
+{
+	.index
+	{
+    position: relative;
+    margin: 0 auto;
+    background-color: $bgColor;
+
+		.first-index {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      /* for background effect */
+      overflow-y: hidden;
+      -webkit-overflow-Y: hidden;
+      -moz-overflow-Y: hidden;
+      -o-overflow-Y: hidden;
+
+      .first-index-logo {
+        position: relative;
+        width: 60vw;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        z-index: 10;
+
+        img {
+          width: 100%
+        }
+      }
+
+      /* background effect */
+      .light {
+        position: absolute;
+        width: 0px;
+        background-color: white;
+        box-shadow: #e9f1f1 0px 0px 20px 2px;
+        opacity: 0;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+      }
+
+      /* effect animation */
+      .x1 {
+        -webkit-animation: floatUp 4s infinite linear;
+        -moz-animation: floatUp 4s infinite linear;
+        -o-animation: floatUp 4s infinite linear;
+        animation: floatUp 4s infinite linear;
+        -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -o-transform: scale(1.0);
+        transform: scale(1.0);
+      }
+
+      .x2 {
+        -webkit-animation: floatUp 7s infinite linear;
+        -moz-animation: floatUp 7s infinite linear;
+        -o-animation: floatUp 7s infinite linear;
+        animation: floatUp 7s infinite linear;
+        -webkit-transform: scale(1.6);
+        -moz-transform: scale(1.6);
+        -o-transform: scale(1.6);
+        transform: scale(1.6);
+        left: 15%;
+      }
+
+      .x3 {
+        -webkit-animation: floatUp 2.5s infinite linear;
+        -moz-animation: floatUp 2.5s infinite linear;
+        -o-animation: floatUp 2.5s infinite linear;
+        animation: floatUp 2.5s infinite linear;
+        -webkit-transform: scale(.5);
+        -moz-transform: scale(.5);
+        -o-transform: scale(.5);
+        transform: scale(.5);
+        left: -15%;
+      }
+
+      .x4 {
+        -webkit-animation: floatUp 4.5s infinite linear;
+        -moz-animation: floatUp 4.5s infinite linear;
+        -o-animation: floatUp 4.5s infinite linear;
+        animation: floatUp 4.5s infinite linear;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+        left: -34%;
+      }
+
+      .x5 {
+        -webkit-animation: floatUp 8s infinite linear;
+        -moz-animation: floatUp 8s infinite linear;
+        -o-animation: floatUp 8s infinite linear;
+        animation: floatUp 8s infinite linear;
+        -webkit-transform: scale(2.2);
+        -moz-transform: scale(2.2);
+        -o-transform: scale(2.2);
+        transform: scale(2.2);
+        left: -57%;
+      }
+
+      .x6 {
+        -webkit-animation: floatUp 3s infinite linear;
+        -moz-animation: floatUp 3s infinite linear;
+        -o-animation: floatUp 3s infinite linear;
+        animation: floatUp 3s infinite linear;
+        -webkit-transform: scale(.8);
+        -moz-transform: scale(.8);
+        -o-transform: scale(.8);
+        transform: scale(.8);
+        left: -81%;
+      }
+
+      .x7 {
+        -webkit-animation: floatUp 5.3s infinite linear;
+        -moz-animation: floatUp 5.3s infinite linear;
+        -o-animation: floatUp 5.3s infinite linear;
+        animation: floatUp 5.3s infinite linear;
+        -webkit-transform: scale(3.2);
+        -moz-transform: scale(3.2);
+        -o-transform: scale(3.2);
+        transform: scale(3.2);
+        left: 37%;
+      }
+
+      .x8 {
+        -webkit-animation: floatUp 4.7s infinite linear;
+        -moz-animation: floatUp 4.7s infinite linear;
+        -o-animation: floatUp 4.7s infinite linear;
+        animation: floatUp 4.7s infinite linear;
+        -webkit-transform: scale(1.7);
+        -moz-transform: scale(1.7);
+        -o-transform: scale(1.7);
+        transform: scale(1.7);
+        left: 62%;
+      }
+
+      .x9 {
+        -webkit-animation: floatUp 4.1s infinite linear;
+        -moz-animation: floatUp 4.1s infinite linear;
+        -o-animation: floatUp 4.1s infinite linear;
+        animation: floatUp 4.1s infinite linear;
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+        left: 85%;
+      }
+      /* background effect */
+    }
+
+    .first-index-cursor {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 3%;
+        z-index: 10;
+        text-align: center;
+
+        .first-index-cursor-label {
+          color: $fontColor;
+          font-weight: bold;
+          padding-bottom: 20px;
+        }
+
+        .mouseAnimation{
+          cursor:pointer;
+          height:1.625rem;
+          display: block;
+          margin: 0 auto;
+          z-index: 2;
+        }
+        .arrowAnimation{
+          cursor:pointer;
+          transform: translatey(0px);
+          animation: float 1s ease-in-out infinite;
+          display: block;
+          margin: 0 auto;
+          margin-top: 28px;
+          height:1.125rem;
+        }
+      }
+
+    .about-us {
+      .about-us-content-block {
+        padding: 15vw 10vw;
+        color: $fontaltColor;
+
+        .about-us-brandLogo {
+          width: 20vw;
+          img {
+            width: 100%;
+          }
+        }
+
+        .about-us-label {
+          color: $secondaryFontColor;
+          font-size: 5vw;
+          font-weight: 900;
+        }
+
+        .about-us-content {
+          padding-top: 5vw;
+          font-size: 4.3vw;
+          line-height: 2;
+        }
+
+        .about-us-button {
+          width: 40vw;
+          margin-top: 8vw;
+          padding: 3vw 5vw;
+          border-radius: 5vw;
+          text-align: center;
+          font-size: 4vw;
+          font-weight: bold;
+          color: $fontColor;
+          cursor: pointer;
+          background: #8B64E7;  /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #E98BFF, #8B64E7);  /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #E98BFF, #8B64E7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+      }
+
+      .about-us-image-block {
+        width: 100vw;
+        background: $secondarybgColor;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .services {
+      position: relative;
+      width: 100vw;
+      color: $fontColor;
+      background: $secondarybgColor;
+
+      .service-info-grid {
+        padding: 15vw 10vw;
+
+        .service-info-intro{
+          .service-info-intro-label {
+            color: $fontColor;
+            font-size: 5vw;
+            font-weight: 900;
+          }
+
+          .service-info-intro-content {
+            padding-top: 4vw;
+            font-size: 4.3vw;
+            line-height: 2;
+          }
+          .service-info-intro-button {
+            width: 40vw;
+            margin-top: 8vw;
+            margin-bottom: 10vw;
+            padding: 3vw 0vw;
+            border-radius: 5vw;
+            border: 1px solid $fontColor;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+          }
+        }
+
+        .info-content-card {
+          position: relative;
+          padding: 8vw 8vw;
+          margin-bottom: 3vw;
+          background: $primaryAltColor;
+          border-radius: 3vw;
+          text-align: left;
+
+          .info-content-card-icon {
+            width: 10vw;
+            padding-bottom: 3vw;
+
+            img {
+               width: 100%;
+            }
+          }
+
+          .info-content-card-label {
+            font-size: 5vw;
+            font-weight: bold;
+            padding-bottom: 3vw;
+          }
+
+          .info-content-card-content {
+            font-size: 4vw;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+
+    .contact {
+      color: $fontaltColor;
+      .contact-image-block {
+        width: 100vw;
+
+        img {
+          width: 100%;
+        }
+      }
+      .contact-content-block {
+        padding: 15vw 10vw;
+
+        .contact-label {
+          color: $secondaryFontColor;
+          font-size: 5vw;
+          font-weight: 900;
+        }
+        .contact-content {
+          padding-top: 5vw;
+          font-size: 4.3vw;
+          line-height: 2;
+        }
+      }
+    }
+	}
+}

@@ -1,0 +1,115 @@
+@import '../Base.scss';
+
+@media only screen and (max-width: 700px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 901;
+
+    .header-content {
+      position: relative;
+      text-align: center;
+
+      .header-menu-bar {
+        position: absolute;
+        top: 6.7vw;
+        left: 6.7vw;
+
+        .header-menu-bar-icon {
+          margin: 0.8vw 0vw;
+          background-color: #FFFFFF;
+          width: 5.3vw;
+          height: 0.7vw;
+        }
+      }
+
+      .header-logo {
+        position: relative;
+        left: -6vw;
+        display: inline-block;
+        vertical-align: middle;
+
+        img {
+          width: 40vw;
+          cursor: pointer;
+        }
+      }
+
+      .header-actions {
+        //解决el-dropdown rendering问题
+        display: none;
+
+        position: absolute;
+        top: 5.5vw;
+        right: 6vw;
+
+        .header-nav {
+          a {}
+        }
+
+        .header-lang-switcher {
+          padding: 1vw 3vw;
+          border: 0.5vw solid #FFFFFF;
+          border-radius: 5vw;
+
+          .header-lang {
+            position: relative;
+            top: -0.5vw;
+            display: inline-block;
+            vertical-align: middle;
+            font: normal normal bold 3.5vw Helvetica Neue;
+            color: #FFFFFF;
+          }
+
+          .icon-down {
+            padding-left: 2vw;
+            position: relative;
+            top: -0.8vw;
+            display: inline-block;
+            vertical-align: middle;
+
+            img {
+              width: 2.5vw;
+            }
+          }
+        }
+      }
+
+      .header-actions-mobile {
+        padding: 0vw 10vw;
+        display: none;
+        background-color: #000;
+        height: 200vw;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+
+        .header-nav-mobile {
+          padding: 6vw 0vw;
+          border-bottom: 0.1vw solid #707070;
+
+          a {
+            font: normal normal bold 5vw Helvetica Neue;
+            color: $FontPrimaryColor;
+            text-decoration: none;
+          }
+        }
+
+        .header-nav-mobile:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .el-dropdown-menu {
+    position: fixed !important;
+    top: 14vw !important;
+    left: unset !important;
+    right: 3vw !important;
+    width: 26vw !important;
+  }
+
+  .popper__arrow {
+    left: 11vw !important;
+  }
+}

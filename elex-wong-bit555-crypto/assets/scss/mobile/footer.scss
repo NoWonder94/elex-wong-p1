@@ -1,0 +1,23 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .footer {
+    height: 50vw;
+    background-color: $secondaryBgColor;
+    color: $whiteFontColorTransparent;
+    font-size: 2vw;
+
+    .footer-content {
+      padding: 5vw;
+      text-align: center;
+
+      .footer-content-item {
+        padding: 2.5vw;
+
+        b {
+          color: $whiteFontColor;
+        }
+      }
+    }
+  }
+}

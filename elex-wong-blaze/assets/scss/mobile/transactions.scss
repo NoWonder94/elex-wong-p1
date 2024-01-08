@@ -1,0 +1,32 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 1200px) {
+  .transactions {
+    position: relative;
+    color: $white;
+    min-height: 90vh;
+
+    .content-right {
+      font-size: 12px;
+      background-color: $background;
+
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 25px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .content-right {
+    padding: 24px 16px;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .content-right {
+    padding: 24px 60px;
+  }
+}

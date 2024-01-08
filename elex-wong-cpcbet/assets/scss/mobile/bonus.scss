@@ -1,0 +1,241 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .bonus {
+    .bonus-details {
+      padding: 4vw;
+      min-height: 85vh;
+      background-color: $secondaryBgColor;
+
+      .bonus-filter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .bonus-filter-date {
+          display: flex;
+          align-items: center;
+
+          .filter-date-title {
+            margin-right: auto;
+          }
+
+          .el-date-editor.el-input {
+
+            .el-input__prefix {
+              display: none;
+            }
+
+            .el-input__inner {
+              padding: 0;
+              text-align: center;
+            }
+          }
+        }
+
+        .bonus-filter-platform {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .bonus-search{
+          width: 100%;
+          padding: 2vw 2.5vw;
+          background-color: $lighterGreen;
+          color: $secondaryGreen;
+          border-radius: $borderRadius3;
+          cursor: pointer;
+          text-align: center;
+        }
+      }
+
+      hr {
+        margin: 3vw 0;
+        border: none;
+        border-bottom: 0.5vw solid $lightFontColor;
+        opacity: 0.5;
+      }
+
+      .bonus-datetime-button-group {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        align-self: center;
+
+        .bonus-datetime-button {
+          margin-right: 2vw;
+          margin-bottom: 2vw;
+          padding: 2vw 3vw;
+          background-color: $primaryGreen;
+          color: $bgColor;
+          font-size: 3vw;
+          font-weight: bold;
+          border-radius: 30px;
+          display: flex;
+          align-self: center;
+          cursor: pointer;
+        }
+      }
+
+      .bonus-details-table {
+        .bonus-table-title{
+          font-weight: bold;
+        }
+
+        .el-table {
+          background-color: inherit;
+          color: $fontColor;
+          border-bottom: none;
+
+          .el-table__body-wrapper {
+            min-height: 60vw;
+          }
+
+          thead {
+            color: $fontColor;
+          }
+
+          tr,
+          tr:hover>td,
+          th.el-table__cell {
+            background-color: inherit;
+          }
+
+          td {
+            border-bottom: none;
+          }
+
+          &::before {
+            height: 0px;
+          }
+        }
+
+        .bonus-status-success{
+          color: $green;
+        }
+
+        .bonus-status-fail{
+          color: $warning;
+        }
+      }
+
+      .bonus-details-paginate {
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 4vw;
+
+        .el-pager {
+          .active {
+            background-color: $primaryGreen  !important;
+          }
+
+          .number.active:hover {
+            color: $fontColor  !important;
+          }
+
+          .number:hover {
+            color: $primaryGreen  !important;
+          }
+        }
+      }
+
+      .el-input {
+        width: 35vw;
+
+        .el-input__inner {
+          background-color: inherit;
+          border: none;
+          color: $fontColor;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:focus {
+            border: 0.5vw solid $primaryGreen;
+          }
+
+          &::placeholder {
+            color: $lightFontColor  !important;
+          }
+        }
+      }
+
+      .bonus-nodata {
+        padding: 5vw;
+        color: $fontColor;
+        font-weight: bold;
+        text-align: center;
+
+        img {
+          padding-bottom: 2vw;
+        }
+
+        div {
+          line-height: 3vw;
+        }
+      }
+
+      .el-tabs__header {
+        margin-bottom: 5vw;
+      }
+
+      .el-tabs__nav {
+
+        .el-tabs__active-bar {
+          height: 1vw;
+          border-radius: 20px;
+          background-color: $primaryGreen;
+          z-index: 1 !important;
+        }
+
+        .el-tabs__item {
+          color: $whiteOpacity30;
+          font-size: 3.5vw;
+        }
+
+        .el-tabs__item.is-active {
+          color: $primaryGreen;
+        }
+      }
+    }
+
+    .bonus-popup{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $secondaryBgColorOpacity90;
+      z-index: 999;
+
+      .bonus-popup-wrap{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 6vw 5vw;
+        width: 80%;
+        background-color: $fontColor;
+        color: $bgColor;
+        border-radius: 10px;
+
+        .bonus-popup-title{
+          font-weight: bold;
+          padding-bottom: 10px;
+        }
+
+        .bonus-button-group{
+          padding-top: 2vw;
+          position: relative;
+          display: flex;
+          justify-content: center;
+
+          .el-button{
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

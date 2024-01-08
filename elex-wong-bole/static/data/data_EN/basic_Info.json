@@ -1,0 +1,153 @@
+{
+	"vacancy_slogan":"Infinite possibilities, waiting to be explored",
+	"vacancy_Info":"Diversification cultivation model and broad development space, there is always a stage to let you shinning, unlimited possibilities, waiting for you to explore.",
+	"design_categorize":"Design",
+	"product_categorize":"Product",
+	"sales_categorize":"Marketing",
+	"service_categorize":"Service",
+	"technique_categorize":"Management",
+	"position":"Position",
+	"requirePax":"Number of recruitment",
+	"location":"Location",
+	"detail":"Details",
+	"design":{
+    "遊戲UI設計師":{
+			"name":"Game UI designer",
+			"pax":"2",
+			"location":"Singapore",
+			"more_detail":"Details",
+			"detail":{
+				"describe":[
+					"Responsible for game UI design and creative work",
+					"Keep up with the current trend of the game in real time, thus propose new creative strategy on making new games"
+				],
+				"require":[
+					"Degree or above, with more than one year of game design experiences, more than two years of game UI design experiences",
+					"Individuals must have a: solid art foundation, unique and creative thinking and have good sense of innovation. (Must be focus on user experiences)",
+					"Proficient knowledge in Adobe’s platform along with mobile devices screen sizes and design specification. Such as: iPhone, Android, Symbian, Blackberry, Windows mobile phone, etc.",
+					"Must have experiences on using software such as Adobe Photoshop and Adobe Illustrator and etc",
+					"Individuals must have certain interactive knowledge and profound typesetting skills in solving problems of the balancing between client usability and aesthetics."
+				]
+			}
+		},
+		"高級UX設計師":{
+      "name":"Senior UX designer",
+      "pax":"1",
+      "location":"Taipei",
+      "more_detail":"Details",
+      "detail":{
+          "describe":[
+              "Value the importance of user experiences as a user-centric, and strive to improve product usability",
+              "Complete user surveys according to project needs. Thus, understand the business, user, and work flow with the product manager to define issues and product goals.",
+              "Deliver high quality of design solutions, which including but not only limited to Journey Map, wireframes, interactive product prototypes, and high fidelity design draft.",
+              "Understand the front-end implementation logic, able to cooperate well with the front-end to promote the implementation to restore the degree in order to ensure the integrity of the online experiences."
+          ],
+          "require":[
+              "Bachelor degree or above, major in industrial design, computer, visual communication, psychology, and etc.",
+              "More than 5 years of experience in product design, interactive design and vision field.",
+              "Individuals must have own complete design idea for design methodology itself.",
+              "Must have experiences on using software such as Adobe Photoshop and Adobe Illustrator and etc.",
+              "Curious and empathetic, passionate on thinking and solving the problems and understand others.",
+              "Possess good aesthetic taste and learning ability.",
+              "Have at least one or more successful design project."
+          ]
+      }
+    }
+  },
+	"product":{
+    "互联网产品经理":{
+		"name":"Internet product manager",
+		"pax":"1",
+		"location":"Hong Kong ",
+		"more_detail":"Details",
+			"detail":{
+				"describe":[
+					"Collect, research and manage customer needs, carry out customer research activities;",
+					"Complete product requirement analysis as required, and write product demand plan;",
+					"Work closely with R & D team in product R & D process, track and promote product development progress;",
+					"Prepare and update product instructions and related product documents;",
+					"Propose new functions and improve requirements for the products for which are responsible;",
+					"Continuously monitor the operation of the product, and give the summary, analysis and improvement plan."
+				],
+				"require":[
+					"Bachelor degree or above, at least 2 years Internet product requirement, product planning experience, product interaction design skill;",
+					"Keen market awareness, good understanding of business models, customer psychology, etc., creative and innovative.",
+					"Familiar with the Internet or software product overall implementation process, with good logical thinking and copywriting ability.",
+					"Has a better understanding on the user experience of Internet products;",
+					"Excellent communication skills and independent working ability, dedicated, strong ability to resist pressure, have team spirit."
+				]
+			}
+    }
+  },
+	"market":{
+    "咨询项目经理":{
+			"name":"Consulting product manager",
+			"pax":"2",
+      "location":"Manila",
+      "more_detail":"Details",
+      "detail":{
+          "describe":[
+  					"To plan and consult the implementation plan according to customer needs, responsible for the project bidding scheme",
+  					"Project proposal preparation, and assist in consulting business marketing activities",
+  					"Responsible for project planning and management, responsible for project participants progress, quality and cost management",
+  					"Lead the project team to carry out project consultation, responsible for project results and customer satisfaction",
+  					"Responsible for the professional guidance of project members in the implementation of the project, and complete other work arranged by the company"
+          ],
+          "require":[
+  					"Master degree or above in Management and economics (MBA, Human resources, marketing major are preferred",
+  					"At least 5 years working experience in enterprise management, more than 3 years working experience as administrative consultant",
+  					"Strong logical thinking, communication, text and language expression, interpersonal coordination and team management skills",
+  					"Proficient in the use of Office software and management consulting tools, with Basic English listening, speaking and writing skills"
+          ]
+      }
+    }
+  },
+	"service":{
+    "行政专员":{
+      "name":"Administrative officer",
+      "pax":"2",
+      "location":"Manila",
+      "more_detail":"Details",
+      "detail":{
+        "describe":[
+          "Responsible for writing the minutes of the weekly departmental meeting, company meetings and other important meetings",
+          "Assist the supervisor to complete the administrative work and daily work of the department",
+          "Managing and counting fixed assets regularly",
+          "Familiar in material collection, file management, document sending and receiving, etc",
+          "Assist supervisor to organize company activities and implement related administrative system.",
+          "Organize and plan staff activities",
+          "Responsible for daily reception and preparation"
+        ],
+        "require":[
+          "Full-time college degree or above, major is not limited, have a certain foundation in writing; ",
+          "Good professional ethics, professional integrity and sense of teamwork;",
+          "Good image, strong communication skills, meticulous and serious on work, a sense of responsibility, steady and practical, clear thinking",
+          "Strong organization, planning, coordination and communication skills;",
+          "Hard working and able to work under pressure"
+        ]
+      }
+    }
+  },
+	"technique":{
+    "人事主管":{
+        "name":"Human Resource Manager",
+        "pax":"1  ",
+        "location":"Singapore",
+        "more_detail":"Details",
+        "detail":{
+            "describe":[
+                "Recruitment: recruitment channel management for the whole company to solve the problem of staffs, resume screening, telephone invitation and even interview.",
+                "Performance Management: Performances upgrades and management will be based on the company’s current status, performances statistics and calculations at the end of every month.",
+                "Salary Management: Upgrade and management of the compensation system, salary negotiation for new recruits, positive salary negotiation, statistics and assessment of quarterly salary increments.",
+                "Employee relationship management: Labour contract management, employee psychological communication, etc."
+            ],
+            "require":[
+                "Bachelor degree or above in human resources, more than three years of relevant working experiences, able to work independently.",
+                "Can work seriously and carefully, strong sense of responsibility, strong communication and coordination with team.",
+                "Have knowledge in using office software and automation equipment, skilled in using windows/mac operating system.",
+                "Able to understand the six modules of human resources management, familiar with the process of recruitment management compensation, benefits, training, understand labour regulation, etc.  "
+            ]
+        }
+    }
+  }
+}

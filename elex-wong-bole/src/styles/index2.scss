@@ -1,0 +1,265 @@
+@media only screen and (min-width:768px)
+{
+	.index
+	{
+		position:relative;
+		background:url("../assets/pc/bg.png");
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+		height:56.2vw;
+		cursor:url("../assets/img/cursor_1.png"),auto;
+
+		.real
+		{
+			width:inherit;
+			height:inherit;
+			background:url("../assets/pc/ppl-01.png");
+			background-size:100% 100%;
+		}
+
+		.title-layout
+		{
+			position: absolute;
+			top:15vw;
+			left:6vw;
+
+			.bg-year
+			{
+				background:url('../assets/pc/2019.png');
+				width:13vw;
+				height:5.35vw;
+				background-size:100% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			.bg-title
+			{
+				margin-top:0.5vw;
+				background:url('../assets/pc/title.png');
+				width:25vw;
+				height:4.55vw;
+				background-size:100% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		}
+
+		.real_name_background
+		{
+			position: absolute;
+			bottom:7vw;
+			left:6vw;
+			width:28vw;
+		}
+
+		.real_name
+		{
+			position: absolute;
+			bottom:16vw;
+			left:6vw;
+			width:30vw;
+			height:10.35vw;
+			background:url('../assets/pc/name.png');
+			background-size:100% auto;
+			background-repeat: no-repeat;
+			background-position: center;
+			border:transparent;
+		}
+
+		.slogan{
+			color:white;
+			position: absolute;
+			right:10vw;
+			bottom:16vw;
+			font-weight:700;
+			font-size:1vw;
+			font-style: italic;
+			div{
+				position: relative;
+				p{
+					margin:0;
+				}
+
+				p:first-child{
+					font-size:1.4vw;
+				}
+
+				span{
+					position: absolute;
+					right:0;
+					bottom:-3vw;
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width:768px)
+{
+	.index
+	{
+		position:relative;
+		background:url("../assets/mobile/_0005_bg.png");
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+		height:177.9vw;
+		overflow: hidden;
+
+		.real
+		{
+			height:inherit;
+			width:inherit;
+			background:url("../assets/mobile/_0005_bg_real.png");
+			background-size:100% 100%;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			opacity: 0.05;
+		}
+
+		.title-layout
+		{
+			position: absolute;
+			top:23vw;
+			left:3vw;
+
+			.bg-year
+			{
+				background:url('../assets/mobile/2019_m.png');
+				width:20vw;
+				height:9vw;
+				background-size:100% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			.bg-title
+			{
+				background:url('../assets/mobile/title_m.png');
+				width:46vw;
+				height:9vw;
+				background-size:100% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		}
+
+		.real_name_background{
+			position: absolute;
+			bottom:-9vw;
+			right:8vw;
+			width:50vw;
+		}
+
+		.real_name
+		{
+			position: absolute;
+			bottom:8vw;
+			right:10vw;
+			width:51.6vw;
+			content:url('../assets/mobile/name_m.png');
+		}
+
+		.slogan{
+			display:none;
+		}
+	}
+}
+
+@keyframes living
+{
+    0%
+    {
+    	transform:scale(0.5);
+    	opacity:0.5;
+    }
+
+    50%
+    {
+    	transform:scale(1.5);
+    	opacity:0.2;
+	}
+
+    100%
+    {
+    	transform:scale(0.5);
+    	opacity:0.5;
+    }
+}
+
+/* clue-text-2-effect */
+@keyframes clue-text-2-effect
+{
+    0%
+    {
+    	opacity:0;
+    }
+    100%
+    {
+    	opacity:1;
+    }
+}
+/* clue-text-2-effect */
+
+/* highlight-effect */
+@keyframes highlight-effect
+{
+    0%
+    {
+    	width:0%;
+    }
+    100%
+    {
+    	width:100%;
+    }
+}
+@-webkit-keyframes highlight-effect
+{
+	/* Chrome, Safari */
+    0%
+    {
+    	width:0%;
+    }
+    100%
+    {
+    	width:100%;
+    }
+}
+@-moz-keyframes highlight-effect
+{
+	/* FF */
+    0%
+    {
+    	width:0%;
+    }
+    100%
+    {
+    	width:100%;
+    }
+}
+@-ms-keyframes highlight-effect
+{
+	/* IE10 */
+    0%
+    {
+    	width:0%;
+    }
+    100%
+    {
+    	width:100%;
+    }
+}
+@-o-keyframes highlight-effect
+{
+	/* Opera */
+    0%
+    {
+    	width:0%;
+    }
+    100%
+    {
+    	width:100%;
+    }
+}
+/* highlight-effect */

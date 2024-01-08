@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SDXLSence3Skin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:sdxl="sdxl.*">
+	<e:Image x="0" y="0" source="sdxl_select_bg_jpg"/>
+	<e:Image source="sdxl_diban_png" horizontalCenter="0.5" verticalCenter="-18"/>
+	<e:Image source="sdxl_title_png" y="2.04" horizontalCenter="0"/>
+	<e:Group width="1000" height="528" y="62.65" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Group id="group1" width="200" height="528" x="0" y="0">
+			<sdxl:sdxlIcon id="icon1" horizontalCenter="0" y="0"/>
+			<sdxl:sdxlIcon id="icon2" y="176" horizontalCenter="0"/>
+			<sdxl:sdxlIcon id="icon3" y="352" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group2" width="200" height="528" x="200" y="0">
+			<sdxl:sdxlIcon id="icon4" y="0" horizontalCenter="0"/>
+			<sdxl:sdxlIcon id="icon5" y="176" horizontalCenter="0"/>
+			<sdxl:sdxlIcon id="icon6" y="352" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group3" width="200" height="528" x="400" y="0">
+			<sdxl:sdxlIcon id="icon7" y="0" horizontalCenter="0"/>
+			<sdxl:sdxlIcon id="icon8" y="176" horizontalCenter="0"/>
+			<sdxl:sdxlIcon id="icon9" y="352" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group4" width="200" height="528" x="600" y="0">
+			<sdxl:sdxlIcon id="icon10" y="0" horizontalCenter="0"/>
+			<sdxl:sdxlIcon id="icon11" y="176" horizontalCenter="0"/>
+			<sdxl:sdxlIcon id="icon12" y="352" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group5" width="200" height="528" x="800" y="0">
+			<sdxl:sdxlIcon id="icon13" horizontalCenter="0"/>
+			<sdxl:sdxlIcon id="icon14" y="176" horizontalCenter="0"/>
+			<sdxl:sdxlIcon id="icon15" y="352" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

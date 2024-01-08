@@ -1,0 +1,127 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .updownline {
+    font-size: 4vw;
+
+    .upline-wrapping-mobile,
+    .myname-card,
+    .downline {
+      padding: 4vw;
+      background-color: $secondaryBgColor;
+    }
+
+    .upline-content,
+    .myname-card-content,
+    .downline-item-container {
+      background-color: $primaryGreen;
+      border-radius: 1vw;
+    }
+
+    .upline-wrapping-mobile {
+
+      .upline-title {
+        padding-bottom: 3vw;
+      }
+
+      .upline-content {
+        position: relative;
+        padding: 4vw;
+        min-height: 25vw;
+
+        .upline-content-exist {
+          .upline-content-exist-item {
+            padding-bottom: 2vw;
+          }
+        }
+
+        .upline-content-none {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    .myname-card {
+      .myname-card-title {
+        padding-bottom: 3vw;
+      }
+
+      .myname-card-content {
+        display: flex;
+        padding: 4vw;
+
+        .myname-card-image-container {
+          img {
+            width: 20vw;
+            height: 20vw;
+            border-radius: 3vw;
+            object-fit: cover;
+          }
+        }
+
+        .myname-card-content-grid {
+          padding-left: 4vw;
+
+          .myname-card-grid-item {
+            padding-bottom: 3vw;
+          }
+        }
+      }
+    }
+
+    .downline {
+      min-height: 50vh;
+
+      .downline-title {
+        padding-bottom: 3vw;
+      }
+
+      .downline-item-container {
+        padding: 4vw 3vw;
+
+        .downline-item {
+          display: flex;
+
+          .downline-item-title {
+            margin-right: auto;
+          }
+
+          .el-input__inner {
+            background-color: transparent;
+            border: none;
+            color: $fontColor;
+            font-size: 4vw;
+            text-align: right;
+            cursor: pointer;
+
+            &:focus {
+              border: 0.3vw solid $whiteOpacity30;
+            }
+
+            &:hover {
+              border: 0.3vw solid $whiteOpacity30;
+            }
+          }
+        }
+      }
+
+      .downline-button-group {
+        display: flex;
+        position: relative;
+        padding-top: 12vw;
+        padding-bottom: 8vw;
+        justify-content: space-between;
+
+        .downline-button {
+          padding: 3vw;
+          width: 45vw;
+          text-align: center;
+          border-radius: 1vw;
+        }
+      }
+    }
+  }
+}

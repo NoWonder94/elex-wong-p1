@@ -1,0 +1,396 @@
+.races
+{
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    padding-bottom: 70px;
+    letter-spacing: 0.48px;
+    margin-top: 20px;
+}
+
+.races a {
+    color: #5c48fa;
+}
+
+.races .races-container
+{
+    padding: 10px 15px 0px 15px; 
+}
+
+/* content header */
+.races-container .races-page-header 
+{
+    position: relative;
+    border-radius: 15px 15px 0px 0px;
+    padding: 8px 15px;
+    background-color: #424FAD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.races-page-header-title 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.races-page-header-title img 
+{
+    width: 23px;
+    height: 23px;
+}
+.races-page-header-title span 
+{
+    margin-left: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+}
+.races-page-header .close-button 
+{
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+}
+/* content header end*/
+
+/* upper content */
+.upper-content
+{
+    position: relative;
+    padding: 15px 25px 10px 25px;
+    background: #FFFFFF;
+}
+.upper-content-title
+{
+    position: relative;
+    font-size: 12px;
+    text-align: left;
+    letter-spacing: 0.48px;
+    color: #666666;
+}
+.lower-content-title
+{
+    position: relative;
+    font-size: 12px;
+    text-align: left;
+    letter-spacing: 0.48px;
+    color: #fff;
+}
+.bar-container
+{
+    position: relative;
+	width: 100%;
+	height: 3px;
+	margin: 8px 0px;
+	background-color: #BBBBBB;
+}
+
+.flex-row {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.upper-content-form
+{
+    margin-top: 15px;
+}
+
+.form-ref
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 48%;
+}
+.form-ref:last-child
+{
+    margin-bottom: 0px;
+}
+.form-ref .form-ref-title
+{
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 3px;
+    letter-spacing: 0.48px;
+    color: #999999;
+}
+.form-ref .form-ref-input
+{
+    height: 30px;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666666;
+    background: #EEEEEE;
+}
+/* upper content end */
+
+/* lower content */
+.races-container .lower-content
+{
+    position: relative;
+    background: #383838;
+    padding: 20px 25px 10px 25px;
+    border-radius: 0px 0px 15px 15px;
+    color: #FFFFFF;
+}
+.races-form
+{
+    margin-top: 15px;
+}
+.races-form .form-content
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 48%;
+}
+.races-form .form-content .form-content-title
+{
+    color: #FFFFFF;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+.races-form .form-content .form-content-input
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.form-content .form-content-input input
+{
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666666;
+    background: #EEEEEE;
+}
+.form-content .form-content-input .freeze-button
+{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 0px 25px;
+    font-size: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF6488;
+}
+.form-content .form-content-input .release-button
+{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 0px 22px;
+    font-size: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #39DDD7;
+}
+.form-content .form-content-submit
+{
+    height: 30px;
+    margin-top: 5px;
+    padding: 0px 10px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    text-align: center;
+    background: #FFB326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/* lower content end */
+
+/* races history */
+.races-history
+{
+    position: relative;
+    margin-top: 15px;
+    padding: 20px 25px;
+    border-radius: 15px;
+    background: #383838;
+    color: #FFFFFF;
+}
+.races-history .races-history-date
+{
+    position: relative;
+    font-size: 12px;
+}
+.races-history .races-history-info
+{
+    position: relative;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.races-history-info .history-info
+{
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.history-info .history-info-title
+{
+    font-size: 10px;
+}
+.history-info .history-info-amount
+{  
+    padding-top: 10px;
+    font-size: 13px;
+}
+.races-history-divider
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.races-history-form
+{
+    padding-bottom: 10px;
+}
+.races-history-form .races-history-form-label
+{
+    font-size: 12px;
+    color: #ffffff;
+}
+.races-history-form .races-history-form-input
+{
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.races-history-form-input input
+{
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666666;
+    background: #EEEEEE;
+}
+.races-history-form-input .claim-button
+{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 0px 28px;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #39DDD7;
+    cursor: pointer;
+}
+/* races history end */
+
+
+.coinbar{
+    margin: 5% 0;
+    border-radius: 15px;
+}
+
+/*devidend rule start*/
+.races-rules
+{
+    margin: 0 15px 0px;
+    padding: 15px;
+    color: #FFFFFF;
+}
+
+.races-rules-title
+{
+    font-size: 13px;
+
+}
+
+.races-rules-list
+{
+    margin-top: 10px;
+    list-style-type: '-';
+    padding-left: 5px;
+    list-style-position: outside;
+    list-style-type: lower-alpha;
+}
+
+.races-rules-list li
+{
+    padding-left: 5px;
+    font-size: 10px;
+    text-align: left;
+    line-height: 2;
+}
+
+.races-list {
+    padding: 0 0 15px 0;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.races-list .box-header {
+    text-align: center;
+    align-items: stretch;
+    overflow: hidden;
+    flex-grow: 2;
+    background-color: #424FAD;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.races-list .box-header span {
+    display: block;
+    text-align: center;
+    width: 50%;
+    padding: 10px 0;
+}
+
+.races-list .box-header span.active {
+    background-color: #393850;
+}
+
+.races-list .box-content
+{
+    background-color: #393850;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: white;
+    overflow-x: scroll;
+    text-align: left;
+}
+
+.races-list .box-content a {
+    color: #5c48fa;
+}
+
+/*devidend rule end*/

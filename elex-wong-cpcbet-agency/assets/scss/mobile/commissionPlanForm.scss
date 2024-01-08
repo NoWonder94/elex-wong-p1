@@ -1,0 +1,76 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .content-form
+  {
+    margin-top: 3vw;
+    padding: 5vw;
+    border: 1px solid $blackOpacity20;
+    color: $primaryColorOpc50;
+    border-radius: 2vw;
+
+    .form-input
+    {
+      .input-title{
+        font-size: 3vw;
+      }
+
+      .el-input__inner{
+        color: $primaryColor;
+        border: none;
+        border-bottom: 1px solid $primaryColorOpc20;
+        border-radius: 0;
+        padding: 0;
+      }
+    }
+
+    .content-form-allProducts
+    {
+      position: relative;
+      width: 50vw;
+      margin: 0 auto;
+      margin-bottom: 5vw;
+      text-align: center;
+
+      .content-form-allProducts-label
+      {
+        cursor: pointer;
+      }
+    }
+
+    .content-form-dynamic-wrapper
+    {
+      .content-form-dynamic
+      {
+        padding-bottom: 5vw;
+        // max-height: 70vw;
+        // overflow-y: auto;
+      }
+    }
+
+    .content-form-submit
+    {
+      margin-top: 5vw;
+
+      .reset-button
+      {
+        padding: 2vw 3.5vw;
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+        border-radius: 5vw;
+        background-color: transparent;
+        font-size: 3vw;
+        text-align: center;
+      }
+
+      .submit-button
+      {
+        padding: 2vw 3.5vw;
+        margin-top: 3vw;
+        font-size: 3vw;
+        text-align: center;
+        border-radius: 5vw;
+      }
+    }
+  }
+}

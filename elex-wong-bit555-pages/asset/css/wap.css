@@ -1,0 +1,267 @@
+@media only screen and (max-width: 700px)
+{
+    .web{
+        display: none;
+    }
+
+    body{
+        position: relative;
+        text-align: center;
+        margin: 0;
+        top: 0;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.84px;
+        /* overflow-y:hidden;         */
+        /* display: flex; */
+    }
+
+    .background{
+        background-image: url('../img/wap/bit555-webdesign-bg-mobile.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size:cover;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .main{
+        position: relative;
+    }
+
+    .body{
+        width: 80%;
+        padding: 20% 10%;
+        padding-top: 25%;
+    }
+
+    .logo{
+        width: 10vw;
+        height: 10vw;
+    }
+    
+    .main-logo{
+        width: 80%;
+        height: 20vw;
+        margin:0 auto;
+    }
+
+    .header,.head-content{
+        display: flex;
+    }
+
+    .header{
+        padding: 4vw;
+    }
+
+    .mr-auto{
+        margin-right: auto;
+    }
+
+    .head-content{
+        margin-left: 5vw;
+    }
+
+    .text{
+        padding: 1vw 3vw;
+    }
+
+    .select{
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 4vw;
+    }
+
+    .select:focus{
+        border: none;
+        outline: none;
+    }
+
+    option{
+        background-color: transparent;
+        color: #03081e;
+    }
+
+    .content2{
+        margin-top: 8vw;
+    }
+
+    .paragraph1{
+        font-size: 6vw;
+        font-weight: bold;
+        margin-bottom: 6vw;
+    }
+
+    .paragraph2{
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .content3{
+        margin-top: 10vw;
+        font-size: 4vw;
+    }
+
+    .count-down{
+        font-size: 6vw;
+        font-weight: bold;
+        margin-bottom: 6vw;
+        color: #95FF01;
+    }
+
+    .auto-tranfer{
+        line-height: 5vw;
+    }
+
+    hr{
+        border-color: rgba(255, 255, 255, 0.279);
+    }
+    
+    .foot-wrap{
+        position: relative;
+        height: 60vw;
+    }
+
+    .footer{
+        width: 90%;
+        padding: 5%;
+        font-size: 5vw;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .foot-box {
+        font-size: 4vw;
+    }
+
+    .redirectable {
+        text-decoration: none;
+        color: white;
+        padding-bottom: 4vw;
+    }
+
+    .foot-btm{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .media-list{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        padding: 5vw 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mediacon{
+        padding: 2vw 1vw;
+        flex-basis: 16.67%;
+    }
+
+    .mediacon div{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .tlogo{
+        background-image: url('../img/wap/top-logo.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+
+    .home{
+        background-image: url('../img/wap/home.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+
+    .language{
+        background-image: url('../img/wap/langauge.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+
+    .mlogo{
+        background-image: url('../img/wap/logo.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+
+    .cuservice{
+        background-image: url('../img/wap/customer-service.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+
+    .bitcoin{
+        background-image: url('../img/wap/Bitcoin.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+
+    .discord{
+        background-image: url('../img/wap/Discord.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+
+    .facebook{
+        background-image: url('../img/wap/Facebook.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+
+    .github{
+        background-image: url('../img/wap/Github.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+
+    .instagram{
+        background-image: url('../img/wap/Instagram.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+
+    .medium{
+        background-image: url('../img/wap/Medium.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+
+    .telegram{
+        background-image: url('../img/wap/Telegram.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+
+    .twitter{
+        background-image: url('../img/wap/Twitter.png');
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size:100%;
+    }
+}

@@ -1,0 +1,107 @@
+@import '../base.scss';
+
+.bonusSelector-component {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  .top {
+    flex: 1 1;
+
+    .top-header {
+      margin: 16px 0px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.78;
+      text-align: center;
+      letter-spacing: -.44px;
+      color: $white;
+    }
+
+    .top-bonus-selector {
+      .selector-box {
+        height: 40px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 2;
+        margin-bottom: 12px;
+        padding: 0 16px;
+        background: $backgroundTwo;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
+
+        .el-checkbox .is-checked {
+          .el-checkbox__inner {
+            background-color: $red;
+            border-color: $red;
+          }
+        }
+
+        .el-checkbox  {
+          .el-checkbox__inner {
+            background-color: rgba(46, 49, 66, .8);
+            border-color: $separator;
+          }
+        }
+
+        .checkbox-text {
+          color: $white;
+          padding-left: 14px;
+        }
+      }
+
+      .checkBox-selected {
+        border: 1px solid $red;
+      }
+
+      .depositBonus-terms-container {
+        padding: 15px 0px;
+        max-height: 200px;
+        overflow-y: auto;
+
+        h4 {
+          margin-top: 0;
+          margin-bottom: 4px;
+          text-align: left;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 2;
+          color: $lightGrey;
+          text-transform: uppercase;
+        }
+
+        .bonus-terms {
+          padding: 0 15px;
+          max-height: 200px;
+
+          .bonus-term {
+            padding-bottom: 13px;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .bonusSelector-button {
+    height: 40px;
+    padding: 0;
+    margin-top: 4px;
+    border-radius: 4px;
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+    background: $red;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

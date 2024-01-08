@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">FacePoker</string>
+    <string name="facebook_app_id" translatable="false">272702090829534</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb272702090829534</string>
+</resources>

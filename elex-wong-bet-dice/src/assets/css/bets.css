@@ -1,0 +1,87 @@
+.bets-container{
+    margin-top: 20px;
+}
+
+.bets {
+    margin: 3vw 5vw;
+    color: white;
+    padding-bottom: 60px;
+    
+}
+
+.borderless td, .borderless th {
+    border: none;
+    padding: 10px 0px;
+}
+
+.text-right {
+    position: relative;
+    text-align: right;
+}
+
+.neon-payout {
+    color: #00FBC2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.grey-payout {
+    color: #999999;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.solano-logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+}
+
+.purple-dot {
+    border-radius: 50%;
+    background-color: #EE04FE;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+.tr-win a, .tr-lose a {
+    color: #fff;
+}
+
+.tr-win {
+    color: #00FBC2;
+}
+
+.tr-lose {
+    color: #EE04FE;
+}
+
+.bets-item {
+    display: table-row;
+}
+
+.bets-item div {
+    display: table-cell;
+    padding: 10px 0;
+}
+
+.bi-win a, .bi-lose a {
+    color: #fff;
+}
+
+.bi-win {
+    color: #00FBC2;
+}
+
+.bi-lose {
+    color: #EE04FE;
+}
+
+

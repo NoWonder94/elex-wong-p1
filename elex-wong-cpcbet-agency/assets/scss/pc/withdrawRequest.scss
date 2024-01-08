@@ -1,0 +1,66 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+
+  .withdraw-request {
+
+    .withdraw-request-header {
+      position: sticky;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10px;
+      background-color: $secondarybgColor;
+      color: $scfontColor;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 1px solid $whiteOpacity20;
+
+      .header-item {
+        width: 1200px;
+        margin: auto;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        img{
+          width: 20px;
+        }
+      }
+    }
+    .withdraw-request-body{
+      width: 1200px;
+      margin: auto;
+      padding: 20px 10px;
+
+    }
+    .withdraw-request-table {
+      padding-top: 20px;
+      width: 1000px;
+      margin: 0 auto;
+
+      .withdraw-request-table-pagination {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 15px;
+        text-align: center;
+
+        .el-pager {
+          .active {
+            background-color: $secondaryColor  !important;
+          }
+
+          .number.active:hover {
+            color: $fontColor  !important;
+          }
+
+          .number:hover {
+            color: $secondaryColor  !important;
+          }
+        }
+      }
+    }
+
+  }
+}

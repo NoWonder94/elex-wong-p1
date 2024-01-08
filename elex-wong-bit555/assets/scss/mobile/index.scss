@@ -1,0 +1,60 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .index {
+    position: relative;
+    min-height: 100vh;
+
+    .logo-container {
+      height: 38vw;
+      background-color: $secondaryBgColor;
+      color: $whiteFontColor;
+      text-align: center;
+
+      .logo-content {
+        padding-top: 4vw;
+        font-size: 3.5vw;
+
+        img {
+          width: 55vw;
+        }
+
+        div {
+          padding-top: 15px;
+        }
+      }
+
+    }
+
+    .index-container {
+      padding: 7vw 3.5vw;
+      margin: 0 auto;
+
+      .index-content {
+        display: grid;
+        column-gap: 25px;
+        row-gap: 30px;
+
+        img {
+          width: 90vw;
+          height: 50vw;
+          object-fit: cover;
+        }
+      }
+
+      .load-more {
+        text-align: center;
+      }
+
+      .el-icon-arrow-down {
+        display: block;
+      }
+
+      .el-icon-arrow-down::before {
+        font-size: 5.5vw;
+        font-weight: 900;
+      }
+    }
+
+  }
+}

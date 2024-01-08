@@ -1,0 +1,177 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1201px) {
+  .bonuses-page {
+    position: relative;
+    max-width: 1104px;
+    width: 100%;
+    height: calc(100vh - 65px);
+    margin: 0 auto;
+    color: $white;
+
+    .mobile-header{
+      position: relative;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 26px 0;
+      border-bottom: 1px solid $separator;
+      height: 70px;
+
+      i{
+        position: absolute;
+        left: 20px;
+        font-size: 18px;
+      }
+      .title {
+        text-transform: uppercase;
+      }
+    }
+
+    .bonuses-content {
+      position: relative;
+      width: 100%;
+      padding: 24px 24px 16px;
+
+      .content-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5%;
+        padding: 56px 0;
+        border-bottom: 1px solid $separator;
+
+        .content-header {
+          position: relative;
+          text-align: left;
+          flex-basis: 20%;
+          max-width: 20%;
+
+          .content-header-title {
+            font-size: 40px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.6;
+            letter-spacing: -.56px;
+            text-align: left;
+            color: $white;
+          }
+        }
+
+        .content-body {
+          position: relative;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-basis: 70%;
+          max-width: 70%;
+
+          .content-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 40%;
+            max-width: 40%;
+
+            .item-icon {
+              width: 46px;
+              margin-right: 20px;
+            }
+
+            .item-details {
+              padding-left: 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-start;
+
+              .details-title {
+                margin-bottom: 8px;
+                font-size: 12px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 2;
+                letter-spacing: normal;
+                text-align: center;
+                color: $lightGrey;
+                text-transform: uppercase;
+              }
+
+              .details-amount {
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: -.89px;
+                font-size: 25px;
+                color: $white;
+                margin-bottom: 8px;
+
+                .currency {
+                  font-stretch: normal;
+                  font-style: normal;
+                  line-height: 1;
+                  letter-spacing: -.89px;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    .content-activations {
+      position: relative;
+      color: $white;
+      margin: 20px 10px;
+      padding-bottom: 50px;
+
+      .activations-no-record {
+        padding: 0 20px;
+      }
+
+      .activations-record {
+        position: relative;
+
+        table{
+          width: 100%;
+          margin: 0 auto;
+          border-collapse: collapse;
+          text-align: center;
+
+          th{
+            background-color: $backgroundThree;
+            color: $lightGrey;
+            font-size: 12px;
+            height: 32px;
+            padding: 4px 0 4px 16px;
+          }
+
+          td{
+            font-size: 12px;
+            padding: 24px 0 24px 16px;
+            border-bottom: 1px solid rgba(50,59,69,.6);
+          }
+
+          td:first-child{
+            color: $whiteGrey;
+            width: 180px;
+          }
+        }
+
+        .list-pagenation {
+          position: inherit;
+          width: 100%;
+          margin: 0 auto;
+          margin-top: 50px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 1200px) {
+  .deposits {
+    position: relative;
+    color: $white;
+    min-height: 90vh;
+
+    .content-right {
+      font-size: 12px;
+      background-color: $background;
+
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 25px;
+      }
+
+      .deposits-list{
+        overflow-x: auto;
+
+        table{
+          width: 100%;
+          margin: 0 auto;
+          border-collapse: collapse;
+          text-align: center;
+
+          th{
+            background-color:  $backgroundThree;
+            color: $lightGrey;
+            font-size: 12px;
+            height: 32px;
+            padding: 4px 0 4px 16px;
+          }
+
+          td{
+            font-size: 12px;
+            padding: 24px 0 24px 16px;
+            border-bottom: 1px solid rgba(50,59,69,.6);
+          }
+
+          td:first-child{
+            color: $whiteGrey;
+            width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .content-right {
+    padding: 24px 16px;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .content-right {
+    padding: 24px 60px;
+  }
+}

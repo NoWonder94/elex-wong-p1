@@ -1,0 +1,521 @@
+// @import 'compass/css3';
+/** design not mine. credits to design from dribbble designer MBE.
+here is the link : https://dribbble.com/shots/3345821-Electron.
+Just wanted to animate this because i loved it when i saw it **/
+body {
+	overflow:hidden;
+}
+
+$background:#0f111d;
+$color:#fff;
+$color2:#5048A0;
+$color3:#85EDE8;
+$color4:#48098b;
+
+@function randomNum($min, $max) {
+  $rand: random();
+  $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+  @return $randomNum;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{"$animationName"} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+
+  @-ms-keyframes #{$animationName} {
+    @content;
+  }
+
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+body
+{
+	background:$background
+}
+canvas {
+	position:absolute;
+	left:50%;
+	top:50%;
+	@include transform(translate(-50%,-50%));
+}
+div
+{
+	width:100px;
+	height:85px;
+	@include border-radius(0px 50px 50px 0px);
+	background:$color;
+	box-shadow:0px 0px 14px $color;
+	@include transform(translate(-50%,-50%));
+	left:50%;
+	top:50%;
+	position:absolute;
+	ul {
+		margin:0;
+		padding:0;
+		transform:rotateY(180deg);
+		li {
+			list-style:none;
+			display:block;
+		}
+	}
+	&:nth-child(1)
+	{
+		background-color:$color2;
+		height:65px;
+		width:72.5px;
+		box-shadow: 2px 0px 10px $color2, -5px 0px 10px #5b2096;
+		$delay : 0;
+		$duration : 0;
+		@for $i from 1 through 4{
+			$delay : $delay + 0.2;
+			$width :0;
+			$duration : $duration+randomNum(0.5,2.5);
+			li:nth-child(#{$i}) {
+				$width : randomNum(60,85)+px; 
+				width: $width;
+				height:16.25px;
+				background:$color2;
+				background: linear-gradient(to right, $color2 60%, transparent);
+				margin-left:35px;
+				border-radius:40px;
+				@include animation(glowbg 2s ease-in-out infinite);
+				@include animation-delay($delay+s);
+				@include animation-duration($duration+s);
+			}	
+		} //end of li for loop
+	}
+	&:nth-child(2)
+	{
+		background-color:$color3;
+		opacity:0.6;
+		height:57.5px;
+		width:65px;
+		box-shadow: 0px 0px 15px $color3;
+		li:nth-child(1) {
+			width:85px;
+			background: linear-gradient(to right, $color3 50%, transparent);
+			height:15px;
+			margin-left:25px;
+			@include border-radius(100px);
+			@include animation(glowbg 3s ease-in-out infinite);
+			@include animation-delay(.5s);
+		}
+		li:nth-child(2) {
+			width:80px;
+			background: linear-gradient(to right, $color3 50%, transparent);
+			height:20px;
+			margin-left:25px;
+			@include border-radius(100px);
+			margin-top:22.5px;
+			@include animation(glowbg 2.5s ease-in-out infinite);
+			@include animation-delay(.8s);
+		}
+		
+	}
+	&:nth-child(3)
+	{
+		background-color:$color3;
+		height:50px;
+		width:50px;
+		margin-left:2px;
+		box-shadow: 0px 0px 15px $color3;
+		li:nth-child(1) {
+			width:27.5px;
+			height:5px;
+			background:$color3;
+			margin-left:25px;
+			border-radius:300px;
+			position:relative;
+			left:0px;
+			@include transition(all 0.3s ease);
+			@include animation(anim1 1s ease infinite)
+		}
+		li:nth-child(2) {
+			width:45px;
+			height:5px;
+			background:$color3;
+			margin-left:25px;
+			border-radius:300px;
+			position:relative;
+			margin-top:40px;
+			left:0px;
+			@include transition(all 0.3s ease);
+			@include animation(anim1 1s ease infinite);
+			@include animation-delay(.5s);
+		}
+		.floating-1 {
+			@extend li:nth-child(1);
+			position:absolute;
+			top:0;
+			box-shadow: 0px 0px 5px $color3;
+		}
+		.floating-2 {
+			@extend li:nth-child(2);
+			position:absolute;
+			bottom:0;
+			box-shadow: 0px 0px 5px $color3;
+		}
+		li:nth-child(3).floating-1 {
+			width:20px;
+			left: 32.5px;
+			@include animation(f1 2s ease-out infinite);
+		}
+		li:nth-child(4).floating-1 {
+			width:7.5px;
+			left: 67.5px;
+			
+			@include animation(f11 1.8s ease-out infinite);		
+			@include animation-delay(0s);
+
+		}
+		
+		li:nth-child(5).floating-2 {
+			width:15px;
+			left: 0px;
+			@include animation(f11 1s ease-out infinite);
+			@include animation-delay(.3s);
+		}
+		
+		li:nth-child(6).floating-2 {
+			width:5px;
+			left: 0px;
+			@include animation(f11 1.5s ease-out infinite);
+			@include animation-delay(.5s);
+		}
+	}
+	&:nth-child(4)
+	{
+		width:40px;
+		margin-left:2px;
+		height:40px;
+		span {
+			display:block;
+			position:absolute;
+		}
+		.eyes {
+			width:5px;
+			height:5px;
+			border-radius:10px;
+			background:#000;
+			top:15px;
+			left:12.5px;
+			&::after {
+				content:"";
+				width:5px;
+				height:5px;
+				border-radius:10px;
+				background:#000;
+				position:absolute;
+				left:14px;
+			}
+		}
+		.smile {
+			position:absolute;
+			border-bottom-left-radius: 45px;
+			border-bottom-right-radius: 45px;
+			width: 5px;
+			height: 3px;
+			background: transparent;
+			border: 2px solid #000;
+			left: 18px;
+    		top: 19px;
+			&::before {
+				background: #fff;
+				width: 11.5px;
+				height: 2.5px;
+				content: "";
+				position: absolute;
+				left: -2.5px;
+				top: -2.5px;
+			}
+		} // end of smile
+		
+		.cheeks {
+			width:5px;
+			height:5px;
+			background:$color3;
+			display:block;
+			position:absolute;
+			@include border-radius(200px);
+			top:20px;
+			left:10px;
+			
+			&::after {
+				content : "";
+				position:absolute;
+				width:5px;
+				height:5px;
+				background:$color3;
+				left:20px;
+				top:0px;
+				@include border-radius(200px);
+			}
+		}
+		
+		li{
+			position:relative;
+			@include transition(all 0.2s ease);
+		}
+		li:nth-child(1) {
+			width:45px;
+			height:6px;
+			background:#fff;
+			left:25px;
+			border-radius:200px;
+			box-shadow: 0px 0px 10px #fff;
+			@include animation(anim2 1.5s ease-out infinite)
+		}
+		li:nth-child(2) {
+			background:radial-gradient(circle at 100% 50%, rgba(204,0,0,0) 2px, #fff 2.5px);
+			width:35px;
+			height:5px;
+			margin-left:25px;
+			
+			@include animation(anim3 1.6s ease-out infinite);							
+			@include animation-delay(0.5s);
+		}
+		
+		li:nth-child(3) {
+			width:52.5px;
+			height:6px;
+			background:#fff;
+			left:22.5px;
+			border-radius:200px;
+			box-shadow: 0px 0px 10px #fff;
+			@include animation(anim2 1.2s ease-out infinite);							
+			@include animation-delay(1s);
+
+		}
+		li:nth-child(4) {
+			background:radial-gradient(circle at 100% 50%, rgba(204,0,0,0) 2px, #fff 2.5px);;
+			width:32.5px;
+			height:5px;
+			margin-left:35px;
+			@include animation(anim3 2s ease-out infinite);							
+			@include animation-delay(0.5s);
+		}
+		li:nth-child(5) {
+			width:42.5px;
+			height:6px;
+			background:#fff;
+			left:30px;
+			border-radius:200px;
+			box-shadow: 0px 0px 10px #fff;
+			@include animation(anim4 2s ease-out infinite);							
+			@include animation-delay(0.5s);
+		}
+		li:nth-child(6) {
+			background:radial-gradient(circle at 100% 50%, rgba(204,0,0,0) 2.5px, #fff 3px);;
+			width:32.5px;
+			height:6px;
+			margin-left:37.5px;
+			
+			@include animation(anim3 1s ease-out infinite);							
+			@include animation-delay(0.5s);
+		}
+		li:nth-child(7) {
+			width:50px;
+			height:6px;
+			background:#fff;
+			left:27.5px;
+			border-radius:200px;
+			box-shadow: 0px 0px 10px #fff;
+			
+			@include animation(anim2 1.3s ease-out infinite);
+			@include animation-delay(0.5s);
+		}
+		
+		.floating {
+			position:absolute;
+			background:#fff;
+			border-radius: 100px;
+			@include transition(all 0.5s ease);
+			box-shadow: 0px 0px 10px $color3;
+			z-index:-2;
+			opacity:0;
+		}
+		
+		li:nth-child(8).floating {
+			width:6px;
+			height:6px;
+			top: 0;
+			left: 25px;
+			@include animation(float1 3s ease infinite);
+			@include animation-delay(.4s);
+		}
+		
+		li:nth-child(9).floating {
+			width:6px;
+			height:6px;
+			top: 11px;
+			@include animation(float2 3s ease infinite);
+			@include animation-delay(2.5s);
+		}
+		
+		li:nth-child(10).floating {
+			width:6px;
+			height:6px;
+			top: 22px;
+			left: 25px;
+			
+			@include animation(float3 3s ease infinite);
+			@include animation-delay(1.5s);
+		}
+		li:nth-child(11).floating {
+			width:6px;
+			height:6px;
+			top: 33.5px;
+			left: 25px;
+			
+			@include animation(float4 3s ease infinite);
+			@include animation-delay(1.5s);
+		}
+	}
+} 
+
+.random-stars-container{
+	width:50%;
+	height:50%;
+	background:transparent;
+	box-shadow:none;
+	z-index: -1;
+	.random-stars {
+		display:block;
+		position:absolute;
+		opacity:0;
+		
+		@include animation(stars-moving 2.5s ease infinite);
+	}
+	.random-stars:nth-child(1){
+		width:7.5px;
+		height:7.5px;
+		background:linear-gradient(to right, $color4, $color3);
+		@include border-radius(100px);
+		left: 250px;
+		top:65px;
+		@include animation-delay(.5s);
+		@include animation-duration(2s);
+
+	}
+	.random-stars:nth-child(2){
+		width:5px;
+		height:5px;
+		background:linear-gradient(to right, $color3 30%, transparent);
+		@include border-radius(100px);
+		left: 0px;
+		top:85px;
+	}
+	.random-stars:nth-child(3){
+		width:5px;
+		height:5px;
+		background:linear-gradient(to right, $color4 20%, transparent);
+		@include border-radius(100px);
+		left: 0px;
+		top:115px;
+		@include animation-delay(.8s);
+	}
+	.random-stars:nth-child(4){
+		width:6px;
+		height:6px;
+		background:$color3;
+		@include border-radius(100px);
+		left: 0px;
+		top:155px;
+		@include animation-delay(.2s);
+		@include animation-duration(3.5s);
+	}
+}
+
+
+@include keyframes(f1) {
+	0% {left:7.5px; width:35px}
+	50%{left:75px;opacity:.5; width:25px}
+	60%{left:75px;opacity:0; width:2px}
+	100%{left:7.5px;opacity:0; width:0px}
+}
+
+@include keyframes(f11) {
+	0% {left:32.5px;}
+	50%{left:92.5px;opacity:.5}	
+	60%{opacity:0;left:92.5px}
+	100%{left:32.5px;opacity:0}
+}
+
+@include keyframes(anim1) {
+	0% {left:0px}
+	50% {left:15px}
+	100% {left:0xpx}
+}
+
+@include keyframes(anim2) {
+	0% {left:22.5px}
+	50% {left:32.5px}
+	100% {left:22.5px}
+}
+
+@include keyframes(anim3) {
+	0% {left:0px}
+	50% {left:2.5px}
+	100% {left:0px}
+}
+
+@include keyframes(anim4) {
+	0% {left:30px}
+	50% {left:40px}
+	100% {left:30px}
+}
+
+@include keyframes(float1) {
+	0% {left:25px;opacity:0}
+	50% {left:80px;opacity:1}
+	70% {left:80px;opacity:0}
+	100% {left:25px;opacity:0}
+}
+
+@include keyframes(float2){
+	0% {left:30px;opacity:0}
+	50% {left:87.5px;opacity:1}
+	70% {left:87.5px;opacity:0}
+	100% {left:30px;opacity:0}
+}
+
+@include keyframes(float3){
+	0% {left:25px;opacity:0}
+	50% {left:80px;opacity:1}
+	70% {left:80px;opacity:0}
+	100% {left:25px;opacity:0}
+}
+
+
+@include keyframes(float4){
+	0% {left:25px;opacity:0}
+	50% {left:90px;opacity:1}
+	70% {left:90px;opacity:0}
+	100% {left:25px;opacity:0}
+}
+
+
+@include keyframes(glowbg) {
+	0% {width:60px};
+	25% {width:100px}
+	100% {width:60px}
+
+}
+
+
+@include keyframes(stars-moving) {
+	0% { left:90%;opacity:1}
+	50% { left:20%;opacity:1}
+	70% { left:20%;opacity:0}
+	100%{left:80%;opacity:0}
+
+
+}

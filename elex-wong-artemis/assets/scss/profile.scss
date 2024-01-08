@@ -1,0 +1,139 @@
+@import 'base.scss';
+
+.profile {
+  position: relative;
+  background-color: $homeBg;
+  min-height: 100vh;
+
+  .header {
+    background: url('@/assets/img/profile_bg.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    color: $scfontColor;
+    font-size: 12px;
+    font-weight: 600;
+
+    .profile-header-title {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      text-shadow: 0px 3px rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .user-profile-card {
+    margin-top: -30px;
+
+    .user-assets-value {
+      font-size: 18px;
+    }
+
+    .user-rewards-value {
+      font-size: 14px;
+    }
+
+    .user-profile-check-team {
+      font-size: 12px;
+
+      .button-content-svg {
+        width: 30px;
+      }
+    }
+  }
+
+  .profile-community-title {
+    font-size: 14px;
+  }
+
+
+  .profile-community {
+    .profile-community-value {
+      font-size: 18px
+    }
+
+    .profile-community-forward {
+      align-self: center;
+      width: 10px;
+      color: $fontColor;
+    }
+
+  }
+
+  // .community-info {
+  //   font-size: 12px;
+
+  //   .nodata {
+  //     width: 25%;
+  //     align-self: center;
+  //   }
+  // }
+
+  .list-container {
+    overflow: hidden;
+
+    .nodata {
+      width: 25%;
+      align-self: center;
+    }
+
+    .nodata-label {
+      font-size: 11px;
+      color: $lightfontColor;
+    }
+
+    .list-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 12px;
+    }
+
+    .list-row-content {
+      .list-item-label {
+        font-size: 14px;
+      }
+
+      .list-item-value {
+        font-size: 12px;
+      }
+
+      .list-item {
+        padding: 0px 10px;
+        padding-top: 10px;
+        // align-self: flex-end;
+        // align-items: flex-end;
+        text-align: center;
+        flex: 1;
+      }
+    }
+  }
+
+  /* 蓝背景 */
+  .blue-background {
+    background-color: $darkBlue;
+    color: $scfontColor;
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* label font */
+  .card-label-font {
+    color: $lightfontColor;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .card-value-font {
+    color: $fontColor;
+  }
+
+  /* copy to clipboard button */
+  .copy-link {
+    color: $secondaryColor;
+    font-weight: bold;
+    font-size: 12px;
+  }
+}

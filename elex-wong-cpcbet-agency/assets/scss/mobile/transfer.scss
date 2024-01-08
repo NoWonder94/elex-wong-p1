@@ -1,0 +1,229 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .transfer{
+    margin-top: -20vw;
+    padding-bottom: 5vw;
+
+    .transfer-header{
+      position: fixed;
+      padding: 5.5vw 4vw;
+      background: $secondarybgColor;
+      color: $scfontColor;
+      width: 100vw;
+      margin-left: -4vw;
+      font-size: 3.5vw;
+      font-weight: bold;
+
+      .transfer-header-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-transfer{
+          display: flex;
+          align-items: center;
+          column-gap: 2vw;
+
+          img{
+            width: 5vw;
+          }
+        }
+
+        .green{
+          color: $secondaryColor;
+        }
+      }
+    }
+
+    .transfer-title{
+      padding-top: 20vw;
+      font-size: 3.5vw;
+      font-weight: bold;
+    }
+
+    .transfer-section{
+      margin-top: 3vw;
+      padding: 5vw;
+      border: 1px solid $blackOpacity20;
+      color: $primaryColorOpc50;
+      border-radius: 2vw;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 6vw;
+
+      .transfer-item{
+        .transfer-item-title{
+          font-size: 3vw;
+          padding-bottom: 1vw;
+        }
+
+        .transfer-item-amount{
+          font-size: 4vw;
+          font-weight: bold;
+          color: $primaryColor;
+        }
+      }
+    }
+
+    .transfer-form{
+      margin-top: 5vw;
+      padding: 5vw 5vw 2vw;
+      border: 1px solid $blackOpacity20;
+      color: $primaryColorOpc50;
+      border-radius: 2vw;
+
+      .el-form{
+        .transfer-input{
+          padding-bottom: 5vw;
+
+          .input-title{
+            font-size: 3vw;
+
+            .fa-circle-question{
+              margin-left: 0.5vw;
+              font-size: 2.5vw;
+            }
+          }
+
+          .el-select{
+            width: 100%;
+
+            .el-input__inner{
+              border: none;
+              border-bottom: 1px solid $primaryColorOpc50;
+              border-radius: 0;
+            }
+          }
+
+          .el-input{
+            .el-input__inner{
+              border: none;
+              border-bottom: 1px solid $primaryColorOpc20;
+              border-radius: 0;
+            }
+          }
+
+          .el-radio-group{
+            display: flex;
+            flex-direction: column;
+            row-gap: 4vw;
+
+            .el-radio{
+              display: flex;
+
+              .el-radio__inner{
+                border: 1px solid $primaryColor;
+                width: 4vw;
+                height: 4vw;
+              }
+
+              .el-radio__input.is-checked .el-radio__inner{
+                background: $secondaryColor;
+                border: 1px solid $secondaryColor;
+              }
+
+              .transfer-radio-title{
+                color: $primaryColor;
+                font-size: 4vw;
+                font-weight: bold;
+                padding-bottom: 1vw;
+              }
+
+              .transfer-radio-desc{
+                color: $primaryColorOpc50;
+                width: 76vw;
+                text-overflow: ellipsis;
+                white-space: normal;
+              }
+            }
+          }
+
+          .el-textarea{
+            .el-textarea__inner{
+              border-radius: 3vw;
+            }
+          }
+
+          .switch {
+            margin-top: 1vw;
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+
+            /* Hide default HTML checkbox */
+            input {
+              opacity: 0;
+              width: 0;
+              height: 0;
+            }
+
+            /* The slider */
+            .slider {
+              position: absolute;
+              cursor: pointer;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: #ccc;
+              -webkit-transition: 0.4s;
+              transition: 0.4s;
+
+              &:before {
+                position: absolute;
+                content: "";
+                height: 22px;
+                width: 22px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: 0.4s;
+                transition: 0.4s;
+              }
+            }
+            input:checked + .slider {
+              background-color: #2196f3;
+            }
+
+            input:focus + .slider {
+              box-shadow: 0 0 1px #2196f3;
+            }
+
+            input:checked + .slider:before {
+              -webkit-transform: translateX(26px);
+              -ms-transform: translateX(26px);
+              transform: translateX(26px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+              border-radius: 34px;
+            }
+
+            .slider.round:before {
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    .transfer-history{
+      margin-top: 3vw;
+
+      .transfer-history-title{
+        padding-bottom: 2vw;
+        color: $fontColor;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .el-select-dropdown__item.selected{
+    color: $secondaryColor !important;
+    font-weight: bold;
+  }
+}

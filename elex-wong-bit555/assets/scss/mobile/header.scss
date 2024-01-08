@@ -1,0 +1,156 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .header {
+
+
+    .header-content {
+      background-color: $secondaryBgColor;
+
+      .header-content-container-mobile {
+        display: flex;
+        padding: 4.5vw 4vw;
+        perspective: 1000px;
+        justify-content: space-between;
+
+        .header-content-logo {
+
+          img {
+            width: 24vw;
+          }
+        }
+
+        .header-content-nav-icon {
+          transition: transform 0.5s;
+          transform-style: preserve-3d;
+
+          .side-bar {
+            position: relative;
+            margin-left: auto;
+            height: 5vw;
+            width: 8vw;
+            border-radius: 1.5vw;
+
+            span {
+              display: block;
+              position: absolute;
+              left: 1vw;
+              height: 0.3vw;
+              width: 7vw;
+              background-color: $bgColor;
+              transition: all 0.3s ease-in-out;
+            }
+
+            span:nth-child(1) {
+              top: 1vw;
+            }
+
+            span:nth-child(2) {
+              top: 2.5vw;
+            }
+
+            span:nth-child(3) {
+              top: 4vw;
+            }
+
+          }
+
+          .side-bar.open {
+
+
+            span:nth-child(1) {
+              top: 3vw;
+              left: 1vw;
+              transform: rotate(45deg);
+            }
+
+            span:nth-child(2) {
+              width: 0;
+              opacity: 0;
+            }
+
+            span:nth-child(3) {
+              top: 3vw;
+              left: 1vw;
+              transform: rotate(-45deg);
+            }
+          }
+
+        }
+
+        .header-content-container-mobile.open {
+          transform: rotateY(180deg);
+        }
+      }
+
+      .flex-end {
+        justify-content: flex-end;
+      }
+
+      .header-actions-mobile {
+        position: fixed;
+        top: 10vw;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 5vw;
+        background-color: $secondaryBgColor;
+        color: $whiteFontColor;
+        z-index: 901;
+
+        .header-actions-mobile-innerLayer {
+          position: relative;
+          height: 100%;
+
+          .header-actions-mobile-innerLayer-middle {
+            padding: 6vw;
+            text-align: center;
+
+            .header-actions-mobile-innerLayer-nav {
+              padding: 3vw;
+              font-size: 6vw;
+              font-weight: bold;
+            }
+          }
+
+          .header-actions-mobile-innerLayer-bottom {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            padding: 5vw 0;
+            align-items: center;
+            justify-content: space-between;
+
+            .header-actions-mobile-innerLayer-platforms-container {
+              display: flex;
+
+              .header-actions-mobile-innerLayer-platform {
+                padding: 0 2.5vw;
+
+                .fa-brands {
+                  font-size: 4vw;
+
+                }
+              }
+
+            }
+
+            .header-actions-mobile-innerLayer-subcribe {
+              padding: 0 2vw;
+              font-weight: bold;
+            }
+
+            .header-actions-mobile-innerLayer-playnow {
+              padding: 2vw;
+              background-color: $bgColor;
+              border-radius: 2vw;
+              color: $fontColor;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

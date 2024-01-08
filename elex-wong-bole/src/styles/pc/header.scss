@@ -1,0 +1,103 @@
+  #contact_US{
+    display:block;
+    color:white;
+    font-size:1.2vw;
+    font-weight:700;
+    border-radius:8px;
+    background-color:red;
+    position: fixed;
+    top:26vw;
+    right:0;
+    width: 8.7vw;
+    height: 3vw;
+    text-align: center;
+    line-height: 3vw;
+  }
+
+  #contact_US:before{
+    content:'';
+    width:1.5vw;
+    height:1.5vw;
+    display:inline-block;
+    vertical-align: middle;
+    background-image:url('../assets/commonImage/Click.svg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+  }
+
+
+  #contact_US:hover{
+    cursor:pointer;
+  }
+
+  .main{
+    .navigationTobBarWeb{
+      height:5.4vw;
+
+      #navigationMobile{
+        display:none;
+      }
+
+      .Menu_container{
+        display:none;
+      }
+
+      #imgLogo:hover{
+        cursor:pointer;
+      }
+
+      img{
+        float:left;
+        width:13.5vw;
+        margin-top: 0.7vw;
+        margin-left:9.8vw;
+      }
+
+      .navigationList{
+        display:block;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translateX(-40%) translateY(-50%);
+
+        ul{
+          display:inline-block;
+          padding:0;
+          margin-bottom:0;
+          li{
+            font-size:1vw;
+            display:inline-block;
+
+            a{
+              padding-bottom:5px;
+              color:white;
+            }
+          }
+
+          li:nth-child(6){
+            transform:translateX(0.2vw);
+          }
+          li:hover{
+            cursor:pointer;
+          }
+        }
+
+        #contactUS{
+          display:none;
+        }
+        #languageId{
+          display:none;
+        }
+
+        .contactUsBtn{
+          display:block;
+        }
+
+        #langBtnId{
+          right:5vw;
+          top:50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }

@@ -1,0 +1,200 @@
+@media only screen and (max-width: 700px)
+{
+     body{
+        position: relative;
+        text-align: center;
+        margin: 0;
+        top: 0;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.84px;
+    }
+
+    .background{
+        background-image: url('../img/wap/bit555-webdesign-bg-mobile.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size:cover;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .main{
+        position: relative;
+    }
+
+    /* reuseable */
+    .width15Spacing {
+        width: 2vw;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    /* header */
+    .logo{
+        width: 10vw;
+        height: 10vw;
+    }
+    
+    .main-logo{
+        width: 80%;
+        height: 20vw;
+        margin:0 auto;
+    }
+
+    .header, .header-content{
+        display: flex;
+    }
+
+    .header{
+        position: fixed;
+        width: 100vw;
+        height: 18vh;
+        padding: 4vw;
+    }
+
+    .mr-auto{
+        margin-right: auto;
+    }
+
+    .head-content{
+        margin-left: 5vw;
+    }
+
+    .header-back-button{
+        position: absolute;
+        bottom: 4vw;
+    }
+
+    .header-back-button-bundle {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-back-button-icon {
+        width: 6vw;
+    }
+
+    .header-back-button-label {
+        font-size: 4vw;
+    }
+
+    .scroll-header {
+        background-color: #030617;
+    }
+
+    /* content */
+    .content {
+        padding-top: 40vw;
+    }
+
+    .content-logo-position {
+        width: 100vw;
+    }
+
+    .content-logo-position .content-logo {
+        width: 40%;
+    }
+
+    /* privacy-policy */
+    .privacy-policy {
+        text-align: center;
+        padding: 0 8vw;
+    }
+
+    .privacy-policy-list {
+        padding: 10vw 0;
+        text-align: left;
+    }
+
+    .privacy-policy-list-title {
+        font-size: 3.5vw;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+    
+    .privacy-policy-list-content {
+        font-size: 3vw;
+        font-weight: 100;
+        line-height: 1.5;
+        color: #c7c8ca;
+    }
+
+    .height50px {
+        height: 13vw;
+    }
+
+    ul {
+        list-style: square;
+        padding-left: 3.5vw;
+    }
+
+    /* footer */
+    hr{
+        border-color: rgba(255, 255, 255, 0.279);
+    }
+    
+    .foot-wrap{
+        position: relative;
+        height: 60vw;
+    }
+
+    .footer{
+        padding: 5%;
+        font-size: 5vw;
+    }
+
+    .date {
+        text-align: center;
+    }
+    
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .foot-box {
+        font-size: 4vw;
+    }
+
+    .foot-support {
+        margin-top: 5vw;
+    }
+
+    .redirectable {
+        text-decoration: none;
+        color: white;
+    }
+
+    .foot-btm{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .media-list{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        padding: 5vw 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .mediacon{
+        padding: 2vw 1vw;
+        flex-basis: 16.67%;
+    }
+
+    .mediacon div{
+        width: 10vw;
+        height: 10vw;
+    }
+}

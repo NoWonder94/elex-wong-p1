@@ -1,0 +1,262 @@
+{
+	"gameRelated":[
+    {
+      "id":"2",
+      "name":"보러사천마작 공식적으로 출시",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/bolesichuan/1.png",
+      "info":"첫번째 체스 게임이《판다사천마작》공식적으로 출시하여 혈류성허 및 혈전도지등 주류 게임 포함되어 더 자극적이고 즐거운 게임입니다！",
+      "popular":true,
+      "date":"17/9/2018",
+      "month":"9/2019",
+      "dateFormat":"9/17/2018",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/17.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/bolesichuan/1.png"
+    },
+		{
+      "id":"10",
+      "name":"보러뉴뉴 공식적으로 출시",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/boleniuniu/small.jpg",
+      "info":"기대에 따라 보러게임™의 인기있는 체스 게임 '보러뉴뉴'가 마침내 출시되었다！",
+      "popular":false,
+      "date":"5/1/2019",
+      "month":"1/2019",
+      "dateFormat":"1/5/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/5.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/boleniuniu/small.jpg"
+    },
+    {
+      "id":"11",
+      "name":"보러삼공 뜨거운 출시",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/sangong/small.jpg",
+      "info":"보러게임™의 포커 게임인 '보러삼공'이 공식적으로 출시되었다！다양한 주류 플랫폼 지원가능. ",
+      "popular":false,
+      "date":"10/1/2019",
+      "month":"1/2019",
+      "dateFormat":"1/10/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/10.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/sangong/small.jpg"
+    },
+    {
+      "id":"16",
+      "name":"Bole Golden Flower Grand Launched",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/zhajinhua/607.jpg",
+      "popular":true,
+      "info":"Bole Golden Flower is a multiplayer poker game that is easy to use and tests the player's courage. Come and experience the charm of Bole fried golden flowers together!",
+      "date":"21/4/2019",
+      "month":"4/2019",
+      "dateFormat":"4/21/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/21.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/zhajinhua/607.jpg"
+    }
+  ],
+	"gameNewsRelated":[
+		{
+			"id":"6",
+			"name":"보러게임은 마닐라공항에 착륙",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/airport/small.jpg",
+      "info":"보러게임은 탄탄한 실력과 좋은 평판 그리고 업계에서 구축한 좋은 브랜드 이미지를 통해 오늘에 보러게임 또한 필리핀의 국제간판-마닐라국제공항에 올립니다.",
+      "popular":false,
+      "date":"29/10/2018",
+      "month":"10/2018",
+      "dateFormat":"10/29/2018",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/29.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/airport/small.jpg"
+		},
+		{
+			"id":"3",
+      "name":"보러게임™과Ezugi 합력 계약 채결",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/tianjiu/news1.png",
+      "info":"보러게임™과Ezugi회사는 합력 공식적으로 채결했다.Ezugi는 온라인 및 오프라인 운영자에게 모바일 및 온라인 게임 솔루션을 제공합니다。",
+			"popular":false,
+      "date":"24/9/2018",
+      "month":"9/2018",
+      "dateFormat":"9/24/2018",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/24.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/tianjiu/news1.png"
+    },
+		{
+      "id":"5",
+      "name":"보러게임™과 APLUS 함께 손잡고 윈윈 창조",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/APLUS/1a.png",
+      "info":"보러게임™는APLUS와 파트너쉽 발표했따.APLUS는 웹 디자인, 시스템 개발 및 기술 지원 서비스를 통합 한 회사입니다。",
+      "popular":false,
+      "date":"15/10/2018",
+      "month":"10/2018",
+      "dateFormat":"10/15/2018",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/15.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/APLUS/1a.png"
+    },
+    {
+      "id":"8",
+      "name":"보러게임은 뉴욕 타임스 스퀘어에 착륙,나스닥 대형 스크린으로 뛰어 올랐습니다",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/bolegaming/cotent_01.jpg",
+      "info":"미국 맨하탄에 위치한 타임 스퀘어는 전 세계 사람들이 모여 드는 장소이며‘세계의 교차로’로 알려져 있습니다'。",
+      "popular":true,
+      "date":"21/11/2018",
+      "month":"11/2018",
+      "dateFormat":"11/21/2018",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/21.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/bolegaming/cotent_01.jpg"
+    },
+		{
+      "id":"9",
+      "name":"보러게임은 iTech Labs 국제기관의 인증을 받았다",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/Itechlabs/Image1.jpg",
+      "popular":true,
+      "info":"보러게임은 국제 기관인 iTech Labs의 난수 생성 (RNG) 인증을 공식적으로 통과했으며 게임의 공정성을 보장하고 산업 규격 및 기술 사양을 충족시키기 위해 iTech Labs에서 발급 한 인증 인증서를 획득했습니다",
+      "date":"2/1/2019",
+      "month":"1/2019",
+      "dateFormat":"1/2/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/2.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/Itechlabs/Image1.jpg"
+    },
+    {
+      "id":"14",
+      "name":"BoleGaming ™ carts appeared at Manila Airport",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/blcarts/cover.jpg",
+      "popular":true,
+      "info":"Hundreds of airport carts from BoleGaming appeared at Manila International Airport, which caused many tourists to watch and discussion.",
+      "date":"15/3/2019",
+      "month":"3/2019",
+      "dateFormat":"3/15/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/15.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/blcarts/cover.jpg"
+    },
+    {
+      "id":"15",
+      "name":"BoleGaming™ announces partnership with Rubic Play™",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/rubic/rubicplay_607.png",
+      "popular":true,
+      "info":"BoleGaming™ is pleased to announce a formal cooperation agreement with Rubic Play™, hoping to provide better service to customers and achieve win-win results.",
+      "date":"28/3/2019",
+      "month":"3/2019",
+      "dateFormat":"3/28/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/28.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/rubic/rubicplay_607.png"
+    },
+    {
+      "id":"17",
+      "name":"BoleGaming™ cooperates with ITGO™ to create a win-win situation in the future",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/itgo/607.png",
+      "popular":true,
+      "info":"BoleGaming™ announced a partnership with ITGO™ to provide better product and service to customers.",
+      "date":"18/4/2019",
+      "month":"4/2019",
+      "dateFormat":"4/18/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/18.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/itgo/607.png"
+    }
+  ],
+  "activitiesRelated":[
+    {
+      "id":"7",
+      "name":"스타들의 콘서트 완미폐막<br>보러게임은 당신과 함께 아름다운 밤을 보내자",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/concert/small.jpg",
+      "info":"보러게임™  주로 후원합찬한「치청춘•만나서 반가워요」콘서터는 완별하게 폐막됐고 열정한 퍤들과 함께 량징루、A-Lin등 가수들의 훌룡한 공연을 즐거운 보러가 우리와 함께 멋진 밤을 보내 주신분들께 감사합니다.",
+      "popular":false,
+      "date":"1/11/2018",
+      "month":"11/2018",
+      "dateFormat":"11/1/2018",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/1.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/concert/small.jpg"
+    },
+    {
+      "id":"1",
+      "name":"량징루 마닐라 콘서트를 성심성의껏 후원합찬",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/liangjinru/big_small_same.jpg",
+      "info":"유명한 중국 가수 량징루는 2018 년 10 월 필리핀의 수도 마닐라에서 개인 콘서트가 열릴 예정이며 그 자리에서 우리 게임을 보여줄 예정입니다.",
+      "popular":false,
+      "date":"10/9/2018",
+      "month":"9/2018",
+      "dateFormat":"9/10/2018",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/10.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/liangjinru/big_small_same.jpg"
+    },
+    {
+      "id":"4",
+      "name":"보러게임™은 초대를 받아 2019 년 런던 ICE 박람회에 참가했다",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/ICE/Image1.png",
+      "info":"ICE Totally Gaming은 150개국 이상에서 3 만명이 넘는 사람들 참석한 업계 최대의 연례 행사입니다.",
+      "popular":true,
+      "date":"8/10/2018",
+      "month":"10/2018",
+      "dateFormat":"10/8/2018",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/8.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/ICE/Image1.png"
+    },
+	  {
+      "id":"12",
+      "name":"영국ICE박람회 폐막,보러게임의 실력 인증",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/Bole/main.jpg",
+      "info":"2019 년 세계 최대 엔터테인먼트 비디오 게임 박람회 인 ICE Totally Gaming이 영국 런던에서 성공적으로 종료되었다.보러게임은 초대를 받아 참가했어 업계에 혁신적이고 품질 좋은 제품과 서비스를 제공합니다",
+      "popular":false,
+      "date":"10/2/2019",
+      "month":"2/2019",
+      "dateFormat":"2/10/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/10.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/Bole/main.jpg"
+    },
+    {
+      "id":"13",
+      "name":"보러게임과 마카오G2E ASIA에서 만납시",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/ge2/ge2.png",
+      "info":"보러게임은 2019 년 5 월 21 일부터 23 일까지 베네 치안 마카오 호텔에서 열리는 G2E ASIA 박람회에 참가할 예정입니다.",
+      "popular":false,
+      "date":"25/2/2019",
+      "month":"2/2019",
+      "dateFormat":"2/25/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/25.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/ge2/ge2.png"
+    },
+    {
+      "id":"18",
+      "name":"BoleGaming is Well Received in G2E Asia 2019",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/g2e/g2e_cover.jpg",
+      "popular":true,
+      "info":"BoleGaming brought mahjong and poker games to everyone at G2E Asia 2019, which was well received by industry and visitors.",
+      "date":"28/5/2019",
+      "month":"5/2019",
+      "dateFormat":"5/28/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/28.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/g2e/g2e_cover.jpg"
+    },
+    {
+      "id":"19",
+      "name":"Asia's Sexiest Magician Fay Will Perform for BoleGaming at PAGE",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/fayprince/cover.png",
+      "popular":true,
+      "info":"BoleGaming invited magician Fay who is known as the 'Asia's sexiest magician girl' to perform magic show at the booth on 7/12-13.",
+      "date":"14/6/2019",
+      "month":"6/2019",
+      "dateFormat":"6/14/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/14.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/fayprince/cover.png"
+    },
+    {
+      "id":"20",
+      "name":"The Wonderful Review of BoleGaming in PAGE 2019 ",
+      "imgsrc":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/page2019/cover.jpg",
+      "popular":true,
+      "info":"In PAGE 2019, BoleGaming revealed the latest two local Mahjong games, such as 'Hunan Mahjong' and 'Guangdong Mahjong', hoping to give players more choices and be closer to their local gameplay.",
+      "date":"23/7/2019",
+      "month":"7/2019",
+      "dateFormat":"7/23/2019",
+      "day":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/date/23.png",
+      "imglogo":"https://bolegaming.oss-cn-hongkong.aliyuncs.com/static/image/inquiry/page2019/cover.jpg"
+    }
+  ],
+  "popular":[
+    {
+      "id":"4",
+      "name":"보러게임™은 초대를 받아 2019 년 런던 ICE 박람회에 참가했다"
+    },
+    {
+      "id":"2",
+      "name":"보러 사천마작 공식적으로 출시"
+    },
+    {
+      "id":"8",
+      "name":"보러게임은 뉴욕 타임스 스퀘어에 착륙,나스닥 대형 스크린으로 뛰어 올랐다"
+    }
+  ]
+}

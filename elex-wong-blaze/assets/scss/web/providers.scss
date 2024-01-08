@@ -1,0 +1,208 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1201px){
+  .providers{
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 30px;
+    color: $white;
+    min-height: 90vh;
+
+    .providers-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .providers-header-left{
+        .title {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+
+          i{
+            color: $lighterGrey;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 5px;
+            cursor: pointer;
+          }
+
+          .providers-header-title{
+            font-size: 22px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .providers-header-right{
+        display: flex;
+        column-gap: 10px;
+
+        // search, sort
+        .el-input__inner{
+          font-size: 12px;
+          color: $white;
+          border: 1px solid $separator;
+          background: $darkerGrey;
+          border-radius: 4px;
+          padding: 0 16px;
+        }
+
+        // search
+        .search{
+          .el-input{
+            width: 220px;
+
+            .el-input__inner{
+              padding-left: 32px;
+            }
+          }
+        }
+
+        // sort
+        .el-select{
+          .el-input__inner{
+            height: 30px;
+            padding: 0 0 0 90px;
+          }
+
+          .el-input__icon{
+            line-height: 30px;
+          }
+        }
+
+        // sort
+        .sort-select{
+          width: 160px;
+          font-size: 12px;
+          color: $lightGrey;
+
+          .el-select-dropdown__item.selected::after{
+            content: "";
+          }
+
+          .el-select-dropdown__item.selected{
+            color: $red;
+          }
+
+          .el-select-dropdown__item{
+            padding: 6px 20px;
+            line-height: 20px;
+            font-size: 12px;
+          }
+
+          .el-select__tags{
+            display: none;
+          }
+
+          .el-input__prefix{
+            display: flex;
+            align-items: center;
+            padding-left: 12px;
+            font-size: 12px;
+            cursor: pointer;
+
+            .length{
+              color: $white;
+              padding-left: 4px;
+            }
+          }
+        }
+      }
+    }
+
+    .providers-content{
+      padding-top: 30px;
+
+      .provider-list{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: space-between;
+        gap: 40px 24px;
+
+        .provider-item{
+          position: relative;
+
+          .provider-box{
+            background-color: $background;
+            display: grid;
+            grid-template-rows: 1.3fr 1fr;
+            row-gap: 5px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            height: 100px;
+            cursor: pointer;
+
+            .image{
+              align-self: flex-end;
+
+              img{
+                width: 80px;
+                height: auto;
+              }
+            }
+
+            .title{
+              font-size: 16px;
+              font-weight: bold;
+              text-align: center;
+              line-height: 1.8;
+              align-self: flex-end;
+            }
+
+            .total{
+              color: $lightGrey;
+              font-size: 14px;
+              text-align: center;
+              align-self: flex-start;
+            }
+
+            &:hover{
+              background-color: $backgroundFour;
+              transform: scale(1.04);
+            }
+          }
+        }
+      }
+
+      .view-more{
+        padding-top: 50px;
+        text-align: center;
+
+        .el-progress{
+          width: 186px;
+          margin: 0 auto;
+          margin-bottom: 10px;
+
+          .el-progress-bar__outer{
+            background-color: $background;
+          }
+        }
+
+        .display{
+          padding-bottom: 20px;
+        }
+
+        .load-more{
+          width: 188px;
+          margin: 0 auto;
+          font-size: 12px;
+          color: $blueGrey;
+          background-color: $background;
+          border: 1px solid $separator;
+          border-radius: 3px;
+          padding: 12px 30px;
+          cursor: pointer;
+
+          &:hover{
+            background-color: $darkBackground;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

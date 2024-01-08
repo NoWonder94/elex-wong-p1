@@ -1,0 +1,14 @@
+{
+  "ver": "4.0.22",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "aaed8e36-6569-422f-b8ec-1ed7239d3273",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "importAsPlugin": false,
+    "moduleId": "project:///assets/scripts/components/localization/LocalizationSpriteFrame.js",
+    "importerSettings": 4,
+    "simulateGlobals": []
+  }
+}

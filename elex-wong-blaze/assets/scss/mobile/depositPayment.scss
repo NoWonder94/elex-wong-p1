@@ -1,0 +1,229 @@
+@import '../base.scss';
+
+.depositPayment-component {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: $white;
+
+  .top {
+    flex: 1 1;
+    padding: 20px 0;
+
+    .form-title {
+      margin: 16px 0px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.78;
+      text-align: center;
+      letter-spacing: -0.44px;
+    }
+
+    .form {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+
+      .payment-hints-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        font-size: 13px;
+        color: $lightGrey;
+      }
+
+      .form-input{
+        position: relative;
+        background-color: $darkBackground;
+        border-radius: 4px;
+
+        input{
+          color: $white;
+          font-size: 12px;
+          height: 48px;
+          padding: 22px 20px 8px;
+          width: 100%;
+          border-radius: 4px;
+          background-color: $darkBackground;
+
+          &:focus{
+            outline: none;
+          }
+        }
+
+        label{
+          position: absolute;
+          pointer-events: none;
+          font-size: 12px;
+          color: $lightGrey;
+          left: 20px;
+          top: 15px;
+          transition: 0.2s ease all;
+        }
+
+        input:focus ~ label, input:not(:placeholder-shown) ~ label, .select-active{
+          top: 8px;
+          font-size: 10px;
+        }
+
+        select{
+          color: $white;
+          font-size: 12px;
+          padding: 22px 20px 8px;
+          width: 100%;
+          background-color: $darkBackground;
+          border-radius: 4px;
+
+          option{
+            font-size: 12px;
+          }
+
+          &:focus{
+            outline: none;
+          }
+        }
+
+        i{
+          position: absolute;
+          right: 20px;
+          top: 16px;
+        }
+      }
+
+      .error-text {
+        color: $red;
+        font-size: 12px;
+        padding: 10px;
+      }
+
+      .form-radio{
+        font-size: 12px;
+        padding: 0 12px;
+
+        .radio-label{
+          color: $lightGrey;
+          font-weight: bold;
+          padding-bottom: 10px;
+        }
+
+        .el-radio{
+          color: $white;
+
+          .el-radio__label{
+            font-size: 12px;
+          }
+
+          .el-radio__input.is-checked .el-radio__inner{
+            border-color: $red;
+            background: $red;
+          }
+
+          .el-radio__input.is-checked+.el-radio__label{
+            color: $red;
+          }
+
+          .el-radio__inner:hover{
+            border-color: $red;
+          }
+        }
+      }
+
+      .amount-buttons-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .amount-button {
+          flex-basis: 33%;
+          height: 40px;
+          border: 1px solid $separator;
+          border-radius: 4px;
+          background: $background;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .depositPayment-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .return-button {
+      width: 50%;
+      height: 48px;
+      max-width: unset;
+      padding: 0;
+      border: 1px solid $separator;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2;
+      letter-spacing: normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .confirm-button {
+      height: 48px;
+      width: 50%;
+      max-width: unset;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2;
+      letter-spacing: normal;
+      padding: 0;
+      background: $red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .inactive {
+      background-color: transparent;
+      border: 1px solid $separator;
+      color: $separator;
+      cursor: not-allowed;
+    }
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .depositPayment-button-container {
+    margin-bottom: 23vw;
+  }
+}

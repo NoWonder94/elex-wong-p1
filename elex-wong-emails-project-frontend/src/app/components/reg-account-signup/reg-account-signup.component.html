@@ -1,0 +1,36 @@
+<div class="root flex-col-center">
+  <div class="section-title">
+    <h2>Create your Email3 Account</h2>
+  </div>
+
+  <!-- Form -->
+  <div class="row content justify-content-center">
+    <div>
+      <div class="altxs">
+        <div class="data-info-box">
+          <p class="heading">Wallet address</p>
+          <p class="text">{{ walletAddress }}</p>
+        </div>
+
+        <div class="data-info-box">
+          <p class="heading">Forward Email</p>
+          <p class="text"></p>
+          <input type="text" name="forwarding" [(ngModel)]="forwardEmail" class="form-control"
+            placeholder="Input forward email address">
+          <div class="example">** EXAMPLE: bob@gmail.com **</div>
+        </div>
+      </div>
+
+      <btn-loader title="Register and get the airdrop" class="margin-top-50" (clicked)="signUp()" [busy]="signingUp"
+        [disabled]="!readyToCreateAccount()">
+      </btn-loader>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row content justify-content-center">
+    <div class="col-lg-8">
+      Sorry, registration is currently open only from referral links from existing users.
+      Don't hesitate to check our Twitter account to maybe find referral links in some threads!
+    </div>
+  </div> -->

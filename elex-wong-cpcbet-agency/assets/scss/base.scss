@@ -1,0 +1,154 @@
+@import 'assets/css/font-awesome-6.0.0/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap');
+
+/*========================= COLOR =========================*/
+$primaryColor: #012a3a;
+$secondaryColor: #6dd7fd;
+// $primaryAltColor:  #003937;
+$lightPrimaryColor: #bef0ff;
+// $lighterPrimaryColor: #90FFAE;
+$bgColor: #FDFDFF;
+$secondarybgColor: #012a3a;
+$fontColor: #393D3F;
+$fontColor90: #393D3FCC;
+$scfontColor: #FDFDFF;
+$warning: #EA7166;
+$green:#36D88D;
+$adminRole: #A771FF;
+$primaryColorOpc50: #012a3a80;
+$primaryColorOpc20: #012a3a3b;
+$modalOverlayColorOpc50: rgba(0, 0, 0, .5);
+$blackOpacity20: rgba(0, 0, 0, .2);
+$blackOpacity40: rgba(0, 0, 0, .4);
+$whiteOpacity20: rgba(255, 255, 255, .2);
+$whiteOpacity30: rgba(255, 255, 255, .3);
+$fontColorOpc50: #393d3f7e;
+$lightgrey: #FAF7FA;
+$grey: #C9C9C9;
+$black: #000000;
+/*========================= REPONSIVE SIZE ================*/
+$pcMinWidth: 700px;
+$mobileMaxWidth: 700px;
+
+/*========================= FILL BUTTON ===================*/
+.fill-box {
+  color: $fontColor;
+  background-color: $secondaryColor;
+}
+
+/*========================= BORDER BUTTON =================*/
+.border-box {
+  color: $fontColor;
+  border: 1px solid $blackOpacity40;
+  background-color: transparent;
+}
+
+/*========================= GRADIENT COLOR ================*/
+.gradientBgColor {
+  background-image: linear-gradient(to right,  $secondaryColor,$lightPrimaryColor);
+}
+
+/*========================= NUNBER font only ==============*/
+.numberFont {
+  font-family: 'B612 Mono', monospace;
+}
+
+/* date filter modal animation */
+.slideUp-enter-active,
+.slideUp-leave-active {
+  transition: all 0.5s ease-out;
+}
+
+.slideUp-enter,
+.slideUp-leave-active {
+  transform: translateY(100%);
+}
+
+/* fade animation */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .3s linear;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* pop animation */
+.pop-enter-active,
+.pop-leave-active {
+  transition: transform 0.4s cubic-bezier(0.5, 0, 0.5, 1), opacity 0.4s linear;
+}
+
+.pop-enter,
+.pop-leave-to {
+  opacity: 0;
+  transform: scale(0.3) translateY(-50%);
+}
+
+body {
+  background-color: $bgColor;
+  color: $fontColor;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: $pcMinWidth) {
+  .web {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .web {
+    display: none;
+  }
+
+  section {
+    padding: 0vw 4vw;
+    padding-top: 20vw;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+.el-table {
+  background-color: $bgColor;
+  color: $fontColor ;
+
+  tr,
+  tr:hover>td,
+  td,
+  th.el-table__cell {
+    background-color: $bgColor !important;
+  }
+
+  td {
+    border-bottom: none;
+  }
+
+  thead,
+  thead tr,
+  thead td{
+    color: $fontColor !important;
+    background-color: $blackOpacity40 !important;
+  }
+
+  .el-table__footer-wrapper {
+
+    thead,
+    tr,
+    tr:hover>td,
+    td,
+    th.el-table__cell {
+      // background-color: $primaryColorOpc50 !important;
+    }
+  }
+
+}

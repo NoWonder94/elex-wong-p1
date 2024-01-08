@@ -1,0 +1,237 @@
+@import "../base.scss";
+
+@media only screen and (min-width: 1201px) {
+  .rewards {
+    position: relative;
+    color: $white;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 30px;
+
+    .rewards-section{
+      background-color: $background;
+      border-radius: 4px;
+    }
+
+    .web-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 24px 32px;
+      border-bottom: 1px solid $separator;
+
+      .title {
+        margin-bottom: 8px;
+        font-size: 20px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+      }
+
+      .desc {
+        font-size: 12px;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.83;
+        letter-spacing: normal;
+        color: $lightGrey;
+      }
+
+      .btn {
+        background-color: $red;
+        color: $white;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        align-self: center;
+        cursor: pointer;
+      }
+    }
+
+    .rewards-content {
+      padding: 32px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 20px;
+
+      .rewards-subcontainer {
+        background-color: $backgroundTwo;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 4px;
+        min-height: 400px;
+        text-align: center;
+
+        .rewards-subheader {
+          display: flex;
+          flex-direction: column;
+          flex-grow: 1;
+          align-items: center;
+
+          .rewards-subimage {
+            height: 100px;
+          }
+
+          .rewards-subtext {
+            .rewards-subtitle {
+              font-size: 16px;
+              font-weight: 600;
+              padding-bottom: 10px;
+              padding: 15px 0;
+            }
+
+            .rewards-subdesc {
+              color: $darkgrey;
+              font-size: 12px;
+              font-weight: 400;
+              margin: 8px 0 24px;
+            }
+          }
+        }
+      }
+
+      .rewards-deposit-footer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        width: 100%;
+        min-height: 80px;
+
+        .rewards-deposit-countdown {
+          font-size: 12px;
+          color: $lightGrey;
+          font-weight: 600;
+          align-self: center;
+          margin-top: 20px;
+        }
+
+        .rewards-deposit-btn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-color: $red;
+          color: $white;
+          border-radius: 4px;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 600;
+          height: 32px;
+          cursor: pointer;
+        }
+      }
+
+      .rewards-footer{
+        min-height: 80px;
+
+        .rewards-refer-btn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-color: $red;
+          color: $white;
+          border-radius: 4px;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 600;
+          height: 32px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .el-dialog__wrapper {
+      background-color: rgba(12, 21, 29, 0.5);
+
+      .promocode-dialog {
+        width: 400px;
+        background-color: $background;
+
+        .el-dialog__body{
+          padding: 0px 30px 30px;
+          color: $white;
+
+          .el-dialog__headerbtn{
+            &:hover{
+              color: $white;
+            }
+          }
+
+          .dialog-content{
+            .dialog-title{
+              font-size: 20px;
+              text-align: center;
+              padding-bottom: 60px;
+            }
+
+            .dialog-input{
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              gap: 20px 0;
+
+              .input{
+                position: relative;
+
+                input{
+                  color: $white;
+                  font-size: 12px;
+                  padding: 18px 15px 12px;
+                  width: 100%;
+                  border-radius: 4px;
+                  background-color: $darkBackground;
+
+                  &:focus{
+                    outline: none;
+                  }
+                }
+
+                label{
+                  position: absolute;
+                  pointer-events: none;
+                  font-size: 10px;
+                  font-weight: bold;
+                  color: $lightGrey;
+                  left: 15px;
+                  top: 15px;
+                  transition: 0.2s ease all;
+                }
+
+                i{
+                  position: absolute;
+                  font-size: 10px;
+                  font-weight: bold;
+                  color: $lightGrey;
+                  right: 15px;
+                  top: 20px;
+                  transition: 0.2s ease all;
+                  cursor: pointer;
+                }
+
+                input:focus ~ label, input:not(:placeholder-shown) ~ label, .select-active{
+                  top: 6px;
+                  font-size: 8px;
+                }
+              }
+            }
+
+            .dialog-button{
+              max-width: 140px;
+              margin: 40px auto 0;
+              padding: 15px;
+              text-align: center;
+              background-color: $red;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

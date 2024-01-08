@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CBZZScene3Skin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="cbzz_freebg_png" x="0" y="0"/>
+	<e:Image source="cbzz_scroller_kuang_png" horizontalCenter="0" verticalCenter="-44.5"/>
+	<e:Group y="71.96" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Group id="group1" width="186" height="528" x="0" y="0">
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon1" horizontalCenter="0" y="0"/>
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon2" y="176" horizontalCenter="0"/>
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon3" y="352" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group2" width="186" height="528" x="186" y="0">
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon4" y="0" horizontalCenter="0"/>
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon5" y="176" horizontalCenter="0"/>
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon6" y="352" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group3" width="186" height="528" x="372" y="0">
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon7" y="0" horizontalCenter="0"/>
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon8" y="176" horizontalCenter="0"/>
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon9" y="352" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group4" width="186" height="528" x="558" y="0">
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon10" y="0" horizontalCenter="0"/>
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon11" y="176" horizontalCenter="0"/>
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon12" y="352" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group5" width="186" height="528" x="744" y="0">
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon13" horizontalCenter="0"/>
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon14" y="176" horizontalCenter="0"/>
+		<cbzz:cbzzIcon xmlns:cbzz="cbzz.*" id="icon15" y="352" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Image source="cbzz_maintitle_png" y="5" horizontalCenter="0"/>
+    
+</e:Skin>

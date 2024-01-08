@@ -1,0 +1,254 @@
+@import '../Base.scss';
+
+$contentBgColor: #FFFFFF;
+$headingButtonColor: #B7086D;
+$contentTitle: #1E1F21;
+$contentSubtitle: #282828;
+
+@media only screen and (min-width: 700px) {
+  .bolebit {
+    position: relative;
+    width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 50px;
+    padding-bottom: 150px;
+
+    .bolebit-title {
+      position: relative;
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 30px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .bolebit-title-logo {
+        width: 150px;
+        padding-bottom: 20px;
+      }
+
+      .bolebit-title {
+        padding-top: 10px;
+        color: $FontPrimaryColor;
+        font-size: 20px;
+      }
+    }
+
+    .bolebit-heading {
+      position: relative;
+      width: 100%;
+      padding: 30px 130px;
+      background: $contentBgColor;
+      border-radius: 20px;
+      text-align: center;
+
+      .bolebit-heading-title {
+        font-size: 26px;
+        font-weight: bold;
+        color: $contentTitle;
+      }
+
+      .bolebit-heading-description {
+        padding: 20px 150px;
+        padding-bottom: 30px;
+        font-size: 15px;
+        color: $contentSubtitle;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .bolebit-heading-button {
+        width: 100%;
+        padding: 10px 0px;
+        background: $headingButtonColor;
+        border-radius: 30px;
+        color: $FontPrimaryColor;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    }
+
+    .bolebit-features {
+      position: relative;
+      width: 100%;
+      margin-top: 40px;
+      padding: 30px 130px;
+      background: $contentBgColor;
+      border-radius: 20px;
+      text-align: center;
+
+      .bolebit-features-title {
+        font-size: 26px;
+        font-weight: bold;
+        color: $contentTitle;
+      }
+
+      .bolebit-features-description {
+        padding: 20px 150px;
+        padding-bottom: 40px;
+        font-size: 15px;
+        color: $contentSubtitle;
+      }
+
+      .bolebit-features-coins {
+        position: relative;
+        width: 100%;
+        display: flex;
+        // justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .bolebit-features-coins-img {
+          width: 70px;
+          margin-right: 20px;
+          margin-bottom: 30px;
+
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+
+    .bolebit-advantage {
+      position: relative;
+      width: 100%;
+      margin-top: 40px;
+      padding: 50px 150px;
+      background: $contentBgColor;
+      border-radius: 20px;
+      text-align: center;
+
+      .bolebit-advantage-title {
+        font-size: 26px;
+        font-weight: bold;
+        color: $contentTitle;
+      }
+
+      .bolebit-advantage-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 80px;
+        grid-row-gap: 50px;
+        text-align: left;
+        padding-top: 50px;
+        padding-bottom: 70px;
+        padding-left: 30px;
+
+        .bolebit-advantage-card {
+          .bolebit-advantage-card-icon {
+            width: 30px;
+          }
+
+          .bolebit-advantage-card-content {
+            padding-top: 15px;
+            padding-right: 40px;
+
+            .bolebit-advantage-card-title {
+              font-size: 17px;
+              font-weight: bold;
+              color: $contentSubtitle;
+            }
+
+            .bolebit-advantage-card-subtitle {
+              font-size: 15px;
+              color: $contentSubtitle;
+            }
+          }
+
+          &:nth-child(2).bolebit-advantage-card {
+            .bolebit-advantage-card-icon {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+
+    .bolebit-overview {
+      position: relative;
+      width: 100%;
+      margin-top: 40px;
+      padding: 50px 150px;
+      background: $contentBgColor;
+      border-radius: 20px;
+      text-align: center;
+
+      .bolebit-overview-title {
+        font-size: 26px;
+        font-weight: bold;
+        color: $contentTitle;
+      }
+
+      .bolebit-overview-graph {
+        position: relative;
+        margin-top: 40px;
+        display: flex;
+        align-items: flex-start;
+
+        .bolebit-overview-graph-content {
+          width: 300px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .overview-graph-year {
+            font-weight: bold;
+            padding-bottom: 10px;
+            font-size: 18px;
+          }
+
+          .overview-graph-arrow {
+            width: 20px;
+            padding-bottom: 5px;
+          }
+
+          .overview-graph-progress {
+            width: 100%;
+            height: 20px;
+          }
+
+          .overview-graph-line {
+            width: 1px;
+            height: 50px;
+            background: #f6aeaf;
+            margin: 10px 0px;
+          }
+
+          .overview-graph-about {
+            // padding: 0px 5px;
+            font-weight: bold;
+            font-size: 15px;
+          }
+
+          .phase1 {
+            background: #FFB9B9;
+          }
+
+          .phase2 {
+            background: #FF8D8D;
+          }
+
+          .phase3 {
+            background: #FF6E6F;
+          }
+
+          .phase4 {
+            background: #EC5557;
+          }
+
+          .phase5 {
+            background: #D54749;
+          }
+        }
+      }
+    }
+  }
+}

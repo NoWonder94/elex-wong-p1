@@ -1,0 +1,32 @@
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section>
+
+<main id="main">
+  <section id="registersection" class="about">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+      <div class="flex-col-center row content col-lg-8 offset-lg-2">
+        <div class="section-title">
+          <h2>Twitter authentication</h2>
+        </div>
+
+        <div *ngIf="!authCompleted && !authDenied" class="text-align-center">
+          Checking a few things...
+        </div>
+
+        <div *ngIf="authDenied" class="flex-col-center">
+          Authorization refused, so we can't connect your Twitter account to your emails.com account.
+        </div>
+
+        <div *ngIf="authCompleted && twitterUserName" class="text-align-center">
+          All right <span class="username">@{{ twitterUserName }}</span> ~ Redirecting soon...
+        </div>
+
+        <div *ngIf="authCompleted && !twitterUserName" class="text-align-center">
+          There is something wrong buddy, couln't find your twitter username...
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

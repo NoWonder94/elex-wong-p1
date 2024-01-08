@@ -1,0 +1,131 @@
+@import '../base.scss';
+
+@media only screen and (max-width:599px){
+  .neymar-container{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    color: #FFF;
+    width: calc(100vw);
+    .neymar-web{
+      display: none;
+    }
+
+    img{
+      width: 100%;
+    }
+    .neymar_header{
+      gap: 1em;
+      display: flex;
+      align-items: center;
+      margin: 1em 0;
+    }
+    .neymar-car-container{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .neymar-button{
+        background-color: #F12C4C;
+        padding: 1em;
+        border-radius: 0.5em;
+        width: 100%;
+      }
+      .neymar-car-container-item{
+        margin: auto 0;
+        padding: 2em;
+        .healine{
+          text-align: center;
+          color: rgb(241, 44, 76);
+          text-transform: uppercase;
+        }
+        .title{
+          font-size: 2em;
+          font-weight: bold;
+          padding: 0.5em 0;
+        }
+      }
+
+    }
+    .article{
+      background-color: rgb(26, 36, 45);
+      padding: 1em;
+      width: 100%;
+      .article-end{
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 0.5em 0;
+        text-align: center;
+      }
+
+    }
+    .reverse{
+      flex-direction: row-reverse;
+    }
+  }
+}
+@media only screen and (min-width:600px) and (max-width:800px) {
+  .neymar-container{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    color: #FFF;
+    width: calc(100vw);
+    .neymar-web{
+      display: none;
+    }
+
+    img{
+      width: 100%;
+    }
+    .neymar_header{
+      gap: 1em;
+      display: flex;
+      align-items: center;
+      margin: 1em 0;
+    }
+    .neymar-car-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .neymar-button{
+        background-color: #F12C4C;
+        padding: 1em;
+        border-radius: 0.5em;
+      }
+      .neymar-car-container-item{
+        margin: auto 0;
+        padding: 2em;
+        .healine{
+          text-align: center;
+          color: rgb(241, 44, 76);
+          text-transform: uppercase;
+        }
+        .title{
+          font-size: 2em;
+          font-weight: bold;
+          padding: 0.5em 0;
+        }
+      }
+
+    }
+    .article{
+      background-color: rgb(26, 36, 45);
+      padding: 0.5em;
+      width: 100%;
+      display: flex;
+      gap: 2em;
+      .article-end{
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 0.5em 0;
+        text-align: center;
+      }
+
+    }
+    .reverse{
+      flex-direction: row-reverse;
+    }
+  }
+}
+

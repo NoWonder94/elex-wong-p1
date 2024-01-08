@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DNTGSence1Skin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="resizeGroup" left="0" right="0" top="0" bottom="0">
+		<e:Group left="0" right="0" top="0" bottom="0">
+			<e:Image source="dntg_scene1_bg2_jpg" top="0" right="0" left="0" bottom="0"/>
+			<e:Image source="dntg_scene1_bg_png" left="0" right="0" top="0" bottom="0"/>
+			<e:Group height="110" bottom="0" left="0" right="0">
+				<e:Image source="dntg_scene1_image1_png" x="0" y="0" anchorOffsetX="0" width="1280" scaleX="1" scaleY="1"/>
+				<e:Group width="230" height="109" y="1" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0">
+					<e:Image y="11" source="dntg_scene1_score_db_png" scaleX="1" scaleY="1" horizontalCenter="0"/>
+					<e:Label text="赢得分数" y="79" scaleX="1" scaleY="1" textColor="0xb5afaf" size="20" fontFamily="SimHei" horizontalCenter="0"/>
+					<e:Label id="winGold" text="111" y="22" scaleX="1" scaleY="1" textColor="0xe6aa4a" fontFamily="SimHei" size="24" textAlign="center" horizontalCenter="0"/>
+				</e:Group>
+			</e:Group>
+			<e:Group anchorOffsetX="0" anchorOffsetY="0" left="180" right="180" top="91" bottom="108">
+				<e:Group id="group1" width="180" height="521" x="0" y="0">
+					<e:Image id="icon1" width="172" height="172" y="0" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image id="icon2" width="172" height="172" y="172" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image id="icon3" width="172" height="172" y="344" horizontalCenter="0" source="dntg_icon_10_png"/>
+				</e:Group>
+				<e:Group id="group2" width="180" height="521" x="180" y="0">
+					<e:Image id="icon4" width="172" height="172" y="0" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image id="icon5" width="172" height="172" y="172" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image id="icon6" width="172" height="172" y="344" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image source="dntg_main_line_png" x="-4" y="24"/>
+				</e:Group>
+				<e:Group id="group3" width="180" height="521" x="360" y="0" scaleX="1" scaleY="1">
+					<e:Image id="icon7" width="172" height="172" y="0" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image id="icon8" width="172" height="172" y="172" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image id="icon9" width="172" height="172" y="344" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image source="dntg_main_line_png" x="-4" y="24"/>
+				</e:Group>
+				<e:Group id="group4" width="180" height="521" x="540" y="0">
+					<e:Image id="icon10" width="172" height="172" y="0" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image id="icon11" width="172" height="172" y="172" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image id="icon12" width="172" height="172" y="344" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image source="dntg_main_line_png" x="-4" y="24"/>
+				</e:Group>
+				<e:Group id="group5" width="180" height="521" x="720" y="0">
+					<e:Image id="icon13" width="172" height="172" y="0" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image id="icon14" width="172" height="172" y="172" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image id="icon15" width="172" height="172" y="344" horizontalCenter="0" source="dntg_icon_10_png"/>
+					<e:Image source="dntg_main_line_png" x="-4" y="24"/>
+				</e:Group>
+			</e:Group>
+			<e:Image x="0" y="-78" source="dntg_cloud_1_png" width="1280" anchorOffsetY="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

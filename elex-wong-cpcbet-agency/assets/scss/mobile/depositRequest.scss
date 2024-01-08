@@ -1,0 +1,64 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+
+  .deposit-request {
+    margin-top: -20vw;
+    padding-bottom: 5vw;
+
+    .deposit-request-header {
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5.5vw 4vw;
+      background: $secondarybgColor;
+      color: $scfontColor;
+      width: 100vw;
+      margin-left: -4vw;
+      font-size: 3.5vw;
+      font-weight: bold;
+      z-index: 10;
+
+      .header-item {
+        display: flex;
+        align-items: center;
+        column-gap: 2vw;
+
+        img {
+          width: 5vw;
+        }
+      }
+
+      .green {
+        color: $secondaryColor;
+      }
+    }
+
+    .deposit-request-table {
+      position: relative;
+      padding-top: 20vw;
+    }
+
+    .deposit-request-table-pagination {
+      position: relative;
+      margin: 0 auto;
+      margin-top: 3vw;
+      text-align: center;
+
+      .el-pager {
+        .active {
+          background-color: $secondaryColor !important;
+        }
+
+        .number.active:hover {
+          color: $fontColor !important;
+        }
+
+        .number:hover {
+          color: $secondaryColor !important;
+        }
+      }
+    }
+  }
+}

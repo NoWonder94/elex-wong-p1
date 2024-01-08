@@ -1,0 +1,223 @@
+@media only screen and (min-width: 752px) and (max-width: 5120px) {
+  .game-view-table {
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1350px;
+
+    height: 800px;
+    margin: 20px auto;
+
+    .game-view-table-navs {
+      width: 180px;
+      height: 36px;
+      background: #2d3037;
+      color: #5c626c;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      @media screen and (min-device-width: 160px) and (max-width: 899px) {
+        height: 50px;
+        width: 300px;
+      }
+
+      .game-tabs-navs {
+        width: 90px;
+        height: 36px;
+        background-color: #2d3037;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        border-radius: 20px;
+      }
+
+      .game-tabs-navs-active {
+        width: 90px;
+        height: 36px;
+        color: #f5f6f7;
+        font-size: 14px;
+        background-image: linear-gradient(to left, #555966, #555966, #cc2843);
+        font-stretch: normal;
+        letter-spacing: 0px;
+        border-radius: 20px;
+        font-weight: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        @media screen and (min-device-width: 160px) and (max-width: 899px) {
+          height: 50px;
+          width: 150px;
+        }
+      }
+    }
+
+    .game-table-item {
+      // width: 100%;
+      padding: 14px 30px;
+      margin-top: 12px;
+      border-radius: 20px;
+      background: #1e2024;
+      box-sizing: border-box;
+      font-size: 14px;
+
+      @media screen and (min-device-width: 160px) and (max-width: 899px) {
+        margin-top: 20px;
+      }
+
+      .no_data {
+        width: 100%;
+        height: 500px;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          position: relative;
+          font-size: 18px;
+          color: #5c626c;
+          top: -40px;
+        }
+      }
+
+      .game-table-item-title {
+        height: 50px;
+        line-height: 50px;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        color: #99a4b099;
+
+        .thead {
+          width: 20%;
+        }
+
+        .thead:nth-child(1) {
+          text-align: left;
+          width: 25%;
+        }
+
+        .thead:nth-child(6) {
+          text-align: right;
+        }
+      }
+
+      .game-table-item-content {
+        min-height: 535px;
+        display: flex;
+        flex-direction: column;
+
+        .tr {
+          width: 100%;
+          height: 53.48px;
+          line-height: 53.48px;
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          justify-content: space-between;
+
+          .td {
+            width: 20%;
+            height: 53.48px;
+            color: #99a4b0;
+          }
+
+          .td:nth-child(1) {
+            text-align: left;
+            width: 25%;
+          }
+
+          .td:nth-child(2) {
+            color: #f5f6f7;
+          }
+
+          .profit_font {
+            font-weight: 700;
+
+          }
+
+          .active {
+            color: #ed6300 !important;
+            ;
+          }
+
+          .td:nth-child(4) {
+            color: #f5f6f7;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .picetur {
+              width: 180px;
+              height: 20px;
+              line-height: 20px;
+              display: flex;
+              justify-content: center;
+              position: absolute;
+              font-weight: 700;
+
+              >img {
+                width: 20px;
+                height: 20px;
+              }
+
+              >div {
+                margin-left: 6px;
+              }
+            }
+
+          }
+
+          .td:nth-child(6) {
+            color: #43b309;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-weight: 700;
+            text-align: right;
+
+            .picetur {
+              width: 120px;
+              height: 20px;
+              line-height: 20px;
+              display: flex;
+              justify-content: flex-end;
+              text-align: right;
+
+
+              >img {
+
+                width: 20px;
+                height: 20px;
+              }
+
+              >div {
+
+                margin-left: 6px;
+              }
+
+
+            }
+
+            .piceturh5 {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

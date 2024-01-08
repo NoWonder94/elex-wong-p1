@@ -1,0 +1,18 @@
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section>
+
+<main id="main">
+
+  <section id="registersection" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <connect-wallet *ngIf="!walletAddress"></connect-wallet>
+      <reg-account-signup *ngIf="walletAddress && !accountExists" (registered)="onAccountCreated()">
+      </reg-account-signup>
+      <wallet-sign-in *ngIf="walletAddress && accountExists" (connected)="onConnected()"></wallet-sign-in>
+
+    </div>
+  </section>
+
+</main>

@@ -1,0 +1,114 @@
+@import 'assets/css/font-awesome-6.0.0/css/all.css';
+@import 'assets/css/all.css';
+
+$pcMinWidth: 1201px;
+$mobileMaxWidth: 1200px;
+$red: #f12c4c;
+$darkRed: #cc2843;
+$white: #ffffff;
+$black: #000;
+$lightGrey: #bcbfc7;
+$lightGreyTwo: #898fa2;
+$lightGreyThree: #B3BAD1;
+$lighterGrey: #8C9099;
+$darkgrey: #8a90a2;
+$darkBackground: #0f1923;
+$darkerGrey: #1D2730;
+$background: #1a242d;
+$backgroundTwo: #252f38;
+$backgroundThree: #262f3c;
+$backgroundFour: #2b2b2c;
+$backgroundFive: #0F1120;
+$separator: #323b45;
+$separatorTwo: #28313c;
+$blueGrey: #ACB1CD;
+$grey: #9095AB;
+$whiteGrey: #AAB0C3;
+$greenGrey: #2F4553;
+$transparentDark: #1d2730;
+$transparentDarkBorder: #303a43;
+$transparentDarkBackground: #0f1924;
+$transparentGrey: #43464d;
+$limeGreen: #04D47C;
+$orange: #FFAA17;
+$yellow: #FCE90B;
+
+@media only screen and (min-width: 1201px)
+{
+    .web
+    {
+        display:block;
+    }
+
+    .mobile
+    {
+        display:none;
+    }
+
+    section{
+      min-width: 1200px;
+      margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1200px)
+{
+    .web
+    {
+        display:none;
+    }
+
+    .mobile
+    {
+        display:block;
+    }
+}
+
+body
+{
+    background-color: #0F1923;
+    width: 100%;
+    font-family: SofiaPro, "Roboto", sans-serif, Nasalization !important;
+    font-size: 14px;
+}
+
+.el-loading-mask{
+  background-color: transparent;
+  z-index: 1;
+
+  .el-loading-spinner .path{
+    stroke: $red;
+  }
+}
+
+.el-pagination {
+  color: $white;
+
+  button {
+    background-color: $background !important;
+    color: $white;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  .el-pager {
+    li {
+      background-color: $background !important;
+    }
+
+    .active {
+      color: $red;
+    }
+
+    li:hover {
+      color: $red;
+    }
+  }
+
+  .btn-next, .btn-prev {
+    background: $background;
+    color: $white;
+  }
+}

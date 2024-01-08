@@ -1,0 +1,320 @@
+@import '../base.scss';
+
+.ccpayment-component {
+  position: relative;
+  height: 90vh;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: $white;
+
+  .paymentinfo-stage {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .top {
+      flex: 1 1;
+      overflow-y: auto;
+
+      .ccpayment-title {
+        text-align: center;
+        line-height: 3;
+      }
+
+      .payment-hints-container {
+        margin: 10px 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        font-size: 13px;
+        color: $lightGrey;
+      }
+
+      .ccpayment-input-amount {
+        position: relative;
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 10px;
+        border: 1px solid $separator;
+        border-radius: 4px;
+        background-color: rgba(46,49,66,.5);
+        display: flex;
+        justify-content: space-between;
+
+        .input-amount-logo {
+          flex-basis: 20%;
+          max-width: 20%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 25px;
+          }
+        }
+
+        .input-amount-value {
+          flex-basis: 70%;
+          max-width: 70%;
+
+          .el-input {
+
+            .el-input__inner {
+              color: $white;
+              background: transparent;
+              border: transparent;
+              text-align: right;
+            }
+          }
+        }
+      }
+
+      .error-text {
+        color: $red;
+        font-size: 12px;
+        padding: 0;
+      }
+
+      .ccpayment-coinList {
+        position: relative;
+        padding: 10px 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+        .ccpayment-coin-card {
+          padding: 10px;
+          border: 1px solid $separator;
+          border-radius: 4px;
+          background-color: rgba(46,49,66,.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          cursor: pointer;
+
+          .coin-icon {
+            width: 20px;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .selected-coin {
+          background: #414E5D;
+        }
+      }
+    }
+
+    .depositPayment-button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .return-button {
+        width: 50%;
+        height: 48px;
+        max-width: unset;
+        padding: 0;
+        border: 1px solid $separator;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .confirm-button {
+        height: 48px;
+        width: 50%;
+        max-width: unset;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: normal;
+        padding: 0;
+        background: $red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .submit-inactive {
+        background-color: #1C242D;
+        border: 1px solid $separator;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .payment-stage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .payment-stage-top {
+      flex: 1 1;
+
+      .payment-info-row {
+        position: relative;
+        width: 100%;
+        min-height: 150px;
+        padding: 20px;
+        border-radius: 10px;
+        background: #0F1120;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+
+        .payment-qr {
+          flex-basis: 30%;
+          max-width: 30%;
+          align-self: center;
+          background-color: $white;
+          padding: 5px;
+          border-radius: 12px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .payment-address-content {
+          position: inherit;
+          flex-basis: 70%;
+          max-width: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .payment-address {
+            padding-top: 10px;
+            word-wrap: break-word
+          }
+
+          .copy-button {
+            width: fit-content;
+            padding: 8px 35px;
+            border: 1px solid $separator;
+            border-radius: 8px;
+            text-transform: capitalize;
+            cursor: pointer;
+            background: #1C242D;
+          }
+        }
+      }
+
+      .payment-notice {
+        position: relative;
+        margin-top: 20px;
+        color: $white;
+        opacity: 0.5;
+      }
+    }
+
+    .payment-stage-done {
+      margin-bottom: 50px;
+      padding: 15px 0px;
+      text-align: center;
+      border: 1px solid $separator;
+      border-radius: 8px;
+      background: #1C242D;
+    }
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .depositPayment-button-container {
+    margin-bottom: 23vw;
+  }
+
+  .payment-stage-done {
+    margin-bottom: 23vw !important;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .payment-stage {
+    position: relative;
+
+    .payment-info-row {
+      position: relative;
+      width: 50%;
+      margin: 0 auto;
+      min-height: 80px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #0F1120;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+
+      .payment-qr {
+        flex-basis: 20%;
+        max-width: 20%;
+        padding: 20px !important;
+      }
+
+      .payment-address-content {
+        position: inherit;
+        flex-basis: 60%;
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .payment-address {
+          font-size: 30px;
+          padding-top: 50px;
+          word-wrap: break-word
+        }
+
+        .copy-button {
+          width: fit-content;
+          padding: 8px 35px;
+          border: 1px solid $separator;
+          border-radius: 8px;
+          text-transform: capitalize;
+          cursor: pointer;
+          background: #1C242D;
+        }
+      }
+    }
+  }
+}

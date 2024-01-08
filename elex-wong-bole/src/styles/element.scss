@@ -1,0 +1,31 @@
+/* 改变主题色 */
+$--color-primary: #1b85e3;
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import '~element-ui/packages/theme-chalk/src/index';
+
+.medium-zoom-overlay {
+  z-index: 999 !important;
+}
+
+.medium-zoom-image--opened {
+  z-index: 1000 !important;
+  object-fit: contain;
+}
+
+.hvr-sweep-to-right {
+  &:before {
+    background: #ff0317;
+  }
+}
+
+.hvr-underline-from-left {
+  &:before {
+    background: #ff0317;
+  }
+}
+
+.hvr-sweep-to-right:hover,
+.hvr-sweep-to-right:focus,
+.hvr-sweep-to-right:active {
+  color: white !important;
+}

@@ -1,0 +1,80 @@
+@import '../Base.scss';
+
+@media only screen and (max-width: 700px) {
+  .contactUs-button {
+    position: fixed;
+    right: 3vw;
+    bottom: 10vw;
+    padding: 3vw;
+    z-index: 901;
+
+    .contactUs-button-web {
+      display: none;
+    }
+
+    .contactUs-button-mobile {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+
+      .contactUs-button-mobile-tab {
+        padding: 3vw;
+        border-radius: 10vw;
+        box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+        background-color: #ffffff;
+        z-index: 10;
+      }
+
+      .contactUs-button-mobile-nav {
+        margin-right: 5vw;
+        padding: 2vw 4vw 2vw 0vw;
+        border-radius: 10vw;
+        box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+
+        .contactUs-button-icon {
+          padding-left: 5.5vw;
+        }
+      }
+    }
+
+    /* transition slide */
+    .slide-enter-active,
+    .slide-leave-active,
+    .slide-enter-active,
+    .slide-leave-active {
+      transition: all .1s ease-in-out;
+    }
+
+    .slide-enter {
+      transform: translateX(30%);
+    }
+
+    .slide-leave-to {
+      transform: translateX(30%);
+    }
+
+    /* transition slide */
+  }
+
+  .b24-widget-button-position-bottom-right {
+    bottom: 36vw !important;
+    right: 6vw !important;
+  }
+
+  .b24-widget-button-inner-block {
+    height: 12vw !important;
+  }
+
+  .b24-widget-button-block {
+    height: 12vw !important;
+    width: 12vw !important;
+  }
+
+  .b24-widget-button-inner-mask {
+    height: 15vw !important;
+    width: 15vw !important;
+  }
+}

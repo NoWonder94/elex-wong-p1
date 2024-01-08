@@ -1,0 +1,78 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1201px){
+  .game-row{
+    position: relative;
+    padding-bottom: 30px;
+
+    .game-title-row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+
+      .game-title-left{
+        display: flex;
+        align-items: center;
+
+        .game-title{
+          font-size: 22px;
+          font-weight: bold;
+          margin-right: 30px;
+        }
+
+        i{
+          color: $lightGrey;
+          font-weight: bold;
+          margin-right: 10px;
+          cursor: pointer;
+
+          &:hover{
+            color: $white;
+          }
+        }
+      }
+
+      .game-view-all{
+        color: $lightGrey;
+        cursor: pointer;
+
+        i{
+          color: $lightGrey;
+        }
+
+        &:hover{
+          color: $white;
+        }
+      }
+    }
+
+    .swiper{
+      .swiper-slide{
+        position: relative;
+        height: auto;
+
+        .no-data-img{
+          height: 98%;
+        }
+      }
+    }
+
+    .game-detail{
+      padding: 20px;
+      background-color: $backgroundFive;
+      border-radius: 4px;
+    }
+
+    .themes{
+      .swiper-slide{
+        font-size: 14px;
+        font-weight: bold;
+        padding: 15px 0;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}

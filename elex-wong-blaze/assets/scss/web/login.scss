@@ -1,0 +1,304 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1201px) {
+  .login {
+    .login-modal-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(12, 21, 29, 0.78);
+      z-index: 1000;
+      padding: 15px;
+      overflow-y: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .login-modal {
+        /* todo:animation */
+        text-align: left;
+        position: relative;
+        outline: none;
+        border-radius: 4px;
+        width: fit-content;
+        min-width: 300px;
+        min-height: 247px;
+        background-color: $background;
+        padding: 24px 32px;
+
+        .header {
+          position: relative;
+          text-align: center;
+          padding-bottom: 0;
+
+          .logo {
+            height: 39px;
+          }
+
+          i {
+            position: absolute;
+            right: -35px;
+            top: -25px;
+            overflow: hidden;
+            z-index: 1;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 14px;
+            color: $lightGrey;
+            font-weight: 900;
+          }
+        }
+
+        .body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .title {
+            margin-top: 12px;
+            margin-bottom: 24px;
+            font-size: 20px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.6;
+            letter-spacing: -.56px;
+            text-align: center;
+            color: $white;
+          }
+
+          .text-input {
+            position: relative;
+            background-color: $darkBackground;
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 4px;
+
+            input {
+              color: $white;
+              font-size: 12px;
+              padding: 18px 15px 12px;
+              width: 100%;
+              border-radius: 4px;
+              background-color: $darkBackground;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            label {
+              position: absolute;
+              pointer-events: none;
+              font-size: 10px;
+              font-weight: bold;
+              color: $lightGrey;
+              left: 15px;
+              top: 15px;
+              transition: 0.2s ease all;
+            }
+
+            i {
+              position: absolute;
+              font-size: 10px;
+              font-weight: bold;
+              color: $lightGrey;
+              right: 15px;
+              top: 20px;
+              transition: 0.2s ease all;
+              cursor: pointer;
+            }
+
+            input:focus~label,
+            input:not(:placeholder-shown)~label {
+              top: 6px;
+              font-size: 8px;
+            }
+
+            /* tel input */
+            .vue-tel-input{
+              position: relative;
+              border: none;
+
+              &:focus-within{
+                box-shadow: none;
+              }
+
+              input:disabled{
+                color: $white;
+              }
+
+              .vti__dropdown{
+                background-color: $darkBackground;
+              }
+
+              .vti__dropdown.disabled, .vti__dropdown.open{
+                background-color: $darkBackground;
+              }
+
+              .vti__dropdown:hover{
+                background-color: $darkBackground;
+              }
+
+              .vti__dropdown-list{
+                color: $white;
+                background-color: $darkBackground;
+                border: none;
+
+                .vti__dropdown-item{
+                  display: flex;
+                  align-items: center;
+                  padding: 8px 12px;
+                  font-size: 12px;
+                }
+
+                .highlighted{
+                  background-color: $background;
+                }
+              }
+
+              .vti__input {
+                padding: 15px 12px;
+                margin-left: 35px;
+              }
+            }
+
+            .country-code{
+              position: absolute;
+              width: 40px;
+              top: 15px;
+              left: 60px;
+              color: $lightGrey;
+              font-size: 12px;
+            }
+          }
+
+          .forgotpass {
+            align-self: flex-start;
+            color: $darkgrey;
+            text-align: left;
+
+            .el-link {
+              vertical-align: bottom;
+              font-size: 13px;
+            }
+          }
+
+          .signBtn {
+            width: 100%;
+            padding: 15px;
+            margin: 20px 0px;
+            margin-bottom: 10px;
+            color: $white;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: -.56px;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: $red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .arrow {
+              transform: rotate(90deg);
+              margin-left: 16px;
+            }
+
+            &:hover {
+              transition: background-color .5s ease;
+              background-color: $darkRed;
+            }
+          }
+        }
+
+        .footer {
+          .el-divider {
+            background-color: $separator !important;
+
+            .el-divider__text {
+              background-color: $background;
+            }
+
+            p {
+              font-size: 12px;
+              font-weight: 600;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 2;
+              letter-spacing: normal;
+              text-align: center;
+              color: $darkgrey;
+              margin: 0 12px;
+              text-transform: uppercase;
+            }
+          }
+
+          .el-link {
+            vertical-align: bottom;
+          }
+
+          .text {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2;
+            letter-spacing: normal;
+            color: $lightGrey;
+
+            .text-terms {
+              padding-left: 2px;
+              font-weight: 400;
+              font-size: 12px;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 2;
+              letter-spacing: normal;
+              color: $red;
+            }
+          }
+
+          .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: 15px 0px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+            gap: 15px;
+
+            .otherLogin {
+              flex-basis: 20%;
+              max-width: 100%;
+              height: 48px;
+              font-size: 12px;
+              font-weight: 600;
+              text-transform: capitalize;
+              border: 1px solid $separator;
+              border-radius: 3px;
+              background-color: $background;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: background .3s;
+
+              img {
+                width: 28%;
+              }
+
+              &:hover {
+                background-color: $darkBackground;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

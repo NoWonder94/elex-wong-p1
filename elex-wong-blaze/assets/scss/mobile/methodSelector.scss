@@ -1,0 +1,162 @@
+@import '../base.scss';
+
+.methodSelector-component {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  .top {
+    position: relative;
+    flex: 1 1;
+
+    .top-method-walletType {
+      position: relative;
+      width: 100%;
+      padding: 10px 20px;
+      margin: 30px 0px;
+      border-radius: 4px;
+      border: 1px solid $separator;
+      background-color: rgba(46,49,66,.5);
+
+      .el-dropdown {
+        position: relative;
+        width: 100% !important;
+      }
+
+      .walletType-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .walletType-icon {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+
+          .currency-icon {
+            width: 25px;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .walletType-amount {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+    .top-header {
+      margin: 16px 0px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.78;
+      text-align: center;
+      letter-spacing: -.44px;
+      color: $white;
+    }
+
+    .top-method-selector {
+      .deposit-method-reminder {
+        margin-bottom: 12px;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        font-size: 14px;
+        font-weight: 400;
+        color: $white;
+        border: 1px solid #008000;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .deposit-method-list {
+        position: relative;
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .deposit-method-list-item {
+          position: relative;
+          width: 100%;
+          padding: 10px 20px;
+          font-size: 14px;
+          font-weight: 400;
+          color: $white;
+          background-color: rgba(46,49,66,.5);
+          border: 1px solid $separator;
+          border-radius: 4px;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .deposit-icon {
+            width: 50px;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .return-button {
+        height: 40px;
+        padding: 0;
+        color: $blueGrey;
+        font-size: 12px;
+        text-transform: uppercase;
+        border: 1px solid $separator;
+        border-radius: 3px;
+        background: $background;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // .methodSelector-button {
+  //   height: 40px;
+  //   padding: 0;
+  //   margin-top: 4px;
+  //   border-radius: 4px;
+  //   color: $white;
+  //   font-size: 14px;
+  //   font-weight: 600;
+  //   background: $red;
+  //   cursor: pointer;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+}
+
+.walletType-dropdown {
+  width: 100% !important;
+  max-width: 360px !important;
+  min-width: 300px !important;
+  margin: 0 auto !important;
+  left: 0 !important;
+  right: 0 !important;
+
+  .popper__arrow {
+    display: none !important;
+  }
+}

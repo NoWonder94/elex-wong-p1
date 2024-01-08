@@ -1,0 +1,21 @@
+@import "../../../shared.scss";
+
+.bi-clipboard {
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #47b2e4;
+  }
+}
+.activate-container{
+  display:flex;
+
+  .activate-info{
+    font-size: 10px;
+    font-weight: 600;
+    align-self: center;
+    margin-left: 10px;
+  }
+}
+

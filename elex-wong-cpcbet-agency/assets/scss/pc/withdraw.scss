@@ -1,0 +1,180 @@
+@import "../base.scss";
+
+@media only screen and (min-width: $pcMinWidth) {
+  .withdraw {
+    position: relative;
+    padding-bottom: 20px;
+
+    .title-section {
+      position: sticky;
+      padding: 15px 0;
+      background-color: $secondarybgColor;
+      color: $scfontColor;
+      font-size: 16px;
+      font-weight: bold;
+      border-bottom: 1px solid $whiteOpacity20;
+
+      .title-section-wrap{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+
+          img {
+            width: 20px;
+          }
+        }
+
+        .edit {
+          font-size: 15px;
+          background-color: $secondaryColor;
+          border-radius: 6px;
+          padding: 6px 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .withdraw-content {
+      padding-top: 20px;
+      width: 1200px;
+      margin: auto;
+
+      .withdraw-content-title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .card-list {
+        position: relative;
+        padding: 20px 30px 0;
+
+        .swiper-slide {
+          width: 320px !important;
+        }
+
+        .card-box {
+          position: relative;
+          cursor: pointer;
+
+          .card-background {
+            width: 320px;
+          }
+
+          .card-content {
+            position: absolute;
+            top: 0;
+            padding: 16px;
+            width: 288px;
+            height: 204px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: rgba(255, 255, 255, 0.75);
+
+            .card-content-detail {
+              text-align: center;
+              line-height: 2;
+              color: $fontColor;
+            }
+
+            .selected {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+
+            .empty-tick-space {
+              height: 35px;
+            }
+          }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: $fontColor;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          top: 44%;
+          z-index: 11;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+          font-size: 20px;
+        }
+
+        .swiper-button-prev {
+          left: -1180px;
+        }
+
+        .swiper-button-next {
+          left: 1180px;
+        }
+
+        .gradient-right {
+          position: absolute;
+          right: 28px;
+          width: 100px;
+          height: 240px;
+          top: 18px;
+          background: linear-gradient(270deg, #17171C 0%, #17171CA7 52%, #17171C00 100%);
+          z-index: 10;
+          transition: all 0.4s;
+        }
+
+        .gradient-left {
+          display: none;
+          position: absolute;
+          left: 28px;
+          width: 100px;
+          height: 240px;
+          top: 18px;
+          background: linear-gradient(270deg, #17171C00 0%, #17171CA7 52%, #17171C 100%);
+          z-index: 10;
+          transition: all 0.4s;
+        }
+      }
+
+      .withdraw-details {
+        margin-top: 30px;
+        padding: 20px 15px;
+        color: $primaryColorOpc50;
+        border:1px solid $blackOpacity20;
+        border-radius: 6px;
+        display: grid;
+        row-gap: 25px;
+
+        .withdraw-section {
+          .withdraw-section-title {
+            font-size: 16px;
+            color: $primaryColorOpc50;
+          }
+
+          .el-input__inner {
+            border: none;
+            border-bottom: 1px solid $primaryColorOpc50;
+            border-radius: 0;
+          }
+
+          .withdraw-section-button {
+            width: 200px;
+            font-size: 16px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

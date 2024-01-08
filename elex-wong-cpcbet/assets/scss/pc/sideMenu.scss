@@ -1,0 +1,98 @@
+@import "../base.scss";
+
+@media only screen and (min-width: $pcMinWidth) {
+  .side-menu {
+    width: 225px;
+    position: fixed;
+    left: 0;
+    top: 71px;
+    bottom: 0;
+    background-color: $secondaryBgColor;
+    z-index: 500;
+
+    .side-menu-container {
+      padding: 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .side-menu-nav {
+
+        .side-menu-nav-items {
+          .side-menu-nav-item {
+            margin: 5px 0;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: $fontColor;
+            opacity: 0.4;
+            cursor: pointer;
+
+            img {
+              margin-right: 20px;
+              width: 20px;
+            }
+
+            img.dashboard {
+              filter: invert(100%) sepia(0%) saturate(7489%) hue-rotate(145deg) brightness(98%) contrast(104%);
+            }
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+
+        .nuxt-link-exact-active {
+          .side-menu-nav-item {
+            opacity: 1;
+          }
+        }
+      }
+
+      .side-menu-foot {
+        /*  */
+        .select {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .select-title {
+            font-size: 12px;
+            color: $lightFontColor80
+          }
+
+          .el-select {
+            width: 150px;
+            font-size: 12px;
+
+            .el-input__inner {
+              background-color: transparent;
+              border: none;
+              font-size: 12px;
+              color: $fontColor;
+              text-align: right;
+            }
+          }
+        }
+        /*  */
+
+        .select-redirect {
+          .select-redirect-label {
+            padding: 10px 0;
+            color: $lightFontColor;
+            font-size: 12px;
+            cursor: pointer;
+          }
+
+          .copyright {
+            line-height: 20px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

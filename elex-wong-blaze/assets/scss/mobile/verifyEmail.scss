@@ -1,0 +1,135 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 700px) {
+  .verifyEmail {
+    .verifyEmail-modal-overlay {
+      position: fixed;
+      right: 0;
+      display: flex;
+      z-index: 999;
+      .verifyEmail-modal {
+        width: 100vw;
+        height: 100vh;
+        color: $white;
+        text-align: center;
+        background-color: $background;
+        overflow-y: auto;
+        .header {
+          margin-top: 12px;
+          display: flex;
+          justify-content: center;
+          .logo {
+            padding-top: 12px;
+            width: 140px;
+            align-items: center;
+            text-align: center;
+            align-self: center;
+            align-content: center;
+          }
+          i {
+            position: absolute;
+            padding: 5vw;
+            top: 5vw;
+            right: 2vw;
+            font-size: 25px;
+            font-weight: bold;
+            z-index: 998;
+          }
+        }
+        .body {
+          padding: 30px;
+          text-align: left;
+          .title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: $white;
+          }
+          .desc {
+            font-size: 16px;
+            font-weight: 400;
+            color: $white;
+            text-align: justify;
+            margin-bottom: 20px;
+          }
+          .link {
+            font-size: 16px;
+            font-weight: 400;
+            color: $lightGrey;
+            text-align: justify;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .verifyEmail {
+    .verifyEmail-modal-overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(12, 21, 29, 0.78);
+      .verifyEmail-modal {
+        overflow-y: auto;
+        background-color: $background;
+        width: 80vw;
+        height: 80vh;
+        color: $white;
+        .header {
+          margin-top: 12px;
+          display: flex;
+          justify-content: center;
+          .logo {
+            padding-top: 12px;
+            width: 140px;
+            align-items: center;
+            text-align: center;
+            align-self: center;
+            align-content: center;
+          }
+          i {
+            position: absolute;
+            padding: 5vw;
+            top: 5vw;
+            right: 2vw;
+            font-size: 25px;
+            font-weight: bold;
+            z-index: 998;
+          }
+        }
+        .body {
+          padding: 30px;
+          text-align: left;
+          .title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: $white;
+          }
+          .desc {
+            font-size: 16px;
+            font-weight: 400;
+            color: $white;
+            text-align: justify;
+            margin-bottom: 20px;
+          }
+          .link {
+            font-size: 16px;
+            font-weight: 400;
+            color: $lightGrey;
+            text-align: justify;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

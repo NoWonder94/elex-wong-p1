@@ -1,0 +1,74 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .content-form-label
+  {
+    text-transform: capitalize;
+    font-size: 3vw;
+    color: $primaryColor;
+    padding-bottom: 2vw;
+    margin-bottom: 2vw;
+    border-bottom: 1px solid $primaryColor;
+  }
+
+  .content-form-input
+  {
+    .content-form-input-label
+    {
+      display: grid;
+      grid-template-columns: repeat(3, 2fr) 1fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 2vw;
+      grid-row-gap: 0px;
+      font-size: 3vw;
+      align-items: center;
+      margin-bottom: 2vw;
+    }
+
+    .content-form-grid
+    {
+      .el-form-item__content
+      {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr) 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 2vw;
+
+        &:last-child
+        {
+          align-items: center;
+          justify-items: center;
+          font-size: 4vw;
+        }
+
+        &::before {
+          display: none;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .content-form-add
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content-form-add-button
+    {
+      padding: 2vw 3.5vw;
+      font-size: 3vw;
+      font-weight: bold;
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      border-radius: 5vw;
+      display: flex;
+      align-items: center;
+      gap: 1vw;
+    }
+  }
+}

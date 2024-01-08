@@ -1,0 +1,142 @@
+<template>
+    <!-- layout 布局 -->
+    <el-container>
+        <el-aside>
+            <div class="aside-logo">
+                <a href="#/index"><img class="logo-img" src="/img/logo/logo.png"/></a>
+            </div>
+            <!-- sidebar menu -->
+            <component-layout-menu></component-layout-menu>
+        </el-aside>
+        <el-container>
+            <el-header>
+                <div class="header-content">
+                    <div class="header-content-app">
+                        <div class="name">
+                            {{ $t('siteName') }}
+                            <small>{{ $t('description') }}</small>
+                        </div>
+                    </div>
+                    <div class="header-content-info"></div>
+                    <div class="header-content-user">
+                        <!-- auth user -->
+                        <component-layout-user></component-layout-user>
+                    </div>
+                </div>
+            </el-header>
+            <el-main>
+                <!-- vbar滚动条 -->
+                <div class="vuebar-element" v-bar>
+                    <div> <!-- vbar container -->
+                        <!-- 路由器视图 -->
+                        <router-view></router-view>
+                        <!-- 顶部进度条 -->
+                        <vue-progress-bar></vue-progress-bar>
+                    </div>
+                </div>
+            </el-main>
+        </el-container>
+    </el-container>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {}
+        },
+        computed: {
+            policys: function () {
+                return _.map(JSON.parse(this.$cookie.get('agency_policy')), 'code');
+            }
+        },
+        mounted() {
+            this.$Progress.finish()
+        },
+        created() {
+            // 前端路由
+            this.$Progress.start()
+            this.$router.beforeEach((to, from, next) => {
+                // 权限验证
+                if (to.meta.code !== undefined && this.policys.indexOf(to.meta.code) == -1) {
+                    next({name: 'index'})
+                }
+                // 顶部进度条
+                if (to.meta.progress !== undefined) {
+                    let meta = to.meta.progress
+                    this.$Progress.parseMeta(meta)
+                }
+                this.$Progress.start()
+                // 管道钩子
+                next()
+            })
+            this.$router.afterEach((to, from) => {
+                this.$Progress.finish()
+            })
+            this.$router.onError(() => {
+                this.$Progress.fail()
+            })
+        }
+    }
+</script>
+
+<style lang="scss">
+    .el-header {
+        height: $layout-header-height !important;
+        background-color: $layout-background-color;
+        padding: 0 !important;
+    }
+
+    .el-aside {
+        width: $layout-aside-width !important;
+        background-color: $layout-background-color;
+    }
+
+    .el-main {
+        height: calc(100vh - #{$layout-header-height});
+        padding: 0 !important;
+    }
+
+    .aside-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+    }
+
+    .aside-logo .logo-img {
+        height: 70px;
+        border-radius: 8px;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: row;
+        flex: auto;
+        height: 100%;
+        color: #ffffff;
+    }
+
+    .header-content-info {
+        flex: auto;
+    }
+
+    .header-content-app, .header-content-user {
+        flex-shrink: 0;
+    }
+
+    .header-content-app {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
+    }
+
+    .header-content-app .name small {
+        font-size: 0.75rem;
+    }
+
+    .header-content-user {
+        width: 200px;
+        padding: 0 20px;
+    }
+</style>

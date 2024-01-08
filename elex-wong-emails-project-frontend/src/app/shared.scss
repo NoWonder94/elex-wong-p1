@@ -1,0 +1,162 @@
+.flex-col-center {
+  display:flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.flex-row-center {
+  display:flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.margin-left-20 {
+  margin-left: 20px
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.section-header {
+  font-weight: bold;
+  font-size: 18px;
+  //text-transform: uppercase;
+  opacity: 0.5;
+  color: #47b2e4;
+  font-size: 30px;
+}
+
+.breadcrumb {
+  background: #F2F5F9;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: #F0F0F0;
+  }
+}
+
+// Spaced box to show a simple text message without anything else
+.blank-text-box {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.data-info-box {
+  background: linear-gradient(#FAFAFA, #FFF);
+  padding: 20px;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
+  border-radius: 10px;
+}
+
+.data-info-box, .data-info-box-shell {
+  margin-bottom: 20px;
+
+  .heading {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+    //text-transform: uppercase;
+    color: #AAA;
+  }
+
+  .text {
+    color: #000;
+    word-break: break-all;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .example {
+    font-weight: bold;
+    color: #444 !important;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .bi { // bootstrap icon (edit)
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #47b2e4;
+    }
+  }
+
+  .small-info {
+    color: #555;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+}
+
+.table-header {
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  button {
+    transition: all 0.3s ease;
+  }
+
+  // Highlighted aciton button
+  button.primary {
+    color: #47b2e4;
+
+    &:hover {
+      color: #FFF;
+      background: #47b2e4;
+    }
+  }
+}
+
+// "copy" icon
+.bi-clipboard {
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #47b2e4;
+  }
+}
+
+// Item in page in a list, that hovers and can usually be clicked to navigate to another page.
+.nav-list-item {
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-bottom: solid 4px transparent;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: linear-gradient();
+    border-bottom-color: #47b2e4;
+  }
+}

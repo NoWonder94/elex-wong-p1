@@ -1,0 +1,160 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .wallet {
+
+    .wallet-row {
+      padding-bottom: 6vw;
+
+      .wallet-withdrawal-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .wallet-title {
+        font-size: 3.5vw;
+        font-weight: bold;
+      }
+
+      .wallet-section {
+        margin-top: 3vw;
+        padding: 5vw;
+        border: 1px solid $blackOpacity20;
+        color: $primaryColorOpc50;
+        border-radius: 2vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 6vw;
+
+        .wallet-item {
+          .wallet-item-title {
+            font-size: 3vw;
+            padding-bottom: 1vw;
+          }
+
+          .wallet-item-amount {
+            font-size: 4vw;
+            font-weight: bold;
+            color: $primaryColor;
+          }
+
+          .green {
+            color: $secondaryColor;
+          }
+        }
+      }
+
+      .transfer-section {
+        margin-top: 3vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2vw;
+
+        .transfer-item {
+          padding: 4vw 3vw;
+          border: 1px solid $blackOpacity20;
+          color: $primaryColorOpc50;
+          border-radius: 2vw;
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+
+          .transfer-div {
+            display: flex;
+            align-items: flex-end;
+            column-gap: 2vw;
+
+            .transfer-img {
+              img {
+                width: 8vw;
+              }
+            }
+
+            .transfer-text {
+              .transfer-item-title {
+                font-size: 3vw;
+              }
+
+              .transfer-item-desc {
+                font-size: 4.5vw;
+                font-weight: bold;
+                color: $primaryColor;
+              }
+            }
+          }
+
+          .transfer-icon {
+            img {
+              width: 4vw;
+              filter: brightness(0) saturate(100%) invert(18%) sepia(14%) saturate(3386%) hue-rotate(135deg) brightness(92%) contrast(104%);
+            }
+          }
+        }
+      }
+
+      .wallet-withdrawal-button {
+        position: relative;
+        padding: 1.5vw 12vw;
+        margin-top: 3vw;
+        border-radius: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .wallet-withdrawal-icon-left {
+          width: 3vw;
+          margin-right: 2vw;
+        }
+
+        span {
+          font-size: 3.5vw;
+        }
+
+        .wallet-withdrawal-icon-right {
+          position: absolute;
+          width: 3vw;
+          opacity: 0.5;
+          right: 2vw;
+        }
+      }
+    }
+
+    .wallet-more {
+      padding-bottom: 6vw;
+
+      .wallet-title {
+        font-size: 3.5vw;
+        font-weight: bold;
+      }
+
+      .wallet-withdrawal-button {
+        position: relative;
+        padding: 1.5vw 12vw;
+        margin-top: 3vw;
+        border-radius: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .wallet-withdrawal-icon-left {
+          width: 3vw;
+          margin-right: 2vw;
+        }
+
+        span {
+          font-size: 3.5vw;
+        }
+
+        .wallet-withdrawal-icon-right {
+          position: absolute;
+          width: 3vw;
+          opacity: 0.5;
+          right: 2vw;
+        }
+      }
+    }
+
+  }
+}

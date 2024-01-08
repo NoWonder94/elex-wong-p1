@@ -1,0 +1,85 @@
+@import 'assets/css/font-awesome-6.0.0/css/all.css';
+
+$bgColor:#FFFFFF;
+$leftPanelBgColor:#0C1A34;
+$rightPanelBgColor: #F8F8F8;
+$fontColor:black;
+$grey: #DCDFE6;
+$pcMinWidth:0;
+$mobileMaxWidth:700px;
+
+body
+{
+    background-color: $bgColor;
+    color: $fontColor;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+
+    .status-active, .top, .pinned
+    {
+        color: green;
+        font-weight: bold;
+    }
+
+    .status-disable
+    {
+        color: red;
+        font-weight: bold;
+    }
+
+    .middle
+    {
+        color: blue;
+        font-weight: bold;
+    }
+
+    .edit-button:hover
+    {
+        color: #67C23A;
+        border-color: #E1F3D8;
+        background-color: #F0F9EB;
+    }
+
+    .delete-button:hover
+    {
+        color: #F56C6C;
+        border-color: #FDE2E2;
+        background-color: #FEF0F0;
+    }
+
+    .notify-button{
+        width: 100%;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 6px;
+    }
+}
+
+@media only screen and (min-width: $pcMinWidth)
+{
+    .web
+    {
+        display:block;
+    }
+
+    .mobile
+    {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: $mobileMaxWidth)
+{
+    .web
+    {
+        display:none;
+    }
+
+    .mobile
+    {
+        display:block;
+    }
+}

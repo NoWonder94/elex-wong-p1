@@ -1,0 +1,90 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth)
+{
+  .commissionPlan{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    .commissionPlan-create-button
+    {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 13px;
+      border: 1px solid white;
+      border-radius: 30px;
+      text-transform: capitalize;
+
+      &:hover
+      {
+        cursor: pointer;
+        background-color: $secondaryColor;
+        border-color: $secondaryColor;
+      }
+    }
+
+    .commissionPlan-plan-title
+    {
+      position: relative;
+      padding-bottom: 15px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $fontColor;
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .commissionPlan-plan-filter
+    {
+      padding-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .commissionPlan-plan-form
+      {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .commissionPlan-plan-filter-label
+        {
+          font-size: 13px;
+          font-weight: bold;
+        }
+
+        .commissionPlan-plan-filter-input
+        {
+          width: 250px;
+        }
+
+        .commissionPlan-plan-form-submit
+        {
+          padding: 10px;
+          border-radius: 5px;
+          font-size: 13px;
+        }
+      }
+
+    }
+
+    .commissionPlan-plan-list
+    {
+      padding: 0px 10px;
+
+      .commissionPlan-list-card
+      {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+      }
+    }
+  }
+}

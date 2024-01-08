@@ -1,0 +1,125 @@
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section><!-- End Hero -->
+<main id="main">
+  <section id="registersection" class="about">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+      <!-- Account info -->
+      <div class="offset-lg-0 col-lg-12">
+        <div class="section-header">Account information</div>
+      </div>
+      <div class="row content justify-content-center" *ngIf="account">
+        <div class="col-lg-12">
+          <!-- Emails.com email address -->
+          <div class="data-info-box">
+            <p class="heading">Email Address</p>
+            <p class="text">{{ account.emailAddress }}</p>
+          </div>
+
+          <!-- Forward email address -->
+          <div class="data-info-box-action">
+            <simple-box-edit heading="Forwarding Email Address" [value]="account.forwarding_email"
+              (edited)="onForwardingEmailAddressEdited($event)"></simple-box-edit>
+            <div class="data-info-box-action-button" *ngIf="!account.forwarding_email_verified">
+              <btn-loader title="Verify" (clicked)="verifyAccount()" [busy]="isVerifyingAccount"></btn-loader>
+            </div>
+            <div class="emailsent" *ngIf="emailsent">Verify email has been sent</div>
+          </div>
+
+          <!-- Twitter account -->
+          <div class="data-info-box-action">
+            <div class="data-info-box">
+              <p class="heading">Twitter account</p>
+              <div class="text" *ngIf="!account.twitter">Not linked yet</div>
+              <div class="text" *ngIf="account.twitter">@{{ account.twitter }}</div>
+            </div>
+            <div class="data-info-box-action-button">
+              <btn-loader title="Connect Twitter" (clicked)="connectTwitter()" [busy]="isConnectingTwitter">
+              </btn-loader>
+            </div>
+          </div>
+
+          <!-- Discord account -->
+          <div class="data-info-box-action">
+            <div class="data-info-box">
+              <p class="heading">Discord account</p>
+              <div class="text" *ngIf="!account.discord">Not authenticated yed</div>
+              <div class="text" *ngIf="account.discord">@{{ account.discord }}</div>
+            </div>
+            <div class="data-info-box-action-button" *ngIf="!account.discord">
+              <btn-loader title="Connect Discord" (clicked)="connectDiscord()" [busy]="isConnectingDiscord">
+              </btn-loader>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Joined campaigns -->
+      <div class="offset-lg-0 col-lg-12">
+        <div class="section-header">Joined campaigns</div>
+      </div>
+      <div class="row content justify-content-center">
+        <!-- No joined campaigns -->
+        <div class="col-lg-12 blank-text-box" *ngIf="joinedCampaigns.length === 0">
+          You haven't joined any campaign yet.
+        </div>
+
+        <!-- Joined campaigns list -->
+        <div class="col-lg-12" *ngIf="joinedCampaigns.length > 0">
+          <div class="data-info-box">
+            <div class="row table-header">
+              <div class="col-lg-2">Campaign</div>
+              <div class="col-lg-1">Token</div>
+              <div class="col-lg-1">Amt</div>
+              <div class="col-lg-2">L1 Count</div>
+              <div class="col-lg-3">Ref link</div>
+              <div class="col-lg-1">Copy</div>
+              <div class="col-lg-2">Date</div>
+            </div>
+
+            <div class="row joined-campaign" *ngFor="let jc of joinedCampaigns" (click)="openJoinedCampaign(jc)">
+              <div class="col-lg-2">{{ jc.campaign.name }}</div>
+
+              <div class="col-lg-1" *ngIf="jc.campaign.token">{{ jc.campaign.token.symbol }}</div>
+              <div class="col-lg-1" *ngIf="!jc.campaign.token">No token</div>
+
+              <div class="col-lg-1" *ngIf="account.forwarding_email_verified">{{ jc.tokens }}</div>
+              <div class="col-lg-1" *ngIf="!account.forwarding_email_verified">Not verified</div>
+
+              <div class="col-lg-2" *ngIf="account.forwarding_email_verified">{{ jc.l1_user_count }}</div>
+              <div class="col-lg-2" *ngIf="!account.forwarding_email_verified">Not verified</div>
+
+              <div class="col-lg-3">{{ getCampaignLink(jc) }}</div>
+              <div class="col-lg-1 ref-link" (click)="copyJoinedCampaignLink(jc, $event)"><i
+                  class="bi bi-clipboard"></i>
+              </div>
+              <div class="col-lg-2">{{ getShortDate(jc.created_at) }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="offset-lg-0 col-lg-12">
+        <div class="section-header">My web3 projects</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-12">
+          <div class="data-info-box">
+            <div *ngFor="let project of projects" class="project data-info-box-action">
+              <div (click)="editProject(project)">
+                <i class="bi bi-app"></i> {{project.name}}
+              </div>
+              <btn-loader class="data-info-box-inner-action-button" title="Archive" (clicked)="archiveProject(project)">
+              </btn-loader>
+            </div>
+            <btn-loader title="Create project" (clicked)="createProject()"></btn-loader>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End About Us Section -->
+
+</main><!-- End #main -->

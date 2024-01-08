@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CBZZScene1Skin" width="1280" height="720" xmlns:e="http://ns.egret.com/eui" xmlns:cbzz="cbzz.*">
+	<e:Image source="cbzz_commombg_png" x="0" y="0"/>
+	<e:Image source="cbzz_scroller_kuang_png" horizontalCenter="0" verticalCenter="-39.5"/>
+    <e:Image source="dntg_scene1_image1_png" x="2" y="602.42" width="1280" anchorOffsetY="0" height="117.58"/>
+	<e:Image source="sdxl_score_kuang_png" y="627" horizontalCenter="0"/>
+	<e:Label text="赢得分数" y="688" textColor="0xb5afaf" size="20" horizontalCenter="0"/>
+	<e:Label id="winNum" text="0" y="637.98" textColor="0xe6aa4a" size="24" horizontalCenter="0" textAlign="center" width="199"/>
+    <e:Group y="71.96" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Group id="group1" width="186" height="528" x="0" y="0">
+			<cbzz:cbzzIcon id="icon1" horizontalCenter="0" y="0"/>
+			<cbzz:cbzzIcon id="icon2" y="176" horizontalCenter="0"/>
+			<cbzz:cbzzIcon id="icon3" y="352" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group2" width="186" height="528" x="186" y="0">
+			<cbzz:cbzzIcon id="icon4" y="0" horizontalCenter="0"/>
+			<cbzz:cbzzIcon id="icon5" y="176" horizontalCenter="0"/>
+			<cbzz:cbzzIcon id="icon6" y="352" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group3" width="186" height="528" x="372" y="0">
+			<cbzz:cbzzIcon id="icon7" y="0" horizontalCenter="0"/>
+			<cbzz:cbzzIcon id="icon8" y="176" horizontalCenter="0"/>
+			<cbzz:cbzzIcon id="icon9" y="352" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group4" width="186" height="528" x="558" y="0">
+			<cbzz:cbzzIcon id="icon10" y="0" horizontalCenter="0"/>
+			<cbzz:cbzzIcon id="icon11" y="176" horizontalCenter="0"/>
+			<cbzz:cbzzIcon id="icon12" y="352" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group5" width="186" height="528" x="744" y="0">
+			<cbzz:cbzzIcon id="icon13" horizontalCenter="0"/>
+			<cbzz:cbzzIcon id="icon14" y="176" horizontalCenter="0"/>
+			<cbzz:cbzzIcon id="icon15" y="352" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Image source="cbzz_maintitle_png" y="4.97" horizontalCenter="0"/>
+</e:Skin>

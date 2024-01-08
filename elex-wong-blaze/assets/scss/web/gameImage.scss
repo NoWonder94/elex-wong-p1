@@ -1,0 +1,112 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1201px){
+  .game-image{
+    position: relative;
+    color: $white;
+    height: 100%;
+
+    .web-game-image{
+      height: 100%;
+    }
+
+    img{
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .no-data-img {
+      position: relative;
+      width: 100%;
+      min-height: 134px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $separator;
+      border-radius: 4px;
+      background: $background;
+
+      img {
+        width: 50%;
+      }
+    }
+
+    .game-text{
+      position: absolute;
+      bottom: 15px;
+      padding-left: 10px;
+
+      .game-text-title{
+        font-size: 17px;
+        font-weight: bold;
+        padding-bottom: 2px;
+      }
+
+      .game-text-desc{
+        font-size: 12px;
+      }
+    }
+
+    .overlay{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+
+      .overlay-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+        height: 100%;
+
+        .login, .play{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px;
+          font-weight: bold;
+          background-color: $red;
+          padding: 8px;
+          width: 85px;
+          border-radius: 4px;
+
+          i{
+            font-size: 16px;
+            margin-right: 4px;
+          }
+
+          img{
+            width: 14px;
+          }
+        }
+
+        .play{
+          column-gap: 5px;
+        }
+
+        .bottom-text{
+          position: absolute;
+          font-size: 14px;
+          margin: 0 auto;
+          bottom: 20px;
+        }
+      }
+    }
+
+    &:hover .overlay{
+        opacity: 1;
+    }
+  }
+}

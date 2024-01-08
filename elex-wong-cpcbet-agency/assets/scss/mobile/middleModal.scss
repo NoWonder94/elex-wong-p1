@@ -1,0 +1,42 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $modalOverlayColorOpc50;
+    // background-color: transparent;
+    z-index: 999;
+
+    .modal {
+      position: relative;
+      width: 90vw;
+      margin-top: 5vw;
+      padding: 5vw;
+      border-radius: 3vw;
+      border: 1px solid $blackOpacity20;
+      background: $bgColor;
+      z-index: 999;
+    }
+
+    .close {
+      position: absolute;
+      top: 3vw;
+      right: 3vw;
+      cursor: pointer;
+      z-index: 9999;
+
+      .close-img {
+        width: 6vw;
+        filter: invert(0%) sepia(0%) saturate(30%) hue-rotate(163deg) brightness(8%) contrast(107%);
+      }
+    }
+  }
+}

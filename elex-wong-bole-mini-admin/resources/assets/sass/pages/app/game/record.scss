@@ -1,0 +1,244 @@
+// Variables
+@import "../../../variables.scss";
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background-color: #FFFFFF;
+}
+
+.record-container {
+  padding: 20px;
+}
+
+.page-content {
+  min-height: 700px;
+}
+
+/* dialog-bills */
+.dialog-bills .el-dialog__body {
+  padding-top: 0;
+  min-height: 320px;
+}
+
+/* dialog-detail-rbwar */
+.dialog-detail-rbwar .el-dialog__body {
+  padding: 0;
+  height: 470px;
+}
+
+/* dialog-playback */
+.dialog-playback .el-dialog__body {
+  padding: 0;
+  overflow: auto;
+  height: 540px;
+}
+
+.dialog-playback .detail-container {
+  min-height: 540px;
+}
+
+.dialog-playback .el-dialog__body {
+  padding: 0;
+  overflow: auto;
+  height: 540px;
+}
+
+.dialog-playback .detail-container {
+  min-height: 540px;
+}
+
+.dialog-playback .detail-content {
+  padding: 15px 20px 30px;
+}
+
+.dialog-playback .detail-container .el-form-item {
+  margin-bottom: 0;
+}
+
+.dialog-playback .detail-container label {
+  color: $font-color-third;
+}
+
+.dialog-playback .icon-coins {
+  color: #FFA500;
+}
+
+.dialog-playback .action-list-item {
+  padding: 7px 0;
+}
+
+/* base style */
+fieldset, ol, p, ul {
+  margin: 0;
+  padding: 0
+}
+
+dd, dl, li, ul {
+  list-style-type: none;
+}
+
+li {
+  list-style: none
+}
+
+/* cover style */
+button:focus {
+  outline: none;
+}
+
+label {
+  margin-bottom: auto;
+}
+
+.el-form--inline .el-form-item__content .el-input-group {
+  vertical-align: top;
+}
+
+.el-form-item-medium {
+  width: 180px;
+}
+
+.el-form-item-small {
+  width: 140px;
+}
+
+.el-form-item-mini {
+  width: 100px;
+}
+
+.has-sidebar .el-picker-panel__sidebar {
+  width: 140px !important;
+}
+
+.has-sidebar .el-picker-panel__body {
+  margin-left: 140px !important;
+}
+
+/* custom style */
+em {
+  color: #e50000;
+  font-style: normal;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.list-space {
+  display: block;
+  height: 10px;
+  background-color: $body-bg;
+}
+
+.text-aux {
+  color: $font-color-third;
+}
+
+.text-primary-custom {
+  color: $color-primary;
+}
+
+.text-success-custom {
+  color: $color-success;
+}
+
+.text-warning-custom {
+  color: $color-warning;
+}
+
+.text-danger-custom {
+  color: $color-danger;
+}
+
+.text-Info-custom {
+  color: $color-info;
+}
+
+.font-color-first {
+  color: $font-color-first;
+}
+
+.font-color-second {
+  color: $font-color-second;
+}
+
+.font-color-third {
+  color: $font-color-third;
+}
+
+.font-color-fourth {
+  color: $font-color-fourth;
+}
+
+.font-size-first {
+  font-size: $font-size-first;
+}
+
+.font-size-second {
+  font-size: $font-size-second;
+}
+
+.font-size-third {
+  font-size: $font-size-third;
+}
+
+.font-size-fourth {
+  font-size: $font-size-fourth;
+}
+
+/* vb-bar style */
+.vuebar-element {
+  height: 100%;
+  width: 100%;
+}
+
+.vb > .vb-dragger {
+  z-index: 5;
+  width: 12px;
+  right: 0;
+}
+
+.vb > .vb-dragger > .vb-dragger-styler {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotate3d(0, 0, 0, 0);
+  transform: rotate3d(0, 0, 0, 0);
+  -webkit-transition: background-color 100ms ease-out,
+  margin 100ms ease-out,
+  height 100ms ease-out;
+  transition: background-color 100ms ease-out,
+  margin 100ms ease-out,
+  height 100ms ease-out;
+  background-color: rgba(172, 186, 205, 0.2);
+  margin: 5px 5px 5px 0;
+  border-radius: 20px;
+  height: calc(100% - 10px);
+  display: block;
+}
+
+.vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(172, 186, 205, 0.5);
+}
+
+.vb > .vb-dragger:hover > .vb-dragger-styler {
+  background-color: rgba(172, 186, 205, 0.7);
+  margin: 0px;
+  height: 100%;
+}
+
+.vb.vb-dragging > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(172, 186, 205, 0.7);
+  margin: 0px;
+  height: 100%;
+}
+
+.vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: rgba(172, 186, 205, 0.7);
+}

@@ -1,0 +1,37 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .actionModal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .actionModal-empty-space {
+      width: 100%;
+      background: $modalOverlayColorOpc50;
+      flex: 1;
+    }
+
+    .actionModal-empty-space-tranparent {
+      width: 100%;
+      background: transparent;
+      flex: 1;
+    }
+
+
+
+    .actionModal-container {
+      width: 100vw;
+      padding: 4vw;
+      background: $bgColor;
+    }
+  }
+}

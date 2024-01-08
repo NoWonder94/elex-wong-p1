@@ -1,0 +1,106 @@
+@import 'assets/css/font-awesome-6.0.0/css/all.css';
+
+$BgPrimaryColor:#111419;
+$FontPrimaryColor:#FFFFFF;
+
+body {
+  background-color: $BgPrimaryColor;
+}
+
+
+@media only screen and (min-width: 700px) {
+  section {
+    padding-top: 120px;
+  }
+
+  .template {
+    margin: 0px auto;
+    width: 1200px;
+  }
+
+  .web {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  section {
+    padding-top: 14vw;
+  }
+
+  .template {
+    width: 100%;
+  }
+
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+
+
+.blinking-words,
+.blinking-words-hoverable {
+  color: $FontPrimaryColor;
+  // font-family: Monoton;
+  font-weight: bold;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.blinking-words-hoverable:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff,
+  }
+
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff,
+  }
+}
+
+@-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff,
+  }
+
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff,
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff,
+  }
+
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff,
+  }
+}
+
+//contact us backgroundcolor
+.b24-widget-button-inner-block,
+.b24-widget-button-inner-mask {
+  background: #dc1973 !important;
+}
+
+.b24-widget-button-pulse,
+.b24-widget-button-popup,
+.b24-widget-button-popup-triangle {
+  border-color: #dc1973 !important;
+}

@@ -1,0 +1,58 @@
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section>
+
+<main id="main">
+  <section id="registersection" class="about">
+    <div class="aos-init aos-animate" data-aos="fade-up">
+      <div *ngIf="!initiatingCampaignId" class="breadcrumb" (click)="goBackToProject()">&lt; Back to project</div>
+      <div *ngIf="initiatingCampaignId" class="breadcrumb" (click)="goBackToCampaign()">&lt; Back to campaign</div>
+
+      <!-- Campaign info -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Token information</div>
+      </div>
+      <div class="row content justify-content-center" *ngIf="token">
+        <div class="col-lg-8">
+          <!-- Chain -->
+          <div class="data-info-box">
+            <div ngbDropdown>
+              <p class="heading">Blockchain <i class="bi bi-pencil-square" ngbDropdownToggle
+                  *ngIf="token.activated_at != null ? false : true "></i></p>
+              <div class="dropdown-menu" ngbDropdownMenu>
+                <button ngbDropdownItem *ngFor="let network of availableNetworks" (click)="selectNetwork(network)">{{
+                  network.name }}</button>
+              </div>
+            </div>
+            <p class="text" *ngIf="token.chain_id">
+              {{ getNetworkName(token.chain_id) }}
+            </p>
+          </div>
+
+          <!-- Contract address-->
+          <simple-box-edit heading="Contract address" [value]="token.contract_address"
+            (edited)="onContractAddressEdited($event)" [disable]="token.activated_at != null ? true : false">
+          </simple-box-edit>
+
+          <!-- Token title -->
+          <simple-box-edit heading="Title" [value]="token.title" (edited)="onTitleEdited($event)"></simple-box-edit>
+
+          <!-- Symbol -->
+          <simple-box-edit heading="Symbol" [value]="token.symbol" (edited)="onSymbolEdited($event)"></simple-box-edit>
+
+          <!-- Decimals -->
+          <simple-box-edit heading="Decimals" [value]="token.decimals" (edited)="onDecimalsEdited($event)">
+          </simple-box-edit>
+
+          <div class="activate-container" *ngIf="!token.activated_at">
+            <btn-loader title="Activate Token" (click)="saveToken()"></btn-loader>
+            <div class="activate-info">Activate your token so we can ensure that all parameters are correct and enable
+              this token to be used in campaigns.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</main>

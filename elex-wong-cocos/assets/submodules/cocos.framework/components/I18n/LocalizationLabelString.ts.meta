@@ -1,0 +1,14 @@
+{
+  "ver": "4.0.22",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "4427c5ae-94ae-436e-94b4-8a8e6cc1f450",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "importAsPlugin": false,
+    "moduleId": "project:///assets/scripts/components/localization/LocalizationLabelString.js",
+    "importerSettings": 4,
+    "simulateGlobals": []
+  }
+}

@@ -1,0 +1,231 @@
+@import '../Base.scss';
+
+$contentBgColor: #FFFFFF;
+$headingButtonColor: #B7086D;
+$contentTitle: #1E1F21;
+$contentSubtitle: #282828;
+
+@media only screen and (max-width: 700px) {
+  .bolebit {
+    position: relative;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0vw 6vw;
+
+    .bolebit-title {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 15vw;
+      padding-bottom: 8vw;
+      text-align: center;
+
+      .bolebit-title-logo {
+        width: 30vw;
+        padding-bottom: 3vw;
+      }
+
+      .bolebit-title {
+        padding-top: 3vw;
+        color: $FontPrimaryColor;
+        font-size: 4vw;
+        line-height: 8vw;
+      }
+    }
+
+    .bolebit-heading {
+      position: relative;
+      width: 100%;
+      padding: 15vw 6vw;
+      background: $contentBgColor;
+      border-radius: 2.5vw;
+      text-align: left;
+
+      .bolebit-heading-title {
+        font-size: 5vw;
+        font-weight: bold;
+        color: $contentTitle;
+      }
+
+      .bolebit-heading-description {
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        font-size: 3.5vw;
+        color: $contentSubtitle;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .bolebit-heading-button {
+        width: 100%;
+        padding: 3vw 0px;
+        background: $headingButtonColor;
+        border-radius: 10vw;
+        color: $FontPrimaryColor;
+        font-weight: bold;
+        font-size: 3vw;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+
+    .bolebit-features {
+      position: relative;
+      width: 100%;
+      padding: 10vw 5vw;
+      margin-top: 5vw;
+      background: $contentBgColor;
+      border-radius: 2.5vw;
+      text-align: center;
+
+      .bolebit-features-title {
+        font-size: 6vw;
+        font-weight: bold;
+        color: $contentTitle;
+      }
+
+      .bolebit-features-description {
+        padding-top: 5vw;
+        padding-bottom: 8vw;
+        font-size: 4vw;
+        color: $contentSubtitle;
+      }
+
+      .bolebit-features-coins {
+        position: relative;
+        width: 100%;
+        display: inline-block;
+
+        .bolebit-features-coins-img {
+          width: 15vw;
+          margin: 0vw 2vw 5vw 2vw;
+        }
+      }
+    }
+
+    .bolebit-advantage {
+      position: relative;
+      width: 100%;
+      padding: 10vw 5vw;
+      padding-bottom: 15vw;
+      margin-top: 5vw;
+      background: $contentBgColor;
+      border-radius: 2.5vw;
+      text-align: center;
+
+      .bolebit-advantage-title {
+        font-size: 6vw;
+        font-weight: bold;
+        color: $contentTitle;
+      }
+
+      .bolebit-advantage-content {
+        text-align: left;
+
+        .bolebit-advantage-card {
+          padding-top: 10vw;
+
+          .bolebit-advantage-card-icon {
+            width: 6vw;
+          }
+
+          .bolebit-advantage-card-content {
+            padding-top: 3vw;
+
+            .bolebit-advantage-card-title {
+              font-size: 4vw;
+              font-weight: bold;
+              color: $contentSubtitle;
+            }
+
+            .bolebit-advantage-card-subtitle {
+              padding-top: 1vw;
+              font-size: 3.5vw;
+              color: $contentSubtitle;
+            }
+          }
+        }
+      }
+    }
+
+    .bolebit-overview {
+      position: relative;
+      width: 100%;
+      padding: 10vw 5vw;
+      padding-bottom: 15vw;
+      margin-top: 5vw;
+      background: $contentBgColor;
+      border-radius: 2.5vw;
+      text-align: center;
+
+      .bolebit-overview-title {
+        font-size: 6vw;
+        font-weight: bold;
+        color: $contentTitle;
+      }
+
+      .bolebit-overview-graph {
+        position: relative;
+        margin-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .bolebit-overview-graph-content {
+          display: flex;
+          align-items: center;
+
+          .overview-graph-year {
+            font-weight: bold;
+            font-size: 4vw;
+          }
+
+          .overview-graph-arrow {
+            margin-left: 3vw;
+            width: 5vw;
+            transform: rotate(270deg);
+          }
+
+          .overview-graph-progress {
+            width: 5vw;
+            height: 40vw;
+          }
+
+          .overview-graph-line {
+            width: 15vw;
+            height: 0.5vw;
+            margin: 0vw 3vw 0vw 2vw;
+            background: #f6aeaf;
+          }
+
+          .overview-graph-about {
+            width: 35vw;
+            font-size: 4vw;
+          }
+
+          .phase1 {
+            background: #FFB9B9;
+          }
+
+          .phase2 {
+            background: #FF8D8D;
+          }
+
+          .phase3 {
+            background: #FF6E6F;
+          }
+
+          .phase4 {
+            background: #EC5557;
+          }
+
+          .phase5 {
+            background: #D54749;
+          }
+        }
+      }
+    }
+  }
+}

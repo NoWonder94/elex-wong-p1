@@ -1,0 +1,6 @@
+<div class="btn-loader" (click)="onClick()" [class.disabled]="disabled" [class.delete]="mode == 'delete'">
+  <span *ngIf="!busy">{{ title }}</span>
+
+  <app-swapping-squares-spinner [animationDuration]="1200" [size]="22" [color]="'#fff'" *ngIf="busy">
+  </app-swapping-squares-spinner>
+</div>

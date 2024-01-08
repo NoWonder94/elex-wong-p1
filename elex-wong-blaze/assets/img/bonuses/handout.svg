@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="42px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>handout</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
+        <g id="blaze-cash-balance-bonus-page" transform="translate(-491.000000, -152.000000)" strokeWidth="2">
+            <g id="Group-15" transform="translate(492.000000, 143.000000)">
+                <g id="Group-12">
+                    <g id="handout" transform="translate(0.000000, 10.000000)">
+                        <path d="M6,22 L9,22 C12.284,22 15.3,23.462 17,26 L23,26 C25.907,26 29,29.093 29,32 L15,32" id="Path" stroke="#F12C4C"></path>
+                        <path d="M27.176,28 L37,28 C41.833,28 43,32 43,32 L21.797,39.746 C20.15,40.138 18.427,40.076 16.812,39.566 L6,35" id="Path" stroke="#F12C4C"></path>
+                        <circle id="Oval" stroke="#FFFFFF" strokeLinecap="square" cx="31" cy="15" r="5"></circle>
+                        <circle id="Oval" stroke="#FFFFFF" strokeLinecap="square" cx="17" cy="5" r="5"></circle>
+                        <rect id="Rectangle" stroke="#F12C4C" strokeLinecap="square" x="0" y="20" width="6" height="16"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

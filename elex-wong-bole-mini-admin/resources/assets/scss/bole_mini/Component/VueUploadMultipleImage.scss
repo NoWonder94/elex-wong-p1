@@ -1,0 +1,50 @@
+.img-upload-multiple-layout
+{
+	margin-top:20px;
+
+	.left-panel
+	{
+		display:inline-block;
+		width:200px;
+		vertical-align:top;
+	}
+
+	.right-panel
+	{
+		padding-left:4px;
+		display:inline-block;
+		width:680px;
+		min-height:240px;
+    	border-left:1px solid #E8E8E8;
+    	vertical-align:top;
+
+		.uploaded-img-list
+		{
+			.uploaded-img
+			{
+				padding:4px;
+				//display:inline-block;
+				float:left;
+				width:200px;
+				height:110px;
+				cursor:pointer;
+				overflow:hidden;
+
+				img
+				{
+					width:100%;
+					height:100%;
+				}
+			}
+
+			.message-no-data
+			{
+				width:100%;
+				text-align:center;
+				color:grey;
+				font-size:18px;
+    			line-height:13;
+			}
+		}
+	}
+}

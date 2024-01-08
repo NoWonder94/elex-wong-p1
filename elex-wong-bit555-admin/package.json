@@ -1,0 +1,34 @@
+{
+  "name": "Bit555",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/i18n": "^7.2.2",
+    "axios": "^0.27.2",
+    "core-js": "^3.19.3",
+    "element-ui": "^2.15.8",
+    "jquery": "^3.6.0",
+    "notiflix": "^3.2.5",
+    "nuxt": "^2.15.8",
+    "vue": "^2.6.14",
+    "vue-element-loading": "^2.0.2",
+    "vue-server-renderer": "^2.6.14",
+    "vue-session": "^1.0.0",
+    "vue-template-compiler": "^2.6.14",
+    "vue-upload-image": "^1.1.5",
+    "vue2-editor": "^2.10.3",
+    "vuetify": "^2.6.1",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.3",
+    "sass": "^1.52.1",
+    "sass-loader": "10.1.1"
+  }
+}

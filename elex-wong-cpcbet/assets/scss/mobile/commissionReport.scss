@@ -1,0 +1,228 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .commission-report {
+
+    .commission-report-overview {
+      padding: 5vw;
+      background-color: $secondaryBgColor;
+
+      .commission-title {
+        padding-bottom: 5vw;
+      }
+
+      .commission-report-overview-exist {
+        align-self: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2vw;
+        grid-row-gap: 2vw;
+        padding: 4vw 0px;
+
+        .commission-report-overview-card {
+          width: 100%;
+          max-height: 24vw;
+          color: $fontColor;
+          text-align: center;
+          border-radius: 1vw;
+          padding: 4vw 2vw;
+          background-color: $blueGreen;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .card-total-number {
+            font-weight: bold;
+            font-size: 7vw;
+            margin-bottom: 0.5vw;
+          }
+
+          .card-title {
+            font-size: 3.5vw;
+          }
+        }
+      }
+
+    }
+
+    .commission-report-details {
+      padding: 5vw;
+      background-color: $secondaryBgColor;
+
+      .commission-title {
+        padding-bottom: 5vw;
+      }
+
+      .commission-report-filter {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+
+        .commission-report-filter-user {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .filter-user-title {
+            padding: 10px 0;
+          }
+
+          .filter-user-input {
+            width: 40vw;
+
+            .el-input {
+              width: 100%;
+            }
+          }
+
+          .filter-button {
+            padding: 2vw 6vw;
+            border-radius: 1vw;
+            cursor: pointer;
+          }
+        }
+
+        .commission-report-filter-date {
+          display: flex;
+          align-items: center;
+
+          .filter-date-title {
+            margin-right: auto;
+          }
+
+          .el-date-editor.el-input {
+
+            .el-input__prefix {
+              display: none;
+            }
+
+            .el-input__inner {
+              padding: 0;
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      hr {
+        margin: 2vw 0;
+        border: none;
+        border-bottom: 0.5vw solid $lightFontColor;
+        opacity: 0.5;
+      }
+
+      .commission-report-datetime-button-group {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        align-self: center;
+
+        .commission-report-datetime-button {
+          margin-right: 2vw;
+          margin-bottom: 2vw;
+          padding: 2vw 3vw;
+          background-color: #90FFAE;
+          color: $blueGreen;
+          font-size: 3vw;
+          font-weight: bold;
+          border-radius: 30px;
+          display: flex;
+          align-self: center;
+          cursor: pointer;
+        }
+      }
+
+      .commission-report-details-table {
+
+        .el-table {
+          background-color: inherit;
+          color: $fontColor;
+          border-bottom: none;
+
+          .el-table__body-wrapper {
+            min-height: 80vw;
+          }
+
+          thead {
+            color: $fontColor;
+          }
+
+          tr,
+          tr:hover>td,
+          th.el-table__cell {
+            background-color: inherit;
+          }
+
+          td {
+            border-bottom: none;
+          }
+
+          &::before {
+            height: 0px;
+          }
+        }
+      }
+
+      .commission-report-details-paginate {
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 4vw;
+
+        .el-pager {
+          .active {
+            background-color: $primaryGreen  !important;
+          }
+
+          .number.active:hover {
+            color: $fontColor  !important;
+          }
+
+          .number:hover {
+            color: $primaryGreen  !important;
+          }
+        }
+      }
+    }
+
+    .el-input {
+      width: 30vw;
+
+      .el-input__inner {
+        background-color: inherit;
+        border: none;
+        color: $fontColor;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:focus {
+          border: 0.5vw solid $primaryGreen;
+        }
+
+        &:hover {
+          color: $lightGreen  !important;
+        }
+
+        &::placeholder {
+          color: $lightFontColor  !important;
+        }
+      }
+    }
+
+    .commission-report-nodata {
+      padding: 5vw;
+      color: $fontColor;
+      font-weight: bold;
+      text-align: center;
+
+      img {
+        padding-bottom: 2vw;
+      }
+
+      div {
+        line-height: 3vw;
+      }
+    }
+  }
+}

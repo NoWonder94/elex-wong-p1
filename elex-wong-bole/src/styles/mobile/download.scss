@@ -1,0 +1,118 @@
+.backgroundBanner {
+    height: 67.9vw;
+
+    #scene {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: visible;
+      img {
+        position: absolute !important;
+        top: auto !important;
+        left: auto !important;
+        bottom: -5vw !important;
+        right: 5vw !important;
+        width: 33vw;
+      }
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      .background_animate {
+        background-image: url('../assets/mobile_banner_Top/mobile_top_bg.png');
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: bottom;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        white-space: nowrap;
+        transform: translateX(-50%) translateY(-80%);
+        color: white;
+        font-weight: 600;
+        font-size: 6vw;
+      }
+    }
+  }
+
+  .resourceDownload {
+    width: 80%;
+    margin: 0 auto;
+    padding: 8vw 0 19vw 0;
+
+    .btn {
+      img {
+        display: none;
+      }
+      i {
+        font-weight: 900;
+        font-size: 5vw;
+        float: right;
+        padding: 3vw;
+      }
+    }
+
+    table {
+      font-size: 3.8vw;
+      color: #656565;
+      width: 100%;
+      tr {
+        border-bottom: 1px solid #d0d0d0;
+        td {
+          padding: 4vw 2vw;
+        }
+
+        td:first-child {
+          width: 20%;
+          text-align: right;
+        }
+
+        td:nth-child(2) {
+          width: 40%;
+          text-align: left;
+        }
+
+        td:last-child {
+          width: 40%;
+          text-align: right;
+          a {
+            img {
+              width: 20%;
+            }
+          }
+        }
+
+        td:hover {
+          cursor: pointer;
+        }
+      }
+      tr:last-child {
+        border-bottom: transparent;
+      }
+    }
+
+    table.menu {
+      tr {
+        border-bottom: 3px solid #d0d0d0;
+        td:first-child {
+          text-align: center;
+        }
+        td:last-child {
+          text-align: right;
+        }
+      }
+    }
+  }

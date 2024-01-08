@@ -1,0 +1,83 @@
+@import '../Base.scss';
+
+@media only screen and (min-width: 700px) {
+  .headerNew {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    z-index: 901;
+    color: white;
+
+    .header-content-new {
+      padding: 0px 50px;
+      padding-top: 30px;
+      min-width: 1200px;
+
+      .header-logo {
+        display: inline-block;
+        vertical-align: middle;
+
+        img {
+          width: 270px;
+          cursor: pointer;
+        }
+      }
+
+      .header-actions {
+        //解决el-dropdown rendering问题
+        display: none;
+
+        padding-top: 15px;
+        float: right;
+        //display:inline-block;
+        vertical-align: middle;
+
+        .header-lang-switcher {
+          padding: 5px 10px;
+          position: relative;
+          display: inline-block;
+          vertical-align: middle;
+          border: 1px solid #505050;
+          border-radius: 5px;
+          cursor: pointer;
+
+          .lang-icon {
+            display: inline-block;
+            width: 20px;
+            vertical-align: middle;
+          }
+
+          .header-lang {
+            display: inline-block;
+            padding-left: 10px;
+            vertical-align: middle;
+            font: normal normal bold 16px Helvetica;
+            color: #FFFFFF;
+          }
+
+          .icon-down {
+            padding-left: 50px;
+            display: inline-block;
+            vertical-align: middle;
+
+            img {
+              width: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .el-dropdown-menu {
+    position: fixed !important;
+    top: 80px !important;
+    left: unset !important;
+    right: 40px !important;
+    width: 150px !important;
+  }
+
+  .popper__arrow {
+    left: 40px !important;
+  }
+}

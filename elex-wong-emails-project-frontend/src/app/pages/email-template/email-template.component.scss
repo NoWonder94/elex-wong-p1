@@ -1,0 +1,175 @@
+@import "../../shared.scss";
+
+.editor {
+  width: 100%;
+  max-width: 1200px;
+
+  &.hidden {
+    visibility: hidden;
+  }
+}
+
+.save {
+  padding: 20px;
+}
+
+#editor-container {
+  height: 500px;
+}
+
+.modal {
+  // display: block;
+  background: #00000066;
+  overflow-y: scroll;
+}
+
+.modal-dialog {
+  max-width: 800px;
+
+}
+
+@media only screen and (min-width: 700px) {
+  .modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+
+    .deleteImg {
+      margin: 10px 0;
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    p {
+      padding-top: 10px;
+      padding-left: 5px;
+      font-size: 14px;
+    }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+
+      .image {
+        position: relative;
+        flex: 1;
+        margin: 5px;
+        max-width: 240px;
+
+        .imgCover {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          padding-top: 90px;
+          background-color: #00000066;
+          font-size: 30px;
+          color: white;
+          text-align: center;
+          cursor: pointer;
+
+        }
+
+        &:hover {
+          .imgCover {
+            display: block;
+          }
+        }
+
+        img {
+          max-width: 240px;
+          width: 240px;
+          height: 240px;
+          cursor: pointer;
+          object-fit: cover;
+        }
+
+        .btn {
+          padding: 3px 6px;
+        }
+
+        .copy {
+          position: absolute;
+          top: 0;
+          right: 0;
+          border-radius: 0;
+        }
+
+        .delete {
+          position: absolute;
+          top: 0;
+          right: 30px;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+
+      .image {
+        flex: 1;
+        margin: 5px;
+        text-align: center;
+        cursor: pointer;
+
+        .imgCover {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #00000066;
+          cursor: pointer;
+
+          span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: white;
+          }
+        }
+
+        &:hover {
+          .imgCover {
+            display: block;
+          }
+        }
+
+        img {
+          width: 80vw;
+          height: 80vw;
+        }
+      }
+    }
+  }
+}
+
+.uploader {
+  text-align: center;
+
+  ngx-awesome-uploader {
+    margin: 10px auto;
+  }
+}
+
+.email-template-archive-btn {
+  margin-left: 10px;
+}

@@ -1,0 +1,52 @@
+@import '../../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+    .crypto-video-list{
+        position: relative;
+        padding: 20px;
+
+        .search-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .search-input{
+                .el-input{
+                    width: 200px;
+                }
+            }
+
+            .create-button{
+                .el-button{
+                    background: $leftPanelBgColor;
+                    color: #FFF;
+                }
+            }
+        }
+
+        .content{
+            padding-top: 20px;
+
+            th{
+                background-color: $leftPanelBgColor;
+                color: #FFF;
+            }
+
+            .img{
+                img{
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .pagination{
+            padding-top: 20px;
+            text-align: right;
+
+            .el-pagination.is-background .el-pager li:not(.disabled).active{
+                background-color: $leftPanelBgColor;
+            }
+        }
+    }
+}

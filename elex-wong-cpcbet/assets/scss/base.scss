@@ -1,0 +1,174 @@
+@import 'assets/css/font-awesome-6.0.0/css/all.css';
+
+$bgColor: #17171C;
+$secondaryBgColor: #000000;
+$secondaryBgColorOpacity90: rgba(0, 0, 0, 0.894);
+$headerNavBg: #212227;
+$dark: #2B2D2F;
+$darker: #212121;
+$fontColor: #FFFFFF;
+$lightFontColor: rgba(255, 255, 255, .5);
+$lightFontColor10: rgba(255, 255, 255, .1);
+$lightFontColor80: rgba(255, 255, 255, .8);
+$whiteOpacity30: rgba(255, 255, 255, .3);
+$blackOpacity75: rgba(0, 0, 0, 0.75);
+$blackOpacity50: rgba(0, 0, 0, 0.5);
+$blackOpacity20: rgba(0, 0, 0, 0.2);
+/* purple theme */
+$primaryPurple: #8427FF;
+$secondaryPurple: #9F5AFC;
+$lightPurple: #BF90FF;
+$lighterPurple: #E6D3FF;
+$lightBlue: #3288ED;
+$deepblue: #2D2072;
+$darkBlue: #0E0733;
+$bluePurple: #302673;
+/* green theme */
+$primaryGreen: #00C886;
+$secondaryGreen: #336C53;
+$lightGreen: #469F78;
+$lighterGreen: #90FFAE;
+$blueGreen: #003937;
+$lightgrey: #FAF7FA;
+$grey: #C9C9C9;
+
+$borderRadius3: 3px;
+$borderRadius5: 5px;
+$borderRadius10: 10px;
+$borderRadius20: 20px;
+$borderRadius30: 30px;
+
+$pcMinWidth: 700px;
+// $pcMinWidth: 0px;
+$mobileMaxWidth: 700px;
+
+$green:#00C886;
+$warning: #EA7166;
+
+body {
+  position: relative;
+  background-color: $bgColor;
+  color: $fontColor;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* purple theme */
+.purpleGradientButtonBg {
+  background-image: linear-gradient(to right, $secondaryPurple, #6200E5);
+}
+
+.purple-box {
+  color: $fontColor;
+  border-radius: $borderRadius3;
+  background-color: $primaryPurple;
+}
+
+.purple-border-box {
+  color: $secondaryPurple;
+  border-radius: $borderRadius3;
+  border: 1px solid $secondaryPurple;
+  background-color: transparent;
+}
+
+/* green theme */
+.greenGradientButtonBg {
+  background-image: linear-gradient(to right, $lightGreen, $secondaryGreen);
+}
+
+.green-box {
+  color: $fontColor;
+  border-radius: $borderRadius3;
+  background-color: $primaryGreen;
+}
+
+.green-border-box {
+  color: $primaryGreen;
+  border-radius: $borderRadius3;
+  border: 1px solid $primaryGreen !important;
+  background-color: transparent;
+}
+
+.border-box {
+  color: $fontColor;
+  border-radius: $borderRadius3;
+  border: 1px solid $lightFontColor;
+  background-color: transparent;
+}
+
+
+@media only screen and (min-width: $pcMinWidth) {
+  .web {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  section {
+    min-height: 500px;
+    padding-top: 71px;
+    padding-left: 225px;
+  }
+
+  .el-icon-back {
+    padding-right: 5px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  body {
+    min-width: 1300px;
+    background-color: $secondaryBgColor;
+    #__nuxt{
+      max-width: 1400px;
+      margin: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .back-title {
+    display: flex;
+    position: relative;
+    padding: 6vw 0;
+    font-size: 4vw;
+    justify-content: center;
+
+    .el-icon-back {
+      position: absolute;
+      left: 5vw;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 6vw;
+      font-weight: bold;
+    }
+  }
+
+  #chat-widget-container {
+    // bottom: 20vw !important;
+  }
+
+  section,
+  .user-header {
+    padding-top: 15vw;
+  }
+
+  #chat-application{
+    z-index:9999 !important;
+
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

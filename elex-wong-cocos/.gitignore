@@ -1,0 +1,48 @@
+
+#///////////////////////////
+# Cocos Creator 3D Project
+#///////////////////////////
+library/
+temp/
+local/
+build/
+profiles/
+
+packages
+
+/pack/pack.key
+/pack/pack.client.address.config.ts
+
+# .gitmodules
+
+assets/submodules/*.meta
+
+npm-shrinkwrap.json
+
+/preview-template
+
+#//////////////////////////
+# NPM
+#//////////////////////////
+node_modules/
+
+#//////////////////////////
+# VSCode
+#//////////////////////////
+
+#//////////////////////////
+# WebStorm
+#//////////////////////////
+.idea/
+
+package-lock.json
+
+native/engine/**/assets/**
+
+hotupdate/**/*
+
+remote-assets
+
+DEBUG
+
+**/windows/proj/**

@@ -1,0 +1,63 @@
+.slide-in{
+  -webkit-animation: slidein 0.1s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: slidein 0.1s; /* Firefox < 16 */
+      -ms-animation: slidein 0.1s; /* Internet Explorer */
+          -o-animation: slidein 0.1s; /* Opera < 12.1 */
+          animation: slidein 0.1s;
+}
+
+@keyframes slidein {
+  0%  { transform: translateX(30%);}
+  100% {transform: translateX(0%);}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slidein {
+  0%  { transform: translateX(30%);}
+  100% {transform: translateX(0%);}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slidein{
+  0%  { transform: translateX(30%);}
+  100% {transform: translateX(0%);}
+}
+
+/* Internet Explorer */
+@-ms-keyframes slidein {
+  0%  { transform: translateX(30%);}
+  100% {transform: translateX(0%);}
+}
+
+.slide-out{
+  -webkit-animation: slideout 0.1s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: slideout 0.1s; /* Firefox < 16 */
+      -ms-animation: slideout 0.1s; /* Internet Explorer */
+          -o-animation: slideout 0.1s; /* Opera < 12.1 */
+          animation: slideout 0.1s;
+}
+
+@keyframes slideout {
+  0%  { transform: translateX(0%);}
+  100% {transform: translateX(30%);}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes slideout {
+  0%  { transform: translateX(0%);}
+  100% {transform: translateX(30%);}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes slideout{
+  0%  { transform: translateX(0%);}
+  100% {transform: translateX(30%);}
+}
+
+/* Internet Explorer */
+@-ms-keyframes slideout {
+  0%  { transform: translateX(0%);}
+  100% {transform: translateX(30%);}
+}
+
+

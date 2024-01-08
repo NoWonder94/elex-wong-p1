@@ -1,0 +1,148 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $blackFontColorTransparent;
+    backdrop-filter: blur(2px);
+    color: $fontColor;
+    font-size: 15px;
+    z-index: 1999;
+
+    .modal-container {
+      position: relative;
+      margin: 30px auto;
+      padding: 32px;
+      width: 460px;
+      background-color: $bgColor;
+      border-radius: 10px;
+
+
+      .modal-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+
+        .fa-xmark {
+          color: $greyFontColor;
+          font-size: 25px;
+          cursor: pointer;
+
+          &:hover {
+            color: $fontColor;
+          }
+        }
+      }
+
+      .modal-title {
+        padding: 20px 0;
+        font-family: $titleFont;
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      .modal-sub-title {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .modal-description {
+        color: $blackFontColorTransparent;
+        font-size: 15px;
+      }
+
+      .modal-success-message-container {
+        text-align: center;
+
+        .fa-envelope {
+          font-size: 44px;
+          font-weight: 100;
+        }
+      }
+
+
+      .el-form-item {
+        margin-bottom: 10px;
+
+        .el-form-item__label {
+          color: inherit;
+          float: none;
+          font-size: 13px;
+          font-weight: 600;
+          letter-spacing: 0px;
+        }
+
+        .el-form-item__content {
+          margin-left: 0 !important;
+        }
+
+        .el-button {
+          margin-top: 30px;
+          margin-bottom: 20px;
+          padding: 12px 0;
+          width: 100%;
+          background-color: $secondaryBgColor;
+          border-radius: 6px;
+          color: $whiteFontColor;
+          font-weight: 500;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+
+      .modal-borderbox {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1px;
+        margin: 30px 0;
+        background-color: $greyFontColor;
+        border: 1px solid $greyFontColor;
+        border-radius: 8px;
+        overflow: hidden;
+
+        .modal-radio-input {
+          display: flex;
+          padding: 20px;
+          background-color: $bgColor;
+          font-size: 16px;
+          font-weight: 600;
+          justify-content: space-between;
+
+        }
+
+      }
+
+      .modal-btn {
+        button {
+          margin-top: 30px;
+          margin-bottom: 20px;
+          padding: 12px 0;
+          width: 100%;
+          background-color: $secondaryBgColor;
+          border-radius: 6px;
+          color: $whiteFontColor;
+          font-weight: 500;
+          text-align: center;
+          cursor: pointer;
+        }
+
+      }
+
+      .modal-footer {
+        padding-bottom: 20px;
+        text-align: center;
+        color: $blackFontColorTransparent;
+
+        span {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

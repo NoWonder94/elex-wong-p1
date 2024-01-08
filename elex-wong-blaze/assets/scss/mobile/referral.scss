@@ -1,0 +1,50 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 1200px) {
+  .referral {
+    position: relative;
+    min-height: 90vh;
+    color: $white;
+    padding: 20px 0;
+
+    .referral-title{
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 15px;
+      text-align: center;
+      border-bottom: 1px solid $separator;
+    }
+
+    .el-tabs{
+      background-color: $background;
+      padding: 10px 20px;
+    }
+
+    .el-tabs__active-bar{
+      background-color: $red;
+    }
+
+    .el-tabs__item.is-active{
+      color: $red;
+    }
+
+    .el-tabs__nav-wrap::after{
+      background-color: $separator;
+    }
+
+    .el-tabs__item{
+      color: $lightGrey;
+
+      img{
+        width: 25px;
+        height: 20px;
+        vertical-align: text-bottom;
+        margin-right: 6px;
+      }
+
+      &:hover{
+        color: $red;
+      }
+    }
+  }
+}

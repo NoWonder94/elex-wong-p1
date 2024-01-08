@@ -1,0 +1,245 @@
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section>
+
+<main id="main">
+  <section id="registersection" class="about">
+    <div class="aos-init aos-animate" data-aos="fade-up" *ngIf="campaign">
+      <div class="breadcrumb" (click)="goBack()">&lt; Back to project</div>
+
+      <!-- Campaign info -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Campaign information</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <!-- Name -->
+          <simple-box-edit heading="Name" [value]="campaign.name" (edited)="onNameEdited($event)"></simple-box-edit>
+
+          <!-- Presentation -->
+          <simple-box-edit heading="Presentation" [value]="campaign.presentation" [lines]="3"
+            (edited)="onPresentationEdited($event)">
+          </simple-box-edit>
+
+          <!-- Campaign banner -->
+          <div class="data-info-box">
+            <p class="heading">Banner <i class="bi bi-pencil-square" (click)="toggleEditBanner()"></i>
+            </p>
+            <img *ngIf="hasBanner() && !editingBanner" [src]="getBannerPath()" class="banner" />
+            <ngx-awesome-uploader *ngIf="editingBanner" [adapter]="uploadAdapter"
+              (uploadSuccess)="onBannerUploaded($event)" [showPreviewContainer]="false" uploadType="single">
+            </ngx-awesome-uploader>
+          </div>
+
+          <!-- Others -->
+          <div class="data-info-box flex-row">
+            <div class="col-lg-6 no-padding">
+              <p class="heading">Referral code</p>
+              <p class="text">{{ campaign.referral_code }}</p>
+            </div>
+            <div class="col-lg-6 no-padding">
+              <p class="heading"><b>Invitation url </b></p>
+              <p class="text">{{ getCampaignUrl() }} <i class="bi bi-clipboard"
+                  (click)="copyCampaignUrlToClipboard()"></i></p>
+            </div>
+          </div>
+
+          <!-- Promo link -->
+          <simple-box-edit heading="Promo link" [value]="campaign.promo_link" (edited)="onPromoLinkEdited($event)">
+          </simple-box-edit>
+
+          <!-- Rules -->
+          <simple-box-edit heading="Rules" [value]="campaign.rules" [lines]="5" (edited)="onRulesEdited($event)">
+          </simple-box-edit>
+
+          <div class="data-info-box flex-row">
+            <div class="col-lg-6 no-padding">
+              <p class="heading">Start Date</p>
+              <div class="input-group date-box">
+                <input class="form-control" placeholder="yyyy-mm-dd" [(ngModel)]="modelFromDate" ngbDatepicker
+                  #ngbStartDatepicker="ngbDatepicker" [readonly]="true" (click)="ngbStartDatepicker.toggle()"
+                  [minDate]="minDate" [value]="formatter.format(fromDate)"
+                  (dateSelect)="onDateSelection($event, 'startdate')" [startDate]="fromDate">
+                <button class="bi bi-calendar calendar-icon" (click)="ngbStartDatepicker.toggle()"
+                  type="button"></button>
+              </div>
+            </div>
+
+            <div class="col-lg-6 no-padding">
+              <p class="heading">End Date</p>
+              <div class="input-group date-box">
+                <input class="form-control" placeholder="yyyy-mm-dd" [(ngModel)]="modelToDate" ngbDatepicker
+                  #ngbEndDatepicker="ngbDatepicker" [readonly]="true" (click)="ngbEndDatepicker.toggle()"
+                  [minDate]="minDate" [value]="formatter.format(toDate)"
+                  (dateSelect)="onDateSelection($event, 'enddate')" [startDate]="toDate">
+                <button class="bi bi-calendar calendar-icon" (click)="ngbEndDatepicker.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Campaign actions -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Required actions</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <div class="data-info-box" *ngIf="!fetchingCampaignActions">
+            <div *ngFor="let campaignAction of campaignActions">
+              <div *ngIf="!editedCampaignAction" class="campaign-action">
+                {{ getCampaignActionSummary(campaignAction) }} <i class="bi bi-pencil-square"
+                  (click)="editCampaignAction(campaignAction)"></i>
+              </div>
+              <action-editor [action]="campaignAction" *ngIf="editedCampaignAction === campaignAction"
+                (completed)="onActionEditionCompleted($event)"></action-editor>
+            </div>
+
+            <btn-loader title="New action" (clicked)="createCampaignAction()" *ngIf="!editedCampaignAction">
+            </btn-loader>
+          </div>
+
+          <data-is-loading *ngIf="fetchingCampaignActions"></data-is-loading>
+        </div>
+      </div>
+
+      <!-- Medium -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Sharing mode</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <div class="data-info-box">
+            <p class="heading">Medium</p>
+            <p class="text">{{ campaign.getMediumDisplayValue() }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rewards distribution -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Rewards distribution</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <div class="data-info-box">
+            <p class="heading">Distribution method</p>
+            <p class="text">{{ campaign.getDistributionModeDisplayValue() }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rewards -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Rewards</div>
+      </div>
+      <div class="row content justify-content-center">
+        <div class="col-lg-8">
+          <!-- Reward type -->
+          <div class="data-info-box">
+            <p class="heading">Reward type</p>
+            <p class="text">{{ campaign.getRewardTypeDisplayValue() }}</p>
+          </div>
+
+          <!-- ERC20 rewards setup -->
+          <ng-container *ngIf="isERC20TokensCampaign()">
+            <div class="data-info-box">
+              <div ngbDropdown>
+                <p class="heading">Token <i class="bi bi-pencil-square" ngbDropdownToggle></i></p>
+                <div class="dropdown-menu" ngbDropdownMenu>
+                  <button ngbDropdownItem *ngFor="let token of tokens" (click)="selectToken(token)">{{ token.title }}
+                    ({{
+                    token.symbol
+                    }}) on {{ getDisplayableTokenNetwork(token) }}</button>
+                  <button class="primary margin-top-10" ngbDropdownItem (click)="createToken()">Create new
+                    token</button>
+                </div>
+              </div>
+              <p class="text" *ngIf="campaign.token">
+                {{ campaign.token.title }} ({{ campaign.token.symbol }}) on {{
+                getDisplayableTokenNetwork(campaign.token) }}
+              </p>
+            </div>
+
+            <simple-box-edit heading="Total number of tokens to airdrop" [value]="campaign.erc20_expected_tokens_count"
+              (edited)="onERC20AirdropTotalAmountEdited($event)">
+            </simple-box-edit>
+
+            <!-- Referral amounts -->
+            <div class="data-info-box-shell flex-row">
+              <simple-box-edit class="col-lg-3 no-padding" heading="Init. tokens" [value]="campaign.initial_amount"
+                (edited)="onInitAmountEdited($event)"></simple-box-edit>
+              <simple-box-edit class="col-lg-3 no-padding" heading="Level 1 tokens" [value]="campaign.l1_token_amount"
+                (edited)="onL1TokenAmountEdited($event)"></simple-box-edit>
+              <simple-box-edit class="col-lg-3 no-padding" heading="Level 2 tokens" [value]="campaign.l2_token_amount"
+                (edited)="onL2TokenAmountEdited($event)"></simple-box-edit>
+              <simple-box-edit class="col-lg-3 no-padding" heading="Level 3 tokens" [value]="campaign.l3_token_amount"
+                (edited)="onL3TokenAmountEdited($event)">
+              </simple-box-edit>
+            </div>
+
+            <!-- Aidrdop contract, deposit -->
+            <div class="data-info-box">
+              <p class="heading">Airdrop contract management</p>
+              <div class="status" *ngIf="!campaign.erc20_airdrop_contract_address">Airdrop contract not published.</div>
+              <div class="status"
+                *ngIf="campaign.erc20_airdrop_contract_address && !campaign.erc20_airdrop_deposit_discovered_at">Airdrop
+                contract published. Awaiting
+                tokens
+                deposit.</div>
+              <div class="status"
+                *ngIf="campaign.erc20_airdrop_contract_address && campaign.erc20_airdrop_deposit_discovered_at">Airdrop
+                contract published, tokens ready in the contract.</div>
+
+              <p class="small-info" *ngIf="!campaign.erc20_airdrop_contract_address">You are going to create an airdrop
+                contract on chain,
+                in which you will deposit the reward tokens.</p>
+
+              <btn-loader title="Publish contract" (clicked)="createCampaignERC20AirdropContract()"
+                [busy]="creatingAirdropContract" *ngIf="!campaign.erc20_airdrop_contract_address">
+              </btn-loader>
+              <btn-loader [title]="'Deposit '+campaign.erc20_expected_tokens_count+' '+campaign.token.symbol"
+                [busy]="depositingERC20Tokens" (clicked)="depositAirdropERC20Tokens()"
+                *ngIf="campaign.erc20_airdrop_contract_address && !campaign.erc20_airdrop_deposit_discovered_at && campaign.erc20_expected_tokens_count">
+              </btn-loader>
+
+              <p class="small-info">
+                <b>Tokens currently in the contract:</b> {{ erc20TokensInContract }}
+              </p>
+            </div>
+          </ng-container>
+
+          <!-- NFT rewards setup -->
+          <div class="data-info-box" *ngIf="campaign.reward_type == 'nfts'">
+            Not yet available
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Statistics</div>
+      </div>
+      <div class="row content justify-content-center" *ngIf="campaignStats">
+        <div class="col-lg-8">
+          <div class="data-info-box flex-row">
+            <div class="col-lg-6 no-padding">
+              <p class="heading">Joined</p>
+              <p class="text">{{ campaignStats.accounts }}</p>
+            </div>
+
+            <div class="col-lg-6 no-padding">
+              <p class="heading">Spent tokens</p>
+              <p class="text">{{ campaignStats.spentTokens }}</p>
+            </div>
+          </div>
+
+          <btn-loader title="Download campaign report" (clicked)="downloadReport()" [busy]="downloadingReport">
+          </btn-loader>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</main>

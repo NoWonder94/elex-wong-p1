@@ -1,0 +1,63 @@
+{
+    "name": "reference-collector",
+    "package_version": 2,
+    "version": "1.0.0",
+    "description": "node reference collector extension",
+    "author": "linyngfly",
+    "main": "main.js",
+    "panels": {
+        "default": {
+            "title": "world panel",
+            "type": "dockable",
+            "main": "./panels/default.js",
+            "icon": "./static/default.png"
+        },
+        "list": {
+            "title": "world list",
+            "type": "simple",
+            "main": "./panels/list.js",
+            "icon": "./static/list.png",
+            "flags": {},
+            "size": {}
+        }
+    },
+    "contributions": {
+        "scene": {
+            "script": "./scene.js"
+        },
+        "menu": [
+            {
+                "path": "i18n:menu.extension",
+                "label": "test",
+                "message": "log"
+            },
+            {
+                "path": "i18n:menu.extension",
+                "label": "发布打包",
+                "message": "open-panel"
+            }
+        ],
+        "messages": {
+            "upload": {
+                "methods": [
+                    "saveData"
+                ]
+            },
+            "query": {
+                "methods": [
+                    "queryData"
+                ]
+            },
+            "log": {
+                "methods": [
+                    "log"
+                ]
+            },
+            "open-panel": {
+                "methods": [
+                    "openPanel"
+                ]
+            }
+        }
+    }
+}

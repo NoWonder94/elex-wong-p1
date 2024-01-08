@@ -1,0 +1,381 @@
+@media only screen and (max-width:768px) {
+  .web {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    left: 0;
+    right: 0;
+  }
+
+  html {
+    min-width: 0;
+  }
+
+  body {
+    padding: 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+    color: #FFF;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    height: 16vw;
+    display: flex;
+    align-items: center;
+    background-color: rgba(39, 0, 33, 0.7);
+    z-index: 100;
+  }
+
+  .header-row {
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header img {
+    width: 32vw;
+  }
+
+  header .select {
+    background-color: rgba(39, 0, 33, 0.7);
+    border: none;
+    border-radius: 10px;
+  }
+
+  header .select img {
+    width: 4vw;
+    height: 4vw;
+    margin: 1vw 2vw;
+  }
+
+  header select {
+    width: 26vw;
+    height: 8vw;
+    padding: 0 3vw;
+    font-size: 3.6vw;
+    background-color: rgba(39, 0, 33, 0.7);
+    border: none;
+    border-radius: 10px;
+  }
+
+  .background {
+    background: url("../images/mobile/mobile_bg.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    width: 85vw;
+    margin: 0 auto;
+    padding: 16vw 0 20vw;
+    min-height: 100vh;
+  }
+
+  /* banner */
+  .banner {
+    position: relative;
+    padding-top: 10vw;
+  }
+
+  .banner img {
+    width: 100%;
+    height: 44vw;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  /* total games */
+  .games {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5vw;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  .total {
+    font-weight: normal;
+  }
+
+  /* game list */
+  .game-list {
+    padding-top: 4vw;
+  }
+
+  .game-item {
+    position: relative;
+    width: 100%;
+    background-color: rgba(39, 0, 33, 0.7);
+    border-radius: 15px;
+    margin-bottom: 4vw;
+  }
+
+  .game-item {
+    display: none;
+  }
+
+  .game-item:nth-child(1),
+  .game-item:nth-child(2),
+  .game-item:nth-child(3) {
+    display: block;
+  }
+
+  .game-item .game-item-img img {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .game-item .game-item-hot {
+    position: absolute;
+    right: 2vw;
+    top: 43vw;
+  }
+
+  .game-item .game-item-hot img {
+    width: 14vw;
+  }
+
+  .game-item .game-item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4vw 5vw;
+    font-size: 3.5vw;
+  }
+
+  .game-item .game-item-title {
+    font-weight: bold;
+    padding-bottom: 2vw;
+  }
+
+  .game-item .game-item-desc {
+    font-size: 2.6vw;
+    line-height: 1.7;
+  }
+
+  .game-item .game-item-button {
+    text-align: center;
+    font-weight: bold;
+    padding: 3vw 0;
+    margin-top: 5vw;
+    background-color: #B7086D;
+    border-radius: 10px;
+  }
+
+  .game-item .game-item-button2 {
+    text-align: center;
+    font-weight: bold;
+    padding: 3vw 0;
+    margin-top: 5vw;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+  }
+
+  /* load more button */
+  .load-more {
+    font-size: 3vw;
+    text-align: center;
+    padding: 2vw 0;
+    background-color: #B7086D;
+    border-radius: 10px;
+  }
+
+  /* coming soon */
+  .coming-soon {
+    display: none;
+    font-size: 4.8vw;
+    font-weight: bold;
+    padding-top: 8vw;
+    text-align: center;
+  }
+
+  /* game nav bar */
+  .game-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3vw;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 1vw 4vw 2vw;
+    ;
+    background-color: #270021;
+    z-index: 10;
+  }
+
+  .game-nav .active {
+    color: #FFF;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff
+  }
+
+  .game-nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .game-nav-item img {
+    width: 10vw;
+  }
+
+  .icon5 {
+    width: 7vw;
+  }
+
+  .carousel-indicators {
+    bottom: -3vw;
+  }
+
+  .popup {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10vw;
+    position: absolute;
+    top: 10vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    z-index: 1000;
+    border-radius: 6vw;
+  }
+
+  .popwrap {
+    position: relative;
+    padding: 20px;
+  }
+
+  .popheader {
+    display: flex;
+    padding-bottom: 6vw;
+  }
+
+  .popitem,
+  .popitem2 {
+    display: flex;
+  }
+
+  .poptitle {
+    margin-right: auto;
+  }
+
+  .close {
+    margin-left: auto;
+    color: white;
+    opacity: 1;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: white;
+    opacity: 0.5;
+    outline: none;
+  }
+
+  .small_icon,
+  .lang_icon {
+    margin: 0.5vw;
+  }
+
+  .popcontent3 {
+    padding: 10vw 0;
+  }
+
+  .popcontent3 img {
+    width: 100%;
+    height: 45vw;
+    border-radius: 6vw;
+    object-fit: cover;
+    border-radius: 6vw;
+  }
+
+  .pop-button {
+    text-align: center;
+    font-weight: bold;
+    padding: 3vw 0;
+    margin-top: 5vw;
+    background-color: #B7086D;
+    border-radius: 10px;
+  }
+
+
+  .contact {}
+
+  .contactUs-button {
+    position: fixed;
+    right: 3vw;
+    bottom: 20vw;
+    padding: 3vw;
+    z-index: 901;
+  }
+
+  .contactUs-button-web {
+    display: none;
+  }
+
+  .contactUs-button-mobile {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .contactUs-button-mobile-tab {
+    padding: 3vw;
+    border-radius: 10vw;
+    background-color: #ffffff;
+    z-index: 10;
+  }
+
+  .contact-slide {
+    display: none;
+  }
+
+  .contactUs-button-mobile-nav {
+    display: flex;
+    margin-right: 5vw;
+    padding: 2vw 4vw 2vw 0vw;
+    border-radius: 10vw;
+    background-color: #ffffff;
+    align-items: center;
+
+  }
+
+  .contactUs-button-icon {
+    padding-left: 5.5vw;
+  }
+
+  .b24-widget-button-position-bottom-right {
+    bottom: 36vw !important;
+    right: 6vw !important;
+  }
+
+  .b24-widget-button-inner-block {
+    height: 12vw !important;
+  }
+
+  .b24-widget-button-block {
+    height: 12vw !important;
+    width: 12vw !important;
+  }
+
+  .b24-widget-button-inner-mask {
+    height: 15vw !important;
+    width: 15vw !important;
+  }
+}

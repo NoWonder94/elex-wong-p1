@@ -1,0 +1,70 @@
+@import 'assets/css/font-awesome-6.0.0/css/all.css';
+
+/*========================= COLOR =========================*/
+$primaryColor: #000000;
+$secondaryColor: #4B1F91;
+$primaryAltColor:  #201648;
+$footerbgColor: #0b0b0b;
+$lightPrimaryColor: #000000;
+$lighterPrimaryColor: #000000;
+$bgColor:#FFFFFF;
+$secondarybgColor: #342B64;
+$fontColor:#FFFFFF;
+$secondaryFontColor: #000000;
+$fontaltColor: #8E8E8E;
+/*========================= REPONSIVE SIZE ================*/
+$pcMinWidth:700px;
+$mobileMaxWidth:700px;
+/*========================= FILL BUTTON ===================*/
+.fill-box {
+  color: $fontColor;
+  border-radius: 30px;
+  background-color: $secondaryColor;
+}
+/*========================= BORDER BUTTON =================*/
+.border-box {
+  color: $fontColor;
+  border-radius: 30px;
+  border: 1px solid $fontColor;
+  background-color: transparent;
+}
+/*========================= GRADIENT COLOR ================*/
+.gradientBgColor {
+  background-color: $secondaryColor;
+  background: $secondaryColor;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, $secondaryColor, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, $secondaryColor, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body
+{
+    background-color: $bgColor;
+    color: $fontColor;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: $pcMinWidth)
+{
+    .web
+    {
+        display:block;
+    }
+
+    .mobile
+    {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: $mobileMaxWidth)
+{
+    .web
+    {
+        display:none;
+    }
+
+    .mobile
+    {
+        display:block;
+    }
+}

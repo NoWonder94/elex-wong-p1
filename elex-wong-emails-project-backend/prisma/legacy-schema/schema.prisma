@@ -1,0 +1,28 @@
+datasource db {
+  provider = "mysql"
+  url      = env("PRISMA_LEGACY_DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../src/generated/prisma/legacy-schema"
+}
+
+model Airdrop {
+  id Int @id @default(autoincrement())
+
+  username   String
+  refercode  String
+  level1     String
+  level2     String?
+  level3     String?
+  count1     Int?
+  count2     Int?
+  count3     Int?
+  emls_total Float
+  forwarding String?
+  ip         String?
+
+  // old table name is airdrop, not Airdrop
+  @@map("airdrop")
+}

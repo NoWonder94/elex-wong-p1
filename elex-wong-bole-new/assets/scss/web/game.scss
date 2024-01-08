@@ -1,0 +1,124 @@
+@import '../Base.scss';
+
+$ShadowColor:#00000029;
+$fontBlackColor:#282828;
+$fontGreyColor:#656565;
+$fontRedColor:#EC5557;
+$arrowColor:#d0d0d0;
+
+@media only screen and (min-width: 700px)
+{
+	.game
+	{
+		position: relative;
+    	width:100%;
+		min-width:1200px;
+		margin: 0 auto;
+		padding: 0px 50px;
+		padding-bottom: 150px;
+
+		.game-title
+		{
+			position: relative;
+			width: 100%;
+			padding: 80px 0px;
+			font-size: 30px;
+			color: $FontPrimaryColor;
+			text-align: center;
+
+			.game-title-subtitle
+			{
+				padding-top: 18px;
+				font-size: 20px;
+			}
+    	}
+
+		.game-content
+		{
+			background-color: $FontPrimaryColor;
+			border-radius: 20px;
+			padding: 50px 0;
+			width: 100%;
+			margin:0 auto;
+
+			.game-inner{
+				margin:0 10%;
+
+				.nav{
+					padding: 15px 0px;
+					display: flex;
+					box-shadow:0px 2px 4px $ShadowColor;
+					font-size: 14px;
+		  
+					ul{
+					  width: 100%;
+					}
+		  
+					li{
+					  display: inline-block;
+					  vertical-align: middle;
+					}
+		  
+					li:last-child{
+					  float: right;
+					}
+		  
+					li:hover, li.active{
+					  color:$fontRedColor;
+					}
+		  
+					.navlist{
+					  padding: 5px 35px;
+					  font-weight: 700;
+		  
+					  .click{
+						cursor: pointer;
+					  }
+					}
+		  
+					.navlist:active{
+					  color:$fontRedColor;
+					}
+		  
+					.border-right{
+					  border-right: 1px solid $ShadowColor;
+					}
+		  
+					.red{
+					  color: $fontRedColor;
+					}
+		  
+					.float-right{
+					  margin-left:auto;
+					}
+		  
+					.padding-left-0{
+					  padding-left: 0;
+					}
+				}
+
+				.gameListContainer {
+					display: grid;
+					grid-template-columns: 31.6% 31.6% 31.6%;
+					grid-row-gap: 20px;
+					justify-content: space-between;
+					text-align: left;
+					padding-bottom: 4.9vw;
+					margin: 20px auto;
+					.nodata {
+					  grid-column: 2;
+					}
+			  
+					.gameItem {
+					  background-color: white;
+					  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+					  -moz-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+					  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+					  border-radius: 8px;					  
+					}
+				}
+			}
+		}
+    }	
+}
+

@@ -1,0 +1,150 @@
+@import '../base.scss';
+@media only screen and (min-width: 801px) and  (max-width: 1280px){
+  .neymar-container{
+    padding: 30px 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    color: #FFF;
+    position: relative;
+    max-width: calc(90vw);
+    justify-content: center;
+    .neymar-mobile{
+      display: none;
+    }
+
+    img{
+      width: 100%;
+    }
+    .neymar_header{
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      gap: 10px;
+      cursor: pointer;
+    }
+    .neymar-car-container{
+      margin: 0px 0px 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .neymar-button{
+        background-color: #F12C4C;
+        padding: 12px;
+        border-radius: 5px;
+      }
+      .neymar-car-container-item{
+        max-width: 33.333333%;
+        flex-basis: 33.333333%;
+        margin: 0 50px;
+        .healine{
+          text-align: left;
+          color: rgb(241, 44, 76);
+          text-transform: uppercase;
+        }
+        .title{
+          font-size: 32px;
+          font-weight: bold;
+          padding: 10px 0;
+        }
+      }
+
+    }
+    .article{
+      background-color: rgb(26, 36, 45);
+      justify-content: center;
+      .article-end{
+        width: 50%;
+        padding: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .neymar-button{
+        width: 16.667%;
+      }
+      .neymar-button:hover{
+        transition: background-color .5s ease;
+        background-color: #CC2843;
+      }
+    }
+    .reverse{
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1281px){
+  .neymar-container{
+    padding: 30px 100px;
+    margin-bottom: 100px;
+    margin-left: 87px;
+    max-width: 1280px;
+    color: #FFF;
+    position: relative;
+    .neymar-mobile{
+      display: none;
+    }
+
+    img{
+      width: 100%;
+    }
+    .neymar_header{
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      gap: 10px;
+      cursor: pointer;
+    }
+    .neymar-car-container{
+      margin: 0px 0px 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .neymar-button{
+        background-color: #F12C4C;
+        padding: 12px;
+        border-radius: 5px;
+      }
+      .neymar-car-container-item{
+        max-width: 33.333333%;
+        flex-basis: 33.333333%;
+        margin: 0 50px;
+        .healine{
+          text-align: left;
+          color: rgb(241, 44, 76);
+          text-transform: uppercase;
+        }
+        .title{
+          font-size: 32px;
+          font-weight: bold;
+          padding: 10px 0;
+        }
+      }
+
+    }
+    .article{
+      background-color: rgb(26, 36, 45);
+      justify-content: center;
+      .article-end{
+        width: 50%;
+        padding: 20px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .neymar-button{
+        width: 16.667%;
+      }
+      .neymar-button:hover{
+        transition: background-color .5s ease;
+        background-color: #CC2843;
+      }
+    }
+    .reverse{
+      flex-direction: row-reverse;
+    }
+  }
+}

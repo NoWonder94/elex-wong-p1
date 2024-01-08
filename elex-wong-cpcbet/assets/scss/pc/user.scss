@@ -1,0 +1,171 @@
+@import "../base.scss";
+
+@media only screen and (min-width: $pcMinWidth) {
+  .user {
+    position: relative;
+    padding: 30px;
+    min-height: 650px;
+    background-color: $secondaryBgColor;
+    border-radius: 10px;
+
+    .user-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .user-profile-image-container {
+      position: relative;
+      margin: auto;
+      width: 150px;
+      height: 150px;
+
+      .user-profile-image {
+        width: 150px;
+        height: 150px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      .user-upload-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          cursor: pointer;
+          filter: invert(30%) sepia(76%) saturate(621%) hue-rotate(146deg) brightness(91%) contrast(103%);
+        }
+
+      }
+    }
+
+    .user-profile-form {
+      .el-form {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 80px;
+        row-gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+
+        .el-form-item {
+          width: 400px;
+
+          &:last-child {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            margin-bottom: 0;
+            width: 340px;
+
+            .el-form-item__content {
+
+              .el-button {
+                width: 340px;
+                padding: 10px;
+                background-image: linear-gradient(to right, $lightGreen, $secondaryGreen);
+                background-color: transparent;
+                border-color: transparent;
+                border-radius: 4px;
+                text-align: center;
+                cursor: pointer;
+              }
+            }
+          }
+
+          label {
+            display: block;
+            float: unset;
+            padding: 0;
+            padding-bottom: 10px;
+            color: $fontColor;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+          }
+
+          .el-form-item__content {
+            margin-left: 0 !important;
+
+            .el-input__inner {
+              padding: 0;
+              background-color: inherit;
+              color: $fontColor;
+              border: none;
+              border-bottom: 1px solid $lighterGreen;
+              border-radius: 0;
+
+              &::placeholder {
+                color: $lightFontColor  !important;
+              }
+
+              &:focus {
+                padding-left: 10px;
+                border: 1px solid $primaryGreen;
+                border-radius: $borderRadius5;
+              }
+
+              &:hover {
+                color: $lightGreen  !important;
+                border-bottom: 1px solid $lightGreen;
+
+                &::placeholder {
+                  color: $lightGreen  !important;
+                }
+              }
+            }
+
+            .el-date-editor {
+              cursor: pointer;
+
+              .el-input__prefix {
+                display: none;
+              }
+            }
+
+            .el-radio-group {
+              label {
+                display: inline-block;
+              }
+
+              .el-radio-button__orig-radio:checked+.el-radio-button__inner,
+              .el-radio-button.is-active {
+                border: none;
+
+                img {
+                  opacity: 1;
+                }
+              }
+
+              .el-radio-button__inner {
+                background-color: transparent;
+                border: none;
+                box-shadow: none;
+
+                img {
+                  margin-bottom: 5px;
+                  opacity: 0.5;
+                  filter: invert(30%) sepia(76%) saturate(621%) hue-rotate(146deg) brightness(91%) contrast(103%);
+                }
+
+                &:hover {
+                  color: $lightGreen;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+  }
+}

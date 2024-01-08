@@ -1,0 +1,12 @@
+@import 'base.scss';
+
+
+.our_strategy {
+  background-color: $bgColor;
+  padding: 0px 10px;
+  min-height: 90vh;
+
+  .our_strategy_content {
+    padding: 0px 16px;
+  }
+}

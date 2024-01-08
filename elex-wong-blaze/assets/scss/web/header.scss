@@ -1,0 +1,728 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1501px) {
+
+  .header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #323b45;
+    padding: 0 10px;
+    background: $darkBackground;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 101;
+    height: 65px;
+    .header-list-left {
+      position: absolute;
+      display: flex;
+      align-items: center;
+
+      .header-child-menu-list {
+        width: 244px;
+        display: flex;
+        padding-top: 5px;
+
+        .header-child-menu {
+          font-weight: 600;
+          font-size: 12px;
+          gap: 4px;
+          padding: 20px;
+          margin: 0 5px;
+
+          .header-child-menu-container {
+            display: flex;
+            gap: 4px;
+            color: #BCBFC7;
+
+            .header-child-menu-icon {
+              font-size: 15px;
+            }
+          }
+        }
+
+        .header-child-menu:hover {
+          border-bottom: 2px solid #F12C4C;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .header-list-right-container {
+      margin-right: 15px;
+      color: #FFFFFF;
+      display: flex;
+      flex: 1 1;
+      justify-content: space-around;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+
+      .header-list-content {
+        position: relative;
+        max-width: 1104px;
+        width: 100%;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-list-right {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .header-list-right-menu {
+            font-weight: bold;
+            align-items: center;
+            gap: 4px;
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+
+            /* before login */
+            .header-list-hamburger-menu {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              font-size: 25px;
+              cursor: pointer;
+            }
+
+            .header-list-blaze-icon {
+              margin-left: 20px;
+              // font-size: 45px;
+              width: 100px;
+            }
+
+            .header-login {
+              outline: none !important;
+            }
+
+            .header-register {
+              background-color: $red;
+              padding: 12px 25px;
+              border-radius: 5px;
+            }
+
+            .header-button {
+              margin: 10px 15px;
+              display: flex;
+              font-weight: 600;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.33;
+              letter-spacing: normal;
+              color: #fff;
+            }
+
+            /* after login */
+            .header-account {
+              position: relative;
+
+              .account {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .account-item {
+                  position: relative;
+
+                  .user-rank-progress {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    .rank-tier {
+                      width: 100%;
+                      margin-bottom: 8px;
+                      font-size: 12px;
+                      font-weight: 600;
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      flex-wrap: wrap;
+
+                      .user-rank {
+                        margin-right: 30px;
+                        font-size: 12px;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: normal;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        color: $lightGrey;
+                      }
+
+                      .user-level {
+                        font-size: 12px;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: normal;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        color: $lightGrey;
+                        white-space: nowrap;
+                      }
+                    }
+
+                    .rank-progress {
+                      position: relative;
+                      width: 100%;
+
+                      .el-progress-bar {
+                        margin-right: 0px;
+
+                        .el-progress-bar__outer {
+                          background: $separatorTwo;
+
+                          .el-progress-bar__inner {
+                            background-color: $red;
+                          }
+                        }
+                      }
+
+                      .el-progress__text {
+                        display: none;
+                      }
+                    }
+
+                    &:hover {
+                      opacity: 0.75;
+                    }
+                  }
+
+                  .header-user-noti {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 25px;
+                    margin: 0 20px;
+
+                    .badge-item {
+                      .el-badge__content {
+                        width: 16px;
+                        height: 16px;
+                        font-family: 'Roboto';
+                        font-size: 8px;
+                        line-height: 1.6;
+                        border: 1px solid $red;
+                        background-color: $red;
+                      }
+
+                      .mail-icon {
+                        vertical-align: middle;
+                        font-size: 25px;
+                        cursor: pointer;
+                      }
+                    }
+
+                    .user-icon {
+                      color: $white;
+                      font-size: 25px;
+                      cursor: pointer;
+                    }
+                  }
+
+                  .header-bonus-wallet {
+                    height: 40px;
+                    padding: 0px 15px;
+                    font-size: 14px;
+                    background-color: $darkBackground;
+                    border: 1px solid $separator;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .header-currency {
+                      font-size: 16px;
+                      .currency-unit {
+                        color: $lighterGrey;
+                        margin-right: 5px;
+                      }
+                    }
+
+                    .currency-icon {
+                      width: 20px;
+                      height: 20px;
+                      margin-left: 5px;
+                      color: $black;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+
+                      img {
+                        width: 100%;
+                      }
+                    }
+                  }
+
+                  .header-deposit {
+                    width: 98px;
+                    height: 40px;
+                    margin-left: 15px;
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 600;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    letter-spacing: .4px;
+                    text-transform: capitalize;
+                    overflow: hidden;
+                    border-radius: 4px;
+                    background-color: $red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .selected{
+      border-bottom: 2px solid $red;
+    }
+  }
+
+  .header-web {
+    display: block;
+  }
+  .header-mobile{
+    display: none;
+  }
+
+  .el-dropdown-menu {
+
+    .el-dropdown-menu__item {
+      .dropdown-icon {
+        margin-right: 5px;
+      }
+    }
+
+    .account-wallet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+
+      .dropdown-icon {
+        margin-right: 5px;
+      }
+
+      .unit {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .currency-icon {
+          position: relative;
+          width: 30px !important;
+          vertical-align: center;
+          line-height: 2;
+
+          img {
+            vertical-align: middle;
+            margin-right: 5px;
+            width: 100%;
+          }
+        }
+      }
+
+      .money-amount {
+        font-size: 15px;
+        font-weight: 900;
+      }
+    }
+
+    .el-dropdown-menu__item:not(.is-disabled):hover {
+      background-color: #e5e5e5;
+      color: $red;
+
+      .dropdown-icon {
+
+        img {
+          filter: invert(36%) sepia(97%) saturate(5574%) hue-rotate(337deg) brightness(99%) contrast(91%);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+  .header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #323b45;
+    padding: 0 10px;
+    background: $darkBackground;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 101;
+
+    .header-list-left {
+      position: relative;
+
+      .header-child-menu-list {
+        width: 244px;
+        display: flex;
+        padding-top: 5px;
+
+        .header-child-menu {
+          font-weight: 600;
+          font-size: 12px;
+          gap: 4px;
+          padding: 20px;
+          margin: 0 5px;
+
+          .header-child-menu-container {
+            display: flex;
+            gap: 4px;
+            color: #BCBFC7;
+
+            .header-child-menu-icon {
+              font-size: 15px;
+            }
+          }
+        }
+
+        .header-child-menu:hover {
+          border-bottom: 2px solid #F12C4C;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .header-list-right-container {
+      margin-right: 15px;
+      color: #FFFFFF;
+      display: flex;
+      flex: 1 1;
+      justify-content: space-around;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+      margin-left: 0px !important;
+
+      .header-list-content {
+        position: relative;
+        max-width: 1104px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-list-right {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .header-list-right-menu {
+            font-weight: bold;
+            align-items: center;
+            gap: 4px;
+            display: flex;
+            margin-left: 10px;
+
+            /* before login */
+            .header-list-hamburger-menu {
+              font-size: 25px;
+              cursor: pointer;
+            }
+
+            .header-list-blaze-icon {
+              margin-left: 20px;
+              // font-size: 45px;
+              width: 100px;
+            }
+
+            .header-login {
+              outline: none !important;
+            }
+
+            .header-register {
+              background-color: #F12C4C;
+              padding: 12px 25px;
+              border-radius: 5px;
+            }
+
+            .header-button {
+              margin: 10px 15px;
+              display: flex;
+              font-weight: 600;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.33;
+              letter-spacing: normal;
+              color: #fff;
+            }
+
+            /* after login */
+            .header-account {
+              position: relative;
+
+              .account {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .account-item {
+                  position: relative;
+
+                  .user-rank-progress {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    .rank-tier {
+                      width: 100%;
+                      margin-bottom: 8px;
+                      font-size: 12px;
+                      font-weight: 600;
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      flex-wrap: wrap;
+
+                      .user-rank {
+                        margin-right: 30px;
+                        font-size: 12px;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: normal;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        color: $lightGrey;
+                      }
+
+                      .user-level {
+                        font-size: 12px;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.33;
+                        letter-spacing: normal;
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        color: $lightGrey;
+                        white-space: nowrap;
+                      }
+                    }
+
+                    .rank-progress {
+                      position: relative;
+                      width: 100%;
+
+                      .el-progress-bar {
+                        margin-right: 0px;
+
+                        .el-progress-bar__outer {
+                          background: $separatorTwo;
+
+                          .el-progress-bar__inner {
+                            background-color: $red;
+                          }
+                        }
+                      }
+
+                      .el-progress__text {
+                        display: none;
+                      }
+                    }
+
+                    &:hover {
+                      opacity: 0.75;
+                    }
+                  }
+
+                  .header-user-noti {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 25px;
+                    margin: 0 20px;
+
+                    .badge-item {
+                      .el-badge__content {
+                        width: 16px;
+                        height: 16px;
+                        font-family: 'Roboto';
+                        font-size: 8px;
+                        line-height: 1.6;
+                        border: 1px solid $red;
+                        background-color: $red;
+                      }
+
+                      .mail-icon {
+                        vertical-align: middle;
+                        font-size: 25px;
+                        cursor: pointer;
+                      }
+                    }
+
+                    .user-icon {
+                      color: $white;
+                      font-size: 25px;
+                      cursor: pointer;
+                    }
+                  }
+
+                  .header-bonus-wallet {
+                    height: 40px;
+                    padding: 0px 15px;
+                    font-size: 14px;
+                    background-color: $darkBackground;
+                    border: 1px solid $separator;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .header-currency {
+                      font-size: 16px;
+                      .currency-unit {
+                        color: $lighterGrey;
+                        margin-right: 5px;
+                      }
+                    }
+
+                    .currency-icon {
+                      width: 20px;
+                      height: 20px;
+                      margin-left: 5px;
+                      font-size: 7px;
+                      color: $black;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+
+                      img {
+                        width: 100%;
+                      }
+                    }
+                  }
+
+                  .header-deposit {
+                    width: 98px;
+                    height: 40px;
+                    margin-left: 15px;
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 600;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    letter-spacing: .4px;
+                    text-transform: capitalize;
+                    overflow: hidden;
+                    border-radius: 4px;
+                    background-color: $red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .selected{
+      border-bottom: 2px solid $red;
+    }
+  }
+
+  .header-web {
+    display: block;
+  }
+  .header-mobile{
+    display: none;
+  }
+
+  .el-dropdown-menu {
+
+    .el-dropdown-menu__item {
+      .dropdown-icon {
+        margin-right: 5px;
+      }
+    }
+
+    .account-wallet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 50px;
+
+      .dropdown-icon {
+        margin-right: 5px;
+      }
+
+      .unit {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .currency-icon {
+          position: relative;
+          width: 30px !important;
+          vertical-align: center;
+          line-height: 2;
+
+          img {
+            vertical-align: middle;
+            margin-right: 5px;
+            width: 100%;
+          }
+        }
+      }
+
+      .money-amount {
+        font-size: 15px;
+        font-weight: 900;
+      }
+    }
+
+    .el-dropdown-menu__item:not(.is-disabled):hover {
+      background-color: #e5e5e5;
+      color: $red;
+
+      .dropdown-icon {
+
+        img {
+          filter: invert(36%) sepia(97%) saturate(5574%) hue-rotate(337deg) brightness(99%) contrast(91%);
+        }
+      }
+    }
+  }
+
+}

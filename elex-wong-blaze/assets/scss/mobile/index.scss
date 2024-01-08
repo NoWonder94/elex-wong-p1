@@ -1,0 +1,527 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 700px)
+{
+  .index{
+    position: relative;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 6vw 0;
+
+    .banner{
+      img{
+        width: 100%;
+        border-radius: 4px;
+      }
+
+      .banner-text{
+        color: $white;
+        padding: 6vw;
+
+        .banner-text-title{
+          font-size: 7vw;
+          font-weight: bold;
+          padding-bottom: 4vw;
+        }
+
+        .banner-text-desc{
+          font-size: 4.2vw;
+          line-height: 1.5;
+          padding-bottom: 5vw;
+        }
+
+        .banner-text-button{
+          font-size: 3.5vw;
+          font-weight: bold;
+          text-align: center;
+          padding: 4vw;
+          border-radius: 4px;
+          background-color: $red;
+        }
+      }
+    }
+
+    .after-login-banner{
+      .swiper-slide{
+        .mobile{
+          display: block;
+        }
+
+        .web{
+          display: none;
+        }
+
+        img{
+          width: 100%;
+          border-radius: 4px;
+          object-fit: cover;
+        }
+
+        .banner-text{
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+        }
+      }
+
+      .swiper-pagination{
+        margin-top: -30px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        .swiper-pagination-bullet{
+          width: 10px;
+          height: 10px;
+          background: $white;
+          opacity: 0.5;
+          margin: 0 8px;
+        }
+
+        .swiper-pagination-bullet-active{
+          opacity: 1;
+        }
+      }
+    }
+
+    .search{
+      position: relative;
+      margin-top: 8vw;
+
+      .el-input__inner{
+        border: 1px solid $separator;
+        background-color: $darkerGrey;
+        color: $white;
+        font-size: 3vw;
+      }
+    }
+
+    .category{
+      padding-top: 5vw;
+      display: flex;
+      white-space: nowrap;
+      column-gap: 3vw;
+      overflow-x: auto;
+
+      .category-item{
+        display: flex;
+        align-items: center;
+        column-gap: 3vw;
+        color: $white;
+        font-size: 3.6vw;
+        background-color: $background;
+        padding: 3vw 4vw;
+        border-radius: 100px;
+        box-shadow: 0 3px 10px rgb(6 10 14 / 15%);
+
+        img{
+          width: 5vw;
+        }
+      }
+
+      .selected{
+        background-color: $red;
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .game-content{
+      padding-top: 8vw;
+      color: $white;
+      min-height: 30vh;
+
+      .game-title-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5vw;
+
+        .game-title{
+          font-size: 6vw;
+          font-weight: bold;
+        }
+
+        .game-view-all{
+          i{
+            color: $lightGrey;
+          }
+        }
+      }
+
+      .view-all{
+        width: 50vw;
+        margin: 4vw auto 12vw;
+        text-align: center;
+        background-color: $background;
+        border: 1px solid $separator;
+        color: $blueGrey;
+        border-radius: 3px;
+        font-size: 3.2vw;
+        font-weight: bold;
+        padding: 4vw 3vw;
+      }
+
+      .lobby{
+        .game-row{
+          position: relative;
+          padding-bottom: 8vw;
+
+          .games-list{
+            display: flex;
+            column-gap: 3vw;
+            overflow-x: auto;
+
+            img{
+              width: 33vw;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+
+            &:after{
+              display: block;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              width: 16vw;
+              background: linear-gradient(90deg,transparent,rgba(15, 25, 35, 0.8) 71%, $darkBackground);
+              content: "";
+              height: 58vw;
+            }
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .slot, .live-casino, .game-show{
+        .games-list{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-content: space-between;
+          gap: 2.5vw;
+          padding-bottom: 5vw;
+
+          .games-item{
+            position: relative;
+          }
+        }
+      }
+
+      .blaze{
+        .games-list{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-content: space-between;
+          gap: 2.5vw;
+          padding-bottom: 5vw;
+
+          .games-item{
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .index{
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 16px;
+
+    .banner{
+      img{
+        width: 100%;
+        border-radius: 4px;
+      }
+
+      .banner-text{
+        color: $white;
+        padding-top: 40px;
+        padding-left: 60px;
+
+        .banner-text-title{
+          font-size: 34px;
+          font-weight: bold;
+          padding-bottom: 10px;
+        }
+
+        .banner-text-desc{
+          font-size: 18px;
+          padding-bottom: 30px;
+        }
+
+        .banner-text-button{
+          width: fit-content;
+          padding: 15px;
+          border-radius: 4px;
+          background-color: $red;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .after-login-banner{
+      .swiper-slide{
+        .web{
+          display: block;
+        }
+
+        .mobile{
+          display: none;
+        }
+
+        img{
+          width: 100%;
+          border-radius: 4px;
+          object-fit: cover;
+        }
+
+        .banner-text{
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+        }
+      }
+
+      .swiper-pagination{
+        margin-top: -30px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        .swiper-pagination-bullet{
+          width: 10px;
+          height: 10px;
+          background: $white;
+          opacity: 0.5;
+          margin: 0 8px;
+        }
+
+        .swiper-pagination-bullet-active{
+          opacity: 1;
+        }
+      }
+    }
+
+    .search{
+      position: relative;
+      margin-top: 40px;
+
+      .el-input__inner{
+        border: 1px solid $separator;
+        background-color: $darkerGrey;
+        color: $white;
+        font-size: 14px;
+      }
+    }
+
+    .category{
+      padding-top: 25px;
+      display: flex;
+      white-space: nowrap;
+      justify-content: flex-start;
+      column-gap: 10px;
+      font-size: 12px;
+
+      .category-item{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        color: $white;
+        background-color: $background;
+        padding: 8px 16px;
+        border-radius: 100px;
+        box-shadow: 0 3px 10px rgb(6 10 14 / 15%);
+
+        img{
+          width: 18px;
+        }
+      }
+
+      .selected{
+        background-color: $red;
+      }
+    }
+
+    .game-content{
+      padding-top: 30px;
+      color: $white;
+      min-height: 30vh;
+
+      .game-title-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+
+        .game-title{
+          font-size: 22px;
+          font-weight: bold;
+        }
+
+        .game-view-all{
+          cursor: pointer;
+
+          i{
+            color: $lighterGrey;
+          }
+        }
+      }
+
+      .view-all{
+        width: 190px;
+        margin: 30px auto;
+        text-align: center;
+        background-color: $background;
+        border: 1px solid $separator;
+        color: $blueGrey;
+        border-radius: 3px;
+        font-size: 12px;
+        padding: 16px 30px;
+        cursor: pointer;
+
+        &:hover{
+          background-color: $darkBackground;
+          color: $white;
+        }
+      }
+
+      .lobby{
+        .game-row{
+          position: relative;
+          padding-bottom: 30px;
+
+          .games-list{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            justify-content: space-between;
+            column-gap: 24px;
+
+            img{
+              width: 100%;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .slot, .live-casino, .game-show{
+        .games-list{
+          display: grid;
+          justify-content: space-between;
+          gap: 40px 24px;
+          padding-bottom: 30px;
+
+          .games-item{
+            position: relative;
+          }
+        }
+      }
+
+      .blaze{
+        .games-list{
+          display: grid;
+          justify-content: space-between;
+          gap: 40px 24px;
+          padding-bottom: 30px;
+
+          .games-item{
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .before-login-banner{
+    img{
+      height: 48vw;
+      object-fit: cover;
+    }
+
+    div:nth-child(2) {
+      display: none;
+    }
+  }
+
+  .after-login-banner{
+    .swiper-slide{
+      img{
+        height: 48vw;
+      }
+    }
+  }
+
+  .slot, .live-casino, .game-show, .blaze{
+    .games-list{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+  .before-login-banner{
+    img{
+      height: 45vw;
+      object-fit: cover;
+    }
+
+    div:nth-child(2) {
+      display: none;
+    }
+  }
+
+  .after-login-banner{
+    .swiper-slide{
+      img{
+        height: 45vw;
+      }
+    }
+  }
+
+  .slot, .live-casino, .game-show, .blaze{
+    .games-list{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .before-login-banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+
+    img{
+      height: 250px;
+    }
+  }
+
+  .after-login-banner{
+    .swiper-slide{
+      img{
+        height: 250px;
+      }
+    }
+  }
+
+  .slot, .live-casino, .game-show, .blaze{
+    .games-list{
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}

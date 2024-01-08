@@ -1,0 +1,93 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1201px) {
+  .deposits {
+    position: relative;
+    color: $white;
+    min-height: 90vh;
+
+    .deposits-content {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 50px 30px;
+      display: grid;
+      grid-template-columns: 25% 75%;
+      column-gap: 30px;
+
+      .content-left {
+        font-size: 12px;
+        color: $lightGrey;
+        background-color: $background;
+        border-radius: 4px;
+        padding: 30px 25px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        text-transform: uppercase;
+
+        .left-item {
+          cursor: pointer;
+
+          img {
+            font-size: 16px;
+            padding-right: 5px;
+
+          }
+        }
+
+        .selected {
+          color: $white;
+          font-weight: bold;
+
+          img {
+            filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(130deg) brightness(104%) contrast(107%);
+          }
+        }
+      }
+
+      .content-right {
+        background-color: $background;
+        border-radius: 4px;
+        padding: 24px 32px;
+        min-height: 300px;
+        grid-column: 2;
+        grid-row: 1 / 3;
+
+        .title {
+          font-size: 20px;
+          font-weight: bold;
+          padding-bottom: 24px;
+        }
+
+        .deposits-list{
+          table{
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+
+            th{
+              background-color:  $backgroundThree;
+              color: $lightGrey;
+              font-size: 12px;
+              height: 32px;
+              padding: 4px 0 4px 16px;
+            }
+
+            td{
+              font-size: 12px;
+              padding: 24px 0 24px 16px;
+              border-bottom: 1px solid rgba(50,59,69,.6);
+            }
+
+            td:first-child{
+              color: $whiteGrey;
+              width: 180px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

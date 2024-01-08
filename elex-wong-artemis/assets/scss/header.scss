@@ -1,0 +1,75 @@
+@import 'base.scss';
+
+.b-sidebar>.b-sidebar-header {
+  padding: 0 !important;
+}
+
+.header {
+  max-width: $maxWidth;
+  margin: auto;
+  background-color: $scbgColor  !important;
+  z-index: 1032 !important;
+
+  .container {
+    max-width: none !important;
+  }
+
+  .btn-close {
+    width: 18px;
+    font-size: 18px;
+  }
+
+  .header-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .link-icon {
+    width: 15px;
+    align-self: center;
+  }
+
+  .route-icon {
+    width: 20px;
+    align-self: center;
+  }
+
+  .transform_y50_x10 {
+    transform: translate(-30%, -50%);
+  }
+
+  hr {
+    border-top: 2px dashed $lightfontColor;
+  }
+
+  .font14 {
+    font-size: 14px;
+  }
+
+  .font16 {
+    font-size: 16px;
+  }
+
+  .connect-btn {
+    background-color: $primaryColor  !important;
+    color: $scfontColor  !important;
+    font-size: 12px;
+  }
+
+  .connect-btn-addresss {}
+
+  .form-select {
+    width: 150px;
+    background-color: $scbgColor;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+  }
+
+  .logo-img {
+    align-self: center;
+    width: 100%;
+    height: 40px;
+    zoom: 50%;
+  }
+}

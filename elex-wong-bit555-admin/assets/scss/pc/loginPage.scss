@@ -1,0 +1,63 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth){
+    .login-page{
+        .login-content{
+            width: 750px;
+            height: 350px;
+            margin: 0 auto;
+            margin-top: 190px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            background-color: $leftPanelBgColor;
+
+            .login-logo{
+                width: 500px;
+                margin: 0 auto;
+
+                img{
+                    width: 300px;
+                }
+            }
+
+            .login-form{
+                background-color: $bgColor;
+                width: 250px;
+                height: 100%;
+                padding: 20px;
+
+                .login-form-title{
+                    font-size: 20px;
+                    font-weight: bold;
+                    border-bottom: 0.5px solid #CCD1D1;
+                    padding-bottom: 15px;
+                }
+
+                .login-item{
+                    text-align: left;
+                    padding-top: 15px;
+
+                    .login-input{
+                        padding-top: 5px;
+
+                        .el-input__inner{
+                            height: 30px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+
+                .button{
+                    text-align: right;
+
+                    .el-button{
+                        background: $leftPanelBgColor;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}

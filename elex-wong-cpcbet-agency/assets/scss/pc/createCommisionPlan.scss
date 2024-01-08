@@ -1,0 +1,66 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .createCommission-plan
+  {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    .createCommission-plan-return
+    {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      padding: 5px 10px;
+      font-weight: bold;
+      font-size: 13px;
+      border: 1px solid white;
+      border-radius: 30px;
+      text-transform: capitalize;
+
+      &:hover
+      {
+        cursor: pointer;
+        background-color: $secondaryColor;
+        border-color: $secondaryColor;
+      }
+    }
+
+    .createCommission-plan-title
+    {
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+
+    .createCommission-plan-content
+    {
+      .el-tabs__nav-wrap::after
+      {
+        background-color: $whiteOpacity20;
+      }
+
+      .el-tabs__nav
+      {
+        .el-tabs__active-bar
+        {
+          border-radius: 30px;
+          background-color: $secondaryColor;
+        }
+
+        .el-tabs__item
+        {
+          color: $fontColorOpc50;
+        }
+
+        .el-tabs__item.is-active
+        {
+          color: $fontColor;
+        }
+      }
+    }
+  }
+}

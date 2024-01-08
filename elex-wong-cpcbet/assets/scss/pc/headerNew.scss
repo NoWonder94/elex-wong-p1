@@ -1,0 +1,400 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 999;
+    background-color: $bgColor;
+    width: 1400px;
+
+    .header-login-register {
+      // margin: 0 auto;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+
+      .header-container {
+        display: flex;
+        align-items: center;
+
+        .header-branding {
+          padding-right: 30px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          cursor: pointer;
+
+          .header-logo-img {
+            width: 200px;
+            max-height: 35px;
+          }
+
+          .header-branding-content {
+            padding-left: 10px;
+
+            .header-branding-title {
+              font-weight: bold;
+              font-size: 18px;
+            }
+
+            .header-branding-slogan {
+              padding-top: 5px;
+              color: $lightFontColor;
+              font-size: 12px;
+            }
+          }
+        }
+
+        /* previous login searchbar location */
+      }
+
+      .header-right-bar {
+        display: flex;
+        column-gap: 20px;
+
+        .header-search-bar {
+          .login-input-with-route {
+            background-color: $lightFontColor10;
+            border-radius: $borderRadius3;
+            display: flex;
+            align-items: center;
+
+            .login-input {
+              width: 350px;
+              color: $dark;
+              font-size: 14px;
+              background-color: transparent;
+
+              input {
+                background-color: transparent;
+              }
+
+              .el-input__inner {
+                border: none;
+                padding-right: 0px;
+              }
+            }
+
+            .login-input-tooltip {
+              position: relative;
+              display: inline-block;
+              text-align: center;
+              cursor: pointer;
+
+              .el-icon-search {
+                padding: 0px 8px;
+                padding-left: 0px;
+                font-size: 18px;
+              }
+
+
+            }
+          }
+        }
+
+        .header-before-login {
+          display: flex;
+
+          .login-button {
+            padding: 10px 30px;
+            margin-right: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+          }
+
+          .register-button {
+            padding: 10px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .header-after-login {
+          display: flex;
+
+          .dashboard-button {
+            padding: 10px 30px;
+            margin-right: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+          }
+
+          .logout-button {
+            padding: 10px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+        }
+
+        /*
+        .select {
+          display: flex;
+          border-bottom: 1px solid $whiteOpacity30;
+          justify-content: space-between;
+          align-items: center;
+
+          .select-title {
+            color: $lightFontColor80
+          }
+
+          .el-select {
+            width: 150px;
+
+            .el-input__inner {
+              background-color: transparent;
+              border: none;
+              color: $fontColor;
+              text-align: right;
+            }
+          }
+        }
+        */
+
+      }
+
+    }
+
+    .header-nav {
+      position: relative;
+      background-color: $headerNavBg;
+
+      .header-nav-list {
+        position: relative;
+        width: 900px;
+        padding: 0px 15px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // justify-content: flex-start;
+
+        .header-navs {
+          position: relative;
+          padding: 15px 30px;
+          font-weight: bold;
+          font-size: 14px;
+          text-transform: uppercase;
+          // background: rgba($color: #ff0000, $alpha: 0.5);
+
+          .header-navs-sports {
+            cursor: pointer;
+          }
+
+          a {
+            text-decoration: none;
+            color: $fontColor;
+          }
+
+          .border-line {
+            position: absolute;
+            width: 80px;
+            height: 5px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            bottom: -2px;
+            border-radius: $borderRadius3;
+            transition: all .3s;
+            z-index: 999;
+          }
+
+          a:hover {
+            .border-line {
+              background-color: $lighterGreen;
+            }
+          }
+
+          .nuxt-link-exact-active {
+            .border-line {
+              background-color: $lighterGreen;
+            }
+          }
+        }
+      }
+    }
+
+    .login-popup-container {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $blackOpacity75;
+
+      .login-popup-wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .login-pop {
+          padding: 30px 20px;
+          width: 350px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: $fontColor;
+          border-radius: $borderRadius10;
+
+
+          .close {
+            text-align: right;
+
+            .el-icon-close {
+              width: 20px;
+              height: 20px;
+              color: $bgColor;
+              font-size: 20px;
+              font-weight: bold;
+              cursor: pointer;
+            }
+          }
+
+          .login-pop-content {
+            position: relative;
+            text-align: center;
+
+            img {
+              margin-top: 10px;
+              margin-bottom: 20px;
+              width: 50px;
+              height: 50px;
+            }
+
+
+            .login-input-with-select {
+              margin-bottom: 10px;
+              color: $dark;
+              font-size: 14px;
+              border-radius: $borderRadius3;
+              background-color: $fontColor;
+
+
+              // .el-input__inner {
+              //   border: 1px solid $blackOpacity40;
+              // }
+
+              .login-option {
+                width: 80px;
+              }
+            }
+
+            .login-input-with-route {
+              position: relative;
+              background-color: $fontColor;
+              border-radius: $borderRadius3;
+              border: 1px solid $blackOpacity20;
+              display: flex;
+              align-items: center;
+
+              .login-input {
+
+                color: $dark;
+                font-size: 14px;
+                background-color: transparent;
+
+                .el-input__inner {
+                  border: none;
+                  padding-right: 0px;
+                }
+              }
+
+              .login-input-tooltip {
+                position: relative;
+                display: inline-block;
+                text-align: center;
+                cursor: pointer;
+
+                .el-icon-warning-outline {
+                  padding: 0px 8px;
+                  padding-left: 0px;
+                  font-size: 18px;
+                  color: $secondaryGreen;
+                }
+
+                .bottom {
+                  position: absolute;
+                  min-width: 180px;
+                  top: 30px;
+                  left: 20%;
+                  padding: 10px 20px;
+                  font-weight: bold;
+                  font-size: 12px;
+                  color: $dark;
+                  border-radius: $borderRadius3;
+                  box-sizing: border-box;
+                  background-color: $fontColor;
+                  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+                  display: none;
+                  transform: translate(-50%, 0);
+                  z-index: 99999999;
+
+                  a {
+                    text-decoration: none;
+                    color: $dark;
+                  }
+
+                  ::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 100%;
+                    left: 50%;
+                    margin-left: -5px;
+                    border-width: 10px;
+                    border-style: solid;
+                    border-color: transparent transparent $fontColor transparent;
+                  }
+                }
+
+                &:hover {
+                  .bottom {
+                    display: block;
+                  }
+                }
+              }
+            }
+
+            .forgetpass {
+              padding: 12px 0;
+              color: $blackOpacity50;
+              font-size: 10px;
+              text-align: right;
+            }
+
+            .login-button {
+              width: 100%;
+              margin-bottom: 20px;
+              padding: 10px 30px;
+              font-size: 16px;
+              font-weight: bold;
+              cursor: pointer;
+              text-align: center;
+            }
+
+            .register-button {
+              padding: 10px 122px;
+              font-size: 16px;
+              font-weight: bold;
+              text-decoration: none;
+              text-align: center;
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}

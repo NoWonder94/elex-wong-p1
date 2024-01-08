@@ -1,0 +1,95 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .content-form
+  {
+    position: relative;
+    margin-top: 15px;
+    padding: 30px;
+    border: 1px solid $blackOpacity20;
+    color: $primaryColorOpc50;
+    border-radius: 6px;
+
+    .form-input
+    {
+      .input-title{
+        font-size: 15px;
+      }
+
+      .el-input__inner{
+        color: $primaryColor;
+        border: none;
+        border-bottom: 1px solid $primaryColorOpc20;
+        border-radius: 0;
+        padding: 0;
+      }
+    }
+
+    .content-form-allProducts
+    {
+      position: relative;
+      width: 150px;
+      margin: 0 auto;
+      margin-top: 10px;
+      text-align: center;
+
+      .content-form-allProducts-label
+      {
+        cursor: pointer;
+      }
+    }
+
+    .content-form-dynamic-wrapper
+    {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+
+      .content-form-dynamic
+      {
+        flex: 1;
+        max-width: 50%;
+      }
+    }
+
+    // loop each products
+    .content-form-dynamic-wrapper-grid
+    {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 30px;
+    }
+
+    .content-form-submit
+    {
+      // width: 100px;
+      margin: 0 auto;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+
+      .reset-button
+      {
+        padding: 10px 15px;
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+        border-radius: 30px;
+        background-color: transparent;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .submit-button
+      {
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}

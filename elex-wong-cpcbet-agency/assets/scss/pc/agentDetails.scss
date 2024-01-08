@@ -1,0 +1,383 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .agentDetails {
+    width: 1200px;
+    position: relative;
+    padding: 0 10px;
+    margin: auto;
+    margin-top: 15px;
+
+    .agentDetails-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .back-title {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .back-title-icon {
+          width: 20px;
+          filter: invert(21%) sepia(12%) saturate(267%) hue-rotate(155deg) brightness(91%) contrast(87%);
+        }
+
+        .back-title-label {
+          padding-left: 5px;
+          font-size: 20px;
+        }
+      }
+
+      .agentDetails-change-pwd {
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+
+        .el-icon-lock {
+          color: $secondaryColor;
+        }
+      }
+    }
+
+    .agentDetails-content {
+      margin-top: 15px;
+
+      .agentDetails-divider {
+        margin: 15px 0vw;
+        border-bottom: 1px solid $fontColorOpc50;
+      }
+
+      .agentDetails-details-container {
+        padding: 15px 0vw;
+
+        .agentDetails-details-container-header-label {
+          padding-bottom: 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .agentDetails-details-container-label {
+            font-size: 20px;
+            color: $fontColor;
+          }
+
+          .agentDetails-details-edit {
+            padding: 10px 25px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+
+        .agentDetails-account-wrap {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .agentDetails-details-container-card {
+          width: 580px;
+          border: 1px solid $blackOpacity20;
+          border-radius: 6px;
+          padding: 30px 25px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 10px;
+          grid-row-gap: 20px;
+
+          .column-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+
+            .details-container-card-label {
+              color: $primaryColorOpc50;
+              font-weight: bold;
+              font-size: 14px;
+            }
+
+            .details-container-card-value {
+              color: $primaryColor;
+              font-weight: bold;
+              font-size: 16px;
+
+              .agent-status-active {
+                color: $secondaryColor;
+              }
+
+              .agent-status-inactive {
+                color: $warning;
+              }
+            }
+          }
+        }
+
+        .agentDetails-account-container-card {
+          width: 580px;
+          border: 1px solid $blackOpacity20;
+          border-radius: 6px;
+          padding: 30px 25px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 10px;
+          grid-row-gap: 20px;
+
+          .column-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+
+            .details-container-card-label {
+              color: $primaryColorOpc50;
+              font-weight: bold;
+              font-size: 14px;
+            }
+
+            .details-container-card-value {
+              color: $primaryColor;
+              font-weight: bold;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .agentDetails-players-container {
+        padding: 15px 0vw;
+
+        .players-list-results {
+          font-size: 16px;
+          color: $fontColorOpc50;
+          padding-bottom: 18px;
+        }
+
+        .agentDetails-players-table-pagination {
+          position: relative;
+          margin: 0 auto;
+          margin-top: 15px;
+          text-align: center;
+
+          .el-pager {
+            .active {
+              background-color: $secondaryColor  !important;
+            }
+
+            .number.active:hover {
+              color: $fontColor  !important;
+            }
+
+            .number:hover {
+              color: $secondaryColor  !important;
+            }
+          }
+        }
+      }
+
+      .agentDetails-wallet-container {
+        margin: auto;
+        padding: 20px 0vw;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        .agentDetails-wallet-container-card {
+          width: 50%;
+          margin: 0 auto;
+          border: 1px solid $blackOpacity20;
+          border-radius: 6px;
+          padding: 25px;
+
+          .column-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+
+            &:first-child {
+              margin-bottom: 20px;
+            }
+
+            .details-container-card-label {
+              color: $primaryColorOpc50;
+              font-weight: bold;
+              font-size: 16px;
+            }
+
+            .details-container-card-value {
+              color: $primaryColor;
+              font-weight: bold;
+              font-size: 20px;
+            }
+          }
+        }
+
+        .agentDetails-wallet-gridcontainer-card {
+          width: 50%;
+          margin: 0 auto;
+          border: 1px solid $blackOpacity20;
+          border-radius: 6px;
+          padding: 25px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 10px;
+          grid-row-gap: 25px;
+
+          .column-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+
+            .details-container-card-label {
+              color: $primaryColorOpc50;
+              font-weight: bold;
+              font-size: 16px;
+            }
+
+            .details-container-card-value {
+              color: $primaryColor;
+              font-weight: bold;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .players-bottom-modal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .players-bottom-modal-action {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        color: $fontColor;
+        border-bottom: 1px solid $primaryColorOpc50;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+    }
+
+    /* modal form */
+    .agentDetails-form {
+      position: relative;
+      width: 100%;
+      max-height: 450px;
+      overflow: auto;
+
+      .agentDetails-form-label {
+        color: $primaryColor;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+
+      .agentDetails-form-submition {
+        position: relative;
+        padding: 0vw 10px;
+
+        .el-form-item {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .el-form-item__label {
+            color: $primaryColorOpc50;
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          .el-form-item__content {
+            position: relative;
+            flex: 1;
+            width: 100%;
+
+
+            .el-input {
+              .el-input__inner {
+                padding: 0;
+                border: none;
+                border-radius: 0vw;
+                border-bottom: 1px solid $primaryColorOpc20;
+              }
+            }
+
+            .agentDetails-form-gender {
+              position: relative;
+              width: 100%;
+
+              .el-select-dropdown__item.selected {
+                color: $secondaryColor  !important;
+                font-weight: bold;
+              }
+            }
+
+            .el-input-group__prepend {
+              width: 200px;
+              background: transparent;
+              border: none;
+
+              .agentDetails-form-mobileRegion {
+                width: 200px;
+
+                .agentDetails-form-mobileRegion-optionsList {
+                  width: 250px;
+                }
+
+                .el-select-dropdown__item.selected {
+                  color: $secondaryColor  !important;
+                  font-weight: bold;
+                }
+              }
+            }
+
+          }
+
+          .agentDetails-form-submit-button {
+             &:focus {
+              color: $fontColor;
+              background-color: $secondaryColor;
+              border-color: transparent;
+            }
+
+            &:hover {
+              color: $fontColor;
+              background-color: $secondaryColor;
+              border-color: transparent;
+            }
+          }
+        }
+      }
+
+      .agentDetails-form-change-pwd-button {
+        width: 100%;
+      }
+    }
+
+    /* tab bar css */
+    .el-tabs__nav-wrap::after {
+      border: 1px solid $blackOpacity20
+    }
+
+    .el-tabs__nav {
+
+      .el-tabs__active-bar {
+        height: 5px;
+        border-radius: 20px;
+        background-color: $secondaryColor;
+        z-index: 1 !important;
+      }
+
+      .el-tabs__item {
+        color: $fontColorOpc50;
+        font-size: 20px;
+      }
+
+      .el-tabs__item.is-active {
+        color: $fontColor;
+      }
+    }
+  }
+}

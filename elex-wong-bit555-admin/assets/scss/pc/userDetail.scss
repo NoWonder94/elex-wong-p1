@@ -1,0 +1,43 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+    .user-detail{
+        position: relative;
+        padding: 20px;
+
+        .detail-title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .input-item{
+            padding-top: 20px;
+
+            .input-title{
+                font-size: 15px;
+            }
+
+            .input-value{
+                padding-top: 10px;
+            }
+        }
+
+        .detail-part{
+            margin-top: 30px;
+            padding: 30px 0 10px;
+            border-top: 1px solid $grey;
+        }
+
+        .actions{
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 20px;
+
+            .el-button{
+                margin-left: 10px;
+                background-color: $leftPanelBgColor;
+                color: #FFF;
+            }
+        }
+    }
+}

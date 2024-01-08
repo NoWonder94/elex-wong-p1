@@ -1,0 +1,99 @@
+[data-aos='zoom-in-responsive'] {
+    transition-property: transform, opacity;
+    @media screen and (max-width: 769px) {
+      transform: scale(0.5);
+      opacity: 0;
+      &.aos-animate {
+        transition-delay: 0.5s;
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    @media screen and (min-width: 769px) {
+      transform: scale(0.5);
+      opacity: 0;
+      &.aos-animate {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+}
+
+.Banner_Top {
+  position: relative;
+}
+
+.Game_Container_CN {
+  @media only screen and (max-width: 769px) {
+    .content {
+      .gameListContainer {
+        .gameItem {
+          div {
+            .row {
+              .title {
+                span {
+                  font-size: 4.8vw;
+                }
+              }
+
+              .status {
+                font-size: 4.3vw;
+                padding: 1.6vw 7.4vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Game_Container_EN {
+  @media only screen and (max-width: 769px) {
+    .content {
+      .gameListContainer {
+        .gameItem {
+          div {
+            .row {
+              .title {
+                span {
+                  font-size: 4vw;
+                }
+              }
+
+              .status {
+                font-size: 3.5vw;
+                padding: 1.6vw 6vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Game_Container_KR {
+  @media only screen and (max-width: 769px) {
+    .content {
+      .gameListContainer {
+        .gameItem {
+          div {
+            .row {
+              .title {
+                span {
+                  font-size: 4vw;
+                }
+              }
+
+              .status {
+                font-size: 3.5vw;
+                padding: 1.6vw 6vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

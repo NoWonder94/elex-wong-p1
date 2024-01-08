@@ -1,0 +1,60 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .loginDialog {
+
+    .el-dialog {
+      width: 90%;
+    }
+
+    .el-dialog__header {
+      .el-dialog__title {
+        font-weight: bold;
+      }
+    }
+
+    .loginDialog-form {
+
+      .el-form-item {
+        position: relative;
+
+        .el-form-item__label {
+          color: $primaryColorOpc50;
+          font-size: 3vw;
+          line-height: 5vw;
+        }
+
+        .loginDialog-form-mobileRegion {
+          width: 20vw;
+
+          .el-select-dropdown__list{
+            width: 60vw;
+          }
+
+          .el-select-dropdown__item.selected {
+            color: $secondaryColor  !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .el-dialog__footer {
+      .dialog-footer{
+        .loginDialog-button {
+          &:focus {
+            color: $fontColor;
+            background-color: $secondaryColor;
+            border-color: transparent;
+          }
+
+          &:hover {
+            color: $fontColor;
+            background-color: $secondaryColor;
+            border-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

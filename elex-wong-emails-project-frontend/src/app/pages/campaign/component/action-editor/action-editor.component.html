@@ -1,0 +1,31 @@
+<div class="">
+  <!-- Type selector -->
+  <select #input class="form-select" [(ngModel)]="editedAction.type" (blur)="onCampaignTypeBlur()">
+    <option *ngFor="let type of availableActionTypes" [ngValue]="type.type">{{ type.title }}</option>
+  </select>
+
+  <div class="config">
+    <!-- Twitter follow -->
+    <div *ngIf="editedAction.type == 'twitter_follow'" class="flex-row-center">
+      Account to follow:
+      <input class="form-control h-margin" [(ngModel)]="getTwitterFollowConfiguration().twitterAccount" />
+      (without trailing @)
+    </div>
+
+    <!-- Twitter RT -->
+    <div *ngIf="editedAction.type == 'twitter_rt'" class="flex-row-center">
+      Tweet to RT:
+      <input class="form-control h-margin" [(ngModel)]="getTwitterRTConfiguration().tweetUrl" />
+    </div>
+  </div>
+
+  <!-- Actions footer -->
+  <div class="flex-row-center">
+    <btn-loader title="Cancel" (click)="cancelEdition()" class="h-margin">
+    </btn-loader>
+    <btn-loader title="Done" (click)="saveEdition()" class="h-margin">
+    </btn-loader>
+    <btn-loader title="Delete" (click)="deleteEdition()" class="h-margin" mode="delete">
+    </btn-loader>
+  </div>
+</div>

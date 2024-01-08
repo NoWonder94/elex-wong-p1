@@ -1,0 +1,340 @@
+.m-navba {
+  @media only screen and (min-width: 0px) and (max-width: 750px) {
+    .el-dialog__wrapper {
+      display: none;
+    }
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    // color: rgba(153, 164, 176, 0.8);
+    background-color: $colorys1;
+    width: 100%;
+
+    .record_content {
+      height: 100%;
+      width: 100%;
+      background-color: $colorys2;
+      box-sizing: border-box;
+      overflow: auto;
+      border-radius: 30px;
+      padding: 0;
+      // padding: 50px 60px 50px 50px;
+      position: relative;
+
+      .header {
+        width: 100%;
+        height: 150px;
+
+        box-sizing: border-box;
+        border-radius: 30px 30px 0 0;
+        background-color: $colorys1;
+        line-height: 100px;
+        text-align: left;
+        padding: 0px 30px 30px 30px;
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
+        position: relative;
+
+        i {
+          position: absolute;
+          right: 30px;
+          top: 20px;
+          color: $colorys3;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+
+      .content {
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        border-radius: 40px 40px 0 0;
+        top: 100px;
+        background-color: $colorys2;
+        left: 0;
+        box-sizing: border-box;
+        padding: 0 10px;
+
+        .userInfo {
+          width: 100%;
+          box-sizing: border-box;
+          height: 180px;
+          padding-top: 70px;
+
+          .maxUserId {
+            color: white;
+            font-weight: 500;
+            font-size: 18px;
+
+            img {
+              margin-right: 15px;
+              width: 30px;
+              height: 30px;
+            }
+          }
+
+          .userName {
+            margin-top: 20px;
+            color: $colorys3;
+            font-size: 18px;
+            line-height: 30px;
+
+            .name {
+              color: white;
+              text-decoration: underline;
+            }
+
+            .time {
+              color: $colorys3;
+              font-size: 14px;
+            }
+          }
+
+          .time {
+            color: #496275;
+            font-size: 12px;
+          }
+        }
+
+        .recordItem {
+          width: 100%;
+          display: flex;
+          margin-top: 30px;
+          flex-wrap: wrap;
+          box-sizing: border-box;
+          justify-content: space-between;
+          align-items: center;
+
+          .item {
+            flex: 0 0 28%;
+
+            height: 120px;
+            background-color: $colorys1;
+
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .top {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 18px;
+
+              img {
+                width: 24px;
+                height: 22px;
+                margin-right: 5px;
+              }
+
+              div {
+                font-size: 18px;
+                margin-left: 5px;
+                color: $colorys3;
+              }
+            }
+
+            .bottom {
+              margin-top: 10px;
+              color: $colorys3;
+              font-size: 18px;
+            }
+
+            .profitc {
+              color: $colorys6;
+            }
+
+            .active {
+              color: #43b309;
+            }
+          }
+        }
+
+        .recordGame {
+          width: 100%;
+          height: 150px;
+          border-radius: 30px;
+          margin-top: 30px;
+          background-color: $colorys1;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          box-sizing: border-box;
+          padding: 20px;
+
+          .game_left {
+            margin-left: 10px;
+            height: 100%;
+
+            .game_img {
+              float: left;
+              width: 110px;
+              height: 100%;
+
+              img {
+                height: 100%;
+                width: 110px;
+                border-radius: 15px;
+              }
+            }
+
+            .game_mes {
+              float: left;
+              margin-left: 15px;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              text-align: left;
+
+              .game_name {
+                font-size: 30px;
+                color: white;
+              }
+
+              .game_from {
+                font-size: 30px;
+                margin-top: 15px;
+                color: $colorys3;
+              }
+            }
+          }
+
+          .game_right {
+            width: 220px;
+            height: 100%;
+
+            &:active {
+              transform: scale(0.95, 0.95);
+            }
+
+            span {
+              display: inline-block;
+              font-size: 32px;
+              margin-top: 25px;
+              background-color: $colorys5;
+              color: white;
+              width: 100%;
+              height: 60px;
+              line-height: 60px;
+              border-radius: 40px;
+            }
+          }
+        }
+
+        .recordRes {
+          margin-top: 30px;
+          width: 100%;
+          height: 150px;
+          background-color: $colorys4;
+          border-radius: 30px;
+          box-sizing: border-box;
+          padding: 30px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          .resitem {
+            width: 33.33%;
+            height: 100%;
+            color: $colorys3;
+
+            > div {
+              font-size: 30px;
+
+              img {
+                margin-right: 10px;
+                height: 30px;
+              }
+            }
+
+            .res_mes {
+              margin-top: 20px;
+            }
+          }
+
+          .resitemL {
+            border-right: 1px solid rgba(67, 179, 9, 0.2);
+          }
+        }
+
+        .recordSeed {
+          margin-top: 30px;
+          width: 100%;
+          font-size: 28px;
+
+          .seed_title {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            h2 {
+              text-align: left;
+              font-size: 30px;
+              color: $colorys3;
+            }
+
+            .seed_s {
+              color: #43b309;
+            }
+          }
+
+          .seed_content {
+            width: 100%;
+            height: 100px;
+            margin-top: 15px;
+            border-radius: 30px;
+            background-color: $colorys4;
+            box-sizing: border-box;
+            text-align: left;
+            line-height: 100px;
+            padding-left: 30px;
+            color: $colorys3;
+          }
+
+          .seed_hash {
+            color: white;
+          }
+        }
+
+        .record_bottom {
+          &:active {
+            transform: scale(0.95, 0.95);
+          }
+
+          margin-top: 40px;
+          width: 100%;
+
+          span {
+            display: inline-block;
+            margin-bottom: 60px;
+            width: 70%;
+            height: 100px;
+            border-radius: 60rem;
+            cursor: pointer;
+            font-size: 32px;
+            line-height: 100px;
+            font-weight: 500;
+            color: #f5f6f7;
+            z-index: 1;
+            background-color: #43b309;
+            background-image: conic-gradient(from 1turn, #43b309, #5ddb1c);
+          }
+        }
+      }
+    }
+  }
+}

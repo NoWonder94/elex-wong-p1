@@ -1,0 +1,137 @@
+
+2018-03-28 10:25:48============================
+array (
+  'Direction' => 'inbound',
+  'From' => 'sip:t9bet180328020915@phone.plivo.com',
+  'CallerName' => 't9bet180328020915',
+  'BillRate' => '0.003',
+  'To' => 'sip:aabbcc@phone.plivo.com',
+  'X-PH-Test1' => 'test1',
+  'X-PH-Test2' => 'test2',
+  'CallUUID' => '51f54e92-322f-11e8-8690-ede6038f11b8',
+  'SIP-H-To' => '<sip:aabbcc@production-mediaserver-ap-southeast-1-debian-ms3.plivops.com>',
+  'CallStatus' => 'ringing',
+  'Event' => 'StartApp',
+)
+2018-03-28 10:27:24============================
+array (
+  'Direction' => 'inbound',
+  'From' => 'sip:t9bet180328020915@phone.plivo.com',
+  'CallerName' => 't9bet180328020915',
+  'BillRate' => '0.003',
+  'To' => 'sip:aabbcc@phone.plivo.com',
+  'X-PH-Test1' => 'test1',
+  'X-PH-Test2' => 'test2',
+  'CallUUID' => '8b25e3f2-322f-11e8-9c80-89a89732842e',
+  'SIP-H-To' => '<sip:aabbcc@production-mediaserver-ap-southeast-1-debian-ms2.plivops.com>',
+  'CallStatus' => 'ringing',
+  'Event' => 'StartApp',
+)
+2018-03-28 10:28:33============================
+array (
+  'Direction' => 'inbound',
+  'From' => 'sip:t9bet180328020915@phone.plivo.com',
+  'CallerName' => 't9bet180328020915',
+  'BillRate' => '0.003',
+  'To' => '1235689',
+  'X-PH-Test1' => 'test1',
+  'X-PH-Test2' => 'test2',
+  'CallUUID' => 'b320d5f6-322f-11e8-9436-ede6038f11b8',
+  'SIP-H-To' => '<sip:1235689@production-mediaserver-ap-southeast-1-debian-ms3.plivops.com>',
+  'CallStatus' => 'ringing',
+  'Event' => 'StartApp',
+)
+2018-03-28 10:57:04============================
+array (
+  'Direction' => 'inbound',
+  'From' => 'sip:t9bet180328020915@phone.plivo.com',
+  'CallerName' => 't9bet180328020915',
+  'BillRate' => '0.003',
+  'To' => '112855',
+  'X-PH-Test1' => 'test1',
+  'X-PH-Test2' => 'test2',
+  'CallUUID' => 'b05785b4-3233-11e8-b7fa-ede6038f11b8',
+  'SIP-H-To' => '<sip:112855@production-mediaserver-ap-southeast-1-debian-ms3.plivops.com>',
+  'CallStatus' => 'ringing',
+  'Event' => 'StartApp',
+)
+2018-03-28 11:47:02============================
+array (
+  'Direction' => 'inbound',
+  'From' => 'sip:t9bet180328020915@phone.plivo.com',
+  'CallerName' => 't9bet180328020915',
+  'BillRate' => '0.003',
+  'To' => '112855',
+  'X-PH-Test1' => 'test1',
+  'X-PH-Test2' => 'test2',
+  'CallUUID' => 'aa53ae8e-323a-11e8-8e2d-71b364c35abf',
+  'SIP-H-To' => '<sip:112855@production-mediaserver-ap-southeast-1-debian-ms1.plivops.com>',
+  'CallStatus' => 'ringing',
+  'Event' => 'StartApp',
+)
+2018-03-28 11:47:26============================
+array (
+  'Direction' => 'inbound',
+  'From' => 'sip:t9bet180328020915@phone.plivo.com',
+  'CallerName' => 't9bet180328020915',
+  'BillRate' => '0.003',
+  'To' => '0011',
+  'X-PH-Test1' => 'test1',
+  'X-PH-Test2' => 'test2',
+  'CallUUID' => 'b9959a06-323a-11e8-9b69-71b364c35abf',
+  'SIP-H-To' => '<sip:0011@production-mediaserver-ap-southeast-1-debian-ms1.plivops.com>',
+  'CallStatus' => 'ringing',
+  'Event' => 'StartApp',
+)
+2018-03-28 11:58:42============================
+array (
+  'Direction' => 'inbound',
+  'From' => 'sip:t9bet180328020915@phone.plivo.com',
+  'CallerName' => 't9bet180328020915',
+  'BillRate' => '0.003',
+  'To' => '0011',
+  'X-PH-Test1' => 'test1',
+  'X-PH-Test2' => 'test2',
+  'CallUUID' => '4c1edce2-323c-11e8-bd5e-89a89732842e',
+  'SIP-H-To' => '<sip:0011@production-mediaserver-ap-southeast-1-debian-ms2.plivops.com>',
+  'CallStatus' => 'ringing',
+  'Event' => 'StartApp',
+)
+2018-03-28 11:59:18============================
+array (
+  'Direction' => 'inbound',
+  'From' => 'sip:t9bet180328020915@phone.plivo.com',
+  'CallerName' => 't9bet180328020915',
+  'BillRate' => '0.003',
+  'To' => '0011',
+  'X-PH-Test1' => 'test1',
+  'X-PH-Test2' => 'test2',
+  'CallUUID' => '61f47536-323c-11e8-8f19-ede6038f11b8',
+  'SIP-H-To' => '<sip:0011@production-mediaserver-ap-southeast-1-debian-ms3.plivops.com>',
+  'CallStatus' => 'ringing',
+  'Event' => 'StartApp',
+)
+2018-03-28 13:46:21============================
+array (
+  'Direction' => 'inbound',
+  'From' => 'sip:t9bet180328020915@phone.plivo.com',
+  'CallerName' => 't9bet180328020915',
+  'BillRate' => '0.003',
+  'To' => '234983',
+  'CallUUID' => '557ce810-324b-11e8-baaf-89a89732842e',
+  'SIP-H-To' => '<sip:234983@production-mediaserver-ap-southeast-1-debian-ms2.plivops.com>',
+  'CallStatus' => 'ringing',
+  'Event' => 'StartApp',
+)
+2018-03-28 13:47:27============================
+array (
+  'Direction' => 'inbound',
+  'From' => 'sip:t9bet180328020915@phone.plivo.com',
+  'CallerName' => 't9bet180328020915',
+  'BillRate' => '0.003',
+  'To' => '234985',
+  'CallUUID' => '7d2c94b4-324b-11e8-83ba-71b364c35abf',
+  'SIP-H-To' => '<sip:234985@production-mediaserver-ap-southeast-1-debian-ms1.plivops.com>',
+  'CallStatus' => 'ringing',
+  'Event' => 'StartApp',
+)

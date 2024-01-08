@@ -1,0 +1,27 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+    .upload-img{
+        .vue_component__upload--image{
+            border: 1px solid $grey;
+
+            #upload_image_form--default{
+                padding: 30px 0;
+
+                .upload_image_form__thumbnails{
+                    margin-bottom: 0;
+                    display: none;
+                }
+            }
+        }
+
+		.uploaded-img{
+			padding-top: 20px;
+
+			img{
+				width: 200px;
+				border: 1px solid $grey;
+			}
+		}
+	}
+}

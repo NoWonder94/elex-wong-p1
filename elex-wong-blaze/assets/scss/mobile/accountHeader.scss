@@ -1,0 +1,24 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 1200px){
+  .account-header{
+    position: relative;
+    color: $white;
+
+    .mobile-header{
+      position: relative;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 26px 0;
+      border-bottom: 1px solid $separator;
+      height: 70px;
+
+      i{
+        position: absolute;
+        left: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+}

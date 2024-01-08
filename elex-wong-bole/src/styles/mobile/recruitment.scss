@@ -1,0 +1,424 @@
+  .Banner_Top {
+
+    #scene {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: visible;
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      .background_animate {
+        background-image: url('../assets/mobile_banner_Top/mobile_top_bg.png');
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: bottom;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        white-space: nowrap;
+        color: white;
+      }
+    }
+  }
+
+  .content {
+    .first_part {
+      .first_part_title {
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+
+      .first_part_image {
+        padding: 5vw 0;
+        img {
+          width: 100%;
+          opacity: 0;
+        }
+
+        img.slide:first-child {
+          animation: fade-in-right 0.5s linear 0s forwards;
+        }
+
+        img.slide:last-child {
+          animation: fade-in-left 0.5s linear 0.2s forwards;
+        }
+
+        @keyframes fade-in-right {
+          0% {
+            opacity: 0;
+            transform: translateX(500px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        @keyframes fade-in-left {
+          0% {
+            opacity: 0;
+            transform: translateX(-500px);
+          }
+
+          100% {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+
+    .second_part {
+      .second_part_item_container {
+        div {
+          vertical-align: middle;
+          span {
+            display: block;
+            padding-left: 2vw;
+          }
+          span:first-child {
+            font-weight: bold;
+          }
+          span:last-child {
+            color: #656565;
+          }
+        }
+      }
+
+      .swiper-slide div {
+        opacity: 0;
+        transition-property: opacity, transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transform: translate3d(-100px, 0, 0) scale(0.5);
+      }
+
+      .swiper-slide .second_part_item_container:nth-child(2) {
+        transition-delay: 0.5s;
+      }
+
+      .swiper-slide .second_part_item_container:nth-child(3) {
+        transition-delay: 1s;
+      }
+
+      .swiper-slide.swiper-slide-active div {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+      }
+    }
+
+    .third_part_web {
+      display: none;
+    }
+
+    .third_part_mobile {
+      background-image: url('../assets/mobile_banner_Top/M_recurit_bg_03.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+
+      .swiper-container {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 5vw 0;
+        color: white;
+        font-weight: 400;
+
+        .swiper-wrapper {
+          .swiper-slide-active {
+            transform: scale(1.5);
+            span {
+              border-bottom: 2px solid red;
+              //display:block;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      .third_part_mobile_content {
+        color: white;
+        padding: 10vw;
+        text-align: left;
+        transition-property: opacity;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+      }
+    }
+
+    .forth_part {
+      span {
+        display: block;
+        text-align: center;
+      }
+      span:last-child {
+        span {
+          padding: 0vw 5vw 3vw 5vw;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .fifth_part {
+      span {
+        display: block;
+        text-align: center;
+        font-size: 4vw;
+        margin: 5vw 15vw;
+      }
+      span.fifth_part_title {
+        font-weight: 900;
+      }
+      .fifth_part_container {
+        position: relative;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+
+        div.fifth_path_location {
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: white;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          span {
+            position: relative;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          span:first-child:before {
+            background-size: 100% 100%;
+            background-position: center;
+            position: absolute;
+          }
+        }
+      }
+    }
+
+    .vacancySection {
+      color: black;
+      padding: 17vw 30px 0 30px;
+      center {
+        padding-bottom: 0;
+        span {
+          display: block;
+          padding-bottom: 3vw;
+          font-weight: 800;
+        }
+      }
+    }
+    .vacancyDetail {
+      color: black;
+      padding: 8vw 30px;
+
+      ul {
+        list-style-type: none;
+        padding: 15px 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #d0d0d0;
+
+        li {
+          width: 25%;
+          text-align: center;
+        }
+      }
+
+      .annoucement {
+        margin: 0 auto;
+        .card {
+          background-color: transparent;
+          border: none;
+          .card-header {
+            padding: 0;
+            button {
+              padding: 0;
+              border: 0;
+              width: 100%;
+              background-color: #f7f7f7;
+              ul {
+                list-style-type: none;
+                border-bottom: none;
+                display: flex;
+                color: #656565;
+                li {
+                  width: 45%;
+                  white-space: normal;
+
+                  i.el-icon-arrow-right:before {
+                    content: '\E603';
+                  }
+                }
+                li:first-child {
+                  text-align: left;
+                  padding-left: 2%;
+                }
+
+                li:nth-child(3) {
+                  text-align: right;
+                  i {
+                    vertical-align: middle;
+                    line-height: 1;
+                  }
+                }
+              }
+            }
+
+            .collapsed {
+              i.el-icon-arrow-right:before {
+                content: '\E604';
+              }
+            }
+          }
+          .collapse {
+            hr {
+              display: none;
+            }
+          }
+          .card-body {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .contact_background {
+      .contact_logo {
+        font-weight: bold;
+        display: block;
+        padding-bottom: 3vw;
+        font-size: 5.5vw;
+      }
+
+      .contact_list {
+        background-image: url('../assets/mobile_banner_Top/M-recurit_bg_04.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        color: white;
+        font-size: 3.9vw;
+        font-weight: normal;
+        padding: 9vw 0 2.8vw 0;
+
+        div:first-child {
+          grid-row: 2;
+          span {
+            display: table;
+            padding: 4.3vw 20.5vw;
+            margin: 8vw 0;
+            font-weight: 700;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 0;
+          }
+        }
+
+        div:nth-child(2) {
+          grid-row: 1;
+
+          span {
+            display: block;
+            width: 30vw;
+            padding: 2vw 0;
+            position: relative;
+            left: 4.4vw;
+            text-align: left;
+            opacity: 0;
+          }
+
+          span:before {
+            content: '';
+            width: 8vw;
+            height: 8vw;
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 1.4vw;
+            left: -14.5vw;
+          }
+
+          span:first-child:before {
+            background-image: url('../assets/background/mail.png');
+          }
+
+          span:nth-child(2):before {
+            background-size: 200% 200%;
+            background-image: url('../assets/background/qq.svg');
+          }
+
+          span:nth-child(3):before {
+            background-size: 80% 80%;
+            background-image: url('../assets/background/skype.png');
+          }
+          span:nth-child(4):before {
+            background-image: url('../assets/background/telegram.png');
+          }
+        }
+      }
+
+      .zoom_effect_active {
+        .contact_list {
+          div {
+            span {
+              animation: fade-in-up 0.5s forwards 0.8s;
+            }
+          }
+          div:nth-child(2) {
+            span:first-child {
+              animation: fade-in-up 0.5s forwards 0s;
+            }
+            span:nth-child(2) {
+              animation: fade-in-up 0.5s forwards 0.2s;
+            }
+            span:nth-child(3) {
+              animation: fade-in-up 0.5s forwards 0.4s;
+            }
+            span:nth-child(4) {
+              animation: fade-in-up 0.5s forwards 0.6s;
+            }
+          }
+
+          @keyframes fade-in-up {
+            0% {
+              opacity: 0;
+              transform: translateY(100px);
+            }
+
+            100% {
+              opacity: 1;
+              transform: translateY(0px);
+            }
+          }
+        }
+      }
+    }
+  }

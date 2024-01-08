@@ -1,0 +1,65 @@
+@import "../base.scss";
+
+@media only screen and (min-width: $pcMinWidth) {
+  .download{
+    position: relative;
+    background: url("~@/assets/img/register_bg.png") no-repeat center top;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    letter-spacing: 1px;
+
+    .download-section{
+      width: 1100px;
+      margin: 0 auto;
+      padding: 50px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      line-height: 1.7;
+
+      .welive{
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      .title{
+        font-size: 35px;
+        font-weight: bold;
+        width: 400px;
+      }
+
+      .description{
+        font-size: 20px;
+        color: $lightFontColor;
+        width: 480px;
+      }
+
+      .download-row{
+        display: flex;
+        column-gap: 10px;
+        padding-top: 40px;
+
+        .download-box{
+          font-size: 14px;
+          font-weight: bold;
+          text-align: center;
+          border: 2px solid $fontColor;
+          border-radius: 30px;
+          width: 175px;
+          padding: 8px 20px;
+          cursor: pointer;
+        }
+
+        .google{
+          background-color: $lightBlue;
+          border: 2px solid $lightBlue;
+        }
+      }
+
+      img{
+        width: 500px;
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section>
+<main id="main">
+  <section id="registersection" class="about">
+    <div class="aos-init aos-animate" data-aos="fade-up">
+      <div class="breadcrumb" (click)="goBack()">&lt; Back to dashboard</div>
+      <div class="offset-lg-2 col-lg-8">
+        <div class="section-header">Email Communication Settings</div>
+      </div>
+    </div>
+    <div class="row content justify-content-center">
+      <div class="col-lg-8">
+        <div class="altxs" *ngIf="emailCommunication">
+          <simple-box-edit heading="Title" [value]="emailCommunication.title" [disable]="!editable" (edited)="onTitleEdited($event)">
+          </simple-box-edit>
+          <simple-box-edit heading="Email Template" [mode]="'select'" [value]="emailCommunication.emailTemplateEid" [selectKey]="'Email Template'" [disable]="!editable" (edited)="onTemplateEdited($event)"
+          [options]="allEmailTemplate">
+          </simple-box-edit>
+        </div>
+
+        <data-is-loading *ngIf="fetchingEmailCom"></data-is-loading>
+      </div>
+    </div>
+    <div class="row content justify-content-center">
+      <div class="col-lg-8">
+        <div class="data-info-box" *ngIf="emailCommunication" >
+          <p class="heading" > Status</p>
+          <div class="status-btn-group">
+            <div *ngIf=" emailCommunication.status!==3;else status">
+              <btn-loader *ngIf="emailCommunication.status==0" title="Start Sending" (clicked)="changeStatus(1)"></btn-loader>
+              <btn-loader *ngIf="emailCommunication.status==1" title="Pause" (clicked)="changeStatus(2)"></btn-loader>
+              <btn-loader *ngIf="emailCommunication.status==2||emailCommunication.status==4" title="Resume" (clicked)="changeStatus(1)"></btn-loader>
+              <btn-loader *ngIf="emailCommunication.status!=0 && emailCommunication.status!=4"class="cancel" title="Cancel" (clicked)="changeStatus(4)" [mode]="'delete'"></btn-loader>
+            </div>
+            <ng-template #status>
+              <div *ngIf="emailCommunication.status==3"><b>Completed</b></div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row content justify-content-center">
+      <div class="col-lg-8">
+        <div class="data-info-box" *ngIf="emailCommunication" >
+          <p class="heading" > Stats</p>
+          <div>{{emailCommunication.total_sent}} email sent- {{emailCommunication.total_mail}} total email </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>

@@ -1,0 +1,68 @@
+@import 'assets/css/font-awesome-6.0.0/css/all.css';
+
+/*========================= COLOR =========================*/
+$primaryColor: hsla(240, 30%, 86%, 1);
+$secondaryColor: hsl(240, 40%, 50%);
+$primaryAltColor:  hsl(240, 10%, 90%);
+$lightPrimaryColor: #000000;
+$lighterPrimaryColor: #000000;
+$bgColor: hsl(240, 24%, 94%);
+$secondarybgColor: hsla(240, 40%, 86%, 1);
+$fontColor: hsl(0, 0%, 0%);
+$scFontColor: hsl(0, 0%, 100%);
+$secondaryFontColor: hsl(240, 12%, 35%);
+$modalOverlayColorOpc50: rgba(0, 0, 0, .1);
+
+/*========================= REPONSIVE SIZE ================*/
+$pcMinWidth:700px;
+$mobileMaxWidth:700px;
+/*========================= FILL BUTTON ===================*/
+.fill-box {
+  color: $fontColor;
+  border-radius: 3px;
+  background-color: $secondaryColor;
+}
+/*========================= BORDER BUTTON =================*/
+.border-box {
+  color: $secondaryColor;
+  border-radius: 3px;
+  border: 1px solid $secondaryColor;
+  background-color: transparent;
+}
+/*========================= GRADIENT COLOR ================*/
+.gradientBgColor {
+  background-image: linear-gradient(to right, $primaryColor, $primaryAltColor);
+}
+
+body
+{
+    background-color: $bgColor;
+    color: $fontColor;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: $pcMinWidth)
+{
+    .web
+    {
+      display:block;
+    }
+
+    .mobile
+    {
+      display:none;
+    }
+}
+
+@media only screen and (max-width: $mobileMaxWidth)
+{
+    .web
+    {
+      display:none;
+    }
+
+    .mobile
+    {
+      display:block;
+    }
+}

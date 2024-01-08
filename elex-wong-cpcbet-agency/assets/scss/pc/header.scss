@@ -1,0 +1,103 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth){
+	.header{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: $secondarybgColor;
+
+    .headers{
+      width: 1200px;
+      margin: 0 auto;
+      padding: 15px 0;
+      border-bottom: 1px solid $whiteOpacity20;
+      display: flex;
+      // justify-content: space-between;
+
+      .header-brand-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
+
+        .header-branding-icon{
+          width: 35px;
+        }
+
+        .header-nav-options{
+          width: 180px;
+
+          .el-input__inner{
+            background: transparent;
+            color: $scfontColor;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+          }
+
+          .el-select-dropdown{
+            margin-left: -50px;
+            width: 450px;
+
+            .popper__arrow{
+              display: none !important;
+            }
+
+            .el-select-dropdown__item.selected{
+              color: $secondaryColor !important;
+              font-weight: bold;
+            }
+
+            .el-select-dropdown__item{
+              color: $primaryColor !important;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .header-wallet{
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        color: $scfontColor;
+        font-weight: bold;
+        cursor: pointer;
+
+        .header-wallet-icon{
+          width: 30px;
+        }
+      }
+
+      .header-user{
+        min-width: 100px;
+        margin-left: 10px;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2px;
+        justify-content: space-between;
+        background-color: $scfontColor;
+        font-weight: bold;
+        border-radius:50px;
+
+
+        .header-user-icon{
+          width: 25px;
+          border: 2px solid $primaryColor;
+          border-radius: 20px;
+        }
+      }
+      .header-close{
+        .header-close-icon{
+          width: 25px;
+          cursor: pointer;
+        }
+      }
+    }
+	}
+}

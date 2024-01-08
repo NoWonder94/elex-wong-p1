@@ -1,0 +1,120 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 1200px){
+  .personal-info{
+    position: relative;
+    color: $white;
+    min-height: 90vh;
+    padding-bottom: 50px;
+
+    .content-right{
+      background-color: $background;
+
+      .title{
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 25px;
+      }
+
+      .content-list, .mobile-list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-bottom: 20px;
+
+        .right-item{
+          position: relative;
+          background-color: $darkBackground;
+          border-radius: 4px;
+
+          input{
+            color: $white;
+            font-size: 12px;
+            height: 48px;
+            padding: 22px 20px 8px;
+            width: 100%;
+            border-radius: 4px;
+            background-color: $darkBackground;
+
+            &:focus{
+              outline: none;
+            }
+          }
+
+          label{
+            position: absolute;
+            pointer-events: none;
+            font-size: 12px;
+            color: $lightGrey;
+            left: 20px;
+            top: 15px;
+            transition: 0.2s ease all;
+          }
+
+          input:focus ~ label, input:not(:placeholder-shown) ~ label, .select-active{
+            top: 8px;
+            font-size: 10px;
+          }
+
+          select{
+            color: $white;
+            font-size: 12px;
+            padding: 22px 20px 8px;
+            width: 100%;
+            background-color: $darkBackground;
+            border-radius: 4px;
+
+            option{
+              font-size: 12px;
+            }
+
+            &:focus{
+              outline: none;
+            }
+          }
+
+          // dob
+          .el-date-editor.el-input, .el-date-editor.el-input__inner{
+            width: 100%;
+          }
+
+          .el-icon-date:before{
+            content: '';
+          }
+
+          .el-input__inner{
+            border: none;
+          }
+        }
+      }
+
+      .mobile-list{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 20px 15px;
+      }
+
+      .save-button{
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 12px;
+        background-color: $red;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .content-right{
+    padding: 6vw 5vw;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  .content-right{
+    padding: 24px 30px;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth)
+{
+  .proxyComPlan{
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 0;
+
+    .proxyComPlan-plan-list
+    {
+      padding: 0px 10px;
+
+      .proxyComPlan-list-card
+      {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+      }
+    }
+  }
+}

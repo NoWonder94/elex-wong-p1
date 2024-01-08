@@ -1,0 +1,169 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth)
+{
+	.gameType {
+    position: relative;
+    width: 100%;
+
+    .gameType-loading-position {
+      position: relative;
+      margin: 0 auto;
+    }
+
+    .gameType-tabbar {
+      .el-tabs__header {
+        .el-tabs__item:hover {
+          color: $secondaryColor !important;
+        }
+
+        .el-tabs__item.is-active {
+          color: $secondaryColor;
+        }
+      }
+
+      .el-tabs__content {
+        max-height: 75vh;
+        overflow-y: auto;
+        padding-top: 20px;
+
+        .tab-content {
+          position: relative;
+          width: 100%;
+          padding-bottom: 15px;
+
+          .game-search {
+            width: 300px;
+            margin-bottom: 15px;
+          }
+
+          .gameType-tabbar-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 20px;
+            justify-items: center;
+
+            /* card */
+            .card {
+              position: relative;
+              width: 100%;
+              height: 200px;
+              max-width: 400px;
+              min-width: 200px;
+              // padding: 10px;
+              line-height: 1.7em;
+              border-radius: 5px;
+              outline: none;
+              background: $secondaryFontColor;
+              box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+              display: flex;
+
+              .left {
+                position: relative;
+                // width: 120px;
+                width: 30%;
+                height: 100%;
+                border-right: 2px dashed #d6d6d6;
+                padding: 0px 40px;
+                font-family: 'Oswald', sans-serif;
+                font-weight: bolder;
+                font-size: 210%;
+                text-transform: uppercase;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                  color: #333;
+                }
+                p {
+                  margin-top: 5px;
+                  font-size: 18px;
+                  color: #d6d6d6;
+                }
+              }
+
+              .right {
+                position: relative;
+                // flex: 1;
+                width: 70%;
+                height: 100%;
+                margin-left: 20px;
+                color: $primaryAltColor;
+                overflow: hidden;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                // row-gap: 30px;
+
+                .right-content-label {
+
+                  h6 {
+                    text-transform: uppercase;
+                  }
+
+                  h3{
+                    color: $primaryColor;
+                    text-transform: uppercase;
+                  }
+                }
+
+                .right-content {
+                  font-size: 14px;
+
+                  .right-content-flex {
+                    display: flex;
+                    justify-content: flex-start;
+                    column-gap: 15px;
+                  }
+                }
+
+
+                .right-play-corner{
+                  position: absolute;
+                  right: 10px;
+                  bottom: 10px;
+                  padding: 10px;
+                  padding-bottom: 0px;
+                  // border-radius: 35px 0 0 0px;
+                  border-radius: 50%;
+                  opacity: 0;
+                  transition: all .3s ease-out;
+                  transform: translateX(100%);
+                  background-color: #6a7989;
+                  cursor: pointer;
+
+                  .right-play-button{
+                    width: 30px;
+                    filter: invert(99%) sepia(100%) saturate(15%) hue-rotate(223deg) brightness(103%) contrast(100%);
+                  }
+
+                  .right-play-loading {
+                    // margin-left: 5px;
+                    font-size: 25px;
+                    color: $primaryColor;
+                  }
+                }
+
+                &:hover{
+                  .right-play-corner{
+                    opacity: 1;
+                    transform: translateX(0%);
+                  }
+
+                }
+              }
+
+            }
+
+          }
+        }
+
+      }
+    }
+	}
+}

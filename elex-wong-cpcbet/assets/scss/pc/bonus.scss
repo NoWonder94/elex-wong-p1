@@ -1,0 +1,301 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .bonus {
+    position: relative;
+    padding: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    min-height: 650px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: $secondaryBgColor;
+
+    .bonus-details {
+      padding: 20px 0px;
+      padding-bottom: 0px;
+
+      .bonus-filter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+
+        .bonus-filter-date {
+          display: flex;
+          align-items: center;
+          width: 420px;
+
+          .filter-date-title {
+            margin-right: auto;
+            padding: 10px 0;
+          }
+
+          .el-date-editor.el-input {
+
+            .el-input__prefix {
+              display: none;
+            }
+          }
+        }
+
+        .bonus-search{
+          padding: 10px 14px;
+          background-color: $blueGreen;
+          color: $fontColor;
+          border-radius: $borderRadius3;
+          cursor: pointer;
+        }
+      }
+
+      hr {
+        margin: 10px 0;
+        border: none;
+        border-bottom: 1px solid $lightFontColor;
+        opacity: 0.5;
+      }
+
+      .bonus-datetime-button-group {
+        display: flex;
+        padding: 10px 25px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+
+        .bonus-datetime-button {
+          padding: 8px 25px;
+          background-color: $lighterGreen;
+          color: $secondaryGreen;
+          font-size: 14px;
+          font-weight: bold;
+          border-radius: 30px;
+          cursor: pointer;
+        }
+      }
+
+      .bonus-details-table {
+        padding-bottom: 20px;
+
+        .bonus-table-title{
+          font-weight: bold;
+        }
+
+        .el-table {
+          background-color: inherit;
+          color: $fontColor;
+          border-bottom: none;
+
+          .el-table__body-wrapper {
+            min-height: 300px;
+          }
+
+          thead {
+            color: $fontColor;
+          }
+
+          tr,
+          tr:hover>td,
+          th.el-table__cell {
+            background-color: inherit;
+          }
+
+          td {
+            border-bottom: none;
+          }
+
+          &::before {
+            height: 0px;
+          }
+
+        }
+
+        .bonus-status-success{
+          color: $green;
+        }
+
+        .bonus-status-fail{
+          color: $warning;
+        }
+
+        .bonus-nodata {
+          margin-top: 50px;
+          color: $fontColor;
+          font-weight: bold;
+          text-align: center;
+
+          img {
+            padding-bottom: 10px;
+          }
+
+          div {
+            line-height: 16px;
+          }
+        }
+      }
+
+      .el-input {
+        width: 140px;
+
+        .el-input__inner {
+          background-color: inherit;
+          border: none;
+          color: $fontColor;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:focus {
+            border: 1px solid $primaryGreen;
+          }
+
+          &:hover {
+            color: $lightGreen  !important;
+
+            &::placeholder {
+              color: $lightGreen  !important;
+            }
+          }
+        }
+      }
+
+      .bonus-details-paginate {
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 20px;
+
+        .el-pager
+        {
+          .active
+          {
+            background-color: $primaryGreen !important;
+          }
+
+          .number.active:hover
+          {
+            color: $fontColor !important;
+          }
+
+          .number:hover
+          {
+            color: $primaryGreen !important;
+          }
+        }
+      }
+
+      /*=============== SCROLL BAR ===============*/
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background-color: transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: $primaryGreen;
+        border-radius: $borderRadius30;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: $primaryGreen;
+      }
+
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      .el-tabs__header {
+        margin-bottom: 30px;
+      }
+      .el-tabs__nav {
+
+        .el-tabs__active-bar {
+          height: 5px;
+          border-radius: 20px;
+          background-color: $primaryGreen;
+          z-index: 1 !important;
+        }
+
+        .el-tabs__item {
+          color: $whiteOpacity30;
+          font-size: 15px;
+        }
+
+        .el-tabs__item.is-active {
+          color: $primaryGreen;
+        }
+      }
+    }
+
+    .bonus-popup{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $secondaryBgColorOpacity90;
+      z-index: 999;
+
+      .bonus-popup-wrap{
+        width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 30px 20px;
+        background-color: $fontColor;
+        color: $bgColor;
+        border-radius: 10px;
+
+        .bonus-popup-title{
+          font-weight: bold;
+          padding-bottom: 10px;
+        }
+
+        .bonus-popup-label{
+          padding-bottom: 4px;
+        }
+
+        .bonus-popup-term{
+          padding: 10px 0;
+          font-size: 13px;
+          color: $bgColor;
+          word-wrap: break-word;
+          white-space: normal;
+          text-align: center;
+          .el-checkbox__input{
+
+            .el-checkbox__inner{
+              border: 1px solid $blackOpacity50;
+            }
+            &.is-checked{
+              .el-checkbox__inner{
+                border: 1px solid #DCDFE6;
+              }
+            }
+          }
+          a{
+            text-decoration: underline;
+            color: $lightBlue;
+            cursor: pointer;
+          }
+
+        }
+
+        .bonus-button-group{
+          padding-top: 10px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+
+          .el-button{
+            width: 50%;
+
+            &:nth-child(1){
+              color: $fontColor;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

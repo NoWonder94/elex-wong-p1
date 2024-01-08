@@ -1,0 +1,4 @@
+{
+	"fieldData" : [["BROADCAST_WINS",3,1,5,0,"连胜5局以上，每再胜一局，滚动一次"],["BROADCAST_GOLD_FIRST",4,1,3,0,"富豪榜前三登录游戏"],["BROADCAST_BIG_WIN",4,3,25000000,0,"单局游戏赢取超过25M"],["TURNTABLE_AWARD",5,1,440000,3,"幸运装盘抽中最大奖励（超过440000）"],["BLACK_JACK",1,2,0,0,"玩家拿到黑杰克并获胜"],["THREE_OF_A_KIND",1,2,0,0,"玩家拿到三条A并获胜"]],
+	"fieldMap" : {"id_BROADCAST_WINS":0,"id_BROADCAST_GOLD_FIRST":1,"id_BROADCAST_BIG_WIN":2,"id_TURNTABLE_AWARD":3,"id_BLACK_JACK":4,"id_THREE_OF_A_KIND":5}
+}

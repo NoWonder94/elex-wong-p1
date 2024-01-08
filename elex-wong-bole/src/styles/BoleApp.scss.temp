@@ -1,0 +1,564 @@
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #AppWeb {
+    display:block;
+  }
+
+  #AppWap {
+    display:none;
+  }
+
+  .navigationTobBarWeb {
+    display:none;
+  }
+
+  .firstBG {
+    background: url(../assets/boleapp_new/BG_01.png) no-repeat center top;
+    background-size: 100%;
+    // height: 56vw;
+
+    .firstBG-row {
+      // background: url(../assets/boleapp/BG01.png) no-repeat center top;
+      // background-size: 60%;
+      height: 55.5vw;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+
+      .logo {
+        position: absolute;
+        width:20vw;
+        top:2vw;
+        left: 14vw;
+        cursor:pointer;
+
+        img {
+          width:80%;
+        }
+      }
+
+      .contactRow {
+        width:60%;
+        margin-top:4vw;
+        float:right;
+        margin-right: 8vw;
+
+        .contact {
+          width:20%;
+          float:right;
+
+          img {
+            float:left;
+            width:20%;
+          }
+
+          p {
+            width:80%;
+            margin:0;
+            padding-top:0.3vw;
+            padding-left:0.5vw;
+            color:white;
+            font-weight:bold;
+            font-size:1vw;
+          }
+        }
+      }
+
+      .swing1 {
+        position: relative;
+        animation: motion 5s infinite;
+        -webkit-animation: motion 5s infinite;
+
+        @keyframes motion{
+          0% {
+              top:0px;
+          }
+          50% {
+              top:2vw;
+          }
+          100%{
+              top:0px;
+          }
+        }
+
+        .img1 {
+          width:32vw;
+          position:absolute;
+          top:21vw;
+          left:12vw;
+        }
+
+        .img2 {
+          width:19vw;
+          position:absolute;
+          top:20vw;
+          left:15vw;
+        }
+      }
+
+      .banner-place {
+        position: absolute;
+        width: 31vw;
+        height: 17.8vw;
+        background: url(../assets/boleapp/banner_01.png) no-repeat 100%/100%;
+        right: 15.3vw;
+        top: 28vw;
+
+        .banner-image-position {
+          position: relative;
+          width: 30.4vw;
+          top: 0.4vw;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+        }
+      }
+
+      .arrow {
+        width:100%;
+        height:5vw;
+        position:absolute;
+        bottom:0vw;
+        background: url(../assets/boleapp/ITEM_03.png) no-repeat center;
+
+        .swing2 {
+          position: relative;
+          padding:2vw 1.7vw 1.7vw 1.7vw;
+          animation: arrowUp 3s infinite;
+          -webkit-animation: arrowUp 2s infinite;
+
+          @keyframes arrowUp {
+            0% {
+                top:0px;
+            }
+            50% {
+                top:0.5vw;
+            }
+            100%{
+                top:0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .secondBG {
+    background: url(../assets/boleapp_new/BG_02.png) no-repeat center top;
+    background-size: 100%;
+
+    .secondBG-row {
+      // background: url(../assets/boleapp/BG05.png) no-repeat center top;
+      // background-size: 100%;
+      height: 69vw;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+
+      .banner {
+        width:100%;
+        height:19.8vw;
+        position:absolute;
+        top:1vw;
+        overflow:hidden;
+
+        .s1 {
+          overflow:hidden;
+          width:33.33%;
+          float:left;
+
+          img{
+            width:100%;
+          }
+
+          .h1 {
+            height: 20vw;
+            background: url(../assets/boleapp/ITEM_06.png) no-repeat center;
+            background-size: 50%;
+          }
+        }
+
+        .s1:hover {
+
+          img {
+            transform:scale(1.2);
+            transform-origin:center;
+            transition:all 0.5s;
+            overflow:hidden;
+          }
+
+          .h1 {
+            background: url(../assets/boleapp/ITEM_06_1.png) no-repeat center;
+            background-size:50%;
+          }
+        }
+
+        .s2{
+          overflow:hidden;
+          width:33.33%;
+          float:left;
+
+          img{
+            width:100%;
+          }
+
+          .h2 {
+            height: 20vw;
+            background: url(../assets/boleapp/ITEM_08.png) no-repeat center;
+            background-size: 50%;
+          }
+        }
+
+        .s2:hover {
+
+          img {
+            transform:scale(1.2);
+            transform-origin:center;
+            transition:all 0.5s;
+            overflow:hidden;
+          }
+
+          .h2 {
+            background: url(../assets/boleapp/ITEM_08_1.png) no-repeat center;
+            background-size:50%;
+          }
+        }
+
+        .s3{
+          overflow:hidden;
+          width:33.33%;
+
+          img{
+            width:100%;
+          }
+
+          .h3 {
+            height: 20vw;
+            background: url(../assets/boleapp/ITEM_10.png) no-repeat center;
+            background-size: 50%;
+          }
+        }
+
+        .s3:hover {
+
+          img {
+            transform:scale(1.2);
+            transform-origin:center;
+            transition:all 0.5s;
+            overflow:hidden;
+          }
+
+          .h3 {
+            background: url(../assets/boleapp/ITEM_10_1.png) no-repeat center;
+            background-size:50%;
+          }
+        }
+      }
+    }
+  }
+
+  .thirdBG {
+    background: url(../assets/boleapp_new/BG_03.png) no-repeat center top;
+    background-size: 100%;
+
+    .thirdBG-row {
+      // background: url(../assets/boleapp/BG06.png) no-repeat center top;
+      position: relative;
+      height: 54.5vw;
+      text-align: center;
+      overflow: hidden;
+
+      .more-info-position {
+        position: absolute;
+        width: 18vw;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 3vw;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    height:100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #AppWeb {
+    display:none;
+  }
+
+  #AppWap {
+    display:block;
+  }
+
+  .bgWap {
+    background: url(../assets/boleapp/mobile/MB_BG_01.png) no-repeat center top;
+    background-size:100%;
+    height:532vw;
+
+    .logo {
+      position: absolute;
+      width:38vw;
+      top:2vw;
+      left: 31vw;
+      cursor:pointer;
+
+      img {
+        width:100%;
+      }
+    }
+
+    .contactRow {
+      width:90%;
+      margin:16vw 5vw;
+      float:right;
+
+      .contact {
+        width:30%;
+        float:left;
+
+        img {
+          float:left;
+          width:25%;
+        }
+
+        p {
+          width:100%;
+          margin:0;
+          padding-top:1.5vw;
+          padding-left:8vw;
+          color:white;
+          font-weight:bold;
+          font-size:2vw;
+        }
+      }
+    }
+
+    .swing1 {
+      position: relative;
+      animation: motion 5s infinite;
+      -webkit-animation: motion 5s infinite;
+
+      @keyframes motion{
+        0% {
+            top:0px;
+        }
+        50% {
+            top:3vw;
+        }
+        100%{
+            top:0px;
+        }
+      }
+
+      .img1 {
+        width:58vw;
+        position:absolute;
+        top:69vw;
+        left:7vw;
+      }
+
+      .img2 {
+        width:34vw;
+        position:absolute;
+        top:67vw;
+        left:11vw;
+      }
+    }
+
+    .arrow {
+      width:100%;
+      height:10vw;
+      position:absolute;
+      top:135vw;
+      background: url(../assets/boleapp/mobile/BG_item_07.png) no-repeat center;
+      background-size: 10%;
+    }
+
+    .swing2 {
+      width:52%;
+      position: relative;
+      padding: 2vw 0vw 0vw 48vw;
+      animation: arrow 3s infinite;
+      -webkit-animation: arrow 3s infinite;
+
+      @keyframes arrow {
+        0% {
+            top:0px;
+        }
+        50% {
+            top:2vw;
+        }
+        100%{
+            top:0px;
+        }
+      }
+    }
+
+    .banner {
+      width:100%;
+      height:300vw;
+      position:absolute;
+      top:150vw;
+      overflow:hidden;
+
+      .s1 {
+        overflow:hidden;
+        height:59vw;
+
+        img{
+          width:100%;
+        }
+
+        .h1 {
+          height: 40vw;
+          background: url(../assets/boleapp/mobile/BG_item_10.png) no-repeat center;
+          background-size: 50%;
+        }
+      }
+
+      .s1:hover {
+
+        img {
+          transform:scale(1.2);
+          transform-origin:center;
+          transition:all 0.5s;
+          overflow:hidden;
+        }
+
+        .h1 {
+          background: url(../assets/boleapp/ITEM_06_1.png) no-repeat center;
+          background-size:50%;
+        }
+      }
+
+      .s2{
+        overflow:hidden;
+        height:59vw;
+
+        img{
+          width:100%;
+        }
+
+        .h2 {
+          height: 40vw;
+          background: url(../assets/boleapp/mobile/BG_item_12.png) no-repeat center;
+          background-size: 50%;
+        }
+      }
+
+      .s2:hover {
+
+        img {
+          transform:scale(1.2);
+          transform-origin:center;
+          transition:all 0.5s;
+          overflow:hidden;
+        }
+
+        .h2 {
+          background: url(../assets/boleapp/ITEM_08_1.png) no-repeat center;
+          background-size:50%;
+        }
+      }
+
+      .s3{
+        overflow:hidden;
+        height:59vw;
+
+        img{
+          width:100%;
+        }
+
+        .h3 {
+          height: 40vw;
+          background: url(../assets/boleapp/mobile/BG_item_14.png) no-repeat center;
+          background-size: 50%;
+        }
+      }
+
+      .s3:hover {
+
+        img {
+          transform:scale(1.2);
+          transform-origin:center;
+          transition:all 0.5s;
+          overflow:hidden;
+        }
+
+        .h3 {
+          background: url(../assets/boleapp/ITEM_10_1.png) no-repeat center;
+          background-size:50%;
+        }
+      }
+    }
+
+    .button {
+      width: 100%;
+      height: 30vw;
+      position: absolute;
+      bottom: 0;
+
+      .buttonList {
+        width: 60%;
+        margin: 0 auto;
+
+        .button1 {
+          width: 50%;
+          height: 14vw;
+          background-image:url(../assets/boleapp/BT_01.png);
+          background-size:80%;
+          background-repeat:no-repeat;
+          background-position:center;
+          float: left;
+          cursor: pointer;
+        }
+
+        .button2 {
+          width: 50%;
+          height: 14vw;
+          background-image:url(../assets/boleapp/BT_02.png);
+          background-size:80%;
+          background-repeat:no-repeat;
+          background-position:center;
+          float: left;
+          cursor: pointer;
+        }
+
+        .button3 {
+          width: 50%;
+          height: 14vw;
+          background-image:url(../assets/boleapp/BT_03.png);
+          background-size:80%;
+          background-repeat:no-repeat;
+          background-position:center;
+          float: left;
+          cursor: pointer;
+        }
+
+        .button4 {
+          width: 50%;
+          height: 14vw;
+          background-image:url(../assets/boleapp/BT_04.png);
+          background-size:80%;
+          background-repeat:no-repeat;
+          background-position:center;
+          float: left;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

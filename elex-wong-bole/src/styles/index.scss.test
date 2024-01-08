@@ -1,0 +1,601 @@
+@media only screen and (min-width: 769px) {
+  .Banner_Top1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .index {
+    position: relative;
+    background: url('../assets/pc/bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 56.2vw;
+    cursor: url('../assets/img/cursor_1.png'), auto;
+
+    .real {
+      width: inherit;
+      height: inherit;
+      background: url('../assets/pc/ppl-01.png');
+      background-size: 100% 100%;
+    }
+
+    .title-layout {
+      position: absolute;
+      top: 15vw;
+      left: 6vw;
+
+      .bg-year {
+        background: url('../assets/pc/2019.png');
+        width: 13vw;
+        height: 5.35vw;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .bg-title {
+        margin-top: 0.5vw;
+        background: url('../assets/pc/img/title_en.png');
+        width: 25vw;
+        height: 4.55vw;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    .real_name_background {
+      position: absolute;
+      bottom: 7vw;
+      left: 6vw;
+      width: 28vw;
+    }
+
+    .real_name {
+      position: absolute;
+      bottom: 16vw;
+      left: 6vw;
+      width: 30vw;
+      height: 10.35vw;
+      background: url('../assets/pc/img/name_en.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: transparent;
+    }
+
+    .shadow {
+      text-align: center;
+      background: -webkit-gradient(linear, left top, right top, color-stop(0, #FF0317), color-stop(0.3, #FF0317), color-stop(0.4, #FF0317), color-stop(.5, white), color-stop(.6, #FF0317), color-stop(0.8, #FF0317), color-stop(0.9, #FF0317),color-stop(1, #FF0317));
+
+      /* 设置为text，意思是把文本内容之外的背景给裁剪掉 */
+      -webkit-background-clip: text;
+      /* 设置对象中的文字填充颜色 这里设置为透明 */
+      -webkit-text-fill-color: transparent;
+      /* 每隔2秒调用下面的CSS3动画 infinite属性为循环执行animate */
+      -webkit-animation: shadow 3s infinite;
+
+      @-webkit-keyframes shadow {
+          /* 背景从-100px的水平位置，移动到+100px的水平位置。如果要移动Y轴的，设置第二个数值 */
+          from {background-position: -150px;}
+          to {background-position: 130px;}
+      }
+      @keyframes shadow {
+          from {background-position: -150px;}
+          to {background-position: 130px;}
+      }
+    }
+
+    a:hover {
+        .shadow
+        {
+            -webkit-text-fill-color:#FFF !important;
+        }
+
+        .arrow
+        {
+            color:#FFF;
+            cursor:pointer;
+        }
+    }
+
+    .slogan {
+      color: white;
+      position: absolute;
+      right: 10vw;
+      bottom: 16vw;
+      font-weight: 700;
+      font-size: 1vw;
+      font-style: italic;
+      div {
+        position: relative;
+        p {
+          margin: 0;
+        }
+
+        p:first-child {
+          font-size: 1.4vw;
+        }
+
+        span {
+          position: absolute;
+          right: 0;
+          bottom: -3vw;
+        }
+      }
+    }
+
+    .gradient {
+      display:block;
+      bottom:0;
+    }
+
+    .scroll {
+      display:block
+    }
+  }
+
+  .Banner_Top2 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .hotGames {
+    position:relative;
+    background: url('../assets/home/hot/bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 56.2vw;
+
+    .ribbon {
+      position:absolute;
+      background: url('../assets/home/hot/topgame.png');
+      background-size:100%;
+      background-repeat: no-repeat;
+      width:15.8vw;
+      height:4vw;
+      top:10vw;
+      left:41.5vw;
+
+      p {
+        font-size:1vw;
+        color:#fff;
+        letter-spacing:1.2vw;
+        padding:0.5vw 0vw 1vw 4vw;
+      }
+    }
+
+    .gameTitle {
+      position:absolute;
+      top:17vw;
+      left:31.5vw;
+
+      p {
+         font-size:1vw;
+         color:#fff;
+      }
+    }
+
+    .gameList {
+      display:block;
+      width:50%;
+      position:relative;
+      top:21vw;
+      left:34vw;
+      z-index:11;
+
+      img {
+        width:7.8vw;
+        padding:0.4vw;
+      }
+
+      .hover:hover {
+        cursor: pointer;
+        transition: all 0.5s;
+        transform: scale(1.5);
+      }
+    }
+
+    .gameListwap {
+     display:none;
+    }
+  }
+
+  .scroll {
+    position:absolute;
+    bottom:0;
+    color:#fff;
+     margin:0 auto;
+     left:0; right:0;
+     width:5.8vw;
+     height:1.5vw;
+     text-align:center;
+     padding-bottom:7.5vw;
+
+     p {
+      font-size:1vw;
+     }
+
+    .scrolldown {
+      width: 0.1vw;
+      height: 5.9vw;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      overflow: hidden;
+
+      .line {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 50%);
+        background-position: 0 -50px;
+        background-size: 100% 200%;
+        animation: animate 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+      }
+    }
+  }
+
+  @keyframes animate {
+    0%{
+      background-position: 0 -5.9vw;
+    }
+    75% {
+      background-position: 0 0;
+    }
+    100%{
+      background-position: 0 5.9vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .index {
+    position: relative;
+    background: url('../assets/mobile/_0005_bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 177.9vw;
+    overflow: hidden;
+
+    .real {
+      height: inherit;
+      width: inherit;
+      background: url('../assets/mobile/_0005_bg_real.png');
+      background-size: 100% 100%;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      opacity: 0.05;
+    }
+
+    .title-layout {
+      position: absolute;
+      top: 23vw;
+      left: 3vw;
+
+      .bg-year {
+        background: url('../assets/mobile/2019_m.png');
+        width: 20vw;
+        height: 9vw;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .bg-title {
+        background: url('../assets/mobile/img/title_m_en.png');
+        width: 46vw;
+        height: 9vw;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    .real_name_background {
+      position: absolute;
+      bottom: 4vw;
+      right: 8vw;
+      width: 50vw;
+    }
+
+    .real_name {
+      position: absolute;
+      bottom: 20.4vw;
+      right: 8.3vw;
+      width: 51.6vw;
+      content: url('../assets/mobile/img/name_m_en.png');
+    }
+
+    .shadow {
+      text-align: center;
+      background: -webkit-gradient(linear, left top, right top, color-stop(0, #FF0317), color-stop(0.3, #FF0317), color-stop(0.4, #FF0317), color-stop(.5, white), color-stop(.6, #FF0317), color-stop(0.8, #FF0317), color-stop(0.9, #FF0317),color-stop(1, #FF0317));
+
+      /* 设置为text，意思是把文本内容之外的背景给裁剪掉 */
+      -webkit-background-clip: text;
+      /* 设置对象中的文字填充颜色 这里设置为透明 */
+      -webkit-text-fill-color: transparent;
+      /* 每隔2秒调用下面的CSS3动画 infinite属性为循环执行animate */
+      -webkit-animation: animate 3s infinite;
+
+      @-webkit-keyframes animate {
+          /* 背景从-100px的水平位置，移动到+100px的水平位置。如果要移动Y轴的，设置第二个数值 */
+          from {background-position: -150px;}
+          to {background-position: 150px;}
+      }
+      @keyframes animate {
+          from {background-position: -150px;}
+          to {background-position: 150px;}
+      }
+    }
+
+    a:hover {
+        .shadow
+        {
+            -webkit-text-fill-color:#FFF !important;
+        }
+
+        .arrow
+        {
+            color:#FFF;
+            cursor:pointer
+        }
+    }
+
+    .slogan {
+      display: none;
+    }
+
+    .gradient {
+      display:none;
+
+      .scroll {
+      display:none;
+      }
+
+    @keyframes animate {
+      0%{
+        background-position: 0 -14.9vw;
+      }
+      75% {
+        background-position: 0 0;
+      }
+      100%{
+        background-position: 0 14.9vw;
+      }
+    }
+    }
+  }
+
+  .hotGames {
+    position:relative;
+    height:174.9vw;
+    background: url('../assets/mobile/hot/bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    #scene {
+      visibility:hidden;
+    }
+
+    .ribbon {
+      position:relative;
+      top:22vw;
+      left:9.3vw;
+      width:81.1vw;
+      height:20.5vw;
+      background: url('../assets/mobile/hot/ribbon.png');
+      background-repeat: no-repeat;
+      background-size:100%;
+
+      p {
+        font-size:5.3vw;
+        font-weight:bold;
+        color:#fff;
+        letter-spacing:5vw;
+        padding:3vw 0vw 0vw 23vw;
+      }
+    }
+
+    .gameTitle {
+      position:absolute;
+      width:82.7vw;
+      top:46vw;
+      left:8vw;
+
+      p {
+         font-size:3.7vw;
+         color:#fff;
+         text-align:center;
+         line-height:8vw;
+      }
+    }
+
+    .gameList {
+      display:none;
+    }
+
+    .gameListwap {
+     display:block;
+     position:relative;
+     z-index:11;
+     top:26%;
+     left:15vw;
+
+      img {
+        width:23vw;
+        padding:1vw;
+      }
+    }
+
+    .gameList {
+     display:none;
+    }
+
+    .highlight {
+      position:absolute;
+      width: 67.9vw;
+      height: 12vw;
+      border: 0.5vw red solid;
+      border-radius: 10px;
+      padding: 2.19vw 10vw 2.19vw 10.45vw;
+      vertical-align:middle;
+      color:#FF0317;
+      font-size:4.8vw;
+      font-weight:bold;
+      text-align:left;
+      cursor:pointer;
+      bottom:-17vw;
+      left:1vw;
+    }
+
+    .align {
+      text-align:center;
+    }
+
+      .arrow {
+        position:absolute;
+        color:red;
+        bottom:7.8vw;
+        left:69.4vw;
+        font-size:6.5vw;
+        font-weight:450;
+        animation:myfirst 1s linear 0.1s infinite alternate;
+      }
+
+      @keyframes myfirst {
+        0%   {left:45.4vw; bottom:-16.5vw;}
+        50%  {left:45.9vw; bottom:-16.5vw;}
+        100% {left:45.4vw; bottom:-16.5vw;}
+      }
+
+      .scroll {
+        position:absolute;
+        bottom:10vw;
+        color:#fff;
+         margin:0 auto;
+         left:0;
+         right:0;
+         width:5.8vw;
+         height:1.5vw;
+         text-align:center;
+         padding-bottom:7.5vw;
+
+        p {
+        font-size:3.2vw;
+        }
+
+        .scrolldown {
+          width: 0.1vw;
+          height: 10.9vw;
+          position: absolute;
+          bottom: -10vw;
+          left: 2vw;
+          right: 0;
+          margin: 0 auto;
+          overflow: hidden;
+
+          .line {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 50%);
+            background-position: 0 -50px;
+            background-size: 100% 200%;
+            animation: animate 2.2s cubic-bezier(0.76, 0, 0.3, 1) forwards infinite;
+          }
+        }
+      }
+
+    @keyframes animate {
+      0%{
+        background-position: 0 -10.9vw;
+      }
+      75% {
+        background-position: 0 0;
+      }
+      100%{
+        background-position: 0 10.9vw;
+      }
+    }
+  }
+}
+
+@keyframes living {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
+/* clue-text-2-effect */
+@keyframes clue-text-2-effect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* clue-text-2-effect */
+
+/* highlight-effect */
+@keyframes highlight-effect {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes highlight-effect {
+  /* Chrome, Safari */
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes highlight-effect {
+  /* FF */
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-ms-keyframes highlight-effect {
+  /* IE10 */
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-o-keyframes highlight-effect {
+  /* Opera */
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/* highlight-effect */

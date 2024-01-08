@@ -1,0 +1,190 @@
+.manual
+{
+    position: relative;
+    letter-spacing: 0.48px;
+}
+
+/* Bets Amount */
+.manual-bet-amount
+{
+    position: relative;
+    padding-bottom: 10px;
+}
+.manual-bet-amount-label
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #BBBBBB;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.manual-bet-amount-input
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+.bet-amount-input
+{   
+    position: relative;
+    flex: 6;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.bet-amount-input input
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #666666;
+}
+.bet-amount-input .bet-amount-icon
+{  
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 0;
+    margin-right: 15px;
+}
+.bet-amount-option
+{
+    flex: 3;
+    height: 100%;
+    background: #EEEEEE;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.bet-amount-option button
+{
+    border: none;
+    font-size: 12px;
+    color: #666666;
+}
+/* Bets Amount end */
+
+/* Multiple row */
+.manual-bet-type
+{
+    position: relative;
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.manual-bet-type .manual-bet-type-left
+{
+    flex: 1;
+    padding-right: 2.5px;
+}
+.left-label
+{
+    color: #AAAAAA;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.left-amount-label
+{
+   text-align: right;
+   display: flex;
+   justify-content: space-between;
+}
+.left-input
+{   
+    position: relative;
+    display: flex;
+    height: 35px;
+    flex-direction: row;
+    align-items: center;
+}
+.left-input input
+{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+.manual-bet-type .manual-bet-type-right
+{
+    flex: 1;
+    padding-left: 2.5px;
+}
+.right-label
+{
+    color: #AAAAAA;
+    font-size: 12px;
+    display: flex;
+
+}
+.right-input
+{   
+    position: relative;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.right-input input
+{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border: 2px solid #EEEEEE;
+    border-radius: 5px;
+}
+/* icons */
+.infinite-icon {
+    position: absolute;
+    width: 13px;
+    height: 16px;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+.rollover-icon {
+    position: absolute;
+    width: 17px;
+    right: 0;
+    margin-right: 10px;
+}
+.cross-icon
+{
+    position: absolute;
+    width: 8px;
+    right: 0;
+    margin-right: 13px;
+    margin-bottom: 5px;
+}
+.percent-icon
+{
+    position: absolute;
+    width: 13px;
+    right: 0;
+    margin-right: 13px;
+
+}
+/* Multiple row end*/
+
+/* final button */
+.roll-dice-button
+{   
+    width: 100%;
+    height: 35px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    background: #584CB9;
+}
+/* final button end */

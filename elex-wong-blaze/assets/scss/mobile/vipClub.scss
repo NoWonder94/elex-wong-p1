@@ -1,0 +1,1653 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .vipclub-page {
+    position: relative;
+    min-height: calc(100vh - 66px);
+    width: 100%;
+    max-width: 1104px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 30px 8px;
+    font-size: 12px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .vipclub-user-container {
+      position: relative;
+      width: 100%;
+      min-height: 350px;
+      margin: 0 auto;
+      padding: 0;
+      color: $white;
+      display: grid;
+      flex-wrap: wrap;
+      grid-gap: 10px;
+      grid-template-columns: 340px 1fr;
+
+      .user-left-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 17px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: $background;
+        border-radius: 4px;
+
+        .container-title {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          gap: 10px;
+
+          .title-label {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 2;
+            text-transform: uppercase;
+          }
+
+          .tooltip-label {
+            font-size: 20px;
+            color: $white;
+            font-weight: bold;
+          }
+        }
+
+        .container-level-image {
+          position: relative;
+          background: url(@/assets/img/vip/levelbg.svg) 50% no-repeat;
+          background-size: 70%;
+          margin: 0 auto;
+          min-height: 120px;
+          width: 140px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+          .level-picture {
+            margin: 0 auto;
+            z-index: 2;
+
+            img {
+              width: 90px;
+              height: 90px;
+              text-align: center;
+            }
+          }
+        }
+
+        .container-score-body {
+          position: relative;
+
+          &:nth-child(2) {
+            margin-top: 20px;
+          }
+
+          .score-progress {
+            .score-tier {
+              width: 100%;
+              margin-bottom: 8px;
+              font-size: 12px;
+              font-weight: 600;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+
+              .score-label {
+                margin-right: 30px;
+                font-size: 14px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                color: $lightGreyTwo;
+              }
+
+              .score-value {
+                font-size: 14px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                color: $lightGreyTwo;
+                white-space: nowrap;
+
+                .current-amount {
+                  color: $white;
+                }
+              }
+            }
+
+            .score-progress {
+              position: relative;
+              width: 100%;
+
+              .el-progress-bar {
+
+                .el-progress-bar__outer {
+                  background: $separatorTwo;
+
+                  .el-progress-bar__inner {
+                    background-color: $red;
+                  }
+                }
+              }
+
+              .el-progress__text {
+                color: $lightGreyTwo;
+              }
+            }
+          }
+        }
+
+        .container-next-title {
+          color: $lightGreyTwo;
+          font-size: 14px;
+          font-weight: 600;
+          padding: 8px 10px 0;
+          text-align: center;
+
+          .next-level {
+            color: $white;
+          }
+        }
+
+        .container-require-condition {
+          position: relative;
+
+          .require-condition {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .condition-icon {
+              width: 100%;
+              padding: 10px 0px;
+              flex-basis: 50%;
+              text-align: center;
+              border: 1px solid $separator;
+              border-radius: 16px;
+              background-color: $darkerGrey;
+
+              .condition-label {
+                font-size: 13px;
+                color: $white;
+              }
+
+              .condition-value {
+                font-size: 20px;
+                font-weight: bold;
+                color: #d4d7df;
+              }
+            }
+          }
+        }
+      }
+
+      .user-right-container {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 17px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: $background;
+        border-radius: 4px;
+
+        .container-title {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          gap: 10px;
+
+          .title-label {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 2;
+            text-transform: uppercase;
+          }
+        }
+
+        .level-list-container {
+          width: 100%;
+          margin: 0 auto;
+          padding: 5px 20px 0px;
+
+          .level-list {
+            width: 100%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-gap: 10px;
+
+            .level-box-item {
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+
+              .level-box-body {
+                position: relative;
+                min-width: 72px;
+                height: 110px;
+                color: $white;
+                font-size: 12px;
+                z-index: 1;
+                border: 1px solid $transparentDarkBorder;
+                border-radius: 0.5rem;
+                background: $transparentDark;
+
+                .level-box-pic {
+                  height: 60px;
+                  margin: 0 auto;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                }
+
+                .level-box-price {
+                  font-size: 12px;
+                  font-weight: bold;
+                  line-height: 28px;
+                  letter-spacing: 1px;
+                  color: #ffffff;
+                }
+
+                .level-box-title {
+                  background: $darkBackground;
+                  border-radius: 0 0 0.5rem 0.5rem;
+                  color: $white;
+                  font-size: 12px;
+                  line-height: 1.5;
+                  padding: 3px 0 0;
+                  text-transform: uppercase;
+                }
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  height: 12px;
+                  margin: auto;
+                  left: 0;
+                  right: 0;
+                  bottom: -7px;
+                  width: 12px;
+                  background: $darkBackground;
+                  transform: rotate(45deg);
+                  z-index: -1;
+                }
+              }
+            }
+          }
+        }
+
+        .level-process-container {
+          position: relative;
+          padding: 0px 20px;
+
+          .el-progress-bar {
+
+            .el-progress-bar__outer {
+              height: 15px !important;
+              background: $separatorTwo;
+
+              .el-progress-bar__inner {
+                background-color: $red;
+              }
+            }
+          }
+        }
+
+        .level-description-container {
+          min-height: 40px;
+          color: $lightGreyTwo;
+          font-size: 13px;
+          padding: 10px 8px;
+          text-align: center;
+        }
+
+        .level-require-condition {
+          position: absolute;
+          margin: 0 auto;
+          left: 17px;
+          right: 17px;
+          bottom: 17px;
+
+          .require-condition {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .condition-icon {
+              width: 100%;
+              padding: 10px 0px;
+              flex-basis: 50%;
+              text-align: center;
+              border: 1px solid $separator;
+              border-radius: 16px;
+              background-color: $red;
+
+              .condition-label {
+                font-size: 13px;
+                color: $white;
+              }
+
+              .condition-value {
+                font-size: 20px;
+                font-weight: bold;
+                color: #d4d7df;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .vipclub-cashback-container {
+      position: relative;
+      width: 100%;
+      margin: 20px auto 0;
+      padding: 7px;
+      overflow: hidden;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      background: $background;
+
+      .cashback-container {
+        height: 100%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 160px 1fr 1fr 1fr;
+
+        .cashback-item {
+          width: 100%;
+          margin: 0 auto;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .cashback-title {
+            width: 130px;
+            height: auto;
+            display: block;
+            text-align: center;
+          }
+
+          .item-details-card {
+            position: relative;
+            width: 100%;
+            height: 60px;
+            border-radius: 15px;
+            background: $transparentDarkBackground;
+            display: flex;
+            justify-content: flex-start;
+
+            .card-image {
+              border-right: 1px solid #313b45;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              img {
+                width: 30px;
+                height: 40px;
+                margin-left: 20px;
+                margin-right: 20px;
+              }
+
+              .card-image-camera {
+                width: 40px;
+                height: 30px;
+              }
+            }
+
+            .card-detail {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .detail-label {
+                color: $lightGrey;
+                font-size: 15px;
+                font-weight: 700;
+                text-transform: capitalize;
+              }
+
+              .detail-value {
+                color: $white;
+                font-size: 18px;
+                font-weight: 800;
+              }
+            }
+          }
+
+          .bonus-btn {
+            width: 100%;
+            height: 60px;
+            flex-basis: 100%;
+            border-radius: 5px;
+            background: $red;
+            font-size: 18px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .vipclub-overview-container {
+      position: relative;
+      width: 100%;
+      margin-top: 20px;
+
+      .overview-title {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 0 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .overview-card-container {
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+        .card-item {
+          position: relative;
+          min-height: 280px;
+          margin: 0 8px;
+          padding: 5px 12px;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          background: $background;
+
+          .card-inner-wrap {
+            position: inherit;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+
+            .card-item-img {
+              position: relative;
+              width: 180px;
+              padding: 0;
+              border: none;
+              background-color: transparent;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .pic2 {
+              width: 90px;
+            }
+
+            .pic3 {
+              width: 160px;
+            }
+
+            .card-item-number {
+              position: relative;
+              margin-top: 0;
+              color: $transparentGrey;
+              font-size: 5.5rem;
+              font-style: italic;
+              font-weight: 900;
+              line-height: 1.2;
+            }
+          }
+
+          .card-item-desc {
+            font-weight: 700;
+            text-align: center;
+            color: #adb6c4;
+          }
+
+        }
+      }
+    }
+
+    .vipclub-level-container {
+      position: relative;
+      width: 100%;
+
+      .level-title {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 0 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      /* swiper */
+      .swiper{
+        position: relative;
+        width: 100%;
+        // height: fit-content;
+        margin: 0px auto;
+        padding: 0;
+        color: $white;
+
+        .swiper-slide{
+          position: relative;
+
+          .level-card-container {
+            position: relative;
+            margin: 0 auto;
+            // width: 200px;
+            width: 100%;
+            min-height: 630px;
+            padding: 20px 12px 0px;
+            border-radius: 8px;
+            background: $background;
+
+            .level-image {
+              position: absolute;
+              width: 100px;
+              height: 100px;
+              margin: 0 auto;
+              left: 0;
+              right: 0;
+              top: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              img {
+                display: block;
+                pointer-events: none;
+                text-align: center;
+                user-select: none;
+                width: 100%;
+              }
+            }
+
+            .level-body {
+              position: relative;
+              padding: 10px 0 20px;
+              top: 60px;
+              text-align: center;
+              z-index: 2;
+
+              .level-label {
+                width: 100%;
+                margin: 10px auto;
+                text-align: center;
+
+                h4 {
+                  margin-top: 5px;
+                  text-align: center;
+                  color: $white;
+                  font-size: 18px;
+                  font-weight: 700;
+                  line-height: 24px;
+                }
+
+                h5 {
+                  font-weight: 600;
+                  line-height: 20px;
+                  margin-top: 5px;
+                  text-align: center;
+                  font-size: 16px;
+                }
+              }
+
+              .level-rule-first {
+                // width: 320px;
+                width: 100%;
+                height: 60px;
+                margin: 20px auto;
+                padding: 0;
+
+                .level-rule-box {
+                  width: 100%;
+                  height: 100%;
+                  margin: 0 auto;
+                  display: grid;
+                  grid-gap: 10px;
+                  grid-template-columns: 1fr 1fr;
+
+                  .box-item {
+                    min-height: 60px;
+                    text-align: center;
+                    border-radius: 8px;
+                    background: $red;
+                    display: flex;
+                    flex-direction: column;
+
+                    h5 {
+                      margin-top: 5px;
+                      font-size: 12px;
+                      font-weight: 600;
+                      color: $white;
+                    }
+
+                    h4 {
+                      margin-top: 12px;
+                      font-size: 18px;
+                      font-weight: 700;
+                      line-height: 1.3px;
+                    }
+                  }
+                }
+              }
+
+              .level-rule-second {
+                margin-top: 10px;
+                text-align: center;
+
+                h4 {
+                  margin-top: 5px;
+                  color: $white;
+                  font-size: 18px;
+                  font-weight: 700;
+                  line-height: 24px;
+                  text-align: center;
+                }
+
+                h6 {
+                  margin-top: 5px;
+                  font-weight: 500;
+                  line-height: 16px;
+                  font-size: 12px;
+                  text-align: center;
+                }
+
+                hr {
+                  margin: 10px 0;
+                  border-color: #29313c;
+                }
+              }
+
+              .level-rule-third {
+                width: 100%;
+                padding: 0;
+                margin: 5px auto;
+
+                .rule-third-item {
+
+                  div {
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 16px;
+                    margin-top: 5px;
+                    text-align: center;
+                  }
+                  .rule-item {
+                    padding: 0 2px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 2px;
+                  }
+                }
+              }
+
+              .currentLevel {
+                position: absolute;
+                width: 50%;
+                height: 30px;
+                margin: 0 auto;
+                // margin-top: 20px;
+                bottom: -30px;
+                left: 0;
+                right: 0;
+                border-radius: 8px;
+                // background: $red;
+                border: 1px solid $red;
+                font-size: 14px;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      /* swiper */
+
+      /* swiper button */
+      .swiper-nav-btn {
+        position: inherit;
+        width: 100%;
+        margin: 20px auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+
+        img {
+          width: 30px;
+          cursor: pointer;
+        }
+      }
+      /* swiper button */
+    }
+
+    .vipclub-contact-container {
+      position: relative;
+      width: 100%;
+      margin: 20px auto 0;
+      padding: 20px;
+      overflow: hidden;
+      border-radius: 4px;
+      background: $background;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .contact-item {
+
+        .contact-title {
+          font-size: 25px;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+        }
+
+        .contact-desc {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+
+        }
+
+        .contact-btn {
+          width: 100%;
+          height: 60px;
+          border-radius: 15px;
+          background: $red;
+          font-size: 18px;
+          font-weight: 700;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+
+        &:nth-child(1) {
+          flex-basis: 20%;
+        }
+
+        &:nth-child(2) {
+          flex-basis: 100%;
+        }
+
+        &:nth-child(3) {
+          flex-basis: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .vipclub-page {
+    position: relative;
+    min-height: calc(100vh - 66px);
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0px 20px;
+    padding-bottom: 30px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .vipclub-user-container {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+
+      .user-left-container {
+        position: relative;
+        padding: 17px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background: $background;
+        border-radius: 4px;
+
+        .container-title {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          gap: 10px;
+
+          .title-label {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 2;
+            text-transform: uppercase;
+          }
+
+          .tooltip-label {
+            font-size: 20px;
+            color: $white;
+            font-weight: bold;
+          }
+        }
+
+        .container-level-image {
+          position: relative;
+          background: url(@/assets/img/vip/levelbg.svg) 50% no-repeat;
+          background-size: 70%;
+          margin: 0 auto;
+          min-height: 120px;
+          width: 140px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+          .level-picture {
+            margin: 0 auto;
+            z-index: 2;
+
+            img {
+              width: 80px;
+              height: 80px;
+              text-align: center;
+            }
+          }
+        }
+
+        .container-score-body {
+          position: relative;
+          padding: 0px 10px;
+
+          .score-progress {
+            .score-tier {
+              width: 100%;
+              margin-bottom: 8px;
+              font-size: 12px;
+              font-weight: 600;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+
+              .score-label {
+                margin-right: 30px;
+                font-size: 14px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                color: $lightGreyTwo;
+              }
+
+              .score-value {
+                font-size: 14px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                color: $lightGreyTwo;
+                white-space: nowrap;
+
+                .current-amount {
+                  color: $white;
+                }
+              }
+            }
+
+            .score-progress {
+              position: relative;
+              width: 100%;
+
+              .el-progress-bar {
+
+                .el-progress-bar__outer {
+                  background: $separatorTwo;
+
+                  .el-progress-bar__inner {
+                    background-color: $red;
+                  }
+                }
+              }
+
+              .el-progress__text {
+                color: $lightGreyTwo;
+              }
+            }
+          }
+        }
+
+        .container-next-title {
+          color: $lightGreyTwo;
+          font-size: 14px;
+          font-weight: 600;
+          padding: 8px 10px 0;
+          text-align: center;
+
+          .next-level {
+            color: $white;
+          }
+        }
+
+        .container-require-condition {
+          position: relative;
+
+          .require-condition {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .condition-icon {
+              width: 100%;
+              padding: 10px 0px;
+              flex-basis: 50%;
+              text-align: center;
+              border: 1px solid $separator;
+              border-radius: 16px;
+              background-color: $darkerGrey;
+
+              .condition-label {
+                font-size: 13px;
+                color: $white;
+              }
+
+              .condition-value {
+                font-size: 20px;
+                font-weight: bold;
+                color: #d4d7df;
+              }
+            }
+          }
+        }
+      }
+
+      .user-right-container {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 17px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: $background;
+        border-radius: 4px;
+
+        .container-title {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          gap: 10px;
+
+          .title-label {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 2;
+            text-transform: uppercase;
+          }
+        }
+
+        .level-list-container {
+          width: 100%;
+          margin: 0 auto;
+          padding: 5px 20px 0px;
+
+          .level-list {
+            width: 100%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 10px;
+
+            .level-box-item {
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+
+              .level-box-body {
+                position: relative;
+                min-width: 72px;
+                height: 110px;
+                color: $white;
+                font-size: 12px;
+                z-index: 1;
+                border: 1px solid $transparentDarkBorder;
+                border-radius: 0.5rem;
+                background: $transparentDark;
+
+                .level-box-pic {
+                  height: 60px;
+                  margin: 0 auto;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                }
+
+                .level-box-price {
+                  font-size: 12px;
+                  font-weight: bold;
+                  line-height: 28px;
+                  letter-spacing: 1px;
+                  color: #ffffff;
+                }
+
+                .level-box-title {
+                  background: $darkBackground;
+                  border-radius: 0 0 0.5rem 0.5rem;
+                  color: $white;
+                  font-size: 12px;
+                  line-height: 1.5;
+                  padding: 3px 0 0;
+                  text-transform: uppercase;
+                }
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  height: 12px;
+                  margin: auto;
+                  left: 0;
+                  right: 0;
+                  bottom: -7px;
+                  width: 12px;
+                  background: $darkBackground;
+                  transform: rotate(45deg);
+                  z-index: -1;
+                }
+              }
+            }
+
+            .mobile-hide {
+              display: none;
+            }
+          }
+        }
+
+        .level-process-container {
+          position: relative;
+          padding: 0px 20px;
+
+          .el-progress-bar {
+
+            .el-progress-bar__outer {
+              height: 15px !important;
+              background: $separatorTwo;
+
+              .el-progress-bar__inner {
+                background-color: $red;
+              }
+            }
+          }
+        }
+
+        .level-description-container {
+          min-height: 40px;
+          color: $lightGreyTwo;
+          font-size: 13px;
+          padding: 10px 8px;
+          text-align: center;
+        }
+
+        .level-require-condition {
+          position: inherit;
+
+          .require-condition {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .condition-icon {
+              width: 100%;
+              padding: 10px 0px;
+              flex-basis: 50%;
+              text-align: center;
+              border: 1px solid $separator;
+              border-radius: 16px;
+              background-color: $red;
+
+              .condition-label {
+                font-size: 13px;
+                color: $white;
+              }
+
+              .condition-value {
+                font-size: 20px;
+                font-weight: bold;
+                color: #d4d7df;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .vipclub-cashback-container {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      padding: 7px;
+      overflow: hidden;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      background: $background;
+
+      .cashback-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        .cashback-item {
+          width: 100%;
+          margin: 0 auto;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+
+          .cashback-title {
+            width: 130px;
+            height: auto;
+            display: block;
+            text-align: center;
+          }
+
+          .item-details-card {
+            position: relative;
+            width: 100%;
+            height: 60px;
+            border-radius: 15px;
+            background: $transparentDarkBackground;
+            display: flex;
+            justify-content: flex-start;
+
+            .card-image {
+              border-right: 1px solid #313b45;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              img {
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+                margin-right: 20px;
+              }
+
+              .card-image-camera {
+                width: 40px;
+                height: 30px;
+              }
+            }
+
+            .card-detail {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .detail-label {
+                color: $lightGrey;
+                font-size: 15px;
+                font-weight: 700;
+                text-transform: capitalize;
+              }
+
+              .detail-value {
+                color: $white;
+                font-size: 18px;
+                font-weight: 800;
+              }
+            }
+          }
+
+          .bonus-btn {
+            width: 100%;
+            height: 60px;
+            // flex-basis: 100%;
+            border-radius: 5px;
+            background: $red;
+            font-size: 18px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .vipclub-overview-container {
+      position: relative;
+      width: 100%;
+      margin-top: 20px;
+
+      .overview-title {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 0 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .overview-card-container {
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .card-item {
+          position: relative;
+          min-height: 280px;
+          margin: 0 8px;
+          padding: 5px 12px;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          background: $background;
+
+          .card-inner-wrap {
+            position: inherit;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+
+            .card-item-img {
+              position: relative;
+              width: 180px;
+              padding: 0;
+              border: none;
+              background-color: transparent;
+
+              img {
+                width: 100%;
+              }
+            }
+
+            .pic2 {
+              width: 90px;
+            }
+
+            .pic3 {
+              width: 160px;
+            }
+
+            .card-item-number {
+              position: relative;
+              margin-top: 0;
+              color: $transparentGrey;
+              font-size: 120px;
+              font-style: italic;
+              font-weight: 900;
+              line-height: 1.2;
+            }
+          }
+
+          .card-item-desc {
+            font-weight: 700;
+            text-align: center;
+            color: #adb6c4;
+          }
+        }
+      }
+    }
+
+    .vipclub-level-container {
+      position: relative;
+      width: 100%;
+
+      .level-title {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px 0 20px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      /* swiper */
+      .swiper{
+        position: relative;
+        width: 100%;
+        // height: fit-content;
+        margin: 0px auto;
+        padding: 0;
+        color: $white;
+
+        .swiper-slide{
+          position: relative;
+
+          .level-card-container {
+            position: relative;
+            margin: 0 auto;
+            width: 90%;
+            min-height: 630px;
+            padding: 20px 12px 0px;
+            border-radius: 8px;
+            background: $background;
+
+            .level-image {
+              position: absolute;
+              width: 100px;
+              height: 100px;
+              margin: 0 auto;
+              left: 0;
+              right: 0;
+              top: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              img {
+                display: block;
+                pointer-events: none;
+                text-align: center;
+                user-select: none;
+                width: 100%;
+              }
+            }
+
+            .level-body {
+              position: relative;
+              padding: 10px 0 20px;
+              top: 60px;
+              text-align: center;
+              z-index: 2;
+
+              .level-label {
+                width: 100%;
+                margin: 10px auto;
+                text-align: center;
+
+                h4 {
+                  margin-top: 5px;
+                  text-align: center;
+                  color: $white;
+                  font-size: 18px;
+                  font-weight: 700;
+                  line-height: 24px;
+                }
+
+                h5 {
+                  font-weight: 600;
+                  line-height: 20px;
+                  margin-top: 5px;
+                  text-align: center;
+                  font-size: 16px;
+                }
+              }
+
+              .level-rule-first {
+                // width: 320px;
+                width: 100%;
+                height: 60px;
+                margin: 20px auto;
+                padding: 0;
+
+                .level-rule-box {
+                  width: 100%;
+                  height: 100%;
+                  margin: 0 auto;
+                  display: grid;
+                  grid-gap: 10px;
+                  grid-template-columns: 1fr 1fr;
+
+                  .box-item {
+                    min-height: 60px;
+                    text-align: center;
+                    border-radius: 8px;
+                    background: $red;
+                    display: flex;
+                    flex-direction: column;
+
+                    h5 {
+                      margin-top: 5px;
+                      font-size: 12px;
+                      font-weight: 600;
+                      color: $white;
+                    }
+
+                    h4 {
+                      margin-top: 12px;
+                      font-size: 18px;
+                      font-weight: 700;
+                      line-height: 1.3px;
+                    }
+                  }
+                }
+              }
+
+              .level-rule-second {
+                margin-top: 10px;
+                text-align: center;
+
+                h4 {
+                  margin-top: 5px;
+                  color: $white;
+                  font-size: 18px;
+                  font-weight: 700;
+                  line-height: 24px;
+                  text-align: center;
+                }
+
+                h6 {
+                  margin-top: 5px;
+                  font-weight: 500;
+                  line-height: 16px;
+                  font-size: 12px;
+                  text-align: center;
+                }
+
+                hr {
+                  margin: 10px 0;
+                  border-color: #29313c;
+                }
+              }
+
+              .level-rule-third {
+                width: 100%;
+                padding: 0;
+                margin: 5px auto;
+
+                .rule-third-item {
+
+                  div {
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 16px;
+                    margin-top: 5px;
+                    text-align: center;
+                  }
+                  .rule-item {
+                    padding: 0 2px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 2px;
+                  }
+                }
+              }
+
+              .currentLevel {
+                position: absolute;
+                width: 50%;
+                height: 30px;
+                margin: 0 auto;
+                // margin-top: 20px;
+                bottom: -30px;
+                left: 0;
+                right: 0;
+                border-radius: 8px;
+                // background: $red;
+                border: 1px solid $red;
+                font-size: 14px;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      /* swiper */
+
+      /* swiper button */
+      .swiper-nav-btn {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+
+        img {
+          width: 30px;
+          cursor: pointer;
+        }
+      }
+      /* swiper button */
+    }
+
+    .vipclub-contact-container {
+      position: relative;
+      width: 100%;
+      margin: 20px auto 0;
+      padding: 20px;
+      overflow: hidden;
+      border-radius: 4px;
+      background: $background;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px;
+
+      .contact-item {
+        position: relative;
+        width: 100%;
+
+        .contact-title {
+          font-size: 25px;
+          font-weight: bold;
+          display: flex;
+          justify-content: flex-start;
+        }
+
+        .contact-desc {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 16px;
+          font-style: italic;
+          font-weight: 600;
+          display: flex;
+          justify-content: flex-start;
+
+        }
+
+        .contact-btn {
+          align-self: center;
+          width: 100%;
+          height: 40px;
+          border-radius: 15px;
+          background: $red;
+          font-size: 18px;
+          font-weight: 700;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 767px) {
+
+}

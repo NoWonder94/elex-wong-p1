@@ -1,0 +1,210 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .games {
+    position: relative;
+    width: 95vw;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 8vw 1vw;
+
+    .games-list-filter {
+
+      .games-list-filter-input {
+        width: 100%;
+
+        .el-input__inner {
+          text-align: center;
+          color: $fontColor;
+          font-weight: bold;
+          background-color: $darker;
+          border: none;
+          cursor: pointer;
+
+          &::placeholder {
+            color: $lightFontColor;
+          }
+        }
+
+        .el-input__prefix {
+          i {
+            font-size: 5vw;
+          }
+        }
+      }
+
+      .games-list-filter-selection {
+        padding-top: 4vw;
+        padding-bottom: 5vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 2vw;
+        grid-row-gap: 4vw;
+
+        .games-list-filter-option {
+          background: transparent;
+          color: $fontColor;
+
+          &:nth-child(1) {
+            grid-area: 1 / 1 / 2 / 3;
+          }
+
+          .el-input {
+            .el-input__inner {
+              background: transparent;
+              color: $fontColor;
+              border-color: $lightFontColor;
+
+              &:focus {
+                border-color: $fontColor;
+              }
+            }
+
+            &:focus {
+              border-color: $fontColor;
+            }
+          }
+
+          .el-select__tags {
+            &:focus {
+              border-color: $fontColor
+            }
+
+            .el-tag--info {
+              background-color: $primaryGreen;
+              color: $fontColor;
+              border: none;
+
+              i {
+                color: $dark;
+              }
+            }
+          }
+
+          .games-list-filter-option-innerOption-right {
+            float: right;
+            color: $fontColor;
+            font-size: 13px;
+            background: $primaryGreen;
+          }
+        }
+      }
+    }
+
+    .games-list {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 3vw;
+      grid-row-gap: 3vw;
+
+      .games-list-card {
+        position: relative;
+        height: 35vw;
+        background: $blueGreen;
+        border-radius: $borderRadius5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .games-list-card-image {
+          width: 100%;
+          height: 100%;
+        }
+
+        .games-list-card-image-exist {
+          width: 70%;
+          height: 70%;
+          border-radius: $borderRadius5;
+          background-image: url("~@/assets/img/logo.png");
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        .games-list-card-container-middle {
+          display: none;
+          transition: .5s ease;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-color: $blackOpacity75;
+          text-align: center;
+
+          .games-list-card-wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+
+            .text {
+              color: $fontColor;
+              padding: 2.5vw 10vw;
+              text-align: center;
+              border-radius: $borderRadius3;
+              cursor: pointer;
+
+              &:nth-child(2) {
+                margin-top: 2vw;
+                border: 0.3vw solid $fontColor;
+              }
+            }
+          }
+
+          .login-text {
+            padding: 2.5vw 10vw;
+            color: $fontColor;
+            font-size: 4vw;
+            line-height: 1.5;
+            text-align: center;
+            border-radius: $borderRadius3;
+          }
+        }
+      }
+
+      .games-list-card.is_active {
+
+        .games-list-card-container-middle {
+          display: block;
+        }
+      }
+
+      .games-list-card.is_active {
+
+        .games-list-card-middle {
+          display: block;
+        }
+      }
+    }
+
+    .gameList-scroll-loading {
+      position: relative;
+      margin: 0 auto;
+      padding-top: 5vw;
+      text-align: center;
+    }
+
+    .games-list-noData {
+      position: relative;
+      height: 50vh;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .games-list-noData-label {
+        margin-top: 5vw;
+      }
+    }
+  }
+
+  .el-select-dropdown__item.selected {
+    color: $primaryGreen;
+  }
+}

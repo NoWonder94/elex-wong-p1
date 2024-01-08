@@ -1,0 +1,318 @@
+datasource db {
+  provider = "mysql"
+  url      = env("PRISMA_MAIN_DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../src/generated/prisma/main-schema"
+}
+
+model Account {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+
+  address                      String // EVM account address
+  forwarding_email             String? // External email to forward emails.com emails to
+  forwarding_email_verified    Boolean @default(false) // Was the forward email verified?
+  twitter                      String? // Twitter ID, including trailing @
+  discord                      String? // Discord ID
+  creation_ip_Address          String? // IP Address at the time of creation. Used to prevent spam creation from the same IP
+  email_verification_challenge String? // Verification code for the forward email address verification
+  is_admin                     Boolean @default(false) // Whether this account is admin and can view the admin dashboard
+
+  Project                 Project[]
+  JoinedCampaign          JoinedCampaign[]
+  OutgoingEmail           OutgoingEmail[]
+  RealizedCampaignAction  RealizedCampaignAction[]
+  ERC20TokenCampaignClaim ERC20TokenCampaignClaim[]
+}
+
+model Project {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+
+  name        String // User friendly representation
+  url         String // External project url, eg the dApp url
+  owner       Account @relation(fields: [accountUid], references: [id])
+  twitter_id  String
+  category    String
+  api_key     String? // Secret key for programmatic api access from external dapps
+  is_archived Boolean @default(false)
+  logo        File?   @relation("logoLID", fields: [logoId], references: [id])
+  logoId      Int?
+
+  // Internal fields
+  accountUid      Int
+  ERC20Token      ERC20Token[]
+  Campaign        Campaign[]
+  EmailTemplate   EmailTemplate[]
+  File            File[]            @relation("projectPID")
+  ProjectEmailing ProjectEmailing[]
+}
+
+model ERC20Token {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+
+  title            String    @default("") // User friendly title (UI only)
+  project          Project   @relation(fields: [projectPid], references: [id]) // each project creates its own "token" instance - we can't rely on one project defining what "USDT" is, could be wrong - so this is sandboxed per project
+  contract_address String // ERC20 contract address on the target chain
+  symbol           String // Eg: "USDT"
+  decimals         Int // Eg: 18, for most ERC20 tokens
+  chain_id         Int // Eg: 1 for ethereum mainnet
+  projectPid       Int
+  activated_at     DateTime?
+
+  Campaign               Campaign[]
+  ERC20TokenAirdropEvent ERC20TokenAirdropEvent[]
+}
+
+model Campaign {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+
+  name                  String // User friendly representation
+  banner                File?   @relation(fields: [bannerId], references: [id])
+  presentation          String  @default("") // Basic campaign introduction for future joiners
+  type                  String // TODO - DEPRECATE - REPLACED BY MEDIUM - Eg: "campaign", "external"
+  referral_code         String // Root referral code allowing us to track the campaign
+  project               Project @relation(fields: [projectPid], references: [id])
+  is_archived           Boolean @default(false)
+  is_paused             Boolean @default(false) // Campaign on hold, either by the project owner or by the system (eg if not enough tokens to airdrop)
+  is_paused_by_system   Boolean @default(false) // True if campaign is paused, and paused by our system (not by the user). Must be true only if is_paused is also true. A campaign paused by the system can only be resumed by the system.
+  start_date            Int?
+  end_date              Int?
+  promo_link            String  @default("")
+  rules                 String  @default("")
+  medium                String  @default("link_sharing") // How the campaign is marketed: users sharing links outside emails.com (default), or emailing to emails.com users to acquire our user base
+  reward_type           String  @default("erc20_tokens") // Kind of reward given by the campaign to winners. For now, one campaign = one reward
+  distribution          String  @default("all_users") // all_users, random_users, first_users. How the campaign winners are chosen.
+  final_validation_done Boolean @default(false) // Whether the final validation of all campaign actions of joined users has been completed or not. Only when this is completed, rewards can be distributed.
+
+  // TODO: Delete final_validation_done ?
+  // TODO: Diff between token_amount and erc20_expected_tokens_count
+  // TODO: Endless campaigns token amount top up?
+
+  // ERC20 tokens reward campaign type only
+  token                                ERC20Token? @relation(fields: [eRC20TokenTid], references: [id])
+  token_amount                         Int // Total number of tokens to aidrop during the campaign
+  initial_amount                       Int? // The number of tokens received by the level 0 joining user, for this campaign.
+  l1_token_amount                      Int? // Number of tokens received by a user when the first level of users join the campaign using his link
+  l2_token_amount                      Int? // See L1
+  l3_token_amount                      Int? // See L1
+  erc20_airdrop_contract_address       String? // Contract address of the created airdrop contract, on the token chain
+  erc20_airdrop_contract_discovered_at DateTime? // Date at which the backend confirms that the airdrop contract is found and valid
+  erc20_airdrop_contract_tx_hash       String? // Trasaction ID that created the airdrop contract
+  erc20_airdrop_deposit_discovered_at  DateTime? // Date at which the airdrop tokens where found as
+  erc20_expected_tokens_count          String? // Total number of tokens to airdrop, human readable form. As string, to support garbage tokens with many digits...
+  erc20_airdrop_ready                  Boolean     @default(false) // True when everything is ready reward-wise (airdrop contract created, tokens inside)
+  erc20_airdrop_time_trigger           Int         @default(480) // Default: 8 hours. Number of minutes to wait max, before the ERC20 rewards service can decide to generate a new airdrop transaction, even if the number of addresses involved is lower than possible capavity (N addresses transfers per airdrop)
+
+  // NFT reward campaign type only
+  // TODO
+
+  // Emailing medium campaign type only:
+  // TODO - account targeting configuration (multiple fields)
+
+  // Internal fields
+  projectPid              Int
+  eRC20TokenTid           Int?
+  JoinedCampaign          JoinedCampaign[]
+  OutgoingEmail           OutgoingEmail[]
+  bannerId                Int?
+  CampaignAction          CampaignAction[]
+  RealizedCampaignAction  RealizedCampaignAction[]
+  ERC20TokenCampaignClaim ERC20TokenCampaignClaim[]
+  ERC20TokenAirdropEvent  ERC20TokenAirdropEvent[]
+}
+
+// Used by the red code generator service to ensure uniqueness (and other characteristics) of codes.
+model ReferralCode {
+  code       String   @id @unique
+  created_at DateTime @default(now())
+
+  purpose String // Purpose to use this code, to be able to easily retrieve what a code is for (campaign, etc)
+}
+
+// References to accounts joining campaigns
+model JoinedCampaign {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+
+  account                  Account   @relation(fields: [accountUid], references: [id])
+  campaign                 Campaign  @relation(fields: [campaignCid], references: [id])
+  referral_code            String    @unique // Unique referral code for the account for this campaign
+  all_actions_completed    Boolean   @default(false) // Whether the campaign validation service has found that the user has completed all the required actions or not.
+  all_actions_completed_at DateTime?
+
+  // ERC20 reward Tracking / Stats of referred users (users (3 levels) invited by this user)
+  l1_referral_code String? // Referral code of the user that brung the user (account), for the current campaign
+  l2_referral_code String? // See L2
+  l3_referral_code String? // See L3
+  l1_user_count    Int     @default(0) // Number of users that the current user has brung to the campaign. So for a new user, that's 0/0/0
+  l2_user_count    Int     @default(0)
+  l3_user_count    Int     @default(0)
+
+  // Internal fields
+  accountUid              Int
+  campaignCid             Int
+  referring_url           String?
+  referring_domain        String?
+  RealizedCampaignAction  RealizedCampaignAction[]
+  ERC20TokenCampaignClaim ERC20TokenCampaignClaim[]
+}
+
+// Actions that uers must realize during a campaign to get the rewards
+model CampaignAction {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+
+  campaign      Campaign @relation(fields: [campaignCid], references: [id])
+  type          String // Action type: twitter_follow, discord_join, etc
+  configuration Json // JSON configuration, different for each action type
+
+  // Internal fields
+  campaignCid Int
+}
+
+// Actions realized by users for campaign actions while trying to get campaign rewards
+model RealizedCampaignAction {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+
+  joined_campaign JoinedCampaign @relation(fields: [joinedCampaignId], references: [id])
+  last_checked_at DateTime? // Date at which the action was last checked
+  completed       Boolean        @default(false) // Whether the action has been detected as done or not
+
+  // Internal fields
+  accountUid       Int
+  joinedCampaignId Int
+  Account          Account?  @relation(fields: [accountId], references: [id])
+  accountId        Int?
+  Campaign         Campaign? @relation(fields: [campaignId], references: [id])
+  campaignId       Int?
+}
+
+// HTML template made with the email builder on the client side.
+// Templates are used to send email communications.
+model EmailTemplate {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+
+  name          String // User friendly template name defined by user
+  project       Project @relation(fields: [projectPid], references: [id])
+  template_json String  @db.MediumText // Json string representation of the template, in json
+  html          String? @db.MediumText // html string representation of the template, in html
+  is_archived   Boolean @default(false)
+
+  // TODO - associated uploaded pictures
+
+  // Internal fields
+  projectPid      Int
+  ProjectEmailing ProjectEmailing[]
+}
+
+// Model for uploaded files (campaign banner, project logo, email templates...)
+model File {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+
+  project        Project @relation("projectPID", fields: [projectPid], references: [id]) // We isolate files by project - later we can transfer projects with files
+  filename       String  @unique() // Unique filename (uuid with extension) used to reference the file on the server storage
+  type           String // picture, ...
+  original_name  String // Friendly name = uploaded file name
+  storage_folder String // yyyy/mm/dd - sub folder path structure inside the root uploads folder
+  mime_type      String // eg: image/png
+  size           Int // Size in bytes
+
+  // Internal fields
+  projectPid Int
+  Campaign   Campaign[]
+  Project    Project[]  @relation("logoLID")
+}
+
+// Claim by a user to get ERC20 token rewards in a joined campaign after he has completed all necessary actions.
+// The same user can claim multiple times during a campaign (eg for endless campaigns)
+model ERC20TokenCampaignClaim {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+
+  account           Account                 @relation(fields: [accountId], references: [id])
+  campaign          Campaign                @relation(fields: [campaignId], references: [id]) // Known in the joined campaign, but duplicated for convenience
+  joined_campaign   JoinedCampaign          @relation(fields: [joinedCampaignId], references: [id])
+  tokens_claimed    Int // number of tokens claimed
+  packed_in_airdrop ERC20TokenAirdropEvent? @relation(fields: [eRC20TokenAirdropEventId], references: [id]) // Airdrop event that handles the acutal distribution of those claimed tokens
+
+  // Internal fields
+  accountId                Int
+  campaignId               Int
+  joinedCampaignId         Int
+  eRC20TokenAirdropEventId Int?
+}
+
+// LATER
+// Transfer of tokens to users wallets
+model ERC20TokenAirdropEvent {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+
+  campaign  Campaign   @relation(fields: [campaignId], references: [id])
+  token     ERC20Token @relation(fields: [eRC20TokenTid], references: [id]) // Known in the joined campaign, but duplicated for convenience
+  transfers Json? // Raw list of EVM addresses that should receive the airdrop + token amount (EVM format)
+
+  packed_at  DateTime? // Date at which the airdrop was packed with claims. If everything goes well, this is just after its creation.
+  handled_at DateTime? // Date at which an admin backend has requested this airdrop event to publish it. Handled doesn't mean published on chain yet.
+  errored_at DateTime? // Date at which an error occured when trying to execute this airdrop (transaction rejected, client handling timeout...)
+
+  // TODO: crypto transaction state info
+
+  transaction_confirmed_at DateTime? // Date at which the published transaction was confirmed as approved. Server informative date, not chain date.
+
+  // Internal fields
+  campaignId              Int
+  eRC20TokenTid           Int
+  ERC20TokenCampaignClaim ERC20TokenCampaignClaim[]
+}
+
+model ProjectEmailing {
+  id         Int      @id @default(autoincrement())
+  title      String? //email title
+  created_at DateTime @default(now())
+  status     Int      @default(0) //project email status 0=NONE 1=SENDING 2=PAUSE 3=COMPLETED 4=CANCEL
+  total_sent Int      @default(0) //total mail sent
+  total_mail Int      @default(0) //total target audience
+  speed      Int      @default(2) // every 2, 6, 60 second send email
+
+  project          Project        @relation(fields: [projectPid], references: [id])
+  emailTemplate    EmailTemplate? @relation(fields: [emailTemplateEid], references: [id])
+  projectPid       Int
+  emailTemplateEid Int?
+
+  ScheduledEmail ScheduledEmail[]
+}
+
+model ScheduledEmail {
+  id              Int             @id @default(autoincrement())
+  created_at      DateTime        @default(now())
+  sentdate        DateTime? // Sent date, also used as status
+  email           String?
+  projectEmailing ProjectEmailing @relation(fields: [projectEmailPId], references: [id])
+
+  // Internal fields
+  projectEmailPId Int
+}
+
+// LATER
+// For emailing campaigns
+model OutgoingEmail {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+
+  campaign Campaign @relation(fields: [campaignCid], references: [id]) // Campaign sending the email
+  account  Account  @relation(fields: [accountUid], references: [id]) // User receiving the email
+
+  // Internal fields
+  campaignCid Int
+  accountUid  Int
+}

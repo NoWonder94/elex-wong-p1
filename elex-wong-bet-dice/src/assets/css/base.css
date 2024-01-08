@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  top: 0 !important;
+  background-color: #181633;
+  min-width: 340px;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    margin: 0 auto;
+    width: 900px;
+  }
+}
+
+.flex-row{
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.side-menu {
+  background: transparent linear-gradient(180deg, #546AFF 0%, #424FAD 100%) 0% 0% no-repeat padding-box;
+  height: 100%;
+  width: 250px;
+}
+.side-menu-header {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.side-menu-close {
+  font-size: 30px;
+  align-self: center;
+  color: white;
+  margin-right: 15px;
+}
+.side-menu-logo {
+  width: 130px;
+}
+.side-menu-body {
+  margin: 0px 50px;
+  margin-top: 10px;
+  justify-content: center;
+}
+.side-menu-item {
+  padding-top: 30px;
+  text-align: left;
+  font: normal normal 500 15px Helvetica Neue;
+  letter-spacing: 0.75px;
+  opacity: 1;
+  color: #FFFFFF;
+}
+
+.side-menu-item a {
+  color: #FFFFFF;
+}
+
+.my-accordion {
+  padding-top: 30px;
+  text-align: left;
+  font: normal normal 500 15px Helvetica Neue;
+  letter-spacing: 0.75px;
+  opacity: 1;
+  color: #FFFFFF;
+}
+.my-accordion .panel {
+  background: transparent;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+.my-accordion .open {
+  background: transparent;
+  display: block;
+  color: #FFFFFF;
+}
+.my-accordion .close {
+  background: transparent;
+  display: none;
+  color: #FFFFFF;
+}
+.my-accordion .active {
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.my-accordion .arrow {
+  float: right;
+  display: block;
+  color: #FFFFFF;
+}
+.my-accordion .darrow {
+  display: none;
+  color: #FFFFFF;
+}
+.my-accordion .active .darrow {
+  display: block;
+  color: #FFFFFF;
+}
+.my-accordion .active .rarrow {
+  display: none;
+  color: #FFFFFF;
+}
+.my-accordion .panel div {
+  color:#FFFFFF;
+  font-size:12px;
+}
+
+#google_translate_element {
+  display:none;
+}
+
+.goog-te-banner-frame {
+  display:none;
+}
+
+.goog-tooltip {
+  display:none !important;
+}
+
+#goog-gt-tt {
+  display:none !important;
+}
+
+.menu-hr {
+  margin-top:12px;
+  margin-bottom:12px;
+  border-top:0.5px solid grey;
+}
+
+.login-help {
+  margin: 20px;
+  color: #FFFFFF;
+  font-size: 13px;
+  border-radius: 15px;
+  line-height: 18px;
+  background-color: #232248;
+}
+
+.login-help .container {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.login-help .keyword {
+  color: #8DB0FF;
+}
+
+.login-help .button-guide {
+  color: #39DDD7;
+  cursor: pointer;
+}
+
+.login-help .bold {
+  font-weight: bold;
+}
+
+.login-help .warn {
+  color: #FF9464;
+}
+
+.wallet-amount {
+  position: relative;
+}
+
+.wallet-amount span {
+  display: block;
+  background-color: #424FAD;
+  color: #fff;
+  padding: 8px 20px;
+}
+
+#alerts-box {
+  margin: 0 5%;
+  position: relative;
+  z-index: 2;
+  padding-top:56px;
+}
+
+button[disabled], input[disabled] {
+  background: #ccc!important;
+}

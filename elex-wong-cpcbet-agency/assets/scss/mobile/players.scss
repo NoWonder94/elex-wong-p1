@@ -1,0 +1,255 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .players {
+
+    /* tab bar css */
+    .el-tabs__nav-wrap::after {
+      background-color: $whiteOpacity20;
+    }
+
+    .el-tabs__nav {
+
+      .el-tabs__active-bar {
+        height: 0.8vw;
+        border-radius: 1.5vw;
+        background-color: $secondaryColor;
+      }
+
+      .el-tabs__item {
+        color: $fontColorOpc50;
+        font-size: 4vw;
+      }
+
+      .el-tabs__item.is-active {
+        color: $fontColor;
+      }
+    }
+
+    .players-active-container {
+      .players-active-list-filter-search {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 3.5vw;
+        margin-bottom: 3vw;
+
+        .players-filter-label {
+          font-size: 3.3vw;
+          font-weight: bold;
+        }
+
+        .players-filter-input {
+          width: 65vw;
+          // flex: 1;
+
+          .el-input__inner {
+            color: $fontColor;
+            background: transparent;
+            border: 0.1vw solid $blackOpacity20;
+
+            &::placeholder {
+              color: $blackOpacity20;
+            }
+          }
+        }
+      }
+
+      .network-user-list-results-route {
+        margin-top: 3vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .user-list-results {
+          flex: 1;
+          font-size: 3.3vw;
+          color: $fontColorOpc50;
+        }
+
+        .user-add-route-button {
+          position: relative;
+          padding: 1vw 2vw;
+          border-radius: 2vw;
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 1vw;
+
+          .icon-left {
+            width: 6vw;
+            margin-right: 2vw;
+          }
+
+          span {
+            font-size: 3vw;
+          }
+
+          .icon-right {
+            width: 4vw;
+            position: absolute;
+            opacity: 0.5;
+            right: 2vw;
+          }
+        }
+      }
+
+      .players-list-results {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 3.3vw;
+        color: $fontColorOpc50;
+        padding: 3.5vw 0vw;
+      }
+
+      .players-table {
+        margin-top: 2vw;
+        min-height: 50vh;
+
+        .el-table {
+          min-height: 50vh;
+
+          .player-bet{
+            color: $black;
+            font-weight: bold;
+          }
+
+          .player-win{
+            color: $warning;
+            font-weight: bold;
+          }
+
+          .player-active{
+            color: $green;
+          }
+
+          .player-inactive{
+            color: $warning;
+          }
+        }
+      }
+
+      .players-table-pagination {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 3vw;
+        text-align: center;
+
+        .el-pager {
+          .active {
+            background-color: $secondaryColor !important;
+          }
+
+          .number.active:hover {
+            color: $fontColor !important;
+          }
+
+          .number:hover {
+            color: $secondaryColor !important;
+          }
+        }
+      }
+
+    }
+
+    .players-bottom-modal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .players-bottom-modal-action {
+        width: 100%;
+        text-align: center;
+        padding: 3vw;
+        color: $fontColor;
+        border-bottom: 1px solid $primaryColorOpc50;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+    }
+
+    .player-block-modal {
+      padding: 3vw;
+      color: $primaryColor;
+
+      .player-block-title,
+      .player-block-item-value {
+        font-weight: bold;
+      }
+
+      .player-block-title {
+        padding-bottom: 3vw;
+      }
+
+      .player-block-item {
+        padding: 3vw 0;
+
+        .player-block-item-title {
+          color: $primaryColorOpc50;
+          font-size: 3.5vw;
+        }
+      }
+
+      .player-block-button {
+        margin: 2vw 0;
+        padding: 3vw;
+        border-radius: 1vw;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+      .player-block-button.border {
+        border: 1px solid $primaryColorOpc20;
+        color: $primaryColorOpc50;
+      }
+
+      .player-block-button.warning {
+        background-color: $warning;
+        color: $fontColor;
+      }
+    }
+
+    .change-agent-pwd-modal {
+      padding: 3vw;
+      color: $primaryColor;
+
+      .change-agent-pwd-title,
+      .change-agent-pwd-item-value {
+        font-weight: bold;
+      }
+
+      .change-agent-pwd-title {
+        padding-bottom: 3vw;
+      }
+
+      .change-agent-pwd-item {
+        padding: 3vw 0;
+
+        .change-agent-pwd-item-title {
+          color: $primaryColorOpc50;
+          font-size: 3.5vw;
+        }
+      }
+
+      .change-agent-pwd-button {
+        margin: 2vw 0;
+        padding: 3vw;
+        border-radius: 1vw;
+        text-align: center;
+      }
+
+      .change-agent-pwd-button.border {
+        border: 1px solid $primaryColorOpc20;
+        color: $primaryColorOpc50;
+      }
+
+      .change-agent-pwd-button.warning {
+        background-color: $warning;
+        color: $fontColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import 'base.scss';
+
+.calculator {
+  background-color: $homeBg;
+
+  .title-icon {
+    width: 25px;
+  }
+
+  .idea-icon {
+    width: 35px;
+  }
+
+  .interest-description {
+    color: $lightfontColor;
+    font-size: 14px;
+    word-break: normal;
+  }
+
+  form {
+    font-size: 14px;
+  }
+
+  .input-box {
+    width: 100px;
+    height: 35px;
+    background-color: $homeBg;
+
+    input,
+    select {
+      background-color: $homeBg;
+      font-size: 14px;
+    }
+
+
+  }
+
+  .progress {
+    width: 100%;
+    // -webkit-appearance: none;
+  }
+
+  .hint-text {
+    color: $primaryColor;
+    font-size: 14px;
+  }
+
+  .green {
+    color: $secondaryColor;
+  }
+
+  .reset-btn {
+    background-color: $primaryColor;
+    color: $scfontColor;
+  }
+
+  .cal-btn {
+    background-color: $darkBlue;
+    color: $scfontColor;
+  }
+
+  .principal-text {
+    color: $lightfontColor;
+  }
+
+  .value-text {
+    color: $primaryColor;
+    font-size: 16px;
+  }
+}

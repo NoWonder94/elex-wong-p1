@@ -1,0 +1,126 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth){
+	.withdraw{
+    position: relative;
+
+    .title-section{
+      position: relative;
+
+      .edit{
+        position: absolute;
+        font-size: 3.5vw;
+        padding: 2vw 5vw;
+        right: 5vw;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $blueGreen;
+        border-radius: 18px;
+      }
+    }
+
+    .withdraw-content{
+      background-color: $secondaryBgColor;
+      padding: 4vw 5vw 8vw;
+      min-height: 84vh;
+
+      .card-list{
+        .swiper-slide{
+          width: 70vw !important;
+        }
+
+        .card-box{
+          position: relative;
+
+          img{
+            width: 100%;
+          }
+
+          .card-content{
+            position: absolute;
+            top: 0;
+            padding: 3vw;
+            width: 64vw;
+            height: 45vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 4vw;
+            color: rgba(255, 255, 255, 0.75);
+
+            .card-content-detail{
+              text-align: center;
+              line-height: 2;
+              color: $fontColor;
+            }
+
+            .selected{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .tick{
+                img{
+                  width: 6vw;
+                }
+              }
+            }
+
+            .empty-tick-space {
+              height: 7vw;
+            }
+          }
+        }
+
+        .swiper-button-prev, .swiper-button-next{
+          color: $fontColor;
+          top: 77vw;
+        }
+
+        .swiper-button-prev:after, .swiper-button-next:after{
+          font-size: 4vw;
+        }
+      }
+
+      .withdraw-details{
+        padding-top: 12vw;
+
+        .withdraw-section{
+          padding-bottom: 6vw;
+
+          .withdraw-section-title{
+            font-size: 4vw;
+            font-weight: bold;
+          }
+
+          .el-input__inner{
+            color: $fontColor;
+            font-size: 3.5vw;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $lightFontColor;
+            border-radius: 0;
+            width: 100%;
+            padding: 0;
+            height: 12vw;
+
+            &::placeholder{
+              color: $lightFontColor;
+            }
+          }
+
+          .submit{
+            padding-top: 8vw;
+
+            .button{
+              font-size: 4vw;
+              text-align: center;
+              padding: 3vw;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

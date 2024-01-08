@@ -1,0 +1,77 @@
+@import '../Base.scss';
+$ShadowColor:#00000029;
+$fontBlackColor:#282828;
+$fontGreyColor:#656565;
+$fontRedColor:#EC5557;
+$arrowColor:#d0d0d0;
+
+@media only screen and (max-width: 700px)
+{
+  .info{
+    background-color:$BgPrimaryColor;
+    padding: 0 2vw;
+    padding-bottom: 3vw;
+
+    .head{
+      text-align: center;
+      color:$FontPrimaryColor;
+      padding:12vw 0;
+
+      .title{
+        font-size: 5vw;
+        margin-bottom: 5vw;
+      }
+
+      .paragraph{
+        font-size: 3vw;
+      }
+    }
+
+    .body{
+      background-color: $FontPrimaryColor;
+      border-radius: 2vw;
+      padding: 8vw 0;
+      width: 92%;
+      margin:0 auto;
+
+      .innerbody{
+        margin:0 5vw;
+
+        .el-input{
+          box-shadow: 0px 2px 4px $ShadowColor;
+
+          .el-input__inner{
+            border: none;
+            border-radius: 0;
+            color:$fontBlackColor;
+            font-weight: bold;
+          }
+        }
+
+        .info-list{
+          margin-top: 30px;
+
+          .load-more{
+            text-align: center;
+            font-size: 4vw;
+            color: $fontGreyColor;
+          }
+
+          .el-icon-arrow-down{
+            display: block;
+          }
+          .el-icon-arrow-down::before{
+            font-size: 5.5vw;
+            font-weight: 900;
+            color: $arrowColor;
+          }
+
+        }
+      }
+    }
+  }
+
+  .el-select-dropdown__item.selected {
+    color: $fontRedColor;
+  }
+}

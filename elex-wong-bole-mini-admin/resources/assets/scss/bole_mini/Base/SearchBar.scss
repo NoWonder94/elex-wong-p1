@@ -1,0 +1,143 @@
+.header-right
+{
+	width:100%;
+	height:68px;
+
+	.header-right-content
+	{
+		padding-left:20px;
+		padding-right:20px; //为什么不能运作？？？
+		background-color:#FFF;
+		height:100%;
+		box-shadow:0px 0px 8px black;
+
+		.button-home
+		{
+			display:inline-block;
+			vertical-align:middle;
+
+			a
+			{
+				i
+				{
+					color:black;
+					font-size:30px;
+					cursor:pointer;
+				}
+			}
+		}
+
+		.title
+		{
+			margin-left:10px;
+			display:inline-block;
+			color:black;
+			font-weight:bold;
+			line-height:68px;
+
+			.subtitle
+			{
+				
+			}
+		}
+
+		.action
+		{
+			display:inline-block;
+			float:right;
+			color:black;
+			font-weight:bold;
+			line-height:68px;
+
+			form
+			{
+				height:68px !important;
+
+				.action-search
+				{
+					margin-left:10px;
+					display:inline-block;
+
+					.action-search-title
+					{
+						display:inline-block;
+					}
+
+					.action-search-input
+					{
+						display:inline-block;
+					}
+				}
+
+				.action-search-result
+				{
+					margin-left:10px;
+					display:inline-block;
+
+					.action-search-result-total
+					{
+						color:red;	
+					}
+				}
+
+				.action-amount-per-page
+				{
+					margin-left:10px;
+					display:inline-block;
+
+					.action-amount-per-page-title
+					{
+						display:inline-block;
+					}
+
+					.action-amount-per-page-select
+					{
+						display:inline-block;
+					}
+				}
+
+				.action-title
+				{
+					margin-left:10px;
+					display:inline-block;
+				}
+
+				.action-list
+				{
+					display:inline-block;
+
+					.button-add
+					{
+						display:inline-block;
+						height:60px; //为什么不是用line-height？？？
+						vertical-align:middle;
+
+						img
+						{
+							width:20px;
+							height:20px;
+							cursor:pointer;
+						}
+					}
+				}
+			}
+
+			.el-form-item
+			{
+				margin-right:0;
+				margin-bottom:0;
+			}
+
+			.el-input
+			{
+				line-height:68px;
+			}
+
+			input
+			{
+				width:150px !important;
+				height:25px !important;
+			}
+		}
+	}
+}

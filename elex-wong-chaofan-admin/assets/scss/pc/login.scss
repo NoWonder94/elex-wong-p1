@@ -1,0 +1,94 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth)
+{
+	.login
+	{
+    position: relative;
+    width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-block
+    {
+      position: relative;
+      width: 400px;
+      padding: 20px;
+      border-radius: 30px;
+      background: $primaryColor;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .login-block-branding-icon
+      {
+        width: 180px;
+        text-align: center;
+        align-self: center;
+      }
+
+      .login-form
+      {
+        .el-form
+        {
+          .el-form-item
+          {
+            text-align: center;
+
+            .el-form-item__label
+            {
+              font-size: 15px;
+              font-weight: bold;
+            }
+
+          }
+
+          .login-form-submition-button
+          {
+            margin-top: 40px;
+            text-align: center;
+
+            .login-button
+            {
+              background: $secondaryColor;
+              color: $scFontColor;
+
+              &:hover
+              {
+                color: $scFontColor;
+              }
+
+              &:focus
+              {
+                color: $scFontColor;
+              }
+            }
+
+            .register-button
+            {
+
+              &:hover
+              {
+                color: $secondaryColor;
+                border-radius: 3px;
+                border: 1px solid $secondaryColor;
+                background-color: transparent;
+              }
+
+              &:focus
+              {
+                color: $secondaryColor;
+                border-radius: 3px;
+                border: 1px solid $secondaryColor;
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+	}
+}

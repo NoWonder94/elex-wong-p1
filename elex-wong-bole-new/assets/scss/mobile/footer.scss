@@ -1,0 +1,73 @@
+@import '../Base.scss';
+
+@media only screen and (max-width: 700px)
+{
+	.footer
+    {
+    	padding:8vw 20vw;
+
+        .footer-part
+        {
+        	padding:10vw 0vw;
+        	border-bottom:0.1vw solid #919191;
+
+            .footer-part-title
+            {
+            	font:normal normal bold 4vw Helvetica Neue;
+                color:#FFFFFF;
+                font-weight:bold;
+            }
+
+            .footer-part-icon
+            {
+            	padding:4.5vw 0vw;
+
+                img
+                {
+
+                }
+            }
+
+            .footer-part-description
+            {
+            	font:normal normal bold 3vw Helvetica Neue;
+                color:#919191;
+            }
+
+            .footer-part-media-list
+            {
+            	padding-top:4vw;
+
+                .footer-part-media
+                {
+                	padding:4vw 0vw;
+
+                    .footer-part-media-icon
+                    {
+                    	display:inline-block;
+                        vertical-align:middle;
+
+                        img
+                        {
+                        	width:6vw;
+                        }
+                    }
+
+                    .footer-part-media-name
+                    {
+                    	padding-left:4vw;
+                    	display:inline-block;
+                        vertical-align:middle;
+                    	font:normal normal bold 4vw Helvetica Neue;
+                		color:#919191;
+                    }
+                }
+            }
+        }
+
+        .footer-part:last-child
+        {
+        	border-bottom:none;
+        }
+    }
+}

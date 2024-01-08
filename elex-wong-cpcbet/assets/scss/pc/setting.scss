@@ -1,0 +1,59 @@
+@import "../base.scss";
+
+@media only screen and (min-width: $pcMinWidth) {
+  .setting {
+    position: relative;
+    padding: 30px;
+    min-height: 650px;
+    background-color: $secondaryBgColor;
+    border-radius: 10px;
+    overflow: auto;
+
+    .title {
+      padding-bottom: 15px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    hr {
+      padding-bottom: 20px;
+      border: none;
+      border-top: 1px solid $whiteOpacity30;
+    }
+
+    .setting-languages {
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .language-lable {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .el-input {
+        width: 180px;
+
+        .el-input__inner {
+          background-color: inherit;
+          border: 1px solid $fontColor;
+          color: $fontColor;
+          text-align: center;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+
+      .setting-button {
+        min-width: 180px;
+        padding: 10px 15px;
+        text-align: center;
+        border: 1px solid $fontColor;
+        border-radius: $borderRadius5;
+        cursor: pointer;
+      }
+    }
+
+  }
+}

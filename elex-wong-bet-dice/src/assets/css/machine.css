@@ -1,0 +1,80 @@
+.mainMachine{
+    position: relative;
+
+}
+.machine_item{
+    width:95%;
+}
+.buttondiv{
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.button{
+    width:25%;
+    height:30px;
+    background-color: blueviolet;
+}
+.containerslot{
+    position: absolute;
+    top:23.5%;
+    left:0;
+    width: 100%;
+    height:50%;
+}
+.cover1{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    z-index: 999;
+    height: 25%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.714), rgba(255, 255, 255, 0));
+
+}
+.cover2{
+    position: absolute;
+    left: 25%;
+    bottom: -4%;
+    width: 50%;
+    z-index: 999;
+    height: 25%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.714));
+}
+
+.slotMachine{
+    width: 15.5%;
+    margin:0.8%;
+	padding: 0px;
+    height: 100%;
+	overflow: hidden;
+	display: inline-block;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.slot1{
+    background-image: url("../img/ether_6.png");
+}
+.slot2{
+    background-image: url("../img/ether_5.png");
+}
+.slot3{
+    background-image: url("../img/ether_4.png");
+}
+.slot4{
+    background-image: url("../img/ether_3.png");
+}
+.slot5{
+    background-image: url("../img/ether_2.png");
+}
+.slot6{
+    background-image: url("../img/ether_1.png");
+}
+.slot{
+    height:100%;
+    background-position-x: 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slotMachineContainer{
+    height: 100%;
+}

@@ -1,0 +1,100 @@
+@import '../base.scss';
+
+@media only screen and (min-width: 1201px){
+  .provider-swiper{
+    position: relative;
+    padding-bottom: 30px;
+
+    .game-title-row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+
+      .game-title-left{
+        display: flex;
+        align-items: center;
+
+        .game-title{
+          font-size: 22px;
+          font-weight: bold;
+          margin-right: 30px;
+        }
+
+        i{
+          color: $lightGrey;
+          font-weight: bold;
+          margin-right: 10px;
+          cursor: pointer;
+
+          &:hover{
+            color: $white;
+          }
+        }
+      }
+
+      .game-view-all{
+        color: $lightGrey;
+        cursor: pointer;
+
+        i{
+          color: $lightGrey;
+        }
+
+        &:hover{
+          color: $white;
+        }
+      }
+    }
+
+    .swiper{
+      .swiper-slide{
+        position: relative;
+        background-color: $background;
+        display: grid;
+        grid-template-rows: 1.3fr 1fr;
+        row-gap: 5px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        height: 100px;
+        cursor: pointer;
+
+        .image{
+          align-self: flex-end;
+
+          img{
+            width: 80px;
+            height: auto;
+          }
+        }
+
+        .title{
+          font-size: 16px;
+          font-weight: bold;
+          text-align: center;
+          line-height: 1.8;
+          align-self: flex-end;
+        }
+
+        .total{
+          color: $lightGrey;
+          font-size: 14px;
+          text-align: center;
+          align-self: flex-start;
+        }
+
+        &:hover{
+          background-color: $backgroundFour;
+          transform: scale(1.04);
+        }
+      }
+    }
+
+    .game-detail{
+      padding: 20px;
+      background-color: $backgroundFive;
+      border-radius: 4px;
+    }
+  }
+}

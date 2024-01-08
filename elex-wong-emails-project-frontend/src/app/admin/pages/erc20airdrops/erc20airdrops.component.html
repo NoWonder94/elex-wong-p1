@@ -1,0 +1,33 @@
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center" style="height: 100px">
+  <div class="container"></div>
+</section>
+
+<main id="main">
+  <section id="registersection" class="about">
+    <div class="breadcrumb" (click)="goBackToAdminHome()">&lt; Back</div>
+
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+
+      <div class="col-lg-12">
+        <div class="section-header">Unhandled ERC20 airdrops</div>
+        <p>Below is the list of ERC20 airdrop transactions that still need to be published on chain from the admin
+          dashboard</p>
+      </div>
+      <div class="row content justify-content-center airdrops" *ngIf="airdrops">
+
+        <div class="airdrop row" *ngFor="let airdrop of airdrops">
+          <div class="col-lg-6"><span class="label">ID:</span>{{ airdrop.id }}</div>
+          <div class="col-lg-6"><span class="label">Transfers:</span>{{ airdrop.transfers.length }}</div>
+          <div class="col-lg-3"><span class="label">Created at:</span>{{ airdrop.created_at }}</div>
+          <div class="col-lg-3"><span class="label">Packed at:</span>{{ airdrop.packed_at }}</div>
+          <div class="col-lg-3"><span class="label">Handled at:</span>{{ airdrop.handled_at }}</div>
+          <div class="col-lg-3"><span class="label">Transaction at:</span>{{ airdrop.transaction_confirmed_at }}</div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</main>

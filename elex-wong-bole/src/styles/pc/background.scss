@@ -1,0 +1,359 @@
+.Banner_Top {
+    height: 30vw;
+
+    #scene {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      .background_animate {
+        background-image: url('../assets/background/background_top_bg.png');
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: move 10s linear 1s infinite;
+      }
+      span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        white-space: nowrap;
+        transform: translateX(-50%) translateY(-50%);
+        color: white;
+      }
+    }
+
+    @keyframes move {
+      0% {
+        transform: translateX(0) scale(1);
+      }
+      50% {
+        transform: translateX(13vw) scale(1.3);
+      }
+      100% {
+        transform: translateX(0) scale(1);
+      }
+    }
+  }
+
+  .content {
+    overflow-y: visible;
+    .overview_background {
+      float: right;
+      background-image: url('../assets/background/background_bg_01.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+
+      .overview_content_masking {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        overflow: hidden;
+        animation: masklayer2 0.8s forwards 0.8s;
+        .overview_content {
+          opacity: 0;
+          animation: fade_in 0.5s forwards 1.6s;
+          span {
+            display: block;
+            color: white;
+          }
+
+          .introduce {
+            font-size: 0.9vw;
+          }
+
+          .image_container {
+            div {
+              width: 20%;
+              img {
+                width: 50%;
+                transform: scale(0.8);
+                transform-origin: center top;
+              }
+            }
+          }
+
+          @keyframes fade_in {
+            0% {
+              opacity: 0;
+            }
+
+            100% {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .overview_background_masking {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f7f7f7;
+        animation: masklayer 0.8s forwards;
+      }
+
+      @keyframes masklayer {
+        0% {
+          width: 100%;
+        }
+
+        100% {
+          width: 0%;
+        }
+      }
+    }
+
+    .slogan {
+      background-image: url('../assets/background/background_bg_02.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      .slogan_content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        color: white;
+
+        div {
+          position: relative;
+          span {
+            display: block;
+            font-size: 0.9vw;
+          }
+        }
+
+        div:first-child:after,
+        div:nth-child(2):after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 90%;
+          border-bottom: 1px solid white;
+        }
+
+        div:first-child:before {
+          content: '';
+          display: block;
+          position: absolute;
+          height: 90%;
+          right: 0;
+          bottom: -0.5vw;
+          border-right: 1px solid white;
+        }
+      }
+    }
+
+    .slogan_mobile {
+      height: 0;
+      overflow: hidden;
+    }
+
+    .slogan2 {
+      .slogan2_container {
+        margin: 0 13.6vw 0 12.7vw;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        padding: 7.4vw 0 4.7vw 0;
+
+        div {
+          img {
+            width: 38.55%;
+          }
+          span {
+            display: block;
+          }
+
+          span:nth-child(2) {
+            padding: 1.9vw 0 0.4vw 0;
+            color: #b81319;
+            font-weight: 900;
+            font-size: 3.1vw;
+
+            .plus {
+              position: absolute;
+              padding: 0;
+              top: 1.5vw;
+              right: 23%;
+              color: #b81319;
+              font-weight: 900;
+              font-size: 3vw;
+            }
+          }
+
+          span.cn {
+            font-size: 1.2vw;
+            font-weight: 400;
+          }
+        }
+
+        div:first-child {
+          img {
+            transform: scale(1.5);
+            transform-origin: center;
+          }
+        }
+      }
+    }
+
+    .contact_background {
+      background-image: url('../assets/background/background_bg_03.png');
+      background-size: cover;
+      background-position: center top;
+      position: relative;
+      padding: 4vw 0 7.2vw 0;
+
+      .contact_logo {
+        color: white;
+        font-weight: 500;
+        font-size: 1.8vw;
+        display: block;
+        margin-bottom: 3.2vw;
+      }
+
+      .contact_list {
+        width: 56.7vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        text-align: center;
+        color: white;
+        background-color: rgba(59, 59, 59, 0.8);
+
+        div:first-child {
+          position: relative;
+          span {
+            border: 1px solid white;
+            display: block;
+            padding: 0.8vw 2.3vw 1vw 2.2vw;
+            font-weight: 700;
+            border-radius: 10px;
+            font-size: 1.7vw;
+            margin: 0;
+            position: absolute;
+            left: 6.4vw;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          span:hover {
+            cursor: pointer;
+          }
+        }
+        div:last-child {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          padding-left: 2vw;
+
+          span {
+            text-align: left;
+            font-size: 0.8vw;
+            font-weight: 400;
+            margin: 2.01vw auto 2.01vw 0;
+            padding-left: 1.5vw;
+            position: relative;
+          }
+
+          span:nth-child(2) {
+            grid-row: 2;
+            grid-column: 1;
+          }
+
+          span:nth-child(3) {
+            grid-row: 1;
+            grid-column: 2;
+          }
+
+          span:nth-child(3) {
+            margin-left: 2.3vw;
+          }
+
+          span:nth-child(4) {
+            margin-left: 2.3vw;
+          }
+
+          span:before {
+            content: '';
+            width: 1.3vw;
+            height: 1.3vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0vw;
+            left: -1.7vw;
+          }
+
+          span:first-child:before {
+            background-size: 90% 90%;
+            background-image: url('../assets/background/mail.png');
+          }
+          span:nth-child(2):before {
+            background-size: 180% 180%;
+            background-image: url('../assets/background/qq.svg');
+          }
+          span:nth-child(3):before {
+            background-size: 70% 70%;
+            background-image: url('../assets/background/skype.png');
+          }
+          span:nth-child(4):before {
+            background-size: 80% 80%;
+            background-image: url('../assets/background/telegram.png');
+          }
+        }
+      }
+
+      #zoom_effect {
+        transform: scale(0);
+        transform-origin: center;
+      }
+
+      .zoom_effect_active {
+        animation: zoom_in 1s forwards;
+      }
+
+      @keyframes zoom_in {
+        0% {
+          transform: scale(0);
+        }
+
+        50% {
+          transform: scale(0);
+        }
+
+        80% {
+          transform: scale(0.8);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      #maskLayer_Id {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f7f7f7;
+        transition: all 1s;
+      }
+      .masking {
+        transform: translateX(100%);
+      }
+    }
+  }

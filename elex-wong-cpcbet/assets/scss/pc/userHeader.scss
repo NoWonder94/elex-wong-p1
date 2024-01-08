@@ -1,0 +1,143 @@
+@import "../base.scss";
+
+@media only screen and (min-width: $pcMinWidth) {
+  .user-header {
+    position: relative;
+    // width: 1175px;
+    margin: 0 auto;
+    padding-top: 71px;
+    padding-left: 245px;
+    display: grid;
+    grid-template-columns: 250px 900px;
+    justify-content: space-evenly;
+    column-gap: 10px;
+
+    .left-header {
+      position: relative;
+      height: 650px;
+      padding: 30px 20px;
+      background-color: $secondaryBgColor;
+      border-radius: 10px;
+
+      .coin {
+        .el-input__inner {
+          color: $fontColor;
+          background-color: $blueGreen;
+          border: none;
+        }
+      }
+
+      .profile {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        padding-top: 20px;
+
+        .profile-image {
+          width: 60px;
+          height: 60px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+
+        .profile-detail {
+          .profile-username{
+            font-weight: bold;
+          }
+
+          .profile-name {
+            color: $lightFontColor;
+          }
+
+          .profile-level {
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+            padding-top: 5px;
+            font-size: 12px;
+
+            img {
+              width: 15px;
+            }
+          }
+        }
+      }
+
+      .balance {
+        padding-top: 20px;
+        padding-bottom: 10px;
+
+        .balance-title {
+          font-size: 14px;
+          padding-bottom: 5px;
+        }
+
+        .balance-amount {
+          position: relative;
+          width: 210px;
+          font-size: 24px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .icon-row {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+
+        .icon-img {
+          width: 40px;
+          height: 40px;
+          background: $blueGreen;
+          border-radius: 50%;
+          display: flex;
+          padding: 10px;
+
+          img {
+            width: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .line {
+        margin-block-start: 15px;
+        margin-block-end: 15px;
+        border: 0;
+        border-bottom: 1px solid $whiteOpacity30;
+      }
+
+      .menu {
+        .active {
+          color: $secondaryGreen;
+          font-weight: bold;
+
+          img {
+            padding: 0px;
+            filter: invert(57%) sepia(24%) saturate(780%) hue-rotate(102deg) brightness(90%) contrast(91%);
+          }
+        }
+
+        .menu-item {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          margin: 30px 0;
+          cursor: pointer;
+
+          img {
+            width: 20px;
+          }
+        }
+      }
+    }
+
+    .right-content {}
+  }
+}

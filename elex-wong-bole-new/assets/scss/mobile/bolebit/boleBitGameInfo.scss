@@ -1,0 +1,183 @@
+@import '../../Base.scss';
+
+$RedGradient : linear-gradient(169deg, #EC5557, #B7086D);
+$PurpleGradient : linear-gradient(0deg, #6100FC, #A177FF);
+$FontPrimaryColor: #ffffff;
+$BulletActive: #EC5557;
+$BorderColor: #3b3b3b;
+$ButtonBgColor: #B7083E;
+
+@media only screen and (max-width: 700px) {
+  .boleBitGameInfo {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    color: $FontPrimaryColor;
+    padding: 10vw 8vw;
+    overflow-y: auto;
+
+    .left-info {
+      position: relative;
+
+      .swiper {
+        position: relative;
+        // width: 100vw;
+
+        .info-demo-images {
+          position: relative;
+          // padding-right: 50vw;
+          padding-bottom: 10vw;
+
+          .swiper-slide {
+            width: 70vw;
+
+            img {
+              width: 100%;
+              border-radius: 5vw;
+            }
+          }
+
+        }
+
+        .my-pagination {
+          .swiper-pagination-bullet {
+            background: $FontPrimaryColor;
+            opacity: 1;
+          }
+
+          .swiper-pagination-bullet-active {
+            background: $BulletActive;
+          }
+        }
+      }
+
+      .info-demo-images {
+        position: relative;
+        // top: 0;
+      }
+
+      .brief-info {
+        padding-top: 2vw;
+        padding-bottom: 5vw;
+
+        .brief-game-name {
+          font-size: 6vw;
+          padding-bottom: 2vw;
+        }
+      }
+
+      .info-content {
+        position: relative;
+        padding-bottom: 20vw;
+
+        .copy-embed-button {
+          position: relative;
+          width: 100%;
+          padding: 3vw 0vw;
+          border-radius: 1vw;
+          font-size: 4vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-image: $RedGradient;
+        }
+
+        .info-content-title {
+          margin-top: 3vw;
+          font-size: 5vw;
+        }
+
+        .info-content-about {
+          position: relative;
+          padding-top: 3vw;
+
+          .info-content-about-block {
+            padding: 3.5vw 0vw;
+            font-size: 4.3vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 0.5vw solid $BorderColor;
+
+            .info-content-about-block-language {
+              display: grid;
+              justify-content: center;
+              align-items: center;
+              grid-template-columns: repeat(4, auto);
+              row-gap: 1vw;
+              column-gap: 1vw;
+
+              img {
+                width: 8vw;
+                margin-right: 2vw;
+
+                &:last-child {
+                  margin-right: 0vw;
+                }
+              }
+            }
+          }
+
+          .game-features-about {
+            padding: 3.5vw 0vw;
+            font-size: 4.3vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 0.5vw solid $BorderColor;
+
+            .game-features-about-content {
+              display: flex;
+              flex-direction: column;
+
+              .game-features-about-block {
+                padding: 3vw 5vw;
+                margin-bottom: 3vw;
+                border-radius: 10vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: $PurpleGradient;
+
+                &:last-child {
+                  margin-bottom: 0vw;
+                }
+              }
+            }
+
+          }
+
+          .info-content-try-button {
+            width: 100%;
+            margin-top: 5vw;
+            padding: 3.5vw 0vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1vw;
+            background-color: $ButtonBgColor;
+          }
+
+          .info-content-back-button {
+            margin-top: 5vw;
+            padding: 3.5vw 0vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1vw;
+            border: 0.5vw solid $ButtonBgColor;
+          }
+
+        }
+      }
+    }
+
+    .right-features {
+      display: none;
+    }
+  }
+
+  .boleBitGameInfo::-webkit-scrollbar {
+    display: none;
+  }
+}

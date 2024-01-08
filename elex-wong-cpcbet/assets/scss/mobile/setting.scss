@@ -1,0 +1,41 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth){
+	.setting{
+		position: relative;
+
+    .setting-section{
+      background-color: $secondaryBgColor;
+      padding: 4vw 5vw 8vw;
+      min-height: 84vh;
+
+      .setting-languages{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10vw;
+        font-size: 4vw;
+
+        .el-select{
+          width: 40vw;
+
+          .el-input__inner {
+            background-color: transparent;
+            border: 1px solid $fontColor;
+            color: $fontColor;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+
+        .setting-button{
+          width: 40vw;
+          padding: 2.2vw 4vw;
+          text-align: center;
+          border: 1px solid $fontColor;
+          border-radius: $borderRadius5;
+        }
+      }
+    }
+	}
+}

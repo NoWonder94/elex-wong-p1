@@ -1,0 +1,66 @@
+.login
+{
+    background-color:#263238;
+}
+
+.login .login-header
+{
+	background-color:#263238;
+}
+
+.login .login-body
+{
+
+}
+
+.login .login-body .title
+{
+	margin-top:80px;
+	color:#FFF;
+	font-size:100px;
+	font-weight:bold;
+	font-style:italic;
+}
+
+.login .login-body .title img
+{
+	
+}
+
+.login .login-body .form
+{
+	margin-top:40px;
+	width:300px;
+}
+
+.login .login-body .form .el-form-item
+{
+    margin-right:0;
+    margin-bottom:0;
+}
+
+.login .login-body .form .el-form-item__label
+{
+	color:#FFF;
+	font-weight:bold;
+}
+
+.login .login-body .form input
+{
+	width:230px !important;
+	height:25px !important;
+}
+
+.login .login-body .form button
+{
+	margin-right:8px;
+	height:30px;
+	line-height:0;
+}
+
+.is-loading
+{
+	padding:0 !important;
+    width:70px;
+    height:30px !important;
+}

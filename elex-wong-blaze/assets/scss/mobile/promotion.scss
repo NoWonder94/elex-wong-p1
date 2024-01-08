@@ -1,0 +1,31 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 1200px) {
+  .promotion-container{
+    position: relative;
+    color: $white;
+    min-height: 90vh;
+    padding: 16px;
+
+    .promotion_header{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .arrow-back{
+        font-size: 16px;
+        color: $darkgrey;
+      }
+    }
+
+    .no-found{
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    .pagination{
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+}

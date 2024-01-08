@@ -1,0 +1,290 @@
+@import '../base.scss';
+
+@media only screen and (max-width: 800px){
+  .games{
+    position: relative;
+    color: $white;
+    min-height: 90vh;
+    padding: 30px 16px;
+
+    .games-detail{
+      padding: 16px 12px;
+      background-color: $backgroundFive;
+      border-radius: 4px;
+
+      .games-detail-left{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 20px;
+
+        .games-detail-img{
+          .games-img{
+            width: 140px;
+            border-radius: 4px;
+          }
+
+          .games-noimg{
+            width: 100px;
+          }
+        }
+
+        .games-detail-text{
+          .games-detail-title{
+            font-size: 18px;
+            font-weight: bold;
+            padding-bottom: 5px;
+          }
+
+          .games-detail-provider{
+            font-size: 12px;
+            font-weight: bold;
+            color: $lightGreyThree;
+          }
+
+          .games-detail-select-balance{
+            padding-top: 10px;
+            font-size: 12px;
+            padding-bottom: 5px;
+          }
+
+          .games-detail-balance{
+            font-size: 12px;
+            font-weight: bold;
+            color: $lightGreyThree;
+          }
+
+          .games-detail-coin{
+            padding-top: 10px;
+
+            .header-bonus-wallet {
+              height: 30px;
+              width: 140px;
+              padding: 0px 15px;
+              font-size: 14px;
+              background-color: $backgroundTwo;
+              border: 1px solid $separator;
+              border-radius: 4px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .wallet-left{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+
+                .header-currency {
+                  font-size: 14px;
+                  color: $white;
+                }
+
+                .currency-icon {
+                  width: 15px;
+                  height: 15px;
+                  color: $black;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+
+              i{
+                color: $lightGrey;
+              }
+            }
+          }
+        }
+      }
+
+      .games-detail-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 15px;
+        padding-top: 20px;
+
+        div{
+          font-size: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 10px;
+          padding: 10px;
+          border-radius: 4px;
+          width: 180px;
+          cursor: pointer;
+
+          img{
+            width: 15px;
+          }
+        }
+
+        .real-game{
+          background-color: $red;
+        }
+
+        .fun-play{
+          background-color: $darkBackground;
+        }
+      }
+    }
+
+    .games-recommended{
+      padding-top: 20px;
+    }
+
+    .games-providers{
+      padding-top: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1200px){
+  .games{
+    position: relative;
+    color: $white;
+    min-height: 90vh;
+    padding: 40px 16px;
+
+    .games-detail{
+      padding: 20px 30px;
+      background-color: $backgroundFive;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .games-detail-left{
+        display: flex;
+        column-gap: 40px;
+
+        .games-detail-img{
+          .games-img{
+            width: 160px;
+            border-radius: 4px;
+          }
+
+          .games-noimg{
+            width: 100px;
+          }
+        }
+
+        .games-detail-text{
+          line-height: 1.7;
+
+          .games-detail-title{
+            font-size: 18px;
+            font-weight: bold;
+          }
+
+          .games-detail-provider{
+            font-size: 12px;
+            font-weight: bold;
+            color: $lightGreyThree;
+          }
+
+          .games-detail-select-balance{
+            padding-top: 10px;
+            font-size: 16px;
+          }
+
+          .games-detail-balance{
+            font-size: 12px;
+            font-weight: bold;
+            color: $lightGreyThree;
+          }
+
+          .games-detail-coin{
+            padding-top: 10px;
+
+            .header-bonus-wallet {
+              height: 40px;
+              width: 200px;
+              padding: 0px 15px;
+              font-size: 14px;
+              background-color: $backgroundTwo;
+              border: 1px solid $separator;
+              border-radius: 4px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              .wallet-left{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+
+                .header-currency {
+                  font-size: 16px;
+                  color: $white;
+                }
+
+                .currency-icon {
+                  width: 20px;
+                  height: 20px;
+                  color: $black;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+
+              i{
+                color: $lightGrey;
+              }
+            }
+          }
+        }
+      }
+
+      .games-detail-right{
+        padding: 30px;
+        // background-color: $background;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+
+        div{
+          font-size: 15px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          column-gap: 10px;
+          padding: 10px 30px;
+          border-radius: 4px;
+          cursor: pointer;
+
+          img{
+            width: 15px;
+          }
+        }
+
+        .real-game{
+          background-color: $red;
+        }
+
+        .fun-play{
+          background-color: $darkBackground;
+        }
+      }
+    }
+
+    .games-recommended{
+      padding-top: 20px;
+    }
+
+    .games-providers{
+      padding-top: 10px;
+    }
+  }
+}

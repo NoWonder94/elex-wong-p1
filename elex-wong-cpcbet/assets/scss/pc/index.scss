@@ -1,0 +1,354 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .index {
+    position: relative;
+    padding-bottom: 20px;
+
+    .index-banner {
+      position: relative;
+      height: 200px;
+
+      .el-carousel {
+        .el-carousel__container {
+          height: 200px;
+
+          .el-carousel__arrow {
+            border-radius: 0px;
+            background-color: transparent;
+
+            i {
+              font-size: 20px;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .el-carousel__item {
+          cursor: pointer;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+
+      .el-carousel__indicators .el-carousel__indicators--horizontal {
+        li {
+          border-radius: 50% !important;
+
+          .el-carousel__button {
+            border-radius: 50% !important;
+          }
+        }
+      }
+
+      .is-active {
+        .el-carousel__button {
+          border-radius: 50% !important;
+          background-color: $primaryGreen;
+        }
+      }
+    }
+
+    .filter {
+      padding: 0 20px;
+      width: 100%;
+      position: sticky;
+      top: 71px;
+      background-color: $secondaryBgColor;
+      z-index: 100;
+
+      .filter-container {
+        position: relative;
+
+
+        .swiper {
+          position: relative;
+          width: 100%;
+          margin-left: 0px !important;
+
+          .info-demo-images {
+            position: relative;
+
+            .swiper-slide {
+              margin: 0 8px;
+              width: auto;
+              align-self: center;
+              overflow-x: hidden;
+
+              .game-type-item {
+                padding: 10px 20px;
+                border-radius: $borderRadius30;
+                border: 1px solid $whiteOpacity30;
+                cursor: pointer;
+
+                &:hover {
+                  color: $primaryGreen;
+                  border: 1px solid $primaryGreen !important;
+                }
+              }
+
+              .filter-by-item {
+                width: 54px;
+                height: 54px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                background-color: $lightFontColor10;
+                // border: 1px solid $whiteOpacity30;
+                border-radius: $borderRadius3;
+                overflow: hidden;
+                cursor: pointer;
+
+                img {
+                  width: 54px;
+                  height: 54px;
+                  background-color: $secondaryBgColorOpacity90;
+
+                }
+
+                .filter-name {
+                  margin: auto;
+
+                  // background-color: $lightFontColor;
+                }
+              }
+
+            }
+
+          }
+
+          .my-pagination {
+            display: none;
+
+            .swiper-pagination-bullet {
+              background: #fff;
+            }
+
+            .swiper-pagination-bullet-active {
+              // background-image: $redGradient;
+              background: #EC5557;
+            }
+          }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          top: 50%;
+          color: #FFF;
+
+          img {
+            width: 25px;
+            filter: invert(100%) sepia(0%) saturate(7489%) hue-rotate(145deg) brightness(98%) contrast(104%);
+          }
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+          font-size: 0;
+        }
+
+        .swiper-button-prev {
+          left: 20px !important;
+        }
+
+        .swiper-button-next {
+          right: 20px !important;
+        }
+
+        .swiper-button-disabled {
+          display: flex;
+          opacity: 0.5;
+        }
+      }
+
+      hr {
+        background-color: transparent;
+        border-bottom: 1px solid $whiteOpacity30;
+      }
+
+      .game-type {
+        padding: 10px 60px;
+      }
+
+      .filter-type {
+        padding: 25px 60px;
+      }
+    }
+
+
+
+    .index-games {
+      position: relative;
+      padding: 30px;
+
+      .index-games-lable-position {
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .index-games-label {
+          .ContentTitle {
+            font-size: 19px;
+          }
+        }
+
+        .index-games-showAll {
+          display: flex;
+          align-items: center;
+
+          .el-button {
+            width: 200px;
+            margin-left: 10px;
+            background: transparent;
+            color: $fontColor;
+            border-color: $lightFontColor;
+            text-align: left;
+
+            .el-icon-arrow-down {
+              position: absolute;
+              right: 5%;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+
+        }
+      }
+
+      .index-games-list {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(auto-fill, 127px);
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+
+        .index-games-card {
+          position: relative;
+          height: 130px;
+          // background: $blueGreen;
+          justify-items: stretch;
+          align-items: stretch;
+          border-radius: 10px;
+          cursor: pointer;
+
+          &:hover .index-games-card-middle {
+            display: block;
+          }
+
+          // &:nth-child(1) {
+          //   width: 335px;
+          //   height: 273px;
+          //   justify-items: stretch;
+          //   align-items: stretch;
+          //   grid-area: 1 / 1 / 3 / 2;
+
+          //   .index-game-card-image {
+          //     width: 100%;
+          //     height: 100%;
+          //     border-radius: 10px;
+          //   }
+          // }
+        }
+
+        .index-games-card-image {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          object-fit: contain;
+        }
+
+        .index-games-card-middle {
+          display: none;
+          transition: .5s ease;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-color: $blackOpacity75;
+          text-align: center;
+
+          .index-games-list-card-wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+
+            .text {
+              color: $fontColor;
+              padding: 12px 50px;
+              text-align: center;
+              border-radius: 4px;
+              cursor: pointer;
+
+              &:nth-child(2) {
+                margin-top: 10px;
+                border: 1px solid $fontColor;
+              }
+            }
+          }
+
+          .login-text {
+            padding: 15px 50px;
+            color: $fontColor;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: center;
+            border-radius: 4px;
+          }
+        }
+
+      }
+
+      .games-list-noData {
+        position: relative;
+        height: 50vh;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .games-list-noData-label {
+          margin-top: 5vw;
+        }
+      }
+
+      .games-list-pagination {
+        position: relative;
+        margin: 0 auto;
+        padding-top: 20px;
+        text-align: center;
+
+        .el-pager {
+          .active {
+            background-color: $primaryGreen !important;
+          }
+
+          .number.active:hover {
+            color: $fontColor !important;
+          }
+
+          .number:hover {
+            color: $primaryGreen !important;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .side-menu{
+    left: calc((100% - 1400px)/2);
+  }
+}

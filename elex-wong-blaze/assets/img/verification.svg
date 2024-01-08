@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="mobile" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
+        <g id="blaze-mobile-settings-profile" transform="translate(-277.000000, -245.000000)" fill="#E3AA39" fill-rule="nonzero">
+            <g id="Group-11" transform="translate(16.000000, 227.000000)">
+                <path d="M270.403571,18.7239294 L266.117857,18.0096437 C266.039812,17.9967854 265.960188,17.9967854 265.882143,18.0096437 L261.596429,18.7239294 C261.252284,18.7815023 261.000102,19.0792881 261,19.4282151 L261,24.4282151 C261,27.9996437 266,29.4282151 266,29.4282151 C266,29.4282151 271,27.9996437 271,24.4282151 L271,19.4282151 C270.999898,19.0792881 270.747716,18.7815023 270.403571,18.7239294 Z M265.332143,26.2003579 L262.637857,23.5046437 L263.647857,22.4946437 L265.237857,24.0846437 L268.309286,20.3989294 L269.406429,21.3146437 L265.332143,26.2003579 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

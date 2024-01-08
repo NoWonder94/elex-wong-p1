@@ -1,0 +1,69 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth)
+{
+	footer {
+    background: $footerbgColor;
+    padding: 3% 10%;
+    color: $secondaryFontColor;
+
+    .footerContainer {
+      display:grid;
+      grid-template-columns: 70% 30%;
+
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .footer-content-contact {
+          display: flex;
+          gap: 100px;
+
+          .contact-block {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .contact-block-label {
+              font-size: 15px;
+              color: $fontColor;
+            }
+            .contact-block-content {
+              font-size: 14px;
+              color: $fontaltColor;
+            }
+
+            .block-contact {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .copyright {
+          font-size: 12px;
+          color: $fontColor;
+        }
+      }
+      .footer-logo {
+        position: relative;
+        text-align: right;
+        justify-self: end;
+
+        .logo-position {
+          position: relative;
+          width: 180px;
+          height: 180px;
+          display: flex;
+          align-items: center;
+          // background-color: $bgColor;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

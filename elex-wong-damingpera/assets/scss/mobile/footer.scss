@@ -1,0 +1,50 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth)
+{
+	footer
+	{
+    position: relative;
+    width: 100%;
+    padding: 15vw 10vw;
+		background: $footerbgColor;
+
+    .mobileFooterContainer {
+      .footer-content-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 5vw;
+
+        .contact-block {
+          .contact-block-label {
+            font-size: 4.5vw;
+            color: $fontColor;
+          }
+          .contact-block-content {
+            padding-top: 3vw;
+            font-size: 4vw;
+            color: $fontaltColor;
+          }
+          .block-contact {
+            font-size: 5.5vw;
+          }
+        }
+      }
+
+      .footer-logo {
+        width: 28vw;
+        margin-top: 15vw;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .copyright {
+        margin-top: 5vw;
+        font-size: 3.3vw;
+      }
+    }
+	}
+}

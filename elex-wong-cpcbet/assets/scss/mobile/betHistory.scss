@@ -1,0 +1,160 @@
+@import '../base.scss';
+
+@media only screen and (max-width: $mobileMaxWidth) {
+  .betHistory {
+    .betHistory-details {
+      padding: 4vw;
+      min-height: 85vh;
+      background-color: $secondaryBgColor;
+
+      .betHistory-filter {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+
+        .betHistory-filter-date {
+          display: flex;
+          align-items: center;
+
+          .filter-date-title {
+            margin-right: auto;
+          }
+
+          .el-date-editor.el-input {
+
+            .el-input__prefix {
+              display: none;
+            }
+
+            .el-input__inner {
+              padding: 0;
+              text-align: center;
+            }
+          }
+        }
+
+        .betHistory-filter-platform {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+      }
+
+      hr {
+        margin: 3vw 0;
+        border: none;
+        border-bottom: 0.5vw solid $lightFontColor;
+        opacity: 0.5;
+      }
+
+      .betHistory-datetime-button-group {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        align-self: center;
+
+        .betHistory-datetime-button {
+          margin-right: 2vw;
+          margin-bottom: 2vw;
+          padding: 2vw 3vw;
+          background-color: #90FFAE;
+          color: $blueGreen;
+          font-size: 3vw;
+          font-weight: bold;
+          border-radius: 30px;
+          display: flex;
+          align-self: center;
+          cursor: pointer;
+        }
+      }
+
+      .betHistory-details-table {
+
+        .el-table {
+          background-color: inherit;
+          color: $fontColor;
+          border-bottom: none;
+
+          .el-table__body-wrapper {
+            min-height: 80vw;
+          }
+
+          thead {
+            color: $fontColor;
+          }
+
+          tr,
+          tr:hover>td,
+          th.el-table__cell {
+            background-color: inherit;
+          }
+
+          td {
+            border-bottom: none;
+          }
+
+          &::before {
+            height: 0px;
+          }
+        }
+      }
+
+      .betHistory-details-paginate {
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 4vw;
+
+        .el-pager {
+          .active {
+            background-color: $primaryGreen  !important;
+          }
+
+          .number.active:hover {
+            color: $fontColor  !important;
+          }
+
+          .number:hover {
+            color: $primaryGreen  !important;
+          }
+        }
+      }
+
+      .el-input {
+        width: 35vw;
+
+        .el-input__inner {
+          background-color: inherit;
+          border: none;
+          color: $fontColor;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:focus {
+            border: 0.5vw solid $primaryGreen;
+          }
+
+          &::placeholder {
+            color: $lightFontColor  !important;
+          }
+        }
+      }
+
+      .betHistory-nodata {
+        padding: 5vw;
+        color: $fontColor;
+        font-weight: bold;
+        text-align: center;
+
+        img {
+          padding-bottom: 2vw;
+        }
+
+        div {
+          line-height: 3vw;
+        }
+      }
+    }
+  }
+}

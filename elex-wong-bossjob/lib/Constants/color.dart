@@ -1,0 +1,45 @@
+import 'package:flutter/material.dart';
+
+const primaryColor = Color.fromARGB(255, 82, 141, 255);
+const secondaryColor = Color.fromARGB(255, 97, 146, 241);
+const tertiaryColor = Color.fromARGB(255, 0, 106, 154);
+
+Color backdrop = Colors.black12.withOpacity(0.5);
+const Color background = Color.fromARGB(255, 250, 250, 250);
+Color error = Colors.red;
+Color activeInputBorder = primaryColor;
+Color inactiveInputBorder = Color.fromARGB(255, 221, 221, 221);
+Color inputLabelColor = Color.fromARGB(255, 153, 153, 153);
+Color inputBorderColor = Color.fromARGB(255, 153, 153, 153);
+Color forgetPasswordColor = Color.fromARGB(255, 153, 153, 153);
+Color borderGrey = Color.fromARGB(255, 221, 221, 221);
+Color divider = Color.fromARGB(255, 214, 214, 214);
+Color tagLine = Color.fromARGB(255, 178, 178, 178);
+Color tabText = Color.fromARGB(255, 87, 87, 87);
+Color black = Color.fromARGB(255, 64, 64, 64);
+Color lightGrey = Color.fromARGB(255, 183, 183, 183);
+Color tabActiveBorder = primaryColor;
+Color tabInactiveBorder = Color.fromARGB(255, 187, 187, 187);
+Color tabTitleColor = Color.fromARGB(255, 102, 102, 102);
+
+Color icon = Color.fromARGB(112, 112, 112, 1);
+Color searchInputText = Color.fromARGB(102, 102, 102, 1);
+Color jobText = Color.fromARGB(255, 64, 64, 64);
+Color jobListText = Color.fromARGB(255, 97, 146, 241);
+Color jobListCategoryText = Color.fromARGB(255, 183, 183, 183);
+Color jobListCategoryBorder = Color.fromARGB(255, 183, 183, 183);
+Color jobListIconText = Color.fromARGB(255, 102, 102, 102);
+Color messagesStatusText = Color.fromARGB(255, 64, 64, 64);
+Color searchBorder = Color.fromARGB(255, 238, 238, 238);
+Color messagesSearchIcon = Color.fromARGB(255, 112, 112, 112);
+Color messagesDivider = Color.fromARGB(255, 187, 187, 187);
+Color messagesText = Color.fromARGB(255, 87, 87, 87);
+Color socialButtonTextColor = Color.fromARGB(255, 112, 112, 112);
+Color titleText = Color.fromARGB(255, 64, 64, 64);
+Color borderWidgetText = Color.fromARGB(255, 150, 150, 150);
+Color verifyEmailText = Color.fromARGB(255, 64, 64, 64);
+Color verifyEmailButtonBg = Color.fromARGB(255, 82, 141, 255);
+Color resendOtpText = Color.fromARGB(255, 112, 112, 112);
+Color resendOtpBorder = Color.fromARGB(255, 238, 238, 238);
+Color wrongEmailAddressText = Color.fromARGB(255, 153, 153, 153);
+Color inputInsideLabel = Color.fromARGB(255, 226, 226, 226);

@@ -1,0 +1,420 @@
+[data-aos='fade-in-up-mobile'] {
+  transition-property: transform, opacity;
+
+  @media screen and (max-width: 767px) {
+    opacity: 0;
+    transform: translateY(100px);
+    &.aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.Info_Container_CN {
+  overflow: hidden;
+
+  @media only screen and (max-width: 767px) {
+    .Banner_Top {
+      height: 69.25vw;
+
+      #scene {
+        img {
+          bottom: -9% !important;
+          right: 5% !important;
+          width: 43%;
+        }
+      }
+
+      div {
+        span {
+          font-weight: 700;
+          font-size: 6.4vw;
+        }
+      }
+    }
+
+    .content {
+      width: 85.1vw;
+
+      .menu_wap {
+        margin: 12.9vw 0 5.9vw 0;
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+
+        .el-input {
+          font-size: 4.3vw;
+        }
+      }
+
+      .info_container {
+        margin: 0;
+        .info_list {
+          padding: 0;
+          grid-row-gap: 7.7vw;
+
+          .item {
+            div {
+              .info_name {
+                padding: 3.7vw 4.5vw 18.9vw 4.5vw;
+                font-size: 5.3vw;
+                font-weight: 500;
+              }
+            }
+
+            #more_id {
+              bottom: 5.6vw;
+              left: 50%;
+              transform: translateX(-50%);
+              display: block;
+              font-size: 4.3vw;
+              font-weight: 400;
+              border-radius: 12px;
+              padding: 1.6vw 7.5vw;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 991.98px) {
+    .Banner_Top {
+      div {
+        .background_animate {
+          background-image: url('../assets/info/info_top_bg.png');
+        }
+        span {
+          font-weight: 700;
+          font-size: 4.2vw;
+        }
+      }
+    }
+
+    .menu_wap {
+      display: none;
+    }
+
+    .content {
+      .el-menu--horizontal > .el-menu-item {
+        font-weight: 500;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .Banner_Top {
+      height: 30vw;
+
+      #scene {
+        img {
+          right: 6.3vw;
+          width: 24.7vw;
+          height: 22.7vw;
+        }
+      }
+
+      div {
+        span {
+          font-weight: 700;
+          font-size: 4.2vw;
+        }
+      }
+    }
+  }
+}
+
+.Info_Container_EN {
+
+  @media only screen and (max-width: 767px) {
+    .Banner_Top {
+      height: 60vw;
+
+      #scene {
+        overflow: visible;
+        img {
+          bottom: -10% !important;
+          right: 0 !important;
+          width: 35%;
+        }
+      }
+
+      div {
+        span {
+          font-weight: bold;
+          font-size: 4vw;
+        }
+      }
+    }
+
+    .content {
+      width: 80%;
+      padding-bottom: 30px;
+
+      .menu_wap {
+        padding: 6vw 0;
+      }
+
+      .info_container {
+        .info_list {
+          grid-row-gap: 10vw;
+
+          .item {
+            div {
+              .info_name {
+                padding: 2vw 2vw 15vw 2vw;
+                font-size: 4vw;
+                font-weight: bold;
+              }
+            }
+
+            #more_id {
+              bottom: 5%;
+              right: 5%;
+              display: table;
+              font-size: 3vw;
+              font-weight: bold;
+              border: 1px solid #ff0317;
+              color: #ff0317;
+              border-radius: 5px;
+              padding: 0.3vw 0.8vw;
+              width: 24%;
+
+              &:before {
+                background: #ff0317;
+                color: #fff;
+              }
+            }
+
+            #more_id:hover {
+              color: #fff;
+
+              &:before {
+                background: #ff0317;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 991.98px) {
+    .Banner_Top {
+      div {
+        .background_animate {
+          background-image: url('../assets/mobile_banner_Top/mobile_top_bg.png');
+        }
+        span {
+          font-weight: bold;
+          font-size: 3vw;
+        }
+      }
+    }
+
+    .menu_wap {
+      display: none;
+    }
+
+    .content {
+      .el-menu--horizontal > .el-menu-item:nth-last-child(2) {
+        border-right: none;
+      }
+
+      .el-menu--horizontal > .el-menu-item {
+        font-weight: 400;
+      }
+      .el-menu--horizontal > .el-menu-item.is-active {
+        font-weight: 500;
+      }
+
+      .info_container {
+        .info_list {
+          #more_id {
+            &:before {
+              background: #ff0317;
+              color: #fff;
+            }
+          }
+
+          #more_id:hover {
+            color: #fff;
+
+            &:before {
+              background: #ff0317;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .Banner_Top {
+      height: 30vw;
+
+      #scene {
+        img {
+          right: 0 !important;
+          width: 25%;
+        }
+      }
+
+      div {
+        span {
+          font-weight: bold;
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}
+
+.Info_Container_KR {
+
+  @media only screen and (max-width: 767px) {
+    .Banner_Top {
+      height: 60vw;
+
+      #scene {
+        img {
+          bottom: -10% !important;
+          right: 0 !important;
+          width: 35%;
+        }
+      }
+
+      div {
+        span {
+          font-weight: bold;
+          font-size: 4vw;
+        }
+      }
+    }
+
+    .content {
+      width: 80%;
+      padding-bottom: 30px;
+
+      .menu_wap {
+        padding: 6vw 0;
+      }
+
+      .info_container {
+        .info_list {
+          grid-row-gap: 10vw;
+
+          .item {
+            div {
+              .info_name {
+                padding: 2vw 2vw 15vw 2vw;
+                font-size: 4vw;
+                font-weight: bold;
+              }
+            }
+
+            #more_id {
+              bottom: 5%;
+              right: 5%;
+              display: table;
+              font-size: 3vw;
+              font-weight: bold;
+              border: 1px solid #ff0317;
+              color: #ff0317;
+              border-radius: 5px;
+              padding: 0.3vw 0.8vw;
+              width: 24%;
+
+              &:before {
+                background: #ff0317;
+                color: #fff;
+              }
+            }
+
+            #more_id:hover {
+              color: #fff;
+
+              &:before {
+                background: #ff0317;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 991.98px) {
+    .Banner_Top {
+      div {
+        .background_animate {
+          background-image: url('../assets/mobile_banner_Top/mobile_top_bg.png');
+        }
+        span {
+          font-weight: bold;
+          font-size: 3vw;
+        }
+      }
+    }
+
+    .menu_wap {
+      display: none;
+    }
+
+    .content {
+      .el-menu--horizontal > .el-menu-item:nth-last-child(2) {
+        border-right: none;
+      }
+
+      .el-menu--horizontal > .el-menu-item {
+        font-weight: 400;
+      }
+      .el-menu--horizontal > .el-menu-item.is-active {
+        font-weight: 500;
+      }
+
+      .info_container {
+        .info_list {
+          #more_id {
+            &:before {
+              background: #ff0317;
+              color: #fff;
+            }
+          }
+
+          #more_id:hover {
+            color: #fff;
+
+            &:before {
+              background: #ff0317;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .Banner_Top {
+      height: 30vw;
+
+      #scene {
+        img {
+          right: 0 !important;
+          width: 25%;
+        }
+      }
+
+      div {
+        span {
+          font-weight: bold;
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}

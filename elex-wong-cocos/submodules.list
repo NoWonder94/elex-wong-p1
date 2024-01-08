@@ -1,0 +1,21 @@
+[submodule "assets/submodules/sharing.base"]
+	path = assets/submodules/sharing.base
+	url = https://github.com/arkjgroup/sharing-base-ts.git
+[submodule "assets/submodules/sharing.protocol"]
+	path = assets/submodules/sharing.protocol
+	url = https://github.com/arkjgroup/sharing-slo-ts.git
+[submodule "assets/submodules/cocos.framework"]
+	path = assets/submodules/cocos.framework
+	url = https://github.com/arkjgroup/cocos-framework.git
+[submodule "assets/submodules/cocos.sdk"]
+	path = assets/submodules/cocos.sdk
+	url = https://github.com/arkjgroup/cocos-sdk.git
+[submodule "assets/submodules/cocos.hotupdate"]
+	path = assets/submodules/cocos.hotupdate
+	url = https://github.com/arkjgroup/cocos-hotupdate.git
+[submodule "assets/submodules/cocos_slo"]
+	path = assets/submodules/cocos_slo
+	url = https://github.com/arkjgroup/cocos-slo.git
+[submodule "assets/submodules/cocos_slobskg"]
+	path = assets/submodules/cocos_slobskg
+	url = https://github.com/arkjgroup/cocos-slobskg.git

@@ -1,0 +1,503 @@
+  .Banner_Top {
+    height: 30vw;
+
+    #scene {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      img {
+        position: absolute !important;
+        top: auto !important;
+        left: auto !important;
+        bottom: 0 !important;
+        animation: motion 5s infinite ease;
+
+        @keyframes motion {
+          0% {
+            bottom: 0px;
+          }
+          50% {
+            bottom: 50px;
+          }
+          100% {
+            bottom: 0px;
+          }
+        }
+      }
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      .background_animate {
+        background-image: url('../assets/recruitment/recurit_top_bg.png');
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: move 10s linear 1s infinite;
+      }
+      span {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        white-space: nowrap;
+        color: white;
+      }
+    }
+
+    @keyframes move {
+      0% {
+        transform: translateX(0) scale(1);
+      }
+      50% {
+        transform: translateX(10vw) scale(1.3);
+      }
+      100% {
+        transform: translateX(0) scale(1);
+      }
+    }
+  }
+
+  .content {
+    .first_part {
+      span {
+        display: block;
+      }
+
+      .first_part_title {
+        line-height: 2vw;
+      }
+
+      .first_part_image {
+        padding: 0;
+        position: relative;
+        img {
+          object-fit: cover;
+          object-position: left top;
+        }
+        img:last-child {
+          width: 0%;
+          position: absolute;
+          object-position: left top;
+        }
+      }
+    }
+
+    .second_part {
+      .second_part_item_container {
+        padding: 1vw 0;
+        div {
+          display: inline-block;
+        }
+
+        div:last-child {
+          display: inline-block;
+          span {
+            display: block;
+          }
+        }
+      }
+
+      .swiper-slide div {
+        opacity: 0;
+        transition-property: opacity, transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transform: translate3d(0, -100px, 0);
+      }
+
+      .swiper-slide .second_part_item_container:nth-child(2) {
+        transition-delay: 0.5s;
+      }
+
+      .swiper-slide .second_part_item_container:nth-child(3) {
+        transition-delay: 1s;
+      }
+
+      .swiper-slide.swiper-slide-active div {
+        opacity: 1;
+        transform: translateZ(0);
+      }
+    }
+
+    .third_part {
+      background-image: url('../assets/recruitment/recurit_bg_03.png');
+      background-size: cover;
+      background-position: center;
+
+      .third_part_container {
+        color: white;
+        display: grid;
+        justify-content: space-between;
+        grid-template-rows: auto auto;
+
+        div {
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .third_part_mobile {
+      height: 0;
+      overflow: hidden;
+    }
+
+    .forth_part {
+      span.wrapper {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        width: 50vw;
+      }
+
+      .forth_part_title:first-child {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    .fifth_part {
+      text-align: center;
+      background-color: white;
+      span {
+        display: block;
+      }
+      .fifth_part_container {
+        display: inline-block;
+        vertical-align: top;
+
+        .masking_layer_container {
+          position: relative;
+          img {
+            width: 100%;
+          }
+
+          .layer {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+        }
+        div.fifth_path_location {
+          position: relative;
+          span {
+            text-align: left;
+            position: relative;
+          }
+
+          span:not(:first-child) {
+            color: #656565;
+            font-size: 0.8vw;
+          }
+
+          span:first-child:before {
+            content: '';
+            background-image: url('../assets/recruitment/location.png');
+            background-position: center;
+            position: absolute;
+            left: -1.5vw;
+          }
+
+          .layer {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+
+      .fifth_part_container:nth-child(2) {
+        .layer_img_active {
+          animation: layer_img_active 1s forwards 0s;
+        }
+        .layer_location_active {
+          animation: layer_location_active 1s forwards 0s;
+        }
+      }
+      .fifth_part_container:nth-child(3) {
+        .layer_img_active {
+          animation: layer_img_active 1s forwards 0.5s;
+        }
+        .layer_location_active {
+          animation: layer_location_active 1s forwards 0.5s;
+        }
+      }
+      .fifth_part_container:nth-child(4) {
+        .layer_img_active {
+          animation: layer_img_active 1s forwards 1s;
+        }
+        .layer_location_active {
+          animation: layer_location_active 1s forwards 1s;
+        }
+      }
+      .fifth_part_container:nth-child(5) {
+        .layer_img_active {
+          animation: layer_img_active 1s forwards 1.5s;
+        }
+        .layer_location_active {
+          animation: layer_location_active 1s forwards 1.5s;
+        }
+      }
+
+      @keyframes layer_img_active {
+        0% {
+          height: 100%;
+        }
+        100% {
+          height: 0%;
+        }
+      }
+
+      @keyframes layer_location_active {
+        0% {
+          width: 100%;
+        }
+        100% {
+          width: 0%;
+        }
+      }
+    }
+
+    .vacancyDetail {
+      ul {
+        width: 75.7%;
+      }
+
+      .annoucement {
+        width: 75.7%;
+
+        ul {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    .vacancySection {
+      color: black;
+      background-color: #f7f7f7;
+      padding-top: 5vw;
+      center {
+        padding-bottom: 2.4vw;
+        span {
+          font-size: 1.5vw;
+          font-weight: bold;
+          display: block;
+          padding-bottom: 1vw;
+        }
+
+        p {
+          font-size: 0.8vw;
+        }
+      }
+
+      .el-menu--horizontal {
+        margin: 0 auto;
+        margin-bottom: 3.5vw;
+        padding: 1.5vw 2.4vw 1.7vw 2.4vw;
+        width: 75vw;
+        height: 4.7vw;
+        text-align: center;
+        box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.15);
+      }
+
+      .el-menu--horizontal > .el-menu-item {
+        height: 1.5vw !important;
+        line-height: 1.5vw !important;
+      }
+
+      .el-menu--horizontal > .el-menu-item:not(:last-child) {
+        border-right: 0.2px solid #e0e0e0;
+      }
+      .el-menu--horizontal > .el-menu-item:nth-last-child(2) {
+        border-right: none;
+      }
+      .el-menu--horizontal > .el-menu-item:last-child {
+        float: right;
+      }
+
+      .el-menu--horizontal > .el-menu-item {
+        height: 3vw;
+        line-height: 3vw;
+        font-size: 0.9vw;
+      }
+
+      .el-menu-item.is-disabled {
+        cursor: default;
+        opacity: 1;
+      }
+
+      .el-menu--horizontal > .el-menu-item.is-active {
+        color: #ff0317;
+        font-weight: 500;
+        border-bottom: transparent;
+      }
+    }
+
+    .vacancyDetail {
+      background-color: #f7f7f7;
+      color: black;
+      font-weight: 400;
+
+      ul {
+        list-style-type: none;
+        padding: 1vw 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #d0d0d0;
+
+        li {
+          width: 25%;
+          text-align: center;
+          font-size: 0.75vw;
+        }
+      }
+
+      .annoucement {
+        margin: 0 auto;
+        padding-bottom: 4.6vw;
+        .card {
+          background-color: transparent;
+          border: none;
+          .card-header {
+            padding: 0;
+            button {
+              padding: 0;
+              border: 0;
+              width: 100%;
+              background-color: #f7f7f7;
+              ul {
+                list-style-type: none;
+                border-bottom: none;
+                display: flex;
+                color: #656565;
+                li {
+                  white-space: normal;
+                  width: 25%;
+                  font-size: 0.7vw;
+
+                  i.el-icon-arrow-right:before {
+                    content: '\E603';
+                  }
+                }
+              }
+            }
+
+            .collapsed {
+              i.el-icon-arrow-right:before {
+                content: '\E604';
+              }
+            }
+          }
+          .card-body {
+            font-size: 0.7vw;
+          }
+        }
+        .card:last-child {
+          .card-header {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+
+    .contact_background {
+      .contact_logo {
+        color: white;
+        display: block;
+      }
+
+      .contact_list {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+        color: white;
+        background-color: rgba(59, 59, 59, 0.8);
+
+        div:first-child {
+          position: relative;
+          span {
+            border: 1px solid white;
+            display: block;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+          }
+
+          span:hover {
+            cursor: pointer;
+          }
+        }
+        div:last-child {
+          display: grid;
+          grid-template-columns: 50% 50%;
+
+          span {
+            text-align: left;
+            position: relative;
+          }
+
+          span:before {
+            background-position: center;
+            position: absolute;
+          }
+        }
+      }
+
+      #zoom_effect {
+        transform: scale(0);
+        transform-origin: center;
+      }
+
+      .zoom_effect_active {
+        animation: zoom_in 1s forwards;
+      }
+
+      @keyframes zoom_in {
+        0% {
+          transform: scale(0);
+        }
+
+        50% {
+          transform: scale(0);
+        }
+
+        80% {
+          transform: scale(0.8);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      #maskLayer_Id {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 1s;
+      }
+      .masking {
+        transform: translateX(100%);
+      }
+    }
+  }

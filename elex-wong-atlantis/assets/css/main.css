@@ -1,0 +1,171 @@
+﻿body {
+	width: 100%;
+	margin: 0;
+	font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	height: 5vw;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 999;
+}
+
+.navContainer {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.logoBox {
+	float:left;
+	padding-top: 0.5vw
+}
+
+.logoBox img{
+	width: 21vw;
+}
+
+.navBox {
+	float: right;
+	margin: 0;
+	padding-top: 2vw;
+	font-size: 1vw;
+}
+
+.navBox li{
+	display: inline-block;
+	font-size: 1vw;
+	padding-left: 2vw;
+	font-weight: bold;
+}
+
+.navBox a{
+	color: #FFF;
+}
+
+.firstRow img {
+	position: absolute;
+	right: 0;
+	bottom: 10vw;
+}
+
+.innerContain {
+	padding-top: 2vw;
+	margin-top: -0.5vw;
+	background: url(../image/BG.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.innerContain p{
+	margin: 0 auto;
+	color: #FFF;
+	padding-bottom:0.5vw;
+	font-size: 1vw;
+	line-height: 1.5vw;
+}
+
+.innerContain .box {
+	width: 45%;
+	margin: 0 auto;
+	padding-bottom: 2.5vw;
+}
+
+.innerContain .box .title {
+	width: 20%;
+	float:left;
+	height: 20vw;
+	text-align: center;
+}
+
+.innerContain .box .title .small {
+	font-size: 1vw;
+}
+
+.innerContain .box .title .big {
+	font-size: 3vw;
+	font-weight: bold;
+	line-height: 3vw;
+}
+
+.innerContain .box .details {
+	padding-top: 5vw;
+	padding-left: 15vw;
+}
+
+.innerContain .box .details .titles {
+	font-size: 2vw;
+}
+
+.innerContain .box .details img {
+	width: 30vw;
+}
+
+.footer {
+	width: 100%;
+	background-color: black;
+	height: 22vw;
+	margin-top: -0.5vw;
+}
+
+.footer p{
+	margin: 0 auto;
+	color: #FFF;
+	font-size: 1vw;
+	text-align: center;
+  padding: 1vw 0vw;
+}
+
+.footer .box {
+	width: 45%;
+	margin: 0 auto;
+}
+
+.footer .box .title {
+	width: 20%;
+	float:left;
+	height: 20vw;
+	text-align: center;
+}
+
+.footer .box .title .small {
+	font-size: 1vw;
+	padding-bottom: 0.5vw;
+}
+
+.footer .box .title .big {
+	font-size: 3vw;
+	font-weight: bold;
+	padding: 0vw;
+}
+
+.footer .box .details img {
+	float: left;
+}
+
+.footer .box .details {
+	padding-top: 5vw;
+}
+
+.footer .box .details .btn {
+	width: 24vw;
+	margin: 1vw 0vw 0vw 15vw;
+  height: 3vw;
+}
+
+.footer .box .details .btn img{
+	width: 3vw;
+}
+
+.footer .box .details .btn p{
+	text-align: left;
+	padding-left: 6vw;
+}
+
+.footer .box .copyright{
+	color: #FFF; 
+	padding: 3vw 0vw 1vw 0vw; 
+	font-size: 0.75vw;
+	text-align: left;
+}

@@ -1,0 +1,88 @@
+@import '../Base.scss';
+
+@media only screen and (min-width: 700px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    z-index: 901;
+
+    .header-content {
+      padding: 0px 50px;
+      padding-top: 5px;
+      min-width: 1200px;
+
+      .header-menu-bar {
+        .header-menu-bar-icon {}
+      }
+
+      .header-logo {
+        display: inline-block;
+        vertical-align: middle;
+
+        img {
+          cursor: pointer;
+        }
+      }
+
+      .header-actions {
+        //解决el-dropdown rendering问题
+        display: none;
+
+        padding-top: 40px;
+        float: right;
+        //display:inline-block;
+        vertical-align: middle;
+
+        .header-nav {
+          padding-right: 60px;
+          display: inline-block;
+          vertical-align: middle;
+
+          a {
+            font: normal normal bold 16px Helvetica Neue;
+            color: #FFFFFF;
+            text-decoration: none;
+          }
+        }
+
+        .header-lang-switcher {
+          padding: 5px 10px;
+          position: relative;
+          display: inline-block;
+          vertical-align: middle;
+          border: 2px solid #FFFFFF;
+          border-radius: 25px;
+          cursor: pointer;
+
+          .header-lang {
+            display: inline-block;
+            vertical-align: middle;
+            font: normal normal bold 16px Helvetica Neue;
+            color: #FFFFFF;
+          }
+
+          .icon-down {
+            padding-left: 10px;
+            display: inline-block;
+            vertical-align: middle;
+
+            img {}
+          }
+        }
+      }
+    }
+  }
+
+  .el-dropdown-menu {
+    position: fixed !important;
+    top: 80px !important;
+    left: unset !important;
+    right: 40px !important;
+    width: 100px !important;
+  }
+
+  .popper__arrow {
+    left: 40px !important;
+  }
+}

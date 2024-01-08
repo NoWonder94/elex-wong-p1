@@ -1,0 +1,221 @@
+.referral 
+{
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    padding-bottom: 80px;
+    letter-spacing: 0.4px;
+}
+.referral .referral-container
+{
+    padding: 25px 15px 0px 15px;
+}
+/* content header */
+.referral-container .referral-page-header 
+{
+    position: relative;
+    border-radius: 15px 15px 0px 0px;
+    padding: 8px 15px;
+    background-color: #424FAD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.referral-page-header-title 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.referral-page-header-title img 
+{
+    width: 23px;
+    height: 23px;
+}
+.referral-page-header-title span 
+{
+    margin-left: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+}
+.referral-page-header .close-button 
+{
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+}
+/* content header end */
+
+/* upper-content */
+.referral-container .upper-content
+{
+    position: relative;
+    background: #FFFFFF;
+    padding: 20px 25px;
+}
+.upper-content-title
+{
+    position: relative;
+    font-size: 12px;
+    text-align: left;
+    color: #666666;
+}
+.bar-container
+{
+    position: relative;
+	width: 100%;
+	height: 3px;
+	margin: 8px 0px;
+	background-color: #BBBBBB;
+}
+.upper-content-form
+{
+    margin-top: 25px;
+}
+.form-ref
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.form-ref .form-ref-title
+{
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 3px;
+    color: #999999;
+}
+.form-ref .form-ref-input
+{
+    height: 30px;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666666;
+    background: #EEEEEE;
+}
+/* upper-content end*/
+
+/* lower-content */
+.referral-container .lower-content
+{
+    position: relative;
+    background: #383838;
+    padding: 20px 25px;
+    border-radius: 0px 0px 15px 15px;
+}
+.lower-content-title
+{
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.lower-content-form
+{
+    margin-top: 20px;
+    text-align: left;
+}
+.referrals-form
+{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 15px;
+}
+.referrals-form .referrals-form-title
+{
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-bottom: 3px;
+}
+.referrals-form .referrals-form-input
+{
+    height: 30px;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666666;
+    background: #EEEEEE;
+}
+.referrals-form .referrals-form-submit
+{   
+    height: 30px;
+    padding: 0px 10px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    text-align: center;
+    background: #584CB9;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* lower-content end */
+.referrals-form .input-group {
+    margin-bottom: 10px;
+}
+
+.referrals-form .input-group .form-control{
+    height: 30px;
+    padding: 0 10px!important;
+    border: none!important;
+    border-radius: 5px 0 0 5px !important;
+    font-size: 12px;
+    color: #666666;
+    background: #EEEEEE;
+}
+
+.referrals-form .input-group .btn{
+    height: 30px;
+    padding: 0 10px!important;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    border-radius: 0 5px 5px 0!important;
+    background: #FFB326;
+    border: none;
+}
+
+.lcds {
+    padding: 0;
+    margin: 0 0 0 -5px;
+    list-style: none;
+}
+
+.lcds li {
+    position: relative;
+    display: inline-block;
+    padding: 3px 8px;
+    border: solid 1px #fff;
+    margin: 0 0 5px 5px;
+    border-radius: 3px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.lcds li.check, .lcds li.add {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.lcds li.check:before {
+    content: " "!important;
+}
+
+.lcds li.add:before {
+  font: normal normal normal 12px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f067";
+  position: absolute;
+  right: -1px;
+  bottom: -2px;
+}

@@ -1,0 +1,125 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+
+    .betHistory {
+        width: 1200px;
+        margin: auto;
+        padding: 20px 10px;
+
+        .betHistory-filter-container {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            .betHistory-filter-label {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .betHistory-form {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+
+                .el-form-item {
+                    margin-bottom: 0;
+
+
+                    .betHistory-filter-input,
+                    .betHistory-filter-date,
+                    .betHistory-filter-select {
+                        width: 150px;
+
+                        .el-input__inner {
+                            color: $fontColor;
+                            background: transparent;
+                            border: 1px solid $blackOpacity20;
+
+                            &::placeholder {
+                                color: $blackOpacity20;
+                            }
+                        }
+                    }
+
+                    .betHistory-filter-date {
+                        width: 150px;
+                    }
+
+                    .betHistory-filter-select {
+                        width: 130px;
+                    }
+
+                    .betHistory-filter-button {
+                        border: none;
+
+                        &:hover {
+                            color: $fontColor;
+                            background-color: $secondaryColor;
+                            border: none;
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+
+        .betHistory-request-table {
+            padding-top: 15px;
+            margin: 0 auto;
+
+            tr{
+              th:nth-last-child(2),td:nth-last-child(2){
+                border-left: 1px solid white;
+              }
+            }
+
+            .betHistory-bet{
+              color: $black;
+              font-weight: bold;
+            }
+
+            .betHistory-win{
+              color: $warning;
+              font-weight: bold;
+            }
+        }
+
+        .betHistory-statistic {
+            padding-top: 20px;
+            display: flex;
+            // justify-content: space-between;
+            column-gap: 20px;
+
+            .betHistory-statistic-item {
+                display: flex;
+                align-self: center;
+                column-gap: 5px;
+            }
+        }
+
+        .betHistory-request-table-pagination {
+            position: relative;
+            margin: 0 auto;
+            margin-top: 15px;
+            text-align: center;
+
+            .el-pager {
+                .active {
+                    background-color: $secondaryColor !important;
+                }
+
+                .number.active:hover {
+                    color: $fontColor !important;
+                }
+
+                .number:hover {
+                    color: $secondaryColor !important;
+                }
+            }
+        }
+    }
+}

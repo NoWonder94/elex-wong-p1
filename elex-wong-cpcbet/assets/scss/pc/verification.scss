@@ -1,0 +1,161 @@
+@import '../base.scss';
+
+@media only screen and (min-width: $pcMinWidth) {
+  .verification {
+    position: relative;
+    padding: 30px;
+    width: 900px;
+    min-height: 650px;
+    background-color: $secondaryBgColor;
+    border-radius: 10px;
+
+    .verification-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .verification-image-container {
+      padding: 30px 0;
+      text-align: center;
+
+      img {
+        width: 280px;
+      }
+    }
+
+    .flex {
+      display: flex;
+      gap: 100px;
+    }
+
+    .el-form {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 100px;
+      row-gap: 30px;
+      padding-top: 40px;
+      padding-bottom: 60px;
+
+      .el-form-item {
+        width: 370px;
+
+        &:last-child {
+          position: absolute;
+          bottom: 30px;
+          right: 30px;
+          margin-bottom: 0;
+
+          .el-form-item__content {
+
+            .el-button {
+              width: 370px;
+              padding: 10px;
+              background-image: linear-gradient(to right, #9F5AFC, #6200E5);
+              background-color: transparent;
+              border-color: transparent;
+              border-radius: 4px;
+              text-align: center;
+              cursor: pointer;
+            }
+          }
+
+        }
+
+        label {
+          display: block;
+          float: unset;
+          padding: 0;
+          padding-bottom: 10px;
+          color: $fontColor;
+          font-size: 16px;
+          font-weight: bold;
+          text-align: left;
+        }
+
+        .el-form-item__content {
+          margin-left: 0 !important;
+
+          .el-input__inner {
+            padding: 0;
+            background-color: inherit;
+            color: $fontColor;
+            border: none;
+            border-bottom: 1px solid $lighterGreen;
+            border-radius: 0;
+
+            &::placeholder {
+              color: $lightFontColor  !important;
+            }
+
+            &:focus {
+              padding-left: 10px;
+              border: 1px solid $primaryGreen;
+              border-radius: $borderRadius5;
+            }
+
+            &:hover {
+              color: $lightGreen  !important;
+              border-bottom: 1px solid $lightGreen;
+
+              &::placeholder {
+                color: $lightGreen  !important;
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+
+    .verification-box {
+      width: 370px;
+      padding-bottom: 30px;
+
+      .verification-box-title {
+        padding-bottom: 10px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .verification-box-input-container {
+        .el-input__inner {
+          padding: 0;
+          background-color: inherit;
+          color: $fontColor;
+          border: none;
+          border-bottom: 1px solid $lighterGreen;
+          border-radius: 0;
+
+          &:focus {
+            padding-left: 10px;
+            border: 1px solid $primaryGreen;
+            border-radius: $borderRadius5;
+          }
+
+          &:hover {
+            color: $lightGreen  !important;
+            border-bottom: 1px solid $lightGreen;
+
+            &::placeholder {
+              color: $lightGreen  !important;
+            }
+          }
+        }
+
+      }
+
+    }
+
+    .verification-button {
+      position: absolute;
+      padding: 10px;
+      width: 340px;
+      bottom: 30px;
+      right: 30px;
+      border-radius: 4px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

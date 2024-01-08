@@ -1,0 +1,817 @@
+
+
+@media only screen and (min-width: 1710px) and (max-width: 1900px)  {
+  body {
+    zoom: 0.99;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1709px)  {
+  body {
+    zoom: 0.9;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px)  {
+  body {
+    zoom: 0.8;
+  }
+}
+
+@media only screen and (min-width: 1250px) and (max-width: 1399px)  {
+  body {
+    zoom: 0.75;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1249px)  {
+  body {
+    zoom: 0.65;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1099px)  {
+  body {
+    zoom: 0.55;
+  }
+}
+
+@media only screen and (max-width: 769px)  {
+  .Web {
+  	display: none;
+  }
+
+  .Mobile {
+  	display: block;
+  }
+
+  body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		font-family: "Helvetica Neue", sans-serif; 
+		font-weight: 300;
+	}
+
+/*First Row*/
+  .firstRow {
+  	position: relative;
+  	background: url(../image/header_bg.png) no-repeat center;
+  	background-size: cover;
+  	height: 177vw;
+  }
+
+  .logo {
+  	position: absolute;
+  	text-align: center;
+  	margin: 0 auto;
+  	left: 0;
+  	right: 0;
+  	top: 5vw;
+  }
+
+  .logo img {
+  	width: 40vw;
+  }
+
+  .introduction {
+  	position: absolute;
+  	width: 80vw;
+  	margin: 0 auto;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	color: #FFF;
+  	font-size: 18px;
+  	line-height: 8.454vw;
+  }
+
+  .introduction .titleImg {
+  	width: 61vw;
+  }
+
+  .introduction p {
+  	margin: 0;
+  }
+
+  .arrow {
+  	width: 7vw; 
+  	margin: 0 auto;
+  }
+
+  .move {
+		position: relative;
+  	margin-top: 15vw;
+  	margin-bottom: 5vw;
+  	text-align: center;
+		animation: arrowUp 3s infinite;
+	  -webkit-animation: arrowUp 3s infinite;
+  }
+
+	@keyframes arrowUp {
+	  0% {
+	      top:0px;
+	  }
+	  50% {
+	      top:2vw;
+	  }
+	  100%{
+	      top:0px;
+	  }
+	}
+/*First Row End*/
+
+/*Second Row*/
+	.secondRow {
+  	height: 180vw;
+  }
+
+  .operation {
+  	width: 80%;
+  	margin: 0 auto;
+  }
+
+  .operation img {
+  	width: 33vw;
+  }
+
+  .title {
+  	font-size: 7.488vw;
+  	color: #454545;
+  	font-weight: bold;
+  }
+
+  .describe {
+  	font-size: 3.26vw;
+  	color: #6A6A6A;
+  	line-height: 6.039vw;
+  }
+/*Second Row End*/
+
+/*Third Row*/
+	.descContainer {
+		background: #F8F8F8;
+		padding-bottom: 54px;
+	}
+
+	.desc {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.desc p {
+		margin: 0;
+	}
+
+	.desc .title {
+		padding: 9.662vw 0 5.314vw 0;
+	}
+/*Third Row End*/
+
+/*Fourth Row*/
+	.fourthRow {
+
+	}
+
+	.fourthTitle {
+		font-size: 6.463vw;
+		color: #454545;
+		font-weight:bold;
+		text-align: center;
+	}
+
+  .slideshow-container {
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -22px;
+	  padding: 16px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	}
+
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+
+	.background {
+		position: absolute;
+		top: 0;
+		height: 80%;
+		background: rgba(0,0,0,0.5);
+		padding: 14vw;
+	}
+
+	.background h5 {
+		font-size: 8.213vw;
+		color: #FFFFFF;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 14vw;
+	}
+
+	.background .content {
+		font-size: 4.348vw;
+		color: #FFFFFF;
+		text-align: center;
+		line-height: 8.454vw;
+	}
+/*Fourth Row End*/
+
+/*Fifth Row*/
+	.priceList {
+		width: 80%;
+		margin-top: 10vw;
+		margin-bottom: 10vw;
+		margin: 0 auto;
+		/*border: 1px solid red; */
+		box-shadow: 0px 3px 6px #00000029;
+		position: relative;
+	}
+
+	.priceTitle {
+		font-size: 6vw;
+		font-weight: bold;
+		color: #B1B1B1;
+		text-align: center;
+		margin: 0;
+		padding-top: 10.386vw;
+	}
+
+	.more {
+		position: absolute;
+		top: 4vw;
+		right: 6vw;
+	}
+
+	.rectangle {
+		width: 100%; 
+		text-align: center;
+	}
+
+	.priceBox {
+		width: 70%; 
+		height: 17vw; 
+		margin: 0 auto; 
+		padding: 10.87vw 0 13.527vw 0;
+	}
+
+	.priceImg {
+		width: 30%;
+		float: left;
+		text-align: center;
+	}
+
+	.priceBox2 {
+		width: 60%; 
+		float: left; 
+		padding-left: 4.83vw;
+	}
+
+	.priceNo {
+		font-size: 7.488vw;
+		font-weight: bold;
+		color: #6A6A6A;
+	}
+
+	.priceGroup {
+		font-size: 3.623vw;
+		font-weight: bold;
+		color: #B2B2B2;
+	}
+
+	.priceContent {
+		display: none;
+		padding: 0 7.24vw 29vw 7.24vw;
+	}
+
+	.perks {
+		font-size: 4.589vw;
+		font-weight: bold;
+		color: #6A6A6A;
+	}
+
+	.perksContent {
+		font-size: 3.382vw;
+		text-align: left;
+		color: #6A6A6A;
+		line-height: 8.454vw;
+	}
+/*Fifth Row End*/
+
+/*Sixth Row*/
+	.sixthRow {
+	}
+
+	.map {
+		background: url(../image/map.png) no-repeat;
+		height: 121vw;
+		background-position: bottom;
+	}
+
+	.address {
+		background: #F8F8F8;
+		padding: 10vw;
+	}
+
+	.addressTitle {
+		font-size: 6.763vw;
+		color: #454545;
+		font-weight: bold;
+	}
+
+	.addressContent {
+		font-size: 3.382vw;
+		color: #6A6A6A;
+		line-height: 7.246vw;
+	}
+/*Sixth Row End*/
+
+/*footer*/
+	.footer {
+		background: #313131;
+	}
+
+	.footerBox {
+		width: 50%;
+		margin: 0 auto;
+		padding: 15vw 0;
+		text-align: center;
+	}
+/*footer End*/
+}
+
+@media only screen and (min-width: 769px)  {
+	.Web {
+		display: block;
+	}
+
+	.Mobile {
+		display: none;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		font-family: "Helvetica Neue", sans-serif; 
+		font-weight: 300;
+	}
+/*Navigation Bar*/
+	.NavBar {
+		position: fixed;
+		width: 100%;
+		height: 62px;
+		background: transparent;
+		border-bottom: 1px solid #FFF;
+		padding: 20px 0px;
+		border-color: rgba(255,255,255,0.3);
+		z-index: 20;
+	}
+
+	.logo {
+		width: 950px;
+		float: left;
+		padding-left: 110px;
+	}
+
+	.navList {
+		float: left;
+		color: #FFF;
+	}
+
+	.select {
+		float: left;
+		margin-left: 80px;
+		font-size: 20px;
+	}
+
+	.select a {
+		color: #FFF;
+		text-decoration: none;
+	}
+/*Navigation Bar End*/
+
+/*First Row*/
+	.firstRow {
+		width: 100%;
+		height: 1070px;
+		background: url(../image/header_bg.png) no-repeat;
+		background-size: contain;
+	}
+
+	.introBox {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.introduction {
+		width: 63%;
+		margin: 0 auto;
+		color: #FFF;
+		font-size: 24px;
+		text-align: left;
+	}
+
+	.highlight {
+		font-size: 53px;
+		font-weight: bold;
+	}
+
+	.move {
+		position: relative;
+		animation: arrowUp 3s infinite;
+	  -webkit-animation: arrowUp 2s infinite;
+	}
+
+	@keyframes arrowUp {
+	  0% {
+	      top:0px;
+	  }
+	  50% {
+	      top:0.5vw;
+	  }
+	  100%{
+	      top:0px;
+	  }
+	}
+/*First Row End*/
+
+/*Second Row*/
+	.secondRow {
+		width: 100%;
+		height: 600px;
+		background: #FFF;
+	}
+
+	.title {
+		font-size: 38px;
+		font-weight: bold;
+		color: #454545;
+	}
+
+	.describe {
+		font-size: 18px;
+		color: #6A6A6A;
+		line-height: 30px;
+	}
+/*Second Row End*/
+
+/*Third Row*/
+	.thirdRow {
+		width: 100%;
+		height: 740px;
+		background: #F8F8F8;
+	}
+
+	.Leftimg {
+		width: 50%;
+		height: 740px;
+		background: url(../image/photo1.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		float: left;
+	}
+
+	.Rightdesc {
+		float: left;
+		padding: 35px 0px 0px 90px;
+	}
+
+	.list li {
+		margin: 0 0 24px 0;
+	}
+/*Third Row End*/
+
+/*Fourth Row*/
+	.fourthRow {
+		width: 100%;
+		height: 1244px;
+		padding-top: 100px;
+	}
+
+	.fourthTitle {
+		font-size: 38px;
+		color: #454545;
+		font-weight: bold;
+		text-align: center;
+		margin: 0;
+		padding-bottom: 100px;
+	}
+
+	.border {
+		width:20%;
+		height: 550px;
+		float: left;
+		font-size: 32px;
+		color: #FFF;
+		cursor: context-menu;
+		position: relative;
+	}
+
+	.background {
+		position: absolute;
+		width:100%;
+		height: 100%;
+		background: rgba(0,0,0,0);
+		z-index: 10;
+	}
+
+	.background:hover {
+		background: rgba(0,0,0,0.5);
+		transition: all 0.5s;
+	}
+
+	.background:hover h5{
+		transform: translate(0,-30%);
+
+	  -webkit-transition: all 0.3s ease-in-out 0s;
+	  -moz-transition: all 0.3s ease-in-out 0s;
+	  transition: all 0.3s ease-in-out 0s;
+	}
+
+	.background:hover .content{
+		opacity: 1;
+		transform: translate(0,-80px);
+
+	  -webkit-transition: all 0.3s ease-in-out 0s;
+	  -moz-transition: all 0.3s ease-in-out 0s;
+	  transition: all 0.3s ease-in-out 0s;
+	}
+
+	.b1 {
+		background: url(../image/photo_event.png);
+		background-size: cover;
+	}
+	.b2 {
+		background: url(../image/photo_wellness.png);
+		background-size: cover;
+	}
+	.b3 {
+		background: url(../image/photo_onsite.png);
+		background-size: cover;
+	}
+	.b4 {
+		background: url(../image/photo_booth.png);
+		background-size: cover;
+	}
+	.b5 {
+		background: url(../image/photo_wifi.png);
+		background-size: cover;
+	}
+	.b6 {
+		background: url(../image/photo_cleaning.png);
+		background-size: cover;
+	}
+	.b7 {
+		background: url(../image/photo_printer.png);
+		background-size: cover;
+	}
+
+	.b8 {
+		background: url(../image/photo_social.png);
+		background-size: cover;
+	}
+	.b9 {
+		background: url(../image/photo_meeting.png);
+		background-size: cover;
+	}
+	.b10 {
+		background: url(../image/photo_refreshment.png);
+		background-size: cover;
+	}
+
+	h5 {
+		text-align: center;
+		padding: 270px 0 10px 0;
+		margin: 0;
+		-webkit-transition: all 0.3s ease-in-out 0s;
+	  -moz-transition: all 0.3s ease-in-out 0s;
+	  transition: all 0.3s ease-in-out 0s;
+	}
+
+	.content {
+	  position: relative;
+		width: 65%;
+		margin: 0 auto;
+		font-size: 18px;
+		text-align: center;
+		opacity: 0;
+		transform: translate(0, 50%);
+	  -webkit-transition: all 0.3s ease-in-out 0s;
+	  -moz-transition: all 0.3s ease-in-out 0s;
+	  transition: all 0.3s ease-in-out 0s;
+	}
+/*Fourth Row End*/
+
+/*Fifth Row*/
+	.fifthRow {
+		width: 100%;
+		height: 1960px;
+		padding-top: 100px;
+	}
+
+	.priceList {
+		width: 80%;
+		height: inherit;
+		margin: 0 auto;
+	}
+
+	.priceRow {
+		width: 400px;
+		height: 787px;
+		margin-left: 70px;
+		margin-bottom: 100px;
+		/*border: 1px solid red; */
+		box-shadow: 0px 3px 6px #00000029;
+		float: left;
+	}
+
+	.priceTitle {
+		font-size: 24px;
+		font-weight: bold;
+		color: #B1B1B1;
+		text-align: center;
+		margin: 0;
+		padding-top: 52px;
+	}
+
+	.rectangle {
+		width: 100%; 
+		text-align: center;
+	}
+
+	.priceBox {
+		width: 60%; 
+		height: 50px; 
+		margin: 0 auto; 
+		padding-top: 55px;
+	}
+
+	.priceImg {
+		width: 30%;
+		float: left;
+		text-align: center;
+	}
+
+	.priceBox2 {
+		width: 60%; 
+		float: left; 
+		padding-left: 20px;
+	}
+
+	.priceNo {
+		font-size: 38px;
+		font-weight: bold;
+		color: #6A6A6A;
+	}
+
+	.priceGroup {
+		font-size: 18px;
+		font-weight: bold;
+		color: #B2B2B2;
+	}
+
+	.priceContent {
+		padding: 54px 40px 0 40px;
+	}
+
+	.perks {
+		font-size: 24px;
+		font-weight: bold;
+		color: #6A6A6A;
+	}
+
+	.perksContent {
+		font-size: 18px;
+		text-align: left;
+		color: #6A6A6A;
+		line-height: 30px;
+	}
+/*Fifth Row End*/
+
+/*Sixth Row*/
+	.sixthRow {
+		width: 100%;
+		height: 503px;
+	}
+
+	.map {
+		width:68%;
+		height: inherit;
+		background: url(../image/map.png) no-repeat;
+		background-size: cover;
+		float: left;
+		background-position: bottom;
+	}
+
+	.mapContent {
+		width: 32%;
+		height: inherit;
+		float: left;
+		background-color: #F8F8F8;
+	}
+
+	.address {
+		padding-left: 60px;
+	}
+
+	.addressTitle {
+		font-size: 38px;
+		font-weight: bold;
+		text-align: left;
+		color: #454545;
+		margin-top: 65px;
+	}
+
+	.addressContent {
+		font-size: 18px;
+		text-align: left;
+		color: #6A6A6A;
+		line-height: 30px;
+	}
+/*Sixth Row End*/
+
+/*Footer*/
+	.footer {
+		position: relative;
+		width: 100%;
+		height: 500px;
+		background-color: #313131;
+	}
+
+	.footerBox {
+		position: absolute;
+		width: 80%;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: 120px;
+	}
+
+	.footerBox a {
+		color: #FFF;
+		text-decoration: none;
+	}
+
+	.footerBox p{
+		color: #FFFFFF;
+		font-size: 26px;
+		margin: 0;
+		padding-top: 50px;
+		padding-left: 140px;
+		float: left;
+	}
+
+	.footer p:nth-child(3) {
+		padding-top: 0;
+	}
+
+	.copyright {
+		position: absolute;
+		width: 50%; 
+		margin: 0 auto; 
+		bottom: 80px;
+		left: 0;
+		right: 0; 
+	}
+
+	.copyright > p{
+		font-size: 18px;
+		font-weight: bold;
+		color: #454545;
+		text-align: center;
+	}
+/*Footer End*/
+}
